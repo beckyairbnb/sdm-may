@@ -1,0 +1,53 @@
+.row-sm{
+  @include mobile-lg{
+    @include make-row();
+  }
+}
+.row-lg{
+  @include desktops{
+    @include make-row();
+  }
+}
+.row-md{
+  @include tablet{
+    @include make-row();
+  }
+}
+.row-xl{
+  @include large-desktops{
+    @include make-row();
+  }
+}
+
+
+@each $key , $value in $responsive-absolute-positions {
+  @if $value{
+    .row-#{$key}{
+      @if $key == "xs"{
+        @include mobile{
+          position: absolute!important;
+        }
+      }
+      @if $key == "sm"{
+        @include mobile-lg{
+          @include make-row();
+        }
+      }
+      @if $key == "md"{
+        @include tablet{
+          @include make-row();
+        }
+      }
+      @if $key == "lg"{
+        @include desktops{
+          @include make-row();
+        }
+      }
+      @if $key == "xl"{
+        @include large-desktops{
+          @include make-row();
+        }
+      }
+    }
+  }
+}

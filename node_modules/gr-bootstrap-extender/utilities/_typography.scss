@@ -1,0 +1,59 @@
+p {
+  @include font-size($text-base);
+  color: $body-color;
+}
+
+// Loop For font size
+@each $label, $map in $fsize {
+  $fsz: map-get($map, font-size);
+  $lhi: map-get($map, line-height);
+  $lspc: map-get($map, letter-spacing);
+  $not-responsive: map-get($map, not-responsive);
+ 
+  @if $not-responsive {
+      .font-size-#{$label}{
+        font-size:$fsz!important;
+        line-height: $lhi!important;
+        letter-spacing: $lspc!important;
+      }
+    } @else {
+      .font-size-#{$label}{
+        @include font-size($fsz);
+        line-height: $lhi;
+        letter-spacing: $lspc;
+        }
+    }
+  
+}
+
+// Loop For font font-family
+@if $multiple-font-family {
+  @each $key,
+  $value in $font-families {
+    .font-family-#{$key} {
+      font-family: $value;
+    }
+  }
+}
+
+.font-weight-thin{
+  font-weight: 300;
+}
+.font-weight-semibold{
+  font-weight: 600;
+}
+.font-weight-medium{
+  font-weight: 500;
+}
+.font-weight-black{
+  font-weight: 900;
+}
+
+
+.line-height-reset{
+  line-height: 1;
+}
+
+.font-size-small{
+  font-size: $font-size-sm;
+}

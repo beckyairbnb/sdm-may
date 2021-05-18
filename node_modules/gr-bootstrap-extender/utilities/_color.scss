@@ -1,0 +1,36 @@
+@each $color, $value in $colors{
+  .bg-#{$color}{
+    background-color:$value!important;
+  }
+  .text-#{$color}{
+    color:$value!important;
+  }
+  @each $op-key,$op-value in $gr-opacity{
+    .bg-#{$color}-op#{$op-key}{
+      background-color: rgba($value,$op-value)!important;
+    }
+  }
+  
+}
+@each $op-key,$op-value in $gr-opacity{
+  .opacity-#{$op-key}{
+    opacity:$op-value!important;
+  }
+}
+
+@each $color, $value in $btn-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $btn-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+@each $color, $value in $border-colors {
+  .border-#{$color}{
+    border-color:$value!important;
+  }
+}

@@ -1,0 +1,158 @@
+@each $key , $value in $absolute-positions{
+  @if $value{
+    .absolute-#{$key}{
+      position: absolute;
+      @if $key == "top-left"{
+        top: 0;
+        left: 0;
+      }
+      @if $key == "top-right"{
+        top: 0;
+        right: 0;
+      }
+      @if $key == "bottom-left"{
+        bottom: 0;
+        left: 0;
+      }
+      @if $key == "bottom-right"{
+        bottom: 0;
+        right: 0;
+      }
+      @if $key == "center"{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      @if $key == "center-left"{
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+      @if $key == "center-top"{
+        top:0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @if $key == "center-bottom"{
+        bottom:0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @if $key == "center-right"{
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+
+
+@each $key , $value in $responsive-absolute-positions {
+  @if $value{
+    .position-#{$key}-absolute{
+      @if $key == "xs"{
+        @include mobile{
+          position: absolute!important;
+        }
+      }
+      @if $key == "sm"{
+        @include mobile{
+          position: absolute!important;
+        }
+      }
+      @if $key == "md"{
+        @include tablet{
+          position: absolute!important;
+        }
+      }
+      @if $key == "lg"{
+        @include desktops{
+          position: absolute!important;
+        }
+      }
+      @if $key == "xl"{
+        @include large-desktops{
+          position: absolute!important;
+        }
+      }
+    }
+  }
+}
+@each $key , $value in $responsive-static-positions {
+  @if $value{
+    .position-#{$key}-static{
+      @if $key == "xs"{
+        @include mobile{
+          position: static!important;
+        }
+      }
+      @if $key == "sm"{
+        @include mobile{
+          position: static!important;
+        }
+      }
+      @if $key == "md"{
+        @include tablet{
+          position: static!important;
+        }
+      }
+      @if $key == "lg"{
+        @include desktops{
+          position: static!important;
+        }
+      }
+      @if $key == "xl"{
+        @include large-desktops{
+          position: static!important;
+        }
+      }
+    }
+  }
+}
+@each $key , $value in $responsive-relative-positions {
+  @if $value{
+    .position-#{$key}-relative{
+      @if $key == "xs"{
+        @include mobile{
+          position: relative!important;
+        }
+      }
+      @if $key == "sm"{
+        @include mobile{
+          position: relative!important;
+        }
+      }
+      @if $key == "md"{
+        @include tablet{
+          position: relative!important;
+        }
+      }
+      @if $key == "lg"{
+        @include desktops{
+          position: relative!important;
+        }
+      }
+      @if $key == "xl"{
+        @include large-desktops{
+          position: relative!important;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* Translate Classes*/ 
+
+.translate-n50{
+  transform:translate(-50%,-50%);
+}
+.translateX-n50{
+  transform:translateX(-50%);
+}
+.translateY-50{
+  transform:translateY(50%);
+}
