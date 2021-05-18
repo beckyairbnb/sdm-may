@@ -10,9 +10,9 @@ const Contact = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <button className="btn btn btn-dodger-blue-2 header-btn rounded-5">
-              Get in Touch
-            </button>
+            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/signup"}>
+              Sign Up
+            </a>
             </>
           ),
           footerStyle: "style4",

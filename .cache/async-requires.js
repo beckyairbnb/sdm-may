@@ -21,8 +21,8 @@ exports.components = {
   "component---src-pages-reset-pass-js": () => import("./../../../src/pages/reset-pass.js" /* webpackChunkName: "component---src-pages-reset-pass-js" */),
   "component---src-pages-signin-image-js": () => import("./../../../src/pages/signin-image.js" /* webpackChunkName: "component---src-pages-signin-image-js" */),
   "component---src-pages-signin-js": () => import("./../../../src/pages/signin.js" /* webpackChunkName: "component---src-pages-signin-js" */),
-  "component---src-pages-signup-image-js": () => import("./../../../src/pages/signup-image.js" /* webpackChunkName: "component---src-pages-signup-image-js" */),
   "component---src-pages-signup-js": () => import("./../../../src/pages/signup.js" /* webpackChunkName: "component---src-pages-signup-js" */),
+  "component---src-pages-signup-no-js": () => import("./../../../src/pages/signup-no.js" /* webpackChunkName: "component---src-pages-signup-no-js" */),
   "component---src-pages-terms-js": () => import("./../../../src/pages/terms.js" /* webpackChunkName: "component---src-pages-terms-js" */)
 }
 

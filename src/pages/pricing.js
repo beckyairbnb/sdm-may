@@ -13,8 +13,8 @@ const PricingPage = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/contact"}>
-              Get in Touch
+            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/signup"}>
+              Sign Up
             </a>
 
             </>

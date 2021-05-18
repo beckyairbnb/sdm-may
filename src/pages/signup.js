@@ -1,90 +1,61 @@
 import React from "react";
 import { Link } from "gatsby";
+import imgBg from "../assets/image/inner-page/jpg/sign-up-right-img.jpg";
 
 import PageWrapper from "../components/PageWrapper";
 
-const SignUp = () => {
+const SignUpImage = () => {
   return (
     <>
       <PageWrapper
         themeConfig={{
-          headerClassName: "pt-13 pt-lg-11",
-          headerLogoClassName: "mx-auto text-center",
+          headerClassName: "pt-13 pt-lg-11 px-14 px-xl-24",
+          headerLogoClassName: "mx-auto mx-lg-0",
         }}
       >
-        <div className="min-height-100vh d-flex align-items-center pt-15 pb-13 pt-lg-32 pb-lg-27 bg-default-3">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-xl-6 col-lg-7 col-md-8 col-xs-10">
-                <div className="pt-9 pt-sm-13 pb-10 px-6 px-sm-1 px-md-7 px-lg-15 px-xl-16">
+        <div className="min-height-100vh d-flex align-items-center bg-default-3">
+          <div className="container-fluid h-100">
+            <div className="row no-gutters align-items-center justify-content-center h-100">
+              <div className="col-xl-4 col-lg-6 col-md-10">
+                <div className="pt-23 pt-md-17 pt-lg-18 pb-md-4 pb-lg-10 max-w-413 mx-auto">
                   <div
-                    className="mb-10 text-center"
-                    data-aos="fade-up"
-                    data-aos-duration={500}
-                    data-aos-delay={500}
+                    className="mb-10"
+
                   >
                     <h2 className="mb-1 font-size-10 letter-spacing-n83">
-                      Create account
+                      Get started
                     </h2>
-                    <p className="text-bali-gray font-size-7 mb-0">
-                      No credit card required
+                    <p className="text-bali-gray font-size-5 mb-0">
+                      Cancel within 1500 words requested for a full refund, no questions asked.
                     </p>
                   </div>
                   <form
                     action="/"
-                    data-aos="fade-up"
-                    data-aos-duration={800}
-                    data-aos-delay={500}
+
                   >
                     {/* Email */}
                     <div className="form-group mb-6 position-relative">
                       <input
                         type="email"
                         name="email"
-                        className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-18 font-size-5"
-                        placeholder="Email Address"
+                        className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5"
+                        placeholder="Email address"
                         id="email"
                       />
-                      <label
-                        className="absolute-center-left font-size-7 mt-1 ml-9"
-                        htmlFor="email"
-                      >
-                        <i className="icon icon-email-84 mb-0 font-weight-bold" />
-                      </label>
                     </div>
                     {/* Company Name */}
                     <div className="form-group mb-6 position-relative">
                       <input
                         type="text"
                         name="address"
-                        className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-18 font-size-5"
-                        placeholder="Company name"
+                        className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5"
+                        placeholder="Your name"
                         id="company"
                       />
-                      <label
-                        className="absolute-center-left font-size-7 mt-1 ml-9"
-                        htmlFor="company"
-                      >
-                        <i className="icon icon-home-minimal mb-0 font-weight-bold" />
-                      </label>
                     </div>
                     {/* Password */}
-                    <div className="form-group position-relative mb-4">
-                      <input
-                        type="password"
-                        name="password"
-                        className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-18 font-size-5"
-                        placeholder="Password"
-                        id="password"
-                      />
-                      <label
-                        className="absolute-center-left font-size-7 mt-1 ml-9"
-                        htmlFor="email"
-                      >
-                        <i className="icon icon-lock mb-0 font-weight-bold" />
-                      </label>
-                    </div>
-                    <div className="form-group mt-8 mb-7">
+
+                    <div className="form-group my-8">
                       <label
                         htmlFor="terms-check"
                         className="check-input-control d-flex align-items-center"
@@ -97,30 +68,29 @@ const SignUp = () => {
                         <span className="checkbox mr-5" />
                         <span className="mb-0 font-size-5 text-bali-gray">
                           I agree to the{" "}
-                          <Link to="/signup" className="text-blue-3 ">
+                          <Link to="/terms" className="text-blue-3 ">
                             Terms &amp; Conditions
                           </Link>
                         </span>
                       </label>
                     </div>
                     <div className="button">
-                      <a href="/#" className="btn btn-blue-3  w-100 rounded-4">
+                      <a href="/#" className="btn btn-blue-3 w-100 rounded-4">
                         Sign up
                       </a>
-                      <p
-                        className="text-center font-size-5 mt-8 text-bali-gray"
-                        data-aos="fade-up"
-                        data-aos-duration={1100}
-                        data-aos-delay={500}
-                      >
-                        Already have an account?{" "}
-                        <Link to="/signin" className="text-blue-3 ">
-                          Sign in
-                        </Link>
-                      </p>
+
                     </div>
                   </form>
                 </div>
+              </div>
+              {/* Right Image */}
+              <div className="col-xl-8 col-lg-6 col-md-10 min-height-lg-100vh">
+                <div
+                  className="bg-images min-height-100vh d-none d-lg-block"
+                  css={`
+                    background-image: url(${imgBg});
+                  `}
+                />
               </div>
             </div>
           </div>
@@ -129,4 +99,4 @@ const SignUp = () => {
     </>
   );
 };
-export default SignUp;
+export default SignUpImage;
