@@ -11,7 +11,7 @@ const SignIn = () => {
           headerClassName: "pt-13 pt-lg-11",
           headerLogoClassName: "mx-auto text-center",
         }}
-       
+
       >
         <div className="min-height-100vh d-flex align-items-center pt-15 pb-13 pt-lg-32 pb-lg-27 bg-default-3">
           <div className="container">
@@ -31,12 +31,16 @@ const SignIn = () => {
                       Enter your account details below
                     </p>
                   </div>
-                  <form
-                    action="/"
-                    data-aos="fade-up"
-                    data-aos-duration={800}
-                    data-aos-delay={500}
-                  >
+                <form
+                      name="contact"
+                      method="POST"
+                      data-netlify="true"
+                      data-netlify-honeypot="bot-field"
+                      data-aos="fade-up"
+                      data-aos-duration={1100}
+                      data-aos-once="true"
+                    >
+
                     {/* Email */}
                     <div className="form-group mb-6 position-relative">
                       <input
