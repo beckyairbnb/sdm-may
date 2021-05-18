@@ -36,9 +36,7 @@ const SignIn = () => {
                       method="POST"
                       data-netlify="true"
                       data-netlify-honeypot="bot-field"
-                      data-aos="fade-up"
-                      data-aos-duration={1100}
-                      data-aos-once="true"
+                
                     >
 
                     {/* Email */}
