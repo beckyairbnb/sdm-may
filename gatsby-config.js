@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Strategically Strategically | Content Writing Agency`,
+    title: `Strategically | Content Writing Agency`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
