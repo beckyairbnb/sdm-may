@@ -1,10 +1,14 @@
 import React from "react";
 
 import PageWrapper from "../components/PageWrapper";
+import Helmet from "react-helmet";
 
 const Contact = () => {
   return (
     <>
+    <Helmet>
+     <title>Strategically | Content Writing Agency</title>
+   </Helmet>
       <PageWrapper
         themeConfig={{
           headerClassName: "site-header--menu-right",

@@ -4,10 +4,14 @@ import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/pricing/Hero";
 import Pricing from "../sections/pricing/Pricing";
 import Faq from "../sections/pricing/Faq";
+import Helmet from "react-helmet";
 
 const PricingPage = () => {
   return (
     <>
+    <Helmet>
+     <title>Strategically | Content Writing Agency</title>
+   </Helmet>
       <PageWrapper
         themeConfig={{
           headerClassName: "site-header--menu-right",
