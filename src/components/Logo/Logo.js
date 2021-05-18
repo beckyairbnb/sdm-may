@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import logoB from "../../assets/image/logo.svg";
-import logoW from "../../assets/image/logo.svg";
+import logoB from "../../assets/image/logo.png";
+import logoW from "../../assets/image/logo.png";
 
 const Logo = ({ className = "", ...rest }) => {
   return (
