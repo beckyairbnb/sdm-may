@@ -60,7 +60,7 @@ const Hero = ({ className, ...rest }) => {
                   <div className="seciton-body">
                     <div className="mb-7">
                       <h5 className="font-size-6 font-weight-medium mb-0 line-height-reset text-dark-cloud">
-                        Month One, Article 3
+                        Month 1, Article 3
                       </h5>
                       <p className="font-size-3 text-stone">
                         Deadline 11:15am, Sep 10
