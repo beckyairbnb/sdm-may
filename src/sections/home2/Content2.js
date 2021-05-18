@@ -17,7 +17,7 @@ const Content2 = ({ className, ...rest }) => {
     {
       icon: img2,
       title: "Get content quickly",
-      text: "We process your content requests in days,not weeks.",
+      text: "We process your content requests in days, not weeks.",
     },
     {
       icon: img3,
@@ -58,7 +58,7 @@ const Content2 = ({ className, ...rest }) => {
             {/* Right */}
             <div
               className="col-xl-6 offset-xl-2 col-lg-7 col-md-6 col-xs-8 order-1 order-md-2"
-              
+
             >
               <div className="l2-content-image-group-2 mb-10 mb-md-0 rounded-10">
                 <div className="img-1 position-relative text-right rounded-10">
