@@ -88,7 +88,7 @@ const Counter = ({ className, ...rest }) => {
               <div className="row">
                 <div className="col-12">
                   <h6 className="font-size-6 font-weight-normal text-stone mb-5 mb-lg-9">
-                    Also featured in
+                    Trusted by companies like yours
                   </h6>
                   <div className="row justify-content-xl-between">
                     {/* Single Brand */}
