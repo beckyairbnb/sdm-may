@@ -66,7 +66,7 @@ const Progress = ({ className, ...rest }) => {
                     <img src={imgE} alt="" />
                   </div>
                   <div className="">
-                    <h3 className="font-size-8 mb-6">Content creation</h3>
+                    <h3 className="font-size-8 mb-6">We write your content</h3>
                     <p className="font-size-5 line-height-28 mb-0">
                       Your articles are prepared by a UK writer, checked by a UK editor and passed through a plagiarism checker.
                     </p>
@@ -76,13 +76,13 @@ const Progress = ({ className, ...rest }) => {
                 {/* <!-- Single Progress --> */}
                 <div
                   className="single-widgets pr-md-18 pr-lg-0 pl-lg-10 pl-xl-22 mb-10 mb-lg-0 text-center text-md-left"
-                  
+
                 >
                   <div className="square-97 bg-dodger-blue-2 rounded-10 mb-10 shadow-bg-dodger-blue-2 mx-auto mx-md-0">
                     <img src={imgR} alt="" />
                   </div>
                   <div className="">
-                    <h3 className="font-size-8 mb-6">Receive articles</h3>
+                    <h3 className="font-size-8 mb-6">Content delivered on time</h3>
                     <p className="font-size-5 line-height-28 mb-0">
                       We email you the completed articles formatted ready to install in your blog.
                     </p>
