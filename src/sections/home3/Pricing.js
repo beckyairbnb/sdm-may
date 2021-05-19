@@ -9,22 +9,23 @@ const Pricing = ({ className, ...rest }) => {
   const PricingData = [
     {
       title: "Starter",
-      list: ["10 GB Storage", "15 Accounts", "1,000 Connections"],
-      price: plan === "monthly" ? "19" : "288",
+      list: ["4000 words per month", "UK or US writer", "UK or US editor", "Account manager", "Grammarly check", "Plagiarism check", " Formatted ready to publish", "Royalty free images"],
+      price: plan === "monthly" ? "£399" : "$569",
     },
     {
-      title: "Standard",
-      list: ["100 GB Storage", "50 Accounts", "5,000 Connections"],
-      price: plan === "monthly" ? "39" : "468",
+      title: "Growth",
+      list: ["8000 words per month", "Everything in Starter"],
+      price: plan === "monthly" ? "£749" : "$1049",
     },
     {
-      title: "Pro",
+      title: "Strategy",
       list: [
-        "Unlimited  Storage",
-        "Unlimited  Accounts",
-        "Unlimited  Connections",
+        "12,000 words per month",
+        "Everything in Growth",
+        "AI-powered SEO optimisation",
+        "Monthly content strategy"
       ],
-      price: plan === "monthly" ? "59" : "708",
+      price: plan === "monthly" ? "£1299" : "$1849",
     },
   ];
 
@@ -41,7 +42,7 @@ const Pricing = ({ className, ...rest }) => {
                 data-aos-delay={500}
               >
                 <h2 className="font-size-10 pr-md-10 pr-xl-0 mb-0">
-                  Choose the right plan for your finity
+                  Choose the right plan for you
                 </h2>
               </div>
             </div>
@@ -57,14 +58,14 @@ const Pricing = ({ className, ...rest }) => {
                       "yearly" && "active"}`}
                     onClick={() => setPlan("yearly")}
                   >
-                    Yearly
+                    $USD
                   </button>
                   <button
                     className={`text-break btn-reset focus-reset ${plan ===
                       "monthly" && "active"}`}
                     onClick={() => setPlan("monthly")}
                   >
-                    Monthly
+                    £GBP
                   </button>
                 </div>
               </div>
@@ -107,10 +108,10 @@ const Pricing = ({ className, ...rest }) => {
                       <div className="col-lg-3">
                         <div className="pr-lg-15 pr-xl-10 mb-5 mb-lg-0">
                           <h2 className="mb-0 font-size-11 font-weight-medium">
-                            ${price}
+                            {price}
                           </h2>
                           <p className="mb-0 font-size-5 pr-xl-22">
-                            ${price} per month, billed {plan}
+                            {price} per month, billed monthly
                           </p>
                         </div>
                       </div>
@@ -120,7 +121,7 @@ const Pricing = ({ className, ...rest }) => {
                             className="btn btn-outline-gray-1 btn-2 border-width-2 rounded-5 gr-hover-bg-blue-3 heading-default-color"
                             href="/#"
                           >
-                            Start 14 Days Free Trial
+                            Sign Up
                           </a>
                         </div>
                       </div>

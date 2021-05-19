@@ -18,7 +18,7 @@
 }
 @mixin light-theme-mode{
   --bg:                 #fff;
-  --bg-1:               #e9f7fe;
+  --bg-1:               #fff;
   --bg-2:               #f5fafd;
   --bg-3:               #f7f8fa;
   --bg-4:               #f8fafe;
@@ -35,7 +35,7 @@
 }
 
 
-// #FCFDFE, #F4F7FA, #F8F8F8, #ECF2F7, #FDFDFF, 
+// #FCFDFE, #F4F7FA, #F8F8F8, #ECF2F7, #FDFDFF,
 
 
 @mixin dark-mode {
