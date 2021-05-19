@@ -125,26 +125,34 @@ const Pricing = () => {
 
                   >
 
-                  <p className="text-dodger-blue-1 font-size-7 mb-9">DATA-DRIVEN</p>
-                  <h2 className="font-size-9 text-dark-cloud mb-1"> £1299<span className="font-size-5">/month</span></h2>
-                  <span className="font-size-5 mb-2">12,000 words per month based on a 6 month term</span>
+                  <p className="text-dodger-blue-1 font-size-7 mb-9">STRATEGY</p>
+                  <h2 className="font-size-9 text-dark-cloud mb-1"> £2499<span className="font-size-5">/one time</span></h2>
+                  <span className="font-size-5 mb-2">Expert SEO Strategy</span>
 
                   <ul className="list-unstyled font-size-5 text-dark-cloud">
                   <li className="mb-6">
                     <i className="fa fa-check mr-4 text-dodger-blue-1" />
-                    Everything in Growth
+                    Keyword research
                   </li>
                     <li className="mb-6">
                       <i className="fa fa-check mr-4 text-dodger-blue-1" />{" "}
-                      Keyword research
+                      Content strategy
                     </li>
                     <li className="mb-6">
                       <i className="fa fa-check mr-4 text-dodger-blue-1" />{" "}
-                      Monthly title recommendations
+                      Title recommendations
                     </li>
                     <li className="mb-6">
                       <i className="fa fa-check mr-4 text-dodger-blue-1" />{" "}
-                      AI-powered SEO optimisation
+                      URL structure
+                    </li>
+                    <li className="mb-6">
+                      <i className="fa fa-check mr-4 text-dodger-blue-1" />{" "}
+                      Content calendar
+                    </li>
+                    <li className="mb-6">
+                      <i className="fa fa-check mr-4 text-dodger-blue-1" />{" "}
+                      eCommerce collection research
                     </li>
                     </ul>
 
