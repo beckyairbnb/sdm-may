@@ -32,7 +32,6 @@ exports.components = {
   "component---src-pages-reset-pass-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/reset-pass.js"))),
   "component---src-pages-retail-content-writing-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/retail-content-writing.js"))),
   "component---src-pages-saas-content-writing-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/saas-content-writing.js"))),
-  "component---src-pages-saas-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/saas.js"))),
   "component---src-pages-samples-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/samples.js"))),
   "component---src-pages-service-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/service.js"))),
   "component---src-pages-signin-image-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/signin-image.js"))),

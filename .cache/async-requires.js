@@ -29,7 +29,6 @@ exports.components = {
   "component---src-pages-reset-pass-js": () => import("./../../../src/pages/reset-pass.js" /* webpackChunkName: "component---src-pages-reset-pass-js" */),
   "component---src-pages-retail-content-writing-js": () => import("./../../../src/pages/retail-content-writing.js" /* webpackChunkName: "component---src-pages-retail-content-writing-js" */),
   "component---src-pages-saas-content-writing-js": () => import("./../../../src/pages/saas-content-writing.js" /* webpackChunkName: "component---src-pages-saas-content-writing-js" */),
-  "component---src-pages-saas-js": () => import("./../../../src/pages/saas.js" /* webpackChunkName: "component---src-pages-saas-js" */),
   "component---src-pages-samples-js": () => import("./../../../src/pages/samples.js" /* webpackChunkName: "component---src-pages-samples-js" */),
   "component---src-pages-service-js": () => import("./../../../src/pages/service.js" /* webpackChunkName: "component---src-pages-service-js" */),
   "component---src-pages-signin-image-js": () => import("./../../../src/pages/signin-image.js" /* webpackChunkName: "component---src-pages-signin-image-js" */),
