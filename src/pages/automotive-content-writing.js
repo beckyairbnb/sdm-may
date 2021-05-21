@@ -1,7 +1,7 @@
 import React from "react";
 
 import PageWrapper from "../components/PageWrapper";
-import Hero from "../sections/automotive/Hero";
+import Hero from "../sections/home1/Hero";
 import Counter from "../sections/automotive/Counter";
 import Content2 from "../sections/automotive/Content2";
 import Content3 from "../sections/automotive/Content3";

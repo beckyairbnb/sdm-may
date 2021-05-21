@@ -52,6 +52,7 @@ const Header = () => {
             <div className="collapse navbar-collapse">
               <div className="navbar-nav-wrapper">
                 <Menu />
+                
               </div>
             </div>
 

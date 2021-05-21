@@ -12,6 +12,31 @@ const Blog = ({ className, ...rest }) => {
       <div className={className} {...rest}>
         <div className="container">
           {/* <!-- Section Title --> */}
+
+
+
+
+              {/* Section Padding */}
+              <div className="row justify-content-center">
+                <div className="col-xl-7 col-lg-8 col-md-11">
+                  <div
+                    className="text-center mb-10 mb-lg-23"
+
+                  >
+        
+                  </div>
+                </div>
+              </div>
+              {/* End Section Padding */}
+
+
+
+
+
+
+
+
+
           <div className="mb-10 mb-lg-17">
             <div className="row align-items-center justify-content-center justify-content-lg-start">
               <div className="col-xl-5 col-lg-6 col-xs-10">
