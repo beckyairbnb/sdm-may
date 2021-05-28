@@ -116,9 +116,9 @@ const Contact = () => {
                     <div className="form-group mb-7 position-relative">
                       <input
                         type="text"
-                        name="subject"
+                        name="stories"
                         className="form-control form-control-lg bg-white rounded-5 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 border-default-color"
-                        placeholder="Subject"
+                        placeholder="Which package are you interested in?"
                         id="subject"
                         required
                       />
