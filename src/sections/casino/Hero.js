@@ -41,33 +41,15 @@ const Hero = () => {
                     className="pr-lg-17 pr-xl-25"
 
                   >
-                    <form action="/">
-                      <div className="form-group mb-7">
-                        <input
-                          type="email"
-                          name="email"
-                          className="form-control form-control-lg bg-white rounded-4 text-bali-gray pl-8 font-size-5"
-                          placeholder="Email Address"
-                          id="email"
-                        />
-                      </div>
-                      <div className="max-w-435">
-                        <a
-                          href="/contact"
-                          className="btn btn-blue-3 w-100 h-55 rounded-4"
-                        >
-                          Get Started
-                        </a>
-                        <p
-                          className="font-size-5 mt-5 text-gray-chateau"
-                          data-aos="fade-up"
-                          data-aos-duration={1200}
-                          data-aos-once="true"
-                        >
-                          We’ll only send our service related emails
-                        </p>
-                      </div>
-                    </form>
+                  <div className="max-w-435">
+                    <a
+                      href="/pricing"
+                      className="btn btn-blue-3 w-100 h-55 rounded-4"
+                    >
+                    View Pricing
+                    </a>
+
+                  </div>
                   </div>
                 </div>
               </div>
