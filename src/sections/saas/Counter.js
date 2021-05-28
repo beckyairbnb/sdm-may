@@ -79,7 +79,7 @@ const Counter = ({ className, ...rest }) => {
 
                   >
                     <h2 className="font-size-9 pr-xl-22 mb-7 mb-lg-11 pr-lg-0">
-                      Trusted by 250+ happy website owners and businesses
+                      Trusted by 100+ happy B2B and SaaS customers
                       since 2017.
                     </h2>
                   </div>
@@ -88,7 +88,7 @@ const Counter = ({ className, ...rest }) => {
               <div className="row">
                 <div className="col-12">
                   <h6 className="font-size-6 font-weight-normal text-stone mb-5 mb-lg-9">
-                    Trusted by companies like yours
+                    Trusted by SaaS companies like yours
                   </h6>
                   <div className="row justify-content-xl-between">
                     {/* Single Brand */}

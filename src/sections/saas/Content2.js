@@ -19,15 +19,19 @@ const Content2 = ({ className, ...rest }) => {
               className="col-xl-4 col-lg-5 col-md-6 col-xs-8 order-2 order-md-1"
 
             >
-              <h2 className="font-size-11">Grow your business with content.</h2>
+              <h2 className="font-size-11">Scale your SaaS with content</h2>
 
-              <p>Do you want to increase sales, grow your brand awareness, or become the expert in your industry? </p>
+              <p>Do you need long-form, SEO content for your blog to help you rank in the search engines? </p>
+              <p>Do you want to increase sales, grow your brand awareness, or become the expert in your industry?</p>
 
-            <p>Whatever your vision, we create top quality content that matches your business goals and speaks to your target audience. </p>
+              <p>We’ve been hired by fast-growing SaaS companies like like ABTasty, AdScale, and Gmelius. </p>
 
-            <p>At Strategically, we create content that’s engineered to resonate with your target audience. Our content team manages the entire production process, providing ongoing strategic guidance while sourcing top talent and overseeing delivery.</p>
+              <p>Results we’ve produced for clients include:</p>
+              <ul>
+              <li><strong>Featured snippet</strong> in Google search results for a highly competitive long-tail keyword</li>
+              <li><strong>#1 spot in Google</strong> with a blog post that ranks above Backlinko in a competitive niche</li>
+              </ul>
 
-      
             </div>
             {/* Left End */}
             {/* Right */}

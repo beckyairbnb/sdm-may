@@ -17,7 +17,7 @@ const Content3 = ({ className, ...rest }) => {
 
               >
                 <h2 className="font-size-11">
-                We hire writers that are industry experts.
+                Reduce your cost per conversion
                 </h2>
               </div>
             </div>
@@ -47,14 +47,21 @@ const Content3 = ({ className, ...rest }) => {
 
             >
               <div className="mr-lg-10 mr-xl-25">
+              <p>Paid advertising may bring in consistent traffic, but as soon as you’ve bought a customer, you need to spend more to get the next one. And the cost per click keeps on increasing reducing your profits. </p>
 
-              <p>Effective content marketing needs to speak to your audience, convey your brand voice, and connect with your customers. </p>
+              <p>Many low price subscription SaaS businesses can’t afford to burn money on ads. With free or low price packages, it’s just not viable or scalable. </p>
 
-          <p>At Strategically, we hire you the best talent to fit your business needs, goals, as well as your customer pain points. </p>
-
-          <p>As well hiring the top 1% of writers, all content goes through a strict editing process before it reaches you to ensure it meets our strict quality standards. </p>
+              <p>Content marketing brings in qualified traffic for the long term. By building a web of content targeting your ideal customer, you can grow your brand awareness, increase your trust, and make more sales. </p>  </div>
+              <div className="">
+                <p className="font-size-3 line-height-20 mb-7 mb-5 mr-xs-17 mr-md-11 mr-lg-17">
+                  “It’s been great working with Strategically. They quickly got an understanding of our industry: our solution, users, and goals. And produced great content, always on time.”
+                </p>
+                <h6 className="font-size-3 font-weight-medium">
+                   Ermias Giovanni, Gmelius
+                </h6>
               </div>
             </div>
+
             {/* Left End */}
           </div>
         </div>

@@ -14,23 +14,27 @@ const Content4 = ({ className, ...rest }) => {
             >
 
             <h2 className="font-size-11">
-              We quickly scale your content.
+          SEO content for your SaaS
               </h2>
-              <p>We are designed to be an extension of your team. Our end-to-end service integrates seamlessly with your team, whether in-house, remote or freelance. </p>
-
-    <p>Our proven system can help you to scale your content creation and editorial process faster and more effectively. </p>
-
-    <p>Our content is provided formatted with images ready to install into your existing website. Whether you've requested short, snackable slideshows or in-depth content, we integrate it into your workflow and make it as simple as "copy and paste”.</p>
-            </div>
+              <p>Our SaaS content writers have proven results delivering SEO content. But it’s not just about increasing traffic and ranking, we focus on leads, sales, and conversions.  </p>
+              <p>
+              <ul>
+              <li>Nurture existing leads</li>
+              <li>Build brand authority</li>
+              <li>Increase user loyalty and retention</li>
+              <li>Drive targeted organic traffic </li>
+              <li>Beat out competitors for critical search terms </li>
+              <li>Improve domain authority over time</li>
+              </ul>
+              </p>
+              
+      </div>
           </div>
           {/* Right Image */}
           <div className="col-xl-5 offset-xl-1 col-lg-5 col-md-8 col-xs-11 order-1 order-lg-2">
             <div
               className="l4-content-img-2 ml-lg-10 ml-xl-7 rounded-10 text-center"
-              data-aos="fade-left"
-              data-aos-duration={600}
-              data-aos-delay={500}
-              data-aos-once="true"
+
             >
               <img
                 className="w-75 w-md-100"
