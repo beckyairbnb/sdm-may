@@ -1,95 +1,91 @@
 import React from "react";
-import { Link } from "gatsby";
-import Modal from "../../components/ModalVideo/Modal";
+import PageWrapper from "../../components/PageWrapper";
+import imageRight from "../../assets/image/inner-page/jpg/comming-soon-img.png";
 
-import imgSBR from "../../assets/image/home-2/png/round-shape-blue.png";
-import imgBP from "../../assets/image/home-2/png/dot-pattern-blue.png";
-import imgH from "../../assets/image/home-2/png/hero-2-img-1.png";
-import imgH2 from "../../assets/image/home-2/png/hero-2-img-2.png";
-
-const Hero = ({ className, ...rest }) => {
-
-
+const Hero = () => {
   return (
     <>
-      <div className={className} {...rest}>
-        <div className="container">
-          <div className="row justify-content-center">
-            {/* <!-- Hero Content --> */}
-            <div
-              className="col-xl-5 col-lg-6 col-md-8 col-xs-10 order-2 order-lg-1"
+    <PageWrapper
+      themeConfig={{
+        headerClassName: "site-header--menu-right",
+        headerButton: (
+          <>
+          <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/contact"}>
+            Sign Up
+          </a>
+          </>
+        ),
+        footerStyle: "style4",
+      }}
+    >
+        <div className="min-height-100vh d-flex align-items-center pt-24 pt-md-27 pt-lg-25">
+          <div className="container">
+            <div className="row no-gutters align-items-center justify-content-center">
+              <div className="col-lg-6 col-md-9 col-xs-11 order-2 order-lg-1">
+                <div className="pt-9 pt-sm-13 pb-10 pb-md-15 dark-mode-texts pr-md-11 pr-lg-0">
+                  <div className="mb-11">
+                    <h2
+                      className="font-size-11 text-dark-cloud mb-8 pr-sm-10 pr-md-14 pr-lg-0 pr-xl-10"
 
-            >
-              <div className="pr-lg-10 pr-xl-0 pt-0 pt-lg-0 pb-13 pb-lg-0">
-                <h1 className="font-size-12 mb-8">
-                Hire quality casino content writers
-                </h1>
-                <p className="font-size-7 mb-0 heading-default-color">
-                  Get blog posts, listicles, email copy{" "}
-                  <br className="d-none d-md-block" /> & more from UK or US writers.
-                </p>
-                <div className=" pt-5 pt-lg-10">
-                  <Link to={"/pricing"} className="btn btn-dodger-blue-2 rounded-5">
-                    View Pricing
-                  </Link>
+                    >
+                      Expert gambling and casino content writers
+                    </h2>
+                    <p
+                      className="font-size-7 text-dark-cloud mb-0 pr-xl-15"
 
-                </div>
-              </div>
-            </div>
-            {/* <!-- End Hero Content --> */}
-            {/* <!-- l2-hero-image-group --> */}
-            <div
-              className="col-xl-7 col-lg-6 col-md-7 order-1 order-lg-2"
-
-            >
-              <div className="l2-hero-image-group mt-5 mt-lg-0">
-                <div className="img-1">
-                  <img src={imgSBR} alt="" />
-                </div>
-                <div className="img-2">
-                  <img src={imgBP} alt="" />
-                </div>
-                <div className="img-3">
-                  <img src={imgH} alt="" />
-                </div>
-                <div className="img-4">
-                  <img src={imgH2} alt="" />
-                </div>
-                {/* <!-- Image Group Content --> */}
-                <div className="img-group-content bg-white absolute-center shadow-4 max-w-193">
-                  <div className="seciton-body">
-                    <div className="mb-7">
-                      <h5 className="font-size-6 font-weight-medium mb-0 line-height-reset text-dark-cloud">
-                        Month 1, Article 3
-                      </h5>
-                      <p className="font-size-3 text-stone">
-                        Deadline 11:15am, Sep 10
-                      </p>
-                    </div>
-                    <h6 className="font-size-3 text-stone">Title:</h6>
-                    <p className="font-size-3 text-dark-cloud">
-                      How to get more customers for your ecommerce business
+                    >
+                      Get game reviews, blog posts, sports reviews and more by our expert casino content writers.
                     </p>
                   </div>
-                  <div className="d-flex align-items-center w-100">
-                    <Link to={"#"} className="btn-buttercup w-50 text-white">
-                      <i className="fa fa-calendar font-size-3 mr-1"></i>
-                      Schedule
-                    </Link>
-                    <Link to={"#"} className="btn-dark-green text-white w-50">
-                      <i className="fa fa-check font-size-3 mr-1"></i> Approve
-                    </Link>
+                  <div
+                    className="pr-lg-17 pr-xl-25"
+
+                  >
+                    <form action="/">
+                      <div className="form-group mb-7">
+                        <input
+                          type="email"
+                          name="email"
+                          className="form-control form-control-lg bg-white rounded-4 text-bali-gray pl-8 font-size-5"
+                          placeholder="Email Address"
+                          id="email"
+                        />
+                      </div>
+                      <div className="max-w-435">
+                        <a
+                          href="#"
+                          className="btn btn-blue-3 w-100 h-55 rounded-4"
+                        >
+                          Get Started
+                        </a>
+                        <p
+                          className="font-size-5 mt-5 text-gray-chateau"
+                          data-aos="fade-up"
+                          data-aos-duration={1200}
+                          data-aos-once="true"
+                        >
+                          We’ll only send our service related emails
+                        </p>
+                      </div>
+                    </form>
                   </div>
                 </div>
-                {/* <!-- End Image Group Content --> */}
+              </div>
+              <div className="col-lg-6 col-md-9 col-xs-11 order-1 order-lg-2">
+                <div
+                  className="text-right"
+                  data-aos="fade-left"
+                  data-aos-duration={500}
+                  data-aos-once="true"
+                >
+                  <img className="w-100 w-xl-auto" src={imageRight} alt="" />
+                </div>
               </div>
             </div>
-            {/* <!-- End l2-hero-image-group --> */}
           </div>
         </div>
-      </div>
+</PageWrapper>
     </>
   );
 };
-
 export default Hero;

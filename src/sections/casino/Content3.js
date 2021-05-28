@@ -48,12 +48,16 @@ const Content3 = ({ className, ...rest }) => {
             >
               <div className="mr-lg-10 mr-xl-25">
 
-              <p>Effective content marketing needs to speak to your audience, convey your brand voice, and connect with your customers. </p>
+              <p>There are so many terms and abbreviations that are specific to the gambling industry. If your writer does not have experience in the industry, it’s unlikely they will be able to “speak” to your audience. </p>
 
-          <p>At Strategically, we hire you the best talent to fit your business needs, goals, as well as your customer pain points. </p>
+          <p>The correct use of industry-language (not jargon)  is a primary factor in creating compelling pieces of copy for your websites.</p>
 
-          <p>As well hiring the top 1% of writers, all content goes through a strict editing process before it reaches you to ensure it meets our strict quality standards. </p>
-              </div>
+          <p>Effective content marketing needs to speak to your audience, convey your brand voice, and connect with your customers.</p>
+
+          <p>At Strategically, we hire you the best talent to fit your business needs, goals, as well as your customer pain points.</p>
+
+          <p>As well as hiring the top 1% of writers, all content goes through a strict editing process before it reaches you to ensure it meets our strict quality standards.</p>
+  </div>
             </div>
             {/* Left End */}
           </div>

@@ -19,15 +19,14 @@ const Content2 = ({ className, ...rest }) => {
               className="col-xl-4 col-lg-5 col-md-6 col-xs-8 order-2 order-md-1"
 
             >
-              <h2 className="font-size-11">Grow your business with content.</h2>
+              <h2 className="font-size-11">Increase affiliate revenue.</h2>
+<p>The online gambling niche is crowded. There are lots of affiliate websites all working hard to be found online, as well as large operators with big budgets pumping out high-quality content. </p>
 
-              <p>Do you want to increase sales, grow your brand awareness, or become the expert in your industry? </p>
+<p>Create a solid content strategy and deliver regular good quality content including blogs, tips, reviews, and more to make sure your company stands out from the crowd. </p>
 
-            <p>Whatever your vision, we create top quality content that matches your business goals and speaks to your target audience. </p>
+<p>As an affiliate site, you won’t get paid unless you’re found and you persuade your audience to convert. By creating highly valuable information for your customers and readers, you can generate more revenue for your affiliate site.</p>
 
-            <p>At Strategically, we create content that’s engineered to resonate with your target audience. Our content team manages the entire production process, providing ongoing strategic guidance while sourcing top talent and overseeing delivery.</p>
 
-      
             </div>
             {/* Left End */}
             {/* Right */}

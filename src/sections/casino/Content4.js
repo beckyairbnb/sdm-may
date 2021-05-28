@@ -14,14 +14,15 @@ const Content4 = ({ className, ...rest }) => {
             >
 
             <h2 className="font-size-11">
-              We quickly scale your content.
+              Eliminate risks of paid adverts.
               </h2>
-              <p>We are designed to be an extension of your team. Our end-to-end service integrates seamlessly with your team, whether in-house, remote or freelance. </p>
+              <p>Unlike many other business-types, it’s much harder for online casinos to use paid advertising. Yes, it is possible, but many of the larger platforms like Facebook require you to get pre-approved before advertising with them. </p>
 
-    <p>Our proven system can help you to scale your content creation and editorial process faster and more effectively. </p>
+              <p>With good quality content, you can eliminate the headache of paid advertising for your online casino. You can create valuable content your audience will read, share, and engage with. </p>
 
-    <p>Our content is provided formatted with images ready to install into your existing website. Whether you've requested short, snackable slideshows or in-depth content, we integrate it into your workflow and make it as simple as "copy and paste”.</p>
-            </div>
+              <p>By creating content that answers a customer's pains or queries throughout their buying journey, you can increase brand awareness, gain trust, and become the authority in your niche.  </p>
+
+                  </div>
           </div>
           {/* Right Image */}
           <div className="col-xl-5 offset-xl-1 col-lg-5 col-md-8 col-xs-11 order-1 order-lg-2">
