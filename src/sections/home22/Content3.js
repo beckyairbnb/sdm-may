@@ -18,8 +18,8 @@ const Content3 = ({ className, ...rest }) => {
                 data-aos-delay={500}
                 data-aos-once="true"
               >
-                <h2 className="font-size-11 mb-10 mb-lg-20">
-                  Get a Content Plan. Free of Charge.
+                <h2 className="font-size-10 mb-10 mb-lg-20">
+                  Get a free content strategy consultation.
                 </h2>
               </div>
             </div>
