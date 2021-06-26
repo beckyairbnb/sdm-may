@@ -10,6 +10,8 @@ import Content3 from "../sections/home22/Content3";
 import Testimonial from "../sections/home2/Testimonial";
 import CTA from "../sections/home2/CTA";
 import Helmet from "react-helmet";
+import Pricing from "../sections/home22/Pricingstrategy";
+
 
 const Home22 = () => {
   return (
@@ -34,8 +36,8 @@ const Home22 = () => {
         <Counter className="pt-lg-5 pb-8 pb-lg-27" />
         <Content2 className="pb-0 pb-lg-31" />
         <Content3 className="pb-12 pb-lg-25" />
+        <Pricing />
         <Testimonial className="pt-lg-19 pb-12 pb-lg-17" />
-
         <CTA className="bg-images" />
       </PageWrapper>
     </>

@@ -11,27 +11,27 @@ const Content2 = ({ className, ...rest }) => {
   const contentWidgetData = [
     {
       icon: img1,
-      title: "Site Traffic Analysis",
+      title: "01. Site Traffic Analysis",
       text: "Who is your strongest audience and how are they learning about you? Our first order of business: finding solid, actionable answers.",
     },
     {
       icon: img2,
-      title: "Competitive Review",
+      title: "02. Competitive Review",
       text: "Where and how are you winning? What keywords are you owning and how can we add more feathers to that cap? Let’s talk about what your competitors’ site traffic, content, and website experience looks like so we can identify gaps and step right in.",
     },
     {
       icon: img3,
-      title: "Keyword Gap Analysis",
+      title: "03. Keyword Gap Analysis",
       text: "We’ll look at tens of thousands of keywords to see how our audience is searching, who’s currently doing the best job at capturing their attention, and how we can show up in the right place at the right time.",
     },
     {
       icon: img1,
-      title: "SEO Content Strategy",
+      title: "04. SEO Content Strategy",
       text: "Using the site traffic analysis, competitive review, and keyword gap analysis, we create a strategy for building content that’s always helpful, engaging, informative, and gives you a timeline and projections that put the future in focus.",
     },
     {
       icon: img1,
-      title: "Execution",
+      title: "05. Execution",
       text: "Even the best plans won’t get done if you don’t have the resources to execute them. With limited time, money, and people, you can trust Tuff to join as an embedded member to your team to create content that works.",
     },
   ];
