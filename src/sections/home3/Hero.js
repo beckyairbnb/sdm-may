@@ -16,19 +16,17 @@ const Hero = ({className,...rest}) => {
                 data-aos-delay={500}
               >
                 <h1 className="font-size-11 mb-7">
-                  More than your regular email inbox
-                </h1>
+              A content strategy agency that delivers</h1>
+
+
                 <p className="font-size-7 px-lg-5 mb-0">
-                  We’ve helped over 25,000 individuals and companies to grow
-                  their business successfully.
-                </p>
+                We provide a clear, data backed strategy for your website's content that attracts, engages, and builds trust with your target customers.  </p>
+              
                 <div className="btn-group d-inline-block mt-10">
                   <a className="btn btn-blue-3 btn-2 rounded-5" href={"/"}>
-                    Start 14 Days Free Trial
+                    Schedule a call
                   </a>
-                  <p className="d-block mt-6 font-size-3 mb-0 text-bali-gray letter-spacing-reset">
-                    No credit card required
-                  </p>
+
                 </div>
               </div>
             </div>

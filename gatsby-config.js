@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: `Strategically | Content Writing Agency`,
@@ -28,6 +30,15 @@ module.exports = {
     enableImprovedAccessibility: false // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
   },
   },
+
+  {
+    resolve: `gatsby-transformer-remark`,
+         plugins: {
+           resolve: `gatsby-remark-vscode`,
+},
+},
+
+
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {

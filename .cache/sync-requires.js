@@ -21,6 +21,7 @@ exports.components = {
   "component---src-pages-faq-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/faq.js"))),
   "component---src-pages-financial-content-writing-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/financial-content-writing.js"))),
   "component---src-pages-healthcare-content-writing-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/healthcare-content-writing.js"))),
+  "component---src-pages-home-22-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/home-22.js"))),
   "component---src-pages-home-3-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/home-3.js"))),
   "component---src-pages-home-5-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/home-5.js"))),
   "component---src-pages-home-6-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/home-6.js"))),
@@ -40,6 +41,7 @@ exports.components = {
   "component---src-pages-signup-no-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/signup-no.js"))),
   "component---src-pages-technology-content-writing-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/technology-content-writing.js"))),
   "component---src-pages-terms-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/terms.js"))),
-  "component---src-pages-travel-content-writing-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/travel-content-writing.js")))
+  "component---src-pages-travel-content-writing-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/travel-content-writing.js"))),
+  "component---src-pages-website-copywriting-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/website-copywriting.js")))
 }
 

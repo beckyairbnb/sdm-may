@@ -10,10 +10,10 @@ import icon5 from "../../assets/image/svg/node.svg";
 const Feature = ({ className, ...rest }) => {
   const elSlider = useRef();
   const sliderSettings = {
-    autoplay: true,
+    autoplay: false,
     centerMode: true,
     centerPadding: "17%",
-    slidesToShow: 3,
+    slidesToShow: 2,
     arrows: false,
     touchMove: true,
     infinite: true,
@@ -59,7 +59,7 @@ const Feature = ({ className, ...rest }) => {
   const featureCards = [
     {
       image: icon,
-      title: "Find Leads",
+      title: "Keyword research",
       text:
         "We’ve helped over 2,500 job seekers to get into the most popular tech teams.",
     },

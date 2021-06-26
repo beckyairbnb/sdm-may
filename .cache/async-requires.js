@@ -18,6 +18,7 @@ exports.components = {
   "component---src-pages-faq-js": () => import("./../../../src/pages/faq.js" /* webpackChunkName: "component---src-pages-faq-js" */),
   "component---src-pages-financial-content-writing-js": () => import("./../../../src/pages/financial-content-writing.js" /* webpackChunkName: "component---src-pages-financial-content-writing-js" */),
   "component---src-pages-healthcare-content-writing-js": () => import("./../../../src/pages/healthcare-content-writing.js" /* webpackChunkName: "component---src-pages-healthcare-content-writing-js" */),
+  "component---src-pages-home-22-js": () => import("./../../../src/pages/home-22.js" /* webpackChunkName: "component---src-pages-home-22-js" */),
   "component---src-pages-home-3-js": () => import("./../../../src/pages/home-3.js" /* webpackChunkName: "component---src-pages-home-3-js" */),
   "component---src-pages-home-5-js": () => import("./../../../src/pages/home-5.js" /* webpackChunkName: "component---src-pages-home-5-js" */),
   "component---src-pages-home-6-js": () => import("./../../../src/pages/home-6.js" /* webpackChunkName: "component---src-pages-home-6-js" */),
@@ -37,6 +38,7 @@ exports.components = {
   "component---src-pages-signup-no-js": () => import("./../../../src/pages/signup-no.js" /* webpackChunkName: "component---src-pages-signup-no-js" */),
   "component---src-pages-technology-content-writing-js": () => import("./../../../src/pages/technology-content-writing.js" /* webpackChunkName: "component---src-pages-technology-content-writing-js" */),
   "component---src-pages-terms-js": () => import("./../../../src/pages/terms.js" /* webpackChunkName: "component---src-pages-terms-js" */),
-  "component---src-pages-travel-content-writing-js": () => import("./../../../src/pages/travel-content-writing.js" /* webpackChunkName: "component---src-pages-travel-content-writing-js" */)
+  "component---src-pages-travel-content-writing-js": () => import("./../../../src/pages/travel-content-writing.js" /* webpackChunkName: "component---src-pages-travel-content-writing-js" */),
+  "component---src-pages-website-copywriting-js": () => import("./../../../src/pages/website-copywriting.js" /* webpackChunkName: "component---src-pages-website-copywriting-js" */)
 }
 

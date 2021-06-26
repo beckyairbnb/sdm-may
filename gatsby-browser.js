@@ -1,6 +1,8 @@
 import React from "react";
 import { GlobalProvider } from "./src/context/GlobalContext";
 import Layout from "./src/components/Layout";
+require('gatsby-remark-vscode/styles.css');
+
 
 export const wrapPageElement = ({ element, props }) => {
   // props provide same data to Layout as Page element will get
