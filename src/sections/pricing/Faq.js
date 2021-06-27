@@ -240,7 +240,7 @@ const Faq = () => {
              Do you offer SEO content strategies?
               </h4>
               <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">
-<p className="font-size-5 pr-md-10 pr-lg-0 mb-0">Yes, we have SEO experts on the team. We offer a 6 month SEO content strategy for a one-time fee of $999. Alternatively, if you sign up for a 6 month content contract, we include the strategy free of charge. </p>
+<p className="font-size-5 pr-md-10 pr-lg-0 mb-0">Yes, we have SEO experts on the team. Our SEO strategies are hefty blueprints for online success. Prices start at $3499. </p>
 
               </p>
             </div>
