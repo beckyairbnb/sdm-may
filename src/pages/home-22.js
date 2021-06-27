@@ -17,7 +17,7 @@ const Home22 = () => {
   return (
     <>
     <Helmet>
-     <title>Strategically | SEO Strategy Agency</title>
+     <title>Strategically | Content Strategy Agency</title>
    </Helmet>
     <PageWrapper
       themeConfig={{

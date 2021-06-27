@@ -15,9 +15,7 @@ const Content5 = ({ className, ...rest }) => {
             <div className="col-xl-6 col-lg-5 col-md-7 col-xs-10">
               <div
                 className="l1-content-image-group-1 mb-10 mb-lg-0"
-                data-aos="fade-right"
-                data-aos-duration={500}
-                data-aos-once="true"
+
               >
                 <img className="w-100" src={imgC} alt="" />
                 <div className="abs-img-1">
@@ -26,10 +24,7 @@ const Content5 = ({ className, ...rest }) => {
                 {/* l1-content-card-1 Image Section */}
                 <div
                   className="l1-content-card-1 bg-white shadow-3"
-                  data-aos="zoom-in-left"
-                  data-aos-duration={900}
-                  data-aos-delay={300}
-                  data-aos-once="true"
+
                 >
                   <div className="abs-card-icon">
                     <span className="bg-gradient-1 circle-73">
@@ -39,14 +34,10 @@ const Content5 = ({ className, ...rest }) => {
                   <div className="abs-content pl-10 pr-10 pt-9">
                     <div className="border-bottom-dotted mb-8">
                       <h5 className="font-size-8 font-weight-medium mb-0 text-dark-cloud">
-                        New Article Alert!
-                        <span role="img" aria-label="party">
-                          🎉
-                        </span>
+                      In-depth keyword research
+
                       </h5>
-                      <p className="font-size-4 mb-7 text-bali-gray">
-                        20 mins ago
-                      </p>
+
                     </div>
                     <div className="media align-items-center mb-7">
                       <div className="mr-5 mt-n4">
@@ -54,7 +45,7 @@ const Content5 = ({ className, ...rest }) => {
                       </div>
                       <div className="company-info">
                         <h6 className="font-size-6 font-weight-normal mb-0 text-dark-cloud lineo">
-                          Article 1, Month 1
+                          Target audience A
                         </h6>
                         <p className="font-size-6 font-weight-bold text-dark-cloud mb-0">
                           Complete!
@@ -73,17 +64,12 @@ const Content5 = ({ className, ...rest }) => {
               >
 
                 <h2 className="font-size-11">
-                  We manage the whole process.
+                  Stage 2: Research
                 </h2>
-                <p>Our content team manages the entire production process, providing ongoing strategic guidance while sourcing top talent and overseeing delivery.</p>
-
-<p>Our team has managed hundreds of projects from large authority websites to niche tech sites. Once you start with Strategically, we set up regular contact points to ensure that you’re happy with our service and the content. </p>
-
-<p>Our content creation is service is fully managed. All of your tasks will be delivered on time and will meet our rigorous quality standard. In the event you’re not completely satisfied, we offer unlimited revisions. </p>
-
-<p>We stay in contact with you throughout the whole process, so you’ll always be kept in the loop.</p>
-
-
+              <p>  There’s still no advice at this stage: it’s just research. I spend as much time as needed building a keyword research document that forms the foundations of the strategy. </p>
+                <p>Next, I check what’s ranking for your target keywords and define your direct search competitors, taking tons of notes and screenshots. This involves using numerous paid tools to reveal key details about the analytics of the web pages.</p>
+                <p>I learn what’s working for them, how are they generating quality links? Which content is actually worth building? How are they structuring their architecture? </p>
+            <p>    By researching how direct search competitors are performing, I can save you a vast amount of wasted time building content that will never rank and focus your efforts on activities that will deliver results.</p>
 
               </div>
             </div>

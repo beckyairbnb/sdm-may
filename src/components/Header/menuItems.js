@@ -1,14 +1,14 @@
 export const menuItems = [
 
   {
-    name: "services",
-    label: "Sectors",
-    items: [
+    name: "content-writing-agency",
+    label: "Content Writing",
 
-      { name: "b2b-content-writing", label: "B2B" },
-      { name: "casino-content-writing", label: "Casino" },
-      { name: "saas-content-writer", label: "SaaS" }
-    ],
+  },
+  {
+    name: "seo-strategy-agency",
+    label: "SEO Strategy",
+
   },
          {
            name: "samples",

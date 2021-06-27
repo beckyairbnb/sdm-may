@@ -126,7 +126,7 @@ const Pricing = () => {
                   >
 
                   <p className="text-dodger-blue-1 font-size-7 mb-9">STRATEGY</p>
-                  <h2 className="font-size-9 text-dark-cloud mb-1"><span className="font-size-5">from</span> $999<span className="font-size-5">/one time</span></h2>
+                  <h2 className="font-size-9 text-dark-cloud mb-1"><span className="font-size-5">from</span> $3499<span className="font-size-5">/one time</span></h2>
                   <span className="font-size-5 mb-2">SEO Content Strategy</span>
 
                   <ul className="list-unstyled font-size-5 text-dark-cloud">

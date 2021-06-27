@@ -28,14 +28,13 @@ const Hero = () => {
                       className="font-size-11 text-dark-cloud mb-8 pr-sm-10 pr-md-14 pr-lg-0 pr-xl-10"
 
                     >
-                      Expert B2B content writers
+                      SEO Strategy Services
                     </h2>
                     <p
                       className="font-size-7 text-dark-cloud mb-0 pr-xl-15"
 
-                    >
-                      Get blog articles, whitepapers, case studies and more by our expert B2B content writers.
-                    </p>
+                    >We create a deeply customized, data-driven SEO strategy to power your sales.
+                        </p>
                   </div>
                   <div
                     className="pr-lg-17 pr-xl-25"
@@ -43,10 +42,10 @@ const Hero = () => {
                   >
                   <div className="max-w-435">
                     <a
-                      href="/pricing"
+                      href="/contact"
                       className="btn btn-blue-3 w-100 h-55 rounded-4"
                     >
-                    View Pricing
+                    Get a fast quote
                     </a>
 
                   </div>

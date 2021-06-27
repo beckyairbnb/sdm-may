@@ -14,23 +14,18 @@ const Content4 = ({ className, ...rest }) => {
             >
 
             <h2 className="font-size-11">
-              We quickly scale your content.
+              Stage 3: Build the strategy
               </h2>
-              <p>We are designed to be an extension of your team. Our end-to-end service integrates seamlessly with your team, whether in-house, remote or freelance. </p>
-
-    <p>Our proven system can help you to scale your content creation and editorial process faster and more effectively. </p>
-
-    <p>Our content is provided formatted with images ready to install into your existing website. Whether you've requested short, snackable slideshows or in-depth content, we integrate it into your workflow and make it as simple as "copy and paste”.</p>
-            </div>
+              <p>Only after I’ve finished researching do I start designing your strategy. My objective is to convert the data into a set of clear, concise recommendations that can be implemented by developers, content writers, and link builders. </p>
+<p>The recommendations will cover wireframes with defined titles, headers, and content overview for core pages. URL structure, a website architecture document, and a link-building strategy.</p>
+<p>A detailed content strategy includes keyword clusters and content requirements ready for the content creation team to produce the content. </p>
+  </div>
           </div>
           {/* Right Image */}
           <div className="col-xl-5 offset-xl-1 col-lg-5 col-md-8 col-xs-11 order-1 order-lg-2">
             <div
               className="l4-content-img-2 ml-lg-10 ml-xl-7 rounded-10 text-center"
-              data-aos="fade-left"
-              data-aos-duration={600}
-              data-aos-delay={500}
-              data-aos-once="true"
+
             >
               <img
                 className="w-75 w-md-100"
@@ -43,10 +38,10 @@ const Content4 = ({ className, ...rest }) => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-size-6 text-dark-cloud mb-0 line-height-26">
-                    New article
+                    Delivered
                   </h4>
                   <p className="font-size-5 text-stone mb-0">
-                    You’ve received a new article
+                    SEO Content Strategy
                   </p>
                 </div>
               </div>
