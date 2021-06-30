@@ -75,7 +75,7 @@ const Faq = () => {
                 Do you offer any trials or samples?
               </h4>
               <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">
-            <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">We offer a try-before-you-buy option so you can see your ideas come to life using our writers. We charge 20 cents per word for trials.</p>
+            <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">We offer a try-before-you-buy option so you can see your ideas come to life using our writers. We charge 25 cents per word for trials.</p>
               </p>
             </div>
           </div>
@@ -143,7 +143,7 @@ const Faq = () => {
               What is your minimum commitment?
               </h4>
               <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">
-            <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">We can do ad-hoc work at 20 cents per word. Alternatively, if you sign up for a monthly package, and you’re not happy (you will be!), you can cancel at the end of the month.</p>
+            <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">We can do ad-hoc work at 25 cents per word. Alternatively, if you sign up for a monthly package, and you’re not happy (you will be!), you can cancel at the end of the month.</p>
               </p>
             </div>
          </div>

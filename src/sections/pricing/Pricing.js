@@ -15,7 +15,7 @@ const Pricing = () => {
                 >
 
                   <p className="text-dodger-blue-1 font-size-7 mb-9">STARTER</p>
-                  <h2 className="font-size-9 text-dark-cloud mb-1"> $599<span className="font-size-5">/month</span></h2>
+                  <h2 className="font-size-9 text-dark-cloud mb-1"> $799<span className="font-size-5">/month</span></h2>
                   <span className="font-size-5 mb-2">4000 words per month</span>
 
                   <ul className="list-unstyled font-size-5 text-dark-cloud">
@@ -70,7 +70,7 @@ const Pricing = () => {
                   >
 
                   <p className="text-dodger-blue-1 font-size-7 mb-9">GROWTH</p>
-                  <h2 className="font-size-9 text-dark-cloud mb-1"> $1199<span className="font-size-5">/month</span></h2>
+                  <h2 className="font-size-9 text-dark-cloud mb-1"> $1599<span className="font-size-5">/month</span></h2>
                   <span className="font-size-5 mb-2">8000 words per month</span>
 
                   <ul className="list-unstyled font-size-5 text-dark-cloud">
