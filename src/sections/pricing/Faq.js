@@ -86,8 +86,8 @@ const Faq = () => {
                 Do you offer any trials or money back guarantees?
               </h4>
               <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">
-            <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">Yes! We have a 4000-word money back guarantee, which means if you cancel before you've requested more than 4000 words, you will receive a full refund, no questions asked.</p>
-              </p>
+            <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">Yes! We are so confident you’ll love our work, we offer a 2000 word money back guarantee. Cancel before you’ve received more than 2000 words, and you will receive a full refund. No quibbles, no questions.</p>
+                </p>
             </div>
           </div>
         </div>
