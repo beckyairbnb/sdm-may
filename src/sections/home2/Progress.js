@@ -68,7 +68,7 @@ const Progress = ({ className, ...rest }) => {
                   <div className="">
                     <h3 className="font-size-8 mb-6">We write your content</h3>
                     <p className="font-size-5 line-height-28 mb-0">
-                      Your articles are prepared by a UK writer, checked by a UK editor and passed through a plagiarism checker.
+                      Your articles are prepared by a Native English writer, edited, and passed through a plagiarism checker.
                     </p>
                   </div>
                 </div>

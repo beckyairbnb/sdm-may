@@ -12,7 +12,7 @@ const Content2 = ({ className, ...rest }) => {
     {
       icon: img1,
       title: "Find expert writers",
-      text: "We hire the top 1% of UK and US writers only.",
+      text: "We hire the top 1% of writers only.",
     },
     {
       icon: img2,
