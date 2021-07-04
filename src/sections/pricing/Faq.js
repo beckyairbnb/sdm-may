@@ -4,11 +4,22 @@ const Faq = () => {
   return (
     <div className="pb-13 pb-md-18 pb-lg-25">
       <div className="container">
+      {/* Section Title */}
+      <div className="row justify-content-center">
+        <div className="col-xl-8 col-lg-9">
+          <div className="text-center mb-13 mb-lg-19">
+            <h2 className="font-size-9 text-dark-cloud mb-0">Money back guarantee</h2>
+<p>We have a 4000-word money back guarantee, which means if you cancel before you've requested more than 4000 words, you will receive a full refund, no questions asked.</p>
+          </div>
+        </div>
+      </div>
+      {/* End Section Title */}
         {/* Section Title */}
         <div className="row justify-content-center">
           <div className="col-xl-8 col-lg-9">
             <div className="text-center mb-13 mb-lg-19">
-              <h2 className="font-size-9 text-dark-cloud mb-0">Frequently Asked Questions</h2>
+
+              <h2 className="font-size-9 text-dark-cloud mb-0">Frequently asked questions</h2>
             </div>
           </div>
         </div>
@@ -72,10 +83,10 @@ const Faq = () => {
             </div>
             <div className="">
               <h4 className="font-size-7 text-dark-cloud mb-7">
-                Do you offer any trials or samples?
+                Do you offer any trials or money back guarantees?
               </h4>
               <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">
-            <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">We offer a try-before-you-buy option so you can see your ideas come to life using our writers. We charge 25 cents per word for trials.</p>
+            <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">Yes! We have a 4000-word money back guarantee, which means if you cancel before you've requested more than 4000 words, you will receive a full refund, no questions asked.</p>
               </p>
             </div>
           </div>
@@ -140,10 +151,10 @@ const Faq = () => {
             </div>
             <div className="">
               <h4 className="font-size-7 text-dark-cloud mb-7">
-              What is your minimum commitment?
+              Can I cancel at any time? Do I need to sign a contract?
               </h4>
               <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">
-            <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">We can do ad-hoc work at 25 cents per word. Alternatively, if you sign up for a monthly package, and you’re not happy (you will be!), you can cancel at the end of the month.</p>
+            <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">You can cancel any time, and there is no minimum contract - it's a month-to-month subscription. If you sign up for a monthly package, and you’re not happy (you will be!), you can cancel at the end of the month.</p>
               </p>
             </div>
          </div>
@@ -174,31 +185,7 @@ const Faq = () => {
          </div>
         </div>
         {/* End Single Faq */}
-        {/* Single Faq */}
-        <div className="col-lg-6 col-md-10">
-          <div
-            className="d-flex mb-10 mb-lg-17"
 
-          >
-            <div className="mr-6">
-              <div className="bg-light-buttercup circle-28 text-white mt-1">
-                <i className="fa fa-question" />
-              </div>
-            </div>
-
-<div className="">
-              <h4 className="font-size-7 text-dark-cloud mb-7">
-             Are you able to also suggest article titles?
-              </h4>
-              <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">
-<p className="font-size-5 pr-md-10 pr-lg-0 mb-0">Yes, we can also suggest titles. Monthly package clients can purchase title suggestions for $15 per blog. For example, if you’re on the Starter package and would like 4 x 1000 word blogs, you would pay an additional $60 per month. The title recommendation would include title suggestion, keyword clusters, and an outline for the article. </p>
-
-              </p>
-            </div>
-
-          </div>
-        </div>
-        {/* End Single Faq */}
 
         {/* Single Faq */}
         <div className="col-lg-6 col-md-10">
@@ -223,31 +210,7 @@ const Faq = () => {
          </div>
         </div>
         {/* End Single Faq */}
-        {/* Single Faq */}
-        <div className="col-lg-6 col-md-10">
-          <div
-            className="d-flex mb-10 mb-lg-17"
-
-          >
-            <div className="mr-6">
-              <div className="bg-light-buttercup circle-28 text-white mt-1">
-                <i className="fa fa-question" />
-              </div>
-            </div>
-
-<div className="">
-              <h4 className="font-size-7 text-dark-cloud mb-7">
-             Do you offer SEO content strategies?
-              </h4>
-              <p className="font-size-5 pr-md-10 pr-lg-0 mb-0">
-<p className="font-size-5 pr-md-10 pr-lg-0 mb-0">Yes, we have SEO experts on the team. Our SEO strategies are hefty blueprints for online success. Prices start at $3499. </p>
-
-              </p>
-            </div>
-
-          </div>
-        </div>
-        {/* End Single Faq */}
+      
       </div>
       {/* Button  */}
 
