@@ -9,7 +9,7 @@ const Faq = () => {
         <div className="col-xl-8 col-lg-9">
           <div className="text-center mb-13 mb-lg-19">
             <h2 className="font-size-9 text-dark-cloud mb-0">Money back guarantee</h2>
-<p>We have a 4000-word money back guarantee, which means if you cancel before you've requested more than 4000 words, you will receive a full refund, no questions asked.</p>
+<p>We are so confident you’ll love our work, we offer a 2000 word money back guarantee. Cancel before you’ve received more than 2000 words, and you will receive a full refund. No quibbles, no questions. </p>
           </div>
         </div>
       </div>
@@ -210,7 +210,7 @@ const Faq = () => {
          </div>
         </div>
         {/* End Single Faq */}
-      
+
       </div>
       {/* Button  */}
 

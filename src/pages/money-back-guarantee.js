@@ -36,10 +36,17 @@ const Money = () => {
                     Money Back Guarantee
                   </h3>
 
-<p>Strategically offers a money back guarantee policy that lets you trial us for 4,000 words of content. If you're not completey happy (you will be!) you get a full refund. </p>
-<p>Sign up and purchase up to 4,000 words of content. Once you receive this content, review it and if it's not up to your expectations, you can then request a full refund. Refunds are only available within your first month. We will refund the initial subscription charge to the payment method you used.</p>
-​<p>Please note, if request a refund, you don't get ownership over the content piece completed for you.</p>
-<p>Our refund policy is only applicable to the first subscription. If you sign up, and then cancel and ask for a refund. A subsequent activation would result in us debiting your word quota for what was used during the previous free trial, and you wouldn't have the ability to request a refund again.</p>
+                  <p>We are so confident that you’ll love our work, Strategically offers a 2000 word money back guarantee policy. This means you can purchase up to 2000 words of content and if you’re not completely satisfied, you can get a full refund.</p>
+
+                  <p>First, sign up with one of our monthly content plans. Next, order up to 2000 words of content. Finally, receive and review your content written by our expert writers.</p>
+
+                  <p>If you are not 100% happy, get in touch. We will either offer unlimited free revisions until you are happy, or we will offer a full refund.</p>
+
+                  <p>Please note, the refund is only available within the first month of working with us, within your first 2000 words of content, and it is only applicable on your first subscription with us.</p>
+
+                  <p>If you sign up with us, then cancel and ask for a refund, a subsequent subscription would result in us charging you for the number of words used during your free trial. You will not be able to request a refund a second time. </p>
+
+                  <p>Refunds will be returned to your original payment method and if you request a refund, Strategically retains ownership over the content created, and you are not permitted to use the content in any way. </p>
 
 
 
