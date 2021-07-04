@@ -27,6 +27,7 @@ exports.components = {
   "component---src-pages-home-6-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/home-6.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/index.js"))),
   "component---src-pages-legal-content-writing-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/legal-content-writing.js"))),
+  "component---src-pages-money-back-guarantee-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/money-back-guarantee.js"))),
   "component---src-pages-pricing-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/pricing.js"))),
   "component---src-pages-privacy-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/privacy.js"))),
   "component---src-pages-reset-pass-js": hot(preferDefault(require("/Users/becky/May-SDM/src/pages/reset-pass.js"))),

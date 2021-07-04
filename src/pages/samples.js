@@ -1,6 +1,7 @@
 import React from "react";
 
 import PageWrapper from "../components/PageWrapper";
+import Helmet from "react-helmet";
 
 import Blog from "../sections/home1/Blog";
 // import Section from "../layout/Section";
@@ -13,8 +14,11 @@ const SamplesPage = () => {
         headerClassName: "site-header--menu-right",
         headerButton: (
           <>
-          <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/contact"}>
-            Sign Up
+          <Helmet>
+           <title>Strategically | Content Writing Agency</title>
+         </Helmet>
+          <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing"}>
+            View Pricing
           </a>
           </>
         ),

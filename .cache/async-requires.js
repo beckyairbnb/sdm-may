@@ -24,6 +24,7 @@ exports.components = {
   "component---src-pages-home-6-js": () => import("./../../../src/pages/home-6.js" /* webpackChunkName: "component---src-pages-home-6-js" */),
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-legal-content-writing-js": () => import("./../../../src/pages/legal-content-writing.js" /* webpackChunkName: "component---src-pages-legal-content-writing-js" */),
+  "component---src-pages-money-back-guarantee-js": () => import("./../../../src/pages/money-back-guarantee.js" /* webpackChunkName: "component---src-pages-money-back-guarantee-js" */),
   "component---src-pages-pricing-js": () => import("./../../../src/pages/pricing.js" /* webpackChunkName: "component---src-pages-pricing-js" */),
   "component---src-pages-privacy-js": () => import("./../../../src/pages/privacy.js" /* webpackChunkName: "component---src-pages-privacy-js" */),
   "component---src-pages-reset-pass-js": () => import("./../../../src/pages/reset-pass.js" /* webpackChunkName: "component---src-pages-reset-pass-js" */),

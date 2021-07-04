@@ -27,7 +27,13 @@ const Footer = ({ className, ...rest }) => {
                     to="/terms"
                     className="pr-5 text-stone gr-hover-text-dodger-blue-1 font-size-5 pr-12"
                   >
-                    Terms
+                  Terms
+                  </Link>
+                  <Link
+                    to="/money-back-guarantee"
+                    className="pr-5 text-stone gr-hover-text-dodger-blue-1 font-size-5 pr-12"
+                  >
+                    Refund Policy
                   </Link>
                   <Link
                     to="/contact"
