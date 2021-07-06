@@ -11,7 +11,7 @@ const Hero = () => {
         headerButton: (
           <>
           <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/contact"}>
-            Sign Up
+            Get Started
           </a>
           </>
         ),

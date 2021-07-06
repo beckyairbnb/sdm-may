@@ -48,8 +48,8 @@ const Content3 = ({ className, ...rest }) => {
             >
               <div className="mr-lg-10 mr-xl-25">
 
-              <h3>If you want to:</h3>
-              <ul className="list-unstyled font-size-5 text-dark-cloud">
+  <p>If you anticipate your visitors’ needs and show them how your product or service can fulfill those needs, you will:</p>
+              <ul className="list-unstyled">
               <li className="mb-6">
                 <i className="fa fa-check mr-4 text-dodger-blue-1" />
                 Reduce bounce rates
@@ -61,13 +61,7 @@ const Content3 = ({ className, ...rest }) => {
                   <li className="mb-6">
                     <i className="fa fa-check mr-4 text-dodger-blue-1" />Set yourself apart</li>
   </ul>
-
-  <p>you need to anticipate your visitors’ needs and show them how your product or service can fulfill those needs.</p>
-
-  <p><strong>We can help you do exactly that.</strong></p>
   <p>Our website copywriters will get inside the minds of your prospects and help you create copy that speaks to their needs and persuades them to invest in your brand.</p>
-
-  <p>Want great results?</p>
 
               </div>
             </div>
