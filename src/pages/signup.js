@@ -1,19 +1,29 @@
 import React from "react";
 import { Link } from "gatsby";
 import imgBg from "../assets/image/inner-page/jpg/sign-up-right-img.jpg";
-
+import Helmet from "react-helmet";
 import PageWrapper from "../components/PageWrapper";
+import Counter from "../sections/home2/Counter";
+import Testimonial from "../sections/home2/Testimonial";
+import Hero2 from "../sections/pricing/Hero2";
+import Stats2 from "../sections/about/Stats2";
+
 
 const SignUpImage = () => {
   return (
     <>
+    <Helmet>
+     <title>Strategically | Content Writing Agency</title>
+   </Helmet>
       <PageWrapper
         themeConfig={{
           headerClassName: "pt-13 pt-lg-11 px-14 px-xl-24",
           headerLogoClassName: "mx-auto mx-lg-0",
         }}
       >
-        <div className="min-height-100vh d-flex align-items-center bg-default-3">
+          <Hero2 />
+
+        <div className="min-height-100vh d-flex align-items-center bg-default-1">
           <div className="container-fluid h-100">
             <div className="row no-gutters align-items-center justify-content-center h-100">
               <div className="col-xl-4 col-lg-6 col-md-10">
@@ -23,16 +33,24 @@ const SignUpImage = () => {
 
                   >
                     <h2 className="mb-1 font-size-10 letter-spacing-n83">
-                      Get started
+                      Request free writing samples
                     </h2>
-                    <p className="text-bali-gray font-size-5 mb-0">
-                      Cancel within 1500 words requested for a full refund, no questions asked.
-                    </p>
+
                   </div>
                   <form
                     action="/"
 
                   >
+                  {/* Company Name */}
+                  <div className="form-group mb-6 position-relative">
+                    <input
+                      type="text"
+                      name="address"
+                      className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5"
+                      placeholder="Your name"
+                      id="company"
+                    />
+                  </div>
                     {/* Email */}
                     <div className="form-group mb-6 position-relative">
                       <input
@@ -43,40 +61,33 @@ const SignUpImage = () => {
                         id="email"
                       />
                     </div>
-                    {/* Company Name */}
+                    {/* Industry */}
                     <div className="form-group mb-6 position-relative">
                       <input
-                        type="text"
-                        name="address"
+                        type="industry"
+                        name="industry"
                         className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5"
-                        placeholder="Your name"
-                        id="company"
+                        placeholder="What industry are you in?"
+                        id="email"
                       />
                     </div>
-                    {/* Password */}
-
-                    <div className="form-group my-8">
-                      <label
-                        htmlFor="terms-check"
-                        className="check-input-control d-flex align-items-center"
-                      >
-                        <input
-                          className="d-none"
-                          type="checkbox"
-                          id="terms-check"
-                        />
-                        <span className="checkbox mr-5" />
-                        <span className="mb-0 font-size-5 text-bali-gray">
-                          I agree to the{" "}
-                          <Link to="/terms" className="text-blue-3 ">
-                            Terms &amp; Conditions
-                          </Link>
-                        </span>
-                      </label>
+                    {/* Business */}
+                    <div className="form-group mb-6 position-relative">
+                      <input
+                        type="business"
+                        name="business"
+                        className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5"
+                        placeholder="Are you an agency or business?"
+                        id="email"
+                      />
                     </div>
+
+
+
+
                     <div className="button">
                       <a href="/#" className="btn btn-blue-3 w-100 rounded-4">
-                        Sign up
+                        Submit
                       </a>
 
                     </div>
@@ -95,6 +106,12 @@ const SignUpImage = () => {
             </div>
           </div>
         </div>
+
+  <Stats2 />
+        <Testimonial className="pt-lg-19 pb-12 pb-lg-17" />
+
+
+
       </PageWrapper>
     </>
   );
