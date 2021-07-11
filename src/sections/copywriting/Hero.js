@@ -28,7 +28,7 @@ const Hero = () => {
                       className="font-size-11 text-dark-cloud mb-8 pr-sm-10 pr-md-14 pr-lg-0 pr-xl-10"
 
                     >
-                      Want to stand out online?
+                      Want copywriting that stands out?
                     </h2>
                     <p
                       className="font-size-7 text-dark-cloud mb-0 pr-xl-15"

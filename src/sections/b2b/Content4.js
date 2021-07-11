@@ -16,9 +16,9 @@ const Content4 = ({ className, ...rest }) => {
             <h2 className="font-size-11">
               Stage 3: Build the strategy
               </h2>
-              <p>Only after I’ve finished researching do I start designing your strategy. My objective is to convert the data into a set of clear, concise recommendations that can be implemented by developers, content writers, and link builders. </p>
+              <p>Only after we’ve finished researching do we start designing your strategy. Our objective is to convert the data into a set of clear, concise recommendations that can be implemented by developers, content writers, and link builders.</p>
 <p>The recommendations will cover wireframes with defined titles, headers, and content overview for core pages. URL structure, a website architecture document, and a link-building strategy.</p>
-<p>A detailed content strategy includes keyword clusters and content requirements ready for the content creation team to produce the content. </p>
+<p>A detailed content strategy includes keyword clusters and content requirements ready for the content creation team to produce the content.</p>
   </div>
           </div>
           {/* Right Image */}

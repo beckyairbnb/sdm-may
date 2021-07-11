@@ -40,8 +40,8 @@ const ContentOne = ({ className, ...rest }) => {
                   Stage 1: Gain Information from You
                 </h2>
                 <p>
-              It’s useless to build an SEO strategy if the design doesn’t perfectly align with the business objectives. We need to understand what makes you different and what makes you money.</p>
-              <p> My team and I must know about this from the start. After all, the last thing we want is to go back and make changes because we weren’t clear about a few key fundamental principles at the beginning.  </p>
+            It’s useless to build an SEO strategy if the design doesn’t perfectly align with the business objectives. We need to understand what makes you different and what makes you money.</p>
+            <p> We must understand your business goals from the start. After all, the last thing we want is to go back and make changes because we weren’t clear about a few critical fundamental principles at the beginning.</p>
               </div>
               {/* End Section Title */}
 

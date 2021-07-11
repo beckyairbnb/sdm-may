@@ -66,10 +66,10 @@ const Content5 = ({ className, ...rest }) => {
                 <h2 className="font-size-11">
                   Stage 2: Research
                 </h2>
-              <p>  There’s still no advice at this stage: it’s just research. I spend as much time as needed building a keyword research document that forms the foundations of the strategy. </p>
-                <p>Next, I check what’s ranking for your target keywords and define your direct search competitors, taking tons of notes and screenshots. This involves using numerous paid tools to reveal key details about the analytics of the web pages.</p>
-                <p>I learn what’s working for them, how are they generating quality links? Which content is actually worth building? How are they structuring their architecture? </p>
-            <p>    By researching how direct search competitors are performing, I can save you a vast amount of wasted time building content that will never rank and focus your efforts on activities that will deliver results.</p>
+              <p>There’s still no advice at this stage: it’s just research. We spend as much time as needed building a keyword research document that forms the foundations of the strategy.</p>
+                <p>Next, we check what’s ranking for your target keywords and define your direct search competitors, taking tons of notes and screenshots. This involves using numerous paid tools to reveal critical details about the analytics of the web pages.</p>
+                <p>We learn what’s working for them, how are they generating quality links? Which content is actually worth building? How are they structuring their architecture?</p>
+            <p>By researching how direct search competitors are performing, we can save you a vast amount of wasted time building content that will never rank and focus your efforts on activities that will deliver results.</p>
 
               </div>
             </div>

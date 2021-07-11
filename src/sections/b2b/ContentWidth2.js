@@ -21,8 +21,8 @@ const Counter = ({ className, ...rest }) => {
               className="text-center mb-10 mb-lg-23"    >
 <h2 className="font-size-11 mb-7">Let's work together</h2>
               <p className="font-size-7 mb-0">
-            <p>I only take on projects when I know I can make an exponential difference. I never work on a strategy if you don’t have the budget to see the project and build the content and links needed.</p><p> My strategy research process only works when I follow the process and don’t take shortcuts. The research and building of the strategy take me around 100 hrs in total. If you are looking for a quick SEO fix, this is not for you. If you want results tomorrow, this is definitely not right for you.</p> <p>SEO is a long-term investment, and you need to be ready to invest in content and quality outreach. If my SEO strategy process sounds like something your business or brand needs, please click the blue button below and send me a message.
-            </p>
+            <p>We only take on projects when we know we can make an exponential difference. We never work on a strategy if you don't have the budget to see the project and build the content and links needed.</p>
+            <p>If our SEO strategy process sounds like something your business or brand needs, please click the blue button below and get in touch. </p>
               </p>
               <div className="max-w-435">
                 <a

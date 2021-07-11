@@ -1,7 +1,7 @@
 import React from "react";
 
 import PageWrapper from "../components/PageWrapper";
-import Hero from "../sections/newservice/Hero";
+import Hero from "../sections/home6/Hero";
 import Counter from "../sections/newservice/Counter";
 import Content2 from "../sections/newservice/Content2";
 import Content3 from "../sections/newservice/Content3";
@@ -30,7 +30,8 @@ const Content = () => {
           footerStyle: "style4",
         }}
       >
-        <Hero className="pt-11 pt-lg-34 pb-8 pb-lg-33" />
+      <Hero className="position-relative pt-25 pt-md-31 pt-lg-35 pb-14 pb-md-19 pb-lg-33 position-relative overflow-hidden" />
+      
         <Counter className="pt-lg-5 pb-8 pb-lg-27" />
 
         <Content2 className="pb-0 pb-lg-31" />

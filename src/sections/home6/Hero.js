@@ -16,16 +16,14 @@ const Hero = ({ className, ...rest }) => {
                 className="w-100"
                 src={imgM}
                 alt=""
-                data-aos="fade-up"
-                data-aos-delay={500}
+
               />
               <div className="img-1">
                 <img
                   className="w-100"
                   src={imgYS}
                   alt=""
-                  data-aos="fade-right"
-                  data-aos-delay={750}
+
                 />
               </div>
             </div>
@@ -35,19 +33,17 @@ const Hero = ({ className, ...rest }) => {
           <div className="col-lg-6 col-md-9 col-sm-11">
             <div
               className="mt-8 mt-lg-0 pr-md-11 pr-lg-0 pr-xl-10"
-              data-aos="fade-left"
-              data-aos-delay={750}
+
             >
-              <h1 className="font-size-13 mb-8 pr-sm-18 pr-md-8 pr-lg-0 line-height-84">
-                Take your business to next level.
+              <h1 className="mb-8 pr-sm-18 pr-md-8 pr-lg-0 line-height-84">
+                Hire quality content writers who understand your brand
               </h1>
               <p className="font-size-7 mb-0 pr-sm-10 pr-md-10 pr-lg-0 pr-xl-18">
-                Your app is your tool for better solution with your followers,
-                making it easier for them to keep up to date.
+              Get blog posts, white papers, case studies & more from Native English writers.
               </p>
               <div className="mt-10">
-                <Link to="/#" className="btn btn-dark-green btn-3 rounded-5">
-                  Request Free Access
+                <Link to="/pricing" className="btn btn-dodger-blue-2 header-btn rounded-5">
+                  View pricing
                 </Link>
               </div>
             </div>
