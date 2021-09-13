@@ -1,0 +1,19 @@
+{
+    "type": "paragraph",
+    "content": {
+      "text": "Donec quis dui at dolor tempor interdum.",
+      "spans": [
+        {
+          "type": "hyperlink",
+          "start": 0,
+          "end": 40,
+          "data": {
+            "url": "https://prismic.io",
+            "preview": {
+              "title": "https://prismic.io"
+            }
+          }
+        }
+      ]
+    }
+  }   
