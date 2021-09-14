@@ -20,7 +20,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { data } = await graphql(`
   query {
-      BlogPages : allPrismicBlog {
+      ServicePages : allPrismicService {
         edges {
           node {
             uid
@@ -31,10 +31,10 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 `)
 
-data.BlogPages.edges.forEach(({ node }) => {      
+data.ServicePages.edges.forEach(({ node }) => {      
   createPage({
     path: node.uid,
-    component: path.resolve("./src/templates/blog-template.js"),
+    component: path.resolve("./src/templates/service-template.js"),
     context: {
       id:node.id,
       'layout':'blog'

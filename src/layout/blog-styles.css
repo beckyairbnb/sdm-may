@@ -101,7 +101,7 @@
   --offset: 2rem;
   top: var(--offset);
 }
-.post-share{ width:100px; float:right;}
+.post-share{ width:100px; float:right; margin-bottom: 150px;}
 .post-share li a:hover{ background-color: #f7f7f7;}
   
 .s-icon .svg-icon {width: 1em;height: 1em; font-size: 25px;; }
