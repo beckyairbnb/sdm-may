@@ -98,7 +98,7 @@ const Layout = ({ children, pageContext }) => {
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
 
-        <div className="overflow-hidden" ref={eleRef}>
+        <div className="site-wrapper" ref={eleRef}>
           <HeaderTransparent />
           {children}
         </div>

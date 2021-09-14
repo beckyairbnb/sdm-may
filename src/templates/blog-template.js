@@ -1,12 +1,17 @@
-import * as React from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import useIntersectionObserver from '@react-hook/intersection-observer'
 
 import Image from '../components/ContentSlices/Image'
 import CTA from '../components/ContentSlices/CTA'
 import Heading from '../components/ContentSlices/Heading'
 import Text from '../components/ContentSlices/Text'
 import BoxedContent from '../components/ContentSlices/BoxedContent'
+import PostShare from '../components/PostShare'
+
+import postimg1 from "../assets/images/post-img1.jpg";
+import stratagicsicon from "../assets/images/stratagic-s.png";
 const BlogTemplate = (props)=>{
   const { data } = props
   const { PageData } = data
@@ -15,7 +20,7 @@ const BlogTemplate = (props)=>{
     <div className="wrapper">
       <div className="container-fluid p-0 overflow-hidden">
         <div className="blog-banner d-flex flex-column align-items-center text-center">
-            <div className="w-100 position-relative ban-img">
+            <div className="w-100 ban-img">
             <Img
                     fluid={PageData.data.featuredimage.localFile.childImageSharp.fluid}
                 />
@@ -35,10 +40,12 @@ const BlogTemplate = (props)=>{
             </div>
         </div>
     </div>
-    <div className="pt-10 pb-10 blog-content">
-       <div className="container position-relative">
-              <div className="row">
-                <div className="col-lg-8 offset-lg-2 col-xs-12">
+       <div className="container pb-4 pt-5 mt-5">      
+                 
+              <div className="row blog-content d-flex flex-wrap mt-5 pt-3">  
+              <div className="col-lg-2 col-xs-12">&nbsp;</div>
+              
+                <div className="col-lg-8 col-xs-12 text-left blog-content-inner">
                 {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100 my-2" ></div>}
                     {PageData.data.body.map((item, index)=>{
                       
@@ -65,12 +72,44 @@ const BlogTemplate = (props)=>{
                        
                     })}
                 </div>
+                <div className="col-lg-2 col-xs-12 blog-social "><PostShare/></div>
               </div>
       </div>
-    </div>
     <div className="d-flex justify-content-center align-items-center text-center bg-light pt-10 pb-8 border-top border-bottom">
       <BoxedContent data={PageData.data.BoxedContent}/>
     </div>
+    <div className="d-flex pt-20 pb-8">
+<   div className="container">
+    <div className="text-center mb-10"><h2>Continue Reading</h2></div>
+    <div className="row">
+    <div className="col-lg-4 col-md-6 col-xs-12">
+            <div className="post-block mb-10">
+                <div className=""><a href="#"><img src={postimg1} alt="" className="w-100 rounded"/></a></div>
+                    <div className="mt-8 mb-8"> <h4>All the Reasons to Get Life Insurance</h4></div>
+                    <div className="mb-6"><img src={stratagicsicon} alt="" className="rounded-pill mr-5"/><span>Team Strategically</span></div>
+                    <p>Everyone’s situation is unique, but here are some things to keep in mind when pondering life insurance.</p>
+                </div>
+         </div>
+         <div className="col-lg-4 col-md-6 col-xs-12">
+            <div className="post-block mb-10">
+                <div className=""><a href="#"><img src={postimg1} alt="" className="w-100 rounded"/></a></div>
+                    <div className="mt-8 mb-8"> <h4>Why Did I Get Denied for Life Insurance?</h4></div>
+                    <div className="mb-6"><img src={stratagicsicon} alt="" className="rounded-pill mr-5"/><span>Team Strategically</span></div>
+                    <p>Everyone’s situation is unique, but here are some things to keep in mind when pondering life insurance.</p>
+                </div>
+         </div>
+         <div className="col-lg-4 col-md-6 col-xs-12">
+            <div className="post-block mb-10">
+                <div className=""><a href="#"><img src={postimg1} alt="" className="w-100 rounded"/></a></div>
+                    <div className="mt-8 mb-8"> <h4>How Much Does a Funeral Cost?</h4></div>
+                    <div className="mb-6"><img src={stratagicsicon} alt="" className="rounded-pill mr-5"/><span>Team Strategically</span></div>
+                    <p>Everyone’s situation is unique, but here are some things to keep in mind when pondering life insurance.</p>
+                </div>
+         </div>
+    </div>
+    </div>
+
+</div>
   </div>
 )}
 export const query = graphql`

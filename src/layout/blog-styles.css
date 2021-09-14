@@ -1,12 +1,42 @@
 
+.blog-sidebar {
+  width: 25%;
+  height: 75vh !important;
+  min-height: 100px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+
+.blog-inner {
+  width: 60%;
+  /* height: 200vh; */
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-inner,
+.blog-sidebar {
+  border: 5px solid #222;
+  background-color: white;
+  border-radius: 10px;
+  color: #222;
+  padding: 15px;
+}
+
+.blog-outer {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  overflow:visible;
+}
+
 .blog-banner{
-     /* background-image:url(../assets/image/blog-banner.jpg);
-	background-repeat:no-repeat;
-	background-position: bottom center; background-size: cover;*/ 
   
 }
-/* .blog-content h2{ border:2px solid red !important; }
-.blog-content h3{ border:2px solid green !important; } */
 .text-container{ padding-top:100px !important}
 .ban-img{ height: 600px; object-fit: cover;}
 .blog-banner h1, .blog-banner h5{ color: #fff;}
@@ -33,9 +63,46 @@
 }
 
   .btn-blue-3:focus, .btn-blue-3.focus, .btn-blue-3:hover {border-color: #0544de;}
+.blog-sidebar {
+  width: 25%;
+  height: 25vh;
+  min-height: 200px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 
-  .post-share{ position: fixed;	top: 140px;right:30px; width: 100px; }
-  .post-share li a:hover{ background-color: #f7f7f7;}
+.blog-inner {
+  width: 60%;
+  height: 200vh;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-inner,
+.blog-sidebar {
+  border: 5px solid #222;
+  background-color: white;
+  border-radius: 10px;
+  color: #222;
+  padding: 15px;
+}
+
+.blog-outer {
+  display: flex;
+  justify-content: space-between;
+  overflow:visible;
+}
+.blog-social{flex-grow: 1 !important;
+  flex-basis: 50px; align-self: start;
+  position: sticky;
+  --offset: 2rem;
+  top: var(--offset);
+}
+.post-share{ width:100px; float:right;}
+.post-share li a:hover{ background-color: #f7f7f7;}
   
 .s-icon .svg-icon {width: 1em;height: 1em; font-size: 25px;; }
   
@@ -50,5 +117,7 @@
 @media only screen and (max-width: 768px) {
 	.mobile-hide{ display:none; visibility:hidden;}
 }
+.menu-btn a{ width:75px; display: block; -webkit-border-radius: 5px; border-radius: 5px;}
+.menu-btn svg{ width: 16px; fill:#ffffff;}
 
 
