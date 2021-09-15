@@ -74,7 +74,7 @@ const Header = () => {
         >
         { !showScrolling && (
           <div className="menu-btn bg-transparent p-2 position-absolute"  ref={eleAny}>
-          <a href="#" class="border click-btn py-3 pl-5 pr-5 text-white d-flex justify-content-between" onClick={onClickHandler}>
+          <a class="border click-btn py-3 pl-5 pr-5 text-white d-flex justify-content-between" onClick={onClickHandler}>
             <span>Life</span>
             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
               <path d="M455,113a15,15 0 01 19,0l29,29a15,15 0 01 0,19l-235,236a16,16 0 01-24,0l-235-236a15,15 0 01 0-19l29-29a15,15 0 01 19,0l199,199z" />
