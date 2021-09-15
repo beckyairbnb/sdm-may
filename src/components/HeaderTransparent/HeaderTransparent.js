@@ -112,7 +112,11 @@ const Header = () => {
               "col-md-8 col-sm-7 d-flex justify-content-center"}
             >
             <div className="brand-logo mt-0 mt-md-0">
-            <Logo src={showScrolling && showReveal ? SiteLogoPng.publicURL : SiteLogo.publicURL} className="light-version-logo" />
+            <Logo
+              src={showScrolling && showReveal ? SiteLogoPng.publicURL : SiteLogo.publicURL} className="light-version-logo"
+              width={216}
+              height={63}
+              />
             </div>
             </div>
             { showScrolling && showReveal && (
