@@ -1,28 +1,21 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import imgLB from "../../assets/image/logo-main-black.png";
-import imgLW from "../../assets/image/logo-main-white.png";
-import imgFS from "../../assets/image/inner-page/png/yellow-footer-shape.png";
+import imgLW from "../../assets/images/logo.svg";
 
 const Footer = ({ className, ...rest }) => {
   return (
     <>
       <div
-        className={`bg-dark-cloud pt-13 pt-lg-27 pb-7 dark-mode-texts position-relative ${className}`}
+        className={`bg-dark-cloud pt-13 pt-lg-16 pb-7 dark-mode-texts position-relative ${className}`}
         {...rest}
       >
         <div className="container">
-          <div className="row pb-lg-25">
+          <div className="row pb-lg-15">
             <div className="col-lg-4 col-md-5 col-md-3 col-xs-8">
-              <div className="pr-xl-20 mb-11 mb-lg-0 mt-lg-5">
+              <div className="mb-11 mb-lg-0 mt-lg-2">
                 <div className="brand-logo mb-5">
                   <Link to="/#">
-                    <img
-                      className="mx-auto mx-0 light-version-logo default-logo"
-                      src={imgLB}
-                      alt=""
-                    />
                     <img
                       src={imgLW}
                       alt=""
@@ -138,16 +131,16 @@ const Footer = ({ className, ...rest }) => {
                       <Link
                         to="/#"
                         className="font-size-5 d-block text-golden-yellow mb-0"
-                        href="tel:+1-301-340-3946"
+                        href="tel:+44 7939447382"
                       >
-                        +1-301-340-3946
+                        +44 7939447382
                       </Link>
                       <Link
                         to="/#"
                         className="font-size-5 d-block text-golden-yellow mb-0"
-                        href="mailto:info@finity.com"
+                        href="mailto:hello@strategically.co"
                       >
-                        info@finity.com
+                        hello@strategically.co
                       </Link>
                     </div>
                   </div>
@@ -156,11 +149,11 @@ const Footer = ({ className, ...rest }) => {
               </div>
             </div>
           </div>
-          <div className="row align-items-center pt-10 border-top">
+          <div className="row align-items-center pt-7 border-top">
             <div className="col-lg-6 text-center text-lg-left">
               <div className="copyright">
                 <p className="mb-0 font-size-3 text-bali-gray">
-                  © Finity 2019, All Rights Reserved
+                  © Strategically 2021, All Rights Reserved
                 </p>
               </div>
             </div>
@@ -195,9 +188,6 @@ const Footer = ({ className, ...rest }) => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="footer-yellow-shape-img">
-          <img src={imgFS} alt="" />
         </div>
       </div>
     </>

@@ -1,8 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import useIntersectionObserver from '@react-hook/intersection-observer'
+import styled from 'styled-components';
 
+import PageWrapper from "../components/PageWrapper";
 import Image from '../components/ContentSlices/Image'
 import CTA from '../components/ContentSlices/CTA'
 import Heading from '../components/ContentSlices/Heading'
@@ -23,36 +24,42 @@ const ServiceTemplate = (props)=>{
     const surl = `${siteURL}${props.location.pathname || "/"}`;
     const stwitterHandle = "_MsLinda";
   return(
+    <PageWrapper
+        themeConfig={{
+          headerClassName: "site-header--menu-right",
+          headerButton: (
+            <>
+            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing"}>
+              View Pricing
+            </a>
+            </>
+          ),
+          footerStyle: "style3",
+        }}
+      >
     <div className="wrapper">
       <div className="container-fluid p-0 overflow-hidden">
-        <div className="blog-banner d-flex flex-column align-items-center text-center">
-            <div className="w-100 ban-img">
-                <Img
-                    fluid={PageData.data.featuredimage.localFile.childImageSharp.fluid}
-                />
-            </div>
-            <div className="position-absolute pl-2 pr-2 text-container">
-                <div className="d-flex justify-content-center mt-4 mb-5">
-                <Img
-                    fluid={PageData.data.featuredimage.localFile.childImageSharp.fluid}
-                />
-                    </div>
-                    {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="text-white text-center w-100 mt-20" ></div>}
-                    {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }} className="text-center w-100 mb-10 mt-10 text-white" ></div>}
+        <Blogbanner img={PageData.data.featuredimage.localFile.childImageSharp.fluid.srcWebp} className="blog-banner d-flex flex-column justify-content-center align-items-center text-center">
+           <div className="row blog-banner-inner d-flex flex-column justify-content-center align-items-center">
+                <div className="col-sm-12">
+                    {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="text-white text-center w-100 mt-10 px-6" ></div>}
+                    {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }} className="text-center w-100 mb-5 mt-5 text-white px-6" ></div>}
+                    <button
+                    className="btn btn btn-blue-3 header-btn-2 mt-5 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">
+                        Get Your Quote in Seconds
+                    </button>
+                </div>
                     
-                        <button className="btn btn btn-blue-3 header-btn-2 pt-10 pb-10 pl-12 pr-12 font-size-3 rounded-5 text-uppercase w-auto border-0">
-                            Get Your Quote in Seconds
-                        </button>
             </div>
-        </div>
+        </Blogbanner>
     </div>
-       <div className="container pb-4 pt-5 mt-5">      
+       <div className="container pb-4 pt-3 mt-3">      
                  
-              <div className="row blog-content d-flex flex-wrap mt-5 pt-3">  
-              <div className="col-lg-2 col-xs-12">&nbsp;</div>
+              <div className="row blog-content d-flex flex-wrap">  
+              <div className="col-lg-2 col-md-2 col-xs-12 p-0 m-0 d-block d-sm-none">&nbsp;</div>
               
-                <div className="col-lg-8 col-xs-12 text-left blog-content-inner">
-                {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100 my-2" ></div>}
+                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-left blog-content-inner">
+                {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100" ></div>}
                     {PageData.data.body.map((item, index)=>{
                       
                         const { slice_type, primary } = item
@@ -78,7 +85,8 @@ const ServiceTemplate = (props)=>{
                        
                     })}
                 </div>
-                <div className="col-lg-2 col-xs-12 blog-social "><PostShare socialConfig={{
+                <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12 blog-social ">
+                  <PostShare socialConfig={{
                             twitter : stwitterHandle,
                             config: {
                               url: surl,
@@ -94,7 +102,31 @@ const ServiceTemplate = (props)=>{
         <MoreServices data={OtherServices}/>
     </div>
   </div>
+  </PageWrapper>
 )}
+export const Blogbanner = styled.div`
+  background-image: url(${props => props.img});
+  background-repeat: no-repeat;
+  background-size:100% auto;
+  margin:0px;
+  min-height: 500px;
+  @media only screen and (max-width: 767px) {
+    background-size:auto 100%;
+    background-position:center center;
+    min-height: 440px;
+  }
+  @media only screen and (max-width: 600px) {
+    min-height: 360px;
+  }
+  @media only screen and (max-width: 480px) {
+    min-height: 320px;
+  }
+  @media (max-width: 360px) {
+    min-height: 260px;
+  }
+`;
+
+
 export const query = graphql`
 query getServiceData($id: String!) {
     site {
@@ -136,7 +168,8 @@ query getServiceData($id: String!) {
           localFile {
             childImageSharp {
               fluid(quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp
+                src
+                srcWebp
               }
             }
           }

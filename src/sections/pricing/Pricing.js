@@ -52,7 +52,7 @@ const Pricing = () => {
                   </ul>
 
                   <div className="pt-7 pt-lg-17">
-                    <a className="btn btn-blue-3 btn-2 rounded-5" href={"https://strategically.recurly.com/subscribe/4000"}>
+                    <a className="btn btn-blue-3 btn-2 rounded-5" href={"https://app.strategically.co/order/V8K986?field_7=10&&options_7%5B0%5D=No"}>
                     Sign up
                     </a>
                   </div>
@@ -107,7 +107,7 @@ const Pricing = () => {
                   </ul>
 
                     <div className="pt-7 pt-lg-17">
-                      <a className="btn btn-blue-3 btn-2 rounded-5" href={"https://strategically.recurly.com/subscribe/8000"}>
+                      <a className="btn btn-blue-3 btn-2 rounded-5" href={"https://app.strategically.co/order/V8K986?field_7=17&options_7%5B0%5D=No"}>
                         Sign up
                       </a>
                     </div>
@@ -163,7 +163,7 @@ const Pricing = () => {
                   </ul>
 
                     <div className="pt-7 pt-lg-17">
-                      <a className="btn btn-blue-3 btn-2 rounded-5" href={"https://strategically.recurly.com/subscribe/12000"}>
+                      <a className="btn btn-blue-3 btn-2 rounded-5" href={"https://app.strategically.co/order/V8K986?field_7=18&options_7[0]=No"}>
                         Sign up
                       </a>
                     </div>
