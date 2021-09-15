@@ -33,7 +33,7 @@ import "../../../node_modules/aos/dist/aos.css";
 
 import "../../assets/fonts/icon-font/css/style.css";
 import "../../assets/fonts/typography-font/typo.css";
-import "../../assets/fonts/fontawesome-5/css/all.css";
+// import "../../assets/fonts/fontawesome-5/css/all.css";
 
 import "../../assets/scss/bootstrap.scss";
 import "../../assets/scss/main.scss";

@@ -56,7 +56,7 @@ const ServiceTemplate = (props)=>{
        <div className="container pb-4 pt-3 mt-3">      
                  
               <div className="row blog-content d-flex flex-wrap">  
-              <div className="col-lg-2 col-md-2 col-xs-12 p-0 m-0 d-block d-sm-none">&nbsp;</div>
+              <div className="col-lg-2 col-md-2 col-xs-12 p-0 m-0">&nbsp;</div>
               
                 <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-left blog-content-inner">
                 {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100" ></div>}

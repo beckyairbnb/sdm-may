@@ -122,7 +122,7 @@
   .header-btn-2{ padding:10px 20px !important;}
   .blog-banner h1{font-size: calc(1.1875rem + 1.85vw);}
   .blog-banner h3{font-size: calc(0.9375rem + 1.05vw);}
-  .menu-btn a.click-btn{width:64px !important; padding:4px 8px !important}
+  .menu-btn a.click-btn{width:64px !important; height:34px !important; padding:4px 8px !important}
   .menu-btn .font-size-6 a{ font-size: 14px;}
   .post-share{ width:100%; float:left; margin-bottom: 20px;}
   .post-share li a:hover{ background-color: #f7f7f7;}
@@ -133,12 +133,12 @@
   
 }
 @media only screen and (max-width: 360px) {
-  .menu-btn a.click-btn{width:50px !important; padding:3px 5px !important}
+  .menu-btn a.click-btn{width:50px !important; height:30px !important; padding:3px 5px !important}
   .menu-btn svg{ width: 12px !important;}
   .menu-btn span{ font-size: 13px !important;}
 }
 .menu-btn{ z-index: 999 !important; left:0px; top:5px;}
-.menu-btn a.click-btn{ width:75px; display: block; -webkit-border-radius: 5px; border-radius: 5px;}
+.menu-btn a.click-btn{ width:75px; height:40px; overflow: hidden; display: block; -webkit-border-radius: 5px; border-radius: 5px;}
 .menu-btn svg{ width: 16px; fill:#ffffff;}
 
 .btn-blue-3,
