@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from 'styled-components';
+import { Helmet } from "react-helmet";
 
 import PageWrapper from "../components/PageWrapper";
 import Image from '../components/ContentSlices/Image'
@@ -13,7 +14,7 @@ import BoxedContent from '../components/ContentSlices/BoxedContent'
 
 import PostShare from '../components/PostShare'
 import MoreServices from '../components/MoreServices'
-
+import imgFavicon from "../assets/favicon.png";
 
 const ServiceTemplate = (props)=>{
     const { data } = props
@@ -23,7 +24,15 @@ const ServiceTemplate = (props)=>{
     const stitle = `Read ${PageData.data.title.text} `;
     const surl = `${siteURL}${props.location.pathname || "/"}`;
     const stwitterHandle = "_MsLinda";
+    const seoTitle = PageData.data.seotitle.text || 'Strategically'
+    const seoDescription = PageData.data.metadescription.text || 'Strategically'
   return(
+    <>
+    <Helmet>
+          <title>{seoTitle}</title>
+          <meta name="description" content={seoDescription} />
+          <link rel="icon" type="image/png" href={imgFavicon} />
+    </Helmet>
     <PageWrapper
         themeConfig={{
           headerClassName: "site-header--menu-right",
@@ -103,6 +112,7 @@ const ServiceTemplate = (props)=>{
     </div>
   </div>
   </PageWrapper>
+  </>
 )}
 export const Blogbanner = styled.div`
   background-image: url(${props => props.img});
@@ -184,6 +194,12 @@ query getServiceData($id: String!) {
         }
         description {
           html
+        }
+        seotitle {
+          text
+        }
+        metadescription {
+          text
         }
         BoxedContent : body{
           ... on PrismicServiceDataBodyBoxedContent {
