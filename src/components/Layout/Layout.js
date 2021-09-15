@@ -91,7 +91,10 @@ const Layout = ({ children, pageContext }) => {
   }, [gContext]);
   if (pageContext.layout === "blog") {
     return (
-      <>        
+      <>
+        <Helmet>
+          <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
+        </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
 
         <div className="site-wrapper" ref={eleRef}>
