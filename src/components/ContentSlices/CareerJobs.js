@@ -61,7 +61,7 @@ const CareerJobs = ({siteURL, title, subtitle, items})=>{
                         </span>
                     </div>
                     <h5 className="pt-6 text-dark-cloud font-size-7 font-weight-medium line-height-reset mb-5">
-                        <Link to={`${siteURL}/${node.uid}`} className="text-dark-cloud font-size-7 font-weight-medium line-height-reset ">{data.title.text}</Link>
+                        <Link to={`${siteURL}/writing-jobs/${node.uid}`} className="text-dark-cloud font-size-7 font-weight-medium line-height-reset ">{data.title.text}</Link>
                     </h5>
                 </div>
             </div>

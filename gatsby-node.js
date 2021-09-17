@@ -88,7 +88,7 @@ data.Pages.edges.forEach(({ node }) => {
 
 data.Jobs.edges.forEach(({ node }) => {      
   createPage({
-    path: node.uid,
+    path: `writing-jobs/${node.uid}`,
     component: path.resolve("./src/templates/job-template.js"),
     context: {
       id:node.id
