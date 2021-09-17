@@ -1,0 +1,154 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "uid"
+      }
+    },
+    "title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "Title"
+      }
+    },
+    "seotitle" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "SeoTitle"
+      }
+    },
+    "metadescription" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph",
+        "label" : "Seo Metadescription"
+      }
+    },
+    "sub_text" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Sub Text"
+      }
+    },
+    "featured_image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Featured Image"
+      }
+    },
+    "open_roles_heading" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Open Roles Heading"
+      }
+    },
+    "open_roles_sub_text" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Open Roles Sub Text"
+      }
+    },
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : null,
+        "choices" : {
+          "work_with_us" : {
+            "type" : "Slice",
+            "fieldset" : "Work With Us",
+            "description" : "Work With Us",
+            "icon" : "accessibility",
+            "display" : "grid",
+            "non-repeat" : {
+              "work_with_us_heading" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading2",
+                  "label" : "Work with Us Heading"
+                }
+              }
+            },
+            "repeat" : {
+              "features_image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Features Image"
+                }
+              },
+              "feature_heading" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading3",
+                  "label" : "Feature Heading"
+                }
+              },
+              "features_description" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph",
+                  "label" : "Features Description"
+                }
+              }
+            }
+          },
+          "section_with_image__heading_and_button" : {
+            "type" : "Slice",
+            "fieldset" : "Section with Image, Heading and Button",
+            "description" : "Section with Image, Heading and Button",
+            "icon" : "airplay",
+            "display" : "list",
+            "non-repeat" : {
+              "section_image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Section Image"
+                }
+              },
+              "section_heading" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading3",
+                  "label" : "Section Heading"
+                }
+              },
+              "section_content" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Section Content"
+                }
+              },
+              "button_text" : {
+                "type" : "Text",
+                "config" : {
+                  "label" : "Button Text",
+                  "placeholder" : "Button Text"
+                }
+              },
+              "button_link" : {
+                "type" : "Text",
+                "config" : {
+                  "label" : "Button Link",
+                  "placeholder" : "Button Link"
+                }
+              }
+            },
+            "repeat" : { }
+          }
+        }
+      }
+    }
+  }
+}

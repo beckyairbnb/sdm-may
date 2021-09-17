@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: `Strategically | Content Writing Agency`,
     description: `Content writing agency`,
-    siteUrl: `https://www.strategically.co`,
+    siteUrl: process.env.SITEURL,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,6 +24,9 @@ module.exports = {
         schemas: {
           blog: require('./custom_types/blog.json'),
           service: require('./custom_types/service.json'),
+          career: require('./custom_types/career.json'),
+          page: require('./custom_types/page.json'),
+          writingjobs: require('./custom_types/writingjobs.json'),
           an_unused_type: {},
         },
       },

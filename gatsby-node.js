@@ -20,7 +20,31 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { data } = await graphql(`
   query {
+      Jobs :  allPrismicWritingjobs {
+        edges {
+          node {
+            uid
+            id
+          }
+        }
+      }
+      Pages : allPrismicPage {
+        edges {
+          node {
+            id
+            uid
+          }
+        }
+      }
       ServicePages : allPrismicService {
+        edges {
+          node {
+            uid
+            id
+          }
+        }
+      }
+      CareerPages : allPrismicCareer {
         edges {
           node {
             uid
@@ -38,6 +62,36 @@ data.ServicePages.edges.forEach(({ node }) => {
     context: {
       id:node.id,
       'layout':'blog'
+    },
+  })
+})
+
+data.CareerPages.edges.forEach(({ node }) => {      
+  createPage({
+    path: node.uid,
+    component: path.resolve("./src/templates/career-template.js"),
+    context: {
+      id:node.id
+    },
+  })
+})
+
+data.Pages.edges.forEach(({ node }) => {      
+  createPage({
+    path: node.uid,
+    component: path.resolve("./src/templates/page-template.js"),
+    context: {
+      id:node.id
+    },
+  })
+})
+
+data.Jobs.edges.forEach(({ node }) => {      
+  createPage({
+    path: node.uid,
+    component: path.resolve("./src/templates/job-template.js"),
+    context: {
+      id:node.id
     },
   })
 })
