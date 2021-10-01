@@ -47,7 +47,7 @@ const CareerTemplate = (props)=>{
             </a>
             </>
           ),
-          footerStyle: "style3",
+          footerStyle: "style4",
         }}
       >
     <div className="wrapper mt-4 pt-4">

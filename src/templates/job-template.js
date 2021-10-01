@@ -48,7 +48,7 @@ const JobTemplate = (props)=>{
             </a>
             </>
           ),
-          footerStyle: "style3",
+          footerStyle: "style4",
         }}
       >
    <main className="pt-23 pt-md-27 pb-13 pb-md-19 pt-lg-29 pb-lg-27">
@@ -75,7 +75,7 @@ const JobTemplate = (props)=>{
                   </h2>
                 </div>
               </div>
-              <div className="col-xl-9 col-lg-10 px-xl-0 px-lg-6 px-md-0 px-6 pr-0">
+              <div className="col-xl-9 col-lg-10 px-xl-0 px-lg-6 px-md-0 px-6 pr-0 job-content">
               
                 {/* terms-contents  */}
                 <div className="pt-lg-0 pt-10 pl-lg-10 px-xl-15">

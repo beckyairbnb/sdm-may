@@ -42,7 +42,7 @@ const ServiceTemplate = (props)=>{
             </a>
             </>
           ),
-          footerStyle: "style3",
+          footerStyle: "style4",
         }}
       >
     <div className="wrapper">
