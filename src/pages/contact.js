@@ -11,7 +11,7 @@ const Contact = () => {
    </Helmet>
       <PageWrapper
         themeConfig={{
-          headerClassName: "site-header--menu-right",
+          headerClassName: "site-header--menu-right", 
           headerButton: (
             <>
             <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing"}>
@@ -53,10 +53,10 @@ const Contact = () => {
                     <div className="col-lg-6 mb-5 mb-lg-0">
                       <div className="border-md-right border-cornflower-blue">
                         <h4 className="font-size-5 text-default-color font-weight-normal mb-0">
-                          Call us
+                          Call us 
                         </h4>
                         <a
-                          className="font-size-7 font-weight-bold heading-default-color"
+                          className="font-size-7 font-weight-bold heading-default-color" 
                           href="/#"
                         >
                           +44 7939447382
@@ -79,9 +79,9 @@ const Contact = () => {
                   </div>
                 </div>
                 {/* contact details */}
-                <div className="pt-12 pb-10 max-w-536 mx-auto">
+                <div className="pt-12 pb-10 max-w-536 mx-auto d-flex">
                   <form
-                    name="contact"
+                    name="contactform"
                     method="POST"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
@@ -89,15 +89,18 @@ const Contact = () => {
                     data-aos-duration={1100}
                     data-aos-once="true"
                   >
-                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="form-name" value="contactform" />
                     {/* Company Name */}
-                    <div className="form-group mb-7 position-relative">
+
+
+
+                    <div className="form-group mb-7 position-relative w-100">
                       <input
                         type="text"
                         name="name"
                         className="form-control form-control-lg bg-white rounded-5 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 border-default-color"
                         placeholder="John Doe"
-                        id="company"
+                        id="name"
                         required
                       />
                     </div>
@@ -112,18 +115,18 @@ const Contact = () => {
                         required
                       />
                     </div>
-                    {/* Company Name */}
+                    {/* stories Name */}
                     <div className="form-group mb-7 position-relative">
                       <input
                         type="text"
                         name="stories"
                         className="form-control form-control-lg bg-white rounded-5 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 border-default-color"
                         placeholder="Which package are you interested in?"
-                        id="subject"
+                        id="stories"
                         required
                       />
                     </div>
-                    {/* Company Name */}
+                    {/* Message Field */}
                     <div className="form-group mb-7 position-relative">
                       <textarea
                         name="message"

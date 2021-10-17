@@ -2,19 +2,25 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from 'styled-components';
 import { Helmet } from "react-helmet";
+import { StaticImage } from "gatsby-plugin-image"
 
 import PageWrapper from "../components/PageWrapper";
 import Image from '../components/ContentSlices/Image'
 import CTA from '../components/ContentSlices/CTA'
 import Heading from '../components/ContentSlices/Heading'
 import Text from '../components/ContentSlices/Text'
+import HappyClients from "../components/happyClients";
 import BoxedContent from '../components/ContentSlices/BoxedContent'
 
 
 import PostShare from '../components/PostShare'
 import MoreServices from '../components/MoreServices'
 import imgFavicon from "../assets/favicon.png";
-
+import clientsImg from "../assets/images/clients-img.png";
+import phoneSec from "../assets/images/phone-sec.webp";
+import policyImg1 from "../assets/images/policy_1.png";
+import policyImg2 from "../assets/images/policy_2.png";
+import policyImg3 from "../assets/images/policy_3.png";
 const ServiceTemplate = (props)=>{
     const { data } = props
     const { PageData, site, OtherServices } = data
@@ -45,29 +51,94 @@ const ServiceTemplate = (props)=>{
           footerStyle: "style4",
         }}
       >
-    <div className="wrapper">
-      <div className="container-fluid p-0 overflow-hidden">
-        <Blogbanner img={PageData.data.featuredimage.localFile.childImageSharp.fluid.srcWebp} className="blog-banner d-flex flex-column justify-content-center align-items-center text-center">
-           <div className="row blog-banner-inner d-flex flex-column justify-content-center align-items-center">
-                <div className="col-sm-12">
-                    {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="text-white text-center w-100 mt-10 px-6" ></div>}
-                    {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }} className="text-center w-100 mb-5 mt-5 text-white px-6" ></div>}
-                    <button
-                    className="btn btn btn-blue-3 header-btn-2 mt-5 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">
-                        Get Your Quote in Seconds
-                    </button>
-                </div>
-                    
+    
+    <div className="main-banner">
+         <div className="container">
+            <div className="row justify-content-center">
+               <div className="col-xl-8 col-lg-9 col-md-12 col-sm-12">
+                  <div className="text-center pt-5 pb-lg-4 mb-lg-4">
+                     {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="mb-4" ></div>}
+                     {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }}></div>}
+                     <button
+                    className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">{PageData.data.cta_button_text}</button>
+                     <p>Already insured? We'll help you switch</p>
+                     
+                  </div>
+               </div>
             </div>
-        </Blogbanner>
-    </div>
-       <div className="container pb-4 pt-3 mt-3">      
-                 
-              <div className="row blog-content d-flex flex-wrap">  
-              <div className="col-lg-2 col-md-2 col-xs-12 p-0 m-0">&nbsp;</div>
-              
-                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-left blog-content-inner">
-                {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100" ></div>}
+            <div className="text-center d-sm-block d-lg-none d-md-none"> <img src="images/mob-banner.jpg" alt="" className="w-100"/></div>
+         </div>
+      </div>
+      
+      <div className="py-7 my-5 border">
+         <div className="container-fluid d-flex flex-row  justify-content-between my-4"> 
+          <img src={clientsImg} alt="" className="w-100" />
+         </div>
+      </div>
+      <HappyClients/>
+      <div className="py-12 my-5 bg1">
+         <div className="container py-lg-10">
+            <div className="row justify-content-center text-center py-lg-5">
+               <div className="col-xl-8 col-lg-10 col-xs-12">
+                  <h2>Contrary to popular belief, Lorem Ipsum </h2>
+                  <p>100% digital. No paperwork. Sign up in seconds.</p>
+                  <button type="button" className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">Check Our Prices</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div className="pt-12 bg-light">
+         <div className="container pt-10">
+            <div className="row justify-content-center text-center">
+               <div className="col-xl-8 col-lg-10 col-xs-12">
+                  <h2 className="w-100">What is Lorem Ipsum?</h2>
+                  <p className="">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                  <p className="mb-md-5 mb-3"><a href="#" className="text-primary"><i className="fa fa-play-circle"></i> See the Lemonade App in action</a></p>
+               </div>
+               <div className="col-xl-10 col-lg-10 col-xs-12">
+                 <img src={phoneSec} alt=""/>
+                 </div>
+            </div>
+         </div>
+      </div>
+
+      <div className="py-14">
+         <div className="container">
+            <div className="row justify-content-center text-center py-5">
+               <div className="col-xl-8 col-lg-10 col-xs-12">
+                  <h2 className="mb-4">Lorem Ipsum is not simply random text</h2>
+                  <p>We’ll handle the admin of switching for you. And don’t worry, you won’t have to have an awkward conversation with your accountant - we’ll arrange for your information to be transferred directly to us.</p>
+               </div>
+            </div>
+            <div className="row justify-content-center text-center mt-3">
+               <div className="col-md-4 col-xs-12 mb-lg-4">
+                  <img src={policyImg1} className="w-auto mb-lg-5 mb-3"/>
+                  <h4>Get your<br />
+                     Lorem Ipsum
+                  </h4>
+               </div>
+               <div className="col-md-4 col-xs-12 mb-lg-4">
+                  <img src={policyImg2} className="w-auto mb-lg-5 mb-3"/>
+                  <h4> Give us your old<br />
+                     Lorem Ipsum
+                  </h4>
+               </div>
+               <div className="col-md-4 col-xs-12 mb-lg-4">
+                  <img src={policyImg3} className="w-auto mb-lg-5 mb-3"/>
+                  <h4>Lorem Ipsum<br />
+                     the paperwork
+                  </h4>
+               </div>
+               <button type="button" className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">Check Prices And Switches</button>
+            </div>
+         </div>
+      </div>
+      <div className="py-14 bg-light">
+         <div className="container">
+            <div className="row justify-content-center">
+               <div className="col-lg-9 col-md-9 col-sm-12">
+               {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100" ></div>}
                     {PageData.data.body.map((item, index)=>{
                       
                         const { slice_type, primary } = item
@@ -83,6 +154,7 @@ const ServiceTemplate = (props)=>{
                          }
                          else if(slice_type==='text_block')
                          {
+
                            return <Text data={primary}/>
                          }
                          else if(slice_type==='image___description')
@@ -92,24 +164,10 @@ const ServiceTemplate = (props)=>{
                        }
                        
                     })}
-                </div>
-                <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12 blog-social ">
-                  <PostShare socialConfig={{
-                            twitter : stwitterHandle,
-                            config: {
-                              url: surl,
-                              title: stitle,
-                            },
-                          }}/></div>
-              </div>
+               </div>
+            </div>
+         </div>
       </div>
-    <div className="d-flex justify-content-center align-items-center text-center bg-light pt-10 pb-8 border-top border-bottom">
-      <BoxedContent data={PageData.data.BoxedContent}/>
-    </div>
-    <div className="d-flex pt-20 pb-8">
-        <MoreServices data={OtherServices}/>
-    </div>
-  </div>
   </PageWrapper>
   </>
 )}
@@ -183,6 +241,7 @@ query getServiceData($id: String!) {
             }
           }
         }
+        cta_button_text
         title {
           html
           text

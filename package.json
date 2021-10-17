@@ -24,6 +24,7 @@
     "gatsby-remark-vscode": "^3.2.1",
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-source-prismic": "^4.1.2",
+    "gatsby-transformer-json": "^3.14.0",
     "gatsby-transformer-remark": "^2.16.1",
     "gatsby-transformer-sharp": "^2.12.1",
     "google-map-react": "^1.1.7",
