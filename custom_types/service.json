@@ -40,6 +40,58 @@
         "label": "CTA Button Text"
       }
     },
+    "cta_button_below_text": {
+      "type": "Text",
+      "config": {
+        "label": "CTA Button Below Text"
+      }
+    },
+    "testimonials_block_heading": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading3, heading4, heading5, heading6",
+        "label": "Testimonials Block Heading"
+      }
+    },
+    "testimonials_block_sub_text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Testimonials Block Sub Text"
+      }
+    },
+    "testimonials_block_stars_below_text": {
+      "type": "Text",
+      "config": {
+        "label": "Testimonials Block Stars Below Text"
+      }
+    },
+    "button_block_heading": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Button Block Heading"
+      }
+    },
+    "button_block_subtext": {
+      "type": "Text",
+      "config": {
+        "label": "Button Block Subtext"
+      }
+    },
+    "image_block_heading": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Image Block Heading"
+      }
+    },
+    "image_block_subtext": {
+      "type": "Text",
+      "config": {
+        "label": "Image Block Subtext"
+      }
+    },
     "featuredimage": {
       "type": "Image",
       "config": {

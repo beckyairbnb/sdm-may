@@ -157,10 +157,10 @@
 .bg1{background-image:url(../assets/images/bg1.png); background-position: center center; background-repeat:no-repeat; background-size:100% auto;}
 @media only screen and (min-width:768px) {
   .testimonial-item { min-height: 220px;}
-  .main-banner{ padding-top: 160px; padding-bottom: 50px; background-image:url(../assets/images/home-banner.jpg); background-position:bottom center; background-repeat:no-repeat; background-size:100%;}
+  .main-banner{ padding-top: 160px; padding-bottom: 50px;}
 }
 @media only screen and (max-width:767px) {
-  .main-banner{ padding-top: 120px; padding-bottom: 50px; background-image:url(../assets/images/home-banner.jpg); background-position:bottom center; background-repeat:no-repeat; background-size:100%;}
+  .main-banner{ padding-top: 120px; padding-bottom: 50px; }
 }
 
 
