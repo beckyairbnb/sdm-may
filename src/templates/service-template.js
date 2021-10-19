@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import styled from 'styled-components';
 import { Helmet } from "react-helmet";
 import { StaticImage } from "gatsby-plugin-image"
-import Progress from "../sections/home2/Progress";
+import ProgressNew from "../sections/home2/ProgressNew";
 import PageWrapper from "../components/PageWrapper";
 import Image from '../components/ContentSlices/Image'
 import CTA from '../components/ContentSlices/CTA'
@@ -21,6 +21,13 @@ import phoneSec from "../assets/images/phone-sec.webp";
 import policyImg1 from "../assets/images/policy_1.png";
 import policyImg2 from "../assets/images/policy_2.png";
 import policyImg3 from "../assets/images/policy_3.png";
+
+import logo1 from "../assets/images/clients/logo-1.jpg";
+import logo2 from "../assets/images/clients/logo-2.jpg";
+import logo3 from "../assets/images/clients/logo-3.jpg";
+import logo4 from "../assets/images/clients/logo-4.jpg";
+import logo5 from "../assets/images/clients/logo-5.jpg";
+import logo6 from "../assets/images/clients/logo-6.jpg";
 const ServiceTemplate = (props)=>{
     const { data } = props
     const { PageData, site } = data
@@ -61,7 +68,7 @@ const ServiceTemplate = (props)=>{
                      {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }}></div>}
                      <Link
                      to="/pricing"
-                    className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">{PageData.data.cta_button_text}</Link>
+                    className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                      <p>{PageData.data.cta_button_below_text}</p>
                      
                   </div>
@@ -72,8 +79,15 @@ const ServiceTemplate = (props)=>{
       </div>
       
       <div className="py-5 my-4">
-         <div className="container-fluid d-flex flex-row  justify-content-between my-4"> 
-          <img src={clientsImg} alt="" className="w-100" />
+         <div className="container d-flex flex-row justify-content-between my-1"> 
+            <div className="row d-flex flex-row justify-content-between my-1"> 
+              <img src={logo1} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
+              <img src={logo2} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
+              <img src={logo3} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
+              <img src={logo4} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
+              <img src={logo5} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
+              <img src={logo6} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
+            </div>
          </div>
       </div>
       <HappyClients title={PageData.data.testimonials_block_heading} subtitle={PageData.data.testimonials_block_sub_text} ctatextbelow={PageData.data.testimonials_block_stars_below_text} />
@@ -85,7 +99,7 @@ const ServiceTemplate = (props)=>{
                  <p>{PageData.data.button_block_subtext}</p>
                  <Link
                      to="/pricing"
-                    className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">{PageData.data.cta_button_text}</Link>
+                    className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                </div>
             </div>
          </div>
@@ -100,16 +114,17 @@ const ServiceTemplate = (props)=>{
                   <p className="mb-md-5 mb-3"><a href="#" className="text-primary"><i className="fa fa-play-circle"></i> See the Strategically App in action</a></p>
                </div>
                <div className="col-xl-10 col-lg-10 col-xs-12">
-                 <img src={phoneSec} alt=""/>
+                 <img src={phoneSec} alt="" className="stars-img"/>
                  </div>
             </div>
          </div>
       </div>
-      <Progress className="pb-lg-21 border-top border-default-color-1" />      
+      <ProgressNew className="pb-lg-21 border-top border-default-color-1" />      
       <div className="py-14 bg-light">
          <div className="container">
             <div className="row justify-content-center">
                <div className="col-lg-9 col-md-9 col-sm-12">
+               {PageData.data.heading_above_description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.heading_above_description.html }} className="w-100 mb-6" ></div>}
                     {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100" ></div>}
                     {PageData.data.body.map((item, index)=>{
                       
@@ -223,6 +238,10 @@ query getServiceData($id: String!) {
           html
         }
         image_block_subtext
+        heading_above_description {
+          html
+          text
+        }
         BoxedContent : body{
           ... on PrismicServiceDataBodyBoxedContent {
             id

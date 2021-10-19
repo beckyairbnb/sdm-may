@@ -15,7 +15,7 @@ const HappyClients = ({title, subtitle, ctatextbelow}) => {
                     </div> 
                     <div className="row d-flex justify-content-center text-center">
                         <div class="col-md-6 col-sm-9 d-flex flex-row justify-content-between align-items-center">
-                        <img src={starsImg} alt="Stars" />
+                        <img src={starsImg} alt="Stars" className="stars-img" />
                         </div>  
                     </div>
                     <div className="row d-flex justify-content-center text-center mt-4">

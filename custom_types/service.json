@@ -49,7 +49,7 @@
     "testimonials_block_heading": {
       "type": "StructuredText",
       "config": {
-        "single": "heading1, heading3, heading4, heading5, heading6",
+        "single": "heading1,heading3,heading4,heading5,heading6",
         "label": "Testimonials Block Heading"
       }
     },
@@ -101,6 +101,13 @@
         },
         "thumbnails": [],
         "label": "FeaturedImage"
+      }
+    },
+    "heading_above_description": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Heading above Description"
       }
     },
     "description": {

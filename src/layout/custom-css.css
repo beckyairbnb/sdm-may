@@ -160,10 +160,15 @@
   .main-banner{ padding-top: 160px; padding-bottom: 50px;}
 }
 @media only screen and (max-width:767px) {
+  .testimonial-item { min-height: 240px;}
   .main-banner{ padding-top: 120px; padding-bottom: 50px; }
 }
-
-
+@media only screen and (max-width:575px) {
+  .col-xm-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+}
 .testimonial-item.rounded-3 {
 	border-radius: 0.65rem !important;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 8px 0px, rgba(0, 0, 0, 0.16) 0px 31px 30px -18px;
@@ -195,3 +200,4 @@
   .testimonials-up{ padding-bottom: 150px;}
   .testimonials-container{ margin-top: -140px;}
 }
+.stars-img{ width: auto; max-width: 100%;} 
