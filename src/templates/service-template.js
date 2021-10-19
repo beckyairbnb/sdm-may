@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql, Link } from "gatsby"
 import styled from 'styled-components';
 import { Helmet } from "react-helmet";
@@ -11,6 +11,8 @@ import Heading from '../components/ContentSlices/Heading'
 import Text from '../components/ContentSlices/Text'
 import HappyClients from "../components/happyClients";
 import BoxedContent from '../components/ContentSlices/BoxedContent'
+
+import ModalPopup from '../components/ModalPopup'
 
 
 // import PostShare from '../components/PostShare'
@@ -29,6 +31,7 @@ import logo4 from "../assets/images/clients/logo-4.jpg";
 import logo5 from "../assets/images/clients/logo-5.jpg";
 import logo6 from "../assets/images/clients/logo-6.jpg";
 const ServiceTemplate = (props)=>{
+    const [modalShow, setModalShow] = useState(false);
     const { data } = props
     const { PageData, site } = data
     console.log('Props' , props)
@@ -84,7 +87,6 @@ const ServiceTemplate = (props)=>{
               <img src={logo1} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
               <img src={logo2} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
               <img src={logo3} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
-              <img src={logo4} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
               <img src={logo5} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
               <img src={logo6} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
             </div>
@@ -111,7 +113,7 @@ const ServiceTemplate = (props)=>{
                <div className="col-xl-8 col-lg-10 col-xs-12">
                {PageData.data.image_block_heading.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.image_block_heading.html }} className="w-100" ></div>}
                  <p>{PageData.data.image_block_subtext}</p>
-                  <p className="mb-md-5 mb-3"><a href="#" className="text-primary"><i className="fa fa-play-circle"></i> See the Strategically App in action</a></p>
+                  <p className="mb-md-5 mb-3"><button className="bg-transparent border-0 text-primary" onClick={() => setModalShow(true)}>See the Strategically App in action</button></p>
                </div>
                <div className="col-xl-10 col-lg-10 col-xs-12">
                  <img src={phoneSec} alt="" className="stars-img"/>
@@ -155,6 +157,10 @@ const ServiceTemplate = (props)=>{
             </div>
          </div>
       </div>
+      <ModalPopup
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+      />    
   </PageWrapper>
   </>
 )}
