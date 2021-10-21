@@ -221,3 +221,5 @@ video {
   width: 100%;
   height: 100%;
 }
+.client-logo img{ width: 100%;}
+.client-item{ width:20%; padding:1%;}

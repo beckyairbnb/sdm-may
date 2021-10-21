@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { graphql, Link } from "gatsby"
 import styled from 'styled-components';
 import { Helmet } from "react-helmet";
-import { StaticImage } from "gatsby-plugin-image"
 import ProgressNew from "../sections/home2/ProgressNew";
 import PageWrapper from "../components/PageWrapper";
 import Image from '../components/ContentSlices/Image'
@@ -10,26 +9,24 @@ import CTA from '../components/ContentSlices/CTA'
 import Heading from '../components/ContentSlices/Heading'
 import Text from '../components/ContentSlices/Text'
 import HappyClients from "../components/happyClients";
-import BoxedContent from '../components/ContentSlices/BoxedContent'
 
 import ModalPopup from '../components/ModalPopup'
 
 
-// import PostShare from '../components/PostShare'
-// import MoreServices from '../components/MoreServices'
 import imgFavicon from "../assets/favicon.png";
-import clientsImg from "../assets/images/clients-img.png";
 import phoneSec from "../assets/images/phone-sec.webp";
-import policyImg1 from "../assets/images/policy_1.png";
-import policyImg2 from "../assets/images/policy_2.png";
-import policyImg3 from "../assets/images/policy_3.png";
 
 import logo1 from "../assets/images/clients/logo-1.jpg";
 import logo2 from "../assets/images/clients/logo-2.jpg";
 import logo3 from "../assets/images/clients/logo-3.jpg";
 import logo4 from "../assets/images/clients/logo-4.jpg";
 import logo5 from "../assets/images/clients/logo-5.jpg";
+
 import logo6 from "../assets/images/clients/logo-6.jpg";
+import logo7 from "../assets/images/clients/logo-7.jpg";
+import logo8 from "../assets/images/clients/logo-8.jpg";
+import logo9 from "../assets/images/clients/logo-9.jpg";
+import logo10 from "../assets/images/clients/logo-10.jpg";
 const ServiceTemplate = (props)=>{
     const [modalShow, setModalShow] = useState(false);
     const { data } = props
@@ -66,7 +63,7 @@ const ServiceTemplate = (props)=>{
          <div className="container">
             <div className="row justify-content-center">
                <div className="col-xl-8 col-lg-9 col-md-12 col-sm-12">
-                  <div className="text-center pt-5 pb-lg-4 mb-lg-4">
+                  <div className="text-center pt-5 pb-lg-4 mb-lg-2">
                      {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="mb-4" ></div>}
                      {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }}></div>}
                      <Link
@@ -81,14 +78,28 @@ const ServiceTemplate = (props)=>{
          </div>
       </div>
       
-      <div className="py-5 my-4">
-         <div className="container d-flex flex-row justify-content-between my-1"> 
-            <div className="row d-flex flex-row justify-content-between my-1"> 
-              <img src={logo1} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
+      <div className="py-2 mb-4">
+         <div className="container my-1"> 
+            <div className="row my-1 client-logo"> 
+            <div className="col-md-6 col-sm-12 d-flex flex-row justify-content-center align-items-center m-0 p-0">
+              <div className="client-item"><img src={logo1} alt="Client 1" /></div>
+              <div className="client-item"><img src={logo2} alt="Client 2" /></div>
+              <div className="client-item"><img src={logo3} alt="Client 3" /></div>
+              <div className="client-item"><img src={logo4} alt="Client 4" /></div>
+              <div className="client-item"><img src={logo5} alt="Client 5" /></div>
+            </div>
+            <div className="col-md-6 col-sm-12 d-flex flex-row justify-content-center align-items-center m-0 p-0">
+              <div className="client-item"><img src={logo6} alt="Client 6" /></div>
+              <div className="client-item"><img src={logo7} alt="Client 7" /></div>
+              <div className="client-item"><img src={logo8} alt="Client 8" /></div>
+              <div className="client-item"><img src={logo9} alt="Client 9" /></div>
+              <div className="client-item"><img src={logo10} alt="Client 10" /></div>
+            </div>
+              {/* <img src={logo1} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
               <img src={logo2} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
               <img src={logo3} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
               <img src={logo5} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
-              <img src={logo6} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" />
+              <img src={logo6} alt="A dinosaur" className="col-md-2 col-sm-4 col-xm-6 my-2" /> */}
             </div>
          </div>
       </div>
