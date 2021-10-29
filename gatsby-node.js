@@ -56,9 +56,9 @@ exports.createPages = async ({ graphql, actions }) => {
 `)
 
 data.ServicePages.edges.forEach(({ node }) => {    
-  console.log('Services Page ',node.uid)  
+  console.log('Services Page writer-services/',node.uid)  
   createPage({
-    path: node.uid,
+    path: `writer-services/${node.uid}`,
     component: path.resolve("./src/templates/service-template.js"),
     context: {
       id:node.id
