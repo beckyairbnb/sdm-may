@@ -27,10 +27,10 @@ import logo7 from "../assets/images/clients/logo-7.jpg";
 import logo8 from "../assets/images/clients/logo-8.jpg";
 import logo9 from "../assets/images/clients/logo-9.jpg";
 import logo10 from "../assets/images/clients/logo-10.jpg";
-const ServiceTemplate = (props)=>{
+const MainServiceTemplate = (props)=>{
     const [modalShow, setModalShow] = useState(false);
     const { data } = props
-    const { PageData, site } = data
+    const { PageData, site, AllServices } = data
     console.log('Props' , props)
     const siteURL = site.siteMetadata.siteUrl 
     const stitle = `Read ${PageData.data.title.text} `;
@@ -99,7 +99,7 @@ const ServiceTemplate = (props)=>{
          </div>
       </div>
       <HappyClients title={PageData.data.testimonials_block_heading} subtitle={PageData.data.testimonials_block_sub_text} ctatextbelow={PageData.data.testimonials_block_stars_below_text} />
-      <div className="py-12 my-5">
+      <div className="py-6 my-1">
          <div className="container py-lg-10">
             <div className="row justify-content-center text-center py-lg-5">
                <div className="col-xl-8 col-lg-10 col-xs-12">
@@ -112,7 +112,26 @@ const ServiceTemplate = (props)=>{
             </div>
          </div>
       </div>
-
+      <div className="py-6 mb-15">
+         <div className="container py-lg-10 bg-light">
+            <div className="row justify-content-center text-center py-lg-5">
+               <div className="col-sm-12">
+                <h2 className="mb-10">Services We Provide</h2>
+                    <ul className="row">
+                        { AllServices.edges.map((item,index)=>{
+                            return(
+                                <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
+                                  <Link to={item.node.uid} className="text-stone gr-hover-text-dodger-blue-1 font-size-5">{item.node.data.title.text}</Link>  
+                                </li>
+                            )
+                        })}
+                    </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      
       <div className="pt-12 bg-light">
          <div className="container pt-10">
             <div className="row justify-content-center text-center">
@@ -194,12 +213,25 @@ export const Blogbanner = styled.div`
 
 
 export const query = graphql`
-query getServiceData($id: String!) {
+query getMainServiceData($id: String!) {
     site {
         siteMetadata {
           title
           description
           siteUrl
+        }
+      }
+      AllServices: allPrismicService(filter: {uid: {ne: "writer-services"}}, sort: {fields: data___title___text, order: ASC}) {
+        edges {
+          node {
+            uid
+            id
+            data {
+              title {
+                text
+              }
+            }
+          }
         }
       }
   PageData : prismicService(id: {eq: $id}) {
@@ -346,4 +378,4 @@ query getServiceData($id: String!) {
     }
 }
 `
-export default ServiceTemplate
+export default MainServiceTemplate

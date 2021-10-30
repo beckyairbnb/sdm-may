@@ -6,8 +6,8 @@ export const menuItems = [
 
   },
   {
-    name: "content-writing-agency",
-    label: "Content Writing ",
+    name: "writer-services",
+    label: "We're Hiring!",
 
   },
 

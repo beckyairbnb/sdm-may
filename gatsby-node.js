@@ -36,7 +36,15 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-      ServicePages : allPrismicService {
+      ServicePages : allPrismicService(filter: {uid: {ne: "writer-services"}}) {
+        edges {
+          node {
+            uid
+            id
+          }
+        }
+      }
+      MainServicePage: allPrismicService(filter: {uid: {eq: "writer-services"}}) {
         edges {
           node {
             uid
@@ -54,9 +62,17 @@ exports.createPages = async ({ graphql, actions }) => {
       }
   }
 `)
-
-data.ServicePages.edges.forEach(({ node }) => {    
-  console.log('Services Page writer-services/',node.uid)  
+data.MainServicePage.edges.forEach(({ node }) => {     
+  console.log('Main services', node)
+  createPage({
+    path: `writer-services`,
+    component: path.resolve("./src/templates/main-service-template.js"),
+    context: {
+      id:node.id
+    },
+  })
+})
+data.ServicePages.edges.forEach(({ node }) => {     
   createPage({
     path: `writer-services/${node.uid}`,
     component: path.resolve("./src/templates/service-template.js"),
