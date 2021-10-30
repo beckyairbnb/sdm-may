@@ -6,7 +6,7 @@ export const menuItems = [
 
   },
   {
-    name: "writer-services",
+    name: "writing-jobs",
     label: "We're Hiring!",
 
   },
