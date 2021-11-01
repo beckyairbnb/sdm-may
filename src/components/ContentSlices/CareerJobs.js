@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Img from "gatsby-image"
 const CareerJobs = ({siteURL, title, subtitle, items})=>{
-    console.log('Joob items', items)
     return(
         <div className="bg-default-3 pt-12 pt-md-18 pb-md-19 pb-15 pt-lg-22 pb-lg-26">
       <div className="container">
@@ -25,7 +24,6 @@ const CareerJobs = ({siteURL, title, subtitle, items})=>{
         </div>
         <div className="row mt-lg-9">
           {items.edges.map(({node}, index) => {
-              console.log('Items', node)
               const { data } = node
               let badgeColor = ''
               if(data.job_type==='Full-time')

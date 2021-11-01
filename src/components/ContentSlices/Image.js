@@ -1,7 +1,6 @@
 import React from 'react'
 import Img from "gatsby-image"
 const Image = ({data})=>{
-    console.log('Image data', data)
     return(
         <div className="d-flex flex-column justify-content-center align-items-center my-1">
                 <Img

@@ -15,7 +15,6 @@ import stratagicsicon from "../assets/images/stratagic-s.png";
 const BlogTemplate = (props)=>{
   const { data } = props
   const { PageData } = data
-  console.log('Props' , PageData.data.BoxedContent)
   return(
     <div className="wrapper">
       <div className="container-fluid p-0 overflow-hidden">
@@ -50,7 +49,6 @@ const BlogTemplate = (props)=>{
                     {PageData.data.body.map((item, index)=>{
                       
                         const { slice_type, primary } = item
-                        //console.log('Single Object',slice_type)
                        {
                          if(slice_type==='cta_block')
                          {

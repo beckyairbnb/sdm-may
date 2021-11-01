@@ -1,6 +1,5 @@
 import React from 'react'
 const PageContent = ({data})=>{
-    //console.log('data',data);
     return(
         <div className="w-100 d-flex flex-column justify-content-start align-items-left text-left mt-1 mb-1"
               data-aos="fade-up"

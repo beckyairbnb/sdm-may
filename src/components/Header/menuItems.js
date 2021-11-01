@@ -1,20 +1,18 @@
 export const menuItems = [
 
   {
-    name: "seo-strategy-agency",
-    label: "SEO Strategy",
-
-  },
-  {
     name: "writing-jobs",
     label: "We're Hiring!",
 
+  },
+  {
+    name: "content-writing-agency",
+    label: "Content Writing ",
   },
 
          {
            name: "samples",
            label: "Samples",
-
          },
 
-       ];
+];

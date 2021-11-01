@@ -1,7 +1,6 @@
 import React from 'react'
 import Img from "gatsby-image"
 const BoxedContent = ({data})=>{
-    console.log('data',data);
     return(
         <div className="d-flex justify-content-center align-items-center mt-10 mb-10">
             {data.map((item,index)=>{

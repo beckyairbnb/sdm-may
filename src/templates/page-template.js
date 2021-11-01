@@ -1,7 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import styled from 'styled-components';
 import { Helmet } from "react-helmet";
 
 import PageWrapper from "../components/PageWrapper";
@@ -12,12 +10,11 @@ import imgFavicon from "../assets/favicon.png";
 
 const PageTemplate = (props)=>{
     const { data } = props
-    const { PageData, site } = data
-    //console.log('Props' , props)
-    const siteURL = site.siteMetadata.siteUrl 
-    const stitle = `Read ${PageData.data.title.text} `;
-    const surl = `${siteURL}${props.location.pathname || "/"}`;
-    const stwitterHandle = "_MsLinda";
+    const { PageData } = data
+    //const siteURL = site.siteMetadata.siteUrl 
+    //const stitle = `Read ${PageData.data.title.text} `;
+    //const surl = `${siteURL}${props.location.pathname || "/"}`;
+    //const stwitterHandle = "_MsLinda";
     const seoTitle = PageData.data.seotitle.text || 'Strategically'
     const seoDescription = PageData.data.metadescription.text || 'Strategically'
   return(
@@ -58,7 +55,6 @@ const PageTemplate = (props)=>{
       {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100 float-left overflow-hidden mb-2"></div>}     
       {PageData.data.body.map((item, index)=>{
                 const { slice_type, primary } = item
-                //console.log('Single Object',slice_type)
                 {
                   if(slice_type==='section_with_heading_and_content')
                   {

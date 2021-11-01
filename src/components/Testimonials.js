@@ -2,7 +2,6 @@ import React from "react"
 import Slider from "react-slick";
 import { Testimonials } from '../data/testimonials'
 const Reviews = () => {
-    console.log('Testimonails', Testimonials)
     const settings = {
         dots: false,
         arrows : false,

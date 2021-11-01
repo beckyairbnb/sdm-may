@@ -30,12 +30,11 @@ import logo10 from "../assets/images/clients/logo-10.jpg";
 const ServiceTemplate = (props)=>{
     const [modalShow, setModalShow] = useState(false);
     const { data } = props
-    const { PageData, site } = data
-    console.log('Props' , props)
-    const siteURL = site.siteMetadata.siteUrl 
-    const stitle = `Read ${PageData.data.title.text} `;
-    const surl = `${siteURL}${props.location.pathname || "/"}`;
-    const stwitterHandle = "_MsLinda";
+    const { PageData } = data
+    //const siteURL = site.siteMetadata.siteUrl 
+    //const stitle = `Read ${PageData.data.title.text} `;
+    //const surl = `${siteURL}${props.location.pathname || "/"}`;
+    //const stwitterHandle = "_MsLinda";
     const seoTitle = PageData.data.seotitle.text || 'Strategically'
     const seoDescription = PageData.data.metadescription.text || 'Strategically'
   return(
@@ -134,10 +133,8 @@ const ServiceTemplate = (props)=>{
                <div className="col-lg-9 col-md-9 col-sm-12">
                {PageData.data.heading_above_description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.heading_above_description.html }} className="w-100 mb-6" ></div>}
                     {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100" ></div>}
-                    {PageData.data.body.map((item, index)=>{
-                      
+                    {PageData.data.body.map((item, index)=>{                      
                         const { slice_type, primary } = item
-                        //console.log('Single Object',slice_type)
                        {
                          if(slice_type==='cta_block')
                          {

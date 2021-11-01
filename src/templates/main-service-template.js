@@ -30,12 +30,11 @@ import logo10 from "../assets/images/clients/logo-10.jpg";
 const MainServiceTemplate = (props)=>{
     const [modalShow, setModalShow] = useState(false);
     const { data } = props
-    const { PageData, site, AllServices } = data
-    console.log('Props' , props)
-    const siteURL = site.siteMetadata.siteUrl 
-    const stitle = `Read ${PageData.data.title.text} `;
-    const surl = `${siteURL}${props.location.pathname || "/"}`;
-    const stwitterHandle = "_MsLinda";
+    const { PageData, AllServices } = data
+    //const siteURL = site.siteMetadata.siteUrl 
+    //const stitle = `Read ${PageData.data.title.text} `;
+    //const surl = `${siteURL}${props.location.pathname || "/"}`;
+    //const stwitterHandle = "_MsLinda";
     const seoTitle = PageData.data.seotitle.text || 'Strategically'
     const seoDescription = PageData.data.metadescription.text || 'Strategically'
   return(
@@ -157,7 +156,6 @@ const MainServiceTemplate = (props)=>{
                     {PageData.data.body.map((item, index)=>{
                       
                         const { slice_type, primary } = item
-                        //console.log('Single Object',slice_type)
                        {
                          if(slice_type==='cta_block')
                          {

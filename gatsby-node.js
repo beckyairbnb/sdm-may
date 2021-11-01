@@ -63,7 +63,6 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 `)
 data.MainServicePage.edges.forEach(({ node }) => {     
-  console.log('Main services', node)
   createPage({
     path: `writer-services`,
     component: path.resolve("./src/templates/main-service-template.js"),

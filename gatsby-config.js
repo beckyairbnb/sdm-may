@@ -44,6 +44,27 @@ module.exports = {
        trackingId: "UA-127625937-1",
      },
    },
+   {
+    resolve: `gatsby-plugin-sitemap`,
+    options: {
+      createLinkInHead: true,
+      output: '/'
+    }      
+  },
+  {
+    resolve: 'gatsby-plugin-robots-txt',
+    options: {
+      host: process.env.SITEURL,
+      env: {
+        development: {
+          policy: [{ userAgent: '*', disallow: ['/'] }]
+        },
+        production: {
+          policy: [{ userAgent: '*', allow: '/' }]
+        }
+      }
+    }
+  },
     {
   resolve: 'gatsby-plugin-crisp-chat',
   options: {

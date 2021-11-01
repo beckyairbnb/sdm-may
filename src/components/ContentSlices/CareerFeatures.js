@@ -1,7 +1,6 @@
 import React from 'react'
 import Img from "gatsby-image"
 const CareerFeatures = ({data, items})=>{
-    console.log('contntent data ',data)
     return(
         <div className="mt-10 pt-10 pb-9 pb-md-13 pb-lg-15">
             <div className="container">

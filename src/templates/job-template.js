@@ -10,12 +10,11 @@ import imgFavicon from "../assets/favicon.png";
 
 const JobTemplate = (props)=>{
     const { data } = props
-    const { PageData, site, OtherServices } = data
-    //console.log('Props' , props)
-    const siteURL = site.siteMetadata.siteUrl 
-    const stitle = `Read ${PageData.data.title.text} `;
-    const surl = `${siteURL}${props.location.pathname || "/"}`;
-    const stwitterHandle = "_MsLinda";
+    const { PageData } = data
+    //const siteURL = site.siteMetadata.siteUrl 
+    //const stitle = `Read ${PageData.data.title.text} `;
+    //const surl = `${siteURL}${props.location.pathname || "/"}`;
+    //const stwitterHandle = "_MsLinda";
     const seoTitle = PageData.data.seotitle.text || 'Strategically'
     const seoDescription = PageData.data.metadescription.text || 'Strategically'
     let badgeColor = ''
