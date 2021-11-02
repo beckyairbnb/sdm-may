@@ -15,7 +15,6 @@
     "gatsby-plugin-facebook-pixel": "^1.0.7",
     "gatsby-plugin-google-analytics": "^3.5.0",
     "gatsby-plugin-image": "^1.13.0",
-    "gatsby-plugin-no-index": "^1.0.2",
     "gatsby-plugin-react-helmet": "^3.1.10",
     "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sass": "^2.1.17",
