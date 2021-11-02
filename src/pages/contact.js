@@ -79,7 +79,7 @@ const Contact = () => {
                   </div>
                 </div>
                 {/* contact details */}
-                <div className="pt-12 pb-10 max-w-536 mx-auto d-flex">
+                <div className="pt-12 pb-10 max-w-536 mx-auto d-flex flex-column">
                   <form
                     name="contactform"
                     method="POST"
@@ -89,12 +89,12 @@ const Contact = () => {
                     data-aos-duration={1100}
                     data-aos-once="true"
                   >
-                    <input type="hidden" name="form-name" value="contactform" />
+                    
                     {/* Company Name */}
 
+                    <input type="hidden" name="form-name" value="contact" />
 
-
-                    <div className="form-group mb-7 position-relative w-100">
+                    <div className="form-group mb-7 position-relative">
                       <input
                         type="text"
                         name="name"
