@@ -18,7 +18,6 @@
     "gatsby-plugin-no-index": "^1.0.2",
     "gatsby-plugin-react-helmet": "^3.1.10",
     "gatsby-plugin-react-svg": "^3.0.1",
-    "gatsby-plugin-robots-txt": "^1.6.14",
     "gatsby-plugin-sass": "^2.1.17",
     "gatsby-plugin-sharp": "^2.14.4",
     "gatsby-plugin-sitemap": "^5.0.0",
