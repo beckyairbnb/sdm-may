@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: `Strategically | Content Writing Agency`,
     description: `Content writing agency`,
-    siteUrl: process.env.SITEURL,
+    siteUrl: 'https://strategically.co',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,7 +16,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-source-prismic',
       options: {
@@ -44,6 +43,7 @@ module.exports = {
        trackingId: "UA-127625937-1",
      },
    },
+   `gatsby-plugin-no-index`,
    {
     resolve: `gatsby-plugin-sitemap`,
     options: {
@@ -54,7 +54,8 @@ module.exports = {
   {
     resolve: 'gatsby-plugin-robots-txt',
     options: {
-      host: process.env.SITEURL,
+      host: 'https://strategically.co',
+      sitemap: 'https://strategically.co/sitemap-0.xml',
       env: {
         development: {
           policy: [{ userAgent: '*', disallow: ['/'] }]

@@ -15,7 +15,7 @@ const PageTemplate = (props)=>{
     //const stitle = `Read ${PageData.data.title.text} `;
     //const surl = `${siteURL}${props.location.pathname || "/"}`;
     //const stwitterHandle = "_MsLinda";
-    const seoTitle = PageData.data.seotitle.text || 'Strategically'
+    const seoTitle = PageData.data.seotitle.text || 'Strategically | Content Writing Agency'
     const seoDescription = PageData.data.metadescription.text || 'Strategically'
   return(
     <>
