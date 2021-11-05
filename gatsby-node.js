@@ -75,7 +75,6 @@ data.MainServicePage.edges.forEach(({ node }) => {
 data.ServicePages.edges.forEach(({ node }) => {   
   if(node.uid==='saas-content-writerr')
   {
-    console.log('slug mine', node.uid)
     createPage({
       path: `writer-services/saas-content-writer`,
       component: path.resolve("./src/templates/service-template.js"),
@@ -86,7 +85,6 @@ data.ServicePages.edges.forEach(({ node }) => {
   }  
   else
   {
-    console.log('slug mine own', node.uid)
     createPage({
       path: `writer-services/${node.uid}`,
       component: path.resolve("./src/templates/service-template.js"),

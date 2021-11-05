@@ -121,7 +121,7 @@ const MainServiceTemplate = (props)=>{
                         { AllServices.edges.map((item,index)=>{
                             return(
                                 <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
-                                  <Link to={item.node.uid} className="text-stone gr-hover-text-dodger-blue-1 font-size-5">{item.node.data.title.text}</Link>  
+                                  <Link to={item.node.uid} className="text-stone gr-hover-text-dodger-blue-1 font-size-5">{item.node.data.short_title || item.node.data.title.text}</Link>  
                                 </li>
                             )
                         })}
@@ -229,6 +229,7 @@ query getMainServiceData($id: String!) {
               title {
                 text
               }
+              short_title
             }
           }
         }
