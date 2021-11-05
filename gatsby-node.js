@@ -1,3 +1,4 @@
+const { concat } = require("lodash");
 const path = require("path")
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions;
@@ -71,14 +72,29 @@ data.MainServicePage.edges.forEach(({ node }) => {
     },
   })
 })
-data.ServicePages.edges.forEach(({ node }) => {     
-  createPage({
-    path: `writer-services/${node.uid}`,
-    component: path.resolve("./src/templates/service-template.js"),
-    context: {
-      id:node.id
-    },
-  })
+data.ServicePages.edges.forEach(({ node }) => {   
+  if(node.uid==='saas-content-writerr')
+  {
+    console.log('slug mine', node.uid)
+    createPage({
+      path: `writer-services/saas-content-writer`,
+      component: path.resolve("./src/templates/service-template.js"),
+      context: {
+        id:node.id
+      },
+    })
+  }  
+  else
+  {
+    console.log('slug mine own', node.uid)
+    createPage({
+      path: `writer-services/${node.uid}`,
+      component: path.resolve("./src/templates/service-template.js"),
+      context: {
+        id:node.id
+      },
+    })
+  }
 })
 
 data.CareerPages.edges.forEach(({ node }) => {      
