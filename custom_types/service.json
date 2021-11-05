@@ -30,7 +30,7 @@
     "sub_title": {
       "type": "StructuredText",
       "config": {
-        "single": "heading3",
+        "single": "heading6",
         "label": "Sub Title"
       }
     },
@@ -168,12 +168,18 @@
                   "label": "Button Text"
                 }
               },
+              "button_link": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Link"
+                }
+              },
               "cta_content": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph,hyperlink,list-item",
+                  "multi": "paragraph",
                   "allowTargetBlank": true,
-                  "label": "CTA Content"
+                  "label": "Cta Content"
                 }
               }
             },

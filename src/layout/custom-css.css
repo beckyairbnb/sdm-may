@@ -224,3 +224,4 @@ video {
 .client-logo img{ width: 100%;}
 .client-item{ width:20%; padding:1%;}
 .border2{ border:2px solid red;}
+.subHeading h3, .subHeading h6{ color:#7c8087; font-size: 1.125rem !important; font-weight: 400 !important;}

@@ -64,7 +64,7 @@ const ServiceTemplate = (props)=>{
                <div className="col-xl-8 col-lg-9 col-md-12 col-sm-12">
                   <div className="text-center pt-5 pb-lg-4 mb-lg-2">
                      {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="mb-4" ></div>}
-                     {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }}></div>}
+                     {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }} className="subHeading"></div>}
                      <Link
                      to="/pricing"
                     className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
@@ -302,9 +302,7 @@ query getServiceData($id: String!) {
             slice_type
             primary {
               button_text
-              cta_content {
-                html
-              }
+              button_link
             }
           }
           ... on PrismicServiceDataBodyHeadingBlock {
