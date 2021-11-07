@@ -65,7 +65,7 @@ exports.createPages = async ({ graphql, actions }) => {
 `)
 data.MainServicePage.edges.forEach(({ node }) => {     
   createPage({
-    path: `writer-services`,
+    path: `writer-services/`,
     component: path.resolve("./src/templates/main-service-template.js"),
     context: {
       id:node.id
@@ -76,7 +76,7 @@ data.ServicePages.edges.forEach(({ node }) => {
   if(node.uid==='saas-content-writerr')
   {
     createPage({
-      path: `writer-services/saas-content-writer`,
+      path: `writer-services/saas-content-writer/`,
       component: path.resolve("./src/templates/service-template.js"),
       context: {
         id:node.id
@@ -86,7 +86,7 @@ data.ServicePages.edges.forEach(({ node }) => {
   else
   {
     createPage({
-      path: `writer-services/${node.uid}`,
+      path: `writer-services/${node.uid}/`,
       component: path.resolve("./src/templates/service-template.js"),
       context: {
         id:node.id
@@ -97,7 +97,7 @@ data.ServicePages.edges.forEach(({ node }) => {
 
 data.CareerPages.edges.forEach(({ node }) => {      
   createPage({
-    path: node.uid,
+    path: `${node.uid}/`,
     component: path.resolve("./src/templates/career-template.js"),
     context: {
       id:node.id
@@ -107,7 +107,7 @@ data.CareerPages.edges.forEach(({ node }) => {
 
 data.Pages.edges.forEach(({ node }) => {      
   createPage({
-    path: node.uid,
+    path: `${node.uid}/`,
     component: path.resolve("./src/templates/page-template.js"),
     context: {
       id:node.id
@@ -117,7 +117,7 @@ data.Pages.edges.forEach(({ node }) => {
 
 data.Jobs.edges.forEach(({ node }) => {      
   createPage({
-    path: `writing-jobs/${node.uid}`,
+    path: `writing-jobs/${node.uid}/`,
     component: path.resolve("./src/templates/job-template.js"),
     context: {
       id:node.id
