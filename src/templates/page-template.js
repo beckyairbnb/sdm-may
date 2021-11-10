@@ -34,7 +34,7 @@ const PageTemplate = (props)=>{
             </a>
             </>
           ),
-          footerStyle: "style4",
+          footerStyle: "style2",
         }}
       >
    <div className="wrapper mt-4 pt-4">

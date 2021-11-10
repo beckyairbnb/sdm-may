@@ -19,7 +19,7 @@ const Privacy = () => {
             </a>
             </>
           ),
-          footerStyle: "style4",
+          footerStyle: "style2",
         }}
       >
         <main className="pt-23 pt-md-27 pb-13 pb-md-19 pt-lg-29 pb-lg-27">

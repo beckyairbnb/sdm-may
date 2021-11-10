@@ -7,13 +7,13 @@ const Footer = ({ className, ...rest }) => {
       <div className={`pt-13 pt-lg-25 pb-13 pb-lg-18 ${className}`} {...rest}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-7">
+            <div className="col-lg-12">
               <div className="row">
                 {/* Single Widgets */}
-                <div className="col-md-4 col-xs-6">
+                <div className="col-md-3 col-xs-6">
                   <div className="mb-10 mb-lg-0">
                     <h4 className="font-size-6 font-weight-medium mb-10">
-                      Community
+                      Industries
                     </h4>
                     <ul className="list-unstyled">
                       <li className="mb-6">
@@ -21,7 +21,7 @@ const Footer = ({ className, ...rest }) => {
                           to="/#"
                           className="font-size-5 text-default-color"
                         >
-                          For Talents
+                          SaaS
                         </Link>
                       </li>
                       <li className="mb-6">
@@ -29,7 +29,7 @@ const Footer = ({ className, ...rest }) => {
                           to="/#"
                           className="font-size-5 text-default-color"
                         >
-                          For Companies
+                          Marketing
                         </Link>
                       </li>
                       <li className="mb-6">
@@ -37,7 +37,7 @@ const Footer = ({ className, ...rest }) => {
                           to="/#"
                           className="font-size-5 text-default-color"
                         >
-                          Facebook Group
+                          Accounting
                         </Link>
                       </li>
                       <li className="mb-6">
@@ -45,7 +45,23 @@ const Footer = ({ className, ...rest }) => {
                           to="/#"
                           className="font-size-5 text-default-color"
                         >
-                          FAQ
+                          Casino Gaming
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/#"
+                          className="font-size-5 text-default-color"
+                        >
+                          eCommerce
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/#"
+                          className="font-size-5 text-default-color"
+                        >
+                          All Industries
                         </Link>
                       </li>
                     </ul>
@@ -53,10 +69,10 @@ const Footer = ({ className, ...rest }) => {
                 </div>
                 {/* End Single Widgets */}
                 {/* Single Widgets */}
-                <div className="col-md-4 col-xs-6">
+                <div className="col-md-3 col-xs-6">
                   <div className="mb-10 mb-lg-0">
                     <h4 className="font-size-6 font-weight-medium mb-10">
-                      About us
+                      Services
                     </h4>
                     <ul className="list-unstyled">
                       <li className="mb-6">
@@ -64,42 +80,64 @@ const Footer = ({ className, ...rest }) => {
                           to="/#"
                           className="font-size-5 text-default-color"
                         >
-                          Meet the Team
+                          Content Strategy
                         </Link>
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/writer-services/seo-content-writing/"
                           className="font-size-5 text-default-color"
                         >
-                          Our Story
+                          Seo Content Writing
                         </Link>
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/writer-services/ebook-writing/"
                           className="font-size-5 text-default-color"
                         >
-                          Career
+                          Ebook Writing
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/writer-services/product-description-writing/"
+                          className="font-size-5 text-default-color"
+                        >
+                          Product description writing
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/writer-services/white-paper-writing/"
+                          className="font-size-5 text-default-color"
+                        >
+                          White paper Writing
                         </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
-                {/* End Single Widgets */}
-                {/* Single Widgets */}
-                <div className="col-md-4 col-xs-6">
+                <div className="col-md-3 col-xs-6">
                   <div className="mb-10 mb-lg-0">
                     <h4 className="font-size-6 font-weight-medium mb-10">
-                      Useful
+                      Legal
                     </h4>
                     <ul className="list-unstyled">
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/privacy"
                           className="font-size-5 text-default-color"
                         >
-                          Free Resume Builder
+                          Privacy
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/terms/"
+                          className="font-size-5 text-default-color"
+                        >
+                          Terms
                         </Link>
                       </li>
                       <li className="mb-6">
@@ -107,7 +145,7 @@ const Footer = ({ className, ...rest }) => {
                           to="/#"
                           className="font-size-5 text-default-color"
                         >
-                          Free Graphics
+                          Content Delivery Policy
                         </Link>
                       </li>
                       <li className="mb-6">
@@ -115,47 +153,57 @@ const Footer = ({ className, ...rest }) => {
                           to="/#"
                           className="font-size-5 text-default-color"
                         >
-                          Career Blog
+                          Refund Policy
                         </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
-                {/* End Single Widgets */}
+                <div className="col-md-3 col-xs-6">
+                  <div className="mb-10 mb-lg-0">
+                    <h4 className="font-size-6 font-weight-medium mb-10">
+                      Support
+                    </h4>
+                    <ul className="list-unstyled">
+                      <li className="mb-6">
+                        <Link
+                          to="/contact"
+                          className="font-size-5 text-default-color"
+                        >
+                          Contact Us
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/samples"
+                          className="font-size-5 text-default-color"
+                        >
+                          Samples
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/#"
+                          className="font-size-5 text-default-color"
+                        >
+                          Become a Writer
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/pricing"
+                          className="font-size-5 text-default-color"
+                        >
+                          Pricing
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-lg-5 col-md-8">
-              <div className="mb-7">
-                <h4 className="font-size-6 font-weight-medium mb-8">
-                  Subscribe to Our Newsletter
-                </h4>
-                <p className="font-size-5 line-height-28">
-                  Time is the most precious thing you have when bootstrapping.
-                  You can't take time.
-                </p>
-              </div>
-              <div className="mb-0 mr-xl-9">
-                <div className="shadow-3 bg-white rounded-4">
-                  <form action="/">
-                    <div className="subscribe-inline-form-2">
-                      <div className="form-group">
-                        <label htmlFor="mail">
-                          <i className="icon icon-email-84 mb-0" />
-                        </label>
-                        <input
-                          id="mail"
-                          type="email"
-                          className="form-control"
-                          placeholder="Enter your email"
-                        />
-                      </div>
-                      <button className="btn btn-dodger-blue-2 rounded-5">
-                        Subscribe
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+            <div className="col-lg-12 border-top border-dark-light mt-5 pt-6 pb-0">
+              <p className="text-center">Strategically Digital Marketing Ltd. Company Number 11898834 VAT 328 9819 52</p>
             </div>
           </div>
         </div>

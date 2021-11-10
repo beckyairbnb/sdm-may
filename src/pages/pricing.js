@@ -23,7 +23,7 @@ const PricingPage = () => {
 
             </>
           ),
-          footerStyle: "style4",
+          footerStyle: "style2",
         }}
       >
         <Hero />

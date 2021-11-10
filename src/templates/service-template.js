@@ -54,7 +54,7 @@ const ServiceTemplate = (props)=>{
             </a>
             </>
           ),
-          footerStyle: "style4",
+          footerStyle: "style2",
         }}
       >
     
@@ -79,18 +79,19 @@ const ServiceTemplate = (props)=>{
       
       <div className="py-2 mb-4">
          <div className="container my-1"> 
-            <div className="row my-1 client-logo"> 
-            <div className="col-md-6 col-sm-12 d-flex flex-row justify-content-center align-items-center m-0 p-0">
+         <div className="row my-1 client-logo"> 
+            <div className="col-md-6 col-sm-12 d-flex flex-row justify-content-md-end justify-content-sm-center align-items-center m-0 p-0">
               <div className="client-item"><img src={logo1} alt="Client 1" /></div>
               <div className="client-item"><img src={logo2} alt="Client 2" /></div>
               <div className="client-item"><img src={logo3} alt="Client 3" /></div>
               <div className="client-item"><img src={logo4} alt="Client 4" /></div>
-              <div className="client-item"><img src={logo5} alt="Client 5" /></div>
+              
             </div>
-            <div className="col-md-6 col-sm-12 d-flex flex-row justify-content-center align-items-center m-0 p-0">
-              <div className="client-item"><img src={logo6} alt="Client 6" /></div>
+            <div className="col-md-6 col-sm-12 d-flex flex-row justify-content-md-start justify-content-sm-center align-items-center m-0 p-0">
+              {/* <div className="client-item"><img src={logo6} alt="Client 6" /></div> */}
+              <div className="client-item"><img src={logo5} alt="Client 5" /></div>
               <div className="client-item"><img src={logo7} alt="Client 7" /></div>
-              <div className="client-item"><img src={logo8} alt="Client 8" /></div>
+              {/* <div className="client-item"><img src={logo8} alt="Client 8" /></div> */}
               <div className="client-item"><img src={logo9} alt="Client 9" /></div>
               <div className="client-item"><img src={logo10} alt="Client 10" /></div>
             </div>

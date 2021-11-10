@@ -22,19 +22,13 @@ import logo3 from "../assets/images/clients/logo-3.jpg";
 import logo4 from "../assets/images/clients/logo-4.jpg";
 import logo5 from "../assets/images/clients/logo-5.jpg";
 
-import logo6 from "../assets/images/clients/logo-6.jpg";
 import logo7 from "../assets/images/clients/logo-7.jpg";
-import logo8 from "../assets/images/clients/logo-8.jpg";
 import logo9 from "../assets/images/clients/logo-9.jpg";
 import logo10 from "../assets/images/clients/logo-10.jpg";
 const MainServiceTemplate = (props)=>{
     const [modalShow, setModalShow] = useState(false);
     const { data } = props
     const { PageData, AllServices } = data
-    //const siteURL = site.siteMetadata.siteUrl 
-    //const stitle = `Read ${PageData.data.title.text} `;
-    //const surl = `${siteURL}${props.location.pathname || "/"}`;
-    //const stwitterHandle = "_MsLinda";
     const seoTitle = PageData.data.seotitle.text || 'Strategically'
     const seoDescription = PageData.data.metadescription.text || 'Strategically'
   return(
@@ -54,7 +48,7 @@ const MainServiceTemplate = (props)=>{
             </a>
             </>
           ),
-          footerStyle: "style4",
+          footerStyle: "style2",
         }}
       >
     
@@ -81,17 +75,16 @@ const MainServiceTemplate = (props)=>{
       <div className="py-2 mb-4">
          <div className="container my-1"> 
             <div className="row my-1 client-logo"> 
-            <div className="col-md-6 col-sm-12 d-flex flex-row justify-content-center align-items-center m-0 p-0">
+            <div className="col-md-6 col-sm-12 d-flex flex-row justify-content-md-end justify-content-sm-center align-items-center m-0 p-0">
               <div className="client-item"><img src={logo1} alt="Client 1" /></div>
               <div className="client-item"><img src={logo2} alt="Client 2" /></div>
               <div className="client-item"><img src={logo3} alt="Client 3" /></div>
               <div className="client-item"><img src={logo4} alt="Client 4" /></div>
-              <div className="client-item"><img src={logo5} alt="Client 5" /></div>
+              
             </div>
-            <div className="col-md-6 col-sm-12 d-flex flex-row justify-content-center align-items-center m-0 p-0">
-              <div className="client-item"><img src={logo6} alt="Client 6" /></div>
+            <div className="col-md-6 col-sm-12 d-flex flex-row justify-content-md-start justify-content-sm-center align-items-center m-0 p-0">
+              <div className="client-item"><img src={logo5} alt="Client 5" /></div>
               <div className="client-item"><img src={logo7} alt="Client 7" /></div>
-              <div className="client-item"><img src={logo8} alt="Client 8" /></div>
               <div className="client-item"><img src={logo9} alt="Client 9" /></div>
               <div className="client-item"><img src={logo10} alt="Client 10" /></div>
             </div>
@@ -119,9 +112,10 @@ const MainServiceTemplate = (props)=>{
                 <h2 className="mb-10">Services We Provide</h2>
                     <ul className="row">
                         { AllServices.edges.map((item,index)=>{
+                          let slug = item.node.uid==='saas-content-writerr' ? 'saas-content-writer' : item.node.uid
                             return(
                                 <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
-                                  <Link to={item.node.uid} className="text-stone gr-hover-text-dodger-blue-1 font-size-5">{item.node.data.short_title || item.node.data.title.text}</Link>  
+                                  <Link to={`/writer-services/${slug}/`} className="text-stone gr-hover-text-dodger-blue-1 font-size-5">{item.node.data.short_title || item.node.data.title.text}</Link>  
                                 </li>
                             )
                         })}

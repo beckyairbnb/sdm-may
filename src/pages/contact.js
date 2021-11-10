@@ -19,7 +19,7 @@ const Contact = () => {
             </a>
             </>
           ),
-          footerStyle: "style4",
+          footerStyle: "style2",
         }}
       >
         <div className="min-height-100vh d-flex align-items-center pt-23 pt-md-26 pt-lg-30 pb-8 pb-md-12 pb-lg-23">

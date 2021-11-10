@@ -1,5 +1,5 @@
 import React from "react";
-
+import { graphql, Link } from "gatsby"
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/home2/Hero";
 import Counter from "../sections/home2/Counter";
@@ -12,7 +12,9 @@ import CTA from "../sections/home2/CTA";
 import Helmet from "react-helmet";
 
 
-const Index = () => {
+const Index = (props) => {
+  const { data } = props
+  const { AllServices } = data
   return (
     <>
     <Helmet>
@@ -28,7 +30,7 @@ const Index = () => {
             </a>
             </>
           ),
-          footerStyle: "style4",
+          footerStyle: "style2",
         }}
       >
         <Hero className="pt-11 pt-lg-34 pb-8 pb-lg-33" />
@@ -38,9 +40,49 @@ const Index = () => {
         <Content2 className="pb-0 pb-lg-31" />
         <Content3 className="pb-12 pb-lg-25" />
         <Testimonial className="pt-lg-19 pb-12 pb-lg-17" />
+        <div className="py-6">
+         <div className="container-fluid py-lg-10 bg-light">
+           <div className="container">
+            <div className="row justify-content-center text-center py-lg-5">
+               <div className="col-sm-12">
+                <h2 className="mb-10">Services We Provide</h2>
+                    <ul className="row">
+                        { AllServices.edges.map((item,index)=>{
+                          let slug = item.node.uid==='saas-content-writerr' ? 'saas-content-writer' : item.node.uid
+                            return(
+                                <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
+                                  <Link to={`/writer-services/${slug}/`} className="text-stone gr-hover-text-dodger-blue-1 font-size-5">{item.node.data.short_title || item.node.data.title.text}</Link>  
+                                </li>
+                            )
+                        })}
+                    </ul>
+               </div>
+            </div>
+            </div>
+         </div>
+      </div>
         <CTA className="bg-images" />
       </PageWrapper>
     </>
   );
 };
+
+export const query = graphql`
+query HomePage {
+      AllServices: allPrismicService(filter: {uid: {ne: "writer-services"}}, sort: {fields: data___title___text, order: ASC}) {
+        edges {
+          node {
+            uid
+            id
+            data {
+              title {
+                text
+              }
+              short_title
+            }
+          }
+        }
+      }
+}
+`
 export default Index;
