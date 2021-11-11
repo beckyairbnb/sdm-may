@@ -115,11 +115,11 @@ const MainServiceTemplate = (props)=>{
                           let slug = item.node.uid==='saas-content-writerr' ? 'saas-content-writer' : item.node.uid
                             return(
                                 <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
-                                  <Link to={`/writer-services/${slug}/`} className="text-stone gr-hover-text-dodger-blue-1 font-size-5">{item.node.data.short_title || item.node.data.title.text}</Link>  
+                                  <Link to={`/writer-services/${slug}/`} className="text-capitalize text-stone gr-hover-text-dodger-blue-1 font-size-5">{item.node.data.short_title || item.node.data.title.text}</Link>  
                                 </li>
                             )
                         })}
-                        <Link to ="/writer-services/" className="main-services-link">All Writer Services</Link>
+                        <Link to ="/writer-services/" className="main-services-link text-capitalize">All Writer Services</Link>
                     </ul>
                </div>
             </div>

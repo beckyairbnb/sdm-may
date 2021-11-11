@@ -23,6 +23,7 @@ border-top: 3px solid #091e57;
 }
 > .drop-menu-item > a {
   font-size: 14px !important;
+  text-transform:capitalize;
 }
 > .main-services-link{
   line-height:44px !important;
@@ -84,8 +85,7 @@ const Menu = () => {
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
-                      href="/#"
-                      onClick={(e) => e.preventDefault()}
+                      href={name ? name : "#"}
                     >
                       {label}
                       <i className="icon icon-small-down"></i>
