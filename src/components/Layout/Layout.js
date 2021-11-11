@@ -39,7 +39,13 @@ import "../../assets/fonts/typography-font/typo.css";
 import "../../assets/scss/bootstrap.scss";
 import "../../assets/scss/main.scss";
 import "../../layout/custom-css.css"
-import { GTMProvider } from '@elgorditosalsero/react-gtm-hook'
+import TagManager from 'react-gtm-module'
+ 
+const tagManagerArgs = {
+    gtmId: 'GTM-T35RVN5'
+}
+ 
+TagManager.initialize(tagManagerArgs)
 
 
 
@@ -97,7 +103,7 @@ const Layout = ({ children, pageContext }) => {
   }, [gContext]);
   if (pageContext.layout === "blog") {
     return (
-      <GTMProvider state={gtmParams}>
+      <>
         <Helmet>
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
         </Helmet>
@@ -111,12 +117,12 @@ const Layout = ({ children, pageContext }) => {
             className={gContext.theme.footerClassName}
             style={gContext.theme.footerStyle}
           />
-      </GTMProvider>
+      </>
     )
   }
   if (pageContext.layout === "mini") {
     return (
-      <GTMProvider state={gtmParams}>
+      <>
         <Helmet>
           <title>Finity 2</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
@@ -130,12 +136,12 @@ const Layout = ({ children, pageContext }) => {
         </div>
 
         <ModalVideo />
-        </GTMProvider>
+      </>
     );
   }
   if (pageContext.layout === "coming") {
     return (
-      <GTMProvider state={gtmParams}>
+      <>
         <Helmet>
           <title>Finity 3</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
@@ -149,12 +155,13 @@ const Layout = ({ children, pageContext }) => {
         </div>
 
         <ModalVideo />
-        </GTMProvider>
+      </>
     );
   }
 
   return (
-    <GTMProvider state={gtmParams}>
+    <>
+      <>
         <Helmet>
           <title>Finity 4</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
@@ -171,7 +178,8 @@ const Layout = ({ children, pageContext }) => {
         </div>
 
         <ModalVideo />
-      </GTMProvider>
+      </>
+    </>
   );
 };
 
