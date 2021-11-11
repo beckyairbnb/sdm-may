@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import imgM from "../../assets/image/home-6/png/hero-mobile.png";
 import imgYS from "../../assets/image/home-6/png/cirle-yellow-shape.png";
-import imageOne from "../../assets/image/home-4/png/content-2-img.png";
+import imageOne from "../../assets/image/inner-page/jpg/comming-soon-img.png";
 
 const Hero = ({ className, ...rest }) => {
   return (
@@ -11,7 +11,7 @@ const Hero = ({ className, ...rest }) => {
       <div className="container">
         <div className="row align-items-center justify-content-center">
           {/* Hero Image */}
-          <div className="col-md-5 col-sm-8">
+          <div className="col-md-6 col-sm-8">
        
               <img
                 className="w-100"
@@ -20,7 +20,7 @@ const Hero = ({ className, ...rest }) => {
 
               />
           </div>
-          <div className="col-md-7 col-sm-11">
+          <div className="col-md-6 col-sm-11">
             <div
               className="mt-8 mt-lg-0 pr-md-11 pr-lg-0 pr-xl-10"
 
