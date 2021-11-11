@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 
 import imgM from "../../assets/image/home-6/png/hero-mobile.png";
 import imgYS from "../../assets/image/home-6/png/cirle-yellow-shape.png";
+import imageOne from "../../assets/image/home-4/png/content-2-img.png";
 
 const Hero = ({ className, ...rest }) => {
   return (
@@ -10,27 +11,26 @@ const Hero = ({ className, ...rest }) => {
       <div className="container position-static">
         <div className="row align-items-center justify-content-center position-static">
           {/* Hero Image */}
-          <div className="col-xl-6 col-lg-6 col-md-7 col-xs-8 position-static">
-            <div className="l6-hero-image-group">
+          <div className="col-xl-6 col-lg-6 col-md-5 col-xs-8 position-static m-md-1 m-sm-5">
+       
               <img
                 className="w-100"
-                src={imgM}
+                src={imageOne}
                 alt=""
 
               />
-              <div className="img-1">
+              {/* <div className="img-1">
                 <img
                   className="w-100"
                   src={imgYS}
                   alt=""
 
                 />
-              </div>
-            </div>
+              </div> */}
           </div>
           {/* End Hero Image */}
           {/* Hero Content */}
-          <div className="col-lg-6 col-md-9 col-sm-11">
+          <div className="col-lg-6 col-md-7 col-sm-11 m-md-1 m-sm-5">
             <div
               className="mt-8 mt-lg-0 pr-md-11 pr-lg-0 pr-xl-10"
 
@@ -42,7 +42,7 @@ const Hero = ({ className, ...rest }) => {
               Get blog posts, white papers, case studies & more from Native English writers.
               </p>
               <div className="mt-10">
-                <Link to="/pricing" className="btn btn-dodger-blue-2 header-btn rounded-5">
+                <Link to="/pricing/" className="btn btn-dodger-blue-2 header-btn rounded-5">
                   View pricing
                 </Link>
               </div>

@@ -49,7 +49,7 @@ const ServiceTemplate = (props)=>{
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing"}>
+            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing/"}>
               View Pricing
             </a>
             </>
@@ -66,7 +66,7 @@ const ServiceTemplate = (props)=>{
                      {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="mb-4" ></div>}
                      {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }} className="subHeading"></div>}
                      <Link
-                     to="/pricing"
+                     to="/pricing/"
                     className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                      <p>{PageData.data.cta_button_below_text}</p>
                      
@@ -106,7 +106,7 @@ const ServiceTemplate = (props)=>{
                  {PageData.data.button_block_heading.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.button_block_heading.html }} className="w-100" ></div>}
                  <p>{PageData.data.button_block_subtext}</p>
                  <Link
-                     to="/pricing"
+                     to="/pricing/"
                     className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                </div>
             </div>

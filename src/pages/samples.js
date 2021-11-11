@@ -17,12 +17,12 @@ const SamplesPage = () => {
           <Helmet>
            <title>Strategically | Content Writing Agency</title>
          </Helmet>
-          <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing"}>
+          <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing/"}>
             View Pricing
           </a>
           </>
         ),
-        footerStyle: "style4",
+        footerStyle: "style2",
       }}
     >
       <Blog className="bg-default-1 pt-14 pt-md-18 pt-lg-27 pb-13 pb-md-17 pb-lg-26" />

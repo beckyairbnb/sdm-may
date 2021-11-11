@@ -126,7 +126,7 @@ const Footer = ({ className, ...rest }) => {
                     <ul className="list-unstyled">
                       <li className="mb-6">
                         <Link
-                          to="/privacy"
+                          to={`/privacy/`}
                           className="font-size-5 text-default-color"
                         >
                           Privacy
@@ -134,7 +134,7 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/terms/"
+                          to={`/terms/`}
                           className="font-size-5 text-default-color"
                         >
                           Terms
@@ -167,7 +167,7 @@ const Footer = ({ className, ...rest }) => {
                     <ul className="list-unstyled">
                       <li className="mb-6">
                         <Link
-                          to="/contact"
+                          to={`/contact/`}
                           className="font-size-5 text-default-color"
                         >
                           Contact Us
@@ -175,7 +175,7 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/samples"
+                          to={`/samples/`}
                           className="font-size-5 text-default-color"
                         >
                           Samples
@@ -191,7 +191,7 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/pricing"
+                          to={`/pricing/`}
                           className="font-size-5 text-default-color"
                         >
                           Pricing

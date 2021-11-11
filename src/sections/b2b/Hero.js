@@ -15,7 +15,7 @@ const Hero = () => {
           </a>
           </>
         ),
-        footerStyle: "style4",
+        footerStyle: "style2",
       }}
     >
         <div className="min-height-100vh d-flex align-items-center pt-24 pt-md-27 pt-lg-25">

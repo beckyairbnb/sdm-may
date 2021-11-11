@@ -1,9 +1,73 @@
 import React from "react";
-import { Link } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
+//import { menuItems } from "./menuItems";
+import styled from "styled-components";
 
-import { menuItems } from "./menuItems";
 
+const DropdownMenuUl = styled.ul`
+display:flex;
+flex-wrap: wrap;
+display: flex;
+x-justify-content: space-around;
+x-align-items: stretch;
+right: 0;
+left: auto;
+padding:1rem;
+width:767px !important;
+min-width:767px !important;
+border-top: 3px solid #091e57;
+> .drop-menu-item{
+  flex: 0 0 32.5%;
+  padding:5px !important;
+  margin:3px !important;
+}
+> .drop-menu-item > a {
+  font-size: 14px !important;
+}
+> .main-services-link{
+  line-height:44px !important;
+}
+`
 const Menu = () => {
+  const { AllServices } = useStaticQuery(
+    graphql`
+      query {
+        AllServices: allPrismicService(filter: {uid: {ne: "writer-services"}}, sort: {fields: data___short_title, order: ASC}) {
+          edges {
+            node {
+              uid
+              id
+              data {
+                short_title
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+  const ServicesList = AllServices.edges.map((item)=>{
+    return(
+      { "name": 'writer-services/'+item.node.uid+'/', "label": item.node.data.short_title }
+    )
+  })
+  const menuItems = [
+    {
+      name: "writing-jobs/",
+      label: "We're Hiring!",
+  
+    },
+    {
+      name: "content-writing-agency/",
+      label: "Why Strategically",
+      
+    },
+    {
+      name : "writer-services/",
+      label : "Writing Services",
+      items : ServicesList
+    }  
+  ];
   return (
     <>
       <ul className="navbar-nav main-menu d-none d-lg-flex">
@@ -26,7 +90,7 @@ const Menu = () => {
                       {label}
                       <i className="icon icon-small-down"></i>
                     </a>
-                    <ul className="gr-menu-dropdown dropdown-menu">
+                    <DropdownMenuUl className="gr-menu-dropdown dropdown-menu">
                       {items.map((subItem, indexSub) => {
                         const hasInnerSubItems = Array.isArray(subItem.items);
                         return (
@@ -67,7 +131,7 @@ const Menu = () => {
                                         )}
                                       </li>
                                     )
-                                  )}
+                                  )}                                  
                                 </ul>
                               </li>
                             ) : (
@@ -90,7 +154,8 @@ const Menu = () => {
                           </React.Fragment>
                         );
                       })}
-                    </ul>
+                      <Link to ="/writer-services/" className="main-services-link">All Writer Services</Link>
+                    </DropdownMenuUl>
                   </li>
                 ) : (
                   <li className="nav-item" {...rest}>

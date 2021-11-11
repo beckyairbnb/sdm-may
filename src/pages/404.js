@@ -17,7 +17,7 @@ const PricingPage = () => {
               </button>
             </>
           ),
-          footerStyle: "style3",
+          footerStyle: "style2",
         }}
       >
         <div className="pt-24 pt-md-26 pb-15 pt-lg-33 pb-md-19 pb-lg-25">

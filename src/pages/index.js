@@ -25,7 +25,7 @@ const Index = (props) => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing"}>
+            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing/"}>
               View Pricing
             </a>
             </>
@@ -55,6 +55,7 @@ const Index = (props) => {
                                 </li>
                             )
                         })}
+                        <Link to ="/writer-services/" className="main-services-link">All Writer Services</Link>
                     </ul>
                </div>
             </div>
@@ -69,7 +70,7 @@ const Index = (props) => {
 
 export const query = graphql`
 query HomePage {
-      AllServices: allPrismicService(filter: {uid: {ne: "writer-services"}}, sort: {fields: data___title___text, order: ASC}) {
+  AllServices: allPrismicService(filter: {uid: {ne: "writer-services"}}, sort: {fields: data___short_title, order: ASC}) {
         edges {
           node {
             uid

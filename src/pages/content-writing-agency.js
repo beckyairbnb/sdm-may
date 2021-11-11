@@ -22,12 +22,12 @@ const Content = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing"}>
+            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing/"}>
               View Pricing
             </a>
             </>
           ),
-          footerStyle: "style4",
+          footerStyle: "style2",
         }}
       >
       <Hero className="position-relative pt-25 pt-md-31 pt-lg-35 pb-14 pb-md-19 pb-lg-33 position-relative overflow-hidden" />

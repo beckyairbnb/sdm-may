@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import { ListGroup, Collapse } from "react-bootstrap";
 import { FaAngleRight, FaAngleDown } from "react-icons/fa";
-import { Link } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import GlobalContext from "../../context/GlobalContext";
 import { menuItems } from "../../components/Header/menuItems";
 
@@ -132,6 +132,7 @@ const MenuItem = ({
                 {...subItem}
               />
             ))}
+            <Link to ="/writer-services/" className="main-services-link">All Writer Services</Link>
           </ListGroup>
         </Collapse>
       ) : null}
@@ -140,6 +141,45 @@ const MenuItem = ({
 };
 
 const NestedMenu = () => {
+  const { AllServices } = useStaticQuery(
+    graphql`
+      query {
+        AllServices: allPrismicService(filter: {uid: {ne: "writer-services"}}, sort: {fields: data___short_title, order: ASC}) {
+          edges {
+            node {
+              uid
+              id
+              data {
+                short_title
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+  const ServicesList = AllServices.edges.map((item)=>{
+    return(
+      { "name": 'writer-services/'+item.node.uid+'/', "label": item.node.data.short_title }
+    )
+  })
+  const menuItems = [
+    {
+      name: "writing-jobs/",
+      label: "We're Hiring!",
+  
+    },
+    {
+      name: "content-writing-agency/",
+      label: "Why Strategically",
+      
+    },
+    {
+      name : "writer-services/",
+      label : "Writing Services",
+      items : ServicesList
+    }  
+  ];
   return (
     <NestedMenuContainer>
       <ListGroup variant="flush">
