@@ -44,8 +44,9 @@ import TagManager from 'react-gtm-module'
 const tagManagerArgs = {
     gtmId: 'GTM-T35RVN5'
 }
- 
+if (process.browser) {
 TagManager.initialize(tagManagerArgs)
+}
 
 
 
