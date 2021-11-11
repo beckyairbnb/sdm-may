@@ -30,7 +30,7 @@ const Content = () => {
           footerStyle: "style2",
         }}
       >
-      <Hero className="position-relative pt-30 pb-5 position-relative overflow-hidden" />
+      <Hero className="position-relative pt-30 pb-5 mb-15 position-relative overflow-hidden" />
       
         <Counter className="pt-lg-5 pb-8 pb-lg-27" />
 

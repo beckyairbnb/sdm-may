@@ -22,7 +22,7 @@ const Hero = ({ className, ...rest }) => {
           </div>
           <div className="col-md-6 col-sm-11">
             <div
-              className="mt-8 mt-lg-0 pr-md-11 pr-lg-0 pr-xl-10"
+              className="mt-8 mt-lg-0 pr-md-11 pr-lg-0 pr-xl-10 ml-10"
 
             >
               <h1 className="mb-8 pr-sm-18 pr-md-8 pr-lg-0 line-height-84">
