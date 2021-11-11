@@ -56,6 +56,21 @@ module.exports = {
       output: '/'
     }      
   },
+  {
+    resolve: 'gatsby-plugin-robots-txt',
+    options: {
+      host: 'https://strategically.co/',
+      sitemap: 'https://strategically.co/sitemap-0.xml',
+      env: {
+        development: {
+          policy: [{ userAgent: '*', disallow: ['/'] }]
+        },
+        production: {
+          policy: [{ userAgent: '*', allow: '/' }]
+        }
+      }
+    }
+  },
     {
   resolve: 'gatsby-plugin-crisp-chat',
   options: {

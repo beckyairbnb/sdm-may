@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+
 import AOS from "aos";
 
 import Header from "../Header";
@@ -38,6 +39,10 @@ import "../../assets/fonts/typography-font/typo.css";
 import "../../assets/scss/bootstrap.scss";
 import "../../assets/scss/main.scss";
 import "../../layout/custom-css.css"
+import { GTMProvider } from '@elgorditosalsero/react-gtm-hook'
+
+
+
 
 const Loader = styled.div`
   position: fixed;
@@ -57,6 +62,7 @@ const Loader = styled.div`
 `;
 
 const Layout = ({ children, pageContext }) => {
+  const gtmParams = { id: 'GTM-T35RVN5' }
   const gContext = useContext(GlobalContext);
 
   const [visibleLoader, setVisibleLoader] = useState(true);
@@ -91,7 +97,7 @@ const Layout = ({ children, pageContext }) => {
   }, [gContext]);
   if (pageContext.layout === "blog") {
     return (
-      <>
+      <GTMProvider state={gtmParams}>
         <Helmet>
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
         </Helmet>
@@ -105,12 +111,12 @@ const Layout = ({ children, pageContext }) => {
             className={gContext.theme.footerClassName}
             style={gContext.theme.footerStyle}
           />
-      </>
+      </GTMProvider>
     )
   }
   if (pageContext.layout === "mini") {
     return (
-      <>
+      <GTMProvider state={gtmParams}>
         <Helmet>
           <title>Finity 2</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
@@ -124,12 +130,12 @@ const Layout = ({ children, pageContext }) => {
         </div>
 
         <ModalVideo />
-      </>
+        </GTMProvider>
     );
   }
   if (pageContext.layout === "coming") {
     return (
-      <>
+      <GTMProvider state={gtmParams}>
         <Helmet>
           <title>Finity 3</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
@@ -143,13 +149,12 @@ const Layout = ({ children, pageContext }) => {
         </div>
 
         <ModalVideo />
-      </>
+        </GTMProvider>
     );
   }
 
   return (
-    <>
-      <>
+    <GTMProvider state={gtmParams}>
         <Helmet>
           <title>Finity 4</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
@@ -166,8 +171,7 @@ const Layout = ({ children, pageContext }) => {
         </div>
 
         <ModalVideo />
-      </>
-    </>
+      </GTMProvider>
   );
 };
 
