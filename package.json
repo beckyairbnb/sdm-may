@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "grayic",
   "dependencies": {
-    "@elgorditosalsero/react-gtm-hook": "^2.0.8",
     "@n8tb1t/use-scroll-position": "^1.0.43",
     "@react-hook/intersection-observer": "^3.1.1",
     "aos": "^3.0.0-beta.6",
@@ -44,7 +43,6 @@
     "react-countdown": "^2.2.1",
     "react-countup": "^4.3.3",
     "react-dom": "^16.10.2",
-    "react-gtm-module": "^2.0.11",
     "react-headroom": "^3.0.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.8.0",

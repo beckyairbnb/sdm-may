@@ -39,16 +39,6 @@ import "../../assets/fonts/typography-font/typo.css";
 import "../../assets/scss/bootstrap.scss";
 import "../../assets/scss/main.scss";
 import "../../layout/custom-css.css"
-import TagManager from 'react-gtm-module'
- 
-const tagManagerArgs = {
-    gtmId: 'GTM-T35RVN5'
-}
-if (process.browser) {
-TagManager.initialize(tagManagerArgs)
-}
-
-
 
 
 const Loader = styled.div`
@@ -69,7 +59,7 @@ const Loader = styled.div`
 `;
 
 const Layout = ({ children, pageContext }) => {
-  const gtmParams = { id: 'GTM-T35RVN5' }
+
   const gContext = useContext(GlobalContext);
 
   const [visibleLoader, setVisibleLoader] = useState(true);
@@ -107,6 +97,21 @@ const Layout = ({ children, pageContext }) => {
       <>
         <Helmet>
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
+          <script>
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-T35RVN5');
+          `}
+        </script>
+        <script>
+          {`
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          `}
+        </script>
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
 
