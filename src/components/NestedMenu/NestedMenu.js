@@ -132,7 +132,10 @@ const MenuItem = ({
                 {...subItem}
               />
             ))}
-            <Link to ="/writer-services/" className="main-services-link">All Writer Services</Link>
+            <div _css2="20" class="NestedMenu___StyledListGroupItem2-XdReU bDjRtv list-group-item">
+            <Link to ="/writer-services/">All Writer Services</Link>
+            </div>
+            
           </ListGroup>
         </Collapse>
       ) : null}

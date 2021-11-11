@@ -18,7 +18,7 @@ const Footer = ({ className, ...rest }) => {
                     <ul className="list-unstyled">
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/writer-services/saas-content-writer/"
                           className="font-size-5 text-default-color"
                         >
                           SaaS
@@ -26,7 +26,7 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/writer-services/marketing-content-writer/"
                           className="font-size-5 text-default-color"
                         >
                           Marketing
@@ -34,7 +34,7 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/writer-services/accounting-writer/"
                           className="font-size-5 text-default-color"
                         >
                           Accounting
@@ -42,7 +42,7 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/writer-services/casino-gaming-content-writing/"
                           className="font-size-5 text-default-color"
                         >
                           Casino Gaming
@@ -50,7 +50,7 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/writer-services/ecommerce-content-marketing-writer/"
                           className="font-size-5 text-default-color"
                         >
                           eCommerce
@@ -58,7 +58,7 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/writer-services/"
                           className="font-size-5 text-default-color"
                         >
                           All Industries
@@ -77,10 +77,10 @@ const Footer = ({ className, ...rest }) => {
                     <ul className="list-unstyled">
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/seo-strategy-agency/"
                           className="font-size-5 text-default-color"
                         >
-                          Content Strategy
+                          Seo Content Strategy
                         </Link>
                       </li>
                       <li className="mb-6">
@@ -142,7 +142,7 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/content-delivery-policy/"
                           className="font-size-5 text-default-color"
                         >
                           Content Delivery Policy
@@ -150,7 +150,7 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/money-back-guarantee/"
                           className="font-size-5 text-default-color"
                         >
                           Refund Policy
@@ -183,7 +183,7 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/#"
+                          to="/writing-jobs/"
                           className="font-size-5 text-default-color"
                         >
                           Become a Writer

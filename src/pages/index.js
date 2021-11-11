@@ -55,7 +55,9 @@ const Index = (props) => {
                                 </li>
                             )
                         })}
-                        <Link to ="/writer-services/" className="main-services-link text-capitalize">All Writer Services</Link>
+                        <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
+                        <Link to ="/writer-services/" className="text-capitalize text-stone gr-hover-text-dodger-blue-1 font-size-5">All Writer Services</Link>
+                        </li>
                     </ul>
                </div>
             </div>

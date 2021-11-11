@@ -8,10 +8,10 @@ import imageOne from "../../assets/image/home-4/png/content-2-img.png";
 const Hero = ({ className, ...rest }) => {
   return (
     <div className={className} {...rest}>
-      <div className="container position-static">
-        <div className="row align-items-center justify-content-center position-static">
+      <div className="container">
+        <div className="row align-items-center justify-content-center">
           {/* Hero Image */}
-          <div className="col-xl-6 col-lg-6 col-md-5 col-xs-8 position-static m-md-1 m-sm-5">
+          <div className="col-md-5 col-sm-8">
        
               <img
                 className="w-100"
@@ -19,18 +19,8 @@ const Hero = ({ className, ...rest }) => {
                 alt=""
 
               />
-              {/* <div className="img-1">
-                <img
-                  className="w-100"
-                  src={imgYS}
-                  alt=""
-
-                />
-              </div> */}
           </div>
-          {/* End Hero Image */}
-          {/* Hero Content */}
-          <div className="col-lg-6 col-md-7 col-sm-11 m-md-1 m-sm-5">
+          <div className="col-md-7 col-sm-11">
             <div
               className="mt-8 mt-lg-0 pr-md-11 pr-lg-0 pr-xl-10"
 

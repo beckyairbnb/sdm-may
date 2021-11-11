@@ -25,9 +25,6 @@ border-top: 3px solid #091e57;
   font-size: 14px !important;
   text-transform:capitalize;
 }
-> .main-services-link{
-  line-height:44px !important;
-}
 `
 const Menu = () => {
   const { AllServices } = useStaticQuery(
@@ -154,7 +151,9 @@ const Menu = () => {
                           </React.Fragment>
                         );
                       })}
-                      <Link to ="/writer-services/" className="main-services-link">All Writer Services</Link>
+                      <li className="drop-menu-item">
+                      <Link to ="/writer-services/">All Writer Services</Link>
+                      </li>
                     </DropdownMenuUl>
                   </li>
                 ) : (
