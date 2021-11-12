@@ -92,7 +92,7 @@ const Contact = () => {
                     
                     {/* Company Name */}
 
-                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="form-name" value="contactform" />
 
                     <div className="form-group mb-7 position-relative">
                       <input
