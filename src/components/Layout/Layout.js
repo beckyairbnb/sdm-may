@@ -194,6 +194,15 @@ const Layout = ({ children, pageContext }) => {
       </>
     );
   }
+  if (pageContext.layout === "noheaderfooter") {
+    return (
+      <>
+        <div className="site-wrapper overflow-hidden">         
+          {children}
+        </div>
+      </>
+    );
+  }
 
   return (
     <>

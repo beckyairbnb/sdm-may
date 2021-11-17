@@ -13,6 +13,10 @@ exports.onCreatePage = ({ page, actions }) => {
     page.context.layout = "test";
     createPage(page);
   }
+  else if (page.path.match(/pricing/)) {
+    page.context.layout = "noheaderfooter";
+    createPage(page);
+  }
   
 };
 
