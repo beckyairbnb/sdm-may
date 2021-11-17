@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { Helmet } from "react-helmet";
 
 import AOS from "aos";
-
 import Header from "../Header";
 import { HeaderMini , HeaderComingSoon } from "../HeaderMini";
 import { HeaderTransparent } from "../HeaderTransparent";
@@ -189,7 +188,6 @@ const Layout = ({ children, pageContext }) => {
           <HeaderComingSoon />
           {children}
         </div>
-
         <ModalVideo />
       </>
     );

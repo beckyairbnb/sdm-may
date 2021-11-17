@@ -162,8 +162,9 @@ const NestedMenu = () => {
     `
   )
   const ServicesList = AllServices.edges.map((item)=>{
+    let slug = item.node.uid==='saas-content-writerr' ? 'saas-content-writer' : item.node.uid
     return(
-      { "name": 'writer-services/'+item.node.uid+'/', "label": item.node.data.short_title }
+      { "name": 'writer-services/'+slug+'/', "label": item.node.data.short_title }
     )
   })
   const menuItems = [
