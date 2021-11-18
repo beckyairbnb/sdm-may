@@ -89,13 +89,26 @@ data.ServicePages.edges.forEach(({ node }) => {
   }  
   else
   {
-    createPage({
-      path: `writer-services/${node.uid}/`,
-      component: path.resolve("./src/templates/service-template.js"),
-      context: {
-        id:node.id
-      },
-    })
+    if(node.uid==='seo-content-writing'){
+      createPage({
+        path: `writer-services/${node.uid}/`,
+        component: path.resolve("./src/templates/service-template.js"),
+        context: {
+          layout: 'noheaderfooter',
+          id:node.id
+        },
+      })
+    }
+    else
+    {
+      createPage({
+        path: `writer-services/${node.uid}/`,
+        component: path.resolve("./src/templates/service-template.js"),
+        context: {
+          id:node.id
+        },
+      })
+    }    
   }
 })
 

@@ -243,3 +243,13 @@ video {
 .client-item{ width:20%; padding:1%;}
 .border2{ border:2px solid red;}
 .subHeading h3, .subHeading h6{ color:#7c8087; font-size: 1.125rem !important; font-weight: 400 !important;}
+
+.form-head{ 
+  overflow: hidden;
+  background-image:url(../assets/images/form-head-bg3.png) !important;
+  background-size: 100% auto;
+  background-repeat:repeat-x !important;
+  background-position: center center;
+}
+.round-block{ width:75px; height: 75px;  }
+.text-danger-text{ font-size:12px; color:#ff0000;}

@@ -13,3 +13,5 @@ export const wrapPageElement = ({ element, props }) => {
 export const wrapRootElement = ({ element }) => (
   <GlobalProvider>{element}</GlobalProvider>
 );
+
+// export { default as wrapRootElement } from './src/store/reduxWrapper';
