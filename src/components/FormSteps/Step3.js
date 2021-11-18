@@ -33,7 +33,7 @@ const Step3 = ({content, noOfWords, company, email, setEmail, firstname, setFirs
                     <Heading2 className="form-sub-heading display-5 mb-3 w-100">I’ll get you an awesome price in minutes. Ready to go?</Heading2> 
                     </div>
                 </div>  
-                <form name="getquoteform" method="POST" data-netlify="true" action={ `/get-a-quote/success` }>
+                <form name="getquoteform" method="POST" data-netlify="true" action={ `/success/` }>
                 <input type="hidden" name="form-name" value="getquoteform"/>  
                 <input type="hidden" name="Type of content you are looking for" value={content}/>
                 <input type="hidden" name="How many words per month would you like to order" value={noOfWords}/> 

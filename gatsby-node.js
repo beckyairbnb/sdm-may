@@ -17,7 +17,6 @@ exports.onCreatePage = ({ page, actions }) => {
     page.context.layout = "noheaderfooter";
     createPage(page);
   }
-  
 };
 
 exports.createPages = async ({ graphql, actions }) => {
