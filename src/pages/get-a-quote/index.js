@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styled from "styled-components";
 
 import PageWrapper from "../../components/PageWrapper";
-import Layout from "../../components/layout"
+import Layout from "../../components/Layout"
 import FormHead from '../../components/FormHead'
 
 import Step1 from '../../components/FormSteps/Step1'
