@@ -66,7 +66,7 @@ const ServiceTemplate = (props)=>{
                   <div className="text-center pt-5 pb-lg-4 mb-lg-2">
                      {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="mb-4" ></div>}
                      {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }} className="subHeading"></div>}
-                     <Link to={slug === 'seo-content-writing' ? '/get-a-quote/' : '/pricing/'}
+                     <Link to={slug === 'seo-content-writing' ? '/get-a-quote/1/' : '/pricing/'}
                     className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                      <p>{PageData.data.cta_button_below_text}</p>
                      
