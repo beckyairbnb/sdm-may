@@ -83,7 +83,7 @@ const Step1 = () => {
                   </div>
                   <div className="d-flex justify-content-center">  
                   <div className="col-sm-10">    
-                      <Heading3>How many words per month would you like to order</Heading3>   
+                      <Heading3>How many words per month would you like to order?</Heading3>   
                   </div>
                   </div>
                   <div className="d-flex justify-content-center">  
@@ -110,16 +110,6 @@ const Step1 = () => {
                   </div>      
             </div>
             </div> 
-                  {/* <div className="container overflow-hidden form-container">
-                    <div className="row">
-                        <div className="col-sm-12">
-                        <FormHead step={activeStep} setActiveStep={setActiveStep} handleSubmitBack={handleSubmitBack} handleSubmitRestart={handleSubmitRestart} />
-                        </div>
-                    </div>                    
-                  </div>
-                  {activeStep === 'step1' && <Step1 content={content} noOfWords={noOfWords} setContent={setContent} setNoOfWords={setNoOfWords} setActiveStep={setActiveStep}/> }
-                  {activeStep === 'step2' && <Step2 company={company} setCompany={setCompany} setActiveStep={setActiveStep}/> }
-                  {activeStep === 'step3' && <Step3 content={content} noOfWords={noOfWords} company={company} email={email} setEmail={setEmail} firstname={firstname} setFirstname={setFirstname} lastname={lastname} setLastname={setLastname} setActiveStep={setActiveStep}/> } */}
                   </PageContainer>              
               </PageWrapper>
             </>

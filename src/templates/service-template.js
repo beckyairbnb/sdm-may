@@ -15,6 +15,7 @@ import ModalPopup from '../components/ModalPopup'
 
 import imgFavicon from "../assets/favicon.png";
 import phoneSec from "../assets/images/phone-sec.png";
+import SeoContentImg from "../assets/images/seo-content-writer-img.png";
 
 import logo1 from "../assets/images/clients/logo-1.jpg";
 import logo2 from "../assets/images/clients/logo-2.jpg";
@@ -105,8 +106,7 @@ const ServiceTemplate = (props)=>{
                <div className="col-xl-8 col-lg-10 col-xs-12">
                  {PageData.data.button_block_heading.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.button_block_heading.html }} className="w-100" ></div>}
                  <p>{PageData.data.button_block_subtext}</p>
-                 <Link
-                     to="/pricing/"
+                 <Link to={slug === 'seo-content-writing' ? '/get-a-quote/1/' : '/pricing/'}
                     className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                </div>
             </div>
@@ -120,16 +120,16 @@ const ServiceTemplate = (props)=>{
                {PageData.data.image_block_heading.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.image_block_heading.html }} className="w-100" ></div>}
                  <p>{PageData.data.image_block_subtext}</p>
                  {
-                   slug === 'seo-content-writing' ? 
-                    <p className="mb-md-5 mb-3"><button className="bg-transparent border-0 text-primary">See the Strategically App in action</button></p>
-                    : 
-                    <p className="mb-md-5 mb-3"><button className="bg-transparent border-0 text-primary" onClick={() => setModalShow(true)}>See the Strategically App in action</button></p>
+                   slug !== 'seo-content-writing' && <p className="mb-md-5 mb-3"><button className="bg-transparent border-0 text-primary" onClick={() => setModalShow(true)}>See the Strategically App in action</button></p>
                  }
                   
                </div>
                <div className="col-xl-10 col-lg-10 col-xs-12">
-                 <img src={phoneSec} alt="" className="stars-img"/>
-                 </div>
+               {
+                   slug === 'seo-content-writing' ? <img src={SeoContentImg} alt="" className="stars-img my-10"/> : <img src={phoneSec} alt="" className="stars-img"/>
+
+               }
+                </div>
             </div>
          </div>
       </div>
