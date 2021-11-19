@@ -119,7 +119,13 @@ const ServiceTemplate = (props)=>{
                <div className="col-xl-8 col-lg-10 col-xs-12">
                {PageData.data.image_block_heading.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.image_block_heading.html }} className="w-100" ></div>}
                  <p>{PageData.data.image_block_subtext}</p>
-                  <p className="mb-md-5 mb-3"><button className="bg-transparent border-0 text-primary" onClick={() => setModalShow(true)}>See the Strategically App in action</button></p>
+                 {
+                   slug === 'seo-content-writing' ? 
+                    <p className="mb-md-5 mb-3"><button className="bg-transparent border-0 text-primary">See the Strategically App in action</button></p>
+                    : 
+                    <p className="mb-md-5 mb-3"><button className="bg-transparent border-0 text-primary" onClick={() => setModalShow(true)}>See the Strategically App in action</button></p>
+                 }
+                  
                </div>
                <div className="col-xl-10 col-lg-10 col-xs-12">
                  <img src={phoneSec} alt="" className="stars-img"/>
