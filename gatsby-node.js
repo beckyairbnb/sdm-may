@@ -17,6 +17,10 @@ exports.onCreatePage = ({ page, actions }) => {
     page.context.layout = "noheaderfooter";
     createPage(page);
   }
+  else if (page.path.match(/blogsingle/)) {
+    page.context.layout = "header";
+    createPage(page);
+  }
   else if (page.path.match(/get-a-quote/)) {
     page.context.layout = "noheaderfooter";
     createPage(page);

@@ -1,7 +1,9 @@
 import React from "react";
 import "../layout/blog-styles.css"
+import styled from 'styled-components'
 // import logoB from "../assets/image/logo.png";
-
+import PageWrapper from "../components/PageWrapper";
+import Helmet from "react-helmet";
 
 import blogbanner from "../assets/images/blog-banner.jpg";
 import foodimage from "../assets/images/food-img.jpg";
@@ -18,7 +20,24 @@ import Img from "gatsby-image"
 
 const BlogSingle = () => {
   return (
-    <div className="wrapper">
+    <>
+    <Helmet>
+     <title>Strategically | Content Writing Agency</title>
+   </Helmet>
+      <PageWrapper
+        themeConfig={{
+          headerClassName: "site-header--menu-right", 
+          headerButton: (
+            <>
+            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing/"}>
+              View Pricing
+            </a>
+            </>
+          ),
+          footerStyle: "style2",
+        }}
+      >
+    <Wrapper className="wrapper">
         <div className="container-fluid p-0 overflow-hidden">
         <div className="blog-banner d-flex flex-column align-items-center text-center">
           <div className="w-100 position-relative ban-img">
@@ -143,7 +162,7 @@ const BlogSingle = () => {
     </div>
 
 
-<div className="d-flex justify-content-center align-items-center text-center bg-light pt-10 pb-8 border-top border-bottom">
+{/* <div className="d-flex justify-content-center align-items-center text-center bg-light pt-10 pb-8 border-top border-bottom">
 <div className="container">
 <div className="mb-7 mt-7">  <h2>Forget everything you know about insurance</h2></div>
     <p>Incredible prices, monthly subscription</p>
@@ -202,8 +221,8 @@ const BlogSingle = () => {
 
     </div>
 </div>
-</div>
-<div className="d-flex pt-20 pb-8">
+</div> */}
+{/* <div className="d-flex pt-20 pb-8">
 <div className="container">
     <div className="text-center mb-10"><h2>Continue Reading</h2></div>
     <div className="row">
@@ -234,13 +253,24 @@ const BlogSingle = () => {
 
     </div>
     </div>
-</div>
+</div> */}
 
 
-    </div>
+    </Wrapper>
+    </PageWrapper>
+    </>
 
   );
 };
+const Wrapper = styled.div`
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 0rem;
+  margin-top:85px;
+  width: 100%;
+`
 export default BlogSingle;
 
 

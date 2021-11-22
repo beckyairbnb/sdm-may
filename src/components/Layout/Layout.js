@@ -7,6 +7,7 @@ import AOS from "aos";
 import Header from "../Header";
 import { HeaderMini , HeaderComingSoon } from "../HeaderMini";
 import { HeaderTransparent } from "../HeaderTransparent";
+import HeaderNoFooter from "../Header/HeaderNoFooter";
 import Footer from "../Footer";
 
 import ModalVideo from "../ModalVideo";
@@ -195,8 +196,16 @@ const Layout = ({ children, pageContext }) => {
   if (pageContext.layout === "noheaderfooter") {
     return (
       <>
-        <div className="site-wrapper overflow-hidden">         
+        <div className="site-wrapper overflow-hidden">   
+          <HeaderNoFooter/>      
           {children}
+          <div class="container">
+          <div class="row">
+          <div className="col-lg-12 border-top border-dark-light mt-5 pt-6 pb-0">
+              <p className="text-center">Strategically Digital Marketing Ltd. Company Number 11898834 VAT 328 9819 52</p>
+            </div>
+            </div>
+            </div>
         </div>
       </>
     );
