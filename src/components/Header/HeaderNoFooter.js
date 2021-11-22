@@ -2,18 +2,29 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import { Container } from "react-bootstrap";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import GlobalContext from "../../context/GlobalContext";
 
-import logoB from "../../assets/image/logo.png";
-
-
+import { useStaticQuery, graphql } from "gatsby"
 
 const SiteHeader = styled.header``;
 
 const ToggleButton = styled.button``;
 
+
 const HeaderNoFooter = () => {
+  const { SiteLogo } = useStaticQuery(
+    graphql`
+      query {
+        SiteLogo: file(relativePath: {eq: "logo.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 216)
+          }
+        }
+      }
+    `
+  )
+  const MyLogo = getImage(SiteLogo)
   const gContext = useContext(GlobalContext);
   const [showScrolling, setShowScrolling] = useState(false);
   const [showReveal, setShowReveal] = useState(false);
@@ -46,7 +57,8 @@ const HeaderNoFooter = () => {
           <nav className="navbar site-navbar offcanvas-active navbar-expand-lg  px-0">
             {/* <!-- Brand Logo--> */}
             <div className="brand-logo mt-3 mt-md-0">
-            <img src={logoB} alt="" className="light-version-logo" />
+            {/* <img src={logoB} alt="" className="light-version-logo" /> */}
+            <GatsbyImage image={MyLogo} alt="Strategically | Content Writing Agency"/>
             </div>
 
             <div className="collapse navbar-collapse">
