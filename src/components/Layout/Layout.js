@@ -3,6 +3,7 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 
+import { Link } from "gatsby"
 import AOS from "aos";
 import Header from "../Header";
 import { HeaderMini , HeaderComingSoon } from "../HeaderMini";
@@ -92,6 +93,7 @@ const Layout = ({ children, pageContext }) => {
 
     return () => {};
   }, [gContext]);
+  console.log('Page Lauout ',pageContext.layout)
   if (pageContext.layout === "blog") {
     return (
       <>
@@ -202,11 +204,11 @@ const Layout = ({ children, pageContext }) => {
           <div class="container">
           <div class="row">
           <div className="col-lg-12 border-top border-dark-light mt-5 pt-6 pb-0">
-              <p className="text-center">Strategically Digital Marketing Ltd. Company Number 11898834 VAT 328 9819 52</p>
+          <p className="text-center">Strategically Digital Marketing Ltd. Company Number 11898834 VAT 328 9819 52 | <Link to="/privacy/"  className="text-default-color">Privacy</Link> | <Link to="/terms/" className="text-default-color">Terms</Link></p>
             </div>
             </div>
             </div>
-        </div>
+        </div>L
       </>
     );
   }

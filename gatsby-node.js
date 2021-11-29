@@ -32,6 +32,14 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { data } = await graphql(`
   query {
+      Blogs : allPrismicBlog {
+        edges {
+          node {
+            id
+            uid
+          }
+        }
+      }
       Jobs :  allPrismicWritingjobs {
         edges {
           node {
@@ -74,6 +82,17 @@ exports.createPages = async ({ graphql, actions }) => {
       }
   }
 `)
+data.Blogs.edges.forEach(({ node }) => {     
+  console.log('Blog Pages Name', node.uid) 
+  createPage({
+    path: `/${node.uid}/`,
+    component: path.resolve("./src/templates/blog-template.js"),
+    context: {
+      layout: 'blog',
+      id:node.id
+    },
+  })
+})
 data.MainServicePage.edges.forEach(({ node }) => {     
   createPage({
     path: `writer-services/`,

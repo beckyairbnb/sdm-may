@@ -203,7 +203,7 @@ const Footer = ({ className, ...rest }) => {
               </div>
             </div>
             <div className="col-lg-12 border-top border-dark-light mt-5 pt-6 pb-0">
-              <p className="text-center">Strategically Digital Marketing Ltd. Company Number 11898834 VAT 328 9819 52</p>
+            <p className="text-center">Strategically Digital Marketing Ltd. Company Number 11898834 VAT 328 9819 52 | <Link to="/privacy/"  className="text-default-color">Privacy</Link> | <Link to="/terms/" className="text-default-color">Terms</Link></p>
             </div>
           </div>
         </div>

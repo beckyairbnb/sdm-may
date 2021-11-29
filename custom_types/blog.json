@@ -13,6 +13,20 @@
         "label": "Title"
       }
     },
+    "seotitle": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Seo Title"
+      }
+    },
+    "metadescription": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Seo Description"
+      }
+    },
     "sub_title": {
       "type": "StructuredText",
       "config": {

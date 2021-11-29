@@ -5,7 +5,7 @@ import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import GlobalContext from "../../context/GlobalContext";
 
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 const SiteHeader = styled.header``;
 
@@ -58,8 +58,11 @@ const HeaderNoFooter = () => {
             {/* <!-- Brand Logo--> */}
             <div className="brand-logo mt-3 mt-md-0">
             {/* <img src={logoB} alt="" className="light-version-logo" /> */}
+            <Link to="/">
             <GatsbyImage image={MyLogo} alt="Strategically | Content Writing Agency"/>
+            </Link>
             </div>
+
 
             <div className="collapse navbar-collapse">
               <div className="navbar-nav-wrapper">
