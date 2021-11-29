@@ -32,14 +32,29 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { data } = await graphql(`
   query {
-      Blogs : allPrismicBlog {
-        edges {
-          node {
-            id
-            uid
+    Blogs: allPrismicBlog(filter: {data: {category: {uid: {ne: null}}}}) {
+      edges {
+        node {
+          id
+          uid
+          data {
+            category {
+              document {
+                ... on PrismicBlogCategory {
+                  id
+                  data {
+                    name {
+                      text
+                      html
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
+    }
       Jobs :  allPrismicWritingjobs {
         edges {
           node {
@@ -83,9 +98,9 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 `)
 data.Blogs.edges.forEach(({ node }) => {     
-  console.log('Blog Pages Name', node.uid) 
+  console.log('Blog Pages Name', node.data.category.document.data.name.text) 
   createPage({
-    path: `/${node.uid}/`,
+    path: `/${node.data.category.document.data.name.text.toLowerCase()}/${node.uid}/`,
     component: path.resolve("./src/templates/blog-template.js"),
     context: {
       layout: 'noheaderfooter',

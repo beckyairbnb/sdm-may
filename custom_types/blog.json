@@ -38,6 +38,16 @@
         "label": "CTA Button Text"
       }
     },
+    "category": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": [
+          "blog_category"
+        ],
+        "label": "Category"
+      }
+    },
     "featuredimage": {
       "type": "Image",
       "config": {

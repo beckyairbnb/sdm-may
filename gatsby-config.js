@@ -28,6 +28,7 @@ module.exports = {
         repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
         schemas: {
           blog: require('./custom_types/blog.json'),
+          blog_category: require('./custom_types/blog_category.json'),
           service: require('./custom_types/service.json'),
           career: require('./custom_types/career.json'),
           page: require('./custom_types/page.json'),
