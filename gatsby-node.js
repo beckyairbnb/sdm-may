@@ -100,7 +100,7 @@ exports.createPages = async ({ graphql, actions }) => {
 data.Blogs.edges.forEach(({ node }) => {     
   console.log('Blog Pages Name', node.data.category.document.data.name.text) 
   createPage({
-    path: `/${node.data.category.document.data.name.text.toLowerCase()}/${node.uid}/`,
+    path: `/blog/${node.data.category.document.data.name.text.toLowerCase()}/${node.uid}/`,
     component: path.resolve("./src/templates/blog-template.js"),
     context: {
       layout: 'noheaderfooter',
