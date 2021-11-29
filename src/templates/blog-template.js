@@ -39,7 +39,7 @@ const BlogTemplate = (props)=>{
           footerStyle: "style2",
         }}
       >
-    <div className="wrapper">
+    <div className="blog-wrapper">
       <div className="container-fluid p-0 overflow-hidden">
         <div className="blog-banner d-flex flex-column align-items-center text-center">
             <div className="w-100 ban-img">

@@ -88,7 +88,7 @@ data.Blogs.edges.forEach(({ node }) => {
     path: `/${node.uid}/`,
     component: path.resolve("./src/templates/blog-template.js"),
     context: {
-      layout: 'blog',
+      layout: 'noheaderfooter',
       id:node.id
     },
   })
