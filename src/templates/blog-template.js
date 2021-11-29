@@ -17,8 +17,8 @@ import imgFavicon from "../assets/favicon.png";
 const BlogTemplate = (props)=>{
   const { data } = props
   const { PageData } = data
-  const seoTitle = PageData.data.seotitle.text || 'Strategically'
-  const seoDescription = PageData.data.metadescription.text || 'Strategically'
+  const seoTitle = PageData.data.seotitle || 'Strategically'
+  const seoDescription = PageData.data.metadescription || 'Strategically'
   return(
     <>
     <Helmet>
@@ -156,12 +156,8 @@ query getPageData($ID: String) {
         description {
           html
         }
-        seotitle {
-          text
-        }
-        metadescription {
-          text
-        }
+        seotitle 
+        metadescription
         BoxedContent : body{
           ... on PrismicBlogDataBodyBoxedContent {
             id

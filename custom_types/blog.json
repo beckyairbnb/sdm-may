@@ -14,17 +14,15 @@
       }
     },
     "seotitle": {
-      "type": "StructuredText",
+      "type": "Text",
       "config": {
-        "multi": "paragraph",
         "label": "Seo Title"
       }
     },
     "metadescription": {
-      "type": "StructuredText",
+      "type": "Text",
       "config": {
-        "multi": "paragraph",
-        "label": "Seo Description"
+        "label": "Meta Description"
       }
     },
     "sub_title": {
