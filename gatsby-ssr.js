@@ -11,3 +11,13 @@ export const wrapPageElement = ({ element, props }) => {
 export const wrapRootElement = ({ element }) => (
   <GlobalProvider>{element}</GlobalProvider>
 );
+
+export const onPreRenderHTML = ({ pathname, getHeadComponents, replaceHeadComponents }) => {
+  if (pathname !== '/calculator/') return
+
+  const headComponents = getHeadComponents()
+
+  // plugins often have identifiable props such as 'key' or 'id', or in worse cases, try matching 'href' or 'src'
+  headComponents.filter(c => c.key !== 'gatsby-plugin-crisp-chat')
+  replaceHeadComponents(headComponents)
+}
