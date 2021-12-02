@@ -208,7 +208,15 @@ const Layout = ({ children, pageContext }) => {
             </div>
             </div>
             </div>
-        </div>L
+        </div>
+      </>
+    );
+  }
+
+  if (pageContext.layout === "hideheaderfooter") {
+    return (
+      <>        
+          {children}
       </>
     );
   }

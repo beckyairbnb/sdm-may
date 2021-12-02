@@ -9,8 +9,8 @@ import Helmet from "react-helmet";
 const Success = () => {
   useEffect(() => {
     setTimeout(() => {        
-        navigate('https://calendly.com/becky-strategically/intro-meeting?month=2021-11');
-    }, 5000);
+        navigate('https://app.strategically.co/order/V8K986');
+    }, 10);
  });
   return (
     <>
@@ -32,7 +32,7 @@ const Success = () => {
         }}
       >
         <Hero />
-        <Pricing />
+        {/* <Pricing /> */}
         <Faq />
       </PageWrapper>
     </>
