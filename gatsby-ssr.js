@@ -14,7 +14,7 @@ export const wrapRootElement = ({ element }) => (
 
 export const onPreRenderHTML = ({ pathname, getHeadComponents, replaceHeadComponents }) => {
   if (pathname !== '/calculator/') return
-
+  console.log('Pathname of Calc', pathname)
   const headComponents = getHeadComponents()
 
   headComponents.map(c => {
