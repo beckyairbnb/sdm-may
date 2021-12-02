@@ -13,15 +13,21 @@ export const wrapRootElement = ({ element }) => (
 );
 
 export const onPreRenderHTML = ({ pathname, getHeadComponents, replaceHeadComponents }) => {
-  if (pathname !== '/calculator/') return
-  console.log('Pathname of Calc', pathname)
-  const headComponents = getHeadComponents()
-
-  headComponents.map(c => {
-    console.log("All Plugins", c.key)
+  if (pathname !== '/calculator/'){
+    return
   }
-  )
-  // plugins often have identifiable props such as 'key' or 'id', or in worse cases, try matching 'href' or 'src'
-  headComponents.filter(c => c.key !== 'gatsby-plugin-crisp-chat')
-  replaceHeadComponents(headComponents)
+  else
+  {
+    console.log('Pathname of Calc', pathname)
+    const headComponents = getHeadComponents()
+
+    headComponents.map(c => {
+      console.log("All Plugins", c.key)
+    }
+    )
+    // plugins often have identifiable props such as 'key' or 'id', or in worse cases, try matching 'href' or 'src'
+    headComponents.filter(c => c.key !== 'gatsby-plugin-crisp-chat')
+    console.log('headComponents List',headComponents)
+    replaceHeadComponents(headComponents)
+  }  
 }
