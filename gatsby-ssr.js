@@ -17,8 +17,8 @@ export const onPreRenderHTML = ({ pathname, getHeadComponents, replaceHeadCompon
 
   const headComponents = getHeadComponents()
 
-  headComponents.filter(c => {
-    console.log("All Plugins", c)
+  headComponents.map(c => {
+    console.log("All Plugins", c.key)
   }
   )
   // plugins often have identifiable props such as 'key' or 'id', or in worse cases, try matching 'href' or 'src'
