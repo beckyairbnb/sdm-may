@@ -64,8 +64,9 @@ width: 100%;
 padding:10px;
 border-radius: 4px;
 border: 1px solid #ccc;
-font-size:35px;line-height: 40px;
-font-weight: 700;
+font-size:1.25vw;
+line-height: 1.1;
+font-weight: 600; color:#222;
 `;
 
 const Number = styled.div`

@@ -254,3 +254,7 @@ video {
 .round-block{ width:75px; height: 75px;  }
 .text-danger-text{ font-size:12px; color:#ff0000;}
 .blog-wrapper{ margin-top:90px;}
+.reveal-header .light-version-logo,
+.reveal-header .dark-version-logo{
+  max-height:60px !important
+}

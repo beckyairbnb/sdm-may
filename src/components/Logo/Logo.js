@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import styled from "styled-components";
 
 import logoB from "../../assets/image/logo.png";
 import logoW from "../../assets/image/logo.png";
@@ -8,11 +9,13 @@ const Logo = ({ className = "", ...rest }) => {
   return (
     <Link to="/" className={`${className}`} {...rest}>
       {/* <!-- light version logo (logo must be black)--> */}
-      <img src={logoB} alt="" className="light-version-logo" />
+      <LogoImg src={logoB} alt="" className="light-version-logo" />
       {/* <!-- Dark version logo (logo must be White)--> */}
-      <img src={logoW} alt="" className="dark-version-logo" />
+      <LogoImg src={logoW} alt="" className="dark-version-logo" />
     </Link>
   );
 };
-
+const LogoImg = styled.img`
+max-height:80px;
+`
 export default Logo;

@@ -62,7 +62,7 @@ const Menu = () => {
       
     },
     {
-      name : "/writer-services/",
+      name : "writer-services/",
       label : "Writing Services",
       // items : ServicesList
     }  
