@@ -28,6 +28,6 @@ export const onPreRenderHTML = ({ pathname, getHeadComponents, replaceHeadCompon
     // plugins often have identifiable props such as 'key' or 'id', or in worse cases, try matching 'href' or 'src'
     headComponents.filter(c => c.key !== 'gatsby-plugin-crisp-chat')
     console.log('headComponents List',headComponents)
-    replaceHeadComponents(headComponents)
+    //replaceHeadComponents(headComponents)
   }  
 }
