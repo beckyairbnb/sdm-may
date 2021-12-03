@@ -197,6 +197,14 @@ const Footer = ({ className, ...rest }) => {
                           Pricing
                         </Link>
                       </li>
+                      <li className="mb-6">
+                        <Link
+                          to={`/faq/`}
+                          className="font-size-5 text-default-color"
+                        >
+                          FAQ
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
