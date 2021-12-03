@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 import imgA1 from "../../assets/image/home-2/png/arrow-1.png";
 import imgA2 from "../../assets/image/home-2/png/arrow-2.png";
@@ -42,11 +43,11 @@ const Progress = ({ className, ...rest }) => {
                   </div>
                 </div>
                 {/* <!-- Single Progress --> */}
-                <div
+                <GridItem
                   className="single-widgets pr-md-18 pr-lg-0 pl-lg-10 pl-xl-22 mb-10 mb-lg-0 text-center text-md-left"
 
                 >
-                  <div className="square-97 bg-dodger-blue-2 rounded-10 mb-10 shadow-bg-dodger-blue-2 mx-auto mx-md-0">
+                  <div className="square-97 bg-dodger-blue-1 shadow-bg-dodger-blue-1 rounded-10 mb-10 mx-auto mx-md-0">
                     <img src={imgS} alt="" />
                   </div>
                   <div className="">
@@ -55,14 +56,14 @@ const Progress = ({ className, ...rest }) => {
                       Submit your content titles, choose the content length, provide an article brief and confirm your order.
                     </p>
                   </div>
-                </div>
+                </GridItem>
                 {/* <!-- End Single Progress --> */}
                 {/* <!-- Single Progress --> */}
-                <div
+                <GridItem
                   className="single-widgets pr-md-18 pr-lg-0 pl-lg-10 pl-xl-22 mb-10 mb-lg-0 text-center text-md-left"
 
                 >
-                  <div className="square-97 bg-dodger-blue-2 rounded-10 mb-10 shadow-bg-dodger-blue-2 mx-auto mx-md-0">
+                  <div className="square-97 bg-dodger-blue-2 shadow-bg-dodger-blue-2 rounded-10 mb-10  mx-auto mx-md-0">
                     <img src={imgE} alt="" />
                   </div>
                   <div className="">
@@ -71,10 +72,10 @@ const Progress = ({ className, ...rest }) => {
                       Your articles are prepared by a Native English writer, edited, and passed through a plagiarism checker.
                     </p>
                   </div>
-                </div>
+                </GridItem>
                 {/* <!-- End Single Progress --> */}
                 {/* <!-- Single Progress --> */}
-                <div
+                <GridItem
                   className="single-widgets pr-md-18 pr-lg-0 pl-lg-10 pl-xl-22 mb-10 mb-lg-0 text-center text-md-left"
 
                 >
@@ -87,7 +88,7 @@ const Progress = ({ className, ...rest }) => {
                       We email you the completed articles formatted ready to install in your blog.
                     </p>
                   </div>
-                </div>
+                </GridItem>
                 {/* <!-- End Single Progress --> */}
               </div>
             </div>
@@ -99,4 +100,9 @@ const Progress = ({ className, ...rest }) => {
   );
 };
 
+const GridItem = styled.div`
+& > .square-97{
+  background-color:#4fb6d9 !important;
+}
+`;
 export default Progress;
