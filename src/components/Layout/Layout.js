@@ -198,10 +198,37 @@ const Layout = ({ children, pageContext }) => {
   if (pageContext.layout === "noheaderfooter") {
     return (
       <>
+      <Helmet>
+          <title>Strategically | Content Writing Agency</title>
+          <link rel="icon" type="image/png" href={imgFavicon} />
+          <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
+          <script>
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-T35RVN5');
+          `}
+        </script>
+        <script>
+          {`
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          `}
+        </script>
+        </Helmet>
         <div className="site-wrapper overflow-hidden">   
-          <HeaderNoFooter/>      
+          <HeaderNoFooter/>  
+          <div class="container mt-5 pt-6 ">
+          <div class="row">
+          <div className="col-lg-12 mt-5 pt-6 pb-0">
           {children}
-          <div class="container">
+          </div>
+          </div>
+          </div>    
+          
+          <div class="container mt-5 pt-6 ">
           <div class="row">
           <div className="col-lg-12 border-top border-dark-light mt-5 pt-6 pb-0">
           <p className="text-center">Strategically Digital Marketing Ltd. Company Number 11898834 VAT 328 9819 52 | <Link to="/privacy/"  className="text-default-color">Privacy</Link> | <Link to="/terms/" className="text-default-color">Terms</Link></p>

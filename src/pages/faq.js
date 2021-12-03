@@ -1,17 +1,12 @@
-import React, { useEffect } from "react";
-import { navigate } from 'gatsby'
+import React from "react";
+import styled from "styled-components";
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/pricing/Hero";
 import Pricing from "../sections/pricing/Pricing";
 import Faq from "../sections/pricing/Faq";
 import Helmet from "react-helmet";
 
-const Success = () => {
-  useEffect(() => {
-    setTimeout(() => {        
-        navigate('https://app.strategically.co/order/V8K986');
-    }, 10);
- });
+const FaqPage = () => {
   return (
     <>
     <Helmet>
@@ -31,11 +26,22 @@ const Success = () => {
           footerStyle: "style2",
         }}
       >
-        <Hero />
-        {/* <Pricing /> */}
-        <Faq />
+       <Container>
+       <Faq />
+       </Container>
       </PageWrapper>
     </>
   );
 };
-export default Success;
+const Container = styled.div`  
+  @media (min-width: 992px) {
+    margin: 150px auto 10px;
+    max-width: 1170px;  
+  }
+  @media (max-width: 991px) {
+    max-width: 100%;  
+    margin: 120px auto 10px; 
+    padding:0px;   
+  }
+`;
+export default FaqPage;

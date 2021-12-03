@@ -29,7 +29,7 @@ const Hero = ({ className, ...rest }) => {
                   <br className="d-none d-md-block" /> scale their content creation.
                 </p>
                 <div className=" pt-5 pt-lg-10">
-                  <Link to={"/pricing/"} className="btn btn-dodger-blue-2 rounded-5">
+                  <Link to={"/get-a-quote/1/"} className="btn btn-dodger-blue-2 rounded-5">
                     View Pricing
                   </Link>
 
