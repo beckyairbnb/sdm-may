@@ -53,7 +53,7 @@ const Footer = ({ className, ...rest }) => {
                           to="/writer-services/ecommerce-content-marketing-writer/"
                           className="font-size-5 text-default-color"
                         >
-                          eCommerce
+                          Ecommerce
                         </Link>
                       </li>
                       <li className="mb-6">
@@ -104,7 +104,7 @@ const Footer = ({ className, ...rest }) => {
                           to="/writer-services/product-description-writing/"
                           className="font-size-5 text-default-color"
                         >
-                          Product description writing
+                          Product Description Writing
                         </Link>
                       </li>
                       <li className="mb-6">
@@ -112,7 +112,7 @@ const Footer = ({ className, ...rest }) => {
                           to="/writer-services/white-paper-writing/"
                           className="font-size-5 text-default-color"
                         >
-                          White paper Writing
+                          White Paper Writing
                         </Link>
                       </li>
                     </ul>
