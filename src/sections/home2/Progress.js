@@ -102,7 +102,7 @@ const Progress = ({ className, ...rest }) => {
 
 const GridItem = styled.div`
 & > .square-97{
-  background-color:#4fb6d9 !important;
+  background-color:#56c0de !important;
 }
 `;
 export default Progress;

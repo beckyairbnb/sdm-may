@@ -220,13 +220,7 @@ const Layout = ({ children, pageContext }) => {
         </Helmet>
         <div className="site-wrapper overflow-hidden">   
           <HeaderNoFooter/>  
-          <div class="container mt-5 pt-6 ">
-          <div class="row">
-          <div className="col-lg-12 mt-5 pt-6 pb-0">
           {children}
-          </div>
-          </div>
-          </div>    
           
           <div class="container mt-5 pt-6 ">
           <div class="row">

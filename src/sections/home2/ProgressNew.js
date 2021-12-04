@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 import imgA1 from "../../assets/image/home-2/png/arrow-1.png";
 import imgA2 from "../../assets/image/home-2/png/arrow-2.png";
@@ -42,7 +43,7 @@ const ProgressNew = ({ className, ...rest }) => {
                   </div>
                 </div>
                 {/* <!-- Single Progress --> */}
-                <div
+                <GridItem
                   className="single-widgets pr-md-18 pr-lg-0 pl-lg-10 pl-xl-22 mb-10 mb-lg-0 text-center text-md-left"
 
                 >
@@ -55,10 +56,10 @@ const ProgressNew = ({ className, ...rest }) => {
                       Submit your content titles, choose the content length, provide an article brief and confirm your order.
                     </p>
                   </div>
-                </div>
+                </GridItem>
                 {/* <!-- End Single Progress --> */}
                 {/* <!-- Single Progress --> */}
-                <div
+                <GridItem
                   className="single-widgets pr-md-18 pr-lg-0 pl-lg-10 pl-xl-22 mb-10 mb-lg-0 text-center text-md-left"
 
                 >
@@ -71,10 +72,10 @@ const ProgressNew = ({ className, ...rest }) => {
                       Your articles are prepared by a Native English writer, edited, and passed through a plagiarism checker.
                     </p>
                   </div>
-                </div>
+                </GridItem>
                 {/* <!-- End Single Progress --> */}
                 {/* <!-- Single Progress --> */}
-                <div
+                <GridItem
                   className="single-widgets pr-md-18 pr-lg-0 pl-lg-10 pl-xl-22 mb-10 mb-lg-0 text-center text-md-left"
 
                 >
@@ -87,7 +88,7 @@ const ProgressNew = ({ className, ...rest }) => {
                       We email you the completed articles formatted ready to install in your blog.
                     </p>
                   </div>
-                </div>
+                </GridItem>
                 {/* <!-- End Single Progress --> */}
               </div>
             </div>
@@ -98,5 +99,9 @@ const ProgressNew = ({ className, ...rest }) => {
     </>
   );
 };
-
+const GridItem = styled.div`
+& > .square-97{
+  background-color:#56c0de !important;
+}
+`;
 export default ProgressNew;
