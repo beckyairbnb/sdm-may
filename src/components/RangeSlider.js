@@ -34,19 +34,19 @@ class RangeSlider extends Component {
     
     return (
       <div className='slider'>
-         <Value>{value}</Value>
+         {/* <Value>{value}</Value> */}
         <Slider
-          min={100}
-          max={250000}
-          value={value}
-          onChangeStart={this.handleChangeStart}
-          onChange={this.handleChange}
-          onChangeComplete={this.handleChangeComplete}
+          min={this.props.min}
+          max={this.props.max}
+          // value={value}
+          // onChangeStart={this.handleChangeStart}
+          // onChange={this.handleChange}
+          // onChangeComplete={this.handleChangeComplete}
           tooltip={false}
         />
        <Number>
-          <div>100</div>
-          <div>250K</div>
+          <div>{this.props.min}</div>
+          <div>{this.props.max}K</div>
 
        </Number>
       </div>
@@ -57,17 +57,7 @@ class RangeSlider extends Component {
 export default RangeSlider;
 
 
-const Value = styled.div`
-z-index: 0;
-position: relative;
-width: 100%;
-padding:10px;
-border-radius: 4px;
-border: 1px solid #ccc;
-font-size:1.25vw;
-line-height: 1.1;
-font-weight: 600; color:#222;
-`;
+
 
 const Number = styled.div`
 
