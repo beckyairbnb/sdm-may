@@ -146,7 +146,7 @@ return(
         <GridItem>
             <Grid>
                 <CalculatorInput
-                    Heading="Avg. monthly search volume"
+                    Heading="Avg. monthly search volume $"
                     TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                     min={100}
                     max={250000}
@@ -163,7 +163,7 @@ return(
             </Grid>
             <Grid>
                 <CalculatorInput
-                    Heading="Click through rate"
+                    Heading="Click through rate %"
                     TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                     min={0}
                     max={100}
@@ -198,7 +198,7 @@ return(
             <GridItem>
                 <Grid>
                     <CalculatorInput
-                        Heading="Website conversion rate to lead"
+                        Heading="Website conversion rate to lead %"
                         TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                         min={0}
                         max={100}
@@ -215,7 +215,7 @@ return(
                 </Grid>
                 <Grid>
                     <CalculatorInput
-                        Heading="Lead conversion rate to sale"
+                        Heading="Lead conversion rate to sale %"
                         TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                         min={0}
                         max={100}
@@ -232,7 +232,7 @@ return(
                 </Grid>
                 <Grid>
                     <CalculatorInput
-                        Heading="Lifetime customer value"
+                        Heading="Lifetime customer value $"
                         TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                         min={0}
                         max={5000}
@@ -258,7 +258,7 @@ return(
             <GridItem>
                 <Grid>
                     <CalculatorInput
-                        Heading="Content creation costs"
+                        Heading="Content creation costs $"
                         TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                         min={0}
                         max={1000}
@@ -274,7 +274,7 @@ return(
                 </Grid>
                 <Grid>
                     <CalculatorInput
-                        Heading="Content promotion costs"
+                        Heading="Content promotion costs $"
                         TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                         min={0}
                         max={1000}
@@ -307,21 +307,22 @@ return(
     <ResultBox>
         <ReturnTop>
         <Container>
-            <h2>Your return on investment<br/><span>(Total revenue - Total investment)/Total investment</span></h2>
+            <h2>Your return on investment<br/><span>(Total revenue - Total investment)/Total investment = ROI</span></h2>
             <Total>
                 <div>
                     <DivInner><span>Total revenue</span> <span>{totalRevenue!==0 && totalRevenue}</span></DivInner>
                     <DivInner><span>Total investment</span> <span>{totalInvestment !==0 && totalInvestment}</span></DivInner>
                 </div>
-                <div><Fresult>{roiTotal !==0 && roiTotal}</Fresult></div>
+                
             </Total>
             </Container>
         </ReturnTop>
         <ReturnBotBg> 
         <Container>
         <ReturnBot>
-            <div>Number of leads <span>{numberOfLeads !==0 && numberOfLeads}</span></div>
-            <div>Number of sales <span>{numberOfSales !==0 && numberOfSales}</span></div>        
+            <div><b>Number of leads </b><span>{numberOfLeads !==0 && numberOfLeads}</span></div>
+            <div><b>Number of sales </b><span>{numberOfSales !==0 && numberOfSales}</span></div>   
+            <div><b>Revenue</b> <Fresult>{roiTotal !==0 && roiTotal}</Fresult></div>     
         </ReturnBot>
         </Container>
         </ReturnBotBg> 
@@ -516,6 +517,17 @@ const ReturnTop = styled.div`
 justify-content: space-between;
 display: flex;
 color:#ffffff;
+div{
+    line-height: 40px;
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row nowrap;
+    place-content: stretch space-between;
+    b{
+        margin-right:10px;
+        
+    }
+}
   `;
   const ReturnBotBg = styled.div`
  width: 100%;float:left;background-color: rgb(67, 89, 122); padding:20px 0;
