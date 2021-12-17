@@ -42,7 +42,7 @@ export default class App extends Component {
       <>
           <ToolTipContainer>
             <ToolTipAnchor
-              data-for="main"
+              data-for="mytooltip"
               data-tip={this.props.content}
               data-iscapture="true"
             >
