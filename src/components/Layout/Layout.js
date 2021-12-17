@@ -150,6 +150,16 @@ const Layout = ({ children, pageContext }) => {
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           `}
         </script>
+        <script>
+          {`
+            (function(e,a){
+              var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
+              t=e.createElement("script");t.type="text/javascript";
+              t.charset="utf-8";t.async=!0;t.defer=!0;
+              t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
+              })(document,"157096");
+          `}
+        </script>
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
 
@@ -182,6 +192,16 @@ const Layout = ({ children, pageContext }) => {
           {`
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          `}
+        </script>
+        <script>
+          {`
+            (function(e,a){
+              var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
+              t=e.createElement("script");t.type="text/javascript";
+              t.charset="utf-8";t.async=!0;t.defer=!0;
+              t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
+              })(document,"157096");
           `}
         </script>
         </Helmet>
@@ -217,6 +237,16 @@ const Layout = ({ children, pageContext }) => {
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           `}
         </script>
+        <script>
+          {`
+            (function(e,a){
+              var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
+              t=e.createElement("script");t.type="text/javascript";
+              t.charset="utf-8";t.async=!0;t.defer=!0;
+              t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
+              })(document,"157096");
+          `}
+        </script>
         </Helmet>
         <div className="site-wrapper overflow-hidden">   
           <HeaderNoFooter/>  
@@ -236,7 +266,19 @@ const Layout = ({ children, pageContext }) => {
 
   if (pageContext.layout === "hideheaderfooter") {
     return (
-      <>        
+      <>   
+          <Helmet>
+          <script>
+          {`
+            (function(e,a){
+              var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
+              t=e.createElement("script");t.type="text/javascript";
+              t.charset="utf-8";t.async=!0;t.defer=!0;
+              t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
+              })(document,"157096");
+          `}
+        </script>
+        </Helmet>     
           {children}
       </>
     );
@@ -264,6 +306,16 @@ const Layout = ({ children, pageContext }) => {
               height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             `}
           </script>
+          <script>
+          {`
+            (function(e,a){
+              var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
+              t=e.createElement("script");t.type="text/javascript";
+              t.charset="utf-8";t.async=!0;t.defer=!0;
+              t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
+              })(document,"157096");
+          `}
+        </script>
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
         <div className="site-wrapper overflow-hidden" ref={eleRef}>

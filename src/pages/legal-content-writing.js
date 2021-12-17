@@ -5,7 +5,7 @@ import Hero from "../sections/legal/Hero";
 import Counter from "../sections/legal/Counter";
 import Content2 from "../sections/legal/Content2";
 import Content3 from "../sections/legal/Content3";
-import Testimonial from "../sections/legal/Testimonial";
+import Testimonial from "../sections/b2b/Testimonial";
 import CTA from "../sections/legal/CTA";
 import Helmet from "react-helmet";
 import Content4 from "../sections/legal/Content4";

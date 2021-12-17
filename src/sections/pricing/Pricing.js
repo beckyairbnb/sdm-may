@@ -52,7 +52,7 @@ const Pricing = () => {
                   </ul>
 
                   <div className="pt-7 pt-lg-17">
-                    <a className="btn btn-blue-3 btn-2 rounded-5" href={"https://app.strategically.co/order/V8K986?field_7=10&&options_7%5B0%5D=No"}>
+                    <a className="btn btn-blue-3 btn-2 rounded-5" href={"https://app.strategically.co/order/DXZV8N"}>
                     Sign up
                     </a>
                   </div>
@@ -107,7 +107,7 @@ const Pricing = () => {
                   </ul>
 
                     <div className="pt-7 pt-lg-17">
-                      <a className="btn btn-blue-3 btn-2 rounded-5" href={"https://app.strategically.co/order/V8K986?field_7=17&options_7%5B0%5D=No"}>
+                      <a className="btn btn-blue-3 btn-2 rounded-5" href={"https://app.strategically.co/order/DXZV8N"}>
                         Sign up
                       </a>
                     </div>
@@ -163,13 +163,12 @@ const Pricing = () => {
                   </ul>
 
                     <div className="pt-7 pt-lg-17">
-                      <a className="btn btn-blue-3 btn-2 rounded-5" href={"https://app.strategically.co/order/V8K986?field_7=18&options_7[0]=No"}>
+                      <a className="btn btn-blue-3 btn-2 rounded-5" href={"https://app.strategically.co/order/DXZV8N"}>
                         Sign up
                       </a>
                     </div>
                   </div>
                 </div>
-                {/* End Single Table */}
 
         </div>
       </div>

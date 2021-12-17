@@ -258,3 +258,34 @@ video {
 .reveal-header .dark-version-logo{
   max-height:60px !important
 }
+#mytooltip{
+	width:240px;
+	text-align: center;
+	padding:0.6rem !important;
+  box-shadow: 1px 1px 6px 1px rgba(196,196,196,0.75);
+-webkit-box-shadow: 1px 1px 6px 1px rgba(196,196,196,0.75);
+-moz-box-shadow: 1px 1px 6px 1px rgba(196,196,196,0.75);
+	color: #233A6C; font-family: 'Poppins', sans-serif !important; font-size:0.9rem;
+}
+
+  .rangeslider{margin:14px 0px !important;}
+  .rangeslider-horizontal{ height:15px !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  .rangeslider-horizontal .rangeslider__handle::after{
+    content: none !important;
+  }
+  .rangeslider-horizontal .rangeslider__handle{
+    width:36px !important;
+    height:36px !important;
+    border:none !important;
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px !important;
+    /* transform: scale(1) !important; */
+    transition: transform 0.1s ease-out 0s !important;
+  }
+  .tdf33a4a5-a96a-4bd8-a239-00504bccadb9{
+    background-color:#ffffff !important;
+  }

@@ -47,7 +47,6 @@ class RangeSlider extends Component {
        <Number>
           <div>{this.props.min}</div>
           <div>{this.props.max}K</div>
-
        </Number>
       </div>
     )

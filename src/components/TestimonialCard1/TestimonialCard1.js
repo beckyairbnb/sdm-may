@@ -10,7 +10,7 @@ const Card = ({ options }) => {
         <p className="font-size-5 line-height-28 text-dark-cloud mr-xl-5">
           {options.content}
         </p>
-        <h4 className="font-size-6 mb-0 text-dark-cloud">{options.userlink}</h4>
+        <h4 className="font-size-6 mb-0 text-dark-cloud">{options.user}</h4>
       </div>
     </div>
   );
