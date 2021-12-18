@@ -122,6 +122,7 @@ return(
     <>
     <Helmet>
           <link rel="icon" type="image/png" href={imgFavicon} />
+          <title>Strategically | Social ROI Calculator</title>
           <script>
           {`
             (function(e,a){
@@ -133,7 +134,8 @@ return(
           `}
         </script>
     </Helmet>
-<Wrapper>    
+<Wrapper>   
+<ContainerMain>
     <PageTitle>
         <Container>
             <h1>Social ROI Calculator</h1>
@@ -300,14 +302,11 @@ return(
              </Invest>
     </Container>
 </Fullwidth>
-</Wrapper>
-
-
-
-    <ResultBox>
+<ResultBox>
         <ReturnTop>
         <Container>
             <h2>Your return on investment<br/><span>(Total revenue - Total investment)/Total investment = ROI</span></h2>
+            <h2><span>({totalRevenue} - {totalInvestment})/{totalInvestment}</span></h2>
             <Total>
                 <div>
                     <DivInner><span>Total revenue</span> <span>{totalRevenue!==0 && totalRevenue}</span></DivInner>
@@ -327,6 +326,12 @@ return(
         </Container>
         </ReturnBotBg> 
     </ResultBox>
+    </ContainerMain> 
+</Wrapper>
+
+
+
+   
 
 </>
 
@@ -334,6 +339,21 @@ return(
     )
 }
 export default Calculator;
+const Wrapper = styled.div`
+width:100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+const ContainerMain = styled.div`
+max-width:991px;
+width:100%;
+overflow:hidden;
+box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+`
+
 
 const BlockHeader = styled.div`
 width:100%;
@@ -416,14 +436,6 @@ color:#1d293f;
     font-size:17px;
   }
 `
-const Wrapper = styled.div`
-width:100%;
-float:left;
-padding-bottom:20px;
-@media (max-width: 991px) {
-padding-bottom:30px;
-}
-`;
 
 const PageTitle = styled.div`
 background:#143059; text-align:center;
@@ -458,14 +470,24 @@ const Fullwidth = styled.div`
   margin-bottom:30px;
 `;
 const GridItem = styled.div`
-display: grid;
-grid-gap: 1.5rem;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+display:flex;
+@media (min-width: 768px) {
+    flex-flow: row !important;
+    justify-content: space-between;
+}
+@media (max-width: 768px) {
+    flex-flow: column !important;
+}
 `;
 
 const Grid = styled.div`
- padding:0 0px;
  position:relative;
+ @media (min-width: 768px) {
+    padding:0px 10px;
+}
+@media (max-width: 768px) {
+    padding:0px;
+}
 `;
 const Invest = styled.div`
 
@@ -474,7 +496,6 @@ const ResultBox = styled.div`
 width:100%;
 float:left;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 18px 3px;
-// position:fixed;
 bottom:0;
 color:#ffffff;
 & > h2{
@@ -512,22 +533,27 @@ const ReturnTop = styled.div`
     }
  `
   const ReturnBot = styled.div`
- width: 100%;float:left;
- -moz-box-pack: justify; color:#fff;
-justify-content: space-between;
-display: flex;
-color:#ffffff;
-div{
-    line-height: 40px;
-    justify-content: space-between;
+    width: 100%;
+    color:#fff;
     display: flex;
-    flex-flow: row nowrap;
-    place-content: stretch space-between;
-    b{
-        margin-right:10px;
-        
+    color:#ffffff;
+    @media (min-width: 768px) {
+        flex-flow: row !important;
+        justify-content: space-between;
     }
-}
+    @media (max-width: 768px) {
+        flex-flow: column !important;
+    }
+    div{
+        line-height: 40px;
+        justify-content: space-between;
+        display: flex;
+        flex-flow: row nowrap;
+        place-content: stretch space-between;
+        b{
+            margin-right:10px;            
+        }
+    }
   `;
   const ReturnBotBg = styled.div`
  width: 100%;float:left;background-color: rgb(67, 89, 122); padding:20px 0;
