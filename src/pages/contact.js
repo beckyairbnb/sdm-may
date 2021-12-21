@@ -93,6 +93,7 @@ const Contact = () => {
                     {/* Company Name */}
 
                     <input type="hidden" name="form-name" value="contactform" />
+                    <input type="hidden" name="subject" value="Strategically.co Content Writing Agency | Get in Touch"/>
 
                     <div className="form-group mb-7 position-relative">
                       <input

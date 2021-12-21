@@ -35,6 +35,7 @@ const Step3 = ({content, noOfWords, company, email, setEmail, firstname, setFirs
                 </div>  
                 <form name="getquoteform" method="POST" data-netlify="true" action={ `/success/` }>
                 <input type="hidden" name="form-name" value="getquoteform"/>  
+                <input type="hidden" name="subject" value="Strategically.co Content Writing Agency | Get a Quote"/>
                 <input type="hidden" name="Type of content you are looking for" value={content}/>
                 <input type="hidden" name="How many words per month would you like to order" value={noOfWords}/> 
                 <input type="hidden" name="Company Name" value={company}/>  
