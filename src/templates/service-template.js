@@ -31,11 +31,7 @@ import logo10 from "../assets/images/clients/logo-10.jpg";
 const ServiceTemplate = (props)=>{
     const [modalShow, setModalShow] = useState(false);
     const { data } = props
-    const { PageData } = data
-    //const siteURL = site.siteMetadata.siteUrl 
-    //const stitle = `Read ${PageData.data.title.text} `;
-    //const surl = `${siteURL}${props.location.pathname || "/"}`;
-    //const stwitterHandle = "_MsLinda";
+    const { PageData, AllServices } = data
     const slug = data.PageData.slug
     const seoTitle = PageData.data.seotitle.text || 'Strategically'
     const seoDescription = PageData.data.metadescription.text || 'Strategically'
@@ -167,6 +163,30 @@ const ServiceTemplate = (props)=>{
             </div>
          </div>
       </div>
+      <div className="pt-12 mb-5
+      
+      ">
+         <div className="container py-lg-10 bg-light">
+            <div className="row justify-content-center text-center py-lg-5">
+               <div className="col-sm-12">
+                <h2 className="mb-10">Other Writer Services We Provide</h2>
+                    <ul className="row">
+                        { AllServices.edges.map((item,index)=>{
+                          let slug = item.node.uid==='saas-content-writerr' ? 'saas-content-writer' : item.node.uid
+                            return(
+                                <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
+                                  <Link to={`/writer-services/${slug}/`} className="text-capitalize text-stone gr-hover-text-dodger-blue-1 font-size-5">{item.node.data.short_title || item.node.data.title.text}</Link>  
+                                </li>
+                            )
+                        })}
+                        <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
+                        <Link to ="/writer-services/" className="text-capitalize text-stone gr-hover-text-dodger-blue-1 font-size-5">All Writer Services</Link>
+                        </li>
+                    </ul>
+               </div>
+            </div>
+         </div>
+      </div>
       <ModalPopup
           show={modalShow}
           onHide={() => setModalShow(false)}
@@ -204,6 +224,20 @@ query getServiceData($id: String!) {
           title
           description
           siteUrl
+        }
+      }
+      AllServices: allPrismicService(filter: {uid: {ne: "writer-services"}}, sort: {fields: data___short_title, order: ASC}) {
+        edges {
+          node {
+            uid
+            id
+            data {
+              title {
+                text
+              }
+              short_title
+            }
+          }
         }
       }
   PageData : prismicService(id: {eq: $id}) {
