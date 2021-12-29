@@ -25,10 +25,10 @@ exports.onCreatePage = ({ page, actions }) => {
     page.context.layout = "noheaderfooter";
     createPage(page);
   }
-  else if (page.path.match(/calculator/)) {
-    page.context.layout = "hideheaderfooter";
-    createPage(page);
-  }
+  // else if (page.path.match(/calculator/)) {
+  //   page.context.layout = "hideheaderfooter";
+  //   createPage(page);
+  // }
 };
 
 exports.createPages = async ({ graphql, actions }) => {

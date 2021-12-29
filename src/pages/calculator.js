@@ -5,7 +5,9 @@ import { Helmet } from "react-helmet";
 
 import 'react-rangeslider/lib/index.css'
 import ToolTip from '../components/ToolTip'; 
+import PageWrapper from "../components/PageWrapper";
 import CalculatorInput from '../components/CalculatorInput';
+import CalculatorValue from '../components/CalculatorValue';
 import imgFavicon from "../assets/favicon.png";
 
 const Calculator = () => {
@@ -122,7 +124,7 @@ return(
     <>
     <Helmet>
           <link rel="icon" type="image/png" href={imgFavicon} />
-          <title>Strategically | Social ROI Calculator</title>
+          <title>Free Content marketing ROI calculator</title>
           <script>
           {`
             (function(e,a){
@@ -134,6 +136,19 @@ return(
           `}
         </script>
     </Helmet>
+    <PageWrapper
+        themeConfig={{
+          headerClassName: "site-header--menu-right",
+          headerButton: (
+            <>
+            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/1/"}>
+              View Pricing
+            </a>
+            </>
+          ),
+          footerStyle: "style2",
+        }}
+      >
 <Wrapper>   
 <ContainerMain>
     <PageTitle>
@@ -144,15 +159,15 @@ return(
     </PageTitle>
 <Fullwidth>
     <Container>
-     <H2heading>Calculate your traffic</H2heading>
+     <H2heading>Calculate your website traffic</H2heading>
         <GridItem>
             <Grid>
                 <CalculatorInput
-                    Heading="Avg. monthly search volume $"
-                    TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                    Heading="Avg. monthly search volume"
+                    TooltipContent = 'Enter the average monthly search volume for the keyword(s) your piece of content will target. For example, a blog targeting the keyword "content ROI" may have an average of 10,000 monthly searches.'
                     min={100}
-                    max={250000}
-                    SliderStep={100}
+                    max={50000}
+                    SliderStep={50}
                     CheckMaxMin={CheckMaxMin}
                     fieldName="avgMonthlyVolume"
                     fieldValue={avgMonthlyVolume}
@@ -165,8 +180,8 @@ return(
             </Grid>
             <Grid>
                 <CalculatorInput
-                    Heading="Click through rate %"
-                    TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                    Heading="Click-through rate %"
+                    TooltipContent = "This is your expected click-through rate (CTR) from the keyword to the piece of content. CTR is the number of clicks that your article receives divided by the number of times your article is seen: clicks ÷ impressions = CTR. For example, if you had 5 clicks and 100 impressions, then your CTR would be 5%."
                     min={0}
                     max={100}
                     SliderStep={5}
@@ -181,13 +196,11 @@ return(
                 /> 
             </Grid>
             <Grid>
-                <BlockHeader>
-                <H3heading>Website traffic</H3heading>   
-                </BlockHeader>
-                <InputWrap>
-                <InputText disabled = {true} value={websiteTraffic !==0 && websiteTraffic}/>
-                </InputWrap>           
-                
+                <CalculatorValue
+                    Heading="Estimated website traffic"
+                    TooltipContent = 'This is the estimated traffic to your website based on the average monthly search volume and estimated click-through rate.'
+                    value={websiteTraffic}                    
+                />                 
             </Grid>
         </GridItem>
     </Container>
@@ -196,12 +209,12 @@ return(
 <Fullwidth>
     <Container>
     <Invest>
-        <H2heading>Calculate your return</H2heading>
+        <H2heading>Calculate your sales</H2heading>
             <GridItem>
                 <Grid>
                     <CalculatorInput
-                        Heading="Website conversion rate to lead %"
-                        TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                        Heading="Landing page conversion rate %"
+                        TooltipContent = "Calculate your conversion rate by dividing the total number of emails collected by the number of page views to the landing page. Then multiply this number by 100 to turn this into a percentage. Example: 100 email addresses collected / 1000 blog visits = 0.1 X 100 = 10% Page Conversion Rate."
                         min={0}
                         max={100}
                         SliderStep={5}
@@ -218,7 +231,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Lead conversion rate to sale %"
-                        TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                        TooltipContent = "Close rate means the number of sales calls, presentations, or email outreach activities versus the number of sales you close. This number is important as it allows us to show that for every 1,000 leads we generate on an article, we can expect (as an example) 10 sales."
                         min={0}
                         max={100}
                         SliderStep={5}
@@ -235,7 +248,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Lifetime customer value $"
-                        TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                        TooltipContent = "This is the total revenue you expect the customer to generate over their lifetime."
                         min={0}
                         max={5000}
                         SliderStep={100}
@@ -261,7 +274,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Content creation costs $"
-                        TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                        TooltipContent = "Enter the cost for the piece of content. This might include your images, content, or graphics."
                         min={0}
                         max={1000}
                         SliderStep={20}
@@ -277,7 +290,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Content promotion costs $"
-                        TooltipContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                        TooltipContent = "Enter the cost for the any advertising for the piece of content. This could be Facebook or Google Ads, or it could be zero, if you aim to use only organic traffic."
                         min={0}
                         max={1000}
                         SliderStep={20}
@@ -328,7 +341,7 @@ return(
     </ResultBox>
     </ContainerMain> 
 </Wrapper>
-
+</PageWrapper>
 
 
    
@@ -346,6 +359,7 @@ justify-content: center;
 align-items: center;
 `;
 const ContainerMain = styled.div`
+margin:120px 0px 0px;
 max-width:991px;
 width:100%;
 overflow:hidden;
@@ -438,7 +452,7 @@ color:#1d293f;
 `
 
 const PageTitle = styled.div`
-background:#143059; text-align:center;
+background:#ffffff; text-align:center;
 padding:2% 0; margin-bottom:4%;
 width:100%;
 float:left;
@@ -446,13 +460,13 @@ float:left;
     padding:5% 0;
 }
  & h1{
-     color:#fff; font-size:3.5vw; padding:0.2% 0; margin:0px;
+     color:#143059; font-size:3.5vw; padding:0.2% 0; margin:0px;
         @media (max-width: 768px) {
             font-size:24px;
         }
     }
  & p{
-     color:#fff; margin:0; font-size:1.75vw;  padding:0.2% 0; margin:0px;
+     color:#143059; margin:0; font-size:1.75vw;  padding:0.2% 0; margin:0px;
      @media (max-width: 768px) {
         font-size:17px;
     }
@@ -506,7 +520,7 @@ position:inherit;
 }
 `;
 const ReturnTop = styled.div`
-  width: 100%;float:left;padding:25px 0px;background-color: rgb(47, 107, 154);
+  width: 100%;float:left;padding:25px 0px;background-color: rgb(68, 181, 212);
   h2{
       color:#ffffff;
       margin:0px;
@@ -556,7 +570,7 @@ const ReturnTop = styled.div`
     }
   `;
   const ReturnBotBg = styled.div`
- width: 100%;float:left;background-color: rgb(67, 89, 122); padding:20px 0;
+ width: 100%;float:left;background-color: rgb(47, 165, 198); padding:20px 0;
  `;
 
  const InputText = styled.input`
