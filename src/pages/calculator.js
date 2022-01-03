@@ -123,8 +123,8 @@ const Calculator = () => {
 return(
     <>
     <Helmet>
-          <link rel="icon" type="image/png" href={imgFavicon} />
-          <title>Free Content marketing ROI calculator</title>
+          <link rel="icon" type="image/png" href={imgFavicon} />                 
+          <title>Free content marketing ROI calculator</title>
           <script>
           {`
             (function(e,a){
@@ -153,8 +153,7 @@ return(
 <ContainerMain>
     <PageTitle>
         <Container>
-            <h1>Social ROI Calculator</h1>
-            <p>Do a little math. Impress your boss.</p>
+            <h1>Free content marketing ROI calculator</h1>
         </Container>
     </PageTitle>
 <Fullwidth>
@@ -250,7 +249,7 @@ return(
                         Heading="Lifetime customer value $"
                         TooltipContent = "This is the total revenue you expect the customer to generate over their lifetime."
                         min={0}
-                        max={5000}
+                        max={10000}
                         SliderStep={100}
                         CheckMaxMin={CheckMaxMin}
                         fieldName="lifetimeCustomerValue"
@@ -276,7 +275,7 @@ return(
                         Heading="Content creation costs $"
                         TooltipContent = "Enter the cost for the piece of content. This might include your images, content, or graphics."
                         min={0}
-                        max={1000}
+                        max={10000}
                         SliderStep={20}
                         CheckMaxMin={CheckMaxMin}
                         fieldName="contentCreationCost"
@@ -292,7 +291,7 @@ return(
                         Heading="Content promotion costs $"
                         TooltipContent = "Enter the cost for the any advertising for the piece of content. This could be Facebook or Google Ads, or it could be zero, if you aim to use only organic traffic."
                         min={0}
-                        max={1000}
+                        max={10000}
                         SliderStep={20}
                         CheckMaxMin={CheckMaxMin}
                         fieldName="contentPromotionCost"
@@ -425,7 +424,7 @@ const SliderContainer = styled.div`
 width:100%;
 .rangeslider-horizontal .rangeslider__fill{
     border:5px solid #56c0de;
-    background-color:#2e9fbf;
+    background-color:#E84786;
 }
 `
 const H2heading = styled.h2`
