@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 
 import PageWrapper from "../components/PageWrapper";
 import PageContent from '../components/ContentSlices/PageContent'
+import Table3Col from '../components/ContentSlices/Table3Col'
 
 
 import imgFavicon from "../assets/favicon.png";
@@ -54,11 +55,15 @@ const PageTemplate = (props)=>{
       <div className="col-sm-12 d-flex flex-column justify-content-start align-items-left">
       {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100 float-left overflow-hidden mb-2"></div>}     
       {PageData.data.body.map((item, index)=>{
-                const { slice_type, primary } = item
+                const { slice_type, primary, items } = item
                 {
                   if(slice_type==='section_with_heading_and_content')
                   {
                     return <PageContent data={primary}/>
+                  }
+                  if(slice_type==='table_with_3_columns')
+                  {
+                    return <Table3Col data={items} headings={primary}/>
                   }
                 }
                 
@@ -113,9 +118,32 @@ query getPagesData($id: String!) {
               }
             }
           }
+          ... on PrismicPageDataBodyTableWith3Columns {
+              id
+              slice_type
+              items {
+                column_1_content {
+                  text
+                  html
+                }
+                column_2_content {
+                  html
+                  text
+                }
+                column_3_content {
+                  html
+                  text
+                }
+              }
+              primary {
+                column_1_heading
+                column_2_heading
+                column_3_heading
+              }
+            }
+          }
         }
       }
-    }
 }
 `
 export default PageTemplate
