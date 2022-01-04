@@ -247,6 +247,15 @@ const Layout = ({ children, pageContext }) => {
               })(document,"157096");
           `}
         </script>
+        <script>
+          {`
+          (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+          vgo('setAccount', '800828951');
+          vgo('setTrackByDefault', true);
+  
+          vgo('process');
+          `}        
+        </script>
         </Helmet>
         <div className="site-wrapper overflow-hidden">   
           <HeaderNoFooter/>  
@@ -277,6 +286,15 @@ const Layout = ({ children, pageContext }) => {
               t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
               })(document,"157096");
           `}
+        </script>
+        <script>
+          {`
+          (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+          vgo('setAccount', '800828951');
+          vgo('setTrackByDefault', true);
+  
+          vgo('process');
+          `}        
         </script>
         </Helmet>     
           {children}
@@ -315,6 +333,14 @@ const Layout = ({ children, pageContext }) => {
               t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
               })(document,"157096");
           `}
+        </script>
+        <script>
+          {`
+          (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+          vgo('setAccount', '800828951');
+          vgo('setTrackByDefault', true);  
+          vgo('process');
+          `}        
         </script>
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
