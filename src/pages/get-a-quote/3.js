@@ -99,7 +99,7 @@ const Step3 = () => {
                                 defaultValue={state.firstname}
                                 className="w-100 bg-white py-5 px-6 mb-2 rounded-1 border border-info"
                                 />                            
-                            </div>
+                            </div>                            
                             <div className="col-sm-12 mb-3">
                             <InputBox
                                 type="text"
@@ -115,6 +115,15 @@ const Step3 = () => {
                                 defaultValue={state.lastname}
                                 className="w-100 bg-white py-5 px-6 mb-2 rounded-1 border border-info"
                                 />
+                            </div>
+                            <div className="col-sm-12 mb-3">
+                                <InputBox
+                                type="text"
+                                placeholder="Phone Number"
+                                label="Phone Number"
+                                name="phone"
+                                className="w-100 bg-white py-5 px-6 mb-2 rounded-1 border border-info"
+                                />                            
                             </div>
                             </div>
                             <div className="col-sm-12 py-1 d-flex justify-content-center align-items-center">

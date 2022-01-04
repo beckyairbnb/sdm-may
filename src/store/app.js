@@ -3,6 +3,7 @@ const initialState = {
     business: '',
     company:'',
     email : '',
+    phone : null,
     firstname: '',
     lastname: '',
     vat: null,
@@ -16,6 +17,7 @@ const initialState = {
   const ADD_BUSINESS = 'ADD_BUSINESS';
   const ADD_COMPANY = 'ADD_COMPANY';
   const ADD_EMAIL = 'ADD_EMAIL';
+  const ADD_PHONE = 'ADD_PHONE';
   const ADD_FIRSTNAME = 'ADD_FIRSTNAME';
   const ADD_LASTNAME = 'ADD_LASTNAME';
   const ADD_VAT = 'ADD_VAT';
@@ -28,6 +30,7 @@ const initialState = {
   export const addBusiness = input => ({ type: ADD_BUSINESS, payload: input });
   export const addCompany = input => ({ type: ADD_COMPANY, payload: input });
   export const addEmail = input => ({ type: ADD_EMAIL, payload: input });
+  export const addPhone = num => ({ type: ADD_PHONE, payload: input });
   export const addFirstname = input => ({ type: ADD_FIRSTNAME, payload: input });
   export const addLastname = input => ({ type: ADD_LASTNAME, payload: input });
 
@@ -63,6 +66,11 @@ const initialState = {
             return {
                 ...state,
                 email: payload
+            } 
+        case 'ADD_PHONE':
+            return {
+                ...state,
+                phone: payload
             } 
         case 'ADD_FIRSTNAME':
             return {
@@ -101,6 +109,7 @@ const initialState = {
                 business: '',
                 company:'',
                 email: '',
+                phone: null,
                 firstname: '',
                 lastname: '',
                 vat: null,
