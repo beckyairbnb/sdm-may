@@ -4,11 +4,11 @@ import Slider from 'react-rangeslider'
 import { Helmet } from "react-helmet";
 
 import 'react-rangeslider/lib/index.css'
-import ToolTip from '../components/ToolTip'; 
-import PageWrapper from "../components/PageWrapper";
-import CalculatorInput from '../components/CalculatorInput';
-import CalculatorValue from '../components/CalculatorValue';
-import imgFavicon from "../assets/favicon.png";
+import ToolTip from '../../components/ToolTip'; 
+import PageWrapper from "../../components/PageWrapper";
+import CalculatorInput from '../../components/CalculatorInput';
+import CalculatorValue from '../../components/CalculatorValue';
+import imgFavicon from "../../assets/favicon.png";
 
 const Calculator = () => {
 
@@ -315,30 +315,19 @@ return(
     </Container>
 </Fullwidth>
 <ResultBox>
-        <ReturnTop>
-        <Container>
-            <h2>Your return on investment<br/><span>(Total revenue - Total investment)/Total investment = ROI</span></h2>
-            <h2><span>({totalRevenue} - {totalInvestment})/{totalInvestment}</span></h2>
-            <Total>
-                <div>
-                    <DivInner><span>Total revenue</span> <span>{totalRevenue!==0 && totalRevenue}</span></DivInner>
-                    <DivInner><span>Total investment</span> <span>{totalInvestment !==0 && totalInvestment}</span></DivInner>
-                </div>
-                
-            </Total>
-            </Container>
-        </ReturnTop>
-        <ReturnBotBg> 
-        <Container>
-        <ReturnBot>
-            <div><b>Number of leads </b><span>{numberOfLeads !==0 && numberOfLeads}</span></div>
-            <div><b>Number of sales </b><span>{numberOfSales !==0 && numberOfSales}</span></div>   
-            <div><b>Revenue</b> <Fresult>{roiTotal !==0 && roiTotal}</Fresult></div>     
-        </ReturnBot>
-        </Container>
+<h3>Your Return On Investemnt</h3>
+<h4>({totalRevenue} - {totalInvestment}) /{totalInvestment}</h4>
+         <p>(Total revenue - Total investment)/Total investment = ROI</p>
+         <p>Number of leads = {numberOfLeads !==0 && numberOfLeads}<br/> Number of sales = {numberOfSales !==0 && numberOfSales}</p>
+         <ReturnBotBg> 
+            <p>Month - ROI = {roiTotal !==0 && roiTotal}</p>
+            <p>12 Month ROI = {roiTotal !==0 && roiTotal*12}</p>
+            <p>24 Month ROI = {roiTotal !==0 && roiTotal*24}</p>
+            <p>36 Month ROI = {roiTotal !==0 && roiTotal*36}</p>            
         </ReturnBotBg> 
-    </ResultBox>
-    </ContainerMain> 
+</ResultBox>
+
+</ContainerMain> 
 </Wrapper>
 </PageWrapper>
 
@@ -505,37 +494,30 @@ const Grid = styled.div`
 const Invest = styled.div`
 
 `;
+const ReturnBotBg = styled.div`
+    width:100%;
+    border:2px solid #85d6e9;
+    padding: 20px;
+    p{
+        margin:0px !important;
+        padding:0px !important;
+    }
+`;
 const ResultBox = styled.div`
 width:100%;
 float:left;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 18px 3px;
-bottom:0;
-color:#ffffff;
-& > h2{
-    color:#fffffff;
+background-color: #57c0de;
+padding: 24px;
+@media (max-width: 768px) {
+    padding:15px;
+    h4{ font-size:28px; line-height:35px}
 }
-@media (max-width: 992px) {
-position:inherit;
-}
+h3{ font-size:26px; line-height:32px;color:#fff; margin: 0 0 30px 0;font-weight:700;}
+h4{ font-size:35px; line-height:40px;color:#fff; margin: 0; font-weight:700;}
+p{ font-size:16px; line-height:26px;color:#fff; margin: 0 0 30px 0;font-weight:400;}
+
 `;
-const ReturnTop = styled.div`
-  width: 100%;float:left;padding:25px 0px;background-color: rgb(68, 181, 212);
-  h2{
-      color:#ffffff;
-      margin:0px;
-      line-height:1;
-  }
-  h2 span{
-      font-size:1.4rem;
-  }
-  `;
-  const Total = styled.div`
-    -moz-box-pack: justify;
-    justify-content: space-between;
-    display: flex;
-    margin-top:30px;
-    
-  `;
+
  const DivInner = styled.div`
     width:100%;
     -moz-box-pack: justify;
@@ -545,32 +527,8 @@ const ReturnTop = styled.div`
         padding:5px 10px 5px 0px;
     }
  `
-  const ReturnBot = styled.div`
-    width: 100%;
-    color:#fff;
-    display: flex;
-    color:#ffffff;
-    @media (min-width: 768px) {
-        flex-flow: row !important;
-        justify-content: space-between;
-    }
-    @media (max-width: 768px) {
-        flex-flow: column !important;
-    }
-    div{
-        line-height: 40px;
-        justify-content: space-between;
-        display: flex;
-        flex-flow: row nowrap;
-        place-content: stretch space-between;
-        b{
-            margin-right:10px;            
-        }
-    }
-  `;
-  const ReturnBotBg = styled.div`
- width: 100%;float:left;background-color: rgb(47, 165, 198); padding:20px 0;
- `;
+ 
+
 
  const InputText = styled.input`
  z-index: 0;
