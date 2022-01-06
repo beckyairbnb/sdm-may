@@ -8,7 +8,10 @@
   top: 0;
   align-self: flex-start;
 }
-
+.nope{
+  padding:0px;
+  margin:0px;
+}
 .blog-inner {
   width: 60%;
   /* height: 200vh; */
@@ -33,8 +36,9 @@
   overflow:visible;
 }
 
-.blog-banner{
-  
+.main-banner{
+  display: flex;
+  flex-direction: column;
 }
 .text-container{ padding-top:100px !important}
 .ban-img{ height: 600px; object-fit: cover;}
@@ -157,7 +161,7 @@
 .bg1{background-image:url(../assets/images/bg1.png); background-position: center center; background-repeat:no-repeat; background-size:100% auto;}
 @media only screen and (min-width:768px) {
   .testimonial-item { min-height: 220px;}
-  .main-banner{ padding-top: 160px; padding-bottom: 50px;}
+  .main-banner .container{ padding-top: 90px; padding-bottom: 50px;}
   .player-overlay {
     width: 600px;
     height: 100%;
@@ -167,7 +171,7 @@
 }
 @media only screen and (max-width:767px) {
   .testimonial-item { min-height: 240px;}
-  .main-banner{ padding-top: 120px; padding-bottom: 50px; }
+  .main-banner .container{ padding-top: 70px; padding-bottom: 50px; }
   .player-overlay {
     width: 100%;
     height: 100%;

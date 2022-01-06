@@ -11,6 +11,7 @@ import CalculatorValue from '../../components/CalculatorValue';
 import imgFavicon from "../../assets/favicon.png";
 
 const Calculator = () => {
+    const dollarSign = '$'
 
     const [ websiteTraffic, setWebsiteTraffic] = useState(0)
     const [ totalInvestment, setTotalInvestment] = useState(0)
@@ -124,7 +125,7 @@ return(
     <>
     <Helmet>
           <link rel="icon" type="image/png" href={imgFavicon} />                 
-          <title>Free content marketing ROI calculator</title>
+          <title>Content marketing ROI calculator</title>
           <script>
           {`
             (function(e,a){
@@ -153,7 +154,7 @@ return(
 <ContainerMain>
     <PageTitle>
         <Container>
-            <h1>Free content marketing ROI calculator</h1>
+            <h1>Content marketing ROI calculator</h1>
         </Container>
     </PageTitle>
 <Fullwidth>
@@ -249,7 +250,7 @@ return(
                         Heading="Lifetime customer value $"
                         TooltipContent = "This is the total revenue you expect the customer to generate over their lifetime."
                         min={0}
-                        max={10000}
+                        max={100000}
                         SliderStep={100}
                         CheckMaxMin={CheckMaxMin}
                         fieldName="lifetimeCustomerValue"
@@ -275,7 +276,7 @@ return(
                         Heading="Content creation costs $"
                         TooltipContent = "Enter the cost for the piece of content. This might include your images, content, or graphics."
                         min={0}
-                        max={10000}
+                        max={100000}
                         SliderStep={20}
                         CheckMaxMin={CheckMaxMin}
                         fieldName="contentCreationCost"
@@ -316,14 +317,14 @@ return(
 </Fullwidth>
 <ResultBox>
 <h3>Your Return On Investemnt</h3>
-<h4>({totalRevenue} - {totalInvestment}) /{totalInvestment}</h4>
+<h4>({dollarSign}{totalRevenue} - {dollarSign}{totalInvestment}) /{dollarSign}{totalInvestment}</h4>
          <p>(Total revenue - Total investment)/Total investment = ROI</p>
          <p>Number of leads = {numberOfLeads !==0 && numberOfLeads}<br/> Number of sales = {numberOfSales !==0 && numberOfSales}</p>
          <ReturnBotBg> 
-            <p>Month - ROI = {roiTotal !==0 && roiTotal}</p>
-            <p>12 Month ROI = {roiTotal !==0 && roiTotal*12}</p>
-            <p>24 Month ROI = {roiTotal !==0 && roiTotal*24}</p>
-            <p>36 Month ROI = {roiTotal !==0 && roiTotal*36}</p>            
+            <p>1 Month ROI = {roiTotal !==0 && roiTotal}%</p>
+            <p>12 Month ROI = {roiTotal !==0 && roiTotal*12}%</p>
+            <p>24 Month ROI = {roiTotal !==0 && roiTotal*24}%</p>
+            <p>36 Month ROI = {roiTotal !==0 && roiTotal*36}%</p>            
         </ReturnBotBg> 
 </ResultBox>
 
@@ -496,8 +497,8 @@ const Invest = styled.div`
 `;
 const ReturnBotBg = styled.div`
     width:100%;
-    border:2px solid #85d6e9;
-    padding: 20px;
+    // border:2px solid #85d6e9;
+    // padding: 20px;
     p{
         margin:0px !important;
         padding:0px !important;

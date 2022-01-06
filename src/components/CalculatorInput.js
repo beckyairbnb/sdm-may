@@ -77,7 +77,7 @@ const SliderContainer = styled.div`
 width:100%;
 .rangeslider-horizontal .rangeslider__fill{
     border:none;
-    background-color:#E84786 !important;
+    background-color:#30D5C8 !important;
 }
 `
 const InputErrorMsg = styled.div`

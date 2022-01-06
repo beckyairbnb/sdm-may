@@ -105,7 +105,7 @@ const MainServiceTemplate = (props)=>{
             </div>
          </div>
       </div>
-      <div className="py-6 mb-15">
+      {/* <div className="py-6 mb-15">
          <div className="container py-lg-10 bg-light">
             <div className="row justify-content-center text-center py-lg-5">
                <div className="col-sm-12">
@@ -126,7 +126,7 @@ const MainServiceTemplate = (props)=>{
                </div>
             </div>
          </div>
-      </div>
+      </div> */}
       
       
       <div className="pt-12 bg-light">

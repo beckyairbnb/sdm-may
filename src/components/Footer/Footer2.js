@@ -18,29 +18,29 @@ const Footer = ({ className, ...rest }) => {
                     <ul className="list-unstyled">
                       <li className="mb-6">
                         <Link
+                          to="/writer-services/b2b-content-writing-services/"
+                          className="font-size-5 text-default-color"
+                        >
+                          B2B Content Writing Services
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/writer-services/fintech-content-writer/"
+                          className="font-size-5 text-default-color"
+                        >
+                          Fintech Content Writer
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
                           to="/writer-services/saas-content-writer/"
                           className="font-size-5 text-default-color"
                         >
-                          SaaS
+                          SaaS Content Writer
                         </Link>
                       </li>
-                      <li className="mb-6">
-                        <Link
-                          to="/writer-services/marketing-content-writer/"
-                          className="font-size-5 text-default-color"
-                        >
-                          Marketing
-                        </Link>
-                      </li>
-                      <li className="mb-6">
-                        <Link
-                          to="/writer-services/accounting-writer/"
-                          className="font-size-5 text-default-color"
-                        >
-                          Accounting
-                        </Link>
-                      </li>
-                      <li className="mb-6">
+                      {/* <li className="mb-6">
                         <Link
                           to="/writer-services/casino-gaming-content-writing/"
                           className="font-size-5 text-default-color"
@@ -55,7 +55,7 @@ const Footer = ({ className, ...rest }) => {
                         >
                           Ecommerce
                         </Link>
-                      </li>
+                      </li> */}
                       <li className="mb-6">
                         <Link
                           to="/writer-services/"
@@ -85,34 +85,35 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/writer-services/seo-content-writing/"
+                          to="/writer-services/blog-article-writing/"
                           className="font-size-5 text-default-color"
                         >
-                          Seo Content Writing
+                          Blog Article Writing Services
                         </Link>
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/writer-services/ebook-writing/"
+                          to="/writer-services/seo-content-writing/"
                           className="font-size-5 text-default-color"
                         >
-                          Ebook Writing
+                          SEO Content Writing
                         </Link>
                       </li>
-                      <li className="mb-6">
+                     
+                      {/* <li className="mb-6">
                         <Link
                           to="/writer-services/product-description-writing/"
                           className="font-size-5 text-default-color"
                         >
                           Product Description Writing
                         </Link>
-                      </li>
+                      </li> */}
                       <li className="mb-6">
                         <Link
-                          to="/writer-services/white-paper-writing/"
+                          to="/writer-services/"
                           className="font-size-5 text-default-color"
                         >
-                          White Paper Writing
+                          All Writing Services
                         </Link>
                       </li>
                     </ul>

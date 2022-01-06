@@ -11,6 +11,7 @@ import Text from '../components/ContentSlices/Text'
 import HappyClients from "../components/happyClients";
 
 import ModalPopup from '../components/ModalPopup'
+import Breadcrumbs from '../components/Breadcrumbs'
 
 
 import imgFavicon from "../assets/favicon.png";
@@ -35,6 +36,11 @@ const ServiceTemplate = (props)=>{
     const slug = data.PageData.slug
     const seoTitle = PageData.data.seotitle.text || 'Strategically'
     const seoDescription = PageData.data.metadescription.text || 'Strategically'
+
+    const bcrumb = [
+      {'name':'Writer Services', 'link':'/writer-services/'},
+      {'name': PageData.data.seotitle.text, 'link':null}
+    ]
   return(
     <>
     <Helmet>
@@ -55,8 +61,11 @@ const ServiceTemplate = (props)=>{
           footerStyle: "style2",
         }}
       >
-    
+       
     <div className="main-banner">
+    <div className="container-fluid nope">
+         <Breadcrumbs bcrumb={bcrumb}/>
+         </div>
          <div className="container">
             <div className="row justify-content-center">
                <div className="col-xl-8 col-lg-9 col-md-12 col-sm-12">
@@ -163,7 +172,7 @@ const ServiceTemplate = (props)=>{
             </div>
          </div>
       </div>
-      <div className="pt-12 mb-5
+      {/* <div className="pt-12 mb-5
       
       ">
          <div className="container py-lg-10 bg-light">
@@ -186,7 +195,7 @@ const ServiceTemplate = (props)=>{
                </div>
             </div>
          </div>
-      </div>
+      </div> */}
       <ModalPopup
           show={modalShow}
           onHide={() => setModalShow(false)}
