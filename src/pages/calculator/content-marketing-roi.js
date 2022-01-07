@@ -64,8 +64,10 @@ const Calculator = () => {
       )
 
     const calculateWebsiteTraffic = () => {
-        const websiteTraffic_temp = Math.round(avgMonthlyVolume * (clickRate/100))
-        const totalInvestment_temp = Math.round(contentCreationCost + contentPromotionCost)
+        console.log('Click Rate', clickRate)
+        const websiteTraffic_temp = parseInt(clickRate) < 1 ? 0 : Math.round(parseInt(avgMonthlyVolume) * (parseInt(clickRate)/100))
+        console.log('Click Rate', websiteTraffic_temp)
+        const totalInvestment_temp = Math.round(parseInt(contentCreationCost) + parseInt(contentPromotionCost))
         const numberOfLeads_temp = parseFloat(websiteTraffic_temp * (conversionRate/100))
         const numberOfSales_temp = parseFloat(numberOfLeads_temp * (leadconversionRate/100))
         const totalRevenue_temp = Math.round( lifetimeCustomerValue * numberOfSales_temp)
@@ -84,7 +86,7 @@ const Calculator = () => {
             console.log('Total invest', (totalRevenue_temp - totalInvestment_temp))
             setRoiTotal(parseFloat((((totalRevenue_temp - totalInvestment_temp)/totalInvestment_temp))*100).toFixed(4))
         }
-        console.log('Rio Total', roiTotal)
+        console.log('websiteTraffic', websiteTraffic)
     }
     const handleAvgMonthlyVolumeChange = (value) => {
         setAvgMonthlyVolume(value)      
@@ -164,7 +166,7 @@ return(
             <Grid>
                 <CalculatorInput
                     Heading="Avg. monthly search volume"
-                    TooltipContent = 'Enter the average monthly search volume for the keyword(s) your piece of content will target. For example, a blog targeting the keyword "content ROI" may have an average of 10,000 monthly searches.'
+                    TooltipContent = 'Just enter the average monthly search volume for the keywords your content targets. For example, a blog post targeting the keyword "content ROI" might have an average of 20,000 monthly searches.'
                     min={100}
                     max={50000}
                     SliderStep={50}
@@ -181,7 +183,7 @@ return(
             <Grid>
                 <CalculatorInput
                     Heading="Click-through rate %"
-                    TooltipContent = "This is your expected click-through rate (CTR) from the keyword to the piece of content. CTR is the number of clicks that your article receives divided by the number of times your article is seen: clicks ÷ impressions = CTR. For example, if you had 5 clicks and 100 impressions, then your CTR would be 5%."
+                    TooltipContent = "This is your estimated click-through rate (CTR) from the keyword to the published content. CTR is the number of clicks a blog post receives divided by the number of times said post is seen by the target audience.  An example: Clicks divided by (/) impressions equals (=) CTR. Hence, if you've had 10 clicks and 100 impressions, your CTR would be 10%."
                     min={0}
                     max={100}
                     SliderStep={5}
@@ -198,7 +200,7 @@ return(
             <Grid>
                 <CalculatorValue
                     Heading="Estimated website traffic"
-                    TooltipContent = 'This is the estimated traffic to your website based on the average monthly search volume and estimated click-through rate.'
+                    TooltipContent = "This is the estimated traffic to your website. It's based on the average monthly search volume and the expected click-through rate."
                     value={websiteTraffic}                    
                 />                 
             </Grid>
@@ -214,7 +216,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Landing page conversion rate %"
-                        TooltipContent = "Calculate your conversion rate by dividing the total number of emails collected by the number of page views to the landing page. Then multiply this number by 100 to turn this into a percentage. Example: 100 email addresses collected / 1000 blog visits = 0.1 X 100 = 10% Page Conversion Rate."
+                        TooltipContent = "Calculate your conversion rate by dividing the number of emails collected by the number of page views to the chosen landing page. After, multiply the conversion rate by 100 to turn this into a percentage. Here's an example: 100 addresses divided by (/) 100 visits to a post equals (=) 0.1 times (x) 100 equals (=) 10% Page Conversion Rate."
                         min={0}
                         max={100}
                         SliderStep={5}
@@ -231,7 +233,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Lead conversion rate to sale %"
-                        TooltipContent = "Close rate means the number of sales calls, presentations, or email outreach activities versus the number of sales you close. This number is important as it allows us to show that for every 1,000 leads we generate on an article, we can expect (as an example) 10 sales."
+                        TooltipContent = "Close rate refers to the number of sales calls and email outreach activities against the number of conversions (i.e., successful sales). This number is important. It allows us to demonstrate, for instance, that for every 1,000 leads we generate, you can expect 10 sales."
                         min={0}
                         max={100}
                         SliderStep={5}
@@ -248,7 +250,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Lifetime customer value $"
-                        TooltipContent = "This is the total revenue you expect the customer to generate over their lifetime."
+                        TooltipContent = "This refers to the total revenue you expect the customer to generate over their lifetime."
                         min={0}
                         max={100000}
                         SliderStep={100}
@@ -274,7 +276,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Content creation costs $"
-                        TooltipContent = "Enter the cost for the piece of content. This might include your images, content, or graphics."
+                        TooltipContent = "Enter the cost for the content. If you’ve paid for the creation of any images or graphics, include this in the cost, too."
                         min={0}
                         max={100000}
                         SliderStep={20}
@@ -290,7 +292,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Content promotion costs $"
-                        TooltipContent = "Enter the cost for the any advertising for the piece of content. This could be Facebook or Google Ads, or it could be zero, if you aim to use only organic traffic."
+                        TooltipContent = "Here you enter the cost for advertising your piece of content. This could be the price of a Google or Facebook paid ad. But, if you’re into organic traffic, the cost is zero."
                         min={0}
                         max={10000}
                         SliderStep={20}
@@ -304,12 +306,17 @@ return(
                     /> 
                 </Grid>
                 <Grid>
-                    <BlockHeader>
+                <CalculatorValue
+                    Heading="Total investment"
+                    TooltipContent = "This is self-explanatory. It refers to the total cost of your content creation and content marketing investment."
+                    value={totalInvestment}                    
+                />   
+                    {/* <BlockHeader>
                     <H3heading>Total investment</H3heading> 
                     </BlockHeader>
                     <InputWrap>
                         <InputText disabled = {true} value={totalInvestment !==0 && totalInvestment}/>
-                    </InputWrap>   
+                    </InputWrap>    */}
                 </Grid>                          
              </GridItem>
              </Invest>
@@ -497,12 +504,12 @@ const Invest = styled.div`
 `;
 const ReturnBotBg = styled.div`
     width:100%;
-    // border:2px solid #85d6e9;
-    // padding: 20px;
-    p{
-        margin:0px !important;
-        padding:0px !important;
-    }
+    & > p{
+            margin:0px !important;
+            padding:0px !important;
+            font-size:18px !important;
+            line-height:1.6 !important;
+        }
 `;
 const ResultBox = styled.div`
 width:100%;

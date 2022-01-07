@@ -17,7 +17,7 @@ return(
        {TooltipContent && <ToolTip title="?" content={TooltipContent}/>}
     </BlockHeader>
     <InputWrap>
-        <InputText disabled = {true} value={value !==0 && value}/>
+        <InputText disabled = {true} value={value}/>
     </InputWrap> 
     </>
 )

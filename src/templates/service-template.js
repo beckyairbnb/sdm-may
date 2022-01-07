@@ -39,7 +39,7 @@ const ServiceTemplate = (props)=>{
 
     const bcrumb = [
       {'name':'Writer Services', 'link':'/writer-services/'},
-      {'name': PageData.data.seotitle.text, 'link':null}
+      {'name': PageData.data.short_title, 'link':null}
     ]
   return(
     <>
@@ -172,7 +172,7 @@ const ServiceTemplate = (props)=>{
             </div>
          </div>
       </div>
-      {/* <div className="pt-12 mb-5
+      <div className="pt-12 mb-5
       
       ">
          <div className="container py-lg-10 bg-light">
@@ -195,7 +195,7 @@ const ServiceTemplate = (props)=>{
                </div>
             </div>
          </div>
-      </div> */}
+      </div>
       <ModalPopup
           show={modalShow}
           onHide={() => setModalShow(false)}
@@ -253,6 +253,7 @@ query getServiceData($id: String!) {
       id
       slug : uid
       data {
+        short_title
         featuredimage {
           localFile {
             childImageSharp {
