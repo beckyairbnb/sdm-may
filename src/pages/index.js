@@ -72,7 +72,10 @@ const Index = (props) => {
 
 export const query = graphql`
 query HomePage {
-  AllServices: allPrismicService(filter: {uid: {ne: "writer-services"}}, sort: {fields: data___short_title, order: ASC}) {
+  AllServices: allPrismicService(
+    filter: {uid: {ne: "writer-services", in: ["b2b-content-writing-services", "blog-article-writing", "fintech-content-writer", "saas-content-writerr","seo-content-writing"]}, id: {}}
+    sort: {fields: data___short_title, order: ASC})
+    {
         edges {
           node {
             uid

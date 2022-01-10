@@ -68,9 +68,9 @@ const Calculator = () => {
         const websiteTraffic_temp = parseInt(clickRate) < 1 ? 0 : Math.round(parseInt(avgMonthlyVolume) * (parseInt(clickRate)/100))
         console.log('Click Rate', websiteTraffic_temp)
         const totalInvestment_temp = Math.round(parseInt(contentCreationCost) + parseInt(contentPromotionCost))
-        const numberOfLeads_temp = parseFloat(websiteTraffic_temp * (conversionRate/100))
-        const numberOfSales_temp = parseFloat(numberOfLeads_temp * (leadconversionRate/100))
-        const totalRevenue_temp = Math.round( lifetimeCustomerValue * numberOfSales_temp)
+        const numberOfLeads_temp = parseFloat(parseInt(websiteTraffic_temp) * (parseInt(conversionRate)/100))
+        const numberOfSales_temp = parseFloat(parseInt(numberOfLeads_temp) * (parseInt(leadconversionRate)/100))
+        const totalRevenue_temp = Math.round(parseInt(lifetimeCustomerValue) * parseInt(numberOfSales_temp))
         
         
         
@@ -84,7 +84,7 @@ const Calculator = () => {
             console.log('Total invest', totalInvestment_temp)
             console.log('Total Revew', (totalInvestment_temp * 100))
             console.log('Total invest', (totalRevenue_temp - totalInvestment_temp))
-            setRoiTotal(parseFloat((((totalRevenue_temp - totalInvestment_temp)/totalInvestment_temp))*100).toFixed(4))
+            setRoiTotal(parseFloat((((parseInt(totalRevenue_temp) - parseInt(totalInvestment_temp))/parseInt(totalInvestment_temp)))*100).toFixed(4))
         }
         console.log('websiteTraffic', websiteTraffic)
     }
@@ -323,7 +323,7 @@ return(
     </Container>
 </Fullwidth>
 <ResultBox>
-<h3>Your Return On Investemnt</h3>
+<h3>Your Return On Investment</h3>
 <h4>({dollarSign}{totalRevenue} - {dollarSign}{totalInvestment}) /{dollarSign}{totalInvestment}</h4>
          <p>(Total revenue - Total investment)/Total investment = ROI</p>
          <p>Number of leads = {numberOfLeads !==0 && numberOfLeads}<br/> Number of sales = {numberOfSales !==0 && numberOfSales}</p>
