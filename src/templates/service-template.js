@@ -9,6 +9,7 @@ import CTA from '../components/ContentSlices/CTA'
 import Heading from '../components/ContentSlices/Heading'
 import Text from '../components/ContentSlices/Text'
 import HappyClients from "../components/happyClients";
+import ServicesList from "../components/servicesList";
 
 import ModalPopup from '../components/ModalPopup'
 import Breadcrumbs from '../components/Breadcrumbs'
@@ -146,7 +147,8 @@ const ServiceTemplate = (props)=>{
                {PageData.data.heading_above_description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.heading_above_description.html }} className="w-100 mb-6" ></div>}
                     {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100" ></div>}
                     {PageData.data.body.map((item, index)=>{                      
-                        const { slice_type, primary } = item
+                        const { slice_type, primary, items } = item
+                        console.log(' slice_type', slice_type)
                        {
                          if(slice_type==='cta_block')
                          {
@@ -172,29 +174,17 @@ const ServiceTemplate = (props)=>{
             </div>
          </div>
       </div>
-      <div className="pt-12 mb-5
-      
-      ">
-         <div className="container py-lg-10 bg-light">
-            <div className="row justify-content-center text-center py-lg-5">
-               <div className="col-sm-12">
-                <h2 className="mb-10">Other Writer Services We Provide</h2>
-                    <ul className="row">
-                        { AllServices.edges.map((item,index)=>{
-                          let slug = item.node.uid==='saas-content-writerr' ? 'saas-content-writer' : item.node.uid
-                            return(
-                                <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
-                                  <Link to={`/writer-services/${slug}/`} className="text-capitalize text-stone gr-hover-text-dodger-blue-1 font-size-5">{item.node.data.short_title || item.node.data.title.text}</Link>  
-                                </li>
-                            )
-                        })}
-                        <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
-                        <Link to ="/writer-services/" className="text-capitalize text-stone gr-hover-text-dodger-blue-1 font-size-5">All Writer Services</Link>
-                        </li>
-                    </ul>
-               </div>
-            </div>
-         </div>
+      <div className="py-2">
+      {PageData.data.body.map((item, index)=>{                      
+                        const { slice_type, primary, items } = item
+                       {
+                         if(slice_type==='other_services')
+                         {
+                          return <ServicesList title='Other Writer Services We Provide' items={items}/>
+                         }
+                       }
+                       
+                    })}
       </div>
       <ModalPopup
           show={modalShow}
@@ -227,170 +217,189 @@ export const Blogbanner = styled.div`
 
 
 export const query = graphql`
-query getServiceData($id: String!) {
-    site {
-        siteMetadata {
-          title
-          description
-          siteUrl
-        }
-      }
-      AllServices: allPrismicService(filter: {uid: {ne: "writer-services"}}, sort: {fields: data___short_title, order: ASC}) {
-        edges {
-          node {
-            uid
-            id
-            data {
-              title {
-                text
-              }
-              short_title
-            }
+  query getServiceData($id: String!) {
+      site {
+          siteMetadata {
+            title
+            description
+            siteUrl
           }
         }
-      }
-  PageData : prismicService(id: {eq: $id}) {
-      id
-      slug : uid
-      data {
-        short_title
-        featuredimage {
-          localFile {
-            childImageSharp {
-              fluid(quality: 100) {
-                src
-                srcWebp
+        AllServices: allPrismicService(filter: {uid: {ne: "writer-services"}}, sort: {fields: data___short_title, order: ASC}) {
+          edges {
+            node {
+              uid
+              id
+              data {
+                title {
+                  text
+                }
+                short_title
               }
             }
           }
         }
-        cta_button_text
-        cta_button_below_text
-        title {
-          html
-          text
-        }
-        sub_title {
-          html
-          text
-        }
-        description {
-          html
-        }
-        seotitle {
-          text
-        }
-        metadescription {
-          text
-        }
-        testimonials_block_heading {
-          html
-        }
-        testimonials_block_sub_text {
-          html
-        }
-        testimonials_block_stars_below_text
-        button_block_heading {
-          html
-          text
-        }
-        button_block_subtext
-        image_block_heading {
-          html
-        }
-        image_block_subtext
-        heading_above_description {
-          html
-          text
-        }
-        BoxedContent : body{
-          ... on PrismicServiceDataBodyBoxedContent {
-            id
-            primary {
-              boxed_content_heading {
-                text
-                html
-              }
-              boxed_content_sub_heading {
-                text
-                html
+    PageData : prismicService(id: {eq: $id}) {
+        id
+        slug : uid
+        data {
+          short_title
+          featuredimage {
+            localFile {
+              childImageSharp {
+                fluid(quality: 100) {
+                  src
+                  srcWebp
+                }
               }
             }
-            slice_type
-            items {
-              title1 {
-                text
+          }
+          cta_button_text
+          cta_button_below_text
+          title {
+            html
+            text
+          }
+          sub_title {
+            html
+            text
+          }
+          description {
+            html
+          }
+          seotitle {
+            text
+          }
+          metadescription {
+            text
+          }
+          testimonials_block_heading {
+            html
+          }
+          testimonials_block_sub_text {
+            html
+          }
+          testimonials_block_stars_below_text
+          button_block_heading {
+            html
+            text
+          }
+          button_block_subtext
+          image_block_heading {
+            html
+          }
+          image_block_subtext
+          heading_above_description {
+            html
+            text
+          }        
+          BoxedContent : body{
+            ... on PrismicServiceDataBodyBoxedContent {
+              id
+              primary {
+                boxed_content_heading {
+                  text
+                  html
+                }
+                boxed_content_sub_heading {
+                  text
+                  html
+                }
               }
-              image {
-                localFile {
-                  childImageSharp {
-                    fluid(quality: 100) {
-                      ...GatsbyImageSharpFluid_withWebp
+              slice_type
+              items {
+                title1 {
+                  text
+                }
+                image {
+                  localFile {
+                    childImageSharp {
+                      fluid(quality: 100) {
+                        ...GatsbyImageSharpFluid_withWebp
+                      }
+                    }
+                  }
+                }
+                button_text
+                price_text
+              }
+            }
+          }
+          body {
+            ... on PrismicServiceDataBodyOtherServices {
+              id
+              slice_type
+              items {
+                service {
+                  document {
+                    ... on PrismicService {
+                      uid
+                      data {
+                        title {
+                          text
+                        }
+                        short_title
+                      }
                     }
                   }
                 }
               }
-              button_text
-              price_text
             }
-          }
-        }
-        body {
-          ... on PrismicServiceDataBodyTextBlock {
-            id
-            slice_type
-            primary {
-              content {
-                html
-              }
-              heading_text {
-                html
-                text
+            ... on PrismicServiceDataBodyTextBlock {
+              id
+              slice_type
+              primary {
+                content {
+                  html
+                }
+                heading_text {
+                  html
+                  text
+                }
               }
             }
-          }
-          ... on PrismicServiceDataBodyCtaBlock {
-            id
-            slice_type
-            primary {
-              button_text
-              button_link
-            }
-          }
-          ... on PrismicServiceDataBodyHeadingBlock {
-            id
-            slice_type
-            primary {
-              heading_text {
-                html
-                text
+            ... on PrismicServiceDataBodyCtaBlock {
+              id
+              slice_type
+              primary {
+                button_text
+                button_link
               }
             }
-          }
-          ... on PrismicServiceDataBodyImageDescription {
-            id
-            slice_type
-            primary {
-              image {
-                localFile {
-                  childImageSharp {
-                    fluid(quality: 100) {
-                      ...GatsbyImageSharpFluid_withWebp
+            ... on PrismicServiceDataBodyHeadingBlock {
+              id
+              slice_type
+              primary {
+                heading_text {
+                  html
+                  text
+                }
+              }
+            }
+            ... on PrismicServiceDataBodyImageDescription {
+              id
+              slice_type
+              primary {
+                image {
+                  localFile {
+                    childImageSharp {
+                      fluid(quality: 100) {
+                        ...GatsbyImageSharpFluid_withWebp
+                      }
                     }
                   }
                 }
-              }
-              image_description {
-                text
+                image_description {
+                  text
+                }
               }
             }
+            
           }
           
+          
         }
-        
-        
       }
-    }
-}
+  }
 `
 export default ServiceTemplate

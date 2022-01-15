@@ -1,11 +1,26 @@
 import React from "react";
 import { Link } from "gatsby";
+import styled from "styled-components";
+import flogo1 from '../../assets/images/flogos/google-reviews.jpg'
+import flogo2 from '../../assets/images/flogos/contentmarketing-min.png'
+import flogo3 from '../../assets/images/flogos/contentmarketing.png'
+import flogo4 from '../../assets/images/flogos/top-marketing-comp.png'
+import flogo5 from '../../assets/images/flogos/writing.svg'
 
 const Footer = ({ className, ...rest }) => {
   return (
     <>
-      <div className={`pt-13 pt-lg-25 pb-13 pb-lg-18 ${className}`} {...rest}>
+      <div className={`pt-13 ${className}`} {...rest}>
         <div className="container">
+            <LogosRow className="row">
+              <div><a href="https://g.page/strategically?share" target="_blank"><img className="opacity-7" src={flogo1} /></a></div>
+              <div><a href="https://superbcompanies.com/categories/content-marketing-companies/" target="_blank"><img className="opacity-7" src={flogo2} /></a></div>
+              <div><img className="opacity-7" src={flogo3} /></div>
+              <div><a href="https://www.designrush.com/agency/content-marketing" target="_blank"><img className="opacity-7" src={flogo4} /></a></div>
+              <div onClick={()=> window.open("https://www.goodfirms.co/media-kit/?utm_medium=email&_hsmi=84692944&_hsenc=p2ANqtz-89u1Gs8ckwDcIENrdAb0g6BzMc6v9jrvPqhIcOJZ1bjlrmPRympNUWlj-c3nuF0mva33rJPDRhdr8fpZ5DjgM_x2JE0Q&utm_content=84692944&utm_source=hs_email", "_blank")}><img className="opacity-7" src={flogo5} /></div>
+            </LogosRow>
+        </div>
+        <div className="container pt-lg-12 pb-8 pb-lg-12 ">
           <div className="row">
             <div className="col-lg-12">
               <div className="row">
@@ -228,5 +243,29 @@ const Footer = ({ className, ...rest }) => {
     </>
   );
 };
-
+const LogosRow = styled.div`
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+align-items: stretch;
+& > div{
+  width: 100px;
+  flex-basis: 100px;
+  flex-grow: 1;
+  padding:1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  & > img{
+    width:100%;
+    cursor:pointer;
+  }
+  & > a > img{
+    width:100%;
+    cursor:pointer;
+  }
+}
+`;
 export default Footer;

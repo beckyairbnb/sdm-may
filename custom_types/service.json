@@ -128,38 +128,7 @@
       "type": "Slices",
       "fieldset": "Slice zone",
       "config": {
-        "labels": {
-          "heading_block": [
-            {
-              "display": "Heading Block",
-              "name": "heading_block"
-            }
-          ],
-          "text_block": [
-            {
-              "display": "Text Block",
-              "name": "text_block"
-            }
-          ],
-          "cta_block": [
-            {
-              "display": "CTA Block",
-              "name": "cta_block"
-            }
-          ],
-          "boxed_content": [
-            {
-              "display": "Boxed Content",
-              "name": "boxed_content"
-            }
-          ],
-          "seo_details": [
-            {
-              "display": "SEO Details",
-              "name": "seo_details"
-            }
-          ]
-        },
+        "labels": null,
         "choices": {
           "cta_block": {
             "type": "Slice",
@@ -305,6 +274,26 @@
                 "type": "Text",
                 "config": {
                   "label": "Price Text"
+                }
+              }
+            }
+          },
+          "other_services": {
+            "type": "Slice",
+            "fieldset": "Other Services",
+            "description": "Other Services",
+            "icon": "ac_unit",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "service": {
+                "type": "Link",
+                "config": {
+                  "select": "document",
+                  "customtypes": [
+                    "service"
+                  ],
+                  "label": "Service"
                 }
               }
             }

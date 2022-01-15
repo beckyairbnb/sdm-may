@@ -105,8 +105,8 @@ const MainServiceTemplate = (props)=>{
             </div>
          </div>
       </div>
-      <div className="py-6 mb-15">
-         <div className="container py-lg-10 bg-light">
+      <div className="py-6">
+         <div className="container py-lg-10 bg-white">
             <div className="row justify-content-center text-center py-lg-5">
                <div className="col-sm-12">
                 <h2 className="mb-10">Services We Provide</h2>

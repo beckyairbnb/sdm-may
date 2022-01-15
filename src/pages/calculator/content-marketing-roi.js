@@ -9,10 +9,11 @@ import PageWrapper from "../../components/PageWrapper";
 import CalculatorInput from '../../components/CalculatorInput';
 import CalculatorValue from '../../components/CalculatorValue';
 import imgFavicon from "../../assets/favicon.png";
+import logoWhite from "../../assets/images/logo-white.png";
 
 const Calculator = () => {
     const dollarSign = '$'
-
+    const [ selectMonths, setSelectMonths] = useState(1)
     const [ websiteTraffic, setWebsiteTraffic] = useState(0)
     const [ totalInvestment, setTotalInvestment] = useState(0)
     const [ totalRevenue, setTotalRevenue] = useState(0)
@@ -326,13 +327,28 @@ return(
 <h3>Your Return On Investment</h3>
 <h4>({dollarSign}{totalRevenue} - {dollarSign}{totalInvestment}) /{dollarSign}{totalInvestment}</h4>
          <p>(Total revenue - Total investment)/Total investment = ROI</p>
-         <p>Number of leads = {numberOfLeads !==0 && numberOfLeads}<br/> Number of sales = {numberOfSales !==0 && numberOfSales}</p>
+         <p>Number of Months 
+             <SelectBox onChange={e=>setSelectMonths(e.target.value)}>
+                 <option value="1">1</option>
+                 <option value="12">12</option>
+                 <option value="24">24</option>
+                 <option value="36">36</option>
+             </SelectBox>
+         </p>
+         {/* <p>Number of leads = {numberOfLeads !==0 && numberOfLeads}<br/> Number of sales = {numberOfSales !==0 && numberOfSales}</p>  */}
          <ReturnBotBg> 
-            <p>1 Month ROI = {roiTotal !==0 && roiTotal}%</p>
+            {/* <p>1 Month ROI = {roiTotal !==0 && roiTotal}%</p>
             <p>12 Month ROI = {roiTotal !==0 && roiTotal*12}%</p>
             <p>24 Month ROI = {roiTotal !==0 && roiTotal*24}%</p>
-            <p>36 Month ROI = {roiTotal !==0 && roiTotal*36}%</p>            
-        </ReturnBotBg> 
+            <p>36 Month ROI = {roiTotal !==0 && roiTotal*36}%</p>                */}
+            <p>Return on investment : {roiTotal !==0 && roiTotal * selectMonths}%</p>
+            <p>Leads : {numberOfLeads * selectMonths}</p>
+            <p>Sales : {numberOfSales * selectMonths}</p>
+            <p>Revenue : </p>
+        </ReturnBotBg>
+        <BoxLogo>
+        <img className="w-auto opacity-9" src={logoWhite} alt="Stragetically" />
+        </BoxLogo>
 </ResultBox>
 
 </ContainerMain> 
@@ -348,6 +364,11 @@ return(
     )
 }
 export default Calculator;
+const BoxLogo = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+`
 const Wrapper = styled.div`
 width:100%;
 display: flex;
@@ -596,4 +617,18 @@ const InputErrorMsg = styled.div`
 const InputWrap = styled.div`
 width:100%;
 position:relative;
+`
+const SelectBox = styled.select`
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    border:none;
+    border-radius: 3px !important;
+    margin: 0rem 0.5rem;
+    padding: 0.2rem;
+    padding-right: 2rem;
 `
