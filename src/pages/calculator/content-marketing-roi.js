@@ -14,7 +14,7 @@ import logoWhite from "../../assets/images/logo-white.png";
 
 const Calculator = () => {
     const dollarSign = '$'
-    const [ selectMonths, setSelectMonths] = useState(1)
+    const [ selectMonths, setSelectMonths] = useState(12)
     const [ websiteTraffic, setWebsiteTraffic] = useState(0)
     const [ totalInvestment, setTotalInvestment] = useState(0)
     const [ totalRevenue, setTotalRevenue] = useState(0)
@@ -312,12 +312,6 @@ return(
                     TooltipContent = "This is self-explanatory. It refers to the total cost of your content creation and content marketing investment."
                     value={totalInvestment}                    
                 />   
-                    {/* <BlockHeader>
-                    <H3heading>Total investment</H3heading> 
-                    </BlockHeader>
-                    <InputWrap>
-                        <InputText disabled = {true} value={totalInvestment !==0 && totalInvestment}/>
-                    </InputWrap>    */}
                 </Grid>                          
              </GridItem>
              </Invest>
@@ -325,22 +319,16 @@ return(
 </Fullwidth>
 <ResultBox>
 <h3>Your return on investment</h3>
-{/* <h4>({dollarSign}{totalRevenue} - {dollarSign}{totalInvestment}) /{dollarSign}{totalInvestment}</h4> */}
          <p>(Total revenue - Total investment)/Total investment = ROI</p>
-         <p>Number of Months 
-             <SelectBox onChange={e=>setSelectMonths(e.target.value)}>
+         <p>Number of months 
+             <SelectBox value={selectMonths} onChange={e=>setSelectMonths(e.target.value)}>
                  <option value="1">1</option>
                  <option value="12">12</option>
                  <option value="24">24</option>
                  <option value="36">36</option>
              </SelectBox>
          </p>
-         {/* <p>Number of leads = {numberOfLeads !==0 && numberOfLeads}<br/> Number of sales = {numberOfSales !==0 && numberOfSales}</p>  */}
          <ReturnBotBg> 
-            {/* <p>1 Month ROI = {roiTotal !==0 && roiTotal}%</p>
-            <p>12 Month ROI = {roiTotal !==0 && roiTotal*12}%</p>
-            <p>24 Month ROI = {roiTotal !==0 && roiTotal*24}%</p>
-            <p>36 Month ROI = {roiTotal !==0 && roiTotal*36}%</p>                */}
             <li>Return on investment : {Math.round(roiTotal !==0 && roiTotal * selectMonths)}%</li>
             <li>Leads : {numberOfLeads * selectMonths}</li>
             <li>Sales : {numberOfSales * selectMonths}</li>
