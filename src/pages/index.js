@@ -41,7 +41,7 @@ const Index = (props) => {
         <Content3 className="pb-12 pb-lg-25" />
         <Testimonial className="pt-lg-19 pb-12 pb-lg-17" />
         <div className="py-6">
-         <div className="container-fluid py-lg-10 bg-light">
+         <div className="container-fluid py-lg-10 bg-white">
            <div className="container">
             <div className="row justify-content-center text-center py-lg-5">
                <div className="col-sm-12">
