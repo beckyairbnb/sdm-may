@@ -64,7 +64,9 @@ const Calculator = () => {
             roiTotal
         ]
       )
-
+    const formatNumber = (num)=> {
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
+    }
     const calculateWebsiteTraffic = () => {
         console.log('Click Rate', clickRate)
         const websiteTraffic_temp = parseInt(clickRate) < 1 ? 0 : Math.round(parseInt(avgMonthlyVolume) * (parseInt(clickRate)/100))
@@ -322,7 +324,7 @@ return(
     </Container>
 </Fullwidth>
 <ResultBox>
-<h3>Your Return On Investment</h3>
+<h3>Your return on investment</h3>
 {/* <h4>({dollarSign}{totalRevenue} - {dollarSign}{totalInvestment}) /{dollarSign}{totalInvestment}</h4> */}
          <p>(Total revenue - Total investment)/Total investment = ROI</p>
          <p>Number of Months 
@@ -339,10 +341,10 @@ return(
             <p>12 Month ROI = {roiTotal !==0 && roiTotal*12}%</p>
             <p>24 Month ROI = {roiTotal !==0 && roiTotal*24}%</p>
             <p>36 Month ROI = {roiTotal !==0 && roiTotal*36}%</p>                */}
-            <li>Return on investment : {roiTotal !==0 && roiTotal * selectMonths}%</li>
+            <li>Return on investment : {Math.round(roiTotal !==0 && roiTotal * selectMonths)}%</li>
             <li>Leads : {numberOfLeads * selectMonths}</li>
             <li>Sales : {numberOfSales * selectMonths}</li>
-            <li>Revenue : {dollarSign}{totalRevenue * selectMonths}</li>
+            <li>Revenue : {dollarSign}{formatNumber(totalRevenue * selectMonths)}</li>
         </ReturnBotBg>
         <BoxLogo>
         <Link to="/">
@@ -534,7 +536,7 @@ const ReturnBotBg = styled.ul`
             color:#ffffff;
             margin:0px !important;
             padding:0px !important;
-            font-size:18px !important;
+            font-size:20px !important;
             line-height:1.6 !important;
         }
 `;
@@ -547,9 +549,9 @@ padding: 24px;
     padding:15px;
     h4{ font-size:28px; line-height:35px}
 }
-h3{ font-size:26px; line-height:32px;color:#fff; margin: 0 0 30px 0;font-weight:700;}
+h3{ font-size:28px; line-height:32px;color:#fff; margin: 0 0 30px 0;font-weight:700;}
 h4{ font-size:35px; line-height:40px;color:#fff; margin: 0; font-weight:700;}
-p{ font-size:16px; line-height:26px;color:#fff; margin: 0 0 30px 0;font-weight:400;}
+p{ font-size:18px; line-height:26px;color:#fff; margin: 0 0 30px 0;font-weight:400;}
 
 `;
 
