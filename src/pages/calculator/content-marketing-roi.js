@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from "styled-components";
+import { Link } from "gatsby";
 import Slider from 'react-rangeslider'
 import { Helmet } from "react-helmet";
 
@@ -71,9 +72,7 @@ const Calculator = () => {
         const totalInvestment_temp = Math.round(parseInt(contentCreationCost) + parseInt(contentPromotionCost))
         const numberOfLeads_temp = parseFloat(parseInt(websiteTraffic_temp) * (parseInt(conversionRate)/100))
         const numberOfSales_temp = parseFloat(parseInt(numberOfLeads_temp) * (parseInt(leadconversionRate)/100))
-        const totalRevenue_temp = Math.round(parseInt(lifetimeCustomerValue) * parseInt(numberOfSales_temp))
-        
-        
+        const totalRevenue_temp = Math.round(parseInt(lifetimeCustomerValue) * parseInt(numberOfSales_temp))        
         
         setWebsiteTraffic(websiteTraffic_temp)        
         setTotalInvestment(totalInvestment_temp)
@@ -87,7 +86,6 @@ const Calculator = () => {
             console.log('Total invest', (totalRevenue_temp - totalInvestment_temp))
             setRoiTotal(parseFloat((((parseInt(totalRevenue_temp) - parseInt(totalInvestment_temp))/parseInt(totalInvestment_temp)))*100).toFixed(4))
         }
-        console.log('websiteTraffic', websiteTraffic)
     }
     const handleAvgMonthlyVolumeChange = (value) => {
         setAvgMonthlyVolume(value)      
@@ -325,7 +323,7 @@ return(
 </Fullwidth>
 <ResultBox>
 <h3>Your Return On Investment</h3>
-<h4>({dollarSign}{totalRevenue} - {dollarSign}{totalInvestment}) /{dollarSign}{totalInvestment}</h4>
+{/* <h4>({dollarSign}{totalRevenue} - {dollarSign}{totalInvestment}) /{dollarSign}{totalInvestment}</h4> */}
          <p>(Total revenue - Total investment)/Total investment = ROI</p>
          <p>Number of Months 
              <SelectBox onChange={e=>setSelectMonths(e.target.value)}>
@@ -341,13 +339,15 @@ return(
             <p>12 Month ROI = {roiTotal !==0 && roiTotal*12}%</p>
             <p>24 Month ROI = {roiTotal !==0 && roiTotal*24}%</p>
             <p>36 Month ROI = {roiTotal !==0 && roiTotal*36}%</p>                */}
-            <p>Return on investment : {roiTotal !==0 && roiTotal * selectMonths}%</p>
-            <p>Leads : {numberOfLeads * selectMonths}</p>
-            <p>Sales : {numberOfSales * selectMonths}</p>
-            <p>Revenue : </p>
+            <li>Return on investment : {roiTotal !==0 && roiTotal * selectMonths}%</li>
+            <li>Leads : {numberOfLeads * selectMonths}</li>
+            <li>Sales : {numberOfSales * selectMonths}</li>
+            <li>Revenue : {dollarSign}{totalRevenue * selectMonths}</li>
         </ReturnBotBg>
         <BoxLogo>
+        <Link to="/">
         <img className="w-auto opacity-9" src={logoWhite} alt="Stragetically" />
+        </Link>
         </BoxLogo>
 </ResultBox>
 
@@ -368,6 +368,9 @@ const BoxLogo = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: flex-end;
+& > a > img{
+    width:175px !important;
+}
 `
 const Wrapper = styled.div`
 width:100%;
@@ -523,9 +526,12 @@ const Grid = styled.div`
 const Invest = styled.div`
 
 `;
-const ReturnBotBg = styled.div`
+const ReturnBotBg = styled.ul`
     width:100%;
-    & > p{
+    margin:0px !important;
+    padding:0px 30px !important;
+    & > li{
+            color:#ffffff;
             margin:0px !important;
             padding:0px !important;
             font-size:18px !important;

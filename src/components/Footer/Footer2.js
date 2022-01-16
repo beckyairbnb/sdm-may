@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import flogo1 from '../../assets/images/flogos/google-reviews.jpg'
+import flogo1 from '../../assets/images/flogos/google-reviews.png'
 import flogo2 from '../../assets/images/flogos/contentmarketing-min.png'
 import flogo3 from '../../assets/images/flogos/contentmarketing.png'
 import flogo4 from '../../assets/images/flogos/top-marketing-comp.png'
@@ -13,11 +13,14 @@ const Footer = ({ className, ...rest }) => {
       <div className={`pt-13 ${className}`} {...rest}>
         <div className="container">
             <LogosRow className="row">
-              <div><a href="https://g.page/strategically?share" target="_blank"><img className="opacity-7" src={flogo1} /></a></div>
-              <div><a href="https://superbcompanies.com/categories/content-marketing-companies/" target="_blank"><img className="opacity-7" src={flogo2} /></a></div>
-              <div><img className="opacity-7" src={flogo3} /></div>
-              <div><a href="https://www.designrush.com/agency/content-marketing" target="_blank"><img className="opacity-7" src={flogo4} /></a></div>
-              <div onClick={()=> window.open("https://www.goodfirms.co/media-kit/?utm_medium=email&_hsmi=84692944&_hsenc=p2ANqtz-89u1Gs8ckwDcIENrdAb0g6BzMc6v9jrvPqhIcOJZ1bjlrmPRympNUWlj-c3nuF0mva33rJPDRhdr8fpZ5DjgM_x2JE0Q&utm_content=84692944&utm_source=hs_email", "_blank")}><img className="opacity-7" src={flogo5} /></div>
+              <div className="col-lg-2 col-md-2 col-sm-4 col-xs-4 my-3" onClick={()=> window.open("https://g.page/strategically?share", "_blank")}><img  className="w-100 opacity-9" src={flogo1} /></div>
+              <div className="col-lg-2 col-md-2 col-sm-4 col-xs-4 my-3" onClick={()=> window.open("https://superbcompanies.com/categories/content-marketing-companies/", "_blank")}><img  className="w-100 opacity-9" src={flogo2} /></div>
+              <div className="col-lg-2 col-md-2 col-sm-4 col-xs-4 my-3"><img className="w-100 opacity-9" src={flogo3} /></div>
+              <div className="col-lg-2 col-md-2 col-sm-4 col-xs-4 my-3" onClick={()=> window.open("https://www.designrush.com/agency/content-marketing", "_blank")}><img  className="w-100 opacity-9" src={flogo4} /></div>
+              <div className="col-lg-2 col-md-2 col-sm-4 col-xs-4 my-3" onClick={()=> window.open("https://www.goodfirms.co/writing", "_blank")}><img className="w-100 opacity-9" src={flogo5} /></div>
+              <div className="col-lg-2 col-md-2 col-sm-4 col-xs-4 my-3">
+              <img className="w-100 opacity-9" src="https://core.sortlist.com//_/apps/core/images/badges-en/badge-flag-blue-light-xl.svg"/>
+              </div>
             </LogosRow>
         </div>
         <div className="container pt-lg-12 pb-8 pb-lg-12 ">
@@ -245,26 +248,34 @@ const Footer = ({ className, ...rest }) => {
 };
 const LogosRow = styled.div`
 display: flex;
+align-items: stretch;
+& > div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+& > div > a{
+  width:100%;
+  cursor:pointer;
+  
+}
+& > div > a > img{
+  width:100%;
+  cursor:pointer;
+}
+& > div > a > svg{
+  width:100%;
+  cursor:pointer;
+}
+display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 justify-content: space-between;
 align-items: stretch;
-& > div{
-  width: 100px;
-  flex-basis: 100px;
-  flex-grow: 1;
-  padding:1.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  & > img{
-    width:100%;
-    cursor:pointer;
-  }
-  & > a > img{
-    width:100%;
-    cursor:pointer;
+@media (max-width: 480px) {
+  .col-xs-4 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
   }
 }
 `;
