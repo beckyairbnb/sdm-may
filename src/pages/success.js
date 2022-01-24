@@ -9,7 +9,7 @@ import Helmet from "react-helmet";
 const Success = () => {
   useEffect(() => {
     setTimeout(() => {        
-        navigate('https://app.strategically.co/order/V8K986');
+        navigate('/success/');
     }, 10);
  });
   return (
