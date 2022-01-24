@@ -9,7 +9,7 @@ import Helmet from "react-helmet";
 const Success = () => {
   useEffect(() => {
     setTimeout(() => {        
-        navigate('/success/');
+        navigate('/pricing/');
     }, 10);
  });
   return (
