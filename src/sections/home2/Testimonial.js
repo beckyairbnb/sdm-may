@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
+import styled from "styled-components";
 import { Testimonials } from "../../data/testimonials"
 
 
@@ -43,7 +44,7 @@ import TestimonialCard1 from "../../components/TestimonialCard1";
 //   },
 // ];
 
-const Testimonial = ({ className, ...rest }) => {
+const Testimonial = ({ className, title, ...rest }) => {
   const elSlider = useRef();
 
   const slickSettings = {
@@ -56,24 +57,28 @@ const Testimonial = ({ className, ...rest }) => {
       {
         breakpoint: 1200,
         settings: {
+          arrows: false,
           slidesToShow: 3,
         },
       },
       {
         breakpoint: 992,
         settings: {
+          arrows: false,
           slidesToShow: 2,
         },
       },
       {
         breakpoint: 768,
         settings: {
+          arrows: false,
           slidesToShow: 1,
         },
       },
       {
         breakpoint: 468,
         settings: {
+          arrows: false,
           slidesToShow: 1,
         },
       },
@@ -85,21 +90,25 @@ const Testimonial = ({ className, ...rest }) => {
       <div className={className} {...rest}>
         <div className="container">
           {/* <!-- Section Title --> */}
+          {title && (
           <div className="mb-8 mb-lg-5">
             <div className="row align-items-center">
-              <div className="col-lg-7 col-md-9">
-                <div
-                  className="mb-8 mb-lg-16 mb-md-0 text-center text-md-left"
+              
+                <div className="col-lg-7 col-md-9">
+                  <div
+                    className="mb-8 mb-lg-16 mb-md-0 text-center text-md-left"
 
-                >
-                  <span className="bg-dodger-blue-2-op1 circle-84 font-size-9 mb-5 mb-lg-11 mx-auto mx-md-0">
-                    <i className="fa fa-heart text-dodger-blue-2"></i>
-                  </span>
-                  <h2 className="font-size-11 mb-0">
-                    250+ customers are loving Strategically.
-                  </h2>
+                  >
+                    <span className="bg-dodger-blue-2-op1 circle-84 font-size-9 mb-5 mb-lg-11 mx-auto mx-md-0">
+                      <i className="fa fa-heart text-dodger-blue-2"></i>
+                    </span>
+                    <h2 className="font-size-11 mb-0">
+                      250+ customers are loving Strategically.
+                    </h2>
+                  </div>
                 </div>
-              </div>
+              
+              
               <div
                 className="col-lg-5 col-md-3"
               
@@ -127,6 +136,7 @@ const Testimonial = ({ className, ...rest }) => {
               </div>
             </div>
           </div>
+          )}
           {/* <!-- End Section Title --> */}
           {/* <!-- category slider --> */}
           <div className="row">

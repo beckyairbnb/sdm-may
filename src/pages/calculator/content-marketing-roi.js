@@ -217,7 +217,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Landing page conversion rate %"
-                        TooltipContent = "Calculate your conversion rate by dividing the number of emails collected by the number of page views to the chosen landing page. After, multiply the conversion rate by 100 to turn this into a percentage. Here's an example: 100 addresses divided by (/) 100 visits to a post equals (=) 0.1 times (x) 100 equals (=) 10% Page Conversion Rate."
+                        TooltipContent = "Calculate your conversion rate by dividing the number of emails collected by the number of page views to the chosen landing page. After, multiply the conversion rate by 100 to turn this into a percentage. Here's an example: 100 addresses divided by (/) 1000 visits to a post equals (=) 0.1 times (x) 100 equals (=) 10% Page Conversion Rate."
                         min={0}
                         max={100}
                         SliderStep={5}

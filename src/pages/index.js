@@ -39,7 +39,7 @@ const Index = (props) => {
 
         <Content2 className="pb-0 pb-lg-31" />
         <Content3 className="pb-12 pb-lg-25" />
-        <Testimonial className="pt-lg-19 pb-12 pb-lg-17" />
+        <Testimonial className="pt-lg-19 pb-12 pb-lg-17" title={true} />
         <div className="py-6">
          <div className="container-fluid py-lg-10 bg-white">
            <div className="container">

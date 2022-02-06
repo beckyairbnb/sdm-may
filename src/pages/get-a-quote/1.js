@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import PageWrapper from "../../components/PageWrapper";
 import FormHead from '../../components/FormHead'
-
+import Testimonial from "../../sections/home2/Testimonial";
 import { GlobalDispatchContext, GlobalStateContext } from "../../context/GlobalContext";
 
 
@@ -59,7 +59,7 @@ const Step1 = () => {
                     <FormHead />
                   </div>
                 </div>
-                  <div className="row d-flex justify-content-center">
+                  <div className="row d-flex justify-content-center mb-0">
                     <div className="col-md-7 col-sm-10 text-center">
                         <Heading2 className="form-sub-heading display-5 mb-3 w-100">
                             Hi, I’m Becky! Please select the type of content you are looking for.
@@ -110,6 +110,7 @@ const Step1 = () => {
                   </div>      
             </div>
             </div> 
+            <Testimonial className="pt-lg-5 pb-12 pb-lg-5" title={false} />
                   </PageContainer>              
               </PageWrapper>
             </>
