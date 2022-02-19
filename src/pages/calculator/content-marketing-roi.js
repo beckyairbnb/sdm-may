@@ -14,21 +14,15 @@ import logoWhite from "../../assets/images/logo-white.png";
 
 const Calculator = () => {
     const dollarSign = '$'
-    const [ selectMonths, setSelectMonths] = useState(12)
-    const [ websiteTraffic, setWebsiteTraffic] = useState(0)
-    const [ totalInvestment, setTotalInvestment] = useState(0)
-    const [ totalRevenue, setTotalRevenue] = useState(0)
-
-    const [ numberOfLeads, setNumberOfLeads] = useState(0)
-    const [ numberOfSales, setNumberOfSales] = useState(0)
-
-    const [ roiTotal, setRoiTotal] = useState(0)
-
     const [ avgMonthlyVolume, setAvgMonthlyVolume] = useState(100)
     const [ avgMonthlyVolumeError, setAvgMonthlyVolumeError] = useState(false)
 
     const [ clickRate, setClickRate] = useState(10)
     const [ clickRateError, setClickRateError] = useState(false)
+
+    
+
+    const [ selectMonths, setSelectMonths] = useState(12)     
 
     const [ conversionRate, setConversionRate] = useState(10)
     const [ conversionRateError, setConversionRateError] = useState(false)
@@ -45,8 +39,31 @@ const Calculator = () => {
     const [ contentPromotionCost, setContentPromotionCost] = useState(700)
     const [ contentPromotionCostError, setContentPromotionCostError] = useState(false)
 
+    const [ websiteTraffic, setWebsiteTraffic] = useState(Math.round(parseInt(avgMonthlyVolume) * (parseInt(clickRate)/100)))
+    const [ totalInvestment, setTotalInvestment] = useState(Math.round(parseInt(contentCreationCost) + parseInt(contentPromotionCost)))
+
+    const [ numberOfLeads, setNumberOfLeads] = useState(parseFloat(parseFloat(websiteTraffic) * (parseFloat(conversionRate)/100)))
+    const [ numberOfSales, setNumberOfSales] = useState(parseFloat(parseFloat(numberOfLeads) * (parseFloat(leadconversionRate)/100)))
+
+    const [ totalRevenue, setTotalRevenue] = useState(Math.round(parseFloat(lifetimeCustomerValue) * parseFloat(numberOfSales)))   
+
+    const [ roiTotal, setRoiTotal] = useState(parseFloat((((parseFloat(totalRevenue) - parseFloat(totalInvestment))/parseFloat(totalInvestment)))*100).toFixed(4))
+
     useEffect(
         () => {
+            // console.log('Avg. monthly search volume',avgMonthlyVolume)
+            // console.log('Click-through rate',clickRate)
+            // console.log('Estimated website traffic',websiteTraffic)
+            // console.log('Landing page conversion rate %',conversionRate)
+            // console.log('Lead conversion rate to sale %',leadconversionRate)
+            // console.log('Lifetime customer value $',lifetimeCustomerValue)
+            // console.log('Content creation costs $',contentCreationCost)
+            // console.log('Content promotion costs $',contentPromotionCost)
+            // console.log('numberOfLeads',numberOfLeads)
+            // console.log('numberOfSales',numberOfSales)
+            // console.log('Total investment',totalInvestment)
+            // console.log('Total Revenu',totalRevenue)
+            // console.log('roiTotal',roiTotal)
             calculateWebsiteTraffic()
         },
         [
@@ -58,6 +75,7 @@ const Calculator = () => {
             numberOfSales,
             clickRate,
             conversionRate,
+            lifetimeCustomerValue,
             leadconversionRate,
             contentCreationCost,
             contentPromotionCost,
@@ -68,13 +86,16 @@ const Calculator = () => {
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
     }
     const calculateWebsiteTraffic = () => {
-        console.log('Click Rate', clickRate)
+        //console.log('Click Rate', clickRate)
         const websiteTraffic_temp = parseInt(clickRate) < 1 ? 0 : Math.round(parseInt(avgMonthlyVolume) * (parseInt(clickRate)/100))
-        console.log('Click Rate', websiteTraffic_temp)
+        //console.log('Click Rate', websiteTraffic_temp)
         const totalInvestment_temp = Math.round(parseInt(contentCreationCost) + parseInt(contentPromotionCost))
         const numberOfLeads_temp = parseFloat(parseInt(websiteTraffic_temp) * (parseInt(conversionRate)/100))
-        const numberOfSales_temp = parseFloat(parseInt(numberOfLeads_temp) * (parseInt(leadconversionRate)/100))
-        const totalRevenue_temp = Math.round(parseInt(lifetimeCustomerValue) * parseInt(numberOfSales_temp))        
+        //console.log('Lead conversion rate',leadconversionRate)
+        //console.log('Lead conversion rate %',parseFloat(leadconversionRate)/100)
+        //console.log('Number of Leads',numberOfLeads_temp)
+        const numberOfSales_temp = parseFloat(parseFloat(numberOfLeads_temp) * (parseFloat(leadconversionRate)/100))
+        const totalRevenue_temp = Math.round(parseFloat(lifetimeCustomerValue) * parseFloat(numberOfSales_temp))        
         
         setWebsiteTraffic(websiteTraffic_temp)        
         setTotalInvestment(totalInvestment_temp)
@@ -82,10 +103,10 @@ const Calculator = () => {
         setNumberOfSales(numberOfSales_temp)
         setTotalRevenue(totalRevenue_temp)
         if(totalRevenue_temp!==0 && totalInvestment_temp!==0){
-            console.log('Total Revew', totalRevenue_temp)
-            console.log('Total invest', totalInvestment_temp)
-            console.log('Total Revew', (totalInvestment_temp * 100))
-            console.log('Total invest', (totalRevenue_temp - totalInvestment_temp))
+            //console.log('Total Revew', totalRevenue_temp)
+            //console.log('Total invest', totalInvestment_temp)
+            //console.log('Total Revew', (totalInvestment_temp * 100))
+            //console.log('Total invest', (totalRevenue_temp - totalInvestment_temp))
             setRoiTotal(parseFloat((((parseInt(totalRevenue_temp) - parseInt(totalInvestment_temp))/parseInt(totalInvestment_temp)))*100).toFixed(4))
         }
     }
@@ -177,8 +198,7 @@ return(
                     setState={setAvgMonthlyVolume}
                     setStateError = {setAvgMonthlyVolumeError}
                     fieldError = {avgMonthlyVolumeError}
-                    onChange={handleAvgMonthlyVolumeChange}
-                    
+                    onChange={handleAvgMonthlyVolumeChange}                    
                 /> 
             </Grid>
             <Grid>

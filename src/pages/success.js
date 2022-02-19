@@ -9,7 +9,7 @@ import Helmet from "react-helmet";
 const Success = () => {
   useEffect(() => {
     setTimeout(() => {        
-        navigate('/pricing/');
+        navigate('https://calendly.com/becky-strategically/intro-meeting?month=2022-02');
     }, 10);
  });
   return (

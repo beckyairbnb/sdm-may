@@ -69,3 +69,9 @@
         cursor: pointer;
     }
 }
+
+.pricing_table  .btn.btn-2 {min-width: 195px;}
+
+@media (min-width: 1200px) {
+.pricing_table .col-xl-4{flex: 20%;max-width: 20%;}
+}
