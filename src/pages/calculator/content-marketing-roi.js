@@ -361,7 +361,19 @@ return(
         </BoxLogo>
 </ResultBox>
 
-</ContainerMain> 
+</ContainerMain>
+
+</Wrapper>
+<Wrapper>
+<ContainerPara>
+<p>Ahrefs found that more than 90% of content never ranks. We think that’s silly.</p>
+
+<p>Don’t waste your time and money creating content that won’t rank or generate a ROI.</p>
+
+<p>Strategically’s content writing services are SEO-focused, customer-driven and proven to deliver. We uncover ranking opportunities in the search data, then we create 10X content designed to resonate with your target audience and beat your competitors.</p>
+
+<p>If it won’t rank, we don’t write it. </p>
+</ContainerPara>
 </Wrapper>
 </PageWrapper>
 
@@ -396,6 +408,12 @@ overflow:hidden;
 box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+`
+const ContainerPara = styled.div`
+margin:30px 0px 0px;
+max-width:991px;
+width:100%;
+overflow:hidden;
 `
 
 
