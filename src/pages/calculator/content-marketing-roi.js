@@ -370,7 +370,7 @@ return(
 
 <p>Don’t waste your time and money creating content that won’t rank or generate a ROI.</p>
 
-<p>Strategically’s content writing services are SEO-focused, customer-driven and proven to deliver. We uncover ranking opportunities in the search data, then we create 10X content designed to resonate with your target audience and beat your competitors.</p>
+<p><Link to="/">Strategically’s content writing services</Link> are SEO-focused, customer-driven and proven to deliver. We uncover ranking opportunities in the search data, then we create 10X content designed to resonate with your target audience and beat your competitors.</p>
 
 <p>If it won’t rank, we don’t write it. </p>
 </ContainerPara>
