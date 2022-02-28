@@ -159,14 +159,14 @@ const Footer = ({ className, ...rest }) => {
                           Terms
                         </Link>
                       </li>
-                      <li className="mb-6">
+                      {/* <li className="mb-6">
                         <Link
                           to="/content-delivery-policy/"
                           className="font-size-5 text-default-color"
                         >
                           Content Delivery Policy
                         </Link>
-                      </li>
+                      </li> */}
                       <li className="mb-6">
                         <Link
                           to="/money-back-guarantee/"
@@ -224,14 +224,14 @@ const Footer = ({ className, ...rest }) => {
                           Pricing
                         </Link>
                       </li>
-                      <li className="mb-6">
+                      {/* <li className="mb-6">
                         <Link
                           to={`/faq/`}
                           className="font-size-5 text-default-color"
                         >
                           FAQs
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>

@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { navigate } from 'gatsby'
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/pricing/Hero";
 import Pricing from "../sections/pricing/Pricing";
@@ -7,6 +7,11 @@ import Faq from "../sections/pricing/Faq";
 import Helmet from "react-helmet";
 
 const PricingPage = () => {
+  useEffect(() => {
+    setTimeout(() => {        
+        navigate('https://calendly.com/becky-strategically/intro-meeting?month=2022-02');
+    }, 10);
+ });
   return (
     <>
     <Helmet>

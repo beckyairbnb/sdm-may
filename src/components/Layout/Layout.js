@@ -99,6 +99,17 @@ const Layout = ({ children, pageContext }) => {
       <>
         <Helmet>
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
+          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+          <script>
+          {`
+            !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
+              w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
+              (g=new XMLHttpRequest).open("GET",n+"version?v="+Date.now(),!0),g.onreadystatechange=function(){
+              4===g.readyState&&(y.src=n+"stonly-widget.js?v="+(200===g.status?g.responseText:Date.now()),
+              (l=t.getElementsByTagName(o)[0]).parentNode.insertBefore(y,l))},g.send())
+              }(window,document,"script","https://stonly.com/js/widget/v2/");
+          `}
+        </script>
           <script>
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -135,6 +146,17 @@ const Layout = ({ children, pageContext }) => {
           <title>Finity 2</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
+          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+          <script>
+          {`
+            !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
+              w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
+              (g=new XMLHttpRequest).open("GET",n+"version?v="+Date.now(),!0),g.onreadystatechange=function(){
+              4===g.readyState&&(y.src=n+"stonly-widget.js?v="+(200===g.status?g.responseText:Date.now()),
+              (l=t.getElementsByTagName(o)[0]).parentNode.insertBefore(y,l))},g.send())
+              }(window,document,"script","https://stonly.com/js/widget/v2/");
+          `}
+        </script>
           <script>
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -179,6 +201,17 @@ const Layout = ({ children, pageContext }) => {
           <title>Finity 3</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
+          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+          <script>
+          {`
+            !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
+              w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
+              (g=new XMLHttpRequest).open("GET",n+"version?v="+Date.now(),!0),g.onreadystatechange=function(){
+              4===g.readyState&&(y.src=n+"stonly-widget.js?v="+(200===g.status?g.responseText:Date.now()),
+              (l=t.getElementsByTagName(o)[0]).parentNode.insertBefore(y,l))},g.send())
+              }(window,document,"script","https://stonly.com/js/widget/v2/");
+          `}
+        </script>
           <script>
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -222,6 +255,17 @@ const Layout = ({ children, pageContext }) => {
           <title>Strategically | Content Writing Agency</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
+          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+          <script>
+          {`
+            !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
+              w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
+              (g=new XMLHttpRequest).open("GET",n+"version?v="+Date.now(),!0),g.onreadystatechange=function(){
+              4===g.readyState&&(y.src=n+"stonly-widget.js?v="+(200===g.status?g.responseText:Date.now()),
+              (l=t.getElementsByTagName(o)[0]).parentNode.insertBefore(y,l))},g.send())
+              }(window,document,"script","https://stonly.com/js/widget/v2/");
+          `}
+        </script>
           <script>
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -277,6 +321,17 @@ const Layout = ({ children, pageContext }) => {
     return (
       <>   
           <Helmet>
+          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+          <script>
+          {`
+            !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
+              w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
+              (g=new XMLHttpRequest).open("GET",n+"version?v="+Date.now(),!0),g.onreadystatechange=function(){
+              4===g.readyState&&(y.src=n+"stonly-widget.js?v="+(200===g.status?g.responseText:Date.now()),
+              (l=t.getElementsByTagName(o)[0]).parentNode.insertBefore(y,l))},g.send())
+              }(window,document,"script","https://stonly.com/js/widget/v2/");
+          `}
+        </script>
           <script>
           {`
             (function(e,a){
@@ -309,6 +364,17 @@ const Layout = ({ children, pageContext }) => {
           <title>Finity 4</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
+          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+          <script>
+          {`
+            !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
+              w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
+              (g=new XMLHttpRequest).open("GET",n+"version?v="+Date.now(),!0),g.onreadystatechange=function(){
+              4===g.readyState&&(y.src=n+"stonly-widget.js?v="+(200===g.status?g.responseText:Date.now()),
+              (l=t.getElementsByTagName(o)[0]).parentNode.insertBefore(y,l))},g.send())
+              }(window,document,"script","https://stonly.com/js/widget/v2/");
+          `}
+        </script>
           <script>
             {`
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

@@ -34,6 +34,14 @@ module.exports = {
           page: require('./custom_types/page.json'),
           writingjobs: require('./custom_types/writingjobs.json'),
           an_unused_type: {},
+          htmlSerializer: ({ node, key, value }) => (
+            type,
+            element,
+            content,
+            children,
+          ) => {
+            // Your HTML serializer
+          },
         },
       },
     },
