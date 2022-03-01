@@ -58,8 +58,11 @@ const Menu = () => {
     },
     {
       name: "content-writing-agency/",
-      label: "Why Strategically",
-      
+      label: "Why Strategically",      
+    },
+    {
+      name: "seo-strategy-agency/",
+      label: "SEO strategy",      
     },
     {
       name : "writer-services/",
