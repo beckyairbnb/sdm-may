@@ -100,23 +100,7 @@ const Step2 = () => {
                                 defaultValue={state.firstname}
                                 className="w-100 bg-white py-5 px-6 mb-2 rounded-1 border border-info"
                                 />                            
-                            </div>                            
-                            {/* <div className="col-sm-12 mb-3">
-                            <InputBox
-                                type="text"
-                                placeholder="Last Name"
-                                label="Last Name"
-                                name="lastname"
-                                onChange={e=> {
-                                    dispatch({
-                                        type: 'ADD_LASTNAME',
-                                        payload: e.target.value
-                                    })
-                                  }}
-                                defaultValue={state.lastname}
-                                className="w-100 bg-white py-5 px-6 mb-2 rounded-1 border border-info"
-                                />
-                            </div> */}
+                            </div>   
                             <div className="col-sm-12 mb-3">
                                 <InputBox
                                 type="text"
@@ -125,6 +109,21 @@ const Step2 = () => {
                                 name="phone"
                                 className="w-100 bg-white py-5 px-6 mb-2 rounded-1 border border-info"
                                 />                            
+                            </div>
+                            <div className="col-sm-12 mb-3">
+                                <SelectBox
+                                name="How did you find us?"
+                                className="w-100 bg-white py-5 px-6 mb-2 rounded-1 border border-info"
+                                >
+                                  <option value="" disabled selected hidden>How did you find us?</option>
+                                  <option value="Google search">Google search</option>   
+                                  <option value="Word of mouth">Word of mouth</option>  
+                                  <option value="Upwork">Upwork</option>  
+                                  <option value="Surfer SEO">Surfer SEO</option>  
+                                  <option value="Clutch">Clutch</option>  
+                                  <option value="LinkedIn">LinkedIn</option>  
+                                  <option value="Other">Other</option>  
+                                </SelectBox>                         
                             </div>
                             </div>
                             <div className="col-sm-12 py-1 d-flex justify-content-center align-items-center">
@@ -150,6 +149,12 @@ padding: 20px 0px;
 font-size:2.2rem;
 `;
 const InputBox = styled.input`
+border:1px solid #091e57 !important;
+-webkit-border-radius: 5px !important;
+-moz-border-radius: 5px !important;
+border-radius: 5px !important;
+`;
+const SelectBox = styled.select`
 border:1px solid #091e57 !important;
 -webkit-border-radius: 5px !important;
 -moz-border-radius: 5px !important;

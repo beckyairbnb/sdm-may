@@ -1,16 +1,17 @@
 import React, { useEffect } from "react";
 import { navigate } from 'gatsby'
 import PageWrapper from "../components/PageWrapper";
-import Hero from "../sections/pricing/Hero";
-import Pricing from "../sections/pricing/Pricing";
-import Faq from "../sections/pricing/Faq";
+import { InlineWidget } from "react-calendly";
+// import Hero from "../sections/pricing/Hero";
+// import Pricing from "../sections/pricing/Pricing";
+// import Faq from "../sections/pricing/Faq";
 import Helmet from "react-helmet";
 
 
 const PricingPage = () => {
-  useEffect(() => {
-    navigate('https://calendly.com/becky-strategically/intro-meeting?month=2022-02');
- });
+//   useEffect(() => {
+//     navigate('https://calendly.com/becky-strategically/intro-meeting?month=2022-02');
+//  });
   return (
     <>
     <Helmet>
@@ -30,7 +31,13 @@ const PricingPage = () => {
           footerStyle: "style2",
         }}
       >
-     
+        <div className="row justify-content-center mt-15">
+          <div className="col-xl-12 col-lg-12 col-sm-12">
+            <div className="text-center mb-10 mb-lg-10">
+              <InlineWidget url="https://calendly.com/becky-strategically" styles={{height: '750px'}} />
+            </div>
+          </div>
+        </div>
         {/* <Hero /> */}
         
         {/* <Pricing /> */}
