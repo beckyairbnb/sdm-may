@@ -120,7 +120,7 @@ const JobTemplate = (props)=>{
                 <div className="d-flex justify-content-center">
                 <h3>Apply to be a writer</h3>
                 </div>
-                <div className="d-flex justify-content-center border">
+                <div className="d-flex justify-content-center">
                   
                     <div className="col-md-6 col-sm-9 col-xs-12">
                         <div className="row">
