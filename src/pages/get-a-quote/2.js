@@ -65,8 +65,8 @@ const Step2 = () => {
                     <Heading2 className="form-sub-heading display-5 mb-3 w-100">I’ll get you an awesome price in minutes. Ready to go?</Heading2> 
                     </div>
                 </div>  
-                <form name="getquoteform" method="POST" data-netlify="true" action={ `/success/` }>
-                <input type="hidden" name="form-name" value="getquoteform"/>  
+                <form name="newgetquoteform" method="POST" data-netlify="true" action={ `/success/` }>
+                <input type="hidden" name="form-name" value="newgetquoteform"/>  
                 <input type="hidden" name="Type of content you are looking for" value={state.content}/>
                 <input type="hidden" name="How many words per month would you like to order" value={state.words}/> 
                 {/* <input type="hidden" name="Company Name" value={state.company}/>   */}
