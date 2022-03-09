@@ -85,7 +85,7 @@ const Progress = ({ className, ...rest }) => {
                   <div className="">
                     <h3 className="font-size-8 mb-6">Optimise</h3>
                     <p className="font-size-5 line-height-28 mb-0">
-                      90% of content never ranks. we think that's silly. if it won't rank, we won't write it.
+                    90% of content never ranks. We think that's silly. If it won't rank, we won't write it.
                     </p>
                   </div>
                 </GridItem>

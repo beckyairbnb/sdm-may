@@ -19,7 +19,7 @@ const Index = (props) => {
     <>
     <Helmet>
      <title>Strategically | Content Writing Agency</title>
-   </Helmet>
+    </Helmet>
       <PageWrapper
         themeConfig={{
           headerClassName: "site-header--menu-right",
