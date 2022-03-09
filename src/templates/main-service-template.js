@@ -25,6 +25,12 @@ import logo5 from "../assets/images/clients/logo-5.jpg";
 import logo7 from "../assets/images/clients/logo-7.jpg";
 import logo9 from "../assets/images/clients/logo-9.jpg";
 import logo10 from "../assets/images/clients/logo-10.jpg";
+
+import Content2 from "../sections/newservice/Content2";
+import Content3 from "../sections/newservice/Content3";
+import Content4 from "../sections/newservice/Content4";
+import Content5 from "../sections/newservice/Content5";
+
 const MainServiceTemplate = (props)=>{
     const [modalShow, setModalShow] = useState(false);
     const { data } = props
@@ -52,17 +58,18 @@ const MainServiceTemplate = (props)=>{
         }}
       >
     
-    <div className="main-banner">
+    <div className="main-banner mt-8">
          <div className="container">
             <div className="row justify-content-center">
                <div className="col-xl-8 col-lg-9 col-md-12 col-sm-12">
                   <div className="text-center pt-5 pb-lg-4 mb-lg-2">
-                     {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="mb-4" ></div>}
+                  <h1>Premium, SEO-optimised content for your business</h1>
+                     {/* {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="mb-4" ></div>} */}
                      {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }}></div>}
                      <Link
                      to="/get-a-quote/1/"
                     className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
-                     <p>{PageData.data.cta_button_below_text}</p>
+                     {/* <p>{PageData.data.cta_button_below_text}</p> */}
                      
                   </div>
                </div>
@@ -92,7 +99,7 @@ const MainServiceTemplate = (props)=>{
          </div>
       </div>
       <HappyClients title={PageData.data.testimonials_block_heading} subtitle={PageData.data.testimonials_block_sub_text} ctatextbelow={PageData.data.testimonials_block_stars_below_text} />
-      <div className="py-6 my-1">
+      {/* <div className="py-6 my-1">
          <div className="container py-lg-10">
             <div className="row justify-content-center text-center py-lg-5">
                <div className="col-xl-8 col-lg-10 col-xs-12">
@@ -104,7 +111,7 @@ const MainServiceTemplate = (props)=>{
                </div>
             </div>
          </div>
-      </div>
+      </div> */}
       <div className="py-6">
          <div className="container py-lg-10 bg-white">
             <div className="row justify-content-center text-center py-lg-5">
@@ -129,7 +136,7 @@ const MainServiceTemplate = (props)=>{
       </div>
       
       
-      <div className="pt-12 bg-light">
+      {/* <div className="pt-12 bg-light">
          <div className="container pt-10">
             <div className="row justify-content-center text-center">
                <div className="col-xl-8 col-lg-10 col-xs-12">
@@ -142,9 +149,15 @@ const MainServiceTemplate = (props)=>{
                  </div>
             </div>
          </div>
-      </div>
-      <ProgressNew className="pb-lg-21 border-top border-default-color-1" />      
+      </div> */}
+      <ProgressNew className="pb-lg-21 border-top border-default-color-1" />       
+
+
       <div className="py-14 bg-light">
+      <Content2 className="pb-0 pb-lg-20 mt-lg-20" />
+        <Content3 className="pb-10 pb-lg-10" />
+        <Content4 className="pt-10 pt-lg-10 pb-15 pb-lg-20" />
+        <Content5 className="pt-10 pt-lg-10 pb-15 pb-lg-20" />
          <div className="container">
             <div className="row justify-content-center">
                <div className="col-lg-9 col-md-9 col-sm-12">

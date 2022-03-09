@@ -22,7 +22,7 @@ const Hero = ({ className, ...rest }) => {
             >
               <div className="pr-lg-10 pr-xl-0 pt-0 pt-lg-0 pb-13 pb-lg-0">
                 <h1 className="font-size-12 mb-8">
-                We create quality content for companies.
+               Grow Your business With Content
                 </h1>
                 <p className="font-size-7 mb-0 heading-default-color">
                   We’ve helped over 250 businesses to{" "}

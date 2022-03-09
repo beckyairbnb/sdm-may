@@ -16,8 +16,8 @@ const Content2 = ({ className, ...rest }) => {
     },
     {
       icon: img2,
-      title: "Get content quickly",
-      text: "We process your content requests in days, not weeks.",
+      title: "Scale Your Content",
+      text: "We writen, design, and produce content at scale",
     },
     {
       icon: img3,

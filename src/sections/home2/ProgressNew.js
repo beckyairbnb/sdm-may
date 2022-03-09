@@ -51,9 +51,9 @@ const ProgressNew = ({ className, ...rest }) => {
                     <img src={imgS} alt="" />
                   </div>
                   <div className="">
-                    <h3 className="font-size-8 mb-6">Submit your request</h3>
+                    <h3 className="font-size-8 mb-6">Plan</h3>
                     <p className="font-size-5 line-height-28 mb-0">
-                      Submit your content titles, choose the content length, provide an article brief and confirm your order.
+                    We create a deeply customised, data driven SEO strategy to power your sales.
                     </p>
                   </div>
                 </GridItem>
@@ -67,9 +67,9 @@ const ProgressNew = ({ className, ...rest }) => {
                     <img src={imgE} alt="" />
                   </div>
                   <div className="">
-                    <h3 className="font-size-8 mb-6">We write your content</h3>
+                    <h3 className="font-size-8 mb-6">Create</h3>
                     <p className="font-size-5 line-height-28 mb-0">
-                      Your articles are prepared by a Native English writer, edited, and passed through a plagiarism checker.
+                    Your articles are prepared by a Native English writer, edited, and passed through a plagiarism checker.
                     </p>
                   </div>
                 </GridItem>
@@ -83,9 +83,9 @@ const ProgressNew = ({ className, ...rest }) => {
                     <img src={imgR} alt="" />
                   </div>
                   <div className="">
-                    <h3 className="font-size-8 mb-6">Content delivered on time</h3>
+                    <h3 className="font-size-8 mb-6">Optimise</h3>
                     <p className="font-size-5 line-height-28 mb-0">
-                      We email you the completed articles formatted ready to install in your blog.
+                    90% of content never ranks. we think that's silly. if it won't rank, we won't write it.
                     </p>
                   </div>
                 </GridItem>

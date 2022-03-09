@@ -56,10 +56,10 @@ const Menu = () => {
       label: "We're Hiring!",
   
     },
-    {
-      name: "content-writing-agency/",
-      label: "Why Strategically",      
-    },
+    // {
+    //   name: "content-writing-agency/",
+    //   label: "Why Strategically",      
+    // },
     {
       name: "seo-strategy-agency/",
       label: "SEO strategy",      
