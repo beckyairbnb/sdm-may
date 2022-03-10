@@ -33,7 +33,7 @@ const Hero = () => {
                     <p
                       className="font-size-7 text-dark-cloud mb-0 pr-xl-15"
 
-                    >We create a deeply customized, data-driven SEO strategy to power your sales.
+                    >We create a deeply customised, data-driven SEO strategy to power your sales.
                         </p>
                   </div>
                   <div

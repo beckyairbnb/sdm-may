@@ -17,7 +17,7 @@ const Progress = ({ className, ...rest }) => {
             <div className="col-xl-7 col-lg-8 col-md-9 col-xs-10">
               <div className="text-center pt-13 pt-lg-23 pb-13 pb-lg-12 pr-lg-10 pr-xl-0">
                 <h2 className="font-size-11 mb-0">
-                  Working with Strategically is simple.
+                 Customer-driven and SEO-focused content
                 </h2>
               </div>
             </div>

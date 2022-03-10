@@ -18,6 +18,7 @@ import Breadcrumbs from '../components/Breadcrumbs'
 import imgFavicon from "../assets/favicon.png";
 import phoneSec from "../assets/images/phone-sec.png";
 import SeoContentImg from "../assets/images/seo-content-writer-img.png";
+import SeoCasinoImg from "../assets/images/casino-seo.png";
 
 import logo1 from "../assets/images/clients/logo-1.jpg";
 import logo2 from "../assets/images/clients/logo-2.jpg";
@@ -42,6 +43,26 @@ const ServiceTemplate = (props)=>{
       {'name':'Writer Services', 'link':'/writer-services/'},
       {'name': PageData.data.short_title, 'link':null}
     ]
+    const SeoContentImage = (slug)=>{
+      if(slug==='seo-content-writing'){
+        return(
+          <img src={SeoContentImg} alt="" className="stars-img my-10"/> 
+        )
+      }
+      else if (slug==='casino-gaming-content-writing')
+      {
+        return(
+          <img src={SeoCasinoImg} alt="" className="stars-img my-10"/> 
+        )
+      }
+      else
+      {
+        return(
+          <img src={phoneSec} alt="" className="stars-img"/>
+        )
+      }
+      //slug === 'seo-content-writing' ? <img src={SeoContentImg} alt="" className="stars-img my-10"/> : <img src={phoneSec} alt="" className="stars-img"/>
+    }
   return(
     <>
     <Helmet>
@@ -131,10 +152,7 @@ const ServiceTemplate = (props)=>{
                   
                </div>
                <div className="col-xl-10 col-lg-10 col-xs-12">
-               {
-                   slug === 'seo-content-writing' ? <img src={SeoContentImg} alt="" className="stars-img my-10"/> : <img src={phoneSec} alt="" className="stars-img"/>
-
-               }
+               { SeoContentImage(slug) }
                 </div>
             </div>
          </div>
