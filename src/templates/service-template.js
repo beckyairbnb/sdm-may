@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { graphql, Link } from "gatsby"
 import styled from 'styled-components';
 import { Helmet } from "react-helmet";
-import ProgressNew from "../sections/home2/ProgressNew";
+import Progress from "../sections/home2/Progress";
 import PageWrapper from "../components/PageWrapper";
 import Image from '../components/ContentSlices/Image'
 import CTA from '../components/ContentSlices/CTA'
@@ -157,7 +157,7 @@ const ServiceTemplate = (props)=>{
             </div>
          </div>
       </div>
-      <ProgressNew className="pb-lg-21 border-top border-default-color-1" />      
+      <Progress className="pb-lg-21 border-top border-default-color-1" />      
       <div className="py-14 bg-light">
          <div className="container">
             <div className="row justify-content-center">
