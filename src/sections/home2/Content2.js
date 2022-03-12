@@ -35,7 +35,7 @@ const Content2 = ({ className, ...rest }) => {
               className="col-xl-4 col-lg-5 col-md-6 col-xs-8 order-2 order-md-1"
 
             >
-              <h2 className="font-size-11">Award-winning contetn team</h2>
+              <h2 className="font-size-11">Award-winning content team</h2>
               <ul className="list-unstyled mt-9 mt-lg-14">
                 {contentWidgetData.map(({ icon, title, text }, index) => {
                   return (
