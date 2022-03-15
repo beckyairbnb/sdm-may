@@ -115,7 +115,8 @@ const JobTemplate = (props)=>{
                 })}
                  
                   </div>
-                  <form name="applyforwriter" method="POST" data-netlify="true" action={ `/success/` }>
+                  
+                  {/* <form name="applyforwriter" method="POST" data-netlify="true" action={ `/success/` }>
                 <input type="hidden" name="form-name" value="applyforwriter"/>  
                 <div className="d-flex justify-content-center">
                 <h3>Apply to be a writer</h3>
@@ -167,9 +168,13 @@ const JobTemplate = (props)=>{
                             </div>
                         </div>
                     </div>  
-                    </form> 
+                    </form>  */}
               </div>
+              
             </div>
+            <div className="d-flex justify-content-center">
+                      <a href="https://strategically704.outgrow.us/strategically704-4" target="_blank" className="my-6 btn btn-dodger-blue-2 header-btn rounded-5">Apply to be a writer</a>
+                  </div>
           </div>
         </main>
   </PageWrapper>

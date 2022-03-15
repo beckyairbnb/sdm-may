@@ -98,6 +98,14 @@
         "label": "Image Block Subtext"
       }
     },
+    "block_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Block Image"
+      }
+    },
     "featuredimage": {
       "type": "Image",
       "config": {
