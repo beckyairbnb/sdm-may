@@ -98,8 +98,12 @@ const JobTemplate = (props)=>{
                     {PageData.data.title.text}
                   </h2>
                 </div>
+                {/* <div className="d-flex justify-content-center">
+                  <a href="https://strategically704.outgrow.us/strategically704-4" target="_blank" className="my-6 btn btn-dodger-blue-2 header-btn rounded-5">Apply to be a writer</a>
+                </div>   */}
               </div>
-              <div className="col-xl-9 col-lg-10 px-xl-0 px-lg-6 px-md-0 px-6 pr-0 job-content">
+             
+              <div className="col-xl-9 col-lg-10 px-xl-0 px-lg-6 px-md-0 px-6 pr-0">
 
                 <div className="pt-lg-0 pt-10 pl-lg-10 px-xl-15">
                 {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100 float-left overflow-hidden mb-2"></div>}     
@@ -108,7 +112,16 @@ const JobTemplate = (props)=>{
                     {
                       if(slice_type==='section_with_heading_and_content')
                       {
-                        return <PageContent data={primary}/>
+                        return(
+                          <div className="col-xl-12 col-lg-12">
+                            <div className=" job-content">
+                            <PageContent data={primary}/>
+                            </div>
+                            <div className="d-flex justify-content-center">
+                              <a href="https://strategically704.outgrow.us/strategically704-4" target="_blank" className="my-6 btn btn-dodger-blue-2 header-btn rounded-5">Apply to be a writer</a>
+                            </div>  
+                          </div>
+                        )
                       }
                     }
                     
@@ -172,9 +185,9 @@ const JobTemplate = (props)=>{
               </div>
               
             </div>
-            <div className="d-flex justify-content-center">
-                      <a href="https://strategically704.outgrow.us/strategically704-4" target="_blank" className="my-6 btn btn-dodger-blue-2 header-btn rounded-5">Apply to be a writer</a>
-                  </div>
+            {/* <div className="d-flex justify-content-center">
+                <a href="https://strategically704.outgrow.us/strategically704-4" target="_blank" className="my-6 btn btn-dodger-blue-2 header-btn rounded-5">Apply to be a writer</a>
+            </div> */}
           </div>
         </main>
   </PageWrapper>
