@@ -35,7 +35,8 @@
   /* justify-content: space-between; */
   overflow:visible;
 }
-
+a.header-btn{ background-color: #FF0088 !important; color:#ffffff !important; border:none !important; height:45px}
+a.btn-dodger-blue-2{ background-color: #FF0088 !important; color:#ffffff !important; border:none !important; height:45px}
 .main-banner{
   display: flex;
   flex-direction: column;
@@ -147,6 +148,7 @@
 
 .btn-blue-3,
 .btn-dodger-blue-2{ background-color: #FF0088 !important; border:none !important; height:45px}
+
 
 .main-container{ margin-top: 120px;}
 .job-content p,
