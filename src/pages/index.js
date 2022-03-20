@@ -70,6 +70,8 @@ const Index = (props) => {
   );
 };
 
+
+
 export const query = graphql`
 query HomePage {
   AllServices: allPrismicService(
