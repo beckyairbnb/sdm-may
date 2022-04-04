@@ -1,5 +1,8 @@
 const { concat } = require("lodash");
 const path = require("path")
+const _ = require(`lodash`);
+const { paginate } = require(`gatsby-awesome-pagination`);
+
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions;
  if (page.path.match(/sign|reset/)) {
@@ -36,7 +39,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { data } = await graphql(`
   query {
-    Blogs: allPrismicBlog(filter: {data: {category: {uid: {ne: null}}}}) {
+    Blogs: allPrismicBlog {
       edges {
         node {
           id
@@ -46,10 +49,10 @@ exports.createPages = async ({ graphql, actions }) => {
               document {
                 ... on PrismicBlogCategory {
                   id
+                  uid
                   data {
                     name {
                       text
-                      html
                     }
                   }
                 }
@@ -101,17 +104,76 @@ exports.createPages = async ({ graphql, actions }) => {
       }
   }
 `)
-data.Blogs.edges.forEach(({ node }) => {     
-  console.log('Blog Pages Name', node.data.category.document.data.name.text) 
+const DEFAULT_BLOG_BASE_PATH = '/blog';
+const DEFAULT_BLOG_POSTS_PER_PAGE = 60;
+
+const basePath = DEFAULT_BLOG_BASE_PATH;
+const blogs = data.Blogs.edges;
+
+const postsPerPage = DEFAULT_BLOG_POSTS_PER_PAGE; 
+
+blogs.forEach(({ node }) => {     
   createPage({
-    path: `/blog/${node.data.category.document.data.name.text.toLowerCase()}/${node.uid}/`,
+    path: `/blog/${node.data.category.document.uid}/${node.uid}/`,
     component: path.resolve("./src/templates/blog-template.js"),
     context: {
       layout: 'noheaderfooter',
-      id:node.id
+      uid:node.uid
     },
   })
 })
+
+let categories = [];
+
+_.each(blogs, (blog) => {
+  
+  if (_.get(blog, 'node.data.category.document.uid')) {
+    categories = categories.concat(blog.node.data.category);
+  }
+});
+
+categories = _.uniqWith(categories, _.isEqual);
+
+categories.forEach((cat) => {
+  
+  const blogsWithCat = blogs.filter(
+    (blog) =>
+      blog.node.data.category && blog.node.data.category.document.uid === cat.document.uid
+  );
+  const categoryPath = `${basePath}/${cat.document.uid}`;
+
+  paginate({
+    createPage,
+    items: blogsWithCat,
+    itemsPerPage: postsPerPage,
+    pathPrefix: categoryPath,
+    component: path.resolve( './src/templates/CategoryTemplate.js'),
+    context: {
+      uid: cat.document.uid,
+      basePath,
+      paginationPath: categoryPath,
+      categories,
+    },
+  });
+});
+
+
+paginate({
+  createPage,
+  items: blogs,
+  itemsPerPage: postsPerPage,
+  itemsPerFirstPage: postsPerPage + 2,
+  pathPrefix: basePath,
+  component: path.resolve( './src/templates/BlogListTemplate.js'),
+  context: {
+    basePath,
+    paginationPath: basePath,
+    categories
+  },
+});
+
+
+
 data.MainServicePage.edges.forEach(({ node }) => {     
   createPage({
     path: `writer-services/`,

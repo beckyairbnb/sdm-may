@@ -16,9 +16,10 @@ import stratagicsicon from "../assets/images/stratagic-s.png";
 import imgFavicon from "../assets/favicon.png";
 const BlogTemplate = (props)=>{
   const { data } = props
-  const { PageData } = data
-  const seoTitle = PageData.data.seotitle || 'Strategically'
-  const seoDescription = PageData.data.metadescription || 'Strategically'
+  const { PostData } = data
+  const seoTitle = PostData.data.seotitle || 'Strategically'
+  const seoDescription = PostData.data.metadescription || 'Strategically'
+  console.log('PostData',props)
   return(
     <>
     <Helmet>
@@ -44,17 +45,17 @@ const BlogTemplate = (props)=>{
         <div className="blog-banner d-flex flex-column align-items-center text-center">
             <div className="w-100 ban-img">
             <Img
-                    fluid={PageData.data.featuredimage.localFile.childImageSharp.fluid}
+                    fluid={PostData.data.featuredimage.localFile.childImageSharp.fluid}
                 />
             </div>
             <div className="position-absolute pl-2 pr-2 text-container">
                 <div className="d-flex justify-content-center mt-4 mb-5">
                 <Img
-                    fluid={PageData.data.featuredimage.localFile.childImageSharp.fluid}
+                    fluid={PostData.data.featuredimage.localFile.childImageSharp.fluid}
                 />
                     </div>
-                    {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="text-white text-center w-100 mt-20" ></div>}
-                    {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }} className="text-center w-100 mb-10 mt-10 text-white" ></div>}
+                    {PostData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.title.html }} className="text-white text-center w-100 mt-20" ></div>}
+                    {PostData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.sub_title.html }} className="text-center w-100 mb-10 mt-10 text-white" ></div>}
                     
                         <button className="btn btn btn-blue-3 header-btn-2 pt-10 pb-10 pl-12 pr-12 font-size-3 rounded-5 text-uppercase w-auto border-0">
                             Get Your Quote in Seconds
@@ -66,8 +67,8 @@ const BlogTemplate = (props)=>{
               <div className="row blog-content d-flex flex-wrap mt-5 pt-3">  
               <div className="col-lg-2 col-xs-12">&nbsp;</div>
                 <div className="col-lg-8 col-xs-12 text-left blog-content-inner">
-                {PageData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.description.html }} className="w-100 my-2" ></div>}
-                    {PageData.data.body.map((item, index)=>{
+                {PostData.data.description.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.description.html }} className="w-100 my-2" ></div>}
+                    {PostData.data.body.map((item, index)=>{
                       
                         const { slice_type, primary } = item
                        {
@@ -94,47 +95,14 @@ const BlogTemplate = (props)=>{
                 {/* <div className="col-lg-2 col-xs-12 blog-social "><PostShare/></div> */}
               </div>
       </div>
-      {/* <div className="d-flex justify-content-center align-items-center text-center bg-light pt-10 pb-8 border-top border-bottom">
-        <BoxedContent data={PageData.data.BoxedContent}/>
-      </div> */}
-      {/* <div className="d-flex pt-20 pb-8">
-    <div className="container">
-        <div className="text-center mb-10"><h2>Continue Reading</h2></div>
-        <div className="row">
-            <div className="col-lg-4 col-md-6 col-xs-12">
-                    <div className="post-block mb-10">
-                        <div className=""><a href="#"><img src={postimg1} alt="" className="w-100 rounded"/></a></div>
-                            <div className="mt-8 mb-8"> <h4>All the Reasons to Get Life Insurance</h4></div>
-                            <div className="mb-6"><img src={stratagicsicon} alt="" className="rounded-pill mr-5"/><span>Team Strategically</span></div>
-                            <p>Everyone’s situation is unique, but here are some things to keep in mind when pondering life insurance.</p>
-                        </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-xs-12">
-                    <div className="post-block mb-10">
-                        <div className=""><a href="#"><img src={postimg1} alt="" className="w-100 rounded"/></a></div>
-                            <div className="mt-8 mb-8"> <h4>Why Did I Get Denied for Life Insurance?</h4></div>
-                            <div className="mb-6"><img src={stratagicsicon} alt="" className="rounded-pill mr-5"/><span>Team Strategically</span></div>
-                            <p>Everyone’s situation is unique, but here are some things to keep in mind when pondering life insurance.</p>
-                        </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-xs-12">
-                    <div className="post-block mb-10">
-                        <div className=""><a href="#"><img src={postimg1} alt="" className="w-100 rounded"/></a></div>
-                            <div className="mt-8 mb-8"> <h4>How Much Does a Funeral Cost?</h4></div>
-                            <div className="mb-6"><img src={stratagicsicon} alt="" className="rounded-pill mr-5"/><span>Team Strategically</span></div>
-                            <p>Everyone’s situation is unique, but here are some things to keep in mind when pondering life insurance.</p>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div> */}
+      
     </div>
     </PageWrapper>
     </>
 )}
 export const query = graphql`
-query getPageData($ID: String) {
-  PageData : prismicBlog(id: {eq: $ID}) {
+query getPosteData($uid: String) {
+  PostData : prismicBlog(uid: {eq: $uid}) {
       data {
         featuredimage {
           localFile {
