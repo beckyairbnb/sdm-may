@@ -105,7 +105,7 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 `)
 const DEFAULT_BLOG_BASE_PATH = '/blog';
-const DEFAULT_BLOG_POSTS_PER_PAGE = 3;
+const DEFAULT_BLOG_POSTS_PER_PAGE = 6;
 
 const basePath = DEFAULT_BLOG_BASE_PATH;
 const blogs = data.Blogs.edges;
@@ -145,7 +145,7 @@ categories.forEach((cat) => {
   paginate({
     createPage,
     items: blogsWithCat,
-    itemsPerPage: 3,
+    itemsPerPage: postsPerPage,
     pathPrefix: categoryPath,
     component: path.resolve( './src/templates/CategoryTemplate.js'),
     context: {
@@ -161,7 +161,7 @@ categories.forEach((cat) => {
 paginate({
   createPage,
   items: blogs,
-  itemsPerPage: 3,
+  itemsPerPage: postsPerPage,
   pathPrefix: basePath,
   component: path.resolve( './src/templates/BlogListTemplate.js'),
   context: {
