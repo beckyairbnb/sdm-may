@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet";
 import Img from "gatsby-image"
 import useIntersectionObserver from '@react-hook/intersection-observer'
@@ -57,9 +57,9 @@ const BlogTemplate = (props)=>{
                     {PostData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.title.html }} className="text-white text-center w-100 mt-20" ></div>}
                     {PostData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.sub_title.html }} className="text-center w-100 mb-10 mt-10 text-white" ></div>}
                     
-                        <button className="btn btn btn-blue-3 header-btn-2 pt-10 pb-10 pl-12 pr-12 font-size-3 rounded-5 text-uppercase w-auto border-0">
-                            Get Your Quote in Seconds
-                        </button>
+                        <Link to="/pricing/" className="btn btn btn-blue-3 header-btn-2 pt-10 pb-10 pl-12 pr-12 font-size-3 rounded-5 text-uppercase w-auto border-0">
+                          Order content online
+                        </Link>
             </div>
         </div>
     </div>

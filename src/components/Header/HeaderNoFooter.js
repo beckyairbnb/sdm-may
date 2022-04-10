@@ -4,8 +4,10 @@ import { Container } from "react-bootstrap";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import GlobalContext from "../../context/GlobalContext";
-
+import Logo from "../Logo";
 import { useStaticQuery, graphql, Link } from "gatsby"
+
+import logoB from "../../assets/image/logo.png";
 
 const SiteHeader = styled.header``;
 
@@ -59,7 +61,8 @@ const HeaderNoFooter = () => {
             <div className="brand-logo mt-3 mt-md-0">
             {/* <img src={logoB} alt="" className="light-version-logo" /> */}
             <Link to="/">
-            <GatsbyImage image={MyLogo} alt="Strategically | Content Writing Agency"/>
+            <Logo />
+            {/* <GatsbyImage image={MyLogo} alt="Strategically | Content Writing Agency"/> */}
             </Link>
             </div>
 
@@ -79,4 +82,9 @@ const HeaderNoFooter = () => {
     </>
   );
 };
+
+const LogoImg = styled.img`
+max-height:80px;
+`
+
 export default HeaderNoFooter;

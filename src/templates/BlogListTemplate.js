@@ -6,6 +6,7 @@ import BlogSidebar from "../components/blog/blogsidebar";
 import BlogIndex from "../components/blog/blogindex";
 import PageWrapper from "../components/PageWrapper";
 import imgFavicon from "../assets/favicon.png";
+import Pagination from '../components/Pagination';
 const BlogListTemplate = (props) => {
     const { data, pageContext, path, location } = props
     const {
@@ -49,6 +50,7 @@ const BlogListTemplate = (props) => {
                             </div>
                             <div className="col-lg-9 col-xs-12">
                                 <BlogIndex data={blogsData} />
+                                <Pagination data={pageContext} />
                                 {/* <Pagination>
                                     <ul>
                                         <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" /></svg></a></li>
@@ -75,7 +77,7 @@ export default BlogListTemplate
 
 export const BlogContent = styled.div`
 `;
-export const Pagination = styled.div`
+export const Pagination2 = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;

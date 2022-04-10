@@ -5,7 +5,10 @@ import { Helmet } from "react-helmet";
 import BlogSidebar from "../components/blog/blogsidebar";
 import BlogIndex from "../components/blog/blogindex";
 import PageWrapper from "../components/PageWrapper";
+import Pagination from '../components/Pagination';
+
 import imgFavicon from "../assets/favicon.png";
+
 const CategoryTemplate = (props) => {
     const { data, pageContext, path, location } = props
     const {
@@ -49,16 +52,7 @@ const CategoryTemplate = (props) => {
                             </div>
                             <div className="col-lg-9 col-xs-12">
                                 <BlogIndex data={blogsData} />
-                                {/* <Pagination>
-                                    <ul>
-                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" /></svg></a></li>
-                                        <li><a href="#" className="active">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" /></svg></a></li>
-                                    </ul>
-                                </Pagination> */}
+                                <Pagination data={pageContext} />
                             </div>
                         </div>
                         
@@ -74,102 +68,4 @@ export default CategoryTemplate
 
 
 export const BlogContent = styled.div`
-`;
-export const Pagination = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-text-align:center;
-margin:30px 0;
-ul{
-    margin:0;
-    padding:0;
-}
-ul > li{
-    list-style:none;
-    display: inline-block;
-    margin-bottom:10px;
-    &:hover a,  a.active{
-        background-color: #FF0088;
-        color:#fff;
-        line-height: 20px;
-        font-size: 16px;
-    }  
-    &:hover svg{
-        fill:#fff;
-    }
-}
-ul > li > a{
-    padding:7px 12px;
-    color:#999;
-    border-radius:3px;
-    margin-left:15px;
-    @media (max-width: 535px) {
-        margin-left:9px;
-    }
-    svg{
-        fill:#a0a5bd;
-    }
-}
-`;
-
-export const data = graphql`
-  query($skip: Int!, $limit: Int!, $uid: String!) {
-    AllCats : allPrismicBlogCategory {
-        edges {
-          node {
-            uid
-            data {
-              name {
-                text
-              }
-            }
-          }
-        }
-      }
-    allPrismicBlog(
-      filter: {data: {category: {uid: {eq: $uid}}}}
-      sort: { fields: last_publication_date, order: DESC }
-      skip: $skip
-      limit: $limit
-    ) {
-      edges {
-        node {
-          uid
-          id
-          data {
-            title {
-              html
-              text
-            }
-            description {
-              text
-            }
-            seotitle
-            metadescription
-            featuredimage {
-              gatsbyImageData(layout: FULL_WIDTH)
-              fluid {
-                src
-              }
-            }
-            category {
-                document {
-                  ... on PrismicBlogCategory {
-                    id
-                    uid
-                    data {
-                      name {
-                        text
-                        html
-                      }
-                    }
-                  }
-                }
-              }
-          }
-        }
-      }
-    }
-  }
 `;

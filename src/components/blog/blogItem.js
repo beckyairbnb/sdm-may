@@ -8,7 +8,7 @@ const BlogItem = ({ data }) => {
     const { title, description, featuredimage, category } = data.node.data
     const BlogImage = getImage(featuredimage)
     return (
-        <div className="col-lg-4 col-md-6 col-xs-12">
+        <div className="col-lg-4 col-md-6 col-xs-12 mb-5 pb-5">
         <Item>
             <ItemImage>
             <Link to={`/blog/${category.document.uid}/${data.node.uid}`}>

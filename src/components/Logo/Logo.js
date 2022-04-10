@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-import logoB from "../../assets/image/logo.png";
-import logoW from "../../assets/image/logo.png";
+import logoB from "../../assets/image/sitelogo.png";
+import logoW from "../../assets/image/sitelogo.png";
 
 const Logo = ({ className = "", ...rest }) => {
   return (
