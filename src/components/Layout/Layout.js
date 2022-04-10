@@ -93,7 +93,6 @@ const Layout = ({ children, pageContext }) => {
 
     return () => {};
   }, [gContext]);
-  console.log('Page Lauout ',pageContext.layout)
   if (pageContext.layout === "blog") {
     return (
       <>

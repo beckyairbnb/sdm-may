@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Link } from "gatsby"
 const LandingBreadcrumbs = (props) => {
     const { makemodels, partname, bcrumb } = props
-    console.log('Brrmdjcd', bcrumb)
     return(
         <Container>
             <div className="container">

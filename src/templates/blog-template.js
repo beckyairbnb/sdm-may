@@ -19,7 +19,7 @@ const BlogTemplate = (props)=>{
   const { PostData } = data
   const seoTitle = PostData.data.seotitle || 'Strategically'
   const seoDescription = PostData.data.metadescription || 'Strategically'
-  console.log('PostData',props)
+
   return(
     <>
     <Helmet>

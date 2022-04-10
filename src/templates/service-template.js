@@ -43,7 +43,6 @@ const ServiceTemplate = (props) => {
     { name: "Writer Services", link: "/writer-services/" },
     { name: PageData.data.short_title, link: null },
   ];
-  console.log('blog image', PageData.data.block_image.localFile)
   const SeoContentImage = (slug) => {
     if (slug === "seo-content-writing") {
       return <img src={SeoContentImg} alt="" className="stars-img my-10" />;
@@ -241,7 +240,6 @@ const ServiceTemplate = (props) => {
                 )}
                 {PageData.data.body.map((item, index) => {
                   const { slice_type, primary, items } = item;
-                  console.log(" slice_type", slice_type);
                   {
                     if (slice_type === "cta_block") {
                       return <CTA data={primary} />;
