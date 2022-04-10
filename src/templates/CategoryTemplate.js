@@ -69,3 +69,64 @@ export default CategoryTemplate
 
 export const BlogContent = styled.div`
 `;
+
+export const data = graphql`
+  query($skip: Int!, $limit: Int!, $uid: String!) {
+    AllCats : allPrismicBlogCategory {
+        edges {
+          node {
+            uid
+            data {
+              name {
+                text
+              }
+            }
+          }
+        }
+      }
+    allPrismicBlog(
+      filter: {data: {category: {uid: {eq: $uid}}}}
+      sort: { fields: last_publication_date, order: DESC }
+      skip: $skip
+      limit: $limit
+    ) {
+      edges {
+        node {
+          uid
+          id
+          data {
+            title {
+              html
+              text
+            }
+            description {
+              text
+            }
+            seotitle
+            metadescription
+            featuredimage {
+              gatsbyImageData(layout: FULL_WIDTH)
+              fluid {
+                src
+              }
+            }
+            category {
+                document {
+                  ... on PrismicBlogCategory {
+                    id
+                    uid
+                    data {
+                      name {
+                        text
+                        html
+                      }
+                    }
+                  }
+                }
+              }
+          }
+        }
+      }
+    }
+  }
+`;
