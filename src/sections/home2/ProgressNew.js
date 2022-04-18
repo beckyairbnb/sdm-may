@@ -69,7 +69,7 @@ const ProgressNew = ({ className, ...rest }) => {
                   <div className="">
                     <h3 className="font-size-8 mb-6">Create</h3>
                     <p className="font-size-5 line-height-28 mb-0">
-                    Your articles are prepared by a Native English writer, edited, and passed through a plagiarism checker.
+                    Your articles are prepared by an expert writer, proofread and passed through a plagiarism checker. 
                     </p>
                   </div>
                 </GridItem>
@@ -85,7 +85,7 @@ const ProgressNew = ({ className, ...rest }) => {
                   <div className="">
                     <h3 className="font-size-8 mb-6">Optimise</h3>
                     <p className="font-size-5 line-height-28 mb-0">
-                    90% of content never ranks. we think that's silly. if it won't rank, we won't write it.
+                    We integrate your provided keywords into your blog posts to ensure they are optimised for SEO.
                     </p>
                   </div>
                 </GridItem>
