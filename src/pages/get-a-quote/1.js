@@ -34,9 +34,7 @@ const Step1 = () => {
             payload: 1,
         });
         return navigate('/get-a-quote/2/')
-      }
-      console.log('Words', state.words)
-      console.log('Content Words', state.step)        
+      }     
         return (
             <>
               <PageWrapper

@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import styled from 'styled-components';
 
 const BlogSidebar = ({data}) => {
-    console.log('blog list',data)
     return (
         <>
             <Sidebar>

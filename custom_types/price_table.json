@@ -1,62 +1,96 @@
 {
-  "Main" : {
-    "uid" : {
-      "type" : "UID",
-      "config" : {
-        "label" : "uid"
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "uid"
       }
     },
-    "body" : {
-      "type" : "Slices",
-      "fieldset" : "Slice zone",
-      "config" : {
-        "labels" : null,
-        "choices" : {
-          "price_table_data" : {
-            "type" : "Slice",
-            "fieldset" : "Price Table Data",
-            "description" : "Price Table Data",
-            "icon" : "apps",
-            "display" : "grid",
-            "non-repeat" : {
-              "table_content" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "multi" : "paragraph,list-item",
-                  "label" : "Table Content"
+    "heading": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Heading"
+      }
+    },
+    "sub_heading": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading4",
+        "label": "Sub Heading"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": null,
+        "choices": {
+          "price_table_data": {
+            "type": "Slice",
+            "fieldset": "Price Table Data",
+            "description": "Price Table Data",
+            "icon": "apps",
+            "display": "grid",
+            "non-repeat": {
+              "table_content": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,list-item",
+                  "label": "Table Content"
                 }
               }
             },
-            "repeat" : {
-              "monthly_words" : {
-                "type" : "Number",
-                "config" : {
-                  "label" : "Monthly Words",
-                  "placeholder" : "Monthly Words"
+            "repeat": {
+              "monthly_words": {
+                "type": "Number",
+                "config": {
+                  "label": "Monthly Words",
+                  "placeholder": "Monthly Words"
                 }
               },
-              "month_to_month_price" : {
-                "type" : "Number",
-                "config" : {
-                  "label" : "Month to Month Price"
+              "month_to_month_price": {
+                "type": "Number",
+                "config": {
+                  "label": "Month to Month Price"
                 }
               },
-              "annual_price" : {
-                "type" : "Number",
-                "config" : {
-                  "label" : "Annual Price"
+              "annual_price": {
+                "type": "Number",
+                "config": {
+                  "label": "Annual Price"
                 }
               },
-              "button_text" : {
-                "type" : "Text",
-                "config" : {
-                  "label" : "Button Text"
+              "button_text": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Text"
                 }
               },
-              "button_link" : {
-                "type" : "Text",
-                "config" : {
-                  "label" : "Button Link"
+              "button_link": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Link"
+                }
+              }
+            }
+          },
+          "faq_block": {
+            "type": "Slice",
+            "fieldset": "FAQ Block",
+            "description": "FAQ Block",
+            "icon": "apps",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "faq": {
+                "type": "Link",
+                "config": {
+                  "select": "document",
+                  "customtypes": [
+                    "f"
+                  ],
+                  "label": "FAQ"
                 }
               }
             }

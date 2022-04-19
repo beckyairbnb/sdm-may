@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { graphql, Link } from "gatsby"
 import Slider, { Range } from 'rc-slider';
 import Helmet from "react-helmet";
-
+import HappyClients from "../components/happyClients";
 import PageWrapper from "../components/PageWrapper";
 import 'rc-slider/assets/index.css';
 
@@ -14,8 +14,24 @@ import styled from "styled-components";
 
 const PricePage = ({ data }) => {
   const { PriceData } = data
-  const { items } = PriceData.data.body[0]
+  // const { items } = PriceData.data.body[0]
+ 
+
+  const Priceitems = PriceData.data.body.filter((item) => {
+    return item.slice_type === "price_table_data";
+  });
+
+  const Faqitems = PriceData.data.body.filter((item) => {
+    return item.slice_type === "faq_block";
+  });
+
+  const items = Priceitems[0].items
+  const fitems = Faqitems[0].items
+
   const firstItem = items[0]
+
+
+
 
   const [disabled, setDisabled] = React.useState(false);
   const [range, setRange] = React.useState(false);
@@ -31,20 +47,27 @@ const PricePage = ({ data }) => {
 
 
 
+
+
   useEffect(() => {
     console.log('selected item', value)
     const selectedItem = items.filter((item) => {
       return item.monthly_words === value
     })
-    if (selectedOption === 'monthly') {
-      setSelectedValue(selectedItem[0].month_to_month_price)
+    console.log('selectedItem',selectedItem[0])
+    if(selectedItem[0]){
+      if (selectedOption === 'monthly') {
+        setSelectedValue(selectedItem[0].month_to_month_price)
+      }
+      else if (selectedOption === 'yearly') {
+        setSelectedValue(selectedItem[0].annual_price)
+      }
+      setButtonText(selectedItem[0].button_text)
+      setButtonLink(selectedItem[0].button_link)
     }
-    else if (selectedOption === 'yearly') {
-      setSelectedValue(selectedItem[0].annual_price)
-    }
-    setButtonText(selectedItem[0].button_text)
-    setButtonLink(selectedItem[0].button_link)
-    console.log('Option value', selectedOption)
+    
+    
+    // console.log('Option value', selectedOption)
   }, [value, selectedOption, selectedValue, buttonText, buttonLink])
 
   const checkboxChangeHandler = (event) => {
@@ -73,14 +96,25 @@ const PricePage = ({ data }) => {
           footerStyle: "style2",
         }}
       >
+        
         <Container>
+        
           <div className="App range-slider pt-24">
+          <div className="row justify-content-center">
+          <div className="col-xl-8 col-lg-9">
+            <div className="text-center mb-13 mb-lg-12">
+
+              {PriceData.data.heading.text && <h2 className="font-size-9 text-dark-cloud mb-0">{PriceData.data.heading.text}</h2>}
+              {PriceData.data.sub_heading.text && <h4 className="font-size-6 text-dark-cloud mb-0">{PriceData.data.sub_heading.text}</h4>}
+            </div>
+          </div>
+        </div>
             <PricingSection className="mb-10">
               <Slider className="mb-10"
                 min={firstItem.monthly_words}
                 max={items[items.length - 1].monthly_words}
                 defaultValue={items[0].monthly_words}
-                marks={{ 2000: 2000, 4000: 4000, 8000: 8000, 12000: 12000, 16000: 16000, 20000: 20000, 30000: 30000, 50000: 50000, 100000: 100000 }}
+                marks={{ 4000: 4000, 8000: 8000, 12000: 12000, 16000: 16000, 20000: 20000, 24000: 24000, 28000: 28000, 32000: 32000, 36000: 36000, 40000: 40000 }}
                 step={null}
                 onChange={(nextValues) => {
                   setValue(nextValues);
@@ -143,12 +177,15 @@ const PricePage = ({ data }) => {
                   </PricingTable>
                 </div>
                 <div className="col-lg-8">
-                  <FaqAccordion />
+                  <FaqAccordion data={fitems} />
                 </div>
               </div>
             </PricingSection>
           </div>
         </Container>
+        <div className="container-fluid mt-20 pt-20 mb-10">
+        <HappyClients />
+        </div>
       </PageWrapper>
     </>
   );
@@ -251,32 +288,45 @@ label:nth-of-type(n) + input[type="radio"]:checked + .switch {
 	transform: translateX(123px);
   
 }
-
-
-
-// .switch {
-// 	position: absolute;
-// 	top:0px;
-// 	left:0px;
-// 	height: 40px;
-// 	width: 50%;
-// 	background-color: #1a284b;color:#fff;
-// 	border-radius: 5px;
-// 	-webkit-transition: -webkit-transform 0.5s;
-// 	-moz-transition: -moz-transform 0.5s;
-// 	transition: transform 0.5s;
- 
-
-// }
-
 `
 export const query = graphql`
 query PricePage {
   PriceData : prismicPriceTable(id: {eq: "4ae29779-cc90-59bc-a46a-84a259e1f968"}) {
     data {
-      body {
+      heading {
+        text
+        html
+      }
+      sub_heading {
+        text
+        html
+      }
+      body {   
+        ... on PrismicPriceTableDataBodyFaqBlock {
+          id
+          slice_type
+          items {
+            faq {
+              document {
+                ... on PrismicF {
+                  id
+                  data {
+                    question {
+                      text
+                    }
+                    answer {
+                      text
+                      html
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }     
         ... on PrismicPriceTableDataBodyPriceTableData {
           id
+          slice_type
           items {
             monthly_words
             month_to_month_price
