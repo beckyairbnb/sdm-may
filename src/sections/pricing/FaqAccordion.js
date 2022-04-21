@@ -7,7 +7,7 @@ const FaqAccordion = ({data}) => {
   return (
     <>
       <FaqBlock>
-        <div className="w-100 mt-15 p-10">
+        <div className="w-100 p-5">
           <h2 className="font-size-9 text-dark-cloud mb-0 text-center">
             Frequently asked questions
           </h2>
@@ -39,8 +39,9 @@ export default FaqAccordion;
 
 const FaqBlock = styled.div`
   background-color: #f4f8f9;
-  border-radius: 32px;
-
+  border-radius: 20px;
+  height:100%;
+  min-height:1000px;
   .Collapsible {
     background-color: #fff;
     padding: 20px;

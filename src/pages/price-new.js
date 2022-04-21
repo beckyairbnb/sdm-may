@@ -37,12 +37,12 @@ const PricePage = ({ data }) => {
   const [range, setRange] = React.useState(false);
   const [reverse, setReverse] = React.useState(false);
   const [vertical, setVertical] = React.useState(false);
-  const [value, setValue] = React.useState(2000);
+  const [value, setValue] = React.useState(firstItem.monthly_words);
   const [values, setValues] = React.useState([0, 100]);
-  const [selectedOption, setSelectedOption] = React.useState('monthly');
+  const [selectedOption, setSelectedOption] = React.useState('yearly');
   const [buttonText, setButtonText] = React.useState(firstItem.button_text);
   const [buttonLink, setButtonLink] = React.useState(firstItem.button_link);
-  const [selectedValue, setSelectedValue] = React.useState(firstItem.month_to_month_price);
+  const [selectedValue, setSelectedValue] = React.useState(selectedOption === 'yearly' ? firstItem.annual_price : firstItem.month_to_month_price);
 
 
 
@@ -67,7 +67,6 @@ const PricePage = ({ data }) => {
     }
     
     
-    // console.log('Option value', selectedOption)
   }, [value, selectedOption, selectedValue, buttonText, buttonLink])
 
   const checkboxChangeHandler = (event) => {
@@ -99,18 +98,17 @@ const PricePage = ({ data }) => {
         
         <Container>
         
-          <div className="App range-slider pt-24">
+          <div className="pt-24 overflow-hidden">
           <div className="row justify-content-center">
           <div className="col-xl-8 col-lg-9">
             <div className="text-center mb-13 mb-lg-12">
-
-              {PriceData.data.heading.text && <h2 className="font-size-9 text-dark-cloud mb-0">{PriceData.data.heading.text}</h2>}
-              {PriceData.data.sub_heading.text && <h4 className="font-size-6 text-dark-cloud mb-0">{PriceData.data.sub_heading.text}</h4>}
+              {PriceData.data.heading.text && <h1 className="text-center mb-0">{PriceData.data.heading.text}</h1>}
+              {PriceData.data.sub_heading.text && <p class="text-center text-xl-center">{PriceData.data.sub_heading.text}</p>}
             </div>
           </div>
         </div>
-            <PricingSection className="mb-10">
-              <Slider className="mb-10"
+            <PricingSection className="mb-4">
+              <Slider className="mb-2"
                 min={firstItem.monthly_words}
                 max={items[items.length - 1].monthly_words}
                 defaultValue={items[0].monthly_words}
@@ -120,7 +118,7 @@ const PricePage = ({ data }) => {
                   setValue(nextValues);
                 }}
               />
-              <div className="row">
+              <div className="row mt-10 mb-10">
                 <div className="col-lg-4">
                   <PricingTable className="w-100 d-flex flex-column align-items-center p-12">
                     <PricingHeader>
@@ -183,7 +181,7 @@ const PricePage = ({ data }) => {
             </PricingSection>
           </div>
         </Container>
-        <div className="container-fluid mt-20 pt-20 mb-10">
+        <div className="container-fluid mb-10 mt-lg-30">
         <HappyClients />
         </div>
         <div className="bg-dark-cloud pt-20 pt-lg-20 pb-15 pb-lg-20">
@@ -193,10 +191,6 @@ const PricePage = ({ data }) => {
               <div className="col-xl-9 col-lg-9 col-md-10 mt-n13 mt-md-n8 mt-lg-n0 d-flex" >
                 <div
                   className="dark-mode-texts"
-                  data-aos="fade-left"
-                  data-aos-duration={600}
-                  data-aos-delay={500}
-                  data-aos-once="true"
                 >
            
                   <h2 className="font-size-10 mb-8 letter-spacing-n83 pr-xs-22 pr-sm-18 pr-md-0 text-center">
@@ -210,7 +204,7 @@ const PricePage = ({ data }) => {
                       className="btn btn btn-dodger-blue-2 header-btn rounded-pill mt-10"
                       href="https://calendly.com/becky-strategically/intro-meeting" target="_blank"
                     >
-                      {buttonText}
+                      Schedule a call
                     </a>
                     </div>
                 </div>
@@ -234,6 +228,12 @@ const Container = styled.div`
 
 const PricingSection = styled.div`
 width:100%;
+max-width:92% !important;
+margin:auto;
+.rc-slider{
+  height:75px;
+}
+
 .rc-slider-rail {height:8px;}
 .rc-slider-track {height:8px;}
 .rc-slider-handle {width: 22px; height: 22px; margin-top: -8px;background-color:#ff0088;border-color:#ff0088;opacity: 1;}
@@ -246,7 +246,7 @@ const PricingTable = styled.div`
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  margin:60px 0px 30px !important;
+  margin:0px 0px 30px !important;
 `;
 
 const PricingHeader = styled.div`
