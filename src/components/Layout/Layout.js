@@ -15,6 +15,8 @@ import ModalVideo from "../ModalVideo";
 
 import GlobalContext from "../../context/GlobalContext";
 
+import FooterCta from "../../sections/footercta";
+
 import imgFavicon from "../../assets/favicon.png";
 
 import "../../assets/fonts/fontawesome-5/webfonts/fa-brands-400.ttf";
@@ -303,7 +305,7 @@ const Layout = ({ children, pageContext }) => {
         <div className="site-wrapper overflow-hidden">   
           <HeaderNoFooter/>  
           {children}
-          
+          <FooterCta/>
           <div class="container mt-5 pt-6 ">
           <div class="row">
           <div className="col-lg-12 border-top border-dark-light mt-5 pt-6 pb-0">

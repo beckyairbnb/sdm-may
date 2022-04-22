@@ -12,6 +12,7 @@ import CTA from "../sections/home2/CTA";
 import Helmet from "react-helmet";
 
 
+
 const Index = (props) => {
   const { data } = props
   const { AllServices } = data

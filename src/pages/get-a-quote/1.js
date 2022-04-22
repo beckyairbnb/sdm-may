@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import PageWrapper from "../../components/PageWrapper";
 import FormHead from '../../components/FormHead'
-import Testimonial from "../../sections/home2/Testimonial";
+import HappyClients from '../../components/happyClients';
 import { GlobalDispatchContext, GlobalStateContext } from "../../context/GlobalContext";
 
 
@@ -108,8 +108,10 @@ const Step1 = () => {
                   </div>      
             </div>
             </div> 
-            <Testimonial className="pt-lg-5 pb-12 pb-lg-5" title={false} />
-                  </PageContainer>              
+                  </PageContainer> 
+              <div className="container-fluid mt-20 pt-20 mb-10">
+                <HappyClients />
+              </div>             
               </PageWrapper>
             </>
     )

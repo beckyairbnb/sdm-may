@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
 import { Testimonials } from "../../data/testimonials"
+import HappyClients from "../../components/happyClients";
 
 
 import TestimonialCard1 from "../../components/TestimonialCard1";
@@ -87,7 +88,7 @@ const Testimonial = ({ className, title, ...rest }) => {
 
   return (
     <>
-      <div className={className} {...rest}>
+      <div className="container-fluid">
         <div className="container">
           {/* <!-- Section Title --> */}
           {title && (
@@ -113,7 +114,7 @@ const Testimonial = ({ className, title, ...rest }) => {
                 className="col-lg-5 col-md-3"
               
               >
-                <div className="testimonial-one-button text-center text-md-right mt-3 mt-md-18">
+                {/* <div className="testimonial-one-button text-center text-md-right mt-3 mt-md-18">
                   <button
                     type="button"
                     className="slick-prev"
@@ -132,17 +133,19 @@ const Testimonial = ({ className, title, ...rest }) => {
                   >
                     <i className="icon icon-minimal-right"></i>
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
           )}
+           </div>
           {/* <!-- End Section Title --> */}
           {/* <!-- category slider --> */}
+          <div className="container-fluid mt-25">
           <div className="row">
             <div className="col-12">
-              <div className="testimonial-one">
-                <Slider
+                <HappyClients/>
+                {/* <Slider
                   ref={elSlider}
                   {...slickSettings}
                   css={`
@@ -156,12 +159,12 @@ const Testimonial = ({ className, title, ...rest }) => {
                       <TestimonialCard1 options={item} />
                     </div>
                   ))}
-                </Slider>
-              </div>
+                </Slider> */}
             </div>
           </div>
+          </div>
           {/* <!-- End category slider --> */}
-        </div>
+       
       </div>
     </>
   );

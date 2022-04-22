@@ -2,13 +2,16 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import ClientsLogos from "../ClientsLogos";
+import FooterCta from "../../sections/footercta";
 
 
 const Footer = ({ className, ...rest }) => {
   return (
     <>
+      <FooterCta/>
       <div className={`pt-13 ${className}`} {...rest}>
         <ClientsLogos/>
+        
         <div className="container pt-lg-12 pb-8 pb-lg-12 ">
           <div className="row">
             <div className="col-lg-12">
