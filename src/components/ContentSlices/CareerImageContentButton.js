@@ -2,7 +2,6 @@ import React from 'react'
 import Img from "gatsby-image"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 const ImageContentButton = ({data})=>{
-    console.log('contntent data ',data.section_image.localFile)
     return(
         <div className="d-flex flex-md-row flex-sm-column justify-content-between align-items-center my-1 row">
                <div 

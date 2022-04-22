@@ -16,6 +16,7 @@ import ModalVideo from "../ModalVideo";
 import GlobalContext from "../../context/GlobalContext";
 
 import FooterCta from "../../sections/footercta";
+import ClientsLogos from "../ClientsLogos";
 
 import imgFavicon from "../../assets/favicon.png";
 
@@ -305,6 +306,7 @@ const Layout = ({ children, pageContext }) => {
         <div className="site-wrapper overflow-hidden">   
           <HeaderNoFooter/>  
           {children}
+          <ClientsLogos/>
           <FooterCta/>
           <div class="container mt-5 pt-6 ">
           <div class="row">

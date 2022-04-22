@@ -3,15 +3,12 @@ import React from "react";
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/b2b/Hero";
 import Counter from "../sections/b2b/Counter";
-import Content2 from "../sections/b2b/Content2";
-import Content3 from "../sections/b2b/Content3";
 import Testimonial from "../sections/b2b/Testimonial";
 import CTA from "../sections/b2b/CTA";
 import Helmet from "react-helmet";
 import Content4 from "../sections/b2b/Content4";
 import Content5 from "../sections/b2b/Content5";
 import ContentOne from "../sections/b2b/ContentOne";
-import ContentTwo from "../sections/home3/ContentTwo";
 import ContentWidth from "../sections/b2b/ContentWidth";
 import ContentWidth2 from "../sections/b2b/ContentWidth2";
 

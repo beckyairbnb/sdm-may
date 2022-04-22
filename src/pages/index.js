@@ -8,7 +8,6 @@ import Progress from "../sections/home2/Progress";
 import Content2 from "../sections/home2/Content2";
 import Content3 from "../sections/home2/Content3";
 import Testimonial from "../sections/home2/Testimonial";
-import CTA from "../sections/home2/CTA";
 import Helmet from "react-helmet";
 
 
@@ -65,7 +64,7 @@ const Index = (props) => {
             </div>
          </div>
       </div>
-        <CTA className="bg-images" />
+        {/* <CTA className="bg-images" /> */}
       </PageWrapper>
     </>
   );

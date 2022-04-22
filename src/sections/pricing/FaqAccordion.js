@@ -3,24 +3,13 @@ import styled from "styled-components";
 import Collapsible from "react-collapsible";
 
 const FaqAccordion = ({data}) => {
-  console.log('FAQ accordin', data)
   return (
     <>
       <FaqBlock>
         <div className="w-100 p-5">
-          <h2 className="font-size-9 text-dark-cloud mb-0 text-center">
+          <h2 className="font-size-9 text-dark-cloud text-center mb-6 mt-4">
             Frequently asked questions
-          </h2>
-
-          <h4 className="font-size-7 text-dark-cloud mb-5 text-center">
-            Do you offer revisions?
-          </h4>
-
-          <p className="font-size-5 pr-md-10 pr-lg-0 mb-4 text-center">
-            We want you to love your content. Our clients rarely use them, but
-            we do offer unlimited free revisions that don't count against your
-            word count for the month.
-          </p>
+          </h2>         
 
           {data && data.map((item, index)=>{
             return(
@@ -41,7 +30,6 @@ const FaqBlock = styled.div`
   background-color: #f4f8f9;
   border-radius: 20px;
   height:100%;
-  min-height:1000px;
   .Collapsible {
     background-color: #fff;
     padding: 20px;
