@@ -67,7 +67,7 @@ const ServiceTemplate = (props) => {
             <>
               <a
                 className="btn btn btn-dodger-blue-2 header-btn rounded-5"
-                href={"/get-a-quote/1/"}
+                href={"/pricing/"}
               >
                 View Pricing
               </a>

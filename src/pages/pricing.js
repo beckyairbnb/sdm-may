@@ -87,7 +87,7 @@ const PricePage = ({ data }) => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/1/"}>
+            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing/"}>
               View Pricing
             </a>
             </>
@@ -166,10 +166,16 @@ const PricePage = ({ data }) => {
                       </ul>
                     </Features>
                     <a
-                      className="btn btn btn-dodger-blue-2 header-btn rounded-pill"
+                      className="btn btn btn-dodger-blue-2 header-btn rounded-pill mb-5"
                       href={buttonLink}
                     >
                       {buttonText}
+                    </a>
+                    <a
+                      className="btn btn btn-dodger-blue-2 header-btn rounded-pill"
+                      href="https://calendly.com/becky-strategically/intro-meeting"
+                    >
+                      Schedule a call
                     </a>
                   </PricingTable>
                 </div>

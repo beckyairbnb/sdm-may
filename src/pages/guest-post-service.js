@@ -20,7 +20,7 @@ const Content = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-              <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/1/"}>
+              <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing/"}>
                 View Pricing
               </a>
             </>
