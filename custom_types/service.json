@@ -202,7 +202,7 @@
               "content": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph,strong,em,embed,list-item,o-list-item",
+                  "multi": "paragraph, strong, em, hyperlink, embed, list-item, o-list-item",
                   "allowTargetBlank": true,
                   "label": "Content"
                 }

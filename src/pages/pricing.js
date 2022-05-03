@@ -172,7 +172,8 @@ const PricePage = ({ data }) => {
                       {buttonText}
                     </a>
                     <a
-                      className="btn btn btn-dodger-blue-2 header-btn rounded-pill"
+                      className="btn btn rounded-pill"
+                      style={{backgroundColor: "#1a284b", color:"#ffffff", height:"55px"}}
                       href="https://calendly.com/becky-strategically/intro-meeting"
                     >
                       Schedule a call
