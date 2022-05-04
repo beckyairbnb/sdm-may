@@ -67,7 +67,7 @@ const MainServiceTemplate = (props)=>{
                      {/* {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="mb-4" ></div>} */}
                      {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }}></div>}
                      <Link
-                     to="/get-a-quote/1/"
+                     to="/pricing/"
                     className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                      {/* <p>{PageData.data.cta_button_below_text}</p> */}
                      
@@ -99,19 +99,6 @@ const MainServiceTemplate = (props)=>{
          </div>
       </div>
       <HappyClients title={PageData.data.testimonials_block_heading} subtitle={PageData.data.testimonials_block_sub_text} ctatextbelow={PageData.data.testimonials_block_stars_below_text} />
-      {/* <div className="py-6 my-1">
-         <div className="container py-lg-10">
-            <div className="row justify-content-center text-center py-lg-5">
-               <div className="col-xl-8 col-lg-10 col-xs-12">
-                 {PageData.data.button_block_heading.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.button_block_heading.html }} className="w-100" ></div>}
-                 <p>{PageData.data.button_block_subtext}</p>
-                 <Link
-                     to="/get-a-quote/1/"
-                    className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
-               </div>
-            </div>
-         </div>
-      </div> */}
       <div className="py-6">
          <div className="container py-lg-10 bg-white">
             <div className="row justify-content-center text-center py-lg-5">
