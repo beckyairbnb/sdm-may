@@ -122,22 +122,7 @@ const MainServiceTemplate = (props)=>{
          </div>
       </div>
       
-      
-      {/* <div className="pt-12 bg-light">
-         <div className="container pt-10">
-            <div className="row justify-content-center text-center">
-               <div className="col-xl-8 col-lg-10 col-xs-12">
-               {PageData.data.image_block_heading.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.image_block_heading.html }} className="w-100" ></div>}
-                 <p>{PageData.data.image_block_subtext}</p>
-                  <p className="mb-md-5 mb-3"><button className="bg-transparent border-0 text-primary" onClick={() => setModalShow(true)}>See the Strategically App in action</button></p>
-               </div>
-               <div className="col-xl-10 col-lg-10 col-xs-12">
-                 <img src={phoneSec} alt="" className="stars-img"/>
-                 </div>
-            </div>
-         </div>
-      </div> */}
-      <ProgressNew className="pb-lg-21 border-top border-default-color-1" />       
+     <ProgressNew className="pb-lg-21 border-top border-default-color-1" />       
 
 
       <div className="py-14 bg-light">
@@ -334,6 +319,7 @@ query getMainServiceData($id: String!) {
             slice_type
             primary {
               button_text
+              button_link
               cta_content {
                 html
               }
