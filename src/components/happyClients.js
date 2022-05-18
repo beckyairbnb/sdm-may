@@ -1,4 +1,5 @@
 import React from "react"
+import { PrismicRichText } from "@prismicio/react";
 import Reviews from "./Testimonials"
 import starsImg from "../assets/images/stars.png";
 const HappyClients = ({title, subtitle, ctatextbelow}) => {
@@ -10,7 +11,15 @@ const HappyClients = ({title, subtitle, ctatextbelow}) => {
                     <div className="d-flex flex-column justify-content-center">
                         <div className="row d-flex justify-content-center text-center mb-3">
                             <div className="col-xl-8 col-lg-7 col-md-9">
-                                {title && title.html && <div dangerouslySetInnerHTML={{ __html: title.html }} className="w-100" ></div>}
+                            {title && title.raw && <PrismicRichText
+                                field={title.raw}
+                                components={{
+                                    heading1: ({ children }) => <h3>{children}</h3>,
+                                    heading3: ({ children }) => <h3>{children}</h3>,
+                                }}
+                                />
+                            }
+                                {/* {title && title.html && <div dangerouslySetInnerHTML={{ __html: title.html }} className="w-100" ></div>} */}
                                 {subtitle && subtitle.html && <div dangerouslySetInnerHTML={{ __html: subtitle.html }} className="w-100" ></div>}
                             </div>
                         </div> 

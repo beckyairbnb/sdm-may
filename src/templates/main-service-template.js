@@ -250,6 +250,7 @@ query getMainServiceData($id: String!) {
         }
         testimonials_block_heading {
           html
+          raw
         }
         testimonials_block_sub_text {
           html
