@@ -1,13 +1,44 @@
 import React from "react";
-
-import img1 from "../../assets/image/home-2/png/explore.png";
-import img2 from "../../assets/image/home-2/png/interview.png";
-import img3 from "../../assets/image/home-2/png/card-favorite.png";
-import imgC from "../../assets/image/home-2/png/content-2-img.png";
-import imgP from "../../assets/image/home-2/png/patterns-dot-green.png";
-import imgH from "../../assets/image/home-2/png/right-circlehalf-shape.png";
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Content2 = ({ className, ...rest }) => {
+  const { img1, img2, img3, imgC, imgP, imgH } = useStaticQuery(
+    graphql`
+      query {
+        img1: file(relativePath: {eq: "home-2/png/explore.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 36)
+          }
+        }
+        img2: file(relativePath: {eq: "home-2/png/interview.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 36)
+          }
+        }
+        img3: file(relativePath: {eq: "home-2/png/card-favorite.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 36)
+          }
+        }
+        imgC: file(relativePath: {eq: "home-2/png/content-2-img.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 475)
+          }
+        }
+        imgP: file(relativePath: {eq: "home-2/png/patterns-dot-green.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 176)
+          }
+        }
+        imgH: file(relativePath: {eq: "home-2/png/right-circlehalf-shape.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 303)
+          }
+        }
+      }
+    `
+  )
   const contentWidgetData = [
     {
       icon: img1,
@@ -41,7 +72,11 @@ const Content2 = ({ className, ...rest }) => {
                   return (
                     <li className="media align-items-center mb-12" key={index}>
                       <div className="border square-83 rounded-10 mr-9">
-                        <img src={icon} alt="" />
+                        <GatsbyImage
+                            image={getImage(icon)} 
+                            width={36} height={36}
+                        />
+                        {/* <img src={icon} alt="" /> */}
                       </div>
                       <div className="content">
                         <h5>{title}</h5>
@@ -61,13 +96,25 @@ const Content2 = ({ className, ...rest }) => {
 
             >
               <div className="l2-content-image-group-2 mb-10 mb-md-0 rounded-10">
-                <div className="img-1 position-relative text-right rounded-10">
-                  <img className="w-100 w-lg-auto" src={imgC} alt="" />
+                <div className="img-1 position-relative text-right rounded-10 border-2">
+                      <GatsbyImage
+                            image={getImage(imgC)} 
+                            width={475} height={593}
+                            className="w-100 w-lg-auto"
+                        />
                   <div className="img-2">
-                    <img className="w-100" src={imgP} alt="" />
+                        <GatsbyImage
+                            image={getImage(imgP)} 
+                            width={176} height={191}
+                            className="w-100" 
+                        />
                   </div>
                   <div className="img-3">
-                    <img className="w-100 opacity-7" src={imgH} alt="" />
+                        <GatsbyImage
+                            image={getImage(imgH)} 
+                            width={303} height={430}
+                            className="w-100 opacity-7" 
+                        />
                   </div>
                 </div>
               </div>
