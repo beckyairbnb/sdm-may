@@ -7,6 +7,7 @@ exports.onCreatePage = ({ page, actions }) => {
   const { createPage, createRedirect } = actions;
 
   const  rurls = [
+    {oldurl:'/writer-services/b2b-content-marketing-agency/',newurl: '/writer-services/b2b-content-writing-services/'},
     {oldurl:'/writer-services/writer-services/',newurl: '/writer-services/'},
     {oldurl:'/writer-services/seo-content-writing/images/mob-banner.jpg',newurl: '/writer-services/seo-content-writing/'},
     {oldurl:'/writer-services/b2b-content-writing-services/images/mob-banner.jpg',newurl: '/writer-services/b2b-content-writing-services/'},
