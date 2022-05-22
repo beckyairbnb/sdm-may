@@ -14,9 +14,7 @@ const Example = (props) => {
     
     return (
         <>
-            <Helmet>
-                <title>Strategically | Content Writing Agency</title>
-            </Helmet>
+          
             <PageWrapper
                 themeConfig={{
                     headerClassName: "site-header--menu-right",
