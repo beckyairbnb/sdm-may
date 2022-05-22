@@ -76,7 +76,7 @@ const ClientsLogos = (props) => {
                     />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-4 col-xs-4 my-3">
-                    <img className="w-100 opacity-9" src="https://core.sortlist.com//_/apps/core/images/badges-en/badge-flag-blue-light-xl.svg" />
+                    <img className="w-100 opacity-9" width={370} height={100} src="https://core.sortlist.com//_/apps/core/images/badges-en/badge-flag-blue-light-xl.svg" />
                 </div>
             </LogosRow>
         </div>

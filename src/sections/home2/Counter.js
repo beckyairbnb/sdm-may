@@ -1,15 +1,52 @@
 import React from "react";
 import CountUp from "react-countup";
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import LazyLoad from "react-lazyload";
-import imgHeart from "../../assets/image/home-2/png/heart-icon-group.png";
-import imgStars from "../../assets/image/home-2/png/star-group.png";
-import imgL1 from "../../assets/image/home-2/png/company-logo/company-logo-1.png";
-import imgL2 from "../../assets/image/home-2/png/company-logo/company-logo-2.png";
-import imgL3 from "../../assets/image/home-2/png/company-logo/company-logo-3.png";
+
+
+// import imgHeart from "../../assets/image/home-2/png/heart-icon-group.png";
+// import imgStars from "../../assets/image/home-2/png/star-group.png";
+
+
+// import imgL1 from "../../assets/image/home-2/png/company-logo/company-logo-1.png";
+// import imgL2 from "../../assets/image/home-2/png/company-logo/company-logo-2.png";
+// import imgL3 from "../../assets/image/home-2/png/company-logo/company-logo-3.png";
 
 
 
 const Counter = ({ className, ...rest }) => {
+  const { imgL1, imgL2, imgL3, imgHeart, imgStars } = useStaticQuery(
+    graphql`
+      query {
+        imgHeart: file(relativePath: {eq: "home-2/png/heart-icon-group.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 100)
+          }
+        }
+        imgStars: file(relativePath: {eq: "home-2/png/star-group.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 108)
+          }
+        }
+        imgL1: file(relativePath: {eq: "home-2/png/company-logo/company-logo-1.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 150)
+          }
+        }
+        imgL2: file(relativePath: {eq: "home-2/png/company-logo/company-logo-2.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 150)
+          }
+        }
+        imgL3: file(relativePath: {eq: "home-2/png/company-logo/company-logo-3.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 150)
+          }
+        }
+      }
+    `
+  )
   return (
     <>
       <div className={className} {...rest}>
@@ -32,7 +69,10 @@ const Counter = ({ className, ...rest }) => {
                       </LazyLoad>
                     </h2>
                     <div className="mt-5">
-                      <img className="mb-7" src={imgHeart} alt="" />
+                    <GatsbyImage
+                            image={getImage(imgHeart)} 
+                            width={100} height={14}
+                        />
                       <h5 className="font-size-5 font-weight-normal mb-1">
                         Words Written
                       </h5>
@@ -56,7 +96,10 @@ const Counter = ({ className, ...rest }) => {
                       </LazyLoad>
                     </h2>
                     <div className="mt-5">
-                      <img className="mb-7" src={imgStars} alt="" />
+                    <GatsbyImage
+                            image={getImage(imgStars)} 
+                            width={108} height={16}
+                        />
                       <h5 className="font-size-5 font-weight-normal mb-1">
                         Google Reviews
                       </h5>
@@ -96,21 +139,30 @@ const Counter = ({ className, ...rest }) => {
                       className="single-brand-logo px-5 my-6"
 
                     >
-                      <img src={imgL1} alt="" />
+                      <GatsbyImage
+                            image={getImage(imgL1)} 
+                            width={150} height={29}
+                        />
                     </div>
                     {/* Single Brand */}
                     <div
                       className="single-brand-logo px-5 my-6"
 
                     >
-                      <img src={imgL2} alt="" />
+                      <GatsbyImage
+                            image={getImage(imgL2)} 
+                            width={150} height={29}
+                        />
                     </div>
                     {/* Single Brand */}
                     <div
                       className="single-brand-logo px-5 my-6"
 
                     >
-                      <img src={imgL3} alt="" />
+                      <GatsbyImage
+                            image={getImage(imgL3)} 
+                            width={150} height={29}
+                        />
                     </div>
                   </div>
                 </div>
