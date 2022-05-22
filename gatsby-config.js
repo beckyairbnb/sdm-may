@@ -63,58 +63,66 @@ module.exports = {
       },
     },
     {
-     resolve: `gatsby-plugin-google-analytics`,
-     options: {
-       trackingId: "UA-127625937-1",
-     },
-   },
-   {
-    resolve: `gatsby-plugin-sitemap`,
-    options: {
-      createLinkInHead: true,
-      output: '/'
-    }      
-  },
-  {
-    resolve: 'gatsby-plugin-robots-txt',
-    options: {
-      host: 'https://strategically.co/',
-      sitemap: 'https://strategically.co/sitemap-0.xml',
-      env: {
-        development: {
-          policy: [{ userAgent: '*', disallow: ['/'] }]
-        },
-        production: {
-          policy: [{ userAgent: '*', allow: '/' }]
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-127625937-1",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        createLinkInHead: true,
+        output: '/'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://strategically.co/',
+        sitemap: 'https://strategically.co/sitemap-0.xml',
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }]
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }]
+          }
         }
       }
-    }
-  },
+    },
     {
-  resolve: 'gatsby-plugin-crisp-chat',
-  options: {
-    websiteId: 'baad053f-4aa3-4ba7-81c2-540fe4ea2127',
-    enableDuringDevelop: false, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
-    defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
-    enableImprovedAccessibility: false // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
-  },
-  },
-
-  {
-    resolve: `gatsby-transformer-remark`,
-         plugins: {
-           resolve: `gatsby-remark-vscode`,
-},
-},
-
-
-    {
-      resolve: `gatsby-plugin-facebook-pixel`,
+      resolve: 'gatsby-plugin-crisp-chat',
       options: {
-      pixelId: "955347335241110",
+        websiteId: 'baad053f-4aa3-4ba7-81c2-540fe4ea2127',
+        enableDuringDevelop: false, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
+        defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
+        enableImprovedAccessibility: false // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
       },
     },
 
-   
+    {
+      resolve: `gatsby-transformer-remark`,
+      plugins: {
+        resolve: `gatsby-remark-vscode`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "955347335241110",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-fastify`,
+      options: {
+        features: {
+          redirects: true,
+          reverseProxy: true,
+          imageCdn: false,
+        },
+      },
+    },
+
+
   ],
 }
