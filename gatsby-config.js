@@ -10,14 +10,6 @@ module.exports = {
     siteUrl: 'https://strategically.co',
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-react-svg`,
-      options: {
-        rule: {
-          include: /\.svg$/,
-        }
-      }
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
@@ -28,23 +20,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        failOnError: true,
-        base64Width: 20,
-        forceBase64Format: `webp`,
-        stripMetadata: true,
-        defaultQuality: 80,
-        defaults: {
-          formats: [`auto`, `webp`],
-          placeholder: `blurred`,
-          quality: 100,
-          backgroundColor: `transparent`,
-          webpOptions: {quality: 100}
-        }
-      }
-    },
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     {
@@ -77,13 +53,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/assets/images/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/image/`,
       },
     },
     {

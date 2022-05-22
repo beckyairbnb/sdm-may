@@ -121,12 +121,16 @@ const Layout = ({ children, pageContext }) => {
             })(window,document,'script','dataLayer','GTM-T35RVN5');
           `}
         </script>
+        <script>
+          {`
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          `}
+        </script>
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
 
         <div className="site-wrapper" ref={eleRef}>
-          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <HeaderTransparent />
           {children}
         </div>
@@ -166,6 +170,12 @@ const Layout = ({ children, pageContext }) => {
         </script>
         <script>
           {`
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          `}
+        </script>
+        <script>
+          {`
             (function(e,a){
               var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
               t=e.createElement("script");t.type="text/javascript";
@@ -178,8 +188,6 @@ const Layout = ({ children, pageContext }) => {
         <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
 
         <div className="site-wrapper overflow-hidden" ref={eleRef}>
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <HeaderMini />
           {children}
         </div>
@@ -217,6 +225,12 @@ const Layout = ({ children, pageContext }) => {
         </script>
         <script>
           {`
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          `}
+        </script>
+        <script>
+          {`
             (function(e,a){
               var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
               t=e.createElement("script");t.type="text/javascript";
@@ -229,8 +243,6 @@ const Layout = ({ children, pageContext }) => {
         <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
 
         <div className="site-wrapper overflow-hidden" ref={eleRef}>
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <HeaderComingSoon />
           {children}
         </div>
@@ -267,6 +279,12 @@ const Layout = ({ children, pageContext }) => {
         </script>
         <script>
           {`
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          `}
+        </script>
+        <script>
+          {`
             (function(e,a){
               var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
               t=e.createElement("script");t.type="text/javascript";
@@ -285,9 +303,7 @@ const Layout = ({ children, pageContext }) => {
           `}        
         </script>
         </Helmet>
-        <div className="site-wrapper overflow-hidden"> 
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>  
+        <div className="site-wrapper overflow-hidden">   
           <HeaderNoFooter/>  
           {children}
           <ClientsLogos/>
@@ -372,6 +388,12 @@ const Layout = ({ children, pageContext }) => {
             `}
           </script>
           <script>
+            {`
+              <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            `}
+          </script>
+          <script>
           {`
             (function(e,a){
               var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
@@ -392,8 +414,6 @@ const Layout = ({ children, pageContext }) => {
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
         <div className="site-wrapper overflow-hidden" ref={eleRef}>
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-              height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <Header />
           {children}
           <Footer
