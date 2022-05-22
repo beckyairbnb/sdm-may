@@ -1,15 +1,35 @@
 import React from "react";
-import { Link } from "gatsby";
-import Modal from "../../components/ModalVideo/Modal";
-
-import imgSBR from "../../assets/image/home-2/png/round-shape-blue.png";
-import imgBP from "../../assets/image/home-2/png/dot-pattern-blue.png";
-import imgH from "../../assets/image/home-2/png/hero-2-img-1.png";
-import imgH2 from "../../assets/image/home-2/png/hero-2-img-2.png";
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Hero = ({ className, ...rest }) => {
 
-
+  const { RoundShapeBlueImg, DotPatternBlueImg, Hero2Img1Img, Hero2Img2Img } = useStaticQuery(
+    graphql`
+      query {
+        RoundShapeBlueImg: file(relativePath: {eq: "home-2/png/round-shape-blue.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 211)
+          }
+        }
+        DotPatternBlueImg: file(relativePath: {eq: "home-2/png/dot-pattern-blue.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 176)
+          }
+        }
+        Hero2Img1Img: file(relativePath: {eq: "home-2/png/hero-2-img-1.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 279)
+          }
+        }
+        Hero2Img2Img: file(relativePath: {eq: "home-2/png/hero-2-img-2.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 279)
+          }
+        }
+      }
+    `
+  )
   return (
     <>
       <div className={className} {...rest}>
@@ -44,16 +64,28 @@ const Hero = ({ className, ...rest }) => {
             >
               <div className="l2-hero-image-group mt-5 mt-lg-0">
                 <div className="img-1">
-                  <img src={imgSBR} alt="" />
+                      <GatsbyImage
+                            image={getImage(RoundShapeBlueImg)} 
+                            width={211} height={211}
+                        />
                 </div>
                 <div className="img-2">
-                  <img src={imgBP} alt="" />
+                      <GatsbyImage
+                            image={getImage(DotPatternBlueImg)} 
+                            width={176} height={191}
+                        />
                 </div>
-                <div className="img-3">
-                  <img src={imgH} alt="" />
+                <div className="img-3">                
+                        <GatsbyImage
+                            image={getImage(Hero2Img1Img)} 
+                            width={279} height={303}
+                        />
                 </div>
                 <div className="img-4">
-                  <img src={imgH2} alt="" />
+                      <GatsbyImage
+                            image={getImage(Hero2Img2Img)} 
+                            width={279} height={368}
+                        />
                 </div>
                 {/* <!-- Image Group Content --> */}
                 <div className="img-group-content bg-white absolute-center shadow-4 max-w-193">

@@ -1,11 +1,33 @@
 import React from "react";
-import { Link } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import imgM from "../../assets/image/home-2/png/meeting-2.png";
 import imgDP from "../../assets/image/home-2/png/dot-pattern-black.png";
 import imgLC from "../../assets/image/home-2/png/left-circlehalf-shape.png";
 
 const Content3 = ({ className, ...rest }) => {
+  const { imgM, imgDP, imgLC } = useStaticQuery(
+    graphql`
+      query {
+        imgM: file(relativePath: {eq: "home-2/png/meeting-2.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 475)
+          }
+        }
+        imgDP: file(relativePath: {eq: "home-2/png/dot-pattern-black.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 176)
+          }
+        }
+        imgLC: file(relativePath: {eq: "home-2/png/left-circlehalf-shape.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 395)
+          }
+        }
+      }
+    `
+  )
   return (
     <>
       <div className={className} {...rest}>
@@ -30,12 +52,27 @@ const Content3 = ({ className, ...rest }) => {
             >
               <div className="content-image-group-3 mb-17 mb-lg-0 mr-xl-16">
                 <div className="img-1">
-                  <img className="w-100" src={imgM} alt="" />
+                        <GatsbyImage
+                            image={getImage(imgM)} 
+                            width={475} height={593}
+                            className="w-100"
+                        />
+                  {/* <img className="w-100" src={imgM} alt="" /> */}
                   <div className="img-2">
-                    <img className="w-100" src={imgDP} alt="" />
+                  <GatsbyImage
+                            image={getImage(imgDP)} 
+                            width={176} height={191}
+                            className="w-100" 
+                        />
+                    {/* <img className="w-100" src={imgDP} alt="" /> */}
                   </div>
                   <div className="img-3 rounded-10">
-                    <img className="w-100 opacity-7" src={imgLC} alt="" />
+                  <GatsbyImage
+                            image={getImage(imgLC)} 
+                            width={395} height={209}
+                            className="w-100 opacity-7" 
+                        />
+                    {/* <img className="w-100 opacity-7" src={imgLC} alt="" /> */}
                   </div>
                 </div>
               </div>
