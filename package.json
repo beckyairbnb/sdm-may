@@ -77,7 +77,7 @@
   "main": "n/a",
   "scripts": {
     "start": "gatsby clean && gatsby develop",
-    "build": "GATSBY_ACTIVE_ENV=production GATSBY_CONCURRENT_DOWNLOAD=10 gatsby build gatsby clean && gatsby build",
+    "build": "GATSBY_CONCURRENT_DOWNLOAD=10 gatsby clean && gatsby build",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
