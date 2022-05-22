@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import imgA1 from "../../assets/image/home-2/png/arrow-1.png";
 import imgA2 from "../../assets/image/home-2/png/arrow-2.png";
@@ -8,6 +10,37 @@ import imgE from "../../assets/image/home-2/png/event-confirm.png";
 import imgR from "../../assets/image/home-2/png/right-layer.png";
 
 const Progress = ({ className, ...rest }) => {
+  const { imgA1, imgA2, imgS, imgE, imgR } = useStaticQuery(
+    graphql`
+      query {
+        imgA1: file(relativePath: {eq: "home-2/png/arrow-1.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 224, height: 89)
+          }
+        }
+        imgA2: file(relativePath: {eq: "home-2/png/arrow-2.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 228)
+          }
+        }
+        imgS: file(relativePath: {eq: "home-2/png/search.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 36)
+          }
+        }
+        imgE: file(relativePath: {eq: "home-2/png/event-confirm.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 33)
+          }
+        }
+        imgR: file(relativePath: {eq: "home-2/png/right-layer.png"}) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 46)
+          }
+        }
+      }
+    `
+  )
   return (
     <>
       <div className={className} {...rest}>
@@ -33,13 +66,19 @@ const Progress = ({ className, ...rest }) => {
                     className="arrow-shape-1 d-none d-lg-block absolute-top-left"
 
                   >
-                    <img src={imgA1} alt="" />
+                    <GatsbyImage
+                            image={getImage(imgA1)} 
+                            width={224} height={89}
+                        />
                   </div>
                   <div
                     className="arrow-shape-2 d-none d-lg-block absolute-top-right"
 
                   >
-                    <img src={imgA2} alt="" />
+                    <GatsbyImage
+                            image={getImage(imgA2)} 
+                            width={228} height={72}
+                        />
                   </div>
                 </div>
                 {/* <!-- Single Progress --> */}
@@ -48,7 +87,10 @@ const Progress = ({ className, ...rest }) => {
 
                 >
                   <div className="square-97 bg-dodger-blue-1 shadow-bg-dodger-blue-1 rounded-10 mb-10 mx-auto mx-md-0">
-                    <img src={imgS} alt="" />
+                  <GatsbyImage
+                            image={getImage(imgS)} 
+                            width={36} height={36}
+                        />
                   </div>
                   <div className="">
                     <h3 className="font-size-8 mb-6">Plan</h3>
@@ -64,7 +106,10 @@ const Progress = ({ className, ...rest }) => {
 
                 >
                   <div className="square-97 bg-dodger-blue-2 shadow-bg-dodger-blue-2 rounded-10 mb-10  mx-auto mx-md-0">
-                    <img src={imgE} alt="" />
+                  <GatsbyImage
+                            image={getImage(imgE)} 
+                            width={33} height={32}
+                        />
                   </div>
                   <div className="">
                     <h3 className="font-size-8 mb-6">Create</h3>
@@ -80,7 +125,10 @@ const Progress = ({ className, ...rest }) => {
 
                 >
                   <div className="square-97 bg-dodger-blue-2 rounded-10 mb-10 shadow-bg-dodger-blue-2 mx-auto mx-md-0">
-                    <img src={imgR} alt="" />
+                      <GatsbyImage
+                            image={getImage(imgR)} 
+                            width={46} height={36}
+                        />
                   </div>
                   <div className="">
                     <h3 className="font-size-8 mb-6">Optimise</h3>
