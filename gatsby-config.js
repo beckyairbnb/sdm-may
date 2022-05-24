@@ -20,7 +20,18 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `blurred`,
+          quality: 100,
+          backgroundColor: `transparent`,
+          webpOptions: {quality: 100}
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     {
