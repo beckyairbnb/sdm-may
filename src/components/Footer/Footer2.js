@@ -170,7 +170,7 @@ const Footer = ({ className, ...rest }) => {
                 <div className="col-md-3 col-xs-6">
                   <div className="mb-10 mb-lg-0">
                     <h4 className="font-size-6 font-weight-medium mb-10">
-                      Support
+                        Resources
                     </h4>
                     <ul className="list-unstyled">
                       <li className="mb-6">
@@ -199,20 +199,20 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to={`/pricing/`}
+                          to={`/get-a-quote/1/`}
                           className="font-size-5 text-default-color"
                         >
                           Pricing
                         </Link>
                       </li>
-                      {/* <li className="mb-6">
+                      <li className="mb-6">
                         <Link
-                          to={`/faq/`}
+                          to={`/blog/`}
                           className="font-size-5 text-default-color"
                         >
-                          FAQs
+                          Blog
                         </Link>
-                      </li> */}
+                      </li>
                     </ul>
                   </div>
                 </div>

@@ -43,7 +43,7 @@ const Hero = () => {
                   >
                   <div className="max-w-435">
                     <a
-                      href="/pricing/"
+                      href="/get-a-quote/1/"
                       className="btn btn-blue-3 w-100 h-55 rounded-4"
                     >
                   Get Started
