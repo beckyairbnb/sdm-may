@@ -64,7 +64,7 @@ const Step2 = () => {
               <Heading2 className="form-sub-heading display-5 mb-3 w-100">I’ll get you an awesome price in minutes. Ready to go?</Heading2>
             </div>
           </div>
-          <form name="Strategicallygetquoteform" method="POST" data-netlify="true" action={`/pricing/`}>
+          <form name="Strategicallygetquoteform" method="POST" data-netlify="true" action="https://strategically.co/success">
             <input type="hidden" name="form-name" value="Strategicallygetquoteform" />
             <input type="hidden" name="Type of content you are looking for" value={state.content} />
             <input type="hidden" name="How many words per month would you like to order" value={state.words} />
