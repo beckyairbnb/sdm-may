@@ -45,20 +45,22 @@
               "monthly_words": {
                 "type": "Number",
                 "config": {
-                  "label": "Monthly Words",
-                  "placeholder": "Monthly Words"
+                  "label": "One-off Words",
+                  "placeholder": "One-off Words"
                 }
               },
               "month_to_month_price": {
                 "type": "Number",
                 "config": {
-                  "label": "Month to Month Price"
+                  "label": "One-off Price",
+                  "placeholder": "One-off Price"
                 }
               },
               "annual_price": {
                 "type": "Number",
                 "config": {
-                  "label": "Annual Price"
+                  "label": "Monthly Price",
+                  "placeholder": "Monthly Price"
                 }
               },
               "button_text": {

@@ -99,10 +99,10 @@ const PricePage = ({ data }) => {
         
           <div className="pt-24 overflow-hidden">
           <div className="row justify-content-center">
-          <div className="col-xl-8 col-lg-9">
+          <div className="col-xl-8 col-lg-8 col-sm-12">
             <div className="text-center mb-13 mb-lg-12">
               {PriceData.data.heading.text && <h1 className="text-center mb-0">{PriceData.data.heading.text}</h1>}
-              {PriceData.data.sub_heading.text && <p class="text-center text-xl-center">{PriceData.data.sub_heading.text}</p>}
+              {PriceData.data.sub_heading.text && <p class="text-center text-xl-center px-5">{PriceData.data.sub_heading.text}</p>}
             </div>
           </div>
         </div>
@@ -130,7 +130,7 @@ const PricePage = ({ data }) => {
                               onChange={onOptionValueChange}                              
                               checked={selectedOption === "monthly"}
                             />
-                            Monthly
+                            One-off
                           </label>
                           <label className={selectedOption === "yearly" ? "active" : "inactive"}>
                             <input
@@ -139,7 +139,7 @@ const PricePage = ({ data }) => {
                               onChange={onOptionValueChange}                              
                               checked={selectedOption === "yearly"}
                             />
-                            Yearly
+                            Monthly
                           </label>
                           <span class="switch"></span>
 
@@ -149,7 +149,7 @@ const PricePage = ({ data }) => {
 
                       <h2>${selectedValue}</h2>
                       <h6>
-                        <span>Usd/Month</span>
+                        {selectedOption === "yearly" ? "USD/MONTH" : "USD"}
                       </h6>
                     </PricingHeader>
                     <Features>

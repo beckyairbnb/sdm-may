@@ -103,6 +103,11 @@ const Layout = ({ children, pageContext }) => {
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
           <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
           <script>
+           {`
+            window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
+          `}
+        </script>
+          <script>
           {`
             !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
               w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
@@ -149,6 +154,11 @@ const Layout = ({ children, pageContext }) => {
           <link rel="icon" type="image/png" href={imgFavicon} />
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
           <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+          <script>
+           {`
+            window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
+          `}
+        </script>
           <script>
           {`
             !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
@@ -205,6 +215,11 @@ const Layout = ({ children, pageContext }) => {
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
           <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
           <script>
+           {`
+            window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
+          `}
+        </script>
+          <script>
           {`
             !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
               w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
@@ -258,6 +273,11 @@ const Layout = ({ children, pageContext }) => {
           <link rel="icon" type="image/png" href={imgFavicon} />
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
           <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+          <script>
+           {`
+            window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
+          `}
+        </script>
           <script>
           {`
             !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
@@ -326,6 +346,11 @@ const Layout = ({ children, pageContext }) => {
           <Helmet>
           <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
           <script>
+           {`
+            window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
+          `}
+        </script>
+          <script>
           {`
             !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
               w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
@@ -368,6 +393,11 @@ const Layout = ({ children, pageContext }) => {
           <link rel="icon" type="image/png" href={imgFavicon} />
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
           <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+          <script>
+           {`
+            window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
+          `}
+        </script>
           <script>
           {`
             !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
