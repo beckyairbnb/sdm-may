@@ -14,7 +14,6 @@ import ModalPopup from '../components/ModalPopup'
 
 
 import imgFavicon from "../assets/favicon.png";
-import phoneSec from "../assets/images/phone-sec.png";
 
 import logo1 from "../assets/images/clients/logo-1.jpg";
 import logo2 from "../assets/images/clients/logo-2.jpg";

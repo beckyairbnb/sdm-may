@@ -151,6 +151,9 @@ const PricePage = ({ data }) => {
                       <h6>
                         {selectedOption === "yearly" ? "USD/MONTH" : "USD"}
                       </h6>
+                      <h4 className="py-6">
+                        {value &&  `${value} Words`}
+                      </h4>
                     </PricingHeader>
                     <Features>
                       <ul className="p-0 mb-10">

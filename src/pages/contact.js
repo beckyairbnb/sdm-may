@@ -57,7 +57,7 @@ const Contact = () => {
                         </h4>
                         <a
                           className="font-size-7 font-weight-bold heading-default-color" 
-                          href="/#"
+                          href="tel:447939447382"
                         >
                           +44 7939447382
                         </a>

@@ -17,8 +17,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 
 import imgFavicon from "../assets/favicon.png";
 import phoneSec from "../assets/images/phone-sec.png";
-import SeoContentImg from "../assets/images/seo-content-writer-img.png";
-import SeoCasinoImg from "../assets/images/casino-seo.png";
+
 
 import logo1 from "../assets/images/clients/logo-1.jpg";
 import logo2 from "../assets/images/clients/logo-2.jpg";
@@ -26,15 +25,13 @@ import logo3 from "../assets/images/clients/logo-3.jpg";
 import logo4 from "../assets/images/clients/logo-4.jpg";
 import logo5 from "../assets/images/clients/logo-5.jpg";
 
-import logo6 from "../assets/images/clients/logo-6.jpg";
 import logo7 from "../assets/images/clients/logo-7.jpg";
-import logo8 from "../assets/images/clients/logo-8.jpg";
 import logo9 from "../assets/images/clients/logo-9.jpg";
 import logo10 from "../assets/images/clients/logo-10.jpg";
 const ServiceTemplate = (props) => {
   const [modalShow, setModalShow] = useState(false);
   const { data } = props;
-  const { PageData, AllServices } = data;
+  const { PageData } = data;
   const slug = data.PageData.slug;
   const seoTitle = PageData.data.seotitle.text || "Strategically";
   const seoDescription = PageData.data.metadescription.text || "Strategically";
@@ -43,16 +40,15 @@ const ServiceTemplate = (props) => {
     { name: "Writer Services", link: "/writer-services/" },
     { name: PageData.data.short_title, link: null },
   ];
-  const SeoContentImage = (slug) => {
-    if (slug === "seo-content-writing") {
-      return <img src={SeoContentImg} alt="" className="stars-img my-10" />;
-    } else if (slug === "casino-gaming-content-writing") {
-      return <img src={SeoCasinoImg} alt="" className="stars-img my-10" />;
-    } else {
-      return <img src={phoneSec} alt="" className="stars-img" />;
-    }
-    //slug === 'seo-content-writing' ? <img src={SeoContentImg} alt="" className="stars-img my-10"/> : <img src={phoneSec} alt="" className="stars-img"/>
-  };
+  // const SeoContentImage = (slug) => {
+  //   if (slug === "seo-content-writing") {
+  //     return <img src={SeoContentImg} alt="" className="stars-img my-10" />;
+  //   } else if (slug === "casino-gaming-content-writing") {
+  //     return <img src={SeoCasinoImg} alt="" className="stars-img my-10" />;
+  //   } else {
+  //     return <img src={phoneSec} alt="" className="stars-img" />;
+  //   }
+  // };
   return (
     <>
       <Helmet>
@@ -239,7 +235,7 @@ const ServiceTemplate = (props) => {
                   ></div>
                 )}
                 {PageData.data.body.map((item, index) => {
-                  const { slice_type, primary, items } = item;
+                  const { slice_type, primary} = item;
                   {
                     if (slice_type === "cta_block") {
                       return <CTA data={primary} />;
@@ -258,7 +254,7 @@ const ServiceTemplate = (props) => {
         </div>
         <div className="py-2">
           {PageData.data.body.map((item, index) => {
-            const { slice_type, primary, items } = item;
+            const { slice_type, items } = item;
             {
               if (slice_type === "other_services") {
                 return (
