@@ -64,7 +64,7 @@ const Counter = ({ className, ...rest }) => {
                     <h2 className="font-size-12 mb-6">
                       <LazyLoad>
                         <span className="counter">
-                          <CountUp duration={2} end={2} />M+
+                          <CountUp duration={2} end={4} />M+
                         </span>
                       </LazyLoad>
                     </h2>
