@@ -64,11 +64,10 @@ const Step2 = () => {
               <Heading2 className="form-sub-heading display-5 mb-3 w-100">I’ll get you an awesome price in minutes. Ready to go?</Heading2>
             </div>
           </div>
-          <form name="Strategicallygetquoteform" method="POST" data-netlify="true" action={`/success`}>
-            <input type="hidden" name="form-name" value="Strategicallygetquoteform" />
+          <form name="Strategicallygetquoteformnew" method="POST" data-netlify="true" action={`/success`}>
+            <input type="hidden" name="form-name" value="Strategicallygetquoteformnew" />
             <input type="hidden" name="Type of content you are looking for" value={state.content} />
             <input type="hidden" name="How many words per month would you like to order" value={state.words} />
-            {/* <input type="hidden" name="Company Name" value={state.company}/>   */}
             <div className="d-flex justify-content-center">
               <div className="col-md-5 col-sm-9 col-xs-12">
                 <div className="row">
@@ -106,6 +105,15 @@ const Step2 = () => {
                       placeholder="Phone Number"
                       label="Phone Number"
                       name="phone"
+                      className="w-100 bg-white py-5 px-6 mb-2 rounded-1 border border-info"
+                    />
+                  </div>
+                  <div className="col-sm-12 mb-3">
+                    <InputBox
+                      type="text"
+                      placeholder="Company Name"
+                      label="Company Name"
+                      name="Company Name"
                       className="w-100 bg-white py-5 px-6 mb-2 rounded-1 border border-info"
                     />
                   </div>
