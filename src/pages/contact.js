@@ -81,7 +81,7 @@ const Contact = () => {
                 {/* contact details */}
                 <div className="pt-12 pb-10 max-w-536 mx-auto d-flex flex-column">
                   <form
-                    name="contactform"
+                    name="contactformnew"
                     method="POST"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
@@ -92,7 +92,7 @@ const Contact = () => {
                     
                     {/* Company Name */}
 
-                    <input type="hidden" name="form-name" value="contactform" />
+                    <input type="hidden" name="form-name" value="contactformnew" />
                     <input type="hidden" name="subject" value="Strategically.co Content Writing Agency | Get in Touch"/>
 
                     <div className="form-group mb-7 position-relative">
@@ -124,6 +124,16 @@ const Contact = () => {
                         className="form-control form-control-lg bg-white rounded-5 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 border-default-color"
                         placeholder="Phone Number"
                         id="phone"
+                        required
+                      />
+                    </div>
+                    <div className="form-group mb-7 position-relative">
+                      <input
+                        type="text"
+                        name="companyname"
+                        className="form-control form-control-lg bg-white rounded-5 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 border-default-color"
+                        placeholder="Company Name"
+                        id="companyname"
                         required
                       />
                     </div>
