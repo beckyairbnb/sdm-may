@@ -130,7 +130,7 @@ const MainServiceTemplate = (props)=>{
         <Content3 className="pb-10 pb-lg-10" />
         <Content4 className="pt-10 pt-lg-10 pb-15 pb-lg-20" />
         <Content5 className="pt-10 pt-lg-10 pb-15 pb-lg-20" />
-         <div className="container">
+         {/* <div className="container">
             <div className="row justify-content-center">
                <div className="col-lg-9 col-md-9 col-sm-12">
                {PageData.data.heading_above_description.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.heading_above_description.html }} className="w-100 mb-6" ></div>}
@@ -161,7 +161,7 @@ const MainServiceTemplate = (props)=>{
                     })}
                </div>
             </div>
-         </div>
+         </div> */}
       </div>
       <ModalPopup
           show={modalShow}

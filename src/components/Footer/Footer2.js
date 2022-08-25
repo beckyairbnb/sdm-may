@@ -3,16 +3,18 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import ClientsLogos from "../ClientsLogos";
 import FooterCta from "../../sections/footercta";
+import ContentSection from "./ContentSection";
 
 
 const Footer = ({ className, ...rest }) => {
   return (
     <>
-      
+
       <div className={`pt-13 ${className}`} {...rest}>
-        <ClientsLogos/>
-        <FooterCta/>
-        
+        <ClientsLogos />
+        <ContentSection />
+        <FooterCta />
+
         <div className="container pt-lg-12 pb-8 pb-lg-12 ">
           <div className="row">
             <div className="col-lg-12">
@@ -121,7 +123,7 @@ const Footer = ({ className, ...rest }) => {
                 <div className="col-md-3 col-xs-6">
                   <div className="mb-10 mb-lg-0">
                     <h4 className="font-size-6 font-weight-medium mb-10">
-                    Policies
+                      Policies
                     </h4>
                     <ul className="list-unstyled">
                       <li className="mb-6">
@@ -170,7 +172,7 @@ const Footer = ({ className, ...rest }) => {
                 <div className="col-md-3 col-xs-6">
                   <div className="mb-10 mb-lg-0">
                     <h4 className="font-size-6 font-weight-medium mb-10">
-                        Resources
+                      Resources
                     </h4>
                     <ul className="list-unstyled">
                       <li className="mb-6">
@@ -219,7 +221,7 @@ const Footer = ({ className, ...rest }) => {
               </div>
             </div>
             <div className="col-lg-12 border-top border-dark-light mt-5 pt-6 pb-0">
-            <p className="text-center">Strategically Digital Marketing Ltd. Company Number 11898834 VAT 328 9819 52 | <Link to="/privacy/"  className="text-default-color">Privacy</Link> | <Link to="/terms/" className="text-default-color">Terms</Link></p>
+              <p className="text-center">Strategically Digital Marketing Ltd. Company Number 11898834 VAT 328 9819 52 | <Link to="/privacy/" className="text-default-color">Privacy</Link> | <Link to="/terms/" className="text-default-color">Terms</Link></p>
             </div>
           </div>
         </div>
