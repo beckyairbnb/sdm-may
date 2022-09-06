@@ -7,7 +7,8 @@ exports.onCreatePage = ({ page, actions }) => {
   const { createPage, createRedirect } = actions;
 
   const  rurls = [
-    {oldurl:'/blog/grammar/',newurl: '/blog/grammar/'},
+    {oldurl:'/content-writing-agency/',newurl: '/'},
+    {oldurl:'/blog/grammar/',newurl: '/blog/grammar-tips/'},
     {oldurl:'/blog/grammar/lo-and-behold-or-low-and-behold/',newurl: '/blog/grammar-tips/lo-and-behold-or-low-and-behold/'},
     {oldurl:'/blog/grammar/3',newurl: '/blog/grammar-tips/3'},
     {oldurl:'/blog/grammar/unravelling-the-differences-between-wander-vs.-wonder',newurl: '/blog/grammar-tips/unravelling-the-differences-between-wander-vs.-wonder'},
