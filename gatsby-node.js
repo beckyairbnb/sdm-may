@@ -75,14 +75,14 @@ exports.onCreatePage = ({ page, actions }) => {
     {oldurl:'/writer-services/accounting-writer/images/mob-banner.jpg',newurl: '/writer-services/accounting-writer/'},
   ]
 
-  rurls.forEach((item) => {     
-    createRedirect({
-      fromPath: item.oldurl,
-      toPath: item.newurl,
-      redirectInBrowser: true,
-      isPermanent: true,
-    });
-  })
+  // rurls.forEach((item) => {     
+  //   createRedirect({
+  //     fromPath: item.oldurl,
+  //     toPath: item.newurl,
+  //     redirectInBrowser: true,
+  //     isPermanent: true,
+  //   });
+  // })
   
 
  if (page.path.match(/sign|reset/)) {

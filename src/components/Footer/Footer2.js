@@ -7,6 +7,7 @@ import ContentSection from "./ContentSection";
 
 
 const Footer = ({ className, ...rest }) => {
+  console.log('restrest',rest)
   return (
     <>
 

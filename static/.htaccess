@@ -1,0 +1,1 @@
+RewriteRule ^/content-writing-agency/?$ https://strategically.co/ [R=301,L]
