@@ -30,7 +30,7 @@ const Index = (props) => {
             </a>
             </>
           ),
-          footerStyle: "style2",
+          footerStyle: "style6",
         }}
       >
         <Hero className="pt-11 pt-lg-34 pb-8 pb-lg-33" />

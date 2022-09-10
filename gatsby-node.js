@@ -75,17 +75,16 @@ exports.onCreatePage = ({ page, actions }) => {
     {oldurl:'/writer-services/accounting-writer/images/mob-banner.jpg',newurl: '/writer-services/accounting-writer/'},
   ]
 
-  // rurls.forEach((item) => {     
-  //   createRedirect({
-  //     fromPath: item.oldurl,
-  //     toPath: item.newurl,
-  //     redirectInBrowser: true,
-  //     isPermanent: true,
-  //   });
-  // })
+  rurls.forEach((item) => {     
+    createRedirect({
+      fromPath: item.oldurl,
+      toPath: item.newurl,
+      redirectInBrowser: true,
+      isPermanent: true,
+    });
+  })
   
-
- if (page.path.match(/sign|reset/)) {
+if (page.path.match(/sign|reset/)) {
     page.context.layout = "mini";
     createPage(page);
   } else if (page.path.match(/coming/)) {
@@ -108,6 +107,7 @@ exports.onCreatePage = ({ page, actions }) => {
     page.context.layout = "noheaderfooter";
     createPage(page);
   }
+  
   // else if (page.path.match(/calculator/)) {
   //   page.context.layout = "hideheaderfooter";
   //   createPage(page);
@@ -323,7 +323,8 @@ data.Jobs.edges.forEach(({ node }) => {
     path: `writing-jobs/${node.uid}/`,
     component: path.resolve("./src/templates/job-template.js"),
     context: {
-      id:node.id
+      id:node.id,
+      layout:'writing-jobs'
     },
   })
 })

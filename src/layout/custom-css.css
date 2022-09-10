@@ -311,3 +311,25 @@ video {
   
 
 
+  .service-post-divider {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    margin-left: 35px;
+}
+
+.service-post-divider:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background-color: #ff041d;
+  right: 0;
+  bottom: 0;
+  left: -150px;
+  z-index: 10;
+}
+
+.text-size p{ color: #666;font-size: 1.375rem;}
+p.teaser-subtitle {color: red;}

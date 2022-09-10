@@ -62,9 +62,14 @@ const Loader = styled.div`
   }
 `;
 
-const Layout = ({ children, pageContext }) => {
+const Layout = (props) => {
+
+  const { children, pageContext } = props
+
+  //console.log('writing-jobs',props.path.includes('/writing-jobs'))
 
   const gContext = useContext(GlobalContext);
+
 
   const [visibleLoader, setVisibleLoader] = useState(true);
 
@@ -96,6 +101,79 @@ const Layout = ({ children, pageContext }) => {
 
     return () => {};
   }, [gContext]);
+  console.log('props.pathprops.path',props.path)
+  
+  if (pageContext.layout === "writing-jobs") {
+    return (
+      <>
+          <Helmet>
+            <title>Finity 4</title>
+            <link rel="icon" type="image/png" href={imgFavicon} />
+            <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
+            <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+            <script>
+             {`
+              window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
+            `}
+          </script>           
+            <script>
+            {`
+              !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
+                w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
+                (g=new XMLHttpRequest).open("GET",n+"version?v="+Date.now(),!0),g.onreadystatechange=function(){
+                4===g.readyState&&(y.src=n+"stonly-widget.js?v="+(200===g.status?g.responseText:Date.now()),
+                (l=t.getElementsByTagName(o)[0]).parentNode.insertBefore(y,l))},g.send())
+                }(window,document,"script","https://stonly.com/js/widget/v2/");
+            `}
+          </script>
+            <script>
+              {`
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-T35RVN5');
+              `}
+            </script>
+            <script>
+              {`
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+              `}
+            </script>
+            <script>
+            {`
+              (function(e,a){
+                var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
+                t=e.createElement("script");t.type="text/javascript";
+                t.charset="utf-8";t.async=!0;t.defer=!0;
+                t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
+                })(document,"157096");
+            `}
+          </script>
+          <script>
+            {`
+            (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+            vgo('setAccount', '800828951');
+            vgo('setTrackByDefault', true);  
+            vgo('process');
+            `}        
+          </script>
+          </Helmet>
+          <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
+          <div className="site-wrapper overflow-hidden" ref={eleRef}>
+            <Header />
+            {children}
+            <Footer
+              className={gContext.theme.footerClassName}
+              style={gContext.theme.footerStyle}
+            />
+          </div>
+  
+          <ModalVideo />
+        </>
+    );
+  }
   if (pageContext.layout === "blog") {
     return (
       <>
@@ -292,6 +370,8 @@ const Layout = ({ children, pageContext }) => {
       </>
     );
   }
+  
+
   if (pageContext.layout === "noheaderfooter") {
     return (
       <>
@@ -429,87 +509,161 @@ const Layout = ({ children, pageContext }) => {
       </>
     );
   }
-
-  return (
-    <>
+  if (props.path === "/writing-jobs/") {
+    return (
       <>
-        <Helmet>
-          <title>Finity 4</title>
-          <link rel="icon" type="image/png" href={imgFavicon} />
-          <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
-          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
-          <script>
-           {`
-            window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
-          `}
-        </script>
-        <script>
-          {`
-            !function(s,n,i,t,c,h){s.SnitchObject=i;s[i]||(s[i]=function(){
-              (s[i].q=s[i].q||[]).push(arguments)});s[i].l=+new Date;c=n.createElement(t);
-              h=n.getElementsByTagName(t)[0];c.src='//snid.snitcher.com/8418208.js';
-              h.parentNode.insertBefore(c,h)}(window,document,'snid','script');
-              snid('verify', '8418208');
-          `}
-        </script>
-          <script>
-          {`
-            !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
-              w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
-              (g=new XMLHttpRequest).open("GET",n+"version?v="+Date.now(),!0),g.onreadystatechange=function(){
-              4===g.readyState&&(y.src=n+"stonly-widget.js?v="+(200===g.status?g.responseText:Date.now()),
-              (l=t.getElementsByTagName(o)[0]).parentNode.insertBefore(y,l))},g.send())
-              }(window,document,"script","https://stonly.com/js/widget/v2/");
-          `}
-        </script>
-          <script>
+          <Helmet>
+            <title>Finity 4</title>
+            <link rel="icon" type="image/png" href={imgFavicon} />
+            <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
+            <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+            <script>
+             {`
+              window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
+            `}
+          </script>           
+            <script>
             {`
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-T35RVN5');
+              !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
+                w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
+                (g=new XMLHttpRequest).open("GET",n+"version?v="+Date.now(),!0),g.onreadystatechange=function(){
+                4===g.readyState&&(y.src=n+"stonly-widget.js?v="+(200===g.status?g.responseText:Date.now()),
+                (l=t.getElementsByTagName(o)[0]).parentNode.insertBefore(y,l))},g.send())
+                }(window,document,"script","https://stonly.com/js/widget/v2/");
+            `}
+          </script>
+            <script>
+              {`
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-T35RVN5');
+              `}
+            </script>
+            <script>
+              {`
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+              `}
+            </script>
+            <script>
+            {`
+              (function(e,a){
+                var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
+                t=e.createElement("script");t.type="text/javascript";
+                t.charset="utf-8";t.async=!0;t.defer=!0;
+                t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
+                })(document,"157096");
             `}
           </script>
           <script>
             {`
-              <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-              height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+            vgo('setAccount', '800828951');
+            vgo('setTrackByDefault', true);  
+            vgo('process');
+            `}        
+          </script>
+          </Helmet>
+          <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
+          <div className="site-wrapper overflow-hidden" ref={eleRef}>
+            <Header />
+            {children}
+            <Footer
+              className={gContext.theme.footerClassName}
+              style={gContext.theme.footerStyle}
+            />
+          </div>
+  
+          <ModalVideo />
+        </>
+    );
+  }
+  else
+  {
+    return (
+      <>
+        <>
+          <Helmet>
+            <title>Finity 4</title>
+            <link rel="icon" type="image/png" href={imgFavicon} />
+            <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
+            <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+            <script>
+             {`
+              window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
+            `}
+          </script>
+            <script>
+              {`
+                !function(s,n,i,t,c,h){s.SnitchObject=i;s[i]||(s[i]=function(){
+                  (s[i].q=s[i].q||[]).push(arguments)});s[i].l=+new Date;c=n.createElement(t);
+                  h=n.getElementsByTagName(t)[0];c.src='//snid.snitcher.com/8418208.js';
+                  h.parentNode.insertBefore(c,h)}(window,document,'snid','script');
+                  snid('verify', '8418208');
+              `}
+            </script>   
+            <script>
+            {`
+              !function(s,t,o,n,l,y,w,g){s.StonlyWidget||((w=s.StonlyWidget=function(){
+                w._api?w._api.apply(w,arguments):w.queue.push(arguments)}).scriptPath=n,w.queue=[],(y=t.createElement(o)).async=!0,
+                (g=new XMLHttpRequest).open("GET",n+"version?v="+Date.now(),!0),g.onreadystatechange=function(){
+                4===g.readyState&&(y.src=n+"stonly-widget.js?v="+(200===g.status?g.responseText:Date.now()),
+                (l=t.getElementsByTagName(o)[0]).parentNode.insertBefore(y,l))},g.send())
+                }(window,document,"script","https://stonly.com/js/widget/v2/");
+            `}
+          </script>
+            <script>
+              {`
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-T35RVN5');
+              `}
+            </script>
+            <script>
+              {`
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+              `}
+            </script>
+            <script>
+            {`
+              (function(e,a){
+                var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
+                t=e.createElement("script");t.type="text/javascript";
+                t.charset="utf-8";t.async=!0;t.defer=!0;
+                t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
+                })(document,"157096");
             `}
           </script>
           <script>
-          {`
-            (function(e,a){
-              var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
-              t=e.createElement("script");t.type="text/javascript";
-              t.charset="utf-8";t.async=!0;t.defer=!0;
-              t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
-              })(document,"157096");
-          `}
-        </script>
-        <script>
-          {`
-          (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
-          vgo('setAccount', '800828951');
-          vgo('setTrackByDefault', true);  
-          vgo('process');
-          `}        
-        </script>
-        </Helmet>
-        <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
-        <div className="site-wrapper overflow-hidden" ref={eleRef}>
-          <Header />
-          {children}
-          <Footer
-            className={gContext.theme.footerClassName}
-            style={gContext.theme.footerStyle}
-          />
-        </div>
-
-        <ModalVideo />
+            {`
+            (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+            vgo('setAccount', '800828951');
+            vgo('setTrackByDefault', true);  
+            vgo('process');
+            `}        
+          </script>
+          </Helmet>
+          <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
+          <div className="site-wrapper overflow-hidden" ref={eleRef}>
+            <Header />
+            {children}
+            <Footer
+              className={gContext.theme.footerClassName}
+              style={gContext.theme.footerStyle}
+            />
+          </div>
+  
+          <ModalVideo />
+        </>
       </>
-    </>
-  );
+    );
+  }
+  
 };
 
 export default Layout;

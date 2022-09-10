@@ -1,95 +1,70 @@
 import React from "react";
 import { Link } from "gatsby";
+import styled from "styled-components";
+import ClientsLogos from "../ClientsLogos";
+import FooterCta from "../../sections/footercta";
+import ContentSection from "./ContentSection";
 
-import imgLB from "../../assets/image/logo-main-black.png";
-import imgLW from "../../assets/image/logo-main-white.png";
-import imgP1 from "../../assets/image/home-6/png/payment-1.png";
-import imgP2 from "../../assets/image/home-6/png/payment-2.png";
 
 const Footer = ({ className, ...rest }) => {
+  console.log('restrest',rest)
   return (
     <>
-      <div
-        className={`bg-default-6 pt-13 pt-lg-23 pb-7 position-relative ${className}`}
-        {...rest}
-      >
-        <div className="container">
-          <div className="row pb-lg-18">
-            <div className="col-lg-4 col-md-5 col-md-3 col-xs-8">
-              <div className="pr-xl-20 mb-11 mb-lg-0">
-                <div className="brand-logo mb-8">
-                  <Link to="/#">
-                    <img
-                      className="mx-auto mx-0 light-version-logo default-logo"
-                      src={imgLB}
-                      alt=""
-                    />
-                    <img
-                      className="dark-version-logo mx-auto mx-0"
-                      src={imgLW}
-                      alt=""
-                    />
-                  </Link>
-                </div>
-                <p className="font-size-5 mb-0 heading-default-color pr-xs-15 pr-sm-22 pr-md-10 pr-lg-15 pr-xl-10 opacity-7">
-                  Your app is your tool for better solution with your followers,
-                  making it easier for them to keep up to date.
-                </p>
-                <div className="mt-12">
-                  <Link
-                    to="/#"
-                    className="btn btn-pumpkin btn-sm rounded-5 h-60 text-white font-size-5"
-                  >
-                    <i className="fa fa-lock mr-6" /> Login
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-8">
+
+      <div className={`pt-13 ${className}`} {...rest}>
+        <ClientsLogos />
+        <ContentSection />
+        <FooterCta />
+
+        <div className="container pt-lg-12 pb-8 pb-lg-12 ">
+          <div className="row">
+            <div className="col-lg-12">
               <div className="row">
                 {/* Single Widgets */}
-                <div className="col-xl-4 col-lg-3 col-md-4 col-xs-6">
+                <div className="col-md-3 col-xs-6">
                   <div className="mb-10 mb-lg-0">
-                    <h4 className="font-size-5 opacity-4 mb-10">Company</h4>
+                    <h4 className="font-size-6 font-weight-medium mb-10">
+                      Industries
+                    </h4>
                     <ul className="list-unstyled">
-                      <li className="mb-7">
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="font-size-5 text-default-color-2 gr-hover-text-blue-3"
+                          to="/writer-services/b2b-content-writing-services/"
+                          className="font-size-5 text-default-color"
                         >
-                          About us
+                          B2B Content Writing Services
                         </Link>
                       </li>
-                      <li className="mb-7">
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="font-size-5 text-default-color-2 gr-hover-text-blue-3"
+                          to="/writer-services/accounting-writer/"
+                          className="font-size-5 text-default-color"
                         >
-                          Features
+                          Bookkeeping & Accounting Writer Services
                         </Link>
                       </li>
-                      <li className="mb-7">
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="font-size-5 text-default-color-2 gr-hover-text-blue-3"
+                          to="/writer-services/casino-content-writing-services/"
+                          className="font-size-5 text-default-color"
                         >
-                          Pricing
+                          iGaming content writing services
                         </Link>
                       </li>
-                      <li className="mb-7">
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="font-size-5 text-default-color-2 gr-hover-text-blue-3"
+                          to="/writer-services/seo-content-writing/"
+                          className="font-size-5 text-default-color"
                         >
-                          Privacy Policy
+                          SEO Content Writing Services
                         </Link>
                       </li>
-                      <li className="mb-7">
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="font-size-5 text-default-color-2 gr-hover-text-blue-3"
+                          to="/writer-services/"
+                          className="font-size-5 text-default-color"
                         >
-                          Terms &amp; Conditions
+                          All Industries
                         </Link>
                       </li>
                     </ul>
@@ -97,114 +72,157 @@ const Footer = ({ className, ...rest }) => {
                 </div>
                 {/* End Single Widgets */}
                 {/* Single Widgets */}
-                <div className="col-xl-4 col-lg-3 col-md-4 col-xs-6">
+                <div className="col-md-3 col-xs-6">
                   <div className="mb-10 mb-lg-0">
-                    <h4 className="font-size-5 opacity-4 mb-10">Extra</h4>
+                    <h4 className="font-size-6 font-weight-medium mb-10">
+                      Services
+                    </h4>
                     <ul className="list-unstyled">
-                      <li className="mb-7">
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="font-size-5 text-default-color-2 gr-hover-text-blue-3"
+                          to="/writer-services/human-resources-writer/"
+                          className="font-size-5 text-default-color"
                         >
-                          Products
+                          Human Resources writers
                         </Link>
                       </li>
-                      <li className="mb-7">
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="font-size-5 text-default-color-2 gr-hover-text-blue-3"
+                          to="/writer-services/marketing-content-writer/"
+                          className="font-size-5 text-default-color"
                         >
-                          Downloads
+                          Marketing Content Writer
                         </Link>
                       </li>
-                      <li className="mb-7">
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="font-size-5 text-default-color-2 gr-hover-text-blue-3"
+                          to="/writer-services/ecommerce-content-marketing-writer//"
+                          className="font-size-5 text-default-color"
                         >
-                          Support
+                          eCommerce Content Writer
                         </Link>
                       </li>
-                      <li className="mb-7">
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="font-size-5 text-default-color-2 gr-hover-text-blue-3"
+                          to="/writer-services/blog-article-writing/"
+                          className="font-size-5 text-default-color"
+                        >
+                          Blog Article Writing Service
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/writer-services/"
+                          className="font-size-5 text-default-color"
+                        >
+                          All Writing Services
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col-md-3 col-xs-6">
+                  <div className="mb-10 mb-lg-0">
+                    <h4 className="font-size-6 font-weight-medium mb-10">
+                      Policies
+                    </h4>
+                    <ul className="list-unstyled">
+                      <li className="mb-6">
+                        <Link
+                          to={`/privacy/`}
+                          className="font-size-5 text-default-color"
+                        >
+                          Privacy
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to={`/terms/`}
+                          className="font-size-5 text-default-color"
+                        >
+                          Terms
+                        </Link>
+                      </li>
+                      {/* <li className="mb-6">
+                        <Link
+                          to="/content-delivery-policy/"
+                          className="font-size-5 text-default-color"
+                        >
+                          Content Delivery Policy
+                        </Link>
+                      </li> */}
+                      <li className="mb-6">
+                        <Link
+                          to="/money-back-guarantee/"
+                          className="font-size-5 text-default-color"
                         >
                           Refund Policy
                         </Link>
                       </li>
-                      <li className="mb-7">
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="font-size-5 text-default-color-2 gr-hover-text-blue-3"
+                          to="/affiliate-scheme/"
+                          className="font-size-5 text-default-color"
                         >
-                          Sitemap
+                          Affiliate Scheme
                         </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
-                {/* End Single Widgets */}
-                {/* Single Widgets */}
-                <div className="col-xl-4 col-lg-5 col-md-4 col-xs-8">
+                <div className="col-md-3 col-xs-6">
                   <div className="mb-10 mb-lg-0">
-                    <h4 className="font-size-5 opacity-4 mb-10">
-                      Follow us on social media
+                    <h4 className="font-size-6 font-weight-medium mb-10">
+                      Resources
                     </h4>
-                    <ul className="footer-social-link d-flex align-items-center justify-content-between list-unstyled flex-wrap mb-10">
-                      <li>
+                    <ul className="list-unstyled">
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="text-default-color-2 gr-hover-text-blue-3"
+                          to={`/contact/`}
+                          className="font-size-5 text-default-color"
                         >
-                          Facebook
+                          Contact Us
                         </Link>
                       </li>
-                      <li>
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="text-default-color-2 gr-hover-text-blue-3"
+                          to={`/samples/`}
+                          className="font-size-5 text-default-color"
                         >
-                          .
+                          Samples
                         </Link>
                       </li>
-                      <li>
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="text-default-color-2 gr-hover-text-blue-3"
+                          to="/writing-jobs/"
+                          className="font-size-5 text-default-color"
                         >
-                          Twitter
+                          Become a Writer
                         </Link>
                       </li>
-                      <li>
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="text-default-color-2 gr-hover-text-blue-3"
+                          to={`/get-a-quote/1/`}
+                          className="font-size-5 text-default-color"
                         >
-                          .
+                          Pricing
                         </Link>
                       </li>
-                      <li>
+                      <li className="mb-6">
                         <Link
-                          to="/#"
-                          className="text-default-color-2 gr-hover-text-blue-3"
+                          to={`/blog/`}
+                          className="font-size-5 text-default-color"
                         >
-                          Instagram
+                          Blog
                         </Link>
                       </li>
                     </ul>
                   </div>
-                  <div className="border-top border-default-color-4 pt-10">
-                    <div className="mb-3">
-                      <img className="w-100" src={imgP1} alt="" />
-                    </div>
-                    <div className="mb-3">
-                      <img className="w-100" src={imgP2} alt="" />
-                    </div>
-                  </div>
                 </div>
-                {/* End Single Widgets */}
               </div>
+            </div>
+            <div className="col-lg-12 border-top border-dark-light mt-5 pt-6 pb-0">
+              <p className="text-center">Strategically Digital Marketing Ltd. Company Number 11898834 VAT 328 9819 52 | <Link to="/privacy/" className="text-default-color">Privacy</Link> | <Link to="/terms/" className="text-default-color">Terms</Link></p>
             </div>
           </div>
         </div>
