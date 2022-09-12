@@ -50,7 +50,7 @@ const Testimonial = ({ className, ...rest }) => {
             <div className="row align-items-center">
               <div className="col-lg-7 col-md-9">
                 <div
-                  className="mb-8 mb-lg-16 mb-md-0 text-center text-md-left"
+                  className="mb-8 mb-lg-16 mb-md-0 text-center text-md-left tm-txt"
 
                 >
                   <span className="bg-dodger-blue-2-op1 circle-84 font-size-9 mb-5 mb-lg-11 mx-auto mx-md-0">

@@ -333,3 +333,13 @@ video {
 
 .text-size p{ color: #666;font-size: 1.375rem;}
 p.teaser-subtitle {color: red;}
+
+.tlt-bdr{position: relative;}
+.tlt-bdr::before{content: ''; position:absolute; left: 0; bottom: 0; width: 100px; height: 4px; background-color: #FF0088 ;}
+
+
+
+
+.quote-blk{background-image:url(../assets/images/bg-blue.jpg); background-position:left; background-repeat:repeat-y; background-size:contain;background-color: #0073E5;}
+
+

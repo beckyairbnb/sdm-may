@@ -95,8 +95,14 @@ const CaseSudyPage = () => {
                         </div>
                     </div>
                 </div>
+                <div class="quote-blk py-10 py-lg-22 text-center">
+                    <div className="container">
+<h2 className="text-white font-size-md-12 font-size-10  my-0">“With Verblio, it's trackable. You charge me by post—simple as that. You don't care how long it takes. You charge me by the number of words.”</h2>
+                        </div>
+                        </div>
 
-                <div class="bg-default-3 pt-12 pt-md-18 pb-lg-10 pb-5 pt-lg-22 text-center">
+
+                {/* <div class="bg-default-3 pt-12 pt-md-18 pb-lg-10 pb-5 pt-lg-22 text-center">
                     <div className="container">
                         <h2 className="font-size-10 mb-md-14 mb-8">Featured Content</h2>
                         <div class="row">
@@ -130,7 +136,7 @@ const CaseSudyPage = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
                 <div class="pt-12 pt-lg-18 pb-10 pt-lg-22 text-size">
