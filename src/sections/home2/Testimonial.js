@@ -95,7 +95,7 @@ const Testimonial = ({ className, title, ...rest }) => {
           <div className="mb-8 mb-lg-5">
             <div className="row align-items-center">
               
-                <div className="col-lg-7 col-md-9">
+                <div className="col-lg-7 col-12">
                   <div
                     className="mb-8 mb-lg-16 mb-md-0 text-center text-md-left"
 
@@ -141,7 +141,7 @@ const Testimonial = ({ className, title, ...rest }) => {
            </div>
           {/* <!-- End Section Title --> */}
           {/* <!-- category slider --> */}
-          <div className="container-fluid mt-25">
+          <div className="container-fluid mt-lg-25 mt-5">
           <div className="row">
             <div className="col-12">
                 <HappyClients/>

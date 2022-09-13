@@ -37,7 +37,7 @@ const Hero = ({ className, ...rest }) => {
           <div className="row justify-content-center">
             {/* <!-- Hero Content --> */}
             <div
-              className="col-xl-5 col-lg-6 col-md-8 col-xs-10 order-2 order-lg-1"
+              className="col-xl-5 col-lg-6 col-md-12 col-xs-10 order-2 order-lg-1"
 
             >
               <div className="pr-lg-10 pr-xl-0 pt-0 pt-lg-0 pb-13 pb-lg-0">

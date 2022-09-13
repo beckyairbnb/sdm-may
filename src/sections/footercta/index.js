@@ -11,7 +11,7 @@ const FooterCta = ()=>{
                   className="dark-mode-texts"
                 >
            
-                  <h2 className="font-size-10 mb-8 letter-spacing-n83 pr-xs-22 pr-sm-18 pr-md-0 text-center">
+                  <h2 className="font-size-10 mb-8 letter-spacing-n83 text-center">
                   Interested in SEO content creation or content strategy? 
                   </h2>
                   <p className="font-size-7 mb-0 text-center">

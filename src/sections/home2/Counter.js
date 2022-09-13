@@ -116,7 +116,7 @@ const Counter = ({ className, ...rest }) => {
             {/* Right Start */}
             <div className="col-lg-6 offset-xl-1">
               <div className="row">
-                <div className="col-lg-12 col-md-7 col-xs-9">
+                <div className="col-lg-12 col-md-12 col-xs-12">
                   <div
                     className="section-title"
 

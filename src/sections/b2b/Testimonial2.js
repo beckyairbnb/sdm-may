@@ -15,7 +15,7 @@ const Testimonial2 = ({ className, ...rest }) => {
   return (
     <>
       <div className={className} {...rest}>
-        <div className="container">
+        {/* <div className="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 col-12">
               <div className="testimonial2 shadow p-10 rounded">
@@ -27,7 +27,26 @@ const Testimonial2 = ({ className, ...rest }) => {
               </div>
             </div>
           </div>
+        </div> */}
+
+<div className="container">
+          <div class="row justify-content-center">
+          <div class="col-lg-10 col-12">
+              <div className="testimonial border p-md-10 p-8 rounded">
+                <img src={Stars} alt="" width={158} height={25} />
+                <p class="font-size-8 line-height-28 text-dark-cloud my-10">I worked with Strategically while working as Head of Content for a B2B SaaS company. The work this agency produces is always of the highest quality and delivered on time without fail. They are really great at making sure the work matched the brief and went above and beyond to make sure we were happy with the work.</p>
+                <div className="d-flex align-items-center">
+                  <img src={Author} alt="" width={40} height={40} />
+                  <div className="ml-4">
+                  <h4 class="font-size-6 mb-0 text-dark-cloud">Cary Hastings</h4>
+                  <p className="mb-0">HelloBonsai</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </>
   );

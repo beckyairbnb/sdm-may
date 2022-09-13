@@ -342,4 +342,10 @@ p.teaser-subtitle {color: red;}
 
 .quote-blk{background-image:url(../assets/images/bg-blue.jpg); background-position:left; background-repeat:repeat-y; background-size:contain;background-color: #0073E5;}
 
+.faq-blk{ position: relative;}
+/* .faq-blk .q-icon{  position:absolute; left: 0; top:0; width:28px; height:28px;} */
 
+
+.faq-blk [role=button] {font-size: 1.4rem; font-weight:500; margin-bottom: 20px; color:#000; padding-left:40px; background-image:url(../assets/images/question-icon.png); background-position:left; background-repeat:no-repeat;}
+
+.faq-blk .Collapsible__contentOuter{padding-left:40px;}
