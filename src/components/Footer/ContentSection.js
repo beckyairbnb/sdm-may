@@ -5,7 +5,7 @@ import Testimonial2 from "../../sections/b2b/Testimonial2";
 import Testimonial3 from "../../sections/b2b/Testimonial3";
 
 import Stars from "../../assets/images/stars.png";
-import Author from "../../assets/images/author.png";
+import Author from "../../assets/images/author2.png";
 
 import Collapsible from 'react-collapsible';
 
@@ -17,8 +17,6 @@ const ContentSection = () => {
 
                 <div class="w-100 mb-6">
                     <h2 className="tlt-bdr pb-3 mb-8">Top-notch content writing services for any industry</h2>
-
-
 
                     <p>If you're running a business, you know how important it is to have a solid online presence. It's crucial to reach more customers and grow your business, but creating and maintaining that presence can be challenging when you don't have the time or resources to do it yourself. That's where a content writing agency can help.</p>
                     <p>At Strategically, we specialise in creating high-quality content to help your business stand out online. Whether you need articles, product reviews, sales copy, or anything else, our team of experienced writers can get the job done.</p>
@@ -35,7 +33,7 @@ const ContentSection = () => {
                 <img src={Stars} alt="" width={158} height={25} />
                 <p class="font-size-8 line-height-28 text-dark-cloud my-10">"The team was able to wrap their heads around the product we work with, which is a metrics product for SaaS. The content is filled with specific product-related knowledge that really speaks to our audience and helps us talk with our customers! Definitely recommend working with them!"</p>
                 <div className="d-flex align-items-center">
-                  <img src={Author} alt="" width={40} height={40} />
+                <img src={Author} alt="" width={55} height={55} className="rounded-circle" />
                   <div className="ml-4">
                   <h4 class="font-size-6 mb-0 text-dark-cloud">Lindsey Rogerson</h4>
                   <p className="mb-0">Baremetrics</p>

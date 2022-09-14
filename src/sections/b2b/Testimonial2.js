@@ -4,7 +4,7 @@ import { Testimonials } from "../../data/testimonials"
 import TestimonialCard1 from "../../components/TestimonialCard1";
 
 import Stars from "../../assets/images/stars.png";
-import Author from "../../assets/images/author.png";
+import Author from "../../assets/images/author3.png";
 
 
 const Testimonial2 = ({ className, ...rest }) => {
@@ -36,7 +36,7 @@ const Testimonial2 = ({ className, ...rest }) => {
                 <img src={Stars} alt="" width={158} height={25} />
                 <p class="font-size-8 line-height-28 text-dark-cloud my-10">I worked with Strategically while working as Head of Content for a B2B SaaS company. The work this agency produces is always of the highest quality and delivered on time without fail. They are really great at making sure the work matched the brief and went above and beyond to make sure we were happy with the work.</p>
                 <div className="d-flex align-items-center">
-                  <img src={Author} alt="" width={40} height={40} />
+                <img src={Author} alt="" width={55} height={55} className="rounded-circle" />
                   <div className="ml-4">
                   <h4 class="font-size-6 mb-0 text-dark-cloud">Cary Hastings</h4>
                   <p className="mb-0">HelloBonsai</p>
