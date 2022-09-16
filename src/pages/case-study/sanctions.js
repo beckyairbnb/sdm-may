@@ -33,12 +33,11 @@ const Sanctions = () => {
                     footerStyle: "style2",
                 }}
             >
-                <div className="pt-26 pt-lg-30 pb-8 pb-lg-16">
+                <div className="pt-26 pt-lg-30 pb-8">
                     <div className="container">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-8 col-12">
-                                {/* <h2 class="font-size-md-12 font-size-10 text-center mb-7">How Siege Media Grew Shutterfly's Blog to $1,700,000 in Monthly Traffic Value</h2> */}
-                                <h2 class="display-2  font-weight-bold text-center mb-7">How Strategically increased Sanctions.io traffic by 3X in 6 months</h2>
+                        <div class="row">
+                            <div class="col-xl-10 col-12">
+                                <h2 class="display-4 font-weight-bold text-left mb-7">How Strategically increased Sanctions.io traffic by 3X in 6 months</h2>
 
                             </div>
                         </div>
@@ -49,7 +48,7 @@ const Sanctions = () => {
                 <div className="py-12 pt-lg-20 text-size">
                     <div className="container">
                         <div class="row justify-content-center">
-                            <div class="col-xl-10 col-12">
+                            <div class="col-xl-12 col-12">
                                 <div class="row mb-lg-14 mb-10">
                                     <div class="col-lg-4 col-12">
                                         <img className="w-full justify-center mb-10" src={ClientImg} alt="" />
@@ -78,8 +77,9 @@ const Sanctions = () => {
                     </div>
 
 
-                    <div class="quote-blk py-10 py-lg-20 text-center my-10">
+                    
                         <div className="container">
+                        <div class="quote-blk py-14 px-14 text-center my-10">
                             <h3 className="text-white font-size-9  my-0">“We worked with three or four agencies over 12 to 15 months, and we were at the point where we said the content quality was a big issue for us. We needed a dependable source of good content that was willing to put the work in for us.”</h3>
                         </div>
                     </div>
@@ -156,9 +156,10 @@ const Sanctions = () => {
 
                         <p>So Thorsten gave us a call, and we wrote our first piece of content for Sanctions.io… and it totally missed the mark. Like other agencies, we failed to understand his industry comprehensively enough, which showed in our writing. But we were different for one reason: we were the only agency Thorsten worked with that wanted to do better.</p>
                     </div> 
-                    <div class="quote-blk py-10 py-lg-20 text-center my-10">
+                    
                         <div className="container">
-                            <h3 className="text-white font-size-9  my-0">“You were the first agency to say, “let's look harder, let's look into this, let's try it again”, and this I really appreciated. Your willingness to accept feedback and really help your customers sets you apart from other agencies.”</h3>
+                        <div class="quote-blk py-14 px-14 text-center my-10">
+                            <h3 className="text-white my-0">“You were the first agency to say, “let's look harder, let's look into this, let's try it again”, and this I really appreciated. Your willingness to accept feedback and really help your customers sets you apart from other agencies.”</h3>
 
                         </div></div>
                     <div className="container">
@@ -166,9 +167,10 @@ const Sanctions = () => {
                         <p>Not only did we ask Thorsten for feedback on our writing, but also on our processes. Thorsten explained that our flexibility in how we work also made him stay, as this customer-first approach is how Sanctions.io runs its business.</p>
                     </div>
 
-                    <div class="quote-blk py-10 py-lg-20 text-center mb-10 mt-10">
+                    
                         <div className="container">
-                            <h3 className="text-white font-size-9  my-0">“What usually turns me off when I work with service providers is that I have to do everything through a dashboard. You were willing to say, “Just send me an email”… I believe in making things easy for the clients, and it's how we do our business. I really liked that.”</h3>
+                        <div class="quote-blk py-14 px-14 text-center my-10">
+                            <h3 className="text-white my-0">“What usually turns me off when I work with service providers is that I have to do everything through a dashboard. You were willing to say, “Just send me an email”… I believe in making things easy for the clients, and it's how we do our business. I really liked that.”</h3>
                         </div>
                     </div>
                     <div className="container">

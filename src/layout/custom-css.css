@@ -324,7 +324,7 @@ video {
   content: "";
   position: absolute;
   height: 5px;
-  background-color: #ff041d;
+  background-color: #FF0088 !important;
   right: 0;
   bottom: 0;
   left: 0px;
@@ -338,12 +338,21 @@ p.teaser-subtitle {color: #FF0088 ;}
 .tlt-bdr::before{content: ''; position:absolute; left: 0; bottom: 0; width: 100px; height: 4px; background-color: #FF0088 ;}
 
 
-
+.quote-blk h3{
+  font-weight:300 !important;
+  line-height: 3rem !important;
+  font-size: 1.8rem !important;
+}
 
 .quote-blk{
   /* background-image:url(../assets/images/bg-blue.jpg); background-position:left; background-repeat:repeat-y; 
   background-size:contain; */
-  background-color: #55bfde;}
+  -webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+  background: rgb(255,0,136);
+  background: linear-gradient(0deg, rgba(255,0,136,1) 0%, rgba(231,131,185,1) 100%);
+}
 
 .faq-blk{ position: relative;}
 /* .faq-blk .q-icon{  position:absolute; left: 0; top:0; width:28px; height:28px;} */
