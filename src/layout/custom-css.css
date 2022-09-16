@@ -337,7 +337,15 @@ p.teaser-subtitle {color: #FF0088 ;}
 .tlt-bdr{position: relative;}
 .tlt-bdr::before{content: ''; position:absolute; left: 0; bottom: 0; width: 100px; height: 4px; background-color: #FF0088 ;}
 
-
+.cimage{
+  padding:0.5rem;
+}
+.cimage img{
+  width: 100%;
+  -webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
 .quote-blk h3{
   font-weight:300 !important;
   line-height: 3rem !important;
@@ -345,13 +353,18 @@ p.teaser-subtitle {color: #FF0088 ;}
 }
 
 .quote-blk{
+    /* background-image: url("../assets/images/dotless_bg-pink.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: left; */
+    background-color: #ff0088;
   /* background-image:url(../assets/images/bg-blue.jpg); background-position:left; background-repeat:repeat-y; 
   background-size:contain; */
   -webkit-border-radius: 4px;
 -moz-border-radius: 4px;
 border-radius: 4px;
-  background: rgb(255,0,136);
-  background: linear-gradient(0deg, rgba(255,0,136,1) 0%, rgba(231,131,185,1) 100%);
+  /* background: rgb(255,0,136);
+  background: linear-gradient(0deg, rgba(255,0,136,1) 0%, rgba(231,131,185,1) 100%); */
 }
 
 .faq-blk{ position: relative;}
@@ -371,4 +384,4 @@ h2.display-2 {
 }
 }
 
-.purple{color: #FF0088 ;display: inline;}
+.purple{color: #22b0fc ;display: inline;}
