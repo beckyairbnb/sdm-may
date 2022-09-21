@@ -102,7 +102,40 @@ const Layout = (props) => {
     return () => {};
   }, [gContext]);
   console.log('props.pathprops.path',props.path)
-  
+  const schemaOrgJSONLD = [
+    {
+      "@context": "https://schema.org/",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "Restaurant",
+        "image": "http://www.example.com/seafood-restaurant.jpg",
+        "name": "Strategically Digital Marketing Ltd",
+        "servesCuisine": "Content Writing Agency",
+        "telephone": "11898834",
+        "address" :{
+          "@type": "PostalAddress",
+          "streetAddress": "London, England, United Kingdom",
+          "addressLocality": "London",
+          "addressRegion": "GB-LND",
+          "postalCode": "CA91016",
+          "addressCountry": "UK"
+        }
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "name": 'Working with Strategically has been an amazing experience. They are professional, hard-working, and extremely dedicated. I wouldn’t hesitate to recommend.”',
+      "author": {
+        "@type": "Person",
+        "name": "WebsitePlanet"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WebsitePlanet"
+      }
+    }
+  ]
   if (pageContext.layout === "writing-jobs") {
     return (
       <>
@@ -110,7 +143,8 @@ const Layout = (props) => {
             <title>Finity 4</title>
             <link rel="icon" type="image/png" href={imgFavicon} />
             <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
-            <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+            <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
+            <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>            
             <script>
              {`
               window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
@@ -191,7 +225,8 @@ const Layout = (props) => {
       <>
         <Helmet>
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
-          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+          <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
+          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>          
           <script>
            {`
             window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
@@ -264,7 +299,8 @@ const Layout = (props) => {
           <title>Finity 2</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
-          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+          <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
+          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>          
           <script>
            {`
             window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
@@ -345,7 +381,8 @@ const Layout = (props) => {
           <title>Finity 3</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
-          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+          <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
+          <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>          
           <script>
            {`
             window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
@@ -427,6 +464,7 @@ const Layout = (props) => {
           <title>Strategically | Content Writing Agency</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
+          <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
           <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
           <script>
            {`
@@ -520,6 +558,7 @@ const Layout = (props) => {
     return (
       <>   
           <Helmet>
+          <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
           <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
           <script>
            {`
@@ -586,6 +625,7 @@ const Layout = (props) => {
       <>
           <Helmet>
             <title>Finity 4</title>
+            <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
             <link rel="icon" type="image/png" href={imgFavicon} />
             <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
             <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
@@ -672,6 +712,7 @@ const Layout = (props) => {
           <Helmet>
             <title>Finity 4</title>
             <link rel="icon" type="image/png" href={imgFavicon} />
+            <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
             <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
             <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
             <script>

@@ -15,7 +15,6 @@ const Step1 = () => {
 
     const content_options = [
         { "name":"SEO blog content", "value":"SEO blog content" },
-        { "name":"Blog content", "value":"Blog content" },
         { "name":"Website copy", "value":"Website copy" },
         { "name":"eBook or white paper", "value":"eBook or white paper" },
         { "name":"Product description", "value":"Product description" }
