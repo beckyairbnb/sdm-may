@@ -80,7 +80,7 @@ const ContentSection = () => {
                     <p>Our team of experts can help you optimise your content for search engines and increase the click-through rates on your website. You can be sure that we'll take care of all the details so you can focus on what you do best: running your business.</p>
 
                     <div className="py-10 pb-8">
-                        <Testimonial2 />
+                        {/* <Testimonial2 /> */}
                     </div>
 
 

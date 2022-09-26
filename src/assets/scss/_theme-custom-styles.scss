@@ -75,3 +75,11 @@
 @media (min-width: 1200px) {
 .pricing_table .col-xl-4{flex: 20%;max-width: 20%;}
 }
+
+.lpcircle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

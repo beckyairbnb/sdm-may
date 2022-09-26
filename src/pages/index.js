@@ -17,17 +17,17 @@ const Index = (props) => {
   const { AllServices } = data
   return (
     <>
-    <Helmet>
-     <title>Strategically | Content Writing Agency</title>
-    </Helmet>
+      <Helmet>
+        <title>Strategically | Content Writing Agency</title>
+      </Helmet>
       <PageWrapper
         themeConfig={{
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/1/"}>
-              View Pricing
-            </a>
+              <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/1/"}>
+                View Pricing
+              </a>
             </>
           ),
           footerStyle: "style6",
@@ -41,29 +41,29 @@ const Index = (props) => {
         <Content3 className="pb-12 pb-lg-25" />
         <Testimonial className="pt-lg-19 pb-12 pb-lg-17" title={true} />
         <div className="py-6">
-         <div className="container-fluid py-md-10 py-5 bg-white">
-           <div className="container">
-            <div className="row justify-content-center text-center py-lg-5">
-               <div className="col-sm-12">
-                <h2 className="mb-10">Services We Provide</h2>
-                    <ul className="row">
-                        { AllServices.edges.map((item,index)=>{
-                          let slug = item.node.uid==='saas-content-writerr' ? 'saas-content-writer' : item.node.uid
-                            return(
-                                <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
-                                  <Link to={`/writer-services/${slug}/`} className="text-capitalize text-stone gr-hover-text-dodger-blue-1 font-size-5">{item.node.data.short_title || item.node.data.title.text}</Link>  
-                                </li>
-                            )
-                        })}
+          <div className="container-fluid py-md-10 py-5 bg-white">
+            <div className="container">
+              <div className="row justify-content-center text-center py-lg-5">
+                <div className="col-sm-12">
+                  <h2 className="mb-10">Services We Provide</h2>
+                  <ul className="row">
+                    {AllServices.edges.map((item, index) => {
+                      let slug = item.node.uid === 'saas-content-writerr' ? 'saas-content-writer' : item.node.uid
+                      return (
                         <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
-                        <Link to ="/writer-services/" className="text-capitalize text-stone gr-hover-text-dodger-blue-1 font-size-5">All Writer Services</Link>
+                          <Link to={`/writer-services/${slug}/`} className="text-capitalize text-stone gr-hover-text-dodger-blue-1 font-size-5">{item.node.data.short_title || item.node.data.title.text}</Link>
                         </li>
-                    </ul>
-               </div>
+                      )
+                    })}
+                    <li className="col-md-4 col-sm-6 text-left p-2 nav-item">
+                      <Link to="/writer-services/" className="text-capitalize text-stone gr-hover-text-dodger-blue-1 font-size-5">All Writer Services</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            </div>
-         </div>
-      </div>
+          </div>
+        </div>
         {/* <CTA className="bg-images" /> */}
       </PageWrapper>
     </>
