@@ -99,6 +99,10 @@ if (page.path.match(/sign|reset/)) {
     page.context.layout = "noheaderfooter";
     createPage(page);
   }
+  else if (page.path.match(/lp/)) {
+    page.context.layout = "headercenterfooter";
+    createPage(page);
+  }
   else if (page.path.match(/blogsingle/)) {
     page.context.layout = "header";
     createPage(page);

@@ -245,8 +245,14 @@ video {
   color:red;
   font-weight: 500;
 }
+.lp_page .client-logo{width: 80%; margin: 0 auto;}
 .client-logo img{ width: 100%;}
-.client-item{ width:20%; padding:1%;}
+.client-item{ width:20%; padding:1%; text-align: center;}
+
+@media (max-width: 767px){
+  .lp_page .client-logo{width: 100%;}
+}
+
 .border2{ border:2px solid red;}
 .subHeading h3, .subHeading h6{ color:#7c8087; font-size: 1.125rem !important; font-weight: 400 !important;}
 
@@ -385,3 +391,11 @@ h2.display-2 {
 }
 
 .purple{color: #22b0fc ;display: inline;}
+
+.lp_bg{background-image:url(../assets/images/bg-1.jpg); background-position:bottom center; background-repeat:no-repeat; background-size: 100% auto;}
+
+
+.links li{ color: #666;font-size: 1.375rem;}
+
+
+

@@ -8,7 +8,6 @@ import HappyClients from '../../components/happyClients';
 import { GlobalDispatchContext, GlobalStateContext } from "../../context/GlobalContext";
 
 
-
 const Step1 = () => {
     const dispatch = useContext(GlobalDispatchContext)
     const state = useContext(GlobalStateContext)

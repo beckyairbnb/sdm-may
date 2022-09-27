@@ -167,6 +167,14 @@ const Footer = ({ className, ...rest }) => {
                           Affiliate Scheme
                         </Link>
                       </li>
+                      <li className="mb-6">
+                        <Link
+                          to={`/get-a-quote/1/`}
+                          className="font-size-5 text-default-color"
+                        >
+                          Pricing
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -176,6 +184,14 @@ const Footer = ({ className, ...rest }) => {
                       Resources
                     </h4>
                     <ul className="list-unstyled">
+                    <li className="mb-6">
+                        <Link
+                          to={`/case-study`}
+                          className="font-size-5 text-default-color"
+                        >
+                          Case Study
+                        </Link>
+                      </li>
                       <li className="mb-6">
                         <Link
                           to={`/contact/`}
@@ -199,15 +215,7 @@ const Footer = ({ className, ...rest }) => {
                         >
                           Become a Writer
                         </Link>
-                      </li>
-                      <li className="mb-6">
-                        <Link
-                          to={`/get-a-quote/1/`}
-                          className="font-size-5 text-default-color"
-                        >
-                          Pricing
-                        </Link>
-                      </li>
+                      </li>                     
                       <li className="mb-6">
                         <Link
                           to={`/blog/`}
