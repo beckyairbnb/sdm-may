@@ -2,9 +2,19 @@ import React from "react";
 import { Link } from "gatsby"
 import Helmet from "react-helmet";
 
+import HappyClientsReviews from "../../components/happyClientsReviews";
+
 import PageWrapper from "../../components/PageWrapper";
 
 import CasestudyImg from "../../assets/images/about-img.png";
+import logo1 from "../../assets/images/clients/logo-1.jpg";
+import logo2 from "../../assets/images/clients/logo-2.jpg";
+import logo3 from "../../assets/images/clients/logo-3.jpg";
+import logo4 from "../../assets/images/clients/logo-4.jpg";
+import logo5 from "../../assets/images/clients/logo-5.jpg";
+import logo7 from "../../assets/images/clients/logo-7.jpg";
+import logo9 from "../../assets/images/clients/logo-9.jpg";
+import logo10 from "../../assets/images/clients/logo-10.jpg";
 
 const CaseStudy = () => {
     return (
@@ -25,6 +35,40 @@ const CaseStudy = () => {
                     footerStyle: "style2",
                 }}
             >
+                <div className="main-banner mt-12">
+                    <div className="container">
+                        <div className="row justify-content-center">
+                            <div className="col-xl-8 col-lg-9 col-md-12 col-sm-12">
+                                <div className="text-center pt-5 pb-lg-4 mb-lg-2">
+                                    <h1>Pour Over Our Video Case Studies Today And See Us In Action</h1>
+                                    <p className="my-5">Our expert SaaS content writers work with ABTasty, Barements, VWO and more</p>
+                                    <Link
+                                        to="/get-a-quote/1/"
+                                        className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div className="py-2 mb-14">
+                    <div className="container my-1">
+                        <h3 className="text-center mb-5">We work with companies like yours</h3>
+                        <div className="row my-1 client-logo">
+                            <div className="col-md-6 col-sm-12 d-flex flex-row justify-content-md-end justify-content-sm-center align-items-center m-0 p-0">
+                                <div className="client-item"><img src={logo1} alt="Client 1" /></div>
+                                <div className="client-item"><img src={logo2} alt="Client 2" /></div>
+                                <div className="client-item"><img src={logo3} alt="Client 3" /></div>
+                                <div className="client-item"><img src={logo4} alt="Client 4" /></div>
+                            </div>
+                            <div className="col-md-6 col-sm-12 d-flex flex-row justify-content-md-start justify-content-sm-center align-items-center m-0 p-0">
+                                <div className="client-item"><img src={logo5} alt="Client 5" /></div>
+                                <div className="client-item"><img src={logo7} alt="Client 7" /></div>
+                                <div className="client-item"><img src={logo9} alt="Client 9" /></div>
+                                <div className="client-item"><img src={logo10} alt="Client 10" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="py-16 mb-10">
                     <div className="container">
                         <div className="row align-items-center">
@@ -40,7 +84,7 @@ const CaseStudy = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-light py-16 mb-10">
+                <div className="bg-light py-16">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6 col-xs-12">
@@ -54,6 +98,11 @@ const CaseStudy = () => {
                         </div>
                     </div>
                 </div>
+                <HappyClientsReviews
+                    title="Over 2M+ words written!"
+                    subtitle="Strategically has produced thousands of pieces of content for over 250+ happy clients."
+                    ctatextbelow="Read what our customers are saying about Strategically"
+                />
             </PageWrapper>
         </>
     );

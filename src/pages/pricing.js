@@ -25,6 +25,8 @@ const PricePage = ({ data }) => {
     return item.slice_type === "faq_block";
   });
 
+  console.log('Faqitems',Faqitems)
+
   const items = Priceitems[0].items
   const fitems = Faqitems[0].items
 

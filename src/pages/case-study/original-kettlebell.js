@@ -36,7 +36,7 @@ const OriginalKettlebell = () => {
                     <div className="container">
                         <div class="row">
                             <div class="col-xl-10 col-12">
-                                <h2 class="display-4 font-weight-bold text-left mb-7">How Strategically increased Original Kettlebell traffic by 0 to £1 million in revenue in 12 months</h2>
+                                <h2 class="display-4 font-weight-bold text-left mb-7">0 to £1 million in revenue in 12 months</h2>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ const OriginalKettlebell = () => {
                                     <div class="col-lg-7 col-md-11 mt-10">
                                         <h2 className="font-size-10">The client</h2>
                                         <div className="service-post-divider "></div>
-                                        <p>Born out of necessity during the first UK lockdown as, like many others, Original Kettlebell founders struggled to find the equipment they needed to stay fit. Passionate about keeping people active, in the tough times and the good, they founded an eCommerce store specialising in UK-made home gym equipment.</p>
+                                        <p>Born out of necessity during the first UK lockdown as, like many others, <a href="https://www.originalkettlebell.com">Original Kettlebell</a> founders struggled to find the equipment they needed to stay fit. Passionate about keeping people active, in the tough times and the good, they founded an eCommerce store specialising in UK-made home gym equipment.</p>
                                         <p>With extreme demand during COVID, Original Kettlebell needed a content team to cut through the BS and create a lean content strategy to get them into fighting shape as quickly as possible. </p>
                                     </div>
                                 </div>
