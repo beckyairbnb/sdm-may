@@ -2,11 +2,14 @@ import React from "react";
 import { Link } from "gatsby"
 import Helmet from "react-helmet";
 
-import HappyClientsReviews from "../../components/happyClientsReviews";
+import HappyClientsReviews from "../../sections/case-study/happyClientsReviews";
 
 import PageWrapper from "../../components/PageWrapper";
 
 import CasestudyImg from "../../assets/images/about-img.png";
+import ClientImg from "../../assets/images/originalkettlebell.png";
+import ClientImg1 from "../../assets/images/lanacooper-2.jpg";
+
 import logo1 from "../../assets/images/clients/logo-1.jpg";
 import logo2 from "../../assets/images/clients/logo-2.jpg";
 import logo3 from "../../assets/images/clients/logo-3.jpg";
@@ -40,8 +43,7 @@ const CaseStudy = () => {
                         <div className="row justify-content-center">
                             <div className="col-xl-8 col-lg-9 col-md-12 col-sm-12">
                                 <div className="text-center pt-5 pb-lg-4 mb-lg-2">
-                                    <h1>Pour Over Our Video Case Studies Today And See Us In Action</h1>
-                                    <p className="my-5">Our expert SaaS content writers work with ABTasty, Barements, VWO and more</p>
+                                    <h1>Read our case studies and see our results in action</h1>
                                     <Link
                                         to="/get-a-quote/1/"
                                         className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
@@ -73,7 +75,7 @@ const CaseStudy = () => {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6 col-xs-12">
-                               <Link to="/case-study/original-kettlebell"><img src={CasestudyImg} alt="" className="w-100" /></Link>
+                               <Link to="/case-study/original-kettlebell" className="d-flex justify-content-center align-items-center case-img"><img className="mb-10" src={ClientImg} alt="" /></Link>
                             </div>
                             <div className="col-lg-6 col-xs-12">
                                 <h3 class="mb-6 font-size-10"><Link to="/case-study/original-kettlebell">Original Kettlebell</Link></h3>
@@ -93,13 +95,13 @@ const CaseStudy = () => {
                                 <p>Thorsten and the team were procrastinating and pushing away creating content for their blog when they knew they needed it to improve their SEO. For most businesses, there is a straightforward solution: outsourcing their work. But for a niche technology company, sanctions.io was struggling to find an agency they were satisfied with.</p>
                             </div>
                             <div className="col-lg-6 col-xs-12">
-                                <Link to="/case-study/sanctions"><img src={CasestudyImg} alt="" className="w-100" /></Link>
+                                <Link to="/case-study/sanctions" className="d-flex justify-content-center align-items-center case-img1"><img src={ClientImg1} alt="" className="d-flex justify-content-center align-items-center" /></Link>
                             </div>
                         </div>
                     </div>
                 </div>
                 <HappyClientsReviews
-                    title="Over 2M+ words written!"
+                    title="Over 4M+ words written!"
                     subtitle="Strategically has produced thousands of pieces of content for over 250+ happy clients."
                     ctatextbelow="Read what our customers are saying about Strategically"
                 />

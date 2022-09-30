@@ -20,6 +20,10 @@ import Stars from "../assets/images/stars.png";
 import Author from "../assets/images/author2.png";
 import Collapsible from 'react-collapsible';
 
+import LpImg1 from "../assets/images/lp-img1.jpg"
+import LpImg2 from "../assets/images/lp-img2.jpg"
+
+
 
 const LpIndex = (props) => {
     const { data } = props
@@ -37,13 +41,13 @@ const LpIndex = (props) => {
                             <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/1/"}>
                                 View Pricing
                             </a>
-
                         </>
                     ),
                     footerStyle: "style2",
                 }}
             >
-                <div className="lp_bg pt-10">
+                <div className="lp_bg pt-10 position-relative">
+                <img src={LpImg1} alt="" className="position-absolute bottom right lp-img1"/>
                     <div className="main-banner mt-12">
                         <div className="container">
                             <div className="row justify-content-center">
@@ -82,6 +86,7 @@ const LpIndex = (props) => {
                             </div>
                         </div>
                     </div>
+                    <img src={LpImg2} alt="" className="position-absolute lp-img2"/>
                 </div>
 
                 <Progress className="pb-lg-21 " />

@@ -39,7 +39,7 @@ const ClientsLogos = (props) => {
   )
     return (
         <div className="container mt-10">
-           <h2 className="text-center mb-10">Some of Our Recent Awards</h2>
+           <h2 className="text-center mb-10">Some of our recent awards</h2>
             <LogosRow className="row">
                 <div className="col-lg-2 col-md-2 col-sm-4 col-xs-4 my-3" onClick={() => window.open("https://g.page/strategically?share", "_blank")}>
                     <GatsbyImage

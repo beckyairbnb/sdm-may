@@ -7,7 +7,7 @@ import PageWrapper from "../../components/PageWrapper";
 import Icon1 from "../../assets/images/icon-traffic.png";
 import Icon2 from "../../assets/images/icon-value.png";
 import Icon3 from "../../assets/images/icon-links.png";
-import ClientImg from "../../assets/images/lanacooper-2.jpg";
+import ClientImg from "../../assets/images/originalkettlebell.png";
 
 import FeaturedImg5 from "../../assets/images/post_img1.jpg"
 import FeaturedImg6 from "../../assets/images/post_img2.jpg"
@@ -70,8 +70,8 @@ const OriginalKettlebell = () => {
                         <div class="row justify-content-center">
                             <div class="col-xl-12 col-12">
                                 <div class="row mb-lg-14 mb-10">
-                                    <div class="col-lg-5 col-12 cimage">
-                                        <img className="w-full justify-center mb-10" src={ClientImg} alt="" />
+                                    <div class="col-lg-5 col-12 cimage1 d-flex justify-content-center align-items-center">
+                                        <img className="mb-10" src={ClientImg} alt="" />
                                     </div>
                                     <div class="col-lg-7 col-md-11 mt-10">
                                         <h2 className="font-size-10">The client</h2>
