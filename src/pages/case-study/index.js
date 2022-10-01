@@ -30,7 +30,7 @@ const CaseStudy = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/1/"}>
+                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/2/"}>
                                 View Pricing
                             </a>
                         </>
@@ -45,7 +45,7 @@ const CaseStudy = () => {
                                 <div className="text-center pt-5 pb-lg-4 mb-lg-2">
                                     <h1>Read our case studies and see our results in action</h1>
                                     <Link
-                                        to="/get-a-quote/1/"
+                                        to="/get-a-quote/2/"
                                         className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                                 </div>
                             </div>
@@ -71,7 +71,21 @@ const CaseStudy = () => {
                         </div>
                     </div>
                 </div>
-                <div className="py-16 mb-10">
+                <div className="bg-light py-16 mb-8">
+                    <div className="container">
+                        <div className="row align-items-center">
+                            <div className="col-lg-6 col-xs-12">
+                                <h3 class="mb-6 font-size-10"><Link to="/case-study/sanctions">Sanctions</Link></h3>
+                                <p> sanctions.io had a blog where they posted once per month. Unfortunately, they are a team of data and technology buffs, not writers. “Our team doesn't have great writers, I'm not a great writer, and it's always a big headache trying to write.”</p>
+                                <p>Thorsten and the team were procrastinating and pushing away creating content for their blog when they knew they needed it to improve their SEO. For most businesses, there is a straightforward solution: outsourcing their work. But for a niche technology company, sanctions.io was struggling to find an agency they were satisfied with.</p>
+                            </div>
+                            <div className="col-lg-6 col-xs-12">
+                                <Link to="/case-study/sanctions" className="d-flex justify-content-center align-items-center case-img1"><img src={ClientImg1} alt="" className="d-flex justify-content-center align-items-center" /></Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="py-16">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6 col-xs-12">
@@ -86,20 +100,7 @@ const CaseStudy = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-light py-16">
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-lg-6 col-xs-12">
-                                <h3 class="mb-6 font-size-10"><Link to="/case-study/sanctions">Sanctions</Link></h3>
-                                <p> sanctions.io had a blog where they posted once per month. Unfortunately, they are a team of data and technology buffs, not writers. “Our team doesn't have great writers, I'm not a great writer, and it's always a big headache trying to write.”</p>
-                                <p>Thorsten and the team were procrastinating and pushing away creating content for their blog when they knew they needed it to improve their SEO. For most businesses, there is a straightforward solution: outsourcing their work. But for a niche technology company, sanctions.io was struggling to find an agency they were satisfied with.</p>
-                            </div>
-                            <div className="col-lg-6 col-xs-12">
-                                <Link to="/case-study/sanctions" className="d-flex justify-content-center align-items-center case-img1"><img src={ClientImg1} alt="" className="d-flex justify-content-center align-items-center" /></Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
                 <HappyClientsReviews
                     title="Over 4M+ words written!"
                     subtitle="Strategically has produced thousands of pieces of content for over 250+ happy clients."

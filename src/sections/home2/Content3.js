@@ -90,7 +90,7 @@ const Content3 = ({ className, ...rest }) => {
                   We create content that’s engineered to resonate with your target audience. Our content team manages the entire production process, providing ongoing strategic guidance while sourcing top talent and overseeing delivery.{" "}
                 </p>
                 <div className="btn-group mb-12">
-                  <Link className="btn btn-dodger-blue-2 rounded-5" to={"/get-a-quote/1/"}>
+                  <Link className="btn btn-dodger-blue-2 rounded-5" to={"/get-a-quote/2/"}>
                     View Pricing
                   </Link>
                 </div>

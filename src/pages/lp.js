@@ -6,6 +6,7 @@ import Content2 from "../sections/LP/Content2";
 import Helmet from "react-helmet";
 import Progress from "../sections/LP/Progress";
 import HappyClientsReviews from "../sections/LP/happyClientsReviews";
+import FaqAccordion from "../sections/pricing/FaqAccordion";
 import logo1 from "../assets/images/clients/logo-1.jpg";
 import logo2 from "../assets/images/clients/logo-2.jpg";
 import logo3 from "../assets/images/clients/logo-3.jpg";
@@ -20,13 +21,22 @@ import Stars from "../assets/images/stars.png";
 import Author from "../assets/images/author2.png";
 import Collapsible from 'react-collapsible';
 
-import LpImg1 from "../assets/images/lp-img1.jpg"
-import LpImg2 from "../assets/images/lp-img2.jpg"
+import LpImg from "../assets/images/lp-img.jpg"
 
 
 
 const LpIndex = (props) => {
     const { data } = props
+    const { PriceData } = props.data  
+  
+    const Faqitems = PriceData.data.body.filter((item) => {
+      return item.slice_type === "faq_block";
+    });
+  
+    console.log('Faqitems',Faqitems)
+  
+    const fitems = Faqitems[0].items
+    
     return (
         <div className="lp_page">
             <Helmet>
@@ -38,7 +48,7 @@ const LpIndex = (props) => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/1/"}>
+                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/2/"}>
                                 View Pricing
                             </a>
                         </>
@@ -47,7 +57,8 @@ const LpIndex = (props) => {
                 }}
             >
                 <div className="lp_bg pt-10 position-relative">
-                <img src={LpImg1} alt="" className="position-absolute bottom right lp-img1"/>
+                    
+                <img src={LpImg} alt="" className="position-absolute bottom right lp-img1"/>
                     <div className="main-banner mt-12">
                         <div className="container">
                             <div className="row justify-content-center">
@@ -57,7 +68,7 @@ const LpIndex = (props) => {
                                         {/* {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="mb-4" ></div>} */}
                                         <div>Our expert content writers work with ABTasty, Baremetrics, VWO and more</div>
                                         <Link
-                                            to="/get-a-quote/1/"
+                                            to="/get-a-quote/2/"
                                             className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                                         <p>100% original. Managed Service. Get started today.</p>
 
@@ -86,7 +97,7 @@ const LpIndex = (props) => {
                             </div>
                         </div>
                     </div>
-                    <img src={LpImg2} alt="" className="position-absolute lp-img2"/>
+                    {/* <img src={LpImg2} alt="" className="position-absolute lp-img2"/> */}
                 </div>
 
                 <Progress className="pb-lg-21 " />
@@ -94,7 +105,7 @@ const LpIndex = (props) => {
                     <div className="row justify-content-center">
                         <div className="col-xl-12 col-lg-9 col-md-12 col-sm-12 d-flex justify-content-center mt-5 pb-20">
                             <Link
-                                to="/get-a-quote/1/"
+                                to="/get-a-quote/2/"
                                 className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                         </div>
                     </div>
@@ -111,7 +122,7 @@ const LpIndex = (props) => {
                     <div className="row justify-content-center">
                         <div className="col-xl-12 col-lg-9 col-md-12 col-sm-12 d-flex justify-content-center pb-20">
                             <Link
-                                to="/get-a-quote/1/"
+                                to="/get-a-quote/2/"
                                 className="btn btn btn-dodger-blue-2 header-btn-2 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                         </div>
                     </div>
@@ -186,15 +197,17 @@ const LpIndex = (props) => {
                     <div className="row justify-content-center">
                         <div className="col-xl-12 col-lg-9 col-md-12 col-sm-12 d-flex justify-content-center pb-20">
                             <Link
-                                to="/get-a-quote/1/"
+                                to="/get-a-quote/2/"
                                 className="btn btn btn-dodger-blue-2 header-btn-2 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                         </div>
                     </div>
                 </div>
-                <div className="container">
-                    <h2 className="text-center mb-10">FAQs</h2>
-                    <div class="row  faq-blk">
-                        <div class="col-12">
+                <div className="container mb-10">
+                    <div class="row d-flex flex-row justify-content-center">
+                    <div className="col-lg-8">
+                        <FaqAccordion data={fitems} />
+                    </div>
+                        {/* <div class="col-12">
                             <Collapsible className="mb-8" trigger="What is an SEO content writing service?">
                                 <p>SEO web content writing is the art of producing high-end content for website visitors while, at the same time, adhering to the best SEO practices. Doing so ensures that the content is easy to find and drives qualified leads to your webpage from search engines.  </p>
                                 <p>Search engines feature complex algorithms to separate valuable content from web copy that uses outdated SEO practices. For example, inserting keywords into bad-quality, shallow content won't improve a website's ranking. Cooperating with expert writers is the safest choice.</p>
@@ -292,7 +305,7 @@ const LpIndex = (props) => {
                                 <p>Strategically takes care of the entire content creation process, from researching the topics to writing, editing, proofreading, and SEO. We can produce landing page content, social media posts, website content, blog posts, eBooks, and more on topics covering various industries. Everything we write will be tailored to your specific needs.</p>
                                 <p>As we've mentioned before, apart from our years of experience in the industry, the great thing about us is that we offer FREE revisions. Thanks to this policy, you can have peace of mind that you'll always receive quality content no matter what.</p>
                             </Collapsible>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </PageWrapper>
@@ -301,3 +314,55 @@ const LpIndex = (props) => {
 };
 
 export default LpIndex;
+
+export const query = graphql`
+query LpPricePage {
+  PriceData : prismicPriceTable(id: {eq: "4ae29779-cc90-59bc-a46a-84a259e1f968"}) {
+    data {
+      heading {
+        text
+        html
+      }
+      sub_heading {
+        text
+        html
+      }
+      body {   
+        ... on PrismicPriceTableDataBodyFaqBlock {
+          id
+          slice_type
+          items {
+            faq {
+              document {
+                ... on PrismicF {
+                  id
+                  data {
+                    question {
+                      text
+                    }
+                    answer {
+                      text
+                      html
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }     
+        ... on PrismicPriceTableDataBodyPriceTableData {
+          id
+          slice_type
+          items {
+            monthly_words
+            month_to_month_price
+            annual_price
+            button_text
+            button_link
+          }
+        }
+      }
+    }
+  }
+}
+`

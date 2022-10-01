@@ -32,7 +32,7 @@ const BlogTemplate = (props)=>{
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/1/"}>
+            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/2/"}>
               View Pricing
             </a>
             </>
@@ -57,7 +57,7 @@ const BlogTemplate = (props)=>{
                     {PostData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.title.html }} className="text-white text-center w-100 mt-20" ></div>}
                     {PostData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.sub_title.html }} className="text-center w-100 mb-10 mt-10 text-white" ></div>}
                     
-                        <Link to="/get-a-quote/1/" className="btn btn btn-blue-3 header-btn-2 pt-10 pb-10 pl-12 pr-12 font-size-3 rounded-5 text-uppercase w-auto border-0">
+                        <Link to="/get-a-quote/2/" className="btn btn btn-blue-3 header-btn-2 pt-10 pb-10 pl-12 pr-12 font-size-3 rounded-5 text-uppercase w-auto border-0">
                           Order content online
                         </Link>
             </div>

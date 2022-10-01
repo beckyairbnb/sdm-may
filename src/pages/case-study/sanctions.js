@@ -24,7 +24,7 @@ const Sanctions = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/1/"}>
+                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/2/"}>
                                 View Pricing
                             </a>
                         </>
@@ -142,7 +142,7 @@ const Sanctions = () => {
                 {/* <div class="pt-0 pb-10 py-lg-20 d-flex justify-content-center align-items-center text-center">
                     <div className="container">
                         <h2 className="font-size-md-12 font-size-10 mb-12">Get customer-driven and SEO-focused content to power your sales</h2>
-                        <Link class="btn btn btn-dodger-blue-2 header-btn rounded-5 px-10" to="/get-a-quote/1/">Get pricing now </Link>
+                        <Link class="btn btn btn-dodger-blue-2 header-btn rounded-5 px-10" to="/get-a-quote/2/">Get pricing now </Link>
                     </div>
                 </div> */}
                 <div class="bg-default-3 py-lg-18 py-10 text-center">
