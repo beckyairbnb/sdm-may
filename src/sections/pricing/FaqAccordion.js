@@ -13,11 +13,14 @@ const FaqAccordion = ({data}) => {
             </h2>         
   
             {data && data.map((item, index)=>{
+              if(item.faq.document.data.question && item.faq.document.data.question.text)
+              {
               return(
                 <Collapsible trigger={item.faq.document.data.question.text}>
                   {item.faq.document.data.answer.html && <div dangerouslySetInnerHTML={{ __html: item.faq.document.data.answer.html }} ></div>}
                 </Collapsible>
               )
+              }
             })}
           </div>
         </FaqBlock>
