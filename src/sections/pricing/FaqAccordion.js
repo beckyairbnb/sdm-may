@@ -3,25 +3,32 @@ import styled from "styled-components";
 import Collapsible from "react-collapsible";
 
 const FaqAccordion = ({data}) => {
-  return (
-    <>
-      <FaqBlock>
-        <div className="w-100 p-5">
-          <h2 className="font-size-9 text-dark-cloud text-center mb-6 mt-4">
-            Frequently asked questions
-          </h2>         
-
-          {data && data.map((item, index)=>{
-            return(
-              <Collapsible trigger={item.faq.document.data.question.text}>
-                {item.faq.document.data.answer.html && <div dangerouslySetInnerHTML={{ __html: item.faq.document.data.answer.html }} ></div>}
-              </Collapsible>
-            )
-          })}
-        </div>
-      </FaqBlock>
-    </>
-  );
+  if(data){
+    return (
+      <>
+        <FaqBlock>
+          <div className="w-100 p-5">
+            <h2 className="font-size-9 text-dark-cloud text-center mb-6 mt-4">
+              Frequently asked questions
+            </h2>         
+  
+            {data && data.map((item, index)=>{
+              return(
+                <Collapsible trigger={item.faq.document.data.question.text}>
+                  {item.faq.document.data.answer.html && <div dangerouslySetInnerHTML={{ __html: item.faq.document.data.answer.html }} ></div>}
+                </Collapsible>
+              )
+            })}
+          </div>
+        </FaqBlock>
+      </>
+    );
+  }
+  else
+  {
+    return null;
+  }
+  
 };
 
 export default FaqAccordion;
