@@ -108,7 +108,7 @@ const Step2 = () => {
                       className="w-100 bg-white py-5 px-6 mb-2 rounded-1 border border-info"
                     />
                   </div>
-                  <div className="col-sm-12 mb-3">
+                  {/* <div className="col-sm-12 mb-3">
                     <InputBox
                       type="text"
                       placeholder="Company Name"
@@ -135,7 +135,7 @@ const Step2 = () => {
                   <div className="col-sm-12 mb-3">
                     <label className="d-flex flex-row justify-content-start items-center"><input type="checkbox" name="Agree for Promotional Emails" className="mt-2 mb-6" /><span className="pl-3">I agree to receive occasional marketing and promotional emails from Strategically.
                     </span></label>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="col-sm-12 py-1 d-flex justify-content-center align-items-center">
                   {formIsValid && state.email !== '' && state.firstname !== '' && <button type="submit" className="my-6 btn btn btn-dodger-blue-2 header-btn rounded-5 text-uppercase fs-6 fw-bolder text">Get Quote</button>}
