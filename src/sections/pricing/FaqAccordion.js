@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Collapsible from "react-collapsible";
 
 const FaqAccordion = ({data}) => {
+  console.log('data', data)
   if(data){
     return (
       <>
@@ -10,18 +11,17 @@ const FaqAccordion = ({data}) => {
           <div className="w-100 p-5">
             <h2 className="font-size-9 text-dark-cloud text-center mb-6 mt-4">
               Frequently asked questions
-            </h2>         
-  
-            {data && data.map((item, index)=>{
-              if(item.faq.document.data.question && item.faq.document.data.question.text)
-              {
-              return(
-                <Collapsible trigger={item.faq.document.data.question.text}>
-                  {item.faq.document.data.answer.html && <div dangerouslySetInnerHTML={{ __html: item.faq.document.data.answer.html }} ></div>}
-                </Collapsible>
-              )
+            </h2>  
+            {data && data.length>0 && data.map(({faq})=>{
+              if(faq && faq.document && faq.document.data){
+                console.log('FAQ single item', faq)
+                return(
+                  <Collapsible trigger={faq.document.data.question.text} id={faq.document.data.id}>
+                    {faq.document.data.answer.html && <div dangerouslySetInnerHTML={{ __html: faq.document.data.answer.html }} ></div>}
+                  </Collapsible>
+                )
               }
-            })}
+            })}           
           </div>
         </FaqBlock>
       </>

@@ -36,6 +36,8 @@ const LpIndex = (props) => {
     console.log('Faqitems',Faqitems)
   
     const fitems = Faqitems[0].items
+
+    console.log('fitems',fitems)
     
     return (
         <div className="lp_page">
@@ -205,7 +207,7 @@ const LpIndex = (props) => {
                 <div className="container mb-10">
                     <div class="row d-flex flex-row justify-content-center">
                     <div className="col-lg-8">
-                        <FaqAccordion data={fitems} />
+                        {fitems && <FaqAccordion data={fitems} />}
                     </div>
                         {/* <div class="col-12">
                             <Collapsible className="mb-8" trigger="What is an SEO content writing service?">
