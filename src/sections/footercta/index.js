@@ -10,7 +10,7 @@ const FooterCta = ()=>{
                   className="dark-mode-texts"
                 >           
                   <h2 className="font-size-10 mb-8 letter-spacing-n83 text-center">
-                  Ready to put your content on auto-pilot?
+                  Ready to put your content on autopilot?
                   </h2>
                   {/* <p className="font-size-7 mb-0 text-center">
                   Book a call, we love to chat. 
