@@ -5,6 +5,7 @@ import Footer3 from "./Footer3";
 import Footer4 from "./Footer4";
 import Footer5 from "./Footer5";
 import Footer6 from "./Footer6";
+import Footer8 from "./Footer8";
 
 const Footer = ({ className = "", style, ...rest }) => {
   let FooterEl = Footer1;
@@ -23,6 +24,9 @@ const Footer = ({ className = "", style, ...rest }) => {
   }
   if (style === "style6") {
     FooterEl = Footer6;
+  }
+  if (style === "style8") {
+    FooterEl = Footer8;
   }
 
   return (

@@ -95,9 +95,10 @@ const Progress = ({ className, ...rest }) => {
                   </div>
                   <div className="">
                     <h3 className="font-size-8 mb-6 capitalize">Order</h3>
-                    <p className="font-size-5 line-height-28 mb-0">
+                    <p className="font-size-5 line-height-28">
                     Submit your article brief via email or our order dashboard.
                     </p>
+                    <p className="font-size-5 line-height-28 mb-0">Start with a kickoff so we can understand your business goals, target audience, and more</p>
                   </div>
                 </GridItem>
                 {/* <!-- End Single Progress --> */}
@@ -116,8 +117,9 @@ const Progress = ({ className, ...rest }) => {
                   <div className="">
                     <h3 className="font-size-8 mb-6 capitalize">Relax</h3>
                     <p className="font-size-5 line-height-28 mb-0">
-                    Sit back and relax while our expert writers work their magic.
+                    Sit back and relax while our expert copywriters work their magic.
                     </p>
+                 
                   </div>
                 </GridItem>
                 {/* <!-- End Single Progress --> */}
@@ -136,7 +138,7 @@ const Progress = ({ className, ...rest }) => {
                   <div className="">
                     <h3 className="font-size-8 mb-6 capitalize">Approve</h3>
                     <p className="font-size-5 line-height-28 mb-0">
-                    We send you the article to review. Approve it straight away or request unlimited free revisions.
+                    We send you the copy to review. Approve it straight away or request unlimited free revisions.
                     </p>
                   </div>
                 </GridItem>

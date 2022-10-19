@@ -17,6 +17,7 @@ import ModalVideo from "../ModalVideo";
 import GlobalContext from "../../context/GlobalContext";
 
 import FooterCta from "../../sections/footercta";
+import FooterCta2 from "../../sections/footercta/footercta2";
 import ClientsLogos from "../ClientsLogos";
 
 import imgFavicon from "../../assets/favicon.png";
@@ -102,7 +103,6 @@ const Layout = (props) => {
 
     return () => {};
   }, [gContext]);
-  console.log('props.pathprops.path',props.path)
   const schemaOrgJSONLD = [
     {
       "@context": "https://schema.org/",
@@ -137,6 +137,7 @@ const Layout = (props) => {
       }
     }
   ]
+  console.log('pageContext.layout',pageContext.layout)
   if (pageContext.layout === "writing-jobs") {
     return (
       <>
@@ -639,7 +640,7 @@ const Layout = (props) => {
           <HeaderCenterFooter/>  
           {children}         
           <ClientsLogos/>
-          <FooterCta/>
+          {props.path === '/lp/' ? <FooterCta/> : <FooterCta2/>}
           <div class="container mt-5 pt-6 ">
           <div class="row">
           <div className="col-lg-12 border-top border-dark-light mt-5 pt-6 pb-0">

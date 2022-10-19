@@ -42,18 +42,18 @@ const Content2 = ({ className, ...rest }) => {
   const contentWidgetData = [
     {
       icon: img1,
-      title: "Expert content writers",
+      title: "Expert copywriters",
       text: "We hire the top 1% of writers only.",
     },
     {
       icon: img2,
-      title: "Scale your content",
-      text: "We write, design, and produce content at scale",
+      title: "Connect with your audience",
+      text: "We create copy that speaks to your audience needs and persuades them to invest in your brand.",
     },
     {
       icon: img3,
-      title: "Content done-for-you",
-      text: " Our content team manages the entire production process.",
+      title: "Copy that converts",
+      text: "Our team writers clear and concise website copy that converts without selling too hard.",
     },
   ];
   return (
@@ -63,7 +63,7 @@ const Content2 = ({ className, ...rest }) => {
           <div className="row align-items-center justify-content-center">
             {/* Left */}
             <div
-              className="col-xl-4 col-lg-5 col-md-6 col-xs-8 order-2 order-md-1"
+              className="col-xl-5 col-lg-5 col-md-6 col-xs-8 order-2 order-md-1"
 
             >
               <h2 className="font-size-11">The benefits of working with us</h2>
@@ -92,7 +92,7 @@ const Content2 = ({ className, ...rest }) => {
             {/* Left End */}
             {/* Right */}
             <div
-              className="col-xl-6 offset-xl-2 col-lg-7 col-md-6 col-xs-8 order-1 order-md-2"
+              className="col-xl-6 offset-xl-1 col-lg-7 col-md-6 col-xs-8 order-1 order-md-2"
 
             >
               <div className="l2-content-image-group-2 mb-10 mb-md-0 rounded-10">

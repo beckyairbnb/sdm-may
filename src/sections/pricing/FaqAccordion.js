@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Collapsible from "react-collapsible";
 
 const FaqAccordion = ({data}) => {
-  console.log('data', data)
   if(data){
     return (
       <>
@@ -14,7 +13,6 @@ const FaqAccordion = ({data}) => {
             </h2>  
             {data && data.length>0 && data.map(({faq})=>{
               if(faq && faq.document && faq.document.data){
-                console.log('FAQ single item', faq)
                 return(
                   <Collapsible trigger={faq.document.data.question.text} id={faq.document.data.id}>
                     {faq.document.data.answer.html && <div dangerouslySetInnerHTML={{ __html: faq.document.data.answer.html }} ></div>}

@@ -406,5 +406,39 @@ h2.display-2 {
   .lp-img1, .lp-img2{width: 25%;}
 }
 
+/* 
+.faq-blk{background-color: #f4f8f9;
+border-radius: 20px;
+height:100%;}
+.Collapsible {
+  background-color: #fff;
+  padding: 20px;
+  padding-left: 50px;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 15px;}
+  .Collapsible span {
+    color: #1d293f;
+    font-size: 21px;}
+    .Collapsible span:after {
+      content: "+";
+      position: absolute;
+      left: 25px;
+      top: 18px;
+      width: 15px;
+      height: 15px;
+      background-image: none;
+    }
+  
+    .Collapsible span.is-open:after {
+    content: "-";
+    top: 18px;
+    background-image: none;
+  }
 
+  .Collapsible p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 10px;
+  } */
 
