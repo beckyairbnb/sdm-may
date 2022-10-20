@@ -18,7 +18,8 @@ const Index = (props) => {
   return (
     <>
       <Helmet>
-        <title>Strategically | Content Writing Agency</title>
+        <title>Professional content writing services | Content writing agency</title>
+        <meta name="description" content="High-quality content writing services from an agency you can trust. Just ask our customers" />
       </Helmet>
       <PageWrapper
         themeConfig={{

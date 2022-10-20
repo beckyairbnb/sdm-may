@@ -95,9 +95,9 @@ const Progress = ({ className, ...rest }) => {
                   </div>
                   <div className="">
                     <h3 className="font-size-8 mb-6 capitalize">Order</h3>
-                    <p className="font-size-5 line-height-28">
+                    {/* <p className="font-size-5 line-height-28">
                     Submit your article brief via email or our order dashboard.
-                    </p>
+                    </p> */}
                     <p className="font-size-5 line-height-28 mb-0">Start with a kickoff so we can understand your business goals, target audience, and more</p>
                   </div>
                 </GridItem>

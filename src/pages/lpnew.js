@@ -3,8 +3,8 @@ import { graphql, Link } from "gatsby"
 import PageWrapper from "../components/PageWrapper";
 import Content2 from "../sections/LP/Content2";
 import Helmet from "react-helmet";
- import Progress from "../sections/LP/Progress";
- import HappyClientsReviews from "../sections/LP/happyClientsReviews";
+import Progress from "../sections/LP/Progress";
+import HappyClientsReviews from "../sections/LP/happyClientsReviews";
 import FaqAccordion from "../sections/pricing/FaqAccordion";
 import logo1 from "../assets/images/clients/logo-1.jpg";
 import logo2 from "../assets/images/clients/logo-2.jpg";
@@ -23,76 +23,76 @@ import LpImg from "../assets/images/lp-img.jpg"
 
 
 const LpNew = (props) => {
-const { data } = props
-    const { PriceData } = props.data  
-  
+    const { data } = props
+    const { PriceData } = props.data
+
     const Faqitems = PriceData.data.body.filter((item) => {
-      return item.slice_type === "faq_block";
+        return item.slice_type === "faq_block";
     });
-    
+
     const fitems = Faqitems[0].items
     return (
-      <div className="lp_page">
-      <Helmet>
-          <title>Strategically | Content Writing Agency</title>
-      </Helmet>
+        <div className="lp_page">
+            <Helmet>
+                <title>Strategically | Content Writing Agency</title>
+            </Helmet>
 
-      <PageWrapper
-          themeConfig={{
-              headerClassName: "site-header--menu-right",
-              headerButton: (
-                  <>
-                      <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/2/"}>
-                          View Pricing
-                      </a>
-                  </>
-              ),
-              footerStyle: "style1",
-          }}
-      >
- <div className="lp_bg pt-10 position-relative">
-                    
-                    <img src={LpImg} alt="" className="position-absolute bottom right lp-img1"/>
-                        <div className="main-banner mt-12">
-                            <div className="container">
-                                <div className="row justify-content-center">
-                                    <div className="col-xl-8 col-lg-9 col-md-12 col-sm-12">
-                                        <div className="text-center pt-5 pb-lg-4 mb-lg-2">
-                                            <h1>Award-winning copywriting agency</h1>
-                                            {/* {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="mb-4" ></div>} */}
-                                            <div>Our expert copywriters work with ABTasty, Baremetrics, VWO and more</div>
-                                            <Link
-                                                to="/get-a-quote/2/"
-                                                className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
-                                            <p>100% original. Managed Service. Get started today.</p>    
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="text-center d-sm-block d-lg-none d-md-none"> <img src="images/mob-banner.jpg" alt="" className="w-100" /></div>
-                            </div>
-                        </div>
-    
-                        <div className="py-2 mb-4">
-                            <div className="container my-1">
-                                <div className="client-logo d-flex flex-column">
-                                    <div className="d-flex flex-row justify-content-center align-items-center m-0 p-0">
-                                        <div className="client-item"><img src={logo1} alt="Client 1" /></div>
-                                        <div className="client-item"><img src={logo2} alt="Client 2" /></div>
-                                        <div className="client-item"><img src={logo3} alt="Client 3" /></div>
-                                        <div className="client-item"><img src={logo4} alt="Client 4" /></div>
-                                    </div>
-                                    <div className="d-flex flex-row justify-content-center align-items-center m-0 p-0">
-                                        <div className="client-item"><img src={logo5} alt="Client 5" /></div>
-                                        <div className="client-item"><img src={logo7} alt="Client 7" /></div>
-                                        <div className="client-item"><img src={logo9} alt="Client 9" /></div>
-                                        <div className="client-item"><img src={logo10} alt="Client 10" /></div>
+            <PageWrapper
+                themeConfig={{
+                    headerClassName: "site-header--menu-right",
+                    headerButton: (
+                        <>
+                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/2/"}>
+                                View Pricing
+                            </a>
+                        </>
+                    ),
+                    footerStyle: "style1",
+                }}
+            >
+                <div className="lp_bg pt-10 position-relative">
+
+                    <img src={LpImg} alt="" className="position-absolute bottom right lp-img1" />
+                    <div className="main-banner mt-12">
+                        <div className="container">
+                            <div className="row justify-content-center">
+                                <div className="col-xl-8 col-lg-9 col-md-12 col-sm-12">
+                                    <div className="text-center pt-5 pb-lg-4 mb-lg-2">
+                                        <h1>Award-winning copywriting agency</h1>
+                                        {/* {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="mb-4" ></div>} */}
+                                        <div>Our expert copywriters work with ABTasty, Baremetrics, VWO and more</div>
+                                        <Link
+                                            to="/get-a-quote/2/"
+                                            className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
+                                        <p>100% original. Managed Service. Get started today.</p>
                                     </div>
                                 </div>
                             </div>
+                            <div className="text-center d-sm-block d-lg-none d-md-none"> <img src="images/mob-banner.jpg" alt="" className="w-100" /></div>
                         </div>
-                        {/* <img src={LpImg2} alt="" className="position-absolute lp-img2"/> */}
                     </div>
-                    <Progress className="pb-lg-21 " />
+
+                    <div className="py-2 mb-4">
+                        <div className="container my-1">
+                            <div className="client-logo d-flex flex-column">
+                                <div className="d-flex flex-row justify-content-center align-items-center m-0 p-0">
+                                    <div className="client-item"><img src={logo1} alt="Client 1" /></div>
+                                    <div className="client-item"><img src={logo2} alt="Client 2" /></div>
+                                    <div className="client-item"><img src={logo3} alt="Client 3" /></div>
+                                    <div className="client-item"><img src={logo4} alt="Client 4" /></div>
+                                </div>
+                                <div className="d-flex flex-row justify-content-center align-items-center m-0 p-0">
+                                    <div className="client-item"><img src={logo5} alt="Client 5" /></div>
+                                    <div className="client-item"><img src={logo7} alt="Client 7" /></div>
+                                    <div className="client-item"><img src={logo9} alt="Client 9" /></div>
+                                    <div className="client-item"><img src={logo10} alt="Client 10" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <img src={LpImg2} alt="" className="position-absolute lp-img2"/> */}
+                </div>
+                <Progress className="pb-lg-21 " />
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-xl-12 col-lg-9 col-md-12 col-sm-12 d-flex justify-content-center mt-5 pb-20">
@@ -150,7 +150,7 @@ const { data } = props
                             <div className="rounded-circle lpcircle bg-dodger-blue-1 mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M2.597 7.81l4.911 13.454c-3.434-1.668-5.802-5.19-5.802-9.264 0-1.493.32-2.91.891-4.19zm16.352 3.67c0-1.272-.457-2.153-.849-2.839-.521-.849-1.011-1.566-1.011-2.415 0-.978.747-1.88 1.862-1.819-1.831-1.677-4.271-2.701-6.951-2.701-3.596 0-6.76 1.845-8.601 4.64.625.02 1.489.032 3.406-.118.555-.034.62.782.066.847 0 0-.558.065-1.178.098l3.749 11.15 2.253-6.756-1.604-4.394c-.555-.033-1.08-.098-1.08-.098-.555-.033-.49-.881.065-.848 2.212.17 3.271.171 5.455 0 .555-.033.621.783.066.848 0 0-.559.065-1.178.098l3.72 11.065 1.027-3.431c.444-1.423.783-2.446.783-3.327zm-6.768 1.42l-3.089 8.975c.922.271 1.898.419 2.908.419 1.199 0 2.349-.207 3.418-.583-.086-.139-3.181-8.657-3.237-8.811zm8.852-5.839c.224 1.651-.099 3.208-.713 4.746l-3.145 9.091c3.061-1.784 5.119-5.1 5.119-8.898 0-1.79-.457-3.473-1.261-4.939zm2.967 4.939c0 6.617-5.384 12-12 12s-12-5.383-12-12 5.383-12 12-12 12 5.383 12 12zm-.55 0c0-6.313-5.137-11.45-11.45-11.45s-11.45 5.137-11.45 11.45 5.137 11.45 11.45 11.45 11.45-5.137 11.45-11.45z" /></svg>
                             </div>
-                            <h4 className="py-2">Landing page and funnels</h4>
+                            <h4 className="py-2">Landing pages and funnels</h4>
                             <p>Great content is the heart and soul of any website but planning for and creating grat content isn't easy. That's where we come in</p>
                         </div>
                         {/* <div class="col-lg-4 col-md-6 col-12 border p-6 justify-content-center d-flex flex-column text-center align-items-center">
@@ -196,16 +196,16 @@ const { data } = props
 
                 <div className="container mb-10">
                     <div class="row d-flex flex-row justify-content-center">
-                    <div className="col-lg-8">
-                        {fitems && <FaqAccordion data={fitems} />}
-                    </div>
+                        <div className="col-lg-8">
+                            {fitems && <FaqAccordion data={fitems} />}
+                        </div>
                     </div>
                 </div>
-              
-        </PageWrapper>
+
+            </PageWrapper>
         </div>
-       
-);
+
+    );
 };
 export default LpNew;
 
