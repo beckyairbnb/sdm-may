@@ -39,7 +39,7 @@ const Content3 = ({ className, ...rest }) => {
 
               >
                 <h2 className="font-size-11 mb-10 mb-lg-20">
-                  Stop worrying about content quality.
+                Stop worrying about content quality
                 </h2>
               </div>
             </div>
@@ -85,9 +85,9 @@ const Content3 = ({ className, ...rest }) => {
             >
               <div className="mr-lg-10 mr-xl-25">
 
-              <p className="heading-default-color font-size-6 mb-11">  Great content is the heart and soul of any website but planning for and creating great content isn’t easy. That’s where we come in.</p>
+              <p className="heading-default-color font-size-6 mb-11">  Good quality content is the heart and soul of any website but planning for and creating great content isn’t easy. That’s where we come in.</p>
                 <p className="heading-default-color font-size-6 mb-11">
-                  We create content that’s engineered to resonate with your target audience. Our content team manages the entire production process, providing ongoing strategic guidance while sourcing top talent and overseeing delivery.{" "}
+                We create content that’s engineered to resonate with your ideal customer. Our content team manages the entire production process, providing ongoing strategic guidance while sourcing top talent and overseeing delivery.{" "}
                 </p>
                 <div className="btn-group mb-12">
                   <Link className="btn btn-dodger-blue-2 rounded-5" to={"/get-a-quote/2/"}>

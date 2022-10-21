@@ -47,10 +47,10 @@ const Progress = ({ className, ...rest }) => {
         <div className="container">
           {/* <!-- Section Title --> */}
           <div className="row justify-content-center">
-            <div className="col-xl-7 col-lg-8 col-md-9 col-xs-10">
+            <div className="col-xl-10 col-lg-10 col-md-10 col-xs-10">
               <div className="text-center pt-13 pt-lg-23 pb-13 pb-lg-12 pr-lg-10 pr-xl-0">
                 <h2 className="font-size-11 mb-0">
-                 Customer-driven and SEO-focused content
+                Professional content writing services: customer-driven and SEO-focused
                 </h2>
               </div>
             </div>
@@ -95,7 +95,7 @@ const Progress = ({ className, ...rest }) => {
                   <div className="">
                     <h3 className="font-size-8 mb-6">Plan</h3>
                     <p className="font-size-5 line-height-28 mb-0">
-                      We create a deeply customised, data driven SEO strategy to power your sales.
+                    We create a deeply customised, data-driven content marketing strategy to power your sales.
                     </p>
                   </div>
                 </GridItem>
@@ -114,7 +114,7 @@ const Progress = ({ className, ...rest }) => {
                   <div className="">
                     <h3 className="font-size-8 mb-6">Create</h3>
                     <p className="font-size-5 line-height-28 mb-0">
-                    Your articles are prepared by an expert writer, proofread and passed through a plagiarism checker. 
+                    Your articles are prepared by an expert writer, proofread and passed through a plagiarism checker.
                     </p>
                   </div>
                 </GridItem>
@@ -133,7 +133,7 @@ const Progress = ({ className, ...rest }) => {
                   <div className="">
                     <h3 className="font-size-8 mb-6">Optimise</h3>
                     <p className="font-size-5 line-height-28 mb-0">
-                    We integrate your provided keywords into your blog posts to ensure they are optimised for SEO.
+                    We integrate your keywords into your blog posts to ensure they are optimised for the search engines.
                     </p>
                   </div>
                 </GridItem>

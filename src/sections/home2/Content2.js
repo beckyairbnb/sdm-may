@@ -47,13 +47,13 @@ const Content2 = ({ className, ...rest }) => {
     },
     {
       icon: img2,
-      title: "Scale your content",
-      text: "We write, design, and produce content at scale",
+      title: "High-quality content, at scale",
+      text: "We write, design, and produce content at scale.",
     },
     {
       icon: img3,
       title: "Content done-for-you",
-      text: " Our content team manages the entire production process.",
+      text: "Our content team manages the entire production process.",
     },
   ];
   return (
@@ -66,7 +66,7 @@ const Content2 = ({ className, ...rest }) => {
               className="col-xl-4 col-lg-5 col-md-6 col-xs-8 order-2 order-md-1"
 
             >
-              <h2 className="font-size-11">Award-winning content team</h2>
+              <h2 className="font-size-10">Award-winning content writing agency</h2>
               <ul className="list-unstyled mt-9 mt-lg-14">
                 {contentWidgetData.map(({ icon, title, text }, index) => {
                   return (

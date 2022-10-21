@@ -46,7 +46,7 @@ const Index = (props) => {
             <div className="container">
               <div className="row justify-content-center text-center py-lg-5">
                 <div className="col-sm-12">
-                  <h2 className="mb-10">Services We Provide</h2>
+                  <h2 className="mb-10">Content writing services we provide</h2>
                   <ul className="row">
                     {AllServices.edges.map((item, index) => {
                       let slug = item.node.uid === 'saas-content-writerr' ? 'saas-content-writer' : item.node.uid

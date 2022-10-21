@@ -22,6 +22,12 @@ const ContentSection = () => {
                     <p>We use various methods to create engaging and informative content, including keyword research, targeted writing, search engine optimisation, and expert editing. Our focus is to meet your business goals, including driving more online users to your website and converting them into customers.</p>
                     <p>We also have a wide range of marketing tools and resources, making the content more user-friendly and desirable to search engines.</p>
                     <p>And because we understand the importance of SEO, we'll ensure that your content is optimised to help you rank higher in search engine results. That way, you can reach your target audience and drive conversions.</p>
+
+                    <p>That's how our customers value and rate our content writing services. If you're ready to take your online presence to the next level, contact us today and <a href="https://strategically.co/get-a-quote/2/">view our pricing</a>. We'll be happy to help you get started and reach your goals.</p>
+                    <h2 className="font-size-9 tlt-bdr pb-3 mb-8">Why choose Strategically for your web content writing services?</h2>
+                    <p>Around <a href="https://www.webfx.com/seo/statistics/">ninety-three</a> per cent of website traffic comes from search engine results, and that trend is unlikely to slow down soon. And good content is one of the crucial ways to attract that organic traffic. If you don't update your website, you'll miss out on many potential leads and sales.</p>
+                    <p>Strategically will help you develop and execute a content marketing strategy that aligns with your business goals, creating and curating content that resonates with your audience. </p>
+                    <p>With our professional content writing services, you can take advantage of the latest online marketing trends and rank higher in search results. Here's a rundown of how Strategically can help marketing agencies and business owners.</p>
                     <div class="row justify-content-center  my-10">
                         <div class="col-lg-10 col-12">
                             {/* <h3 className="mb-5">"Strategically tt is an absolute pleasure to work with! The team was able to wrap their heads around the product we work with, which is a metrics product for SaaS. The content is filled with specific product-related knowledge that really speaks to our audience and helps us talk with our customers! Definitely recommend working with them!"</h3>
@@ -41,12 +47,21 @@ const ContentSection = () => {
                             </div>
                         </div>
                     </div>
-                    <p>That's how our customers value and rate our content writing services. If you're ready to take your online presence to the next level, contact us today and <a href="https://strategically.co/get-a-quote/2/">view our pricing</a>. We'll be happy to help you get started and reach your goals.</p>
-                    <h2 className="font-size-9 tlt-bdr pb-3 mb-8">Why choose Strategically for your content?</h2>
-                    <p>Around <a href="https://www.webfx.com/seo/statistics/">ninety-three</a> per cent of website traffic comes from search engine results, and that trend is unlikely to slow down soon. And good content is one of the crucial ways to attract that organic traffic. If you don't update your website, you'll miss out on many potential leads and sales.</p>
-                    <p>Strategically will help you develop and execute a content marketing strategy that aligns with your business goals. We will create and curate content that resonates with your audience. </p>
-                    <p>With our professional content writing services, you can take advantage of the latest online marketing trends and rank higher in search results. Here's a rundown of how Strategically can help marketing agencies and business owners.</p>
-                    <h3 className="font-size-8">Providing quality content</h3>
+                    <h3>Providing a quality content writing service</h3>
+                    <p>We understand that you need compelling content to help your business succeed. We pride ourselves on providing original, high-quality content that grabs your audience's attention.</p>
+                    <h3>Offering industry-specific content writers</h3>
+                    <p>Our expert writers are experienced in various niches and specific industries. They have content writing expertise in topics like healthcare, education, SaaS, real estate, food, and many more.</p>
+                    <h3>Helping to stand out from your competition</h3>
+                    <p>With so much online competition, standing out from the crowd is tough. We create valuable, high-quality content that solves your customer's problems, providing them with what they need or want.</p>
+                    <h3>Crafting content for your audience</h3>
+                    <p>We understand the value of speaking directly to the audience and helping them understand your concepts, products or services. We don't just produce generic blog articles or web content; we tailor everything to your unique requirements and your customer's needs.</p>
+                    <h3>Generating more leads and sales</h3>
+                    <p>Our team is experienced in creating compelling copy that will attract leads and convert them to customers. We know how to write headlines that will grab attention, create a sense of urgency, and motivate people to take action.</p>
+                    <h3>Helping to secure long-term customers</h3>
+                    <p>The secret to a business's success is not just attracting new clients but retaining existing ones. Good, insightful content that solves problems or educates customers can make them return to your website.</p>
+                    <h3>Save time and money</h3>
+                    <p>It can be a minefield when outsourcing content and trying to find writers. You can get the perfect match the first time or waste valuable time and money trialling freelance writers or marketing agencies. We eliminate the risk by offering unlimited revisions, including free-of-charge rewrites with different professional writers until you find the perfect match.</p>
+                    {/* <h3 className="font-size-8">Providing quality content</h3>
                     <p>We pride ourselves on providing original, high-quality content. Our writers are experienced and well-versed in various fields and industries. They have subject matter expertise in topics like healthcare to education, SaaS, real estate, food, and many more. </p>
                     <p>Rest assured that the content you receive is engaging, accurate and up to date. From blog articles to web pages and eBooks, we can help you create web content that speaks to your audience and drives results. </p>
                     <p>Even if you want white papers, product reviews, B2B content, or technical writing, our writers are proficient in explaining hard-to-digest ideas in a compelling and reader-friendly manner.</p>
@@ -75,32 +90,32 @@ const ContentSection = () => {
                     <h3 className="font-size-8">Offering content optimisation</h3>
                     <p>Not all businesses have the resources and expertise to develop an effective SEO strategy. Since producing optimised content is a complex process, not every content creation company offers this service. Those who do charge high prices for everything from keyword research to writing optimised content with NLP words and SEO guidelines.</p>
                     <p>We understand the importance of SEO content, so we provide all clients access to our SEO add-ons.</p>
-                    <p>Our team of experts can help you optimise your content for search engines and increase the click-through rates on your website. You can be sure that we'll take care of all the details so you can focus on what you do best: running your business.</p>
+                    <p>Our team of experts can help you optimise your content for search engines and increase the click-through rates on your website. You can be sure that we'll take care of all the details so you can focus on what you do best: running your business.</p> */}
 
                     <div className="py-10 pb-8">
                         {/* <Testimonial2 /> */}
                     </div>
 
 
-                    <h2 className="font-size-9 tlt-bdr pb-3 mb-8">What's included in Strategically's content writing service?</h2>
+                    <h2 className="font-size-9 tlt-bdr pb-3 mb-8">Why you will love Strategically's content writing service?</h2>
                     <p>As a professional content writing agency, we organise and manage the entire content creation process from start to finish. The complete procedure includes researching the topic, writing, editing, proofreading, and search engine optimisation if required.</p>
                     <h3 className="font-size-8">Reader-friendly copy </h3>
                     <p>We don't just stuff your content with keywords – we make sure it's easy to read and flows well, so your visitors will want to stick around.</p>
                     <h3 className="font-size-8">Search engine optimisation </h3>
                     <p>We offer search engine optimisation of the written content. It can boost a business's reach beyond expectation. For this reason, we offer an SEO add-on for our partners. We use the suggestions of Surfer SEO, a powerful SEO optimisation tool, and the expertise of our SEO specialists.</p>
                     <h3 className="font-size-8">100% authentic and original </h3>
-                    <p>Before we deliver your content, we ensure content quality by running through a plagiarism checker to ensure it's authentic and 100% original. Rest assured, the content you receive will always be unique and tailored to your brand's voice.</p>
-                    <h3 className="font-size-8">Unlimted FREE revisions</h3>
-                    <p>We want you to be happy with your content, so we offer unlimited revisions until you are. Send back the content you are unsatisfied with, and we will fix it according to your feedback.</p>
+                    <p>Before we deliver your content, we ensure content quality by running through a plagiarism checker to ensure it's authentic and 100% original. The content you receive will always be unique and tailored to your brand's voice.</p>
+                    <h3 className="font-size-8">Unlimited FREE revisions</h3>
+                    <p>We want you to love your content, so we offer unlimited revisions until you are. In the unlikely event you are unhappy with your content, send back the piece you are unsatisfied with, and we will fix it according to your feedback. No quibbles.</p>
                     <p>Get in touch if you're looking for a content creation platform to provide you with all of the above. We'd be happy to help.</p>
-                    <h2 className="font-size-9 tlt-bdr pb-3 mb-8">How we write: The writing process at Strategically</h2>
-                    <p>Ordering content is a piece of cake. Just follow our simple-to-use order management system to order your content. In short, the process is as follows:</p>
+                    <h2 className="font-size-9 tlt-bdr pb-3 mb-8">How it works</h2>
+                    <p>Ordering content is easy. Just follow our simple-to-use order management system to order your content, and your dedicated content manager will do the rest.</p>
                     <div class="d-flex flex-row pt-5 pb-2">
                         <div class="mr-6 mt-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#56c0de "><path d="M5.48 10.089l1.583-1.464c1.854.896 3.028 1.578 5.11 3.063 3.916-4.442 6.503-6.696 11.311-9.688l.516 1.186c-3.965 3.46-6.87 7.314-11.051 14.814-2.579-3.038-4.301-4.974-7.469-7.911zm14.407.557c.067.443.113.893.113 1.354 0 4.962-4.038 9-9 9s-9-4.038-9-9 4.038-9 9-9c1.971 0 3.79.644 5.274 1.723.521-.446 1.052-.881 1.6-1.303-1.884-1.511-4.271-2.42-6.874-2.42-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11c0-1.179-.19-2.313-.534-3.378-.528.633-1.052 1.305-1.579 2.024z" /></svg>
                         </div>
                         <div>
-                            <h4> Step 1: You send us your brief and preferred keywords/titles</h4>
+                            <h4> Step 1: Send us your brief and preferred keywords/titles</h4>
                             <p className="mb-0">Ordering through our easy-to-use platform is a breeze. Just send us a detailed brief for your copy, along with some suggested keywords and headings.</p>
                         </div>
                     </div>
@@ -110,8 +125,8 @@ const ContentSection = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#56c0de "><path d="M5.48 10.089l1.583-1.464c1.854.896 3.028 1.578 5.11 3.063 3.916-4.442 6.503-6.696 11.311-9.688l.516 1.186c-3.965 3.46-6.87 7.314-11.051 14.814-2.579-3.038-4.301-4.974-7.469-7.911zm14.407.557c.067.443.113.893.113 1.354 0 4.962-4.038 9-9 9s-9-4.038-9-9 4.038-9 9-9c1.971 0 3.79.644 5.274 1.723.521-.446 1.052-.881 1.6-1.303-1.884-1.511-4.271-2.42-6.874-2.42-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11c0-1.179-.19-2.313-.534-3.378-.528.633-1.052 1.305-1.579 2.024z" /></svg>
                         </div>
                         <div>
-                            <h4>Step 2: We forward the brief to our professional writers and create an outline</h4>
-                            <p className="mb-0">Once we've received your order and brief, we may work out an outline for our writers to follow and forward it to you for approval. </p>
+                            <h4>Step 2: We write, edit and optimise your content</h4>
+                            <p className="mb-0">This is where we shine. Once you give us the go-ahead, we will produce content that speaks directly to your target audience and accurately represents your brand's image and ethos.</p>
                         </div>
                     </div>
                     <hr />
@@ -120,12 +135,12 @@ const ContentSection = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#56c0de "><path d="M5.48 10.089l1.583-1.464c1.854.896 3.028 1.578 5.11 3.063 3.916-4.442 6.503-6.696 11.311-9.688l.516 1.186c-3.965 3.46-6.87 7.314-11.051 14.814-2.579-3.038-4.301-4.974-7.469-7.911zm14.407.557c.067.443.113.893.113 1.354 0 4.962-4.038 9-9 9s-9-4.038-9-9 4.038-9 9-9c1.971 0 3.79.644 5.274 1.723.521-.446 1.052-.881 1.6-1.303-1.884-1.511-4.271-2.42-6.874-2.42-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11c0-1.179-.19-2.313-.534-3.378-.528.633-1.052 1.305-1.579 2.024z" /></svg>
                         </div>
                         <div>
-                            <h4>Step 3: You approve of the outline</h4>
-                            <p className="mb-0">In this step, you can approve the outline or suggest some changes. We'll apply these to the document and send you again for a final check so the writing can begin.</p>
+                            <h4>Step 3: We send you the draft </h4>
+                            <p className="mb-0">Once complete, your content manager will send you the final draft. Either approve the content or request revisions. You can contact your web content writer directly to request changes or keep in touch via your dedicated account manager.</p>
                         </div>
                     </div>
                     <hr />
-                    <div class="d-flex flex-row pt-5 pb-2">
+                    {/* <div class="d-flex flex-row pt-5 pb-2">
                         <div class="mr-6 mt-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#56c0de "><path d="M5.48 10.089l1.583-1.464c1.854.896 3.028 1.578 5.11 3.063 3.916-4.442 6.503-6.696 11.311-9.688l.516 1.186c-3.965 3.46-6.87 7.314-11.051 14.814-2.579-3.038-4.301-4.974-7.469-7.911zm14.407.557c.067.443.113.893.113 1.354 0 4.962-4.038 9-9 9s-9-4.038-9-9 4.038-9 9-9c1.971 0 3.79.644 5.274 1.723.521-.446 1.052-.881 1.6-1.303-1.884-1.511-4.271-2.42-6.874-2.42-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11c0-1.179-.19-2.313-.534-3.378-.528.633-1.052 1.305-1.579 2.024z" /></svg>
                         </div>
@@ -154,13 +169,28 @@ const ContentSection = () => {
                             <h4>Step 6: You let us know if you have any feedback and need revisions</h4>
                             <p className="mb-0">Something that differentiates us from other agencies is that we welcome feedback. In fact, we welcome it so much that we offer free revisions. What we want is to satisfy our clients 100%, every time. So, don't hesitate to ask for revisions and offer us valuable feedback to sharpen our content.</p>
                         </div>
-                    </div>
+                    </div> */}
+                    <h2 className="font-size-9 tlt-bdr pb-3 mb-8">Our content marketing and content writing service</h2>
+                    <p>As an award-winning content writing company, we offer a range of SEO content writing services, including blog writing, optimization, white papers, eBooks, and more.</p>
+                    <h4>Blog content</h4>
+                    <p>Great content is the heart and soul of any website but planning for and creating great content isn't easy. That's where we come in</p>
+                    <h4>Content optimization</h4>
+                    <p>Our SEO optimized content writing services include keyword research, competitive analysis, content strategy, content optimisation, and more.</p>
+                    <h4>SEO content strategies</h4>
+                    <p>Based on keyword trends and competitive analysis, our editorial team will prepare a comprehensive SEO content strategy and content calendar that includes potential content ideas.</p>
+                    <h4>White papers</h4>
+                    <p>An authoritative, detailed and well-written white paper can educate your audience and show them that your services are the best solution.</p>
+                    <h4>Product descriptions</h4>
+                    <p>Product descriptions describe what each product has to offer to potential consumers. Successful product descriptions should convince shoppers why they should buy the product.</p>
+                    <h4>Landing pages and funnels</h4>
+                    <p>By understanding your business goals and target audience, we engineer our copy to resonate with your ideal customer.</p>
+
                     <div className="home-tm">
                         <Testimonial3 className="pt-lg-19 pb-12 pb-lg-17" />
                     </div>
 
-                    <h2 className="text-center mb-10">FAQs</h2>
-                    <div class="row  faq-blk">
+                    {/* <h2 className="text-center mb-10">FAQs</h2> */}
+                    {/* <div class="row  faq-blk">
                         <div class="col-12">
                             <Collapsible className="mb-8" trigger="What is an SEO content writing service?">
                                 <p>SEO web content writing is the art of producing high-end content for website visitors while, at the same time, adhering to the best SEO practices. Doing so ensures that the content is easy to find and drives qualified leads to your webpage from search engines.  </p>
@@ -260,7 +290,7 @@ const ContentSection = () => {
                                 <p>As we've mentioned before, apart from our years of experience in the industry, the great thing about us is that we offer FREE revisions. Thanks to this policy, you can have peace of mind that you'll always receive quality content no matter what.</p>
                             </Collapsible>
                         </div>
-                    </div>
+                    </div> */}
 
 
                     {/* 

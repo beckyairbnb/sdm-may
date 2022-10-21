@@ -452,3 +452,8 @@ height:100%;}
 a.btn-purple{ background-color: #964aa5 !important; color:#ffffff !important; border:none !important; height:45px}
 .bg-gray-400 {background-color:#f4f4f4;}
 .fst-italic {font-style: italic;}
+.work_bg {background-image: linear-gradient(to right top, #983d98, #983d98, #c1337c, #cf356b, #d73d59);}
+.worknum {width:50px; height:50px; font-size:24px; border-radius:100%; background-color:#fff; color:#000; display:flex; align-items:center; justify-content:center;}
+
+.text-orange{color: #ec6d42;}
+.bg-orange{background-color: #ec6d42;}
