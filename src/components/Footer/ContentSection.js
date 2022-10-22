@@ -15,7 +15,9 @@ const ContentSection = () => {
 
             <div className="container pt-lg-20 pt-10 pb-8 pb-lg-12 ">
                 <div class="w-100 mb-6">
-                    <h2 className="tlt-bdr pb-3 mb-8">Top-notch content writing services for any industry</h2>
+                    <h2 className="tlt-bdr pb-3 mb-8">Why choose Strategically for your web content writing services?</h2>
+                    <p>Strategically will help you develop and execute a content marketing strategy that aligns with your business goals, creating and curating content that resonates with your audience. </p>
+                    {/* <h2 className="tlt-bdr pb-3 mb-8">Top-notch content writing services for any industry</h2>
                     <p>If you're running a business, you know how important it is to have a solid online presence. It's crucial to reach more customers and grow your business, but creating and maintaining that presence can be challenging when you don't have the time or resources to do it yourself. That's where a content writing agency can help.</p>
                     <p>At Strategically, we specialise in creating high-quality content to help your business stand out online. Whether you need articles, product reviews, sales copy, or anything else, our team of experienced writers can get the job done.</p>
                     <p>Our writers have professional writing skills to produce quality website content or articles in any industry. They are experts in their fields and know how to effectively communicate your message and capture your target audience. </p>
@@ -27,7 +29,7 @@ const ContentSection = () => {
                     <h2 className="font-size-9 tlt-bdr pb-3 mb-8">Why choose Strategically for your web content writing services?</h2>
                     <p>Around <a href="https://www.webfx.com/seo/statistics/">ninety-three</a> per cent of website traffic comes from search engine results, and that trend is unlikely to slow down soon. And good content is one of the crucial ways to attract that organic traffic. If you don't update your website, you'll miss out on many potential leads and sales.</p>
                     <p>Strategically will help you develop and execute a content marketing strategy that aligns with your business goals, creating and curating content that resonates with your audience. </p>
-                    <p>With our professional content writing services, you can take advantage of the latest online marketing trends and rank higher in search results. Here's a rundown of how Strategically can help marketing agencies and business owners.</p>
+                    <p>With our professional content writing services, you can take advantage of the latest online marketing trends and rank higher in search results. Here's a rundown of how Strategically can help marketing agencies and business owners.</p> */}
                     <div class="row justify-content-center  my-10">
                         <div class="col-lg-10 col-12">
                             {/* <h3 className="mb-5">"Strategically tt is an absolute pleasure to work with! The team was able to wrap their heads around the product we work with, which is a metrics product for SaaS. The content is filled with specific product-related knowledge that really speaks to our audience and helps us talk with our customers! Definitely recommend working with them!"</h3>
@@ -172,7 +174,55 @@ const ContentSection = () => {
                     </div> */}
                     <h2 className="font-size-9 tlt-bdr pb-3 mb-8">Our content marketing and content writing service</h2>
                     <p>As an award-winning content writing company, we offer a range of SEO content writing services, including blog writing, optimization, white papers, eBooks, and more.</p>
-                    <h4>Blog content</h4>
+                    <div className="container my-20">
+                    <h2 className="text-center mb-4">Our services</h2>
+                    <p className="text-center mb-10">Our services are SEO-focused, customer-driven and proven to deliver. We'll<br /> get you the traffic, links and rankings that drive exponential growth</p>
+                    <div class="row d-flex gap-5 justify-content-start align-items-start">
+                            <div style={{minHeight: '320px'}} class="col-lg-4 col-md-6 col-12 border p-6 align-self-start justify-content-center d-flex flex-column text-center align-items-center">
+                                <div className="rounded-circle lpcircle bg-dodger-blue-1 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 4c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm1.437 9.396c-.439.44-1.031.636-1.621.577l-3.816 2.027 2.028-3.818c-.059-.578.134-1.177.575-1.619.445-.445 1.05-.642 1.649-.572l3.748-1.992-1.99 3.748c.073.632-.151 1.226-.573 1.649zm-1.437-13.396c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-5.514 0-10-4.486-10-10s4.486-10 10-10 10 4.486 10 10-4.486 10-10 10zm.854-10.021c-.001.46-.374.833-.833.833-.46 0-.834-.373-.834-.833 0-.461.373-.834.834-.833.459 0 .833.374.833.833z" /></svg>
+                                </div>
+                                <h4 className="py-2">Blog content</h4>
+                                <p>Great content is the heart and soul of any website but planning for and creating great content isn't easy. That's where we come in</p>
+                            </div>
+                            <div style={{minHeight: '320px'}} class="col-lg-4 col-md-6 col-12 border p-6 align-self-start justify-content-center d-flex flex-column text-center align-items-center">
+                                <div className="rounded-circle lpcircle bg-dodger-blue-1 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M2.597 7.81l4.911 13.454c-3.434-1.668-5.802-5.19-5.802-9.264 0-1.493.32-2.91.891-4.19zm16.352 3.67c0-1.272-.457-2.153-.849-2.839-.521-.849-1.011-1.566-1.011-2.415 0-.978.747-1.88 1.862-1.819-1.831-1.677-4.271-2.701-6.951-2.701-3.596 0-6.76 1.845-8.601 4.64.625.02 1.489.032 3.406-.118.555-.034.62.782.066.847 0 0-.558.065-1.178.098l3.749 11.15 2.253-6.756-1.604-4.394c-.555-.033-1.08-.098-1.08-.098-.555-.033-.49-.881.065-.848 2.212.17 3.271.171 5.455 0 .555-.033.621.783.066.848 0 0-.559.065-1.178.098l3.72 11.065 1.027-3.431c.444-1.423.783-2.446.783-3.327zm-6.768 1.42l-3.089 8.975c.922.271 1.898.419 2.908.419 1.199 0 2.349-.207 3.418-.583-.086-.139-3.181-8.657-3.237-8.811zm8.852-5.839c.224 1.651-.099 3.208-.713 4.746l-3.145 9.091c3.061-1.784 5.119-5.1 5.119-8.898 0-1.79-.457-3.473-1.261-4.939zm2.967 4.939c0 6.617-5.384 12-12 12s-12-5.383-12-12 5.383-12 12-12 12 5.383 12 12zm-.55 0c0-6.313-5.137-11.45-11.45-11.45s-11.45 5.137-11.45 11.45 5.137 11.45 11.45 11.45 11.45-5.137 11.45-11.45z" /></svg>
+                                </div>
+                                <h4 className="py-2">Content optimization</h4>
+                                <p>Our SEO optimized content writing services include keyword research, competitive analysis, content strategy, content optimisation, and more.</p>
+                            </div>
+                            <div style={{minHeight: '320px'}} class="col-lg-4 col-md-6 col-12 border p-6 align-self-start justify-content-center d-flex flex-column text-center align-items-center">
+                                <div className="rounded-circle lpcircle bg-dodger-blue-1 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#fff" transform="360deg"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.304-15l-3.431 12h-2.102l2.542-9h-16.813l4.615 11h13.239l3.474-12h1.929l.743-2h-4.196z" /></svg>
+                                </div>
+                                <h4 className="py-3">SEO content strategies</h4>
+                                <p>Based on keyword trends and competitive analysis, our editorial team will prepare a comprehensive SEO content strategy and content calendar that includes potential content ideas.</p>
+                            </div>
+                            <div style={{minHeight: '320px'}} class="col-lg-4 col-md-6 col-12 border p-6 align-self-start justify-content-center d-flex flex-column text-center align-items-center">
+                                <div className="rounded-circle lpcircle bg-dodger-blue-1 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M11.362 2c4.156 0 2.638 6 2.638 6s6-1.65 6 2.457v11.543h-16v-20h7.362zm.827-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-10v-1h10v1zm0 2h-10v1h10v-1zm0 3h-10v1h10v-1z" /></svg>
+                                </div>
+                                <h4 className="py-2">White papers</h4>
+                                <p>An authoritative, detailed and well-written white paper can educate your audience and show them that your services are the best solution.</p>
+                            </div>
+                            <div style={{minHeight: '320px'}} class="col-lg-4 col-md-6 col-12 border p-6 align-self-start justify-content-center d-flex flex-column text-center align-items-center">
+                                <div className="rounded-circle lpcircle bg-dodger-blue-1 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M7 16h13v1h-13v-1zm13-3h-13v1h13v-1zm0-6h-5v1h5v-1zm0 3h-5v1h5v-1zm-17-8v17.199c0 .771-1 .771-1 0v-15.199h-2v15.98c0 1.115.905 2.02 2.02 2.02h19.958c1.117 0 2.022-.904 2.022-2.02v-17.98h-21zm19 17h-17v-15h17v15zm-9-12h-6v4h6v-4z" /></svg>
+                                </div>
+                                <h4 className="py-2">Product descriptions</h4>
+                                <p>Product descriptions describe what each product has to offer to potential consumers. Successful product descriptions should convince shoppers why they should buy the product.</p>
+                            </div>
+                            <div style={{minHeight: '320px'}} class="col-lg-4 col-md-6 col-12 border p-6 align-self-start justify-content-center d-flex flex-column text-center align-items-center">
+                                <div className="rounded-circle lpcircle bg-dodger-blue-1 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z" /></svg>
+                                </div>
+                                <h4 className="py-2">Landing pages and funnels</h4>
+                                <p>By understanding your business goals and target audience, we engineer our copy to resonate with your ideal customer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <h4>Blog content</h4>
                     <p>Great content is the heart and soul of any website but planning for and creating great content isn't easy. That's where we come in</p>
                     <h4>Content optimization</h4>
                     <p>Our SEO optimized content writing services include keyword research, competitive analysis, content strategy, content optimisation, and more.</p>
@@ -183,7 +233,7 @@ const ContentSection = () => {
                     <h4>Product descriptions</h4>
                     <p>Product descriptions describe what each product has to offer to potential consumers. Successful product descriptions should convince shoppers why they should buy the product.</p>
                     <h4>Landing pages and funnels</h4>
-                    <p>By understanding your business goals and target audience, we engineer our copy to resonate with your ideal customer.</p>
+                    <p>By understanding your business goals and target audience, we engineer our copy to resonate with your ideal customer.</p> */}
 
                     <div className="home-tm">
                         <Testimonial3 className="pt-lg-19 pb-12 pb-lg-17" />
