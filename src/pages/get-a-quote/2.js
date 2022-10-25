@@ -156,6 +156,7 @@ const PageContainer = styled.div`
 max-width:1170px;
 margin:auto;
 padding: 60px 0 20px 0px;
+
 `;
 
 const Heading2 = styled.h2`

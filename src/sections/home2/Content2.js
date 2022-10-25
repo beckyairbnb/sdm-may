@@ -66,7 +66,7 @@ const Content2 = ({ className, ...rest }) => {
               className="col-xl-4 col-lg-5 col-md-6 col-xs-8 order-2 order-md-1"
 
             >
-              <h2 className="font-size-10">Award-winning content writing agency</h2>
+              <h2 className="font-size-10">Grow your business with content</h2>
               <ul className="list-unstyled mt-9 mt-lg-14">
                 {contentWidgetData.map(({ icon, title, text }, index) => {
                   return (

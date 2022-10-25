@@ -210,11 +210,11 @@ a.btn-dodger-blue-2{ background-color: #FF0088 !important; color:#ffffff !import
 .circle-55 {
 	align-items: center;
 	display: flex;
-	justify-content: center;
-	max-height: 55px;
+	justify-content: center;border: 2px solid red;
+	/* max-height: 55px;
 	max-width: 55px;
 	min-height: 55px;
-	min-width: 55px;
+	min-width: 55px; */
   margin-right: 10px;
 }
 @media (min-width: 991px) {
@@ -457,3 +457,6 @@ a.btn-purple{ background-color: #964aa5 !important; color:#ffffff !important; bo
 
 .text-orange{color: #ec6d42;}
 .bg-orange{background-color: #ec6d42;}
+
+
+/* .tm-author img{ width: 40px !important;  height: 45px !important; border: 2px solid red;} */

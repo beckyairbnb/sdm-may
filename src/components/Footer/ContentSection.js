@@ -174,9 +174,9 @@ const ContentSection = () => {
                     </div> */}
                     <h2 className="font-size-9 tlt-bdr pb-3 mb-8">Our content marketing and content writing service</h2>
                     <p>As an award-winning content writing company, we offer a range of SEO content writing services, including blog writing, optimization, white papers, eBooks, and more.</p>
-                    <div className="container my-20">
-                    <h2 className="text-center mb-4">Our services</h2>
-                    <p className="text-center mb-10">Our services are SEO-focused, customer-driven and proven to deliver. We'll<br /> get you the traffic, links and rankings that drive exponential growth</p>
+                   
+                    {/* <h2 className="text-center mb-4">Our services</h2> */}
+                    <p className="mb-10">Our services are SEO-focused, customer-driven and proven to deliver. We'll get you the traffic, links and rankings that drive exponential growth</p>
                     <div class="row d-flex gap-5 justify-content-start align-items-start">
                             <div style={{minHeight: '320px'}} class="col-lg-4 col-md-6 col-12 border p-6 align-self-start justify-content-center d-flex flex-column text-center align-items-center">
                                 <div className="rounded-circle lpcircle bg-dodger-blue-1 mb-4">
@@ -221,7 +221,7 @@ const ContentSection = () => {
                                 <p>By understanding your business goals and target audience, we engineer our copy to resonate with your ideal customer.</p>
                             </div>
                         </div>
-                    </div>
+                 
                     {/* <h4>Blog content</h4>
                     <p>Great content is the heart and soul of any website but planning for and creating great content isn't easy. That's where we come in</p>
                     <h4>Content optimization</h4>

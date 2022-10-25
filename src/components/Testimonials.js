@@ -57,7 +57,7 @@ const Reviews = () => {
                             <div key={index}>
                                 <div className="testimonial-item shadow d-flex flex-column bg-white rounded-3 p-6 m-6">                        
                                     <div className="w-100 d-flex justify-content-start flex-row align-items-center">
-                                        <div className="bg-white circle-55">                                      
+                                        <div className="bg-white mr-4">                                      
                                             <img width={39} height={44} src={item.image} alt={item.title} className="rounded-circle p-0 m-0 w-100"/>
                                         </div>
                                         <div className="ps-3">

@@ -2,7 +2,7 @@ import React from "react";
 
 const FooterCta = ()=>{
     return(
-        <div className="bg-dark-cloud pt-20 pt-lg-20 pb-15 pb-lg-20 mt-15 mb-6">
+        <div className="bg-dark-cloud pt-20 pt-lg-20 pb-15 pb-lg-20 mt-15 mb-6 f-cta">
           <div className="container">
             <div className="row d-flex justify-content-center">             
               <div className="col-xl-8 col-lg-8 col-md-10 mt-n13 mt-md-n8 mt-lg-n0 d-flex" >

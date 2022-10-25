@@ -543,7 +543,7 @@ const Layout = (props) => {
           <HeaderNoFooter/>  
           {children}
           <ClientsLogos/>
-          <FooterCta/>
+          {/* <FooterCta/> */}
           <div class="container mt-5 pt-6 ">
           <div class="row">
           <div className="col-lg-12 border-top border-dark-light mt-5 pt-6 pb-0">
