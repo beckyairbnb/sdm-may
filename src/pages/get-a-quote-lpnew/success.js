@@ -9,7 +9,7 @@ const Success = () => {
   useEffect(() => {
     setTimeout(() => {        
         navigate('https://calendly.com/becky-strategically/get-a-quote-lpnew');
-    }, 5);
+    }, 2);
  });
   return (
     <>

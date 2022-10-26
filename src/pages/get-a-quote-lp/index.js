@@ -5,7 +5,8 @@ import FormHead from '../../components/FormHead'
 import PageWrapper from "../../components/PageWrapper";
 import HappyClients from '../../components/happyClients';
 import { GlobalDispatchContext, GlobalStateContext } from "../../context/GlobalContext";
-const Step1 = () => {
+const Step1 = (props) => {
+  console.log('props', props)
   const dispatch = useContext(GlobalDispatchContext)
   const state = useContext(GlobalStateContext)
   const [errors, setErrors] = useState('');
@@ -61,7 +62,7 @@ const Step1 = () => {
           </div>
           <div className="d-flex justify-content-center">
             <div className="col-md-12 col-sm-12 text-center">
-              <Heading2 className="form-sub-heading display-5 mb-3 w-100">I’ll get you an awesome price in minutes. Ready to go?</Heading2>
+            <Heading2 className="form-sub-heading display-5 mb-3 w-100">I’ll get you price in minutes. Ready?</Heading2>
             </div>
           </div>
           <form name="Strategically get-a-quote-lp" method="POST" data-netlify="true" action={`/get-a-quote-lp/success/`}>
@@ -110,7 +111,7 @@ const Step1 = () => {
                   </div>
                 </div>
                 <div className="col-sm-12 py-1 d-flex justify-content-center align-items-center">
-                  {formIsValid && state.email !== '' && state.firstname !== '' && <button type="submit" className="my-6 btn btn btn-dodger-blue-2 header-btn rounded-5 text-uppercase fs-6 fw-bolder text">Get Quote</button>}
+                <button type="submit" disabled={!formIsValid || state.email === '' || state.firstname === ''} className="my-6 btn btn btn-dodger-blue-2 header-btn rounded-5 text-uppercase fs-6 fw-bolder text">Get Quote</button>
                 </div>
               </div>
             </div>

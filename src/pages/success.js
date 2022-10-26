@@ -10,7 +10,7 @@ const Success = () => {
   useEffect(() => {
     setTimeout(() => {        
         navigate('https://calendly.com/becky-strategically/intro-meeting?month=2022-02');
-    }, 5);
+    }, 1);
  });
   return (
     <>

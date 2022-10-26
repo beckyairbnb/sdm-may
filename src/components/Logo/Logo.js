@@ -6,7 +6,8 @@ import styled from "styled-components";
 import logoB from "../../assets/image/sitelogo.png";
 import logoW from "../../assets/image/sitelogo.png";
 
-const Logo = ({ className = "", ...rest }) => {
+const Logo = ({ homelink = true, className = "", ...rest }) => {
+  console.log('homelink', homelink)
   const { siteLogo } = useStaticQuery(
     graphql`
       query {
@@ -20,22 +21,39 @@ const Logo = ({ className = "", ...rest }) => {
     `
   )
   return (
-    <Link to="/" className={`${className}`} {...rest}>
-      {/* <!-- light version logo (logo must be black)--> */}
-      <GatsbyImage
-                            image={getImage(siteLogo)} 
-                            width={251} height={60}
-                            className="light-version-logo"
-                        />
-      {/* <LogoImg src={logoB} alt="" className="light-version-logo" /> */}
-      <GatsbyImage
-                            image={getImage(siteLogo)} 
-                            width={251} height={60}
-                            className="dark-version-logo"
-                        />
-      {/* <!-- Dark version logo (logo must be White)--> */}
-      {/* <LogoImg src={logoW} alt="" className="dark-version-logo" /> */}
-    </Link>
+    <>
+      {homelink===true ? (
+        <Link to="/" className={`${className}`} {...rest}>
+          <GatsbyImage
+            image={getImage(siteLogo)}
+            width={251} height={60}
+            className="light-version-logo"
+          />
+          {/* <LogoImg src={logoB} alt="" className="light-version-logo" /> */}
+          <GatsbyImage
+            image={getImage(siteLogo)}
+            width={251} height={60}
+            className="dark-version-logo"
+          />
+          {/* <!-- Dark version logo (logo must be White)--> */}
+          {/* <LogoImg src={logoW} alt="" className="dark-version-logo" /> */}
+        </Link>
+      ) : (
+        <>
+          <GatsbyImage
+            image={getImage(siteLogo)}
+            width={251} height={60}
+            className="light-version-logo"
+          />
+          <GatsbyImage
+            image={getImage(siteLogo)}
+            width={251} height={60}
+            className="dark-version-logo"
+          />
+        </>
+      )}
+
+    </>
   );
 };
 const LogoImg = styled.img`

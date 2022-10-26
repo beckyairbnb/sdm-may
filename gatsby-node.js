@@ -7,7 +7,7 @@ exports.onCreatePage = ({ page, actions }) => {
   const { createPage, createRedirect } = actions;
 
   const  rurls = [
-    {oldurl:'/content-writing-agency/',newurl: '/'},
+    // {oldurl:'/content-writing-agency/',newurl: '/'},
     {oldurl:'/blog/grammar/',newurl: '/blog/grammar-tips/'},
     {oldurl:'/blog/grammar/lo-and-behold-or-low-and-behold/',newurl: '/blog/grammar-tips/lo-and-behold-or-low-and-behold/'},
     {oldurl:'/blog/grammar/3',newurl: '/blog/grammar-tips/3'},
@@ -98,11 +98,7 @@ if (page.path.match(/sign|reset/)) {
   else if (page.path.match(/pricing/)) {
     page.context.layout = "noheaderfooter";
     createPage(page);
-  }
-  else if (page.path.match(/lp/)) {
-    page.context.layout = "headercenterfooter";
-    createPage(page);
-  }
+  }  
   else if (page.path.match(/blogsingle/)) {
     page.context.layout = "header";
     createPage(page);
@@ -111,11 +107,10 @@ if (page.path.match(/sign|reset/)) {
     page.context.layout = "noheaderfooter";
     createPage(page);
   }
-  
-  // else if (page.path.match(/calculator/)) {
-  //   page.context.layout = "hideheaderfooter";
-  //   createPage(page);
-  // }
+  else if (page.path.match(/lp/)) {
+    page.context.layout = "headercenterfooter";
+    createPage(page);
+  }
 };
 
 exports.createPages = async ({ graphql, actions }) => {
