@@ -31,8 +31,8 @@ const Success = () => {
           footerStyle: "style2",
         }}
       >
-        <Hero />
-        <Faq />
+        {/* <Hero />
+        <Faq /> */}
       </PageWrapper>
     </>
   );

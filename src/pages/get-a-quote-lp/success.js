@@ -9,7 +9,7 @@ const Success = () => {
   useEffect(() => {
     setTimeout(() => {        
         navigate('https://calendly.com/becky-strategically/get-a-quote-lp');
-    }, 2);
+    }, 1);
  });
   return (
     <>
@@ -30,8 +30,8 @@ const Success = () => {
           footerStyle: "style2",
         }}
       >
-        <Hero />
-        <Faq />
+        {/* <Hero />
+        <Faq /> */}
       </PageWrapper>
     </>
   );
