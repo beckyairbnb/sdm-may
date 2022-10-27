@@ -43,7 +43,7 @@ const MainServiceTemplate = (props)=>{
           <meta name="description" content={seoDescription} />
           <link rel="icon" type="image/png" href={imgFavicon} />
           {/* <meta name="robots" content="noindex, follow"/> */}
-          <link rel="canonical" href="https://strategically.co/writer-services/" />
+          <link rel="canonical" href="https://strategically.co/" />
     </Helmet>
     <PageWrapper
         themeConfig={{
