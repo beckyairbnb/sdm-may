@@ -460,3 +460,7 @@ a.btn-purple{ background-color: #964aa5 !important; color:#ffffff !important; bo
 
 
 /* .tm-author img{ width: 40px !important;  height: 45px !important; border: 2px solid red;} */
+
+@media screen and (max-width:767px){
+.container{max-width: 100% !important;}
+}
