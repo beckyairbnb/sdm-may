@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
-
+import { Crisp } from "crisp-sdk-web";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 
@@ -40,7 +40,6 @@ import "../../../node_modules/aos/dist/aos.css";
 
 import "../../assets/fonts/icon-font/css/style.css";
 import "../../assets/fonts/typography-font/typo.css";
-// import "../../assets/fonts/fontawesome-5/css/all.css";
 
 import "../../assets/scss/bootstrap.scss";
 import "../../assets/scss/main.scss";
@@ -66,9 +65,10 @@ const Loader = styled.div`
 
 const Layout = (props) => {
 
+  
+
   const { children, pageContext } = props
 
-  //console.log('writing-jobs',props.path.includes('/writing-jobs'))
 
   const gContext = useContext(GlobalContext);
 
@@ -78,6 +78,22 @@ const Layout = (props) => {
   useEffect(() => {
     AOS.init({ once: true });
     setVisibleLoader(false);
+    Crisp.configure('baad053f-4aa3-4ba7-81c2-540fe4ea2127', {
+      autoload: true
+    });
+    Crisp.session.setSegments(["MAIN SITE"])
+    // window.$crisp = [];
+    // window.CRISP_WEBSITE_ID = 'baad053f-4aa3-4ba7-81c2-540fe4ea2127';
+
+    // (function() {
+    //   var d = document;
+    //   var s = d.createElement("script");
+
+    //   s.src = "https://client.crisp.chat/l.js";
+    //   s.async = 1;
+    //   d.getElementsByTagName("head")[0].appendChild(s);
+    // })();
+    // $crisp.push(["set", "session:segments", [["MAIN SITE"]]]);
   }, []);
 
   // Navbar style based on scroll
@@ -458,7 +474,7 @@ const Layout = (props) => {
     );
   }
   
-
+  
   if (pageContext.layout === "noheaderfooter") {
     return (
       <>
