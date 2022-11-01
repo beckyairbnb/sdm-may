@@ -81,19 +81,16 @@ const Layout = (props) => {
     Crisp.configure('baad053f-4aa3-4ba7-81c2-540fe4ea2127', {
       autoload: true
     });
-    Crisp.session.setSegments(["MAIN SITE"])
-    // window.$crisp = [];
-    // window.CRISP_WEBSITE_ID = 'baad053f-4aa3-4ba7-81c2-540fe4ea2127';
-
-    // (function() {
-    //   var d = document;
-    //   var s = d.createElement("script");
-
-    //   s.src = "https://client.crisp.chat/l.js";
-    //   s.async = 1;
-    //   d.getElementsByTagName("head")[0].appendChild(s);
-    // })();
-    // $crisp.push(["set", "session:segments", [["MAIN SITE"]]]);
+    let segment = "MAIN SITE"
+    if(props.path==='/lp/')
+    {
+      segment = "LP" 
+    }
+    else if(props.path==='/lpnew/')
+    {
+      segment = "LP NEW"
+    }
+    Crisp.session.setSegments([segment])
   }, []);
 
   // Navbar style based on scroll
@@ -153,7 +150,6 @@ const Layout = (props) => {
       }
     }
   ]
-  console.log('pageContext.layout',pageContext.layout)
   if (pageContext.layout === "writing-jobs") {
     return (
       <>

@@ -7,7 +7,6 @@ import logoB from "../../assets/image/sitelogo.png";
 import logoW from "../../assets/image/sitelogo.png";
 
 const Logo = ({ homelink = true, className = "", ...rest }) => {
-  console.log('homelink', homelink)
   const { siteLogo } = useStaticQuery(
     graphql`
       query {

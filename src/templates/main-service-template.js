@@ -4,10 +4,6 @@ import styled from 'styled-components';
 import { Helmet } from "react-helmet";
 import ProgressNew from "../sections/home2/ProgressNew";
 import PageWrapper from "../components/PageWrapper";
-import Image from '../components/ContentSlices/Image'
-import CTA from '../components/ContentSlices/CTA'
-import Heading from '../components/ContentSlices/Heading'
-import Text from '../components/ContentSlices/Text'
 import HappyClients from "../components/happyClients";
 
 import ModalPopup from '../components/ModalPopup'
