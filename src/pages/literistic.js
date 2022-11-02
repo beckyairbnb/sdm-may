@@ -6,6 +6,9 @@ import PageWrapper from "../components/PageWrapper";
 
 import AuthorImg from "../assets/images/josh.png"
 
+import Logo from "../assets/images/logo-white.png"
+
+
 const Literistic = () => {
 
     return (
@@ -25,15 +28,16 @@ const Literistic = () => {
                                 </a>
                             </>
                         ),
-                        footerStyle: "style1",
+                        footerStyle: "style2",
                     }}
                 >
 
-                    <div className="w-100 mt-lg-60 mt-md-30 literistic_bg">
+                    <div className="w-100 literistic_bg py-10 border-2">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-12">
-                                    <div className="literistic_hero py-10">
+                                    <img src={Logo} alt="" width={207} height={46} pt-10 />
+                                    <div className="literistic_hero pt-10 pb-10">
                                         <h4 className="text-white text-uppercase">the literistic list</h4>
                                         <h4 className="text-white my-5">Our newsletter brings the opportunities to you</h4>
                                         <p className="fs-6 text-white">Every month, we email you the best writing contests, unique magazines, presses, grants, residencies, and fellowships</p>
@@ -152,8 +156,8 @@ const Literistic = () => {
 
                     <div className="container">
                         <div className="px-lg-10">
-                            <div className="row my-12">
-                                <div className="col-lg-4">
+                            <div className="row my-12 d-flex align-items-center">
+                                <div className="col-lg-4 d-flex align-items-center">
                                     <h4 className="fs-5">Save hours of searching for the right places to submit your work</h4>
                                 </div>
                                 <div className="col-lg-8">
@@ -172,7 +176,7 @@ const Literistic = () => {
                                 </div>
                             </div>
                             <div className="row my-12">
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 d-flex align-items-center">
                                     <h4 className="fs-5">Reduce the stress of deciding where to submit</h4>
                                 </div>
                                 <div className="col-lg-8">
@@ -191,7 +195,7 @@ const Literistic = () => {
                                 </div>
                             </div>
                             <div className="row my-12">
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 d-flex align-items-center">
                                     <h4 className="fs-5">Never miss a submission deadline</h4>
                                 </div>
                                 <div className="col-lg-8">
@@ -269,10 +273,12 @@ const Literistic = () => {
                                     <p><b>Your can contact us with any questions at help (at) literistic (dot) com.</b></p>
                                     <h6 className="text-uppercase text-center my-10 text-orange">Our Editors</h6>
                                     <div class="row justify-content-center">
-                                        <div class="col-md-6 col-12 d-flex justify-content-center flex-column align-items-center" >
-                                            <img src={AuthorImg} alt="" width={120} height={120} />
-                                            <h5 className="text-center mt-8 mb-3 text-orange">Josh Roark</h5>
-                                            <h6 className="text-orange text-center">Editor</h6>
+                                        <div class="col-12 d-flex justify-content-center flex-row gap-8" >
+                                            <div className="pr-8">
+                                                <img src={AuthorImg} alt="" width={180} height={180} />
+                                                <h5 className="text-center mt-8 mb-3 text-orange">Josh Roark</h5>
+                                                <h6 className="text-orange text-center">Editor</h6>
+                                            </div>
                                             <p>Josh Roark (he/him) is a poet and editor. He received his MFA from Antioch University Los Angeles, and he currently lives in the desert of Southern California with his filmmaker wife. He is the editor and founder of Frontier Poetry and Paletter Poetry and author of Put One Hand Up, Lean Back from Unsolicited Press. He gratefully relies on Literistic to find the home for his current poetry manuscript. @joshuaroarkpoet</p>
                                         </div>
                                     </div>
@@ -283,56 +289,59 @@ const Literistic = () => {
                     </div>
 
                     <div className="pt-5 pb-10">
-
                         <div className="container">
                             <h6 className="text-uppercase text-center my-4 text-orange">Frequently Asked Questions</h6>
                             <h2 className="text-center fs-4 mb-10">FAQs</h2>
                             <div class="row justify-content-center mb-10">
                                 <div class="col-8 align-items-center d-flex justify-content-center">
-                                    <Link className="btn px-8 py-5 text-purple mx-2 mb-3 fs-2 text-capitalize w-auto border border-purple">Get Your Literistic List</Link>
                                     <Link className="btn bg-orange px-8 py-5 mx-2 mb-3 fs-2 text-white text-capitalize w-auto border border-transparent ">Get Your Concierge</Link>
+                                    {/* <Link className="btn px-8 py-5 text-purple mx-2 mb-3 fs-2 text-capitalize w-auto border border-purple">Get Your Literistic List</Link> */}
+
                                 </div>
                             </div>
-                            <h4 className="">What's the main difference between the List and the Concierge?</h4>
-                            <p>The Concierge? submits on your behalf! The List provides a curated group of opportunities with upcoming deadlines, but the effort of submitting still remains with the author.</p>
+                            <div className="row justify-content-center">
+                                <div className="col-lg-8 col-md-12 justify-content-center">
+                                    <h4 className="">What's the main difference between the List and the Concierge?</h4>
+                                    <p>The Concierge? submits on your behalf! The List provides a curated group of opportunities with upcoming deadlines, but the effort of submitting still remains with the author.</p>
 
-                            <h4>I am a new author. Is Literistic right for me?</h4>
-                            <p>Absolutely. Our Concierge service can be a great introduction to the submission and publication process, and our editors will be happy to inform you of the why's behind all of our submission decision s. And if you have more experience, our Concierge will work entirely with your hard earned routines and preferences around where you'd like to be published.</p>
-                            <p>And if you choose our List instead, we are excited to introduce you to great magazines and presses through the monthly newsletter, and we make sure that it's full populated with opportunities both for newer writers and ones more experienced.</p>
+                                    <h4>I am a new author. Is Literistic right for me?</h4>
+                                    <p>Absolutely. Our Concierge service can be a great introduction to the submission and publication process, and our editors will be happy to inform you of the why's behind all of our submission decision s. And if you have more experience, our Concierge will work entirely with your hard earned routines and preferences around where you'd like to be published.</p>
+                                    <p>And if you choose our List instead, we are excited to introduce you to great magazines and presses through the monthly newsletter, and we make sure that it's full populated with opportunities both for newer writers and ones more experienced.</p>
 
-                            <h4>When will I receive my first List?</h4>
-                            <p>Shortly after subscribing either to the List or the Concierge, you'll receive the most recent Literistic issue. Thereafter, you will receive Literistic via emaol on the 1st day of every month. We're as excited to get it in your hands as you are to receive it!</p>
+                                    <h4>When will I receive my first List?</h4>
+                                    <p>Shortly after subscribing either to the List or the Concierge, you'll receive the most recent Literistic issue. Thereafter, you will receive Literistic via emaol on the 1st day of every month. We're as excited to get it in your hands as you are to receive it!</p>
 
-                            <h4>How do I change my subscriber preferemces?</h4>
-                            <p>In the footer of our monthly email are the words 'your preferences'. Click that link to customize your experience by genre, category, fees, and geography.</p>
-                            <h4>What's your cancellation policy?</h4>
-                            <p>We unfortunately can't offer refunds on our services. However, you may cancel your plan at any time to avoid the next auto-renewal at end of term, by unsubscribing at the bottom of the monthly email, or by reaching out to us directly.</p>
-                            <h4>Can I recommend a publication, contest or fellowship?</h4>
-                            <p>Absolutely! We/d love to hear from you. By the  nature of our service we only publish a select subset of what we see. We can be reached at help@literistic.com.</p>
-
+                                    <h4>How do I change my subscriber preferemces?</h4>
+                                    <p>In the footer of our monthly email are the words 'your preferences'. Click that link to customize your experience by genre, category, fees, and geography.</p>
+                                    <h4>What's your cancellation policy?</h4>
+                                    <p>We unfortunately can't offer refunds on our services. However, you may cancel your plan at any time to avoid the next auto-renewal at end of term, by unsubscribing at the bottom of the monthly email, or by reaching out to us directly.</p>
+                                    <h4>Can I recommend a publication, contest or fellowship?</h4>
+                                    <p>Absolutely! We/d love to hear from you. By the  nature of our service we only publish a select subset of what we see. We can be reached at help@literistic.com.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                       <div className="container mb-10">
+                    <div className="container mb-10">
                         <h6 className="text-uppercase text-center my-4 text-orange">Pricing Plans</h6>
                         <h2 className="text-center fs-4 mb-10">Sign Up Now to Start Your Submission Journey</h2>
                         <div class="row justify-content-center">
-                            <div class="col-lg-6 col-12 p-10 border border-orange d-flex justify-content-center flex-column">
-                                <h6 className="text-uppercase text-orange">the literistic list</h6>
+                            <div class="col-md-5 col-12 p-10 border border-orange d-flex justify-content-center flex-column">
+                                <h6 className="text-uppercase text-orange text-center">the literistic list</h6>
                                 <div className="display-2 text-black border-bottom mb-10 pb-10 text-center py-4"><span className="pricetag">$</span> 7<span className="pricetag"> /month</span></div>
-                                <div className="d-flex flex-row gap-4">
-                                    <svg width="40" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" className="mr-6" clip-rule="evenodd" fill="#blue"><path d="M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z" /></svg>
+                                <div className="d-flex flex-row gap-2">
+                                    <svg width="40" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" className="mr-4" clip-rule="evenodd" fill="#blue"><path d="M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z" /></svg>
                                     <p>Curated Opportunities Every Month</p>
                                 </div>
-                                <div className="d-flex flex-row gap-4">
-                                    <svg width="40" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" className="mr-6" clip-rule="evenodd" fill="#blue"><path d="M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z" /></svg>
+                                <div className="d-flex flex-row gap-2">
+                                    <svg width="40" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" className="mr-4" clip-rule="evenodd" fill="#blue"><path d="M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z" /></svg>
                                     <p>Membership in Private FB Group</p>
                                 </div>
-                                <div className="d-flex flex-row gap-4">
-                                    <svg width="40" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" className="mr-6" clip-rule="evenodd" fill="#blue"><path d="M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z" /></svg>
+                                <div className="d-flex flex-row gap-2">
+                                    <svg width="40" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" className="mr-4" clip-rule="evenodd" fill="#blue"><path d="M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z" /></svg>
                                     <p>Customizable to Your Needs</p>
                                 </div>
-                                <Link className="btn mt-10 w-auto px-8 py-5 text-purple mx-2 mb-3 fs-2 text-capitalize w-auto border border-purple">Get Your Literistic List</Link>
+                                <Link className="btn bg-orange mt-10 w-auto px-8 py-5 text-white mx-2 mb-3 fs-2 text-capitalize w-auto border border-purple">Get Your Literistic List</Link>
                             </div>
                         </div>
                     </div>
@@ -341,7 +350,6 @@ const Literistic = () => {
                     <div className="work_bg py-20 text-center">
                         <div className="container">
                             <h2 className="text-white">You do the writing, We'll bring you the publishers.</h2>
-
                             <p className="text-white">Literistic delivers a timelly, robust, and tailored list of writing opportunites-including magazines, presses, contests, grants and residencies-to your inbox and your calendar.</p>
                         </div>
                     </div>

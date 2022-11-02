@@ -91,6 +91,10 @@ if (page.path.match(/sign|reset/)) {
     page.context.layout = "coming";
     createPage(page);
   }
+  else if (page.path.match(/literistic/)) {
+    page.context.layout = "noheader";
+    createPage(page);
+  }
   else if (page.path.match(/test/)) {
     page.context.layout = "test";
     createPage(page);
@@ -98,7 +102,11 @@ if (page.path.match(/sign|reset/)) {
   else if (page.path.match(/pricing/)) {
     page.context.layout = "noheaderfooter";
     createPage(page);
-  }  
+  }
+  else if (page.path.match(/lp/)) {
+    page.context.layout = "headercenterfooter";
+    createPage(page);
+  }
   else if (page.path.match(/blogsingle/)) {
     page.context.layout = "header";
     createPage(page);
@@ -107,10 +115,12 @@ if (page.path.match(/sign|reset/)) {
     page.context.layout = "noheaderfooter";
     createPage(page);
   }
-  else if (page.path.match(/lp/)) {
-    page.context.layout = "headercenterfooter";
-    createPage(page);
-  }
+  
+  
+  // else if (page.path.match(/calculator/)) {
+  //   page.context.layout = "hideheaderfooter";
+  //   createPage(page);
+  // }
 };
 
 exports.createPages = async ({ graphql, actions }) => {
