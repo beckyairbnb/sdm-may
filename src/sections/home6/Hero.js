@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import imgM from "../../assets/image/home-6/png/hero-mobile.png";
-import imgYS from "../../assets/image/home-6/png/cirle-yellow-shape.png";
 import imageOne from "../../assets/image/inner-page/jpg/comming-soon-img.png";
 
 const Hero = ({ className, ...rest }) => {

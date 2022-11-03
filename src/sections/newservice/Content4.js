@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'gatsby';
 import imageOne from "../../assets/image/home-4/png/content-2-img.png";
 
 const Content4 = ({ className, ...rest }) => {

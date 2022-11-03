@@ -98,17 +98,17 @@ if (page.path.match(/sign|reset/)) {
   else if (page.path.match(/test/)) {
     page.context.layout = "test";
     createPage(page);
-  }
-  else if (page.path.match(/pricing/)) {
-    page.context.layout = "noheaderfooter";
-    createPage(page);
-  }
+  }  
   else if (page.path.match(/lp/)) {
     page.context.layout = "headercenterfooter";
     createPage(page);
   }
   else if (page.path.match(/blogsingle/)) {
     page.context.layout = "header";
+    createPage(page);
+  }  
+  else if (page.path.match(/pricing/)) {
+    page.context.layout = "noheaderfooter";
     createPage(page);
   }
   else if (page.path.match(/get-a-quote/)) {
@@ -206,7 +206,6 @@ blogs.forEach(({ node }) => {
     path: `/blog/${node.data.category.document.uid}/${node.uid}/`,
     component: path.resolve("./src/templates/blog-template.js"),
     context: {
-      layout: 'noheaderfooter',
       uid:node.uid
     },
   })

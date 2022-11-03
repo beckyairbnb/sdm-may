@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import imgM from "../../assets/image/home-2/png/meeting-2.png";
 import imgDP from "../../assets/image/home-2/png/dot-pattern-black.png";

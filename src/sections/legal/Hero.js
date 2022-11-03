@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import Modal from "../../components/ModalVideo/Modal";
 
 import imgSBR from "../../assets/image/home-2/png/round-shape-blue.png";
 import imgBP from "../../assets/image/home-2/png/dot-pattern-blue.png";

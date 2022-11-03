@@ -2,10 +2,6 @@ import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-import imgM from "../../assets/image/home-2/png/meeting-2.png";
-import imgDP from "../../assets/image/home-2/png/dot-pattern-black.png";
-import imgLC from "../../assets/image/home-2/png/left-circlehalf-shape.png";
-
 const Content3 = ({ className, ...rest }) => {
   const { imgM, imgDP, imgLC } = useStaticQuery(
     graphql`

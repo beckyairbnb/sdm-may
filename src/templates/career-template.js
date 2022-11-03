@@ -8,23 +8,13 @@ import PageWrapper from "../components/PageWrapper";
 import CareerImageContentButton from '../components/ContentSlices/CareerImageContentButton'
 import CareerFeatures from '../components/ContentSlices/CareerFeatures'
 import CareerJobs from '../components/ContentSlices/CareerJobs'
-// import CTA from '../components/ContentSlices/CTA'
-// import Heading from '../components/ContentSlices/Heading'
-// import Text from '../components/ContentSlices/Text'
-// import BoxedContent from '../components/ContentSlices/BoxedContent'
 
-
-import PostShare from '../components/PostShare'
-import MoreServices from '../components/MoreServices'
 import imgFavicon from "../assets/favicon.png";
 
 const CareerTemplate = (props)=>{
   const { data } = props
   const { PageData, site, Jobs } = data
   const siteURL = site.siteMetadata.siteUrl 
-  //const stitle = `Read ${PageData.data.title.text} `;
-  //const surl = `${siteURL}${props.location.pathname || "/"}`;
-  //const stwitterHandle = "_MsLinda";
   const seoTitle = PageData.data.seotitle.text || 'Strategically'
   const seoDescription = PageData.data.metadescription.text || 'Strategically'
   

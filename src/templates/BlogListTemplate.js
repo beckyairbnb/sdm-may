@@ -8,7 +8,7 @@ import PageWrapper from "../components/PageWrapper";
 import imgFavicon from "../assets/favicon.png";
 import Pagination from '../components/Pagination';
 const BlogListTemplate = (props) => {
-    const { data, pageContext, path, location } = props
+    const { data, pageContext } = props
     const {
       allPrismicBlog: { edges: blogsData },
     } = data;

@@ -37,7 +37,7 @@ const WritersContent = () => {
                     <div className="col-xl-6 col-lg-8 col-12">
                         <h2 className="font-size-9">We're experts at sourcing writers</h2>
                         <Spacer />
-                        <p>At <a href="https://www.yourgrowthmachine.com/" target="_blank">Growth Machine</a>, we create 70+ articles per week across 15+ different blogs, and have worked with dozens of different writers. Our articles are read by over <strong>3,000,000 people </strong>each month. We know how to find the perfect writer to give you <strong>the content your blog needs to stand out.</strong></p>
+                        <p>At <a href="https://www.yourgrowthmachine.com/" target="_blank" rel="noopener noreferrer">Growth Machine</a>, we create 70+ articles per week across 15+ different blogs, and have worked with dozens of different writers. Our articles are read by over <strong>3,000,000 people </strong>each month. We know how to find the perfect writer to give you <strong>the content your blog needs to stand out.</strong></p>
                     </div>
                 </div>
             </div>

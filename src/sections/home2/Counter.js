@@ -1,18 +1,8 @@
 import React from "react";
 import CountUp from "react-countup";
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import LazyLoad from "react-lazyload";
-
-
-// import imgHeart from "../../assets/image/home-2/png/heart-icon-group.png";
-// import imgStars from "../../assets/image/home-2/png/star-group.png";
-
-
-// import imgL1 from "../../assets/image/home-2/png/company-logo/company-logo-1.png";
-// import imgL2 from "../../assets/image/home-2/png/company-logo/company-logo-2.png";
-// import imgL3 from "../../assets/image/home-2/png/company-logo/company-logo-3.png";
-
 
 
 const Counter = ({ className, ...rest }) => {

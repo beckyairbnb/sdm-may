@@ -10,7 +10,7 @@ import Pagination from '../components/Pagination';
 import imgFavicon from "../assets/favicon.png";
 
 const CategoryTemplate = (props) => {
-    const { data, pageContext, path, location } = props
+    const { data, pageContext } = props
     const {
       allPrismicBlog: { edges: blogsData },
     } = data;

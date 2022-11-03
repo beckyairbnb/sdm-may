@@ -37,7 +37,6 @@ const JobTemplate = (props)=>{
      },[state.email, setFormIsValid]);
 
       const handleChangeHanlder = (e,setFormIsValid,setErrors) => {
-        let action_name = ''
         if (e.target.name==='email'){            
             let pattern = new RegExp(/^(('[\w-\s]+')|([\w-]+(?:\.[\w-]+)*)|('[\w-\s]+')([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
             if (!pattern.test(e.target.value)) {
@@ -115,7 +114,7 @@ const JobTemplate = (props)=>{
                             <PageContent data={primary}/>
                             </div>
                             <div className="d-flex justify-content-center">
-                              <a href="https://strategically704.outgrow.us/strategically704-4" target="_blank" className="my-6 btn btn-dodger-blue-2 header-btn rounded-5">Apply to be a writer</a>
+                              <a href="https://strategically704.outgrow.us/strategically704-4" target="_blank" rel="noopener noreferrer" className="my-6 btn btn-dodger-blue-2 header-btn rounded-5">Apply to be a writer</a>
                             </div>  
                           </div>
                         )

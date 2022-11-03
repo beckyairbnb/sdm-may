@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby"
 import TmIcon from "../../assets/images/writer-finder/tm-icon.svg";
 
 

@@ -42,7 +42,8 @@ a.btn-dodger-blue-2{ background-color: #FF0088 !important; color:#ffffff !import
   flex-direction: column;
 }
 .text-container{ padding-top:100px !important}
-.ban-img{ height: 600px; object-fit: cover;}
+/* .ban-img{ height: 600px; object-fit: cover;} */
+.ban-img{ object-fit: cover;}
 .blog-banner h1, .blog-banner h5{ color: #fff;}
 
 .border2{ border:2px solid red;}
