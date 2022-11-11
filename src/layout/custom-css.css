@@ -467,3 +467,9 @@ a.btn-purple{ background-color: #964aa5 !important; color:#ffffff !important; bo
 .form-control.error{
   border:2px solid red;
 }
+.reviews-container a{
+  color: #22b0fc;
+}
+.reviews-container a:hover{
+  color: #0388cf;
+}
