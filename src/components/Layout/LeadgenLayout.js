@@ -2,7 +2,7 @@ import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
-import imgBg from "../../assets/image/inner-page/jpg/sign-in-right-img.jpg";
+import imgBg from "../../assets/image/inner-page/jpg/sign-up-right-img.jpg";
 import logoB from "../../assets/image/sitelogo.png";
 
 import PageWrapper from "../PageWrapper";
