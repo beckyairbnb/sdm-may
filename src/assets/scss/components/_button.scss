@@ -10,6 +10,10 @@
     align-items: center;
     justify-content: center;
 
+    &.btn-h{
+        height: 4.4375rem;
+    }
+
     &.btn-sm {
         min-width: 125px;
         height: 45px;
@@ -105,3 +109,4 @@
 
     }
 }
+

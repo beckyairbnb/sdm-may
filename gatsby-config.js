@@ -129,7 +129,14 @@ module.exports = {
         prefix: "<IfModule mod_rewrite.c>\nRewriteEngine On",
         suffix: "</IfModule>",
       },
-    }
+    },
+    {
+      resolve: `gatsby-source-google-reviews-en`,
+      options: {
+        placeId: `ChIJJVOOp00bdkgRMY03j_wc5ng`,
+        apiKey: `AIzaSyBRiOs7ivBqYM1-nuIzzYe5Ku3wihThcNY`,
+      },
+    },
   ],
 }
 

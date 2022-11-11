@@ -7,7 +7,7 @@ import {
     NetlifyFormProvider,
     NetlifyFormComponent,
     Honeypot
-  } from 'react-netlify-forms'
+} from 'react-netlify-forms'
 import LeadgenLayout from "../components/Layout/LeadgenLayout";
 const LeadgenPageMaster = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -16,47 +16,27 @@ const LeadgenPageMaster = () => {
         name: 'LeadgenMaster',
         action: '/success',
         onSuccess: (response, context) => {
-          console.log('Successfully sent form data to Netlify Server')
+            console.log('Successfully sent form data to Netlify Server')
         }
-      })
+    })
 
-      const onSubmit = (data) => netlify.handleSubmit(null, data)
+    const onSubmit = (data) => netlify.handleSubmit(null, data)
 
-    // const onSubmit = (data, e) => {
-    //     const form = e.target
-    //     const formData = new FormData(form);
-    //     e.preventDefault()
-        
-    //     fetch('/', {
-    //         method: 'POST',
-    //         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    //         body: JSON.stringify({
-    //             'form-name': 'LeadgenMaster',
-    //             body: data,
-    //         }),
-    //     })
-    //         .then(response => {                
-    //             console.log('succes',response)
-    //         })
-    //         .catch(error => {
-    //             console.log('failed',error)
-    //         })
-    // }
     return (
         <>
             <Helmet>
                 <title>Award-Winning Content Writing Agency | Strategically</title>
             </Helmet>
             <LeadgenLayout>
-            <div className="mb-10">
-                        <h2 className="mb-1 font-size-10 letter-spacing-n83">
-                            Welcome back
-                        </h2>
-                        <p className="text-bali-gray font-size-7 mb-0">
-                            Enter your account details below
-                        </p>
-                    </div>
-                    <NetlifyFormProvider {...netlify}>
+                <div className="mb-5">
+                    <h2 className="mb-1 font-size-8 letter-spacing-n83">
+                        Award-winning content writing agency
+                    </h2>
+                    <p className="text-bali-gray font-size-6 mb-0">
+                        Our expert content writers work with ABTasty, Baremetrics, VWO and more
+                    </p>
+                </div>
+                <NetlifyFormProvider {...netlify}>
                     {/* <form
                         onSubmit={handleSubmit(onSubmit)}
                         name="LeadgenMaster"
@@ -67,11 +47,11 @@ const LeadgenPageMaster = () => {
                      >
                     <input type="hidden" name="form-name" value="LeadgenMaster" /> */}
                     <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
-                        <div className="form-group position-relative mb-6">
+                        <div className="form-group position-relative mb-4">
                             <input
                                 type="text"
                                 name="fullName"
-                                placeholder="fullName"
+                                placeholder="Full Name"
                                 id="fullName"
                                 {...register("fullName", { required: true })}
                                 className=
@@ -95,7 +75,7 @@ const LeadgenPageMaster = () => {
                             />
                         </div>
 
-                        <div className="form-group position-relative mb-6">
+                        <div className="form-group position-relative mb-4">
                             <input
                                 type="text"
                                 name="phone"
@@ -111,11 +91,24 @@ const LeadgenPageMaster = () => {
 
 
                         <div className="button">
-                        <input type="submit" value="Continue" className="btn btn-blue-3  w-100 rounded-4" />
-    
+                            <input type="submit" value="Continue" className="btn btn-blue-3 w-100 rounded-4 btn-h" />
+
                         </div>
+                        <div className="d-flex flex-row mt-8 align-items-center justify-content-center">
+                            <div className='font-size-6 mb-0'>Excellent</div>
+                            <div className='d-flex flex-row px-3'>
+                                <svg clip-rule="evenodd" fill-rule="evenodd" width="22" height="22" fill='#fff' className='bg-green p-1 mr-1' stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero" /></svg>
+                                <svg clip-rule="evenodd" fill-rule="evenodd" width="22" height="22" fill='#fff' className='bg-green p-1 mr-1' stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero" /></svg>
+                                <svg clip-rule="evenodd" fill-rule="evenodd" width="22" height="22" fill='#fff' className='bg-green p-1 mr-1' stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero" /></svg>
+                                <svg clip-rule="evenodd" fill-rule="evenodd" width="22" height="22" fill='#fff' className='bg-green p-1 mr-1' stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero" /></svg>
+                                <svg clip-rule="evenodd" fill-rule="evenodd" width="22" height="22" fill='#fff' className='bg-green p-1' stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" fill-rule="nonzero" /></svg>
+                            </div>
+                            <div className='font-size-6 pr-3 mb-0'>29 Google Reviews</div>
+                           
+                        </div>
+
                     </NetlifyFormComponent>
-                    </NetlifyFormProvider>
+                </NetlifyFormProvider>
             </LeadgenLayout>
         </>
     )
