@@ -115,12 +115,10 @@ if (page.path.match(/sign|reset/)) {
     page.context.layout = "noheaderfooter";
     createPage(page);
   }
-  
-  
-  // else if (page.path.match(/calculator/)) {
-  //   page.context.layout = "hideheaderfooter";
-  //   createPage(page);
-  // }
+  else if (page.path.match(/leadgen-page-master/)) {
+    page.context.layout = "noheadernofooter";
+    createPage(page);
+  }
 };
 
 exports.createPages = async ({ graphql, actions }) => {

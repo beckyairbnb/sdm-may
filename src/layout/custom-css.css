@@ -464,3 +464,6 @@ a.btn-purple{ background-color: #964aa5 !important; color:#ffffff !important; bo
 @media screen and (max-width:767px){
 .container{max-width: 100% !important;}
 }
+.form-control.error{
+  border:2px solid red;
+}
