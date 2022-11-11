@@ -31,14 +31,14 @@ const LeadgenLayout = ({children}) => {
           <div className="container-fluid h-100">
             <div className="row no-gutters align-items-center justify-content-center h-100">
              
-              <div className="col-xl-4 col-lg-6 col-md-10">
+              <div className="col-xl-4 col-lg-6 col-md-10 mb-14">
                 <div
                   className="max-w-413 mx-auto"
                   data-aos="fade-up"
                   data-aos-duration={500}
                   data-aos-delay={500}
                 >
-                    <div className="mb-14 pb-14">
+                    <div className="pb-14">
                     <GatsbyImage
                     image={getImage(siteLogo)}
                     width={251} height={60}
