@@ -8,7 +8,7 @@ import Offcanvas from "../Offcanvas";
 import Menu from "./Menu";
 import NestedMenu from "../NestedMenu";
 import Logo from "../Logo";
-
+import Navigation from "./Navigation";
 
 
 const SiteHeader = styled.header``;
@@ -53,7 +53,8 @@ const Header = () => {
 
             <div className="collapse navbar-collapse">
               <div className="navbar-nav-wrapper">
-                <Menu />
+                {/* <Menu /> */}
+                <Navigation/>
                 
               </div>
             </div>
@@ -87,8 +88,10 @@ const Header = () => {
         <Offcanvas
           show={gContext.visibleOffCanvas}
           onHideOffcanvas={gContext.toggleOffCanvas}
+          className="responsive-menu"
         >
-          <NestedMenu />
+          {/* <NestedMenu /> */}
+          <Navigation/>
         </Offcanvas>
       </div>
     </>

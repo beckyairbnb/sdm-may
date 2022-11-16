@@ -204,7 +204,7 @@ return(
             <Grid>
                 <CalculatorInput
                     Heading="Click-through rate %"
-                    TooltipContent = "This is your estimated click-through rate (CTR) from the keyword to the published content. CTR is the number of clicks a blog post receives divided by the number of times said post is seen by the target audience.  An example: Clicks divided by (/) impressions equals (=) CTR. Hence, if you've had 10 clicks and 100 impressions, your CTR would be 10%."
+                    TooltipContent = "Enter your expected click through rate for the content. You can estimate the click through rate based on your expected position in the SERPs. For example, a piece of content that ranks number 1 generates a typical CTR of 39.6%, 2nd position gets 18.4%, and 3rd position, gets 10.1%"
                     min={0}
                     max={100}
                     SliderStep={5}
@@ -237,7 +237,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Landing page conversion rate %"
-                        TooltipContent = "Calculate your conversion rate by dividing the number of emails collected by the number of page views to the chosen landing page. After, multiply the conversion rate by 100 to turn this into a percentage. Here's an example: 100 addresses divided by (/) 1000 visits to a post equals (=) 0.1 times (x) 100 equals (=) 10% Page Conversion Rate."
+                        TooltipContent = "This is the number of conversions you estimate from the piece of content. Conversion goals could include the number of downloads, emails, or form submissions. Add the percentage of traffic you estimate will convert based on your goals for the page."
                         min={0}
                         max={100}
                         SliderStep={5}
@@ -254,7 +254,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Lead conversion rate to sale %"
-                        TooltipContent = "Close rate refers to the number of sales calls and email outreach activities against the number of conversions (i.e., successful sales). This number is important. It allows us to demonstrate, for instance, that for every 1,000 leads we generate, you can expect 10 sales."
+                        TooltipContent = "This is the percentage of landing page conversions that will convert to a sales conversion. For example, you may get 50% of the page traffic that converts to lead, then 10% of the leads conver to sale. This would mean a 10% lead conversion rate to sale."
                         min={0}
                         max={100}
                         SliderStep={5}
@@ -313,7 +313,7 @@ return(
                 <Grid>
                     <CalculatorInput
                         Heading="Content promotion costs $"
-                        TooltipContent = "Here you enter the cost for advertising your piece of content. This could be the price of a Google or Facebook paid ad. But, if you’re into organic traffic, the cost is zero."
+                        TooltipContent = "Add any costs for advertising your piece of content. This could include ad spend or backlink efforts, for example."
                         min={0}
                         max={10000}
                         SliderStep={20}
@@ -329,7 +329,7 @@ return(
                 <Grid>
                 <CalculatorValue
                     Heading="Total investment"
-                    TooltipContent = "This is self-explanatory. It refers to the total cost of your content creation and content marketing investment."
+                    TooltipContent = "This is calculated for you. It is the cost for the content plus the cost for promoting it."
                     value={totalInvestment}                    
                 />   
                 </Grid>                          
@@ -366,13 +366,13 @@ return(
 </Wrapper>
 <Wrapper>
 <ContainerPara>
-<p>Ahrefs found that more than 90% of content never ranks. We think that’s silly.</p>
+{/* <p>Ahrefs found that more than 90% of content never ranks. We think that’s silly.</p>
 
 <p>Don’t waste your time and money creating content that won’t rank or generate a ROI.</p>
 
 <p><Link to="/">Strategically’s content writing services</Link> are SEO-focused, customer-driven and proven to deliver. We uncover ranking opportunities in the search data, then we create 10X content designed to resonate with your target audience and beat your competitors.</p>
 
-<p>If it won’t rank, we don’t write it. </p>
+<p>If it won’t rank, we don’t write it. </p> */}
 </ContainerPara>
 </Wrapper>
 </PageWrapper>

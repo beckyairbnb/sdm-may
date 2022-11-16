@@ -83,3 +83,13 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (min-width: 576px) {
+    .btn_outer{flex-direction:row;gap:15px}
+}
+@media (max-width: 575px) {
+.btn_outer{flex-direction:column;gap:15px}
+}
+
+
+

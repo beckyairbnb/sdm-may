@@ -473,3 +473,7 @@ a.btn-purple{ background-color: #964aa5 !important; color:#ffffff !important; bo
 .reviews-container a:hover{
   color: #0388cf;
 }
+
+.dropdown-menu.show {
+  width: 480px;
+}

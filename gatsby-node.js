@@ -119,6 +119,22 @@ if (page.path.match(/sign|reset/)) {
     page.context.layout = "noheadernofooter";
     createPage(page);
   }
+  else if (page.path.match(/calculate-content-roi/)) {
+    page.context.layout = "noheadernofooter";
+    createPage(page);
+  }
+  else if (page.path.match(/get-ten-free-topic-ideas/)) {
+    page.context.layout = "noheadernofooter";
+    createPage(page);
+  }
+  else if (page.path.match(/free-seo-audit/)) {
+    page.context.layout = "noheadernofooter";
+    createPage(page);
+  }
+  else if (page.path.match(/get-free-content-samples/)) {
+    page.context.layout = "noheadernofooter";
+    createPage(page);
+  }
 };
 
 exports.createPages = async ({ graphql, actions }) => {
