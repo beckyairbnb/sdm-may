@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { navigate } from "gatsby"
 import { Helmet } from "react-helmet";
 import { useForm } from "react-hook-form";
 import {
@@ -17,6 +18,7 @@ const LeadgenPageMaster = () => {
         action: '/success',
         onSuccess: (response, context) => {
             console.log('Successfully sent form data to Netlify Server')
+            navigate("/thank-you-samples/")
         }
     })
 
