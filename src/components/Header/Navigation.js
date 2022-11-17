@@ -59,10 +59,10 @@ const Navigation = () => {
                 </Dropdown.Item>
             </NavDropdown> */}
              <Link to="/case-study" className="nav-link" role="button">
-                Blog
+             Case Study
             </Link>
             <Link to="/blog" className="nav-link" role="button">
-                Case Study
+                Blog
             </Link>
             </Container>
         </div>
