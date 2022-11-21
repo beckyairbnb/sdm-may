@@ -28,24 +28,24 @@ const Navigation = () => {
 
                 <Dropdown.Item>                   
                     <div>
-                        <h6><Link to="/free-seo-audit/" className="text-black">SEO content and sales copy</Link></h6>
-                        <p><Link to="/free-seo-audit/" className="text-black">Want to check out samples specific to your niche? Get free sample articles for any industry, written by our 5 star writers. </Link></p>
+                        <h6><Link to="/get-free-content-samples/" className="text-black">SEO content and sales copy</Link></h6>
+                        <p><Link to="/get-free-content-samples/" className="text-black">Want to check out samples specific to your niche? Get free sample articles for any industry, written by our 5 star writers. </Link></p>
                     </div>
                 </Dropdown.Item>               
 
                 <Dropdown.Item>
                    
                     <div>
-                        <h6><Link to="/get-free-content-samples/" className="text-black">Content strategy</Link></h6>
-                        <p><Link to="/get-free-content-samples/" className="text-black">Want to write content, but stuck for topic ideas? Get ten free topics specifical to your business emailed straight to your inbox. </Link></p>
+                        <h6><Link to="/get-ten-free-topic-ideas/" className="text-black">Content strategy</Link></h6>
+                        <p><Link to="/get-ten-free-topic-ideas/" className="text-black">Want to write content, but stuck for topic ideas? Get ten free topics specifical to your business emailed straight to your inbox. </Link></p>
                     </div>
                 </Dropdown.Item>             
 
                 <Dropdown.Item>
                    
                     <div>
-                        <h6><Link to="/get-ten-free-topic-ideas/" className="text-black">Content audit</Link></h6>
-                        <p><Link to="/get-ten-free-topic-ideas/" className="text-black">Written epic content, but it’s not get the eyeballs you need? Enter the URL and target keywords, and will send you actionable tips to improve your SERP positions. </Link></p>
+                        <h6><Link to="/free-seo-audit/" className="text-black">Content audit</Link></h6>
+                        <p><Link to="/free-seo-audit/" className="text-black">Written epic content, but it’s not get the eyeballs you need? Enter the URL and target keywords, and will send you actionable tips to improve your SERP positions. </Link></p>
                     </div>
                 </Dropdown.Item>                
 
