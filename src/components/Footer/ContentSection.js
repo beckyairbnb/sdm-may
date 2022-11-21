@@ -25,7 +25,7 @@ const ContentSection = () => {
                     <p>We also have a wide range of marketing tools and resources, making the content more user-friendly and desirable to search engines.</p>
                     <p>And because we understand the importance of SEO, we'll ensure that your content is optimised to help you rank higher in search engine results. That way, you can reach your target audience and drive conversions.</p>
 
-                    <p>That's how our customers value and rate our content writing services. If you're ready to take your online presence to the next level, contact us today and <a href="https://strategically.co/get-a-quote/2/">view our pricing</a>. We'll be happy to help you get started and reach your goals.</p>
+                    <p>That's how our customers value and rate our content writing services. If you're ready to take your online presence to the next level, contact us today and <a href="https://strategically.co/get-a-quote//">view our pricing</a>. We'll be happy to help you get started and reach your goals.</p>
                     <h2 className="font-size-9 tlt-bdr pb-3 mb-8">Why choose Strategically for your web content writing services?</h2>
                     <p>Around <a href="https://www.webfx.com/seo/statistics/">ninety-three</a> per cent of website traffic comes from search engine results, and that trend is unlikely to slow down soon. And good content is one of the crucial ways to attract that organic traffic. If you don't update your website, you'll miss out on many potential leads and sales.</p>
                     <p>Strategically will help you develop and execute a content marketing strategy that aligns with your business goals, creating and curating content that resonates with your audience. </p>

@@ -30,7 +30,7 @@ const CaseStudy = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/2/"}>
+                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote//"}>
                                 View Pricing
                             </a>
                         </>
@@ -45,7 +45,7 @@ const CaseStudy = () => {
                                 <div className="text-center pt-5 pb-lg-4 mb-lg-2">
                                     <h1>Read our case studies and see our results in action</h1>
                                     <Link
-                                        to="/get-a-quote/2/"
+                                        to="/get-a-quote//"
                                         className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                                 </div>
                             </div>

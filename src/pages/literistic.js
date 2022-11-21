@@ -23,7 +23,7 @@ const Literistic = () => {
                         headerClassName: "site-header--menu-right",
                         headerButton: (
                             <>
-                                <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/2/"}>
+                                <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote//"}>
                                     View Pricing
                                 </a>
                             </>
@@ -45,7 +45,7 @@ const Literistic = () => {
                                         <h2 className="fs-2 text-white">$ 7 /month</h2>
                                         <p className="fs-6 text-white">cancel anytime</p>
                                         <Link
-                                            to="/get-a-quote/2/"
+                                            to="/get-a-quote//"
                                             className="btn btn btn-purple header-btn-2 mt-5 mb-3 fs-3 rounded-5 text-capitalize w-auto border-0">get literistic</Link>
                                         <ul className="col-lg-4 mx-auto text-left my-10">
                                             <li className="text-white fw-bold fs-4 py-1">Save hours of searching for opportunities</li>

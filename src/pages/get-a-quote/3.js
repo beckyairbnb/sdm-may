@@ -11,7 +11,7 @@ const Step3 = () => {
       const [formIsValid, setFormIsValid] = useState(false)
       useEffect(() => {
         if(state.step<3){
-            navigate('/get-a-quote/2');
+            navigate('/get-a-quote/');
         }
         if(state.email!==''){
             setFormIsValid(true) 
@@ -44,7 +44,7 @@ const Step3 = () => {
                   headerClassName: "site-header--menu-right",
                   headerButton: (
                     <>
-                    <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/2/"}>
+                    <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote//"}>
                       View Pricing
                     </a>
         

@@ -50,7 +50,7 @@ const LpIndex = (props) => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/2/"}>
+                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote//"}>
                                 View Pricing
                             </a>
                         </>
@@ -70,7 +70,7 @@ const LpIndex = (props) => {
                                         {/* {PageData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.title.html }} className="mb-4" ></div>} */}
                                         <div>Our expert content writers work with ABTasty, Baremetrics, VWO and more</div>
                                         <Link
-                                            to="/get-a-quote/2/"
+                                            to="/get-a-quote//"
                                             className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                                         <p>100% original. Managed Service. Get started today.</p>
 
@@ -107,7 +107,7 @@ const LpIndex = (props) => {
                     <div className="row justify-content-center">
                         <div className="col-xl-12 col-lg-9 col-md-12 col-sm-12 d-flex justify-content-center mt-5 pb-20">
                             <Link
-                                to="/get-a-quote/2/"
+                                to="/get-a-quote//"
                                 className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ const LpIndex = (props) => {
                     <div className="row justify-content-center">
                         <div className="col-xl-12 col-lg-9 col-md-12 col-sm-12 d-flex justify-content-center pb-20">
                             <Link
-                                to="/get-a-quote/2/"
+                                to="/get-a-quote//"
                                 className="btn btn btn-dodger-blue-2 header-btn-2 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                         </div>
                     </div>
@@ -199,7 +199,7 @@ const LpIndex = (props) => {
                     <div className="row justify-content-center">
                         <div className="col-xl-12 col-lg-9 col-md-12 col-sm-12 d-flex justify-content-center pb-20">
                             <Link
-                                to="/get-a-quote/2/"
+                                to="/get-a-quote//"
                                 className="btn btn btn-dodger-blue-2 header-btn-2 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                         </div>
                     </div>

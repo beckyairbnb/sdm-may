@@ -30,7 +30,7 @@ const Hero = ({ className, ...rest }) => {
               Get blog posts, white papers, case studies & more from Native English writers.
               </p>
               <div className="mt-10">
-                <Link to="/get-a-quote/2/" className="btn btn-dodger-blue-2 header-btn rounded-5">
+                <Link to="/get-a-quote//" className="btn btn-dodger-blue-2 header-btn rounded-5">
                   View pricing
                 </Link>
               </div>

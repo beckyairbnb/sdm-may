@@ -45,7 +45,7 @@ const Step1 = (props) => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-              <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/2/"}>
+              <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote//"}>
                 View Pricing
               </a>
 

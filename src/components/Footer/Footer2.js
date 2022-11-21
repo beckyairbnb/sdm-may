@@ -166,7 +166,7 @@ const Footer = ({ className, ...rest }) => {
                       </li>
                       <li className="mb-6">
                         <Link
-                          to={`/get-a-quote/2/`}
+                          to={`/get-a-quote//`}
                           className="font-size-5 text-default-color"
                         >
                           Pricing

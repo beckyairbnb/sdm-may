@@ -17,7 +17,7 @@ const SamplesPage = () => {
           <Helmet>
            <title>Strategically | Content Writing Agency</title>
          </Helmet>
-          <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/2/"}>
+          <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote//"}>
             View Pricing
           </a>
           </>
