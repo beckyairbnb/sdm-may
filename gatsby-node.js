@@ -135,6 +135,14 @@ if (page.path.match(/sign|reset/)) {
     page.context.layout = "noheadernofooter";
     createPage(page);
   }
+    else if (page.path.match(/thank-you-audit/)) {
+    page.context.layout = "noheaderfooter";
+    createPage(page);
+  }
+  else if (page.path.match(/thank-you-samples/)) {
+    page.context.layout = "noheaderfooter";
+    createPage(page);
+  }
 };
 
 exports.createPages = async ({ graphql, actions }) => {

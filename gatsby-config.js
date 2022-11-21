@@ -131,15 +131,36 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-google-reviews-en`,
+      resolve: `gatsby-source-google-places`,
       options: {
         placeId: `ChIJJVOOp00bdkgRMY03j_wc5ng`,
         apiKey: `AIzaSyBRiOs7ivBqYM1-nuIzzYe5Ku3wihThcNY`,
+        language: "en-US", // optional, defaults to en-US
+      },
+    },    
+    {
+    resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: 'UA-127625937-1', // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-google-analytics', // default
+          includeInDevelopment: true,
+          head: true
+        },
+        environments: ['production', 'development']
       },
     },
   ],
 }
 
+
+// {
+//   resolve: `gatsby-source-google-reviews-en`,
+//   options: {
+//     placeId: `ChIJJVOOp00bdkgRMY03j_wc5ng`,
+//     apiKey: `AIzaSyBRiOs7ivBqYM1-nuIzzYe5Ku3wihThcNY`,
+//   },
+// },
 
 
     // {

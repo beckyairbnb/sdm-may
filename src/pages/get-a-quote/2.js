@@ -144,11 +144,11 @@ const Step2 = () => {
               </div>
             </div>
           </form>
-          
+
         </PageContainer>
         <div className="container-fluid mt-20 pt-20 mb-10">
-            <HappyClients />
-          </div>
+          <HappyClients />
+        </div>
       </PageWrapper>
     </>
   )

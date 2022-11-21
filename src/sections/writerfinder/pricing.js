@@ -5,7 +5,7 @@ import writerIcon from "../../assets/images/writer-finder/writer.svg";
 
 const PricingSection = () => {
     return (
-        <div className="container text-center">
+        <div className="container text-center mt-20">
             <div className="py-10">
                 <h2 className="font-size-9">Find your writers</h2>
                 <Spacer />
@@ -22,7 +22,7 @@ const PricingSection = () => {
                             <p className="w-100 border-bottom mb-6 pb-6">Writing Samples From Each Writer</p>
                             <p className="w-100 border-bottom mb-6 pb-6">3 Business Day Turnaround</p>
                             <p className="w-100 border-bottom mb-6 pb-6">100% Satisfaction Guarantee</p>
-                            <Link to={"/"} className="btn bg-blue text-white px-8 py-4 mt-10 font-size-2 rounded-pill">
+                            <Link to={"/"} className="btn btn-dodger-blue-2 header-btn rounded-5 text-dark px-8 py-4 font-size-2">
                                 Find your writers
                             </Link>
                         </Price>

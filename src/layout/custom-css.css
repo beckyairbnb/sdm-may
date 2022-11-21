@@ -477,3 +477,6 @@ a.btn-purple{ background-color: #964aa5 !important; color:#ffffff !important; bo
 .dropdown-menu.show {
   width: 480px;
 }
+.ccbuttons button{
+  padding:10px 15px !important;  
+}

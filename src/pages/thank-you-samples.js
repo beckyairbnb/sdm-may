@@ -26,7 +26,7 @@ const ThankYouSamples = () => {
                     <div className="container">
                         <div className="row justify-content-center text-center py-lg-5">
                             <div className="col-sm-12">
-                                <h2 className="mb-10">Thank you for requesting 10 free topic ideas. </h2>
+                                <h2 className="mb-10">Thank you for requesting your content samples. </h2>
                                 <p className="mb-10">Our expert team of writers and SEOs  are working on your request and will be in touch within 12 hours. </p>
                                 <div className="btn_outer d-flex gap-5 justify-content-center">
                                     <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/"}>

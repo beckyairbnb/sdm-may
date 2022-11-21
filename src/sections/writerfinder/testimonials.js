@@ -1,9 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+
 import TmIcon from "../../assets/images/writer-finder/tm-icon.svg";
 
+import areview1 from "../../assets/images/steve-shaw.png";
+import areview2 from "../../assets/images/cartan-edsall.png";
+import areview3 from "../../assets/images/thortson.png";
+
+import Masonry from 'react-masonry-css'
 
 const Testimonials = () => {
+    const breakpointColumnsObj = {
+        default: 3,
+        700: 2,
+        500: 1,
+   
+    };
     return (
 
         <div className="container text-center">
@@ -14,30 +26,82 @@ const Testimonials = () => {
                         <Spacer />
                         <LargeTitle>Testimonials</LargeTitle>
 
-                        <div className="d-flex flex-wrap justify-content-center align-items-end gap-10">
+                        {/* <div className="d-flex flex-wrap justify-content-center align-items-end gap-10">
                             <Testimonial1>
-                                <p className="text-white mb-8">“The Writer Finder found expert writers to create high-level PPC content for our content needs at several price points. We liked their service so much we’ve used them twice and referred them to other entrepreneurs.”</p>
-                                <p className="font-size-2 text-uppercase text-white">JOHNATHAN DANE - FOUNDER OF KLIENT BOOST</p>
+                                <div className="w-100 mb-4"><img src={areview1} width="60" height="60" /></div>
+                                <p className="font-size-6 text-uppercase text-white">Steve Shaw - 2 Reviews</p>
+                                <p className="text-white mb-8">“I had tried a couple of places for content prior to Strategically, but they were somewhat lacking—Becky got what I was looking for immediately, was very professional in her communications, delivered far more quickly than anticipated and the content was far superior. Thanks Becky & team!”</p>
+
                             </Testimonial1>
                             <Testimonial1>
-                                <p className="text-white">“When searching for the best writers who understand SEO and content, especially in our niche of hearing health, we've been running into barriers. Then we found The Writer Finder. I put in my request and within a few days had an extremely comprehensive list of qualified, experienced writers. To say I was impressed would be putting it mildly. Thank you from all of us at MDHearingAid. I look forward to recommending you to others in our industry.”</p>
-                                <p className="font-size-2 text-uppercase text-white">NATALIE ZIEMBA - MARKETING AMNAGER MDHEARINGAID</p>
+                                <div className="w-100 mb-4"><img src={areview2} width="60" height="60" /></div>
+                                <p className="font-size-6 text-uppercase text-white">Carter Edsall - 1 Review</p>
+                                <p className="text-white">“Becky and her team of writers go above and beyond to deliver high-quality content quickly and at reasonable prices. She is on top of every detail, responds immediately to any questions, and makes my job SO much easier! So glad I found Strategically and don't have to keep searching for the perfect content partner.”</p>
+
                             </Testimonial1>
 
                             <Testimonial2>
-                                <p className="text-white mb-8">"My entire business revolves around finding quality writers who will consistently deliver top-notch content. I had little success using freelance websites and was unsure if I'd ever be able to find good writers. Then I found The Writer Finder. Erika is great to work with and has sourced professionals that I continue to work with today. If you're in the market for writers, your first stop should be The Writer Finder."</p>
-                                <p className="font-size-2 text-uppercase text-white">ANDREW HELLING -- FOUNDER OF RETHORITY</p>
+                                <div className="w-100 mb-4"><img src={areview3} width="60" height="60" /></div>
+                                <p className="font-size-6 text-uppercase text-white">Thorsten Gorny - 1 Review</p>
+                                <p className="text-white mb-8">"I have been working with Becky and her team for a few months now and have to say I am just blown away by the professionalism and also by the determination to help their clients. We had been looking for a content writing service almost for two years with a lot of bad experiences since our product is very 'nichy' and not very easy to understand for anyone outside our industry. Becky and her team went above and ahead to learn and understand the 'lingo' and are producing really awesome content."</p>
+
                             </Testimonial2>
 
                             <Tmicon>
                                 <img src={TmIcon} alt="" />
                             </Tmicon>
 
-                        </div>
+                        </div> */}
 
 
                     </div>
                 </div>
+
+
+                <Masonry
+                    breakpointCols={breakpointColumnsObj}
+                    className="my-masonry-grid"
+                    columnClassName="my-masonry-grid_column"
+                >
+                    <div  className="align-self-center mt-4">
+                        <Testimonial1 className="align-self-center topitem">
+                            <p className="text-black mb-8">“I had tried a couple of places for content prior to Strategically, but they were somewhat lacking—Becky got what I was looking for immediately, was very professional in her communications, delivered far more quickly than anticipated and the content was far superior. Thanks Becky & team!”</p>
+                            <div className="d-flex">
+                                <div className="mb-4 mr-4"><img src={areview1} width="60" height="60" /></div>
+                                <p className="font-size-6 text-uppercase text-black">Steve Shaw - 2 Reviews</p>
+                            </div>
+                        </Testimonial1>
+                    </div>
+                    <div className="align-self-end">
+                        <Testimonial1 className="align-self-end">
+                            <p className="text-black">“Becky and her team of writers go above and beyond to deliver high-quality content quickly and at reasonable prices. She is on top of every detail, responds immediately to any questions, and makes my job SO much easier! So glad I found Strategically and don't have to keep searching for the perfect content partner.”</p>
+                            <div className="d-flex">
+                                <div className="mr-4 mb-4"><img src={areview2} width="60" height="60" /></div>
+                                <p className="font-size-6 text-uppercase text-black">Carter Edsall - 1 Review</p>
+                            </div>
+                        </Testimonial1>
+                    </div>
+                    <div  className="align-self-start">
+                        <Testimonial1 className="align-self-start">
+                            <p className="text-black mb-8">"I have been working with Becky and her team for a few months now and have to say I am just blown away by the professionalism and also by the determination to help their clients. We had been looking for a content writing service almost for two years with a lot of bad experiences since our product is very 'nichy' and not very easy to understand for anyone outside our industry. Becky and her team went above and ahead to learn and understand the 'lingo' and are producing really awesome content."</p>
+                            <div className="d-flex">
+                                <div className="mr-4 mb-4"><img src={areview3} width="60" height="60" /></div>
+                                <p className="font-size-6 text-uppercase text-black">Thorsten Gorny - 1 Review</p>
+                            </div>
+                        </Testimonial1>
+                    </div>
+                    {/* <div>
+                        <Testimonial1>
+                            <p className="text-black mb-8">“I had tried a couple of places for content prior to Strategically, but they were somewhat lacking—Becky got what I was looking for immediately, was very professional in her communications, delivered far more quickly than anticipated and the content was far superior. Thanks Becky & team!”</p>
+                            <div className="d-flex">
+                                <div className="mb-4 mr-4"><img src={areview1} width="60" height="60" /></div>
+                                <p className="font-size-6 text-uppercase text-black">Steve Shaw - 2 Reviews</p>
+                            </div>
+                        </Testimonial1>
+                    </div>
+                     */}
+                </Masonry>
+
             </div>
         </div>
 
@@ -45,6 +109,7 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
 
 const Spacer = styled.div` 
     width: 40px;
@@ -72,13 +137,19 @@ const LargeTitle = styled.div`
     `;
 
 const Testimonial1 = styled.div` 
-    box-shadow: 0 10px 24px 0 rgb(244 55 168 / 40%);
-    background-image: linear-gradient(135deg,#ff9f2e,#f723c4);
-    width:46%; margin: 0 2%;
+box-shadow: 0 10px 24px 0 rgb(82 91 115 / 12%);
+border-radius:10px;
+    // box-shadow: 0 10px 24px 0 rgb(244 55 168 / 40%);
+   // background-image: linear-gradient(135deg,#ff9f2e,#f723c4);
+    // width:46%; margin: 0 2%;
     padding: 65px 50px;
+    text-align:left;
+    color:#000;
     @media screen and (max-width: 600px){
         width:100%;margin: 0; padding:30px;
     }
+
+
     `;
 
 const Testimonial2 = styled.div` 

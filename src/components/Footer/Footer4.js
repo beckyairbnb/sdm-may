@@ -7,60 +7,14 @@ import imgLW from "../../assets/image/logo-main-white.png";
 const Footer = ({ className, ...rest }) => {
   return (
     <>
-      <div className={`bg-white pt-12 pb-10 ${className}`} {...rest}>
-        <div className="container">
-          <div className="pb-13">
-            <div className="row align-items-center justify-content-lg-between">
-            </div>
-          </div>
-          <div className="border-top border-default-color dark-mode-texts d-flex align-items-center justify-content-center justify-content-sm-between flex-column flex-sm-row flex-wrap pt-9">
-            <div>
-              <ul className="d-flex align-items-center list-unstyled mb-5 mb-sm-0">
-                <li>
-                  <Link
-                    to="/privacy"
-                    className="pr-5 text-stone gr-hover-text-dodger-blue-1 font-size-5 pr-12"
-                  >
-                    Privacy
-                  </Link>
-                  <Link
-                    to="/terms"
-                    className="pr-5 text-stone gr-hover-text-dodger-blue-1 font-size-5 pr-12"
-                  >
-                  Terms
-                  </Link>
-                  <Link
-                    to="/money-back-guarantee"
-                    className="pr-5 text-stone gr-hover-text-dodger-blue-1 font-size-5 pr-12"
-                  >
-                    Refund Policy
-                  </Link>
-                  <Link
-                    to="/contact"
-                    className="pr-5 text-stone gr-hover-text-dodger-blue-1 font-size-5 pr-12"
-                  >
-                    Contact Us
-                  </Link>
-                </li>
-
-
-              </ul>
-            </div>
-            <div>
-              <ul className="d-flex align-items-center list-unstyled mb-0">
-
-                <li>
-          Strategically Digital Marketing Ltd. Company Number 11898834. VAT 328 9819 52.
-
-                </li>
-                <li>
-
-                </li>
-              </ul>
+      <div className="container pt-lg-12 pb-8 pb-lg-12 ">
+          <div className="row">
+            
+            <div className="col-lg-12 border-top border-dark-light mt-5 pt-6 pb-0">
+              <p className="text-center">Strategically Digital Marketing Ltd. Company Number 11898834 VAT 328 9819 52 | <Link to="/privacy/" className="text-default-color">Privacy</Link> | <Link to="/terms/" className="text-default-color">Terms</Link></p>
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 };

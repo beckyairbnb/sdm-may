@@ -2,7 +2,9 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 import { Crisp } from "crisp-sdk-web";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import {CookieNotice} from "gatsby-cookie-notice";
 
+import CookieConsent, { Cookies } from "react-cookie-consent";
 import { Link } from "gatsby"
 import AOS from "aos";
 import Header from "../Header";
@@ -1078,6 +1080,28 @@ const Layout = (props) => {
           </div>
   
           <ModalVideo />
+          <CookieConsent
+            location="bottom"
+            buttonText="Accept"
+            enableDeclineButton
+            declineButtonText="Decline"
+            cookieName="myAwesomeCookieName2"
+            style={{ background: "#2B373B" }}
+            buttonWrapperClasses="ccbuttons"
+            buttonStyle={{ background: "#ffffff", color: "#FF0088" }}
+            expires={150}
+          >
+            <div className="container pb-5">
+              <div className="row pb-10">
+                <div className="col-sm-11">
+                Cookies are essentially pieces of code saved by websites onto the user’s web browser when a session is initiated. Cookies have a lot of uses but the most important ones are session management, user personalization, and tracking.
+          
+                </div>
+              </div>
+            </div>
+            
+          </CookieConsent>
+
         </>
       </>
     );

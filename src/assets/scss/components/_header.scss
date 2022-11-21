@@ -368,7 +368,7 @@
 .dropdown-item{display: flex; padding:1.2rem;}
 .dropdown-item:hover, .dropdown-item:focus{border-radius: 0.5rem;}
 .dr-icon{margin-right: 1.5rem;border-radius: 0.25rem;height:45px;width: 45px; padding:8px;}
-.dropdown-item p{font-size: 14px; line-height: 22px; margin:0; word-break: break-all;white-space: normal;}
+.dropdown-item p{font-size: 14px; line-height: 22px; margin:0; white-space: normal;}
 .dropdown-item.active, .dropdown-item:active{background-color: #e9ecef;}
 
 .dropdown-toggle::after{border:none;width:10px;height:10px;background: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>');}

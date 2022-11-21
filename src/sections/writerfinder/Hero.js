@@ -2,32 +2,92 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby"
 import DotImg from "../../assets/images/writer-finder/dot.svg"
+import Heroimg from "../../assets/images/home-1/jpg/hero-bg-1.jpg"
+
 
 const HeroSection = () => {
     return (
-        <HeroBg className="mt-20">
-            <HeroWrapper>
-                <HeroBg1 />
-                <HeroBg2/>
-            </HeroWrapper>
+        // <HeroBg className="mt-20">
+        //     <HeroWrapper>
+        //         <HeroBg1 />
+        //         <HeroBg2/>
+        //     </HeroWrapper>
+        //     <div className="container">
+        //         <div className="row align-items-center">
+        //             <div className="col-xl-12 col-lg-12 col-12">
+        //                 <h2 className="font-size-10 mb-8 text-white fw-normal">Hiring writers? We've got you.</h2>
+        //                 <p className="font-size-5 mb-10 text-white">We find your perfect writer in days — or your money back.</p>
+        //                 <Link to={"/"} className="btn bg-white text-dark px-8 py-4 font-size-2 rounded-pill">
+        //                 Find your writer
+        //                 </Link>
+        //             </div>
+        //         </div>
+        //     </div>
+        // </HeroBg>
+        <HeroBanner className="mt-20 justify-content-center align-items-center d-flex">
             <div className="container">
-                <div className="row align-items-center">
-                    <div className="col-xl-7 col-lg-8 col-12">
-                        <h2 className="font-size-10 mb-8 text-white fw-normal">Hire the perfect freelance writer for your blog</h2>
-                        <p className="font-size-5 mb-10 text-white">
-                            We'll match you with three skilled writers for your niche in 3 business days or less. If none of them are right for you, we'll keep looking, or give you your money back.</p>
-                        <Link to={"/"} className="btn bg-white text-dark px-8 py-4 font-size-2 rounded-pill">
-                            Find your writers
+                <div className="row justify-content-center align-items-center">
+                    <div className="col-xl-8 col-lg-8 col-12 text-center">
+                        <h2 className="text-white fw-normal">Hiring writers? We've got you.</h2>
+                        <p className="mb-10 text-white">We find your perfect writer in days — or your money back.</p>
+                        <Link to={"/"} className="btn btn-dodger-blue-2 header-btn rounded-5 text-dark px-8 py-4 font-size-2 ">
+                            Find your writer
                         </Link>
                     </div>
                 </div>
             </div>
-        </HeroBg>
+        </HeroBanner>
     );
 };
 
 export default HeroSection;
 
+
+const HeroBanner = styled.div`
+background:url(${Heroimg}); 
+position: relative;
+padding-top: 80px;
+padding-bottom: 80px;
+background-size:cover;
+background-repeat:no-repeat;
+background-position:top center;
+height:600px;
+
+&:before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, .8);
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Oswald", Sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 80px;
+    letter-spacing: 4px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 20px 0px;
+}
+p{
+    align-self: center;
+text-align: center;
+color: #ffffff;
+font-family: "Oswald", Sans-serif;
+font-size: 28px;
+font-weight: 300;
+line-height: 42px;
+letter-spacing: 1.4px;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+}
+`
 const HeroBg = styled.div`  
 background-color: #161a25;
     background-image: linear-gradient(120deg,#f723c4,#4b6bf5,#ff2951 100%,#ff2951 101%);

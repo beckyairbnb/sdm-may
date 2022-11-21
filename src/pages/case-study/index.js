@@ -102,7 +102,7 @@ const CaseStudy = () => {
                 </div>
             
                 <HappyClientsReviews
-                    title="Over 4M+ words written!"
+                    title="Over 8M+ words written!"
                     subtitle="Strategically has produced thousands of pieces of content for over 250+ happy clients."
                     ctatextbelow="Read what our customers are saying about Strategically"
                 />

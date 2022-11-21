@@ -2,20 +2,25 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby"
 import FaqIcon from "../../assets/images/writer-finder/iconfaq.svg";
+import Masonry from 'react-masonry-css'
 
 const Faq = () => {
+    const breakpointColumnsObj = {
+        default: 2,
+        500: 1
+    };
     return (
 
         <div class="container pt-lg-20 pt-10 pb-10">
             <div class="row">
                 <div class="col-lg-12">
 
-                    <h2 className="font-size-9 text-center">FAQ</h2>
+                    <h2 className="font-size-9 text-center">Frequently Asked Questions</h2>
                     <Spacer />
-                    <LargeTitle>Questions</LargeTitle>
+                    {/* <LargeTitle>Questions</LargeTitle> */}
 
                     <AllFaqs>
-                        <div className="row">
+                        {/* <div className="row">
                             <div class="col-lg-4 col-md-6 col-xs-12 d-flex justify-content-stretch">
                                 <FaqItem className="bg-white mb-8 p-12 d-flex align-items-start flex-column">
                                     <div className="faq-icon faq-purple d-flex justify-content-center align-items-center rounded-pill mb-8 mx-auto"><img src={FaqIcon} alt="" /></div>
@@ -69,8 +74,60 @@ const Faq = () => {
                                 Find your writers
                             </Link>
 
+                        </div> */}
+
+
+
+                        <Masonry
+                            breakpointCols={breakpointColumnsObj}
+                            className="my-masonry-grid"
+                            columnClassName="my-masonry-grid_column"
+                        >
+                            <div>
+                                <FaqItem className="bg-white mb-8 p-12 d-flex align-items-start flex-column">
+                                    <h5 className="mb-8">Why do I need to pay you to find me a writer? Can’t I use Fiverr or Upwork?</h5>
+                                    <p className="font-size-5 mb-0">Yes, you can. Lots of people use freelance writers from platforms like Upwork or Fiverr. The challenge is you will get 100s of applications, many of which send a generic copy-and-paste proposal with little thought. This means tons of wasted time searching through generic applications that may or may not have even read your whole job post. </p>
+                                </FaqItem>
+                            </div>
+                            <div>
+                                <FaqItem className="bg-white mb-8 p-12 d-flex align-items-start flex-column">
+                                    <h5 className="mb-8">What if you don’t find me a writer that I like?</h5>
+                                    <p className="font-size-5 mb-0">Hiring the perfect writer can be hard. We’ll send you three to five writers to choose from, along with their samples. If you’re not completely satisfied, let us know and we’ll keep looking or return the fee.</p>
+                                </FaqItem>
+                            </div>
+                            <div>
+                                <FaqItem className="bg-white mb-8 p-12 d-flex align-items-start flex-column">
+                                    <h5 className="mb-8">Why shouldn’t I hire an agency?</h5>
+                                    <p className="font-size-5 mb-0">You definitely could. As a <a href="#">content writing agency,</a> we know the value we can bring to companies. We manage the process end-to-end, delivering high-quality content at scale. But that doesn’t mean it’s the right answer for everyone. If you prefer a more hands-on approach or have a tighter budget, hiring a writer might be a better choice. </p>
+                                </FaqItem>
+                            </div>
+                            <div>
+                                <FaqItem className="bg-white mb-8 p-12 d-flex align-items-start flex-column">
+                                    <h5 className="mb-8">How do I know you will find a good writer?</h5>
+                                    <p className="font-size-5 mb-0">We have over a decade of experience in content writing and we’ve worked with clients in a wide range of industries. We know exactly what it takes to find a writer that creates great content that resonates with your audience and meets your business goals. </p>
+                                </FaqItem>
+                            </div>
+                            <div>
+                                <FaqItem className="bg-white mb-8 p-12 d-flex align-items-start flex-column">
+                                    <h5 className="mb-8">Do you have writers who can do X,Y,Z?</h5>
+                                    <p className="font-size-5 mb-0">Yes, we do. We have more than 2000 writers on our books, so it’s highly likely that we can find a fit. Whatever your niche or content type, you can bet your bottom dollar, we got a match.</p>
+                                </FaqItem>
+                            </div>
+                            <div>
+                                <FaqItem className="bg-white mb-8 p-12 d-flex align-items-start flex-column">
+                                    <h5 className="mb-8">How much do your writers cost?</h5>
+                                    <p className="font-size-5 mb-0">The real upside of hiring a writer this way is that you can specify your budget. From budget to luxe, we have writers at every level, so you benefit from one that’s not only a fit for your niche, but also for your wallet, too. The best bit — apart from our finders fee, we don’t charge a dime. </p>
+                                </FaqItem>
+                            </div>
+                        </Masonry>
+                        <div className="d-flex justify-content-center"><Link to={"/"} className="btn btn-dodger-blue-2 header-btn rounded-5 text-dark px-8 py-4 font-size-2">
+                            Find your writers
+                        </Link>
                         </div>
                     </AllFaqs>
+
+
+
 
                 </div>
             </div>
@@ -112,6 +169,7 @@ a{ height:auto !important;min-width: auto;}
 
 const FaqItem = styled.div` 
 box-shadow: 0 10px 24px 0 rgb(82 91 115 / 12%);
+border-radius:10px;
 .faq-icon{width: 72px;   height: 72px;}
 .faq-purple{background-image: linear-gradient(135deg,#ff4dae,#4268ff);}
 .faq-orange{background-image: linear-gradient(135deg,#ff9f2e,#f723c4);}
