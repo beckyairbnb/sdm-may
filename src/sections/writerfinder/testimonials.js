@@ -90,16 +90,6 @@ const Testimonials = () => {
                             </div>
                         </Testimonial1>
                     </div>
-                    {/* <div>
-                        <Testimonial1>
-                            <p className="text-black mb-8">“I had tried a couple of places for content prior to Strategically, but they were somewhat lacking—Becky got what I was looking for immediately, was very professional in her communications, delivered far more quickly than anticipated and the content was far superior. Thanks Becky & team!”</p>
-                            <div className="d-flex">
-                                <div className="mb-4 mr-4"><img src={areview1} width="60" height="60" /></div>
-                                <p className="font-size-6 text-uppercase text-black">Steve Shaw - 2 Reviews</p>
-                            </div>
-                        </Testimonial1>
-                    </div>
-                     */}
                 </Masonry>
 
             </div>

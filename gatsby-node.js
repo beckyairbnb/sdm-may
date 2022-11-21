@@ -110,11 +110,7 @@ if (page.path.match(/sign|reset/)) {
   else if (page.path.match(/pricing/)) {
     page.context.layout = "noheaderfooter";
     createPage(page);
-  }
-  else if (page.path.match(/get-a-quote/)) {
-    page.context.layout = "noheaderfooter";
-    createPage(page);
-  }
+  }  
   else if (page.path.match(/leadgen-page-master/)) {
     page.context.layout = "noheadernofooter";
     createPage(page);
@@ -141,6 +137,10 @@ if (page.path.match(/sign|reset/)) {
   }
   else if (page.path.match(/thank-you-samples/)) {
     page.context.layout = "noheaderfooter";
+    createPage(page);
+  }
+  else if (page.path.match(/get-a-quote/)) {
+    page.context.layout = "noheadernofooter";
     createPage(page);
   }
 };
