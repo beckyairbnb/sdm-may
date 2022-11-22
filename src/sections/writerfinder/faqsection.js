@@ -80,7 +80,7 @@ const Faq = () => {
 
                         <Masonry
                             breakpointCols={breakpointColumnsObj}
-                            className="my-masonry-grid"
+                            className="my-masonry-grid mt-20"
                             columnClassName="my-masonry-grid_column"
                         >
                             <div>

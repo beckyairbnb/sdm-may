@@ -63,7 +63,7 @@ const ServiceTemplate = (props) => {
             <>
               <a
                 className="btn btn btn-dodger-blue-2 header-btn rounded-5"
-                href={"/get-a-quote//"}
+                href={"/get-a-quote/"}
               >
                 View Pricing
               </a>
@@ -99,8 +99,8 @@ const ServiceTemplate = (props) => {
                   <Link
                     to={
                       slug === "seo-content-writing"
-                        ? "/get-a-quote//"
-                        : "/get-a-quote//"
+                        ? "/get-a-quote/"
+                        : "/get-a-quote/"
                     }
                     className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0"
                   >
@@ -174,8 +174,8 @@ const ServiceTemplate = (props) => {
                 <Link
                   to={
                     slug === "seo-content-writing"
-                      ? "/get-a-quote//"
-                      : "/get-a-quote//"
+                      ? "/get-a-quote/"
+                      : "/get-a-quote/"
                   }
                   className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0"
                 >

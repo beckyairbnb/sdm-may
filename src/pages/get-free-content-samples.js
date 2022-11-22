@@ -30,9 +30,8 @@ const LeadgenPageMaster = () => {
                 <title>Get free sample posts for your industry | Strategically.co</title>
             </Helmet>
             <LeadgenLayout
-                title="Free industry sample posts"
-                description="Tell us about your niche and we'll pull from our plentitude of posts written by Strategically writers."
-            >
+                title="SEO content and sales copy"
+                description=" Want to check out samples specific to your niche? Get free samples for any industry or content type, written by our 5-star writers. ">
                 <NetlifyFormProvider {...netlify}>
                     <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-group position-relative mb-4">
@@ -42,6 +41,7 @@ const LeadgenPageMaster = () => {
                                 placeholder="Full Name"
                                 id="fullName"
                                 {...register("fullName", { required: true })}
+                                style={{height:"60px"}}
                                 className=
                                 {
                                     `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.fullName && 'error'}`
@@ -56,6 +56,7 @@ const LeadgenPageMaster = () => {
                                 placeholder="Email Address"
                                 id="email"
                                 {...register("email", { required: 'Email is required' })}
+                                style={{height:"60px"}}
                                 className=
                                 {
                                     `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.email && 'error'}`
@@ -70,6 +71,7 @@ const LeadgenPageMaster = () => {
                                 placeholder="Phone Number"
                                 id="phone"
                                 {...register("phone", { required: true })}
+                                style={{height:"60px"}}
                                 className=
                                 {
                                     `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.phone && 'error'}`
@@ -77,22 +79,42 @@ const LeadgenPageMaster = () => {
                             />
                         </div>
                         <div className="form-group position-relative mb-2">
+                        <select name="contenttype" 
+                            id="contenttype"
+                            {...register("contenttype", { required: true })}
+                            style={{height:"60px"}}
+                            
+                            className=
+                                {
+                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.contenttype && 'error'}`
+                                }
+                                >
+                            <option disabled={true} value="">--Choose Content Type--</option>
+                                <option value="Website sales copy">Website sales copy</option>
+                                <option value="Email marketing">Email marketing</option>
+                                <option value="Newsletters">Newsletters</option>
+                                <option value="SEO blog content">SEO blog content</option>
+                                <option value="Landing pages">Landing pages</option>
+                                <option value="Other">Other</option>                            
+                            </select>
+                        </div>
+                        <div className="form-group position-relative mb-2">
                             <input
                                 type="text"
-                                name="industries"
-                                placeholder="Enter your industries"
-                                id="industries"
-                                {...register("industries", { required: true })}
+                                name="industry"
+                                placeholder="Enter your industry"
+                                id="industry"
+                                {...register("industry", { required: true })}
+                                style={{height:"60px"}}
                                 className=
                                 {
-                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.industries && 'error'}`
+                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.industry && 'error'}`
                                 }
                             />
                         </div>
 
-
                         <div className="button">
-                            <input type="submit" value="Continue" className="btn btn-blue-3 w-100 rounded-4 btn-h" />
+                            <input type="submit" value="Continue" className="btn btn-blue-3 w-100 rounded-4 btn-h" style={{height:"60px"}} />
                         </div>
                     </NetlifyFormComponent>
                 </NetlifyFormProvider>

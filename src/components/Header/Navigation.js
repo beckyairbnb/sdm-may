@@ -45,7 +45,7 @@ const Navigation = () => {
                    
                     <div>
                         <h6><Link to="/free-seo-audit/" className="text-black">Content audit</Link></h6>
-                        <p><Link to="/free-seo-audit/" className="text-black">Written epic content, but it’s not get the eyeballs you need? Enter the URL and target keywords, and will send you actionable tips to improve your SERP positions. </Link></p>
+                        <p><Link to="/free-seo-audit/" className="text-black">Written epic content, but it’s not getting the eyeballs you need? Enter the URL and target keywords, and will send you actionable tips to improve your SERP positions. </Link></p>
                     </div>
                 </Dropdown.Item>                
 

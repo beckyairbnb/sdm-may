@@ -30,7 +30,7 @@ const CaseStudy = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote//"}>
+                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
                                 View Pricing
                             </a>
                         </>
@@ -45,7 +45,7 @@ const CaseStudy = () => {
                                 <div className="text-center pt-5 pb-lg-4 mb-lg-2">
                                     <h1>Read our case studies and see our results in action</h1>
                                     <Link
-                                        to="/get-a-quote//"
+                                        to="/get-a-quote/"
                                         className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
                                 </div>
                             </div>
@@ -76,8 +76,8 @@ const CaseStudy = () => {
                         <div className="row align-items-center">
                             <div className="col-lg-6 col-xs-12">
                                 <h3 class="mb-6 font-size-10"><Link to="/case-study/sanctions">Sanctions</Link></h3>
-                                <p> sanctions.io had a blog where they posted once per month. Unfortunately, they are a team of data and technology buffs, not writers. “Our team doesn't have great writers, I'm not a great writer, and it's always a big headache trying to write.”</p>
-                                <p>Thorsten and the team were procrastinating and pushing away creating content for their blog when they knew they needed it to improve their SEO. For most businesses, there is a straightforward solution: outsourcing their work. But for a niche technology company, sanctions.io was struggling to find an agency they were satisfied with.</p>
+                                <p>We worked with sanctions.io, a niche SaaS helping companies screen against global sanctions. In 12 months, we helped them to increase their organic traffic by 2X in 6 months, succeeding where four other agencies had failed. </p>
+                                <p>In this case study, we go over the details related to the content creation partnership and the impressive results we generated for sanctions.io.</p>
                             </div>
                             <div className="col-lg-6 col-xs-12">
                                 <Link to="/case-study/sanctions" className="d-flex justify-content-center align-items-center case-img1"><img src={ClientImg1} alt="" className="d-flex justify-content-center align-items-center" /></Link>
@@ -93,10 +93,23 @@ const CaseStudy = () => {
                             </div>
                             <div className="col-lg-6 col-xs-12">
                                 <h3 class="mb-6 font-size-10"><Link to="/case-study/original-kettlebell">Original Kettlebell</Link></h3>
-                                <p>Original Kettlebell launched during a lockdown, which meant demand for their product was insanely high. They were busy doing all the jobs associated with setting up and running a new business but at warp speed.</p>
-                                <p>Original Kettlebell had three core challenges with its content creation. First, like many other fast-growing businesses, they knew they needed content but didn’t have the bandwidth to do it themselves. </p>
+                                <p>During the pandemic, we worked with Original Kettlebell, a fast-growing fitness eCommerce store. In less than a year, we helped them to grow from 0 to £1 million in revenue in 12 months, gaining 500K in traffic and more than 300 top 10 positions in the SERPs.</p>
+                                <p>Read this case study to see how our laser-focused content strategy got them fast results without wasting valuable time on wasted deliverables. </p>
                             </div>
-
+                        </div>
+                    </div>
+                </div>
+                <div className="bg-light py-16 mb-8">
+                    <div className="container">
+                        <div className="row align-items-center">
+                            <div className="col-lg-6 col-xs-12">
+                                <h3 class="mb-6 font-size-10"><Link to="/case-study/phoneiq">PhoneIQ</Link></h3>
+                                <p>We’ve helped PhoneIQ, an all-in-one cloud phone system and call centre software for companies that run on the Salesforce platform, to scale their content creation for several years. </p>
+                                <p>In this case study, we explain how our high-quality content has helped PhoneIQ to improve its website metrics and create a consistent cadence of tech content. </p>
+                            </div>
+                            <div className="col-lg-6 col-xs-12">
+                                <Link to="/case-study/phoneiq" className="d-flex justify-content-center align-items-center case-img1"><img src={ClientImg1} alt="" className="d-flex justify-content-center align-items-center" /></Link>
+                            </div>
                         </div>
                     </div>
                 </div>
