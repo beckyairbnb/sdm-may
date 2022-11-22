@@ -63,6 +63,9 @@ const Navigation = () => {
             <Link to="/blog" className="nav-link" role="button">
                 Blog
             </Link>
+            <a className="btn btn-dodger-blue-2 header-btn rounded-5 d-lg-none d-inline-flex mt-10 " href={"/get-a-quote/"}>
+                View Pricing
+              </a>
             </Container>
         </div>
     );

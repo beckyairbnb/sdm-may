@@ -43,10 +43,11 @@ module.exports = {
           price_table: require('./custom_types/price_table.json'),
           blog: require('./custom_types/blog.json'),
           blog_category: require('./custom_types/blog_category.json'),
+          blog_listing_page: require('./custom_types/blog_listing_page.json'),
           service: require('./custom_types/service.json'),
           career: require('./custom_types/career.json'),
           page: require('./custom_types/page.json'),
-          writingjobs: require('./custom_types/writingjobs.json'),
+          writingjobs: require('./custom_types/writingjobs.json'),          
           an_unused_type: {},
           htmlSerializer: ({ node, key, value }) => (
             type,

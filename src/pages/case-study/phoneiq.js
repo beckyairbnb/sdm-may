@@ -17,7 +17,7 @@ const Sanctions = () => {
     return (
         <>
             <Helmet>
-                <title>Strategically | Content Writing Agency</title>
+                <title>PhoneIQ Case Study - How Strategically Improved PhoneIQs Website Metrics by Delivering High-Quality Content</title>
             </Helmet>
             <PageWrapper
                 themeConfig={{
@@ -49,20 +49,20 @@ const Sanctions = () => {
                             <div class="col-md-4 col-sm-6 mb-5">
                                 <img src={Icon2} alt="" />
                                 {/* <h2 class="font-size-lg-12 font-size-10 text-center text-white mt-3">0 to 2.5M</h2> */}
-                                <h2 class="font-size-lg-12 font-size-10 text-center text-white mt-3">2X increase </h2>
-                                <h5 className="text-center text-white">in organic traffic</h5>
+                                <h2 class="font-size-lg-12 font-size-10 text-center text-white mt-3">Increased High-Quality Content</h2>
+                                {/* <h5 className="text-center text-white">High-Quality Content</h5> */}
                             </div>
                             <div class="col-md-4 col-sm-6 mb-5">
                                 <img src={Icon1} alt="" />
                                 {/* <h2 class="font-size-lg-12 font-size-10 text-center text-white mt-3">1.7M</h2> */}
-                                <h2 class="font-size-lg-12 font-size-10 text-center text-white mt-3">2.5X words</h2>
-                                <h5 className="text-center text-white">written per month</h5>
+                                <h2 class="font-size-lg-12 font-size-10 text-center text-white mt-3">Improved Website Metrics</h2>
+                                {/* <h5 className="text-center text-white">written per month</h5> */}
                             </div>
                             <div class="col-md-4 col-sm-6 mb-5">
                                 <img src={Icon3} alt="" />
                                 {/* <h2 class="font-size-lg-12 font-size-10 text-center text-white mt-3">7,000+</h2> */}
-                                <h2 class="font-size-lg-12 font-size-10 text-center text-white mt-3"> 4 agencies</h2>
-                                <h5 className="text-center text-white">tried & failed</h5>
+                                <h2 class="font-size-lg-12 font-size-10 text-center text-white mt-3">Another Satisfied Client</h2>
+                                {/* <h5 className="text-center text-white">tried & failed</h5> */}
                             </div>
                         </div>
                     </div>
@@ -79,22 +79,20 @@ const Sanctions = () => {
                                         <h2 className="font-size-10">The client</h2>
                                         <div className="service-post-divider "></div>
                                         <p>PhoneIQ provides an all-in-one cloud phone system and call centre software for companies that run on the Salesforce platform.</p>
-                                        <p>After the pandemic forced companies to shift into the remote working realm, PhoneIQ saw the number of companies that needed its world-leading communication platform increase significantly. </p>
-                                        <p>As its client base grew, PhoneIQ wanted to increase its output of high-quality content provided to its audience, swiftly realising how this could improve conversions and positively impact its SEO strategy. </p>
+                                        <p>The pandemic forced companies to shift into the remote working realm. PhoneIQ saw a massive increase in the number of companies that now needed its world-leading communication platform. </p>
+                                        <p>As its client base grew, PhoneIQ wanted to increase its output of high-quality content provided to its audience. They swiftly realised how this could improve conversions and positively impact their SEO strategy. </p>
+                                        <p>The system was working well, but PhoneIQ wanted to increase its output of high-quality content for SEO purposes. They needed a content agency that could provide a wide range of writers with the necessary research skills to produce up-to-date and accurate technology content. Luckily for them, this is where Strategically excels.</p>
                                     </div>
                                 </div>
-                                {/* <h2 className="font-size-10 text-left mb-10">Challenges</h2>
-                                <p>Shutterfly recently launched their new blog under their “Ideas” subfolder, but lacked the internal resources to get it up and running. They needed a partner who understood the powerful traffic engine of SEO-driven content, as well as the ability to create high-quality, well-branded content.</p> */}
                                 <h2 className="font-size-10 text-left my-lg-10 my-5">The problem</h2>
-                                <p> PhoneIQ faced a significant challenge in delivering interesting and updated tech-related articles, especially considering the sector moves at lightning speed with constant innovation and development. </p>
-                                {/* <div class="testimonial border p-md-10 p-8 rounded mb-8">
-                                    <p class="font-size-7 line-height-28 text-dark-cloud m-0"> “Our team doesn't have great writers, I'm not a great writer, and it's always a big headache trying to write.”</p>
-                                </div> */}
-                                <p>In particular, PhoneIQ understood that writing in the technology sector required writers to be <a href="#">“very focused on checking for updated sources and trends.”</a> In addition, they knew writers would need good research skills to deliver the type of content they desired.</p>
-                                <p>Before finding Strategically, the marketing team managed all of the content in-house. PhoneIQ started by having team members write the articles required, and then moved to hiring independent tech content creators to help as guest writers.</p>
-                                <p>However, the guest writers may not have delivered the high-quality SEO content they had in mind. Instead, PhoneIQ demanded more. Specifically, they needed technical writers with a wealth of experience writing in technology who had an in-depth knowledge about the sector.</p>
-                                <p><a href="#">“The only limitation is that I need more technical writers who know about the topic itself or can write from their own experience.”</a></p>
-                                <p>They needed a content agency that could provide a wide range of writers with the necessary research skills to produce up-to-date and accurate technology content. Luckily for them, this is where we excel. </p>
+                                <p>PhoneIQ found Strategically after looking for additional technical writers online. They contacted us and agreed to let us write a sample piece for them. We scoured our network of in-house writers to find the perfect writer for the assignment. They were instantly impressed by what we produced. </p>
+                                <p><a href="#">"We agreed to have them write an article for us so [that] we could assess their service, and I was positively impressed."</a></p>
+                                <p>One thing that piqued PhoneIQ's attention was the team's responsiveness to their queries, giving them the confidence to know that any potential problems arising would be quickly resolved.</p>
+                                <p>From then on, it was plain sailing. We're proficient and highly experienced in providing high-quality SEO content consistently. It's what we're born to do. PhoneIQ lets us know the article needed - and we handle the rest. </p>
+                                <p><a href="#">"Finding Strategically was great. I just brief them on the article we need and have been very happy with the results so far. They're very responsive and timely."</a></p>
+                                <p>We asked PhoneIQ for feedback on our services, and they emphasised our excellent communication and speed of delivery. </p>
+                                <p>In addition, they seldom need revisions when we deliver the content. This is partly due to our vast network of skilled writers and partly because we have a knack for picking an ideally-suited author. Furthermore, our writing process is an in-depth and rigorous endeavour - we leave no stone unturned - ensuring our satisfied clients always have the finished product they visualized.</p>
+                                <p><a href="#">"I find your services to be really reliable in time as well as expected quality. Communication is great and is all in all a great partner that helps us deliver high quality content to our audience. I hardly ever need to ask for any revisions. Articles are checked in spelling, headings and subheadings, etc."</a></p>
                             </div>
                         </div>
                     </div>
@@ -111,23 +109,21 @@ const Sanctions = () => {
                 <div class="pb-10 text-size">
                     <div className="container">
                         <h2 className="font-size-10 mb-lg-10 mb-5">The solution</h2>
-                        <p> PhoneIQ stumbled upon Strategically after looking for additional technical writers for guest posts on Upwork. They got in touch with us and agreed to let us write a sample piece for them. We scoured our network of in-house writers to find the perfect person for the assignment. </p>
-                        <p>Needless to say, they were instantly impressed by what we produced. </p>
+                        <p>PhoneIQ found Strategically after looking for additional technical writers online. They contacted us and agreed to let us write a sample piece for them. We scoured our network of in-house writers to find the perfect writer for the assignment. They were instantly impressed by what we produced.</p>
                         <div className="container">
                             <div class="quote-blk py-14 px-14 text-center my-10">
                                 <h3 className="text-white my-0">"We agreed to have them write an article for us so [that] we could assess their service, and I was positively impressed."</h3>
                             </div>
                         </div>
-                        <p>One thing that peaked PhoneIQ's attention was Becky's responsiveness to their queries, giving them the confidence to know that any potential problems arising would be met with a quick solution. </p>
-                        <p>From then onward, it was plain sailing for us both as we're proficient and highly experienced in providing high-quality SEO content consistently. It's what we're born to do. </p>
-                        <p>PhoneIQ lets us know the article needed - and we handle the rest for them. </p>
+                        <p>One thing that piqued PhoneIQ's attention was the team's responsiveness to their queries, giving them the confidence to know that any potential problems arising would be quickly resolved. </p>
+                        <p>From then on, it was plain sailing. We're proficient and highly experienced in providing high-quality SEO content consistently. It's what we're born to do. PhoneIQ lets us know the article needed - and we handle the rest. </p>
                         <div className="container">
                             <div class="quote-blk py-14 px-14 text-center my-10">
-                                <h3 className="text-white my-0">"[So] finding Strategically was great. I just brief them on the article we need and have been very happy with the results so far. They're very responsive and timely."</h3>
+                                <h3 className="text-white my-0">"Finding Strategically was great. I just brief them on the article we need and have been very happy with the results so far. They're very responsive and timely."</h3>
                             </div>
                         </div>
-                        <p>We asked PhoneIQ for feedback on our services, and they emphasised our excellent communication and speed of delivery. </p>
-                        <p>In addition, they hardly ever need to ask for revisions when we deliver the content. This is partly due to our vast network of skilled writers, and partly because we have a knack for picking an ideally-suited author for the task. Furthermore, our editing process is an in-depth and rigorous endeavour - we leave no stone unturned - ensuring our satisfied clients always have the finished product they visualized. </p>
+                        <p>We asked PhoneIQ for feedback on our services, and they emphasised our excellent communication and speed of delivery.</p>
+                        <p>In addition, they seldom need revisions when we deliver the content. This is partly due to our vast network of skilled writers and partly because we have a knack for picking an ideally-suited author. Furthermore, our writing process is an in-depth and rigorous endeavour - we leave no stone unturned - ensuring our satisfied clients always have the finished product they visualized.</p>
                         <div className="container">
                             <div class="quote-blk py-14 px-14 text-center my-10">
                                 <h3 className="text-white my-0">"I find your services to be really reliable in time as well as expected quality. Communication is great and is all in all a great partner that helps us deliver high quality content to our audience. I hardly ever need to ask for any revisions. Articles are checked in spelling, headings and subheadings, etc."</h3>
@@ -146,15 +142,17 @@ const Sanctions = () => {
                     </div> */}
                     <div className="container">
                         <h2 className="font-size-10 mb-lg-10 mb-5 mt-10">The impact</h2>
-                        <p>The impact for PhoneIQ after working with Strategically has allowed it to continue delivering high-quality content to its customers. In addition, PhoneIQ has also seen its baseline website metrics substantially increase due to the SEO content provided - that seems like a double win!</p>
-                        <div className="container">
+                        <p>The impact for PhoneIQ after working with Strategically has allowed it to continue publishing high-quality content, driving towards its SEO goals. PhoneIQ has also seen its baseline website metrics substantially increase due to the SEO content provided - that seems like a double win!
+</p>
+                        <p><a href="#">"It's great. It has given us the possibility to continue delivering high quality content and that has helped us increase our website's metrics."
+</a></p>
+                        <p>PhoneIQ also mentioned that better results and easier workflow were additional benefits of working with us. When asked how PhoneIQ defines success in regards to our partnership, they stated that Strategically offers, <a href="#">"Good communication [is key], adherence to schedule, number of articles published, number of revisions per article."</a></p>
+                        {/* <div className="container">
                             <div class="quote-blk py-14 px-14 text-center my-10">
                                 <h3 className="text-white my-0">"It's great. It has given us the possibility to continue delivering high quality content and that has helped us increase our website's metrics."</h3>
                             </div>
-                        </div>
-                        <p>Furthermore, PhoneIQ also mentioned that better results and easier workflow were additional benefits from working with us.</p>
-                        <p>When asked how PhoneIQ defines success in regards to our partnership, they stated that Strategically boasts, <a href="#">"Good communication [is key], adherence to schedule, number of articles published, number of revisions per article."</a></p>
-                        <p>Overall, that's another satisfied client who's benchmark metrics continue to increase due to the high-quality content received. </p>
+                        </div> */}
+                        <p>Overall, that's another satisfied client whose benchmark metrics continue to increase due to the high-quality content delivered by Strategically. </p>
                     </div>
                     {/* <p>And we are already discussing the next steps to take Sanctions.io further, boost site traffic, and see an even larger return on investment:</p> */}
 

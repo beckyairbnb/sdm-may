@@ -1,31 +1,52 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby"
-import Entrepreneur from "../../assets/images/writer-finder/entrepreneur.png";
-import Lifehacker from "../../assets/images/writer-finder/lifehacker.png";
-import Esquire from "../../assets/images/writer-finder/esquire.png";
-import Forbest from "../../assets/images/writer-finder/forbest.png";
-import Healthline from "../../assets/images/writer-finder/healthline.png";
+import amazon from "../../assets/images/writer-finder/amazon-logo.png";
+import Thebalance from "../../assets/images/writer-finder/thebalance-logo.png";
+import Ask from "../../assets/images/writer-finder/ask-logo.svg";
+import SEOlogo from "../../assets/images/writer-finder/SEO-logo.png";
+import Motleyfool from "../../assets/images/writer-finder/motley-logo.svg";
+import Casino from "../../assets/images/writer-finder/888casino-logo.png";
+import Nikelogo from "../../assets/images/writer-finder/nike-logo.png";
+import Guinness from "../../assets/images/writer-finder/guinness-logo.png";
+import Microsoft from "../../assets/images/writer-finder/microsoft-logo.png";
+import BBC from "../../assets/images/writer-finder/BBC-Logo.png";
+import Johnlewis from "../../assets/images/writer-finder/john-lewis-logo.svg";
+import HMlogo from "../../assets/images/writer-finder/HM-logo.png";
+import Ikea from "../../assets/images/writer-finder/ikea-logo.svg";
+import Etoro from "../../assets/images/writer-finder/etoro-logo.png";
+import IBM from "../../assets/images/writer-finder/ibm-logo.png";
+import Blackberry from "../../assets/images/writer-finder/blackberry-logo.webp";
+import THlogo from "../../assets/images/writer-finder/th-logo.png";
+import Channel from "../../assets/images/writer-finder/channel-logo.png";
+import Puma from "../../assets/images/writer-finder/puma-logo.png";
+import adidas from "../../assets/images/writer-finder/adidas-logo.webp";
 
-import Time from "../../assets/images/writer-finder/time.png";
-import Playboy from "../../assets/images/writer-finder/playboy.png";
-import Cosmopolitan from "../../assets/images/writer-finder/cosmopolitan.png";
-import Inc from "../../assets/images/writer-finder/inc.png";
-import Shopify from "../../assets/images/writer-finder/shopify.png";
 
-import Redbull from "../../assets/images/writer-finder/redbull.png";
-import Theguardian from "../../assets/images/writer-finder/theguardian.png";
-import Nbc from "../../assets/images/writer-finder/nbc.png";
-import Thoughtcatalog from "../../assets/images/writer-finder/thoughtcatalog.png";
-import Newyorktimes from "../../assets/images/writer-finder/newyorktimes.png";
 
-import Sumo from "../../assets/images/writer-finder/sumo.png";
-import Spire from "../../assets/images/writer-finder/spire.png";
-import Perfectketo from "../../assets/images/writer-finder/perfectketo.png";
-import Kettlefire from "../../assets/images/writer-finder/kettlefire.png";
-import Yummly from "../../assets/images/writer-finder/yummly.png";
-import Foursigmatic from "../../assets/images/writer-finder/foursigmatic.png";
-import Patreon from "../../assets/images/writer-finder/patreon.png";
+
+
+
+
+// import Time from "../../assets/images/writer-finder/time.png";
+// import Playboy from "../../assets/images/writer-finder/playboy.png";
+// import Cosmopolitan from "../../assets/images/writer-finder/cosmopolitan.png";
+// import Inc from "../../assets/images/writer-finder/inc.png";
+// import Shopify from "../../assets/images/writer-finder/shopify.png";
+
+// import Redbull from "../../assets/images/writer-finder/redbull.png";
+// import Theguardian from "../../assets/images/writer-finder/theguardian.png";
+// import Nbc from "../../assets/images/writer-finder/nbc.png";
+// import Thoughtcatalog from "../../assets/images/writer-finder/thoughtcatalog.png";
+// import Newyorktimes from "../../assets/images/writer-finder/newyorktimes.png";
+
+// import Sumo from "../../assets/images/writer-finder/sumo.png";
+// import Spire from "../../assets/images/writer-finder/spire.png";
+// import Perfectketo from "../../assets/images/writer-finder/perfectketo.png";
+// import Kettlefire from "../../assets/images/writer-finder/kettlefire.png";
+// import Yummly from "../../assets/images/writer-finder/yummly.png";
+// import Foursigmatic from "../../assets/images/writer-finder/foursigmatic.png";
+// import Patreon from "../../assets/images/writer-finder/patreon.png";
 
 
 import logo1 from "../../assets/images/clients/logo-1.jpg";
@@ -37,6 +58,8 @@ import logo5 from "../../assets/images/clients/logo-5.jpg";
 import logo7 from "../../assets/images/clients/logo-7.jpg";
 import logo9 from "../../assets/images/clients/logo-9.jpg";
 import logo10 from "../../assets/images/clients/logo-10.jpg";
+
+
 import Contentimg from "../../assets/images/home-2/png/content-2-img.png";
 import Dotimg from "../../assets/images/home-2/png/patterns-dot-green.png";
 import Circlehalf from "../../assets/images/home-2/png/right-circlehalf-shape.png";
@@ -53,7 +76,7 @@ const WritersContent = () => {
                     <div className="col-lg-6 col-12">
                         <h2 className="font-size-9">We get it, hiring writers is hard. But it doesn't have to be.</h2>
                         <Spacer2 />
-                        <p className="font-size-7">At <Link to="/">Strategically</Link>, we’ve worked with 250+ companies and written more than 8 million words. With only <b><u>5-star Google reviews</u></b>, we know how to match you with a writer that will nail your content — every time.
+                        <p className="font-size-7">At <Link to="/">Strategically</Link>, we’ve worked with 250+ companies and written more than 8 million words. With only <Link to="https://g.page/strategically?share">5-star Google reviews</Link>, we know how to match you with a writer that will nail your content — every time.
                         </p>
                     </div>
                     <div className="col-lg-6 col-12">
@@ -163,11 +186,30 @@ const WritersContent = () => {
                     </div>
                     <div className="col-xl-8 col-lg-10 col-12">
                         <div className="d-flex flex-wrap justify-content-center align-items-center">
-                            <img src={Entrepreneur} alt="" height={32} className="my-8 mx-7" />
-                            <img src={Lifehacker} alt="" height={32} className="my-8 mx-7" />
-                            <img src={Esquire} alt="" height={32} className="my-8 mx-7" />
-                            <img src={Forbest} alt="" height={32} className="my-8 mx-7" />
-                            <img src={Healthline} alt="" height={32} className="my-8 mx-7" />
+                            <img src={amazon} alt="" height={50} className="my-8 mx-7" />
+                            <img src={Thebalance} alt="" height={80} className="my-8 mx-7" />
+                            <img src={Ask} alt="" height={60} className="my-8 mx-7" />
+                            <img src={SEOlogo} alt="" height={32} className="my-8 mx-7" />
+                            <img src={Motleyfool} alt="" height={32} className="my-8 mx-7" />
+                            <img src={Casino} alt="" height={60} className="my-8 mx-7" />
+                            <img src={Nikelogo} alt="" height={60} className="my-8 mx-7" />
+                            <img src={Guinness} alt="" height={60} className="my-8 mx-7" />
+                            <img src={Microsoft} alt="" height={32} className="my-8 mx-7" />
+                            <img src={BBC} alt="" height={32} className="my-8 mx-7" />
+                            <img src={Johnlewis} alt="" height={32} className="my-8 mx-7" />
+                            <img src={HMlogo} alt="" height={50} className="my-8 mx-7" />
+                            <img src={Ikea} alt="" height={60} className="my-8 mx-7" />
+                            <img src={Etoro} alt="" height={60} className="my-8 mx-7" />
+                            <img src={IBM} alt="" height={50} className="my-8 mx-7" />
+                            <img src={Blackberry} alt="" height={60} className="my-8 mx-7" />
+                            <img src={THlogo} alt="" height={32} className="my-8 mx-7" />
+                            <img src={Channel} alt="" height={60} className="my-8 mx-7" />
+                            <img src={Puma} alt="" height={60} className="my-8 mx-7" />
+                            <img src={adidas} alt="" height={60} className="my-8 mx-7" />
+
+
+                                                       
+                            {/* <img src={Healthline} alt="" height={32} className="my-8 mx-7" />
 
                             <img src={Time} alt="" height={32} className="my-8 mx-7" />
                             <img src={Playboy} alt="" height={32} className="my-8 mx-7" />
@@ -176,13 +218,13 @@ const WritersContent = () => {
                             <img src={Shopify} alt="" height={32} className="my-8 mx-7" />
 
                             <img src={Redbull} alt="" height={32} className="my-8 mx-7" />
-                            <img src={Theguardian} alt="" height={32} className="my-8 mx-7" />
+                            <img src={Theguardian} alt="" height={32} className="my-8 mx-7" /> */}
                         </div>
-                        <div className="d-flex flex-wrap justify-content-center align-items-center">
+                        {/* <div className="d-flex flex-wrap justify-content-center align-items-center">
                             <img src={Nbc} alt="" height={64} className="my-8 mx-7" />
                             <img src={Thoughtcatalog} alt="" height={64} className="my-8 mx-7" />
                             <img src={Newyorktimes} alt="" height={64} className="my-8 mx-7" />
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>

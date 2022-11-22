@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby"
 
-import Icon1 from "../../assets/images/writer-finder/feature-icon1.svg";
-import Icon2 from "../../assets/images/writer-finder/feature-icon2.svg";
-import Icon3 from "../../assets/images/writer-finder/feature-icon3.svg";
+import Icon1 from "../../assets/images/writer-finder/feature-1.jpg";
+import Icon2 from "../../assets/images/writer-finder/feature-2.webp";
+import Icon3 from "../../assets/images/writer-finder/feature-3.webp";
 
 const FeaturesSection = () => {
     return (
@@ -13,21 +13,21 @@ const FeaturesSection = () => {
                 <div className="row ">
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <Featurebox className="flex-column text-center justify-content-between align-items-center d-flex">
-                            <img src={Icon1} alt="" className="" width={80} height={80} />
+                            <img src={Icon1} alt="" className="" width={200} height={200} />
                             <h5 className="font-size-8 my-10">1. Tell us your content needs</h5>
                             <p className="font-size-6 mb-0">Answer a few quick questions to let us know your business goals, content budget, target audience, and content requirements.</p>
                         </Featurebox >
                     </div>
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <Featurebox className="flex-column text-center justify-content-between align-items-center d-flex">
-                            <img src={Icon2} alt="" className="" width={80} height={80}/>
-                            <h5 className="font-size-8 my-10">2. We find your writer</h5>
+                            <img src={Icon2} alt="" className="" width={200} height={200}/>
+                            <h5 className="font-size-8 my-10">2. We find your ideal writer</h5>
                             <p className="font-size-6 mb-0">Our content experts review your answers and search our database of 2000 writers to find the perfect match.</p>
                         </Featurebox >
                     </div>
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <Featurebox className="flex-column text-center justify-content-between align-items-center d-flex">
-                            <img src={Icon3} alt="" className="" width={80} height={80} />
+                            <img src={Icon3} alt="" className="" width={200} height={200} />
                             <h5 className="font-size-8 my-10">3. Say hello to your new writer</h5>
                             <p className="font-size-6 mb-0">We introduce three to five writers to you. Review their samples and contact them directly, before making your final choice.</p>
                         </Featurebox >

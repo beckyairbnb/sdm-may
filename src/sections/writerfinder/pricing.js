@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby"
-import writerIcon from "../../assets/images/writer-finder/writer.svg";
+import writerIcon from "../../assets/images/writer-finder/writer.png";
 
 const PricingSection = () => {
     return (
@@ -9,12 +9,12 @@ const PricingSection = () => {
             <div className="py-10">
                 <h2 className="font-size-9">Find your writers</h2>
                 <Spacer />
-                <LargeTitle>Pricing</LargeTitle>
-                <div className="row justify-content-center align-items-center">
+                {/* <LargeTitle>Pricing</LargeTitle> */}
+                <div className="row justify-content-center align-items-center mt-20">
                     <div className="col-lg-5 col-12">
                         <Price className="bg-white d-flex justify-content-center align-items-center flex-column p-14">
                             <Writericon className="d-flex justify-content-center align-items-center rounded-pill mb-8">
-                                <img src={writerIcon} alt="" />
+                                <img src={writerIcon} alt="" width={45} height={32} />
                             </Writericon>
                             <h3 className="font-size-8">Find Your Writers</h3>
                             <p className="text-blue font-size-7 border-bottom pt-5 pb-10 mb-10">$250</p>

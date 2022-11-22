@@ -17,6 +17,11 @@ const BlogListTemplate = (props) => {
         AllCats: { edges: catsData },
       } = data;
 
+    const { HighlightBlogs } = data
+
+    console.log('HighlightBlogs',HighlightBlogs.data.body[0].items)
+    console.log('blogsData',blogsData)
+
       const seoTitle = 'Strategically Blog'
       const seoDescription = 'Strategically Blog'
 
@@ -50,17 +55,7 @@ const BlogListTemplate = (props) => {
                             </div>
                             <div className="col-lg-9 col-xs-12">
                                 <BlogIndex data={blogsData} />
-                                <Pagination data={pageContext} />
-                                {/* <Pagination>
-                                    <ul>
-                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" /></svg></a></li>
-                                        <li><a href="#" className="active">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" /></svg></a></li>
-                                    </ul>
-                                </Pagination> */}
+                                <Pagination data={pageContext} />                                
                             </div>
                         </div>
                         
@@ -117,6 +112,56 @@ ul > li > a{
 
 export const data = graphql`
   query($skip: Int!, $limit: Int!) {
+    HighlightBlogs : prismicBlogListingPage(uid: {eq: "blog"}) {
+      data {
+        body {
+          ... on PrismicBlogListingPageDataBodyHighlightBlogs {
+            id
+            items {
+              blog {
+                node: document {
+                  ... on PrismicBlog {
+                    uid
+                    id
+                    data {
+                      title {
+                        html
+                        text
+                      }
+                      description {
+                        text
+                      }
+                      seotitle
+                      metadescription
+                      featuredimage {
+                        gatsbyImageData(layout: FULL_WIDTH)
+                        fluid {
+                          src
+                        }
+                      }
+                      category {
+                          document {
+                            ... on PrismicBlogCategory {
+                              id
+                              uid
+                              data {
+                                name {
+                                  text
+                                  html
+                                }
+                              }
+                            }
+                          }
+                        }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     AllCats : allPrismicBlogCategory {
         edges {
           node {

@@ -9,6 +9,19 @@ import PageWrapper from "../../components/PageWrapper";
 import CasestudyImg from "../../assets/images/about-img.png";
 import ClientImg from "../../assets/images/originalkettlebell.png";
 import ClientImg1 from "../../assets/images/lanacooper-2.jpg";
+import ClientImg2 from "../../assets/images/kettlebell-client.jpg";
+import ClientImg3 from "../../assets/images/phoneiq-client.png";
+
+import Sanctionslogo from "../../assets/images/sanctions-logo.png";
+import Sanctionimg from "../../assets/images/sanction-img-new.jpg";
+
+import kettlebelllogo from "../../assets/images/originalkettlebell_2.png";
+import kettlebellImg from "../../assets/images/kettlebell-img.jpg";
+
+import Phoneiqlogo from "../../assets/images/phoneiq-logo.png";
+import PhoneiqImg from "../../assets/images/phoneiq-img.jpg";
+
+
 
 import logo1 from "../../assets/images/clients/logo-1.jpg";
 import logo2 from "../../assets/images/clients/logo-2.jpg";
@@ -30,7 +43,7 @@ const CaseStudy = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5 d-none d-lg-block" href={"/get-a-quote/"}>
                                 View Pricing
                             </a>
                         </>
@@ -51,7 +64,7 @@ const CaseStudy = () => {
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div className="py-2 mb-14">
                     <div className="container my-1">
                         <h3 className="text-center mb-5">We work with companies like yours</h3>
@@ -75,12 +88,21 @@ const CaseStudy = () => {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6 col-xs-12">
-                                <h3 class="mb-6 font-size-10"><Link to="/case-study/sanctions">Sanctions</Link></h3>
-                                <p>We worked with sanctions.io, a niche SaaS helping companies screen against global sanctions. In 12 months, we helped them to increase their organic traffic by 2X in 6 months, succeeding where four other agencies had failed. </p>
-                                <p>In this case study, we go over the details related to the content creation partnership and the impressive results we generated for sanctions.io.</p>
+                                <Link to="/case-study/sanctions"><img src={Sanctionslogo} alt="" className="mb-10" /></Link>
+                                <h3>How Strategically increased sanctions.io traffic by 2X in 6 months</h3>
+                                <div className="d-flex flex-row mt-10">
+                                    <img src={ClientImg1} alt="" className="rounded-circle mr-4" width={60} height={60} />
+                                    <div className="d-flex flex-column">
+                                        <h5>Thorsten J. Gorny</h5>
+                                        <h6>Co-founder & CEO of <a href="https://www.sanctions.io/">sanctions.io.</a></h6>
+                                    </div>
+                                </div>
+
+                                {/* <p>We worked with sanctions.io, a niche SaaS helping companies screen against global sanctions. In 12 months, we helped them to increase their organic traffic by 2X in 6 months, succeeding where four other agencies had failed. </p>
+                                <p>In this case study, we go over the details related to the content creation partnership and the impressive results we generated for sanctions.io.</p> */}
                             </div>
                             <div className="col-lg-6 col-xs-12">
-                                <Link to="/case-study/sanctions" className="d-flex justify-content-center align-items-center case-img1"><img src={ClientImg1} alt="" className="d-flex justify-content-center align-items-center" /></Link>
+                                <Link to="/case-study/sanctions" className="d-flex justify-content-center align-items-center case-img1"><img src={Sanctionimg} alt="" className="w-100 d-flex justify-content-center align-items-center" /></Link>
                             </div>
                         </div>
                     </div>
@@ -89,12 +111,20 @@ const CaseStudy = () => {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6 col-xs-12">
-                               <Link to="/case-study/original-kettlebell" className="d-flex justify-content-center align-items-center case-img"><img className="mb-10" src={ClientImg} alt="" /></Link>
+                                <Link to="/case-study/original-kettlebell" className="d-flex justify-content-center align-items-center case-img"><img className="mb-10 w-100" src={kettlebellImg} alt="" /></Link>
                             </div>
                             <div className="col-lg-6 col-xs-12">
-                                <h3 class="mb-6 font-size-10"><Link to="/case-study/original-kettlebell">Original Kettlebell</Link></h3>
-                                <p>During the pandemic, we worked with Original Kettlebell, a fast-growing fitness eCommerce store. In less than a year, we helped them to grow from 0 to £1 million in revenue in 12 months, gaining 500K in traffic and more than 300 top 10 positions in the SERPs.</p>
-                                <p>Read this case study to see how our laser-focused content strategy got them fast results without wasting valuable time on wasted deliverables. </p>
+                                <Link to="/case-study/original-kettlebell"><img src={kettlebelllogo} alt="" className="mb-10" /></Link>
+                                <h3>0 to £1 million in revenue in 12 months</h3>
+                                <div className="d-flex flex-row mt-10">
+                                    <img src={ClientImg2} alt="" className="rounded-circle mr-4" width={60} height={60} />
+                                    <div className="d-flex flex-column">
+                                        <h5>Sam Franklin</h5>
+                                        <h6>Founder & CEO of <a href="https://www.originalkettlebell.com/">originalkettell.com</a></h6>
+                                    </div>
+                                </div>
+                                {/* <p>During the pandemic, we worked with Original Kettlebell, a fast-growing fitness eCommerce store. In less than a year, we helped them to grow from 0 to £1 million in revenue in 12 months, gaining 500K in traffic and more than 300 top 10 positions in the SERPs.</p>
+                                <p>Read this case study to see how our laser-focused content strategy got them fast results without wasting valuable time on wasted deliverables. </p> */}
                             </div>
                         </div>
                     </div>
@@ -103,17 +133,26 @@ const CaseStudy = () => {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6 col-xs-12">
-                                <h3 class="mb-6 font-size-10"><Link to="/case-study/phoneiq">PhoneIQ</Link></h3>
+                            <Link to="/case-study/phoneiq"><img src={Phoneiqlogo} alt="" className="mb-10" /></Link>
+                                <h3>How Strategically improved PhoneIQs website metrics by delivering high quality content</h3>
+                                <div className="d-flex flex-row mt-10">
+                                    <img src={ClientImg3} alt="" className="rounded-circle mr-4" width={60} height={60} />
+                                    <div className="d-flex flex-column">
+                                        <h5>Elena Arretche</h5>
+                                        <h6>Product Markerter at <a href="https://www.phoneiq.co/">phoneiq.co</a></h6>
+                                    </div>
+                                </div>
+                                {/* <h3 class="mb-6 font-size-10"><Link to="/case-study/phoneiq">PhoneIQ</Link></h3>
                                 <p>We’ve helped PhoneIQ, an all-in-one cloud phone system and call centre software for companies that run on the Salesforce platform, to scale their content creation for several years. </p>
-                                <p>In this case study, we explain how our high-quality content has helped PhoneIQ to improve its website metrics and create a consistent cadence of tech content. </p>
+                                <p>In this case study, we explain how our high-quality content has helped PhoneIQ to improve its website metrics and create a consistent cadence of tech content. </p> */}
                             </div>
                             <div className="col-lg-6 col-xs-12">
-                                <Link to="/case-study/phoneiq" className="d-flex justify-content-center align-items-center case-img1"><img src={ClientImg1} alt="" className="d-flex justify-content-center align-items-center" /></Link>
+                                <Link to="/case-study/phoneiq" className="d-flex justify-content-center align-items-center case-img1"><img src={PhoneiqImg} alt="" className="w-100 d-flex justify-content-center align-items-center" /></Link>
                             </div>
                         </div>
                     </div>
                 </div>
-            
+
                 <HappyClientsReviews
                     title="Over 8M+ words written!"
                     subtitle="Strategically has produced thousands of pieces of content for over 250+ happy clients."

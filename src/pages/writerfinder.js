@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby"
 import styled from "styled-components";
 import PageWrapper from "../components/PageWrapper";
 import Helmet from "react-helmet";
@@ -21,10 +22,10 @@ const WriterFinder = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-              <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+              <Link to="#"><a className="btn btn-dodger-blue-2 header-btn rounded-5 d-none d-lg-inline-flex" href={"/get-a-quote/"}>
                 View Pricing
               </a>
-
+              </Link> 
             </>
           ),
           footerStyle: "style4",

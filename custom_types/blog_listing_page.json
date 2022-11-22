@@ -1,0 +1,44 @@
+{
+    "Main" : {
+      "title" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading2",
+          "label" : "Title"
+        }
+      },
+      "uid" : {
+        "type" : "UID",
+        "config" : {
+          "label" : "uid"
+        }
+      },
+      "body" : {
+        "type" : "Slices",
+        "fieldset" : "Slice zone",
+        "config" : {
+          "labels" : null,
+          "choices" : {
+            "highlight_blogs" : {
+              "type" : "Slice",
+              "fieldset" : "Highlight Blogs",
+              "description" : "Highlight Blogs",
+              "icon" : "apps",
+              "display" : "grid",
+              "non-repeat" : { },
+              "repeat" : {
+                "blog" : {
+                  "type" : "Link",
+                  "config" : {
+                    "select" : "document",
+                    "customtypes" : [ "blog" ],
+                    "label" : "Blog"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
