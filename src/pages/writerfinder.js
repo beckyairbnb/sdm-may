@@ -23,7 +23,7 @@ const WriterFinder = () => {
           headerButton: (
             <>
               <Link to="#"><a className="btn btn-dodger-blue-2 header-btn rounded-5 d-none d-lg-inline-flex" href={"/get-a-quote/"}>
-                View Pricing
+              Get a quote
               </a>
               </Link> 
             </>

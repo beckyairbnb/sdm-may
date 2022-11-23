@@ -23,7 +23,7 @@ const Content = () => {
           headerButton: (
             <>
             <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing/"}>
-              View Pricing
+            Get a quote
             </a>
             </>
           ),

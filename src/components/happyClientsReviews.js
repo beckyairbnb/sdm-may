@@ -10,7 +10,7 @@ const HappyClientsReviews = ({title, subtitle, ctatextbelow}) => {
                     <div className="d-flex flex-column justify-content-center">
                         <div className="row d-flex justify-content-center text-center mb-3">
                             <div className="col-xl-8 col-lg-7 col-md-9">
-                            <h3>Over 2M+ words written!</h3>
+                            <h3>Over 8M+ words written!</h3>
                             <div class="w-100"><p>Strategically has produced thousands of pieces of content for over 250+ happy clients.</p></div>
                           
                             </div>

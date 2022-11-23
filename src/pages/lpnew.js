@@ -43,7 +43,7 @@ const LpNew = (props) => {
                     headerButton: (
                         <>
                             <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                                View Pricing
+                            Get a quote
                             </a>
                         </>
                     ),
@@ -63,7 +63,7 @@ const LpNew = (props) => {
                                         <div>Our expert copywriters work with ABTasty, Baremetrics, VWO and more</div>
                                         <Link
                                             to="/get-a-quote/"
-                                            className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
+                                            className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">Get a quote</Link>
                                         <p>100% original. Managed Service. Get started today.</p>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@ const LpNew = (props) => {
                         <div className="col-xl-12 col-lg-9 col-md-12 col-sm-12 d-flex justify-content-center mt-5 pb-20">
                             <Link
                                 to="/get-a-quote/"
-                                className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
+                                className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">Get a quote</Link>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ const LpNew = (props) => {
                         <div className="col-xl-12 col-lg-9 col-md-12 col-sm-12 d-flex justify-content-center pb-20">
                             <Link
                                 to="/get-a-quote/"
-                                className="btn btn btn-dodger-blue-2 header-btn-2 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
+                                className="btn btn btn-dodger-blue-2 header-btn-2 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">Get a quote</Link>
                         </div>
                     </div>
                 </div>
@@ -188,7 +188,7 @@ const LpNew = (props) => {
                         <div className="col-xl-12 col-lg-9 col-md-12 col-sm-12 d-flex justify-content-center pb-20">
                             <Link
                                 to="/get-a-quote/"
-                                className="btn btn btn-dodger-blue-2 header-btn-2 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
+                                className="btn btn btn-dodger-blue-2 header-btn-2 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">Get a quote</Link>
                         </div>
                     </div>
                 </div>

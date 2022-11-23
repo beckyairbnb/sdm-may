@@ -47,7 +47,7 @@ const MainServiceTemplate = (props)=>{
           headerButton: (
             <>
             <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-              View Pricing
+            Get a quote
             </a>
             </>
           ),
@@ -65,7 +65,7 @@ const MainServiceTemplate = (props)=>{
                      {PageData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PageData.data.sub_title.html }}></div>}
                      <Link
                      to="/get-a-quote/"
-                    className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
+                    className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">Get a quote</Link>
                      {/* <p>{PageData.data.cta_button_below_text}</p> */}
                      
                   </div>

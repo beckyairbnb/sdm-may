@@ -13,12 +13,12 @@ import ClientImg2 from "../../assets/images/kettlebell-client.jpg";
 import ClientImg3 from "../../assets/images/phoneiq-client.png";
 
 import Sanctionslogo from "../../assets/images/sanctions-logo.png";
-import Sanctionimg from "../../assets/images/sanction-img-new.jpg";
+import Sanctionimg from "../../assets/images/sanction-img-neww.jpg";
 
 import kettlebelllogo from "../../assets/images/originalkettlebell_2.png";
 import kettlebellImg from "../../assets/images/kettlebell-img.jpg";
 
-import Phoneiqlogo from "../../assets/images/phoneiq-logo.png";
+import Phoneiqlogo from "../../assets/images/phoneiq-logo-new.png";
 import PhoneiqImg from "../../assets/images/phoneiq-img.jpg";
 
 
@@ -43,8 +43,8 @@ const CaseStudy = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5 d-none d-lg-block" href={"/get-a-quote/"}>
-                                View Pricing
+                            <a className="btn btn-dodger-blue-2 header-btn rounded-5 d-none d-lg-inline-flex" href={"/get-a-quote/"}>
+                            Get a quote
                             </a>
                         </>
                     ),
@@ -58,8 +58,8 @@ const CaseStudy = () => {
                                 <div className="text-center pt-5 pb-lg-4 mb-lg-2">
                                     <h1>Read our case studies and see our results in action</h1>
                                     <Link
-                                        to="/get-a-quote/"
-                                        className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">View Pricing</Link>
+                                        to="https://app.strategically.co/pay/service/68/"
+                                        className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">Find your writers</Link>
                                 </div>
                             </div>
                         </div>
@@ -86,15 +86,15 @@ const CaseStudy = () => {
                 </div>
                 <div className="bg-light py-16 mb-8">
                     <div className="container">
-                        <div className="row align-items-center">
+                        <div className="row align-items-center flex-lg-row flex-column-reverse">
                             <div className="col-lg-6 col-xs-12">
                                 <Link to="/case-study/sanctions"><img src={Sanctionslogo} alt="" className="mb-10" /></Link>
-                                <h3>How Strategically increased sanctions.io traffic by 2X in 6 months</h3>
+                                <h3> <Link to="/case-study/sanctions" className="text-black">How Strategically increased sanctions.io traffic by 2X in 6 months</Link></h3>
                                 <div className="d-flex flex-row mt-10">
                                     <img src={ClientImg1} alt="" className="rounded-circle mr-4" width={60} height={60} />
                                     <div className="d-flex flex-column">
                                         <h5>Thorsten J. Gorny</h5>
-                                        <h6>Co-founder & CEO of <a href="https://www.sanctions.io/">sanctions.io.</a></h6>
+                                        <h6 className="font-size-4">Co-founder & CEO of <a href="https://www.sanctions.io/">sanctions.io</a></h6>
                                     </div>
                                 </div>
 
@@ -102,7 +102,7 @@ const CaseStudy = () => {
                                 <p>In this case study, we go over the details related to the content creation partnership and the impressive results we generated for sanctions.io.</p> */}
                             </div>
                             <div className="col-lg-6 col-xs-12">
-                                <Link to="/case-study/sanctions" className="d-flex justify-content-center align-items-center case-img1"><img src={Sanctionimg} alt="" className="w-100 d-flex justify-content-center align-items-center" /></Link>
+                                <Link to="/case-study/sanctions" className="d-flex justify-content-center align-items-center case-img1"><img src={Sanctionimg} alt="" className="w-100 d-flex justify-content-center align-items-center mb-lg-0 mb-10" /></Link>
                             </div>
                         </div>
                     </div>
@@ -115,12 +115,12 @@ const CaseStudy = () => {
                             </div>
                             <div className="col-lg-6 col-xs-12">
                                 <Link to="/case-study/original-kettlebell"><img src={kettlebelllogo} alt="" className="mb-10" /></Link>
-                                <h3>0 to £1 million in revenue in 12 months</h3>
+                                <h3> <Link to="/case-study/original-kettlebell" className="text-black">Scaling an eCommerce store from 0 to £1 million in revenue in 12 months</Link></h3>
                                 <div className="d-flex flex-row mt-10">
                                     <img src={ClientImg2} alt="" className="rounded-circle mr-4" width={60} height={60} />
                                     <div className="d-flex flex-column">
                                         <h5>Sam Franklin</h5>
-                                        <h6>Founder & CEO of <a href="https://www.originalkettlebell.com/">originalkettell.com</a></h6>
+                                        <h6 className="font-size-4">Founder & CEO of <a href="https://www.originalkettlebell.com/">Original Kettlebell</a></h6>
                                     </div>
                                 </div>
                                 {/* <p>During the pandemic, we worked with Original Kettlebell, a fast-growing fitness eCommerce store. In less than a year, we helped them to grow from 0 to £1 million in revenue in 12 months, gaining 500K in traffic and more than 300 top 10 positions in the SERPs.</p>
@@ -131,15 +131,15 @@ const CaseStudy = () => {
                 </div>
                 <div className="bg-light py-16 mb-8">
                     <div className="container">
-                        <div className="row align-items-center">
+                        <div className="row align-items-center flex-lg-row flex-column-reverse">
                             <div className="col-lg-6 col-xs-12">
                             <Link to="/case-study/phoneiq"><img src={Phoneiqlogo} alt="" className="mb-10" /></Link>
-                                <h3>How Strategically improved PhoneIQs website metrics by delivering high quality content</h3>
+                                <h3>  <Link to="/case-study/phoneiq" className="text-black">How Strategically improved PhoneIQs website metrics by delivering high quality content</Link></h3>
                                 <div className="d-flex flex-row mt-10">
                                     <img src={ClientImg3} alt="" className="rounded-circle mr-4" width={60} height={60} />
                                     <div className="d-flex flex-column">
                                         <h5>Elena Arretche</h5>
-                                        <h6>Product Markerter at <a href="https://www.phoneiq.co/">phoneiq.co</a></h6>
+                                        <h6 className="font-size-4">Product Markerter at <a href="https://www.phoneiq.co/">PhoneIQ</a></h6>
                                     </div>
                                 </div>
                                 {/* <h3 class="mb-6 font-size-10"><Link to="/case-study/phoneiq">PhoneIQ</Link></h3>
@@ -147,7 +147,7 @@ const CaseStudy = () => {
                                 <p>In this case study, we explain how our high-quality content has helped PhoneIQ to improve its website metrics and create a consistent cadence of tech content. </p> */}
                             </div>
                             <div className="col-lg-6 col-xs-12">
-                                <Link to="/case-study/phoneiq" className="d-flex justify-content-center align-items-center case-img1"><img src={PhoneiqImg} alt="" className="w-100 d-flex justify-content-center align-items-center" /></Link>
+                                <Link to="/case-study/phoneiq" className="d-flex justify-content-center align-items-center case-img1"><img src={PhoneiqImg} alt="" className="w-100 d-flex justify-content-center align-items-center mb-lg-0 mb-10" /></Link>
                             </div>
                         </div>
                     </div>

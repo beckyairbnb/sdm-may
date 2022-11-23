@@ -65,7 +65,7 @@ const ServiceTemplate = (props) => {
                 className="btn btn btn-dodger-blue-2 header-btn rounded-5"
                 href={"/get-a-quote/"}
               >
-                View Pricing
+               Get a quote
               </a>
             </>
           ),
@@ -104,7 +104,7 @@ const ServiceTemplate = (props) => {
                     }
                     className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0"
                   >
-                    View Pricing
+                   Get a quote
                   </Link>
                   <p>{PageData.data.cta_button_below_text}</p>
                 </div>
@@ -179,7 +179,7 @@ const ServiceTemplate = (props) => {
                   }
                   className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0"
                 >
-                  View Pricing
+                  Get a quote
                 </Link>
               </div>
             </div>

@@ -46,7 +46,7 @@ const Hero = () => {
                       href="/get-a-quote/"
                       className="btn btn-blue-3 w-100 h-55 rounded-4"
                     >
-                    View Pricing
+                    Get a quote
                     </a>
 
                   </div>

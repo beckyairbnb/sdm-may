@@ -22,6 +22,16 @@ const BlogListTemplate = (props) => {
     console.log('HighlightBlogs',HighlightBlogs.data.body[0].items)
     console.log('blogsData',blogsData)
 
+    const result = blogsData.map((item)=>{      
+      return HighlightBlogs.data.body[0].items.map((hitem)=>{
+        if(item.node.id===hitem.blog.node.id){
+          return item
+        }
+      })
+    })
+
+    console.log('result',result)
+
       const seoTitle = 'Strategically Blog'
       const seoDescription = 'Strategically Blog'
 
@@ -39,7 +49,7 @@ const BlogListTemplate = (props) => {
                     headerButton: (
                         <>
                             <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                                View Pricing
+                            Get a quote
                             </a>
                         </>
                     ),

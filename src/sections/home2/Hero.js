@@ -45,12 +45,13 @@ const Hero = ({ className, ...rest }) => {
                 Award-winning content writing services
                 </h1>
                 <p className="font-size-7 mb-0 heading-default-color">
-                  We’ve helped over 250 businesses to{" "}
-                  <br className="d-none d-md-block" /> scale their content creation.
+                  {/* We’ve helped over 250 businesses to{" "}
+                  <br className="d-none d-md-block" /> scale their content creation. */}
+                  Our clients see a 600%+ growth in traffic in just 12 months — with zero ad spend.
                 </p>
                 <div className=" pt-5 pt-lg-10">
                   <Link to={"/get-a-quote/"} className="btn btn-dodger-blue-2 rounded-5">
-                    View Pricing
+                  Get a quote
                   </Link>
                 </div>
               </div>

@@ -31,7 +31,7 @@ const PageTemplate = (props)=>{
           headerButton: (
             <>
             <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-              View Pricing
+            Get a quote
             </a>
             </>
           ),

@@ -87,7 +87,7 @@ const Content3 = ({ className, ...rest }) => {
                 </p>
                 <div className="btn-group mb-12">
                   <Link className="btn btn-dodger-blue-2 rounded-5" to={"/get-a-quote/"}>
-                    View Pricing
+                  Get a quote
                   </Link>
                 </div>
                 <div className="">

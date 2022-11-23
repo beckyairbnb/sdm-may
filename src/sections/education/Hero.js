@@ -30,7 +30,7 @@ const Hero = ({ className, ...rest }) => {
                 </p>
                 <div className=" pt-5 pt-lg-10">
                   <Link to={"/get-a-quote/"} className="btn btn-dodger-blue-2 rounded-5">
-                    View Pricing
+                  Get a quote
                   </Link>
 
                 </div>

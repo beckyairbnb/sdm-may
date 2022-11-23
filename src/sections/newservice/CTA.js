@@ -21,7 +21,7 @@ const Content3 = ({ className, ...rest }) => {
                   Join 250+ businesses that outsource their content to Strategically.
                 </h2>
                 <Link to={"/get-a-quote/"} className="btn btn-dodger-blue-2 rounded-5 mt-12">
-                  View Pricing
+                Get a quote
                 </Link>
               </div>
             </div>
