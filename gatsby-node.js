@@ -151,6 +151,26 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { data } = await graphql(`
   query {
+    HighlightBlogsPosts : prismicBlogListingPage(uid: {eq: "blog"}) {
+      data {
+        body {
+          ... on PrismicBlogListingPageDataBodyHighlightBlogs {
+            id
+            items {
+              blog {
+                node: document {
+                  ... on PrismicBlog {
+                    uid
+                    id
+                    
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     Blogs: allPrismicBlog {
       edges {
         node {
@@ -216,11 +236,44 @@ exports.createPages = async ({ graphql, actions }) => {
       }
   }
 `)
+
+
+const HighlightBlogs = data.HighlightBlogsPosts.data.body[0].items
+
+const blogsData = data.Blogs.edges;
+
+blogsData.map((item)=>{
+  item.node.order=100
+})
+
+const result = blogsData.filter((item) => {
+  return HighlightBlogs.find((hitem, index) => {
+    if(item.node.id === hitem.blog.node.id){
+      item.node.order=index+1
+      return item
+    }
+  })
+})
+
+const difference = blogsData.filter((object1) => {
+  return !result.some((object2) => {
+    if(object1.node.id === object2.node.id){
+      return object1    }
+  });
+});
+
+
 const DEFAULT_BLOG_BASE_PATH = '/blog';
 const DEFAULT_BLOG_POSTS_PER_PAGE = 6;
 
 const basePath = DEFAULT_BLOG_BASE_PATH;
-const blogs = data.Blogs.edges;
+const blogs = [...result, ...difference];
+
+blogs.sort((a, b) => (a.node.order > b.node.order) ? 1 : -1)
+//const blogs = data.Blogs.edges;
+// console.log('HighlightBlogs 1 result', result)
+// console.log('HighlightBlogs 3 difference', difference)
+console.log('HighlightBlogs Blog final', blogs)
 
 const postsPerPage = DEFAULT_BLOG_POSTS_PER_PAGE; 
 

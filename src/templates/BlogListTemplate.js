@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components';
+
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet";
 import BlogSidebar from "../components/blog/blogsidebar";
@@ -8,72 +9,81 @@ import PageWrapper from "../components/PageWrapper";
 import imgFavicon from "../assets/favicon.png";
 import Pagination from '../components/Pagination';
 const BlogListTemplate = (props) => {
-    const { data, pageContext } = props
-    const {
-      allPrismicBlog: { edges: blogsData },
-    } = data;
+  const { data, pageContext } = props
+  const {
+    allPrismicBlog: { edges: blogsData },
+  } = data;
 
-    const {
-        AllCats: { edges: catsData },
-      } = data;
+  const {
+    AllCats: { edges: catsData },
+  } = data;
 
-    const { HighlightBlogs } = data
+  const { HighlightBlogs } = data
 
-    console.log('HighlightBlogs',HighlightBlogs.data.body[0].items)
-    console.log('blogsData',blogsData)
+  //console.log('HighlightBlogs', HighlightBlogs.data.body[0].items)
+  //console.log('blogsData', blogsData)
 
-    const result = blogsData.map((item)=>{      
-      return HighlightBlogs.data.body[0].items.map((hitem)=>{
-        if(item.node.id===hitem.blog.node.id){
-          return item
-        }
-      })
+  const result = blogsData.filter((item) => {
+    return HighlightBlogs.data.body[0].items.find((hitem) => {
+      return item.node.id === hitem.blog.node.id
     })
+  })
 
-    console.log('result',result)
+  const difference = blogsData.filter((object1) => {
+    return !result.some((object2) => {
+      return object1.node.id === object2.node.id;
+    });
+  });
 
-      const seoTitle = 'Strategically Blog'
-      const seoDescription = 'Strategically Blog'
+  //console.log('result', result)
+  //console.log('difference', difference)
 
-    if (!blogsData) return null;
-    return (
-        <>
-            <Helmet>
-                <title>{seoTitle}</title>
-                <meta name="description" content={seoDescription} />
-                <link rel="icon" type="image/png" href={imgFavicon} />
-            </Helmet>
-            <PageWrapper
-                themeConfig={{
-                    headerClassName: "site-header--menu-right",
-                    headerButton: (
-                        <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                            Get a quote
-                            </a>
-                        </>
-                    ),
-                    footerStyle: "style2",
-                }}
-            >
-                <BlogContent className="pt-25 pb-10">
-                    <div className="container">
-                        <h1 className="text-center mb-15">Our Blog</h1>
-                        <div className="row">
-                            <div className="col-lg-3 col-xs-12">
-                                <BlogSidebar data={catsData} />
-                            </div>
-                            <div className="col-lg-9 col-xs-12">
-                                <BlogIndex data={blogsData} />
-                                <Pagination data={pageContext} />                                
-                            </div>
-                        </div>
-                        
-                    </div>
-                </BlogContent>
-            </PageWrapper>
-        </>
-    )
+  const finalBlogPosts = [...result, ...difference]
+
+  //console.log('finalBlogPosts', finalBlogPosts)
+
+  const seoTitle = 'Strategically Blog'
+  const seoDescription = 'Strategically Blog'
+
+  if (!blogsData) return null;
+  return (
+    <>
+      <Helmet>
+        <title>{seoTitle}</title>
+        <meta name="description" content={seoDescription} />
+        <link rel="icon" type="image/png" href={imgFavicon} />
+      </Helmet>
+      <PageWrapper
+        themeConfig={{
+          headerClassName: "site-header--menu-right",
+          headerButton: (
+            <>
+              <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+                Get a quote
+              </a>
+            </>
+          ),
+          footerStyle: "style2",
+        }}
+      >
+        <BlogContent className="pt-25 pb-10">
+          <div className="container">
+            <h1 className="text-center mb-15">Our Blog</h1>
+            <div className="row">
+              <div className="col-lg-3 col-xs-12">
+                <BlogSidebar data={catsData} />
+              </div>
+              <div className="col-lg-9 col-xs-12">
+                <BlogIndex data={blogsData} />
+                <Pagination data={pageContext} />
+              </div>
+            </div>
+
+          </div>
+        </BlogContent>
+      </PageWrapper>
+    </>
+  )
 }
 
 
@@ -133,37 +143,7 @@ export const data = graphql`
                   ... on PrismicBlog {
                     uid
                     id
-                    data {
-                      title {
-                        html
-                        text
-                      }
-                      description {
-                        text
-                      }
-                      seotitle
-                      metadescription
-                      featuredimage {
-                        gatsbyImageData(layout: FULL_WIDTH)
-                        fluid {
-                          src
-                        }
-                      }
-                      category {
-                          document {
-                            ... on PrismicBlogCategory {
-                              id
-                              uid
-                              data {
-                                name {
-                                  text
-                                  html
-                                }
-                              }
-                            }
-                          }
-                        }
-                    }
+                    
                   }
                 }
               }
