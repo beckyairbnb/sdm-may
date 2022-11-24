@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react";
 import styled from 'styled-components';
 
 import { graphql } from "gatsby"
@@ -8,11 +8,11 @@ import BlogIndex from "../components/blog/blogindex";
 import PageWrapper from "../components/PageWrapper";
 import imgFavicon from "../assets/favicon.png";
 import Pagination from '../components/Pagination';
-const BlogListTemplate = (props) => {
-  const { data, pageContext } = props
-  const {
-    allPrismicBlog: { edges: blogsData },
-  } = data;
+import Paginate from "../components/blog/Paginate";
+const Blog = (props) => {
+  const [pageIndex, setPageIndex] = useState(1);
+  const { data } = props
+
 
   const {
     AllCats: { edges: catsData },
@@ -40,30 +40,22 @@ const BlogListTemplate = (props) => {
     });
   });
 
-  // const result = blogsData.filter((item) => {
-  //   return HighlightBlogs.data.body[0].items.find((hitem) => {
-  //     return item.node.id === hitem.blog.node.id
-  //   })
-  // })
-
-  // const difference = blogsData.filter((object1) => {
-  //   return !result.some((object2) => {
-  //     return object1.node.id === object2.node.id;
-  //   });
-  // });
-
-  //console.log('result', result)
-  //console.log('difference', difference)
 
   const blogs = [...result, ...difference]
   blogs.sort((a, b) => (a.node.order > b.node.order) ? 1 : -1)
 
-  console.log('finalBlogPosts', blogs)
-
   const seoTitle = 'Strategically Blog'
   const seoDescription = 'Strategically Blog'
 
-  if (!blogsData) return null;
+  const limit = 6
+
+  const pageCount = Math.ceil(blogs.length / limit);
+
+  useEffect(() => {
+    console.log('pageIndex',pageIndex)
+  }, [pageIndex]);
+
+  if (!blogs) return null;
   return (
     <>
       <Helmet>
@@ -92,8 +84,15 @@ const BlogListTemplate = (props) => {
                 <BlogSidebar data={catsData} />
               </div>
               <div className="col-lg-9 col-xs-12">
-                <BlogIndex data={blogsData} />
-                <Pagination data={pageContext} />
+                <BlogIndex data={blogs.slice((pageIndex - 1) * limit, pageIndex * limit)} />
+                {/* <BlogIndex data={blogsData} />
+                <Pagination data={pageContext} /> */}
+                <Paginate
+                    page={pageIndex}
+                    pageCount={pageCount}
+                    pageIndex={pageIndex}
+                    setPageIndex={setPageIndex}
+                />
               </div>
             </div>
 
@@ -105,7 +104,7 @@ const BlogListTemplate = (props) => {
 }
 
 
-export default BlogListTemplate
+export default Blog
 
 
 export const BlogContent = styled.div`
@@ -149,67 +148,8 @@ ul > li > a{
 `;
 
 export const data = graphql`
-  query($skip: Int!, $limit: Int!) {
+  query {
     Blogs: allPrismicBlog {
-      edges {
-        node {
-          id
-          uid
-          data {
-            category {
-              document {
-                ... on PrismicBlogCategory {
-                  id
-                  uid
-                  data {
-                    name {
-                      text
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    HighlightBlogs : prismicBlogListingPage(uid: {eq: "blog"}) {
-      data {
-        body {
-          ... on PrismicBlogListingPageDataBodyHighlightBlogs {
-            id
-            items {
-              blog {
-                node: document {
-                  ... on PrismicBlog {
-                    uid
-                    id
-                    
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    AllCats : allPrismicBlogCategory {
-        edges {
-          node {
-            uid
-            data {
-              name {
-                text
-              }
-            }
-          }
-        }
-      }
-    allPrismicBlog(
-      sort: { fields: last_publication_date, order: DESC }
-      skip: $skip
-      limit: $limit
-    ) {
       edges {
         node {
           uid
@@ -248,5 +188,37 @@ export const data = graphql`
         }
       }
     }
+    HighlightBlogs : prismicBlogListingPage(uid: {eq: "blog"}) {
+      data {
+        body {
+          ... on PrismicBlogListingPageDataBodyHighlightBlogs {
+            id
+            items {
+              blog {
+                node: document {
+                  ... on PrismicBlog {
+                    uid
+                    id
+                    
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    AllCats : allPrismicBlogCategory {
+        edges {
+          node {
+            uid
+            data {
+              name {
+                text
+              }
+            }
+          }
+        }
+      }    
   }
 `;

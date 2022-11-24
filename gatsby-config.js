@@ -132,14 +132,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-google-places`,
-      options: {
-        placeId: `ChIJJVOOp00bdkgRMY03j_wc5ng`,
-        apiKey: `AIzaSyBRiOs7ivBqYM1-nuIzzYe5Ku3wihThcNY`,
-        language: "en-US", // optional, defaults to en-US
-      },
-    },    
-    {
     resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {

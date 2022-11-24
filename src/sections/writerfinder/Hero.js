@@ -7,24 +7,7 @@ import Heroimg from "../../assets/images/home-1/jpg/hero-bg-1.jpg"
 
 const HeroSection = () => {
     return (
-        // <HeroBg className="mt-20">
-        //     <HeroWrapper>
-        //         <HeroBg1 />
-        //         <HeroBg2/>
-        //     </HeroWrapper>
-        //     <div className="container">
-        //         <div className="row align-items-center">
-        //             <div className="col-xl-12 col-lg-12 col-12">
-        //                 <h2 className="font-size-10 mb-8 text-white fw-normal">Hiring writers? We've got you.</h2>
-        //                 <p className="font-size-5 mb-10 text-white">We find your perfect writer in days — or your money back.</p>
-        //                 <Link to={"/"} className="btn bg-white text-dark px-8 py-4 font-size-2 rounded-pill">
-        //                 Find your writer
-        //                 </Link>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </HeroBg>
-        <HeroBanner className="mt-20 justify-content-center align-items-center d-flex">
+        <HeroBanner className="justify-content-center align-items-center d-flex">
             <div className="container">
                 <div className="row justify-content-center align-items-center">
                     <div className="col-xl-8 col-lg-8 col-12 text-center">
