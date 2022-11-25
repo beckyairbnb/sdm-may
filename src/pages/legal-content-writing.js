@@ -22,7 +22,7 @@ const Legal = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/contact"}>
+            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" to={"/contact"}>
               Sign Up
             </a>
             </>

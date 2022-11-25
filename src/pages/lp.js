@@ -7,6 +7,7 @@ import Helmet from "react-helmet";
 import Progress from "../sections/LP/Progress";
 import HappyClientsReviews from "../sections/LP/happyClientsReviews";
 import FaqAccordion from "../sections/pricing/FaqAccordion";
+import HeaderButton from "../components/Header/HeaderButton";
 import logo1 from "../assets/images/clients/logo-1.jpg";
 import logo2 from "../assets/images/clients/logo-2.jpg";
 import logo3 from "../assets/images/clients/logo-3.jpg";
@@ -50,9 +51,7 @@ const LpIndex = (props) => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                            Get a quote
-                            </Link>
+                            <HeaderButton/>
                         </>
                     ),
                     footerStyle: "style2",

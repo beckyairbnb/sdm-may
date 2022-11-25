@@ -8,6 +8,7 @@ import BlogIndex from "../components/blog/blogindex";
 import PageWrapper from "../components/PageWrapper";
 import imgFavicon from "../assets/favicon.png";
 import Pagination from '../components/Pagination';
+import HeaderButton from "../components/Header/HeaderButton";
 const BlogListTemplate = (props) => {
   const { data, pageContext } = props
   const {
@@ -75,11 +76,7 @@ const BlogListTemplate = (props) => {
         themeConfig={{
           headerClassName: "site-header--menu-right",
           headerButton: (
-            <>
-              <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                Get a quote
-              </a>
-            </>
+            <HeaderButton/>
           ),
           footerStyle: "style2",
         }}

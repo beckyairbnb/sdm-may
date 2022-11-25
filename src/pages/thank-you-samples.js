@@ -1,22 +1,21 @@
 import React from "react";
 import { Link } from "gatsby";
 import PageWrapper from "../components/PageWrapper";
+import HeaderButton from "../components/Header/HeaderButton";
 import Helmet from "react-helmet";
 
 const ThankYouSamples = () => {
     return (
         <>
+        <Helmet>
+                                <title>Strategically | Content Writing Agency</title>
+                            </Helmet>
             <PageWrapper
                 themeConfig={{
                     headerClassName: "site-header--menu-right",
                     headerButton: (
-                        <>
-                            <Helmet>
-                                <title>Strategically | Content Writing Agency</title>
-                            </Helmet>
-                            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                            Get a quote
-                            </Link>
+                        <>                            
+                            <HeaderButton/>
                         </>
                     ),
                     footerStyle: "style2",

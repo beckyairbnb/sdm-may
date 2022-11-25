@@ -10,6 +10,7 @@ import Testimonials from "../sections/writerfinder/testimonials";
 import Testimonials2 from "../sections/writerfinder/testimonials2";
 import PricingSection from "../sections/writerfinder/pricing";
 import Faq from "../sections/writerfinder/faqsection";
+import HeaderButton from "../components/Header/HeaderButton";
 
 const WriterFinder = () => {
   return (
@@ -22,10 +23,7 @@ const WriterFinder = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-              <Link to="#"><a className="btn btn-dodger-blue-2 header-btn rounded-5 d-none d-lg-inline-flex" href={"/get-a-quote/"}>
-              Get a quote
-              </a>
-              </Link> 
+              <HeaderButton/>
             </>
           ),
           footerStyle: "style4",

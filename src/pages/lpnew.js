@@ -5,6 +5,7 @@ import Content2 from "../sections/LP/Content2";
 import Helmet from "react-helmet";
 import Progress from "../sections/LP/Progress";
 import HappyClientsReviews from "../sections/LP/happyClientsReviews";
+import HeaderButton from "../components/Header/HeaderButton";
 import FaqAccordion from "../sections/pricing/FaqAccordion";
 import logo1 from "../assets/images/clients/logo-1.jpg";
 import logo2 from "../assets/images/clients/logo-2.jpg";
@@ -42,9 +43,7 @@ const LpNew = (props) => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                            Get a quote
-                            </Link>
+                            <HeaderButton/>
                         </>
                     ),
                     footerStyle: "style1",

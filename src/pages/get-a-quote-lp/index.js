@@ -4,6 +4,7 @@ import styled from "styled-components";
 import FormHead from '../../components/FormHead'
 import PageWrapper from "../../components/PageWrapper";
 import HappyClients from '../../components/happyClients';
+import HeaderButton from '../../components/Header/HeaderButton';
 import { GlobalDispatchContext, GlobalStateContext } from "../../context/GlobalContext";
 const Step1 = (props) => {
   console.log('props', props)
@@ -44,12 +45,7 @@ const Step1 = (props) => {
         themeConfig={{
           headerClassName: "site-header--menu-right",
           headerButton: (
-            <>
-              <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-              Get a quote
-              </Link>
-
-            </>
+            <HeaderButton/>
           ),
           footerStyle: "style2",
         }}

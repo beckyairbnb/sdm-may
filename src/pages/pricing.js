@@ -7,6 +7,7 @@ import PageWrapper from "../components/PageWrapper";
 import 'rc-slider/assets/index.css';
 
 import FaqAccordion from "../sections/pricing/FaqAccordion";
+import HeaderButton from "../components/Header/HeaderButton";
 
 
 import { useRanger } from "react-ranger";
@@ -89,9 +90,7 @@ const PricePage = ({ data }) => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-            Get a quote
-            </Link>
+            <HeaderButton/>
             </>
           ),
           footerStyle: "style2",

@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import Slider from 'react-rangeslider'
 import { Helmet } from "react-helmet";
 
+import HeaderButton from '../../components/Header/HeaderButton';
 import 'react-rangeslider/lib/index.css'
 import ToolTip from '../../components/ToolTip'; 
 import PageWrapper from "../../components/PageWrapper";
@@ -166,9 +167,7 @@ return(
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-            Get a quote
-            </Link>
+            <HeaderButton/>
             </>
           ),
           footerStyle: "style2",

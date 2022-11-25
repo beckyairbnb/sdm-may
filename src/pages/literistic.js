@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Helmet from "react-helmet";
 
 import PageWrapper from "../components/PageWrapper";
+import HeaderButton from "../components/Header/HeaderButton";
 
 import AuthorImg from "../assets/images/josh.png"
 
@@ -23,9 +24,7 @@ const Literistic = () => {
                         headerClassName: "site-header--menu-right",
                         headerButton: (
                             <>
-                                <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                                Get a quote
-                                </Link>
+                                <HeaderButton/>
                             </>
                         ),
                         footerStyle: "style2",

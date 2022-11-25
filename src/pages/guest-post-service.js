@@ -8,6 +8,7 @@ import Faq from "../sections/pricing/Faq";
 import Helmet from "react-helmet";
 
 import ClientsLogos from "../components/ClientsLogos";
+import HeaderButton from "../components/Header/HeaderButton";
 
 const Content = () => {
   return (
@@ -20,9 +21,7 @@ const Content = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-              <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-              Get a quote
-              </Link>
+              <HeaderButton/>
             </>
           ),
           footerStyle: "style2",

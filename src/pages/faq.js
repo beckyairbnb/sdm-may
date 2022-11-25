@@ -5,6 +5,7 @@ import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/pricing/Hero";
 import Pricing from "../sections/pricing/Pricing";
 import Faq from "../sections/pricing/Faq";
+import HeaderButton from "../components/Header/HeaderButton";
 import Helmet from "react-helmet";
 
 const FaqPage = () => {
@@ -18,10 +19,7 @@ const FaqPage = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-            Get a quote
-            </Link>
-
+            <HeaderButton/>
             </>
           ),
           footerStyle: "style2",

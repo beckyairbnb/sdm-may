@@ -9,6 +9,7 @@ import PageWrapper from "../components/PageWrapper";
 import imgFavicon from "../assets/favicon.png";
 import Pagination from '../components/Pagination';
 import Paginate from "../components/blog/Paginate";
+import HeaderButton from "../components/Header/HeaderButton";
 const Blog = (props) => {
   const [pageIndex, setPageIndex] = useState(1);
   const { data } = props
@@ -68,9 +69,7 @@ const Blog = (props) => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-              <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                Get a quote
-              </Link>
+             <HeaderButton/>
             </>
           ),
           footerStyle: "style2",

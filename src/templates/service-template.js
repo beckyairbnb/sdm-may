@@ -11,6 +11,7 @@ import Heading from "../components/ContentSlices/Heading";
 import Text from "../components/ContentSlices/Text";
 import HappyClients from "../components/happyClients";
 import ServicesList from "../components/servicesList";
+import HeaderButton from "../components/Header/HeaderButton";
 
 import ModalPopup from "../components/ModalPopup";
 import Breadcrumbs from "../components/Breadcrumbs";
@@ -60,14 +61,7 @@ const ServiceTemplate = (props) => {
         themeConfig={{
           headerClassName: "site-header--menu-right",
           headerButton: (
-            <>
-              <a
-                className="btn btn btn-dodger-blue-2 header-btn rounded-5"
-                href={"/get-a-quote/"}
-              >
-               Get a quote
-              </a>
-            </>
+            <HeaderButton/>
           ),
           footerStyle: "style2",
         }}

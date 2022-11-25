@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react'
 import {Link, navigate } from 'gatsby'
 import styled from "styled-components";
 
+import HeaderButton from '../../components/Header/HeaderButton';
 import PageWrapper from "../../components/PageWrapper";
 import FormHead from '../../components/FormHead'
 import HappyClients from '../../components/happyClients';
@@ -40,9 +41,7 @@ const Step1 = () => {
                   headerClassName: "site-header--menu-right",
                   headerButton: (
                     <>
-                    <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                    Get a quote
-                    </Link>
+                   <HeaderButton/>
         
                     </>
                   ),

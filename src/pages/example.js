@@ -7,6 +7,7 @@ import Example2 from "../components/ExampleSection/example2";
 import Helmet from "react-helmet";
 import PageContent from '../components/ContentSlices/PageContent'
 import Table3Col from '../components/ContentSlices/Table3Col'
+import HeaderButton from "../components/Header/HeaderButton";
 
 const Example = (props) => {
     const { data } = props
@@ -22,9 +23,7 @@ const Example = (props) => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                            Get a quote
-                            </Link>
+                            <HeaderButton/>
                         </>
                     ),
                     footerStyle: "style2",

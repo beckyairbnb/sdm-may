@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import PageWrapper from "../components/PageWrapper";
 import PageContent from '../components/ContentSlices/PageContent'
 import Table3Col from '../components/ContentSlices/Table3Col'
-
+import HeaderButton from "../components/Header/HeaderButton";
 
 import imgFavicon from "../assets/favicon.png";
 
@@ -29,11 +29,7 @@ const PageTemplate = (props)=>{
         themeConfig={{
           headerClassName: "site-header--menu-right",
           headerButton: (
-            <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-            Get a quote
-            </a>
-            </>
+            <HeaderButton/>
           ),
           footerStyle: "style2",
         }}

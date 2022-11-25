@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Helmet from "react-helmet";
 
 import PageWrapper from "../../components/PageWrapper";
+import HeaderButton from "../../components/Header/HeaderButton";
 
 import Icon1 from "../../assets/images/icon-traffic.png";
 import Icon2 from "../../assets/images/icon-value.png";
@@ -24,9 +25,7 @@ const Sanctions = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                                Get a quote
-                            </Link>
+                            <HeaderButton/>
                         </>
                     ),
                     footerStyle: "style2",

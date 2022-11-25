@@ -21,7 +21,7 @@ import kettlebellImg from "../../assets/images/kettlebell-img.jpg";
 import Phoneiqlogo from "../../assets/images/phoneiq-logo-new.png";
 import PhoneiqImg from "../../assets/images/phoneiq-img.jpg";
 
-
+import HeaderButton from "../../components/Header/HeaderButton";
 
 import logo1 from "../../assets/images/clients/logo-1.jpg";
 import logo2 from "../../assets/images/clients/logo-2.jpg";
@@ -43,9 +43,7 @@ const CaseStudy = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <Link className="btn btn-dodger-blue-2 header-btn rounded-5 d-none d-lg-inline-flex" href={"/get-a-quote/"}>
-                            Get a quote
-                            </Link>
+                           <HeaderButton/>
                         </>
                     ),
                     footerStyle: "style2",

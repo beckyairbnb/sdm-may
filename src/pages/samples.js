@@ -1,6 +1,7 @@
 import React from "react";
 
 import PageWrapper from "../components/PageWrapper";
+import HeaderButton from "../components/Header/HeaderButton";
 import Helmet from "react-helmet";
 
 import Blog from "../sections/home1/Blog";
@@ -9,17 +10,15 @@ import Blog from "../sections/home1/Blog";
 const SamplesPage = () => {
   return (
     <>
+    <Helmet>
+           <title>Strategically | Content Writing Agency</title>
+         </Helmet>
     <PageWrapper
       themeConfig={{
         headerClassName: "site-header--menu-right",
         headerButton: (
-          <>
-          <Helmet>
-           <title>Strategically | Content Writing Agency</title>
-         </Helmet>
-          <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-          Get a quote
-          </a>
+          <>          
+          <HeaderButton/>
           </>
         ),
         footerStyle: "style2",

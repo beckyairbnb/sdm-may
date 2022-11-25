@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import styled from 'styled-components';
 import { Helmet } from "react-helmet";
 
+import HeaderButton from '../components/Header/HeaderButton';
 import PageWrapper from "../components/PageWrapper";
 import PageContent from '../components/ContentSlices/PageContent'
 import imgFavicon from "../assets/favicon.png";
@@ -65,11 +66,7 @@ const JobTemplate = (props)=>{
         themeConfig={{
           headerClassName: "site-header--menu-right",
           headerButton: (
-            <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-            Get a quote
-            </a>
-            </>
+            <HeaderButton/>
           ),
           footerStyle: "style2",
         }}

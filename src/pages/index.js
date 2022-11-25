@@ -26,7 +26,7 @@ const Index = (props) => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-              <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+              <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" to={"/get-a-quote/"}>
               Get a quote
               </Link>
             </>

@@ -22,7 +22,7 @@ const Content = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing/"}>
+            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" to={"/pricing/"}>
             Get a quote
             </Link>
             </>

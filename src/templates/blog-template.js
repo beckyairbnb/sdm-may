@@ -10,6 +10,7 @@ import Heading from '../components/ContentSlices/Heading'
 import Text from '../components/ContentSlices/Text'
 import BoxedContent from '../components/ContentSlices/BoxedContent'
 import PostShare from '../components/PostShare'
+import HeaderButton from "../components/Header/HeaderButton";
 
 import postimg1 from "../assets/images/post-img1.jpg";
 import stratagicsicon from "../assets/images/stratagic-s.png";
@@ -31,11 +32,7 @@ const BlogTemplate = (props)=>{
         themeConfig={{
           headerClassName: "site-header--menu-right",
           headerButton: (
-            <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-            Get a quote
-            </a>
-            </>
+            <HeaderButton/>
           ),
           footerStyle: "style2",
         }}

@@ -4,6 +4,7 @@ import PageWrapper from "../components/PageWrapper";
 import Helmet from "react-helmet";
 import BlogSidebar from "../components/blog/blogsidebar";
 import BlogIndex from "../components/blog/blogindex";
+import HeaderButton from "../components/Header/HeaderButton";
 import styled from 'styled-components';
 
 const BlogNew = () => {
@@ -17,9 +18,7 @@ const BlogNew = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                            Get a quote
-                            </Link>
+                            <HeaderButton/>
                         </>
                     ),
                     footerStyle: "style2",
