@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'gatsby';
 const FooterCta = ()=>{
     return(
         <div className="bg-dark-cloud pt-20 pt-lg-20 pb-15 pb-lg-20 mt-15 mb-6 f-cta">
@@ -16,13 +16,12 @@ const FooterCta = ()=>{
                   Book a call, we love to chat. 
                   </p> */}
                   <div className="d-flex justify-content-center">
-                  <a
+                  <Link
                       className="btn btn btn-dodger-blue-2 header-btn rounded-pill mt-10"
-                      rel="noopener noreferrer"
-                      href="https://strategically.co/get-a-quote/" target="_blank"
+                      to="/get-a-quote/"
                     >
                       Get a quote
-                    </a>
+                    </Link>
                     </div>
                 </div>
               </div>
