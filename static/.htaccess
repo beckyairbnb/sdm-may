@@ -1,1 +1,1 @@
-RewriteRule ^/content-writing-agency/?$ /writing-jobs/ [R=301,L]
+RewriteRule ^/writer-services/blog-article-writing/?$ /writer-services/blog-writing-services/ [R=301,L]

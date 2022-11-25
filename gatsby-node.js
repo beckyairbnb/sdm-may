@@ -82,6 +82,7 @@ exports.onCreatePage = ({ page, actions }) => {
       toPath: item.newurl,
       redirectInBrowser: true,
       isPermanent: true,
+      force: true
     });
   })
   
