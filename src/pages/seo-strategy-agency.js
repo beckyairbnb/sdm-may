@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "gatsby";
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/b2b/Hero";
 import Counter from "../sections/b2b/Counter";
@@ -23,9 +23,9 @@ const Strategy = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/contact"}>
+            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/contact"}>
               Sign Up
-            </a>
+            </Link>
             </>
           ),
           footerStyle: "style2",

@@ -18,10 +18,10 @@ const FooterCta2 = ()=>{
                   <div className="d-flex justify-content-center">
                   <a
                       className="btn btn btn-dodger-blue-2 header-btn rounded-pill mt-10"
-                      href="https://calendly.com/becky-strategically/intro-meeting" target="_blank"
+                      href="https://strategically.co/get-a-quote/" target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Schedule a call
+                      Get a quote
                     </a>
                     </div>
                 </div>

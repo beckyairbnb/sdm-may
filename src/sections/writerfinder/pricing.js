@@ -22,7 +22,7 @@ const PricingSection = () => {
                             <p className="w-100 border-bottom mb-6 pb-6">Writing Samples From Each Writer</p>
                             <p className="w-100 border-bottom mb-6 pb-6">3 Business Day Turnaround</p>
                             <p className="w-100 border-bottom mb-6 pb-6">100% Satisfaction Guarantee</p>
-                            <Link to={"/"} className="btn btn-dodger-blue-2 header-btn rounded-5 text-dark px-8 py-4 font-size-2">
+                            <Link href={"https://app.strategically.co/pay/service/68"} className="btn btn-dodger-blue-2 header-btn rounded-5 text-dark px-8 py-4 font-size-2">
                                 Find your writers
                             </Link>
                         </Price>

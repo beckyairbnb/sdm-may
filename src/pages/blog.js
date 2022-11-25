@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from 'styled-components';
 
-import { graphql } from "gatsby"
+import {Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet";
 import BlogSidebar from "../components/blog/blogsidebar";
 import BlogIndex from "../components/blog/blogindex";
@@ -25,9 +25,9 @@ const Blog = (props) => {
   })
 
   const result = Blogs.edges.filter((item, index) => {
-    return HighlightBlogs.data.body[0].items.find((hitem) => {
+    return HighlightBlogs.data.body[0].items.find((hitem, hindex) => {
       if(item.node.id === hitem.blog.node.id){
-        item.node.order=index+1
+        item.node.order=hindex+1
         return item
       }
     })
@@ -68,9 +68,9 @@ const Blog = (props) => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-              <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+              <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
                 Get a quote
-              </a>
+              </Link>
             </>
           ),
           footerStyle: "style2",

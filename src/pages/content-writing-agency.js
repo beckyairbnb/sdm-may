@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "gatsby";
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/home6/Hero";
 import Counter from "../sections/newservice/Counter";
@@ -22,9 +22,9 @@ const Content = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing/"}>
+            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/pricing/"}>
             Get a quote
-            </a>
+            </Link>
             </>
           ),
           footerStyle: "style2",

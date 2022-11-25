@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { navigate } from 'gatsby'
+import {Link, navigate } from 'gatsby'
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/pricing/Hero";
 import Pricing from "../sections/pricing/Pricing";
@@ -22,9 +22,9 @@ const Success = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
             Get a quote
-            </a>
+            </Link>
 
             </>
           ),

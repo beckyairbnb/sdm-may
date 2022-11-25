@@ -50,9 +50,9 @@ const LpIndex = (props) => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+                            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
                             Get a quote
-                            </a>
+                            </Link>
                         </>
                     ),
                     footerStyle: "style2",
@@ -115,7 +115,7 @@ const LpIndex = (props) => {
 
                 <HappyClientsReviews
                     title="Over 8M+ words written!"
-                    subtitle="Strategically has produced thousands of pieces of content for over 250+ happy clients."
+                    subtitle="Strategically has produced thousands of pieces of content for over 300+ happy clients."
                     ctatextbelow="Read what our customers are saying about Strategically"
                 />
                 <Content2 className="pb-0 pb-15 pt-20" />

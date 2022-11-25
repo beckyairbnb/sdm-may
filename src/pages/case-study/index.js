@@ -13,7 +13,7 @@ import ClientImg2 from "../../assets/images/kettlebell-client.jpg";
 import ClientImg3 from "../../assets/images/phoneiq-client.png";
 
 import Sanctionslogo from "../../assets/images/sanctions-logo.png";
-import Sanctionimg from "../../assets/images/sanction-img-neww.jpg";
+import Sanctionimg from "../../assets/images/sanction-img1.webp";
 
 import kettlebelllogo from "../../assets/images/originalkettlebell_2.png";
 import kettlebellImg from "../../assets/images/kettlebell-img.jpg";
@@ -43,9 +43,9 @@ const CaseStudy = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn-dodger-blue-2 header-btn rounded-5 d-none d-lg-inline-flex" href={"/get-a-quote/"}>
+                            <Link className="btn btn-dodger-blue-2 header-btn rounded-5 d-none d-lg-inline-flex" href={"/get-a-quote/"}>
                             Get a quote
-                            </a>
+                            </Link>
                         </>
                     ),
                     footerStyle: "style2",
@@ -58,8 +58,8 @@ const CaseStudy = () => {
                                 <div className="text-center pt-5 pb-lg-4 mb-lg-2">
                                     <h1>Read our case studies and see our results in action</h1>
                                     <Link
-                                        to="https://app.strategically.co/pay/service/68/"
-                                        className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">Find your writers</Link>
+                                        to="https://strategically.co/get-a-quote/"
+                                        className="btn btn btn-dodger-blue-2 header-btn-2 mt-5 mb-3 pt-md-10 pb-md-10 pl-md-12 pr-md-12 font-size-3 rounded-5 text-uppercase w-auto border-0">Get a quote</Link>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +155,7 @@ const CaseStudy = () => {
 
                 <HappyClientsReviews
                     title="Over 8M+ words written!"
-                    subtitle="Strategically has produced thousands of pieces of content for over 250+ happy clients."
+                    subtitle="Strategically has produced thousands of pieces of content for over 300+ happy clients."
                     ctatextbelow="Read what our customers are saying about Strategically"
                 />
             </PageWrapper>

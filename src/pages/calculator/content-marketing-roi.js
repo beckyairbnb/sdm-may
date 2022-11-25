@@ -166,9 +166,9 @@ return(
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
             Get a quote
-            </a>
+            </Link>
             </>
           ),
           footerStyle: "style2",
@@ -340,7 +340,7 @@ return(
 <ResultBox>
 <h3>Your return on investment</h3>
          <p>(Total revenue - Total investment)/Total investment = ROI</p>
-         <p>Number of months 
+         <p>Number of months Link
              <SelectBox value={selectMonths} onChange={e=>setSelectMonths(e.target.value)}>
                  <option value="1">1</option>
                  <option value="12">12</option>

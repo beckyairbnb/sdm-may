@@ -24,9 +24,9 @@ const Sanctions = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
-                            Get a quote
-                            </a>
+                            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+                                Get a quote
+                            </Link>
                         </>
                     ),
                     footerStyle: "style2",
@@ -64,12 +64,12 @@ const Sanctions = () => {
                             </div>
                         </div>
                     </div>
-                </div>              
+                </div>
                 <div className="py-12 pt-lg-20 text-size">
                     <div className="container">
                         <div class="row justify-content-center">
                             <div class="col-xl-12 col-12">
-                                <div class="row mb-lg-14 mb-10">
+                                <div class="row mb-lg-14 mb-10 align-items-center">
                                     <div class="col-lg-5 col-12 cimage justify-content-center align-items-center">
                                         <img className="mb-10" src={ClientImg} alt="" />
                                     </div>
@@ -90,15 +90,15 @@ const Sanctions = () => {
                                 <p>Thorsten and the team were procrastinating and pushing away creating content for their blog when they knew they needed it to improve their SEO. For most businesses, there is a straightforward solution: outsourcing their work. But for a niche technology company, sanctions.io was struggling to find an agency they were satisfied with.</p>
                             </div>
                         </div>
-                    </div>                    
-                        <div className="container">
+                    </div>
+                    <div className="container">
                         <div class="quote-blk py-14 px-14 text-center my-10">
                             <h3 className="text-white font-size-9  my-0">“We worked with three or four agencies over 12 to 15 months, and we were at the point where we said the content quality was a big issue for us. We needed a dependable source of good content that was willing to put the work in for us.”</h3>
                         </div>
                     </div>
                     <div className="container">
                         <p>At the same time, sanctions.io is a startup, with set budgets for marketing activities. Thorsten knew he could find a dependable agency if he were prepared to pay a premium price, but <span className="purple">“we cannot pay a huge company; we don't have a huge budget.”</span></p>
-                     <p>They needed a cost-effective solution that didn't sacrifice quality. They needed <a href="/">Strategically.</a></p>
+                        <p>They needed a cost-effective solution that didn't sacrifice quality. They needed <a href="/">Strategically.</a></p>
                     </div>
                 </div>
                 <div class="pb-10 text-size">
@@ -107,24 +107,24 @@ const Sanctions = () => {
                         <p> After yet another dissatisfied experience with a content writing agency, Thorsten took to Google. He searched again for an agency that could be up for the challenge of producing niche content for their blog. This time, he stumbled across Strategically.</p>
                         <p>Thorsten knew we were the one: <span class="purple">“it was just a feeling.”</span> and we offered an affordable pricing plan aligned with his smaller startup budget. Thorsten said our <span className="purple"> “general offering for a small start-up like ours is very attractive from a pricing standpoint.”</span></p>
                         <p>So Thorsten gave us a call, and we wrote our first piece of content for sanctions.io… and it totally missed the mark. Like other agencies, we failed to understand his industry comprehensively enough, which showed in our writing. But we were different for one reason: we were the only agency Thorsten worked with that wanted to do better.</p>
-                    </div>                     
-                        <div className="container">
+                    </div>
+                    <div className="container">
                         <div class="quote-blk py-14 px-14 text-center my-10">
                             <h3 className="text-white my-0">“You were the first agency to say, “let's look harder, let's look into this, let's try it again”, and this I really appreciated. Your willingness to accept feedback and really help your customers sets you apart from other agencies.”</h3>
                         </div>
-                        </div>
+                    </div>
                     <div className="container">
                         <p>We took our time to understand Thorsten's requirements and find a better fit among our network of writers. We asked for feedback, swapped his writer, and now he's happy with every piece of content we produce. He's now increased his monthly words by 2.5X!</p>
                         <p>Not only did we ask Thorsten for feedback on our writing, but also on our processes. Thorsten explained that our flexibility in how we work also made him stay, as this customer-first approach is how sanctions.io runs its business.</p>
-                    </div>                    
-                        <div className="container">
+                    </div>
+                    <div className="container">
                         <div class="quote-blk py-14 px-14 text-center my-10">
                             <h3 className="text-white my-0">“What usually turns me off when I work with service providers is that I have to do everything through a dashboard. You were willing to say, “Just send me an email”… I believe in making things easy for the clients, and it's how we do our business. I really liked that.”</h3>
                         </div>
                     </div>
                     <div className="container">
                         <p>We also offer our content ideation services to Thorsten, solving more problems for our customers. By taking control of coming up with content, Thorsten and the team can focus on the things that matter more and which they excel at. <span className="purple">“The process is very easy to work with: good ideas, good content, simple interaction, and a great offering… [It's] very frictionless compared to other experiences that I had.”</span></p>
-                    <h2 className="font-size-10 mb-lg-10 mb-5 mt-10">The impact</h2>
+                        <h2 className="font-size-10 mb-lg-10 mb-5 mt-10">The impact</h2>
                         <p>Since sanctions.io started working with Strategically, <span className="purple"> “we tripled our organic traffic on the website. We also see the success of trial requests and, in the end, in revenue.”</span></p>
                         <p>Thorsten thinks a large part of this has to do with their content and the increased frequency of putting blogs up on the web – something they wouldn’t have the time to do by themselves or could trust other agencies to do for them. With content ideation also taken care of, posting quality content regularly is even easier for Thorsten and the team.</p>
                         {/* <p>And we are already discussing the next steps to take Sanctions.io further, boost site traffic, and see an even larger return on investment:</p> */}
@@ -138,7 +138,7 @@ const Sanctions = () => {
                     <div className="container">
                         <p>We offer an SEO strategy solution where we deep dive into the data, keywords, and competitive landscape and prepare a blueprint strategy on content for the next six months. As Thorsten’s business and budget grow, this is a service we can offer. <span className="purple">“I'm so grateful that we work together, and I am so happy. I'm really super happy!”</span></p>
                     </div> */}
-                </div>            
+                </div>
                 {/* <div class="pt-0 pb-10 py-lg-20 d-flex justify-content-center align-items-center text-center">
                     <div className="container">
                         <h2 className="font-size-md-12 font-size-10 mb-12">Get customer-driven and SEO-focused content to power your sales</h2>

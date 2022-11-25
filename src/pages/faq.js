@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/pricing/Hero";
@@ -17,9 +18,9 @@ const FaqPage = () => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
             Get a quote
-            </a>
+            </Link>
 
             </>
           ),

@@ -33,7 +33,7 @@ const FeaturesSection = () => {
                         </Featurebox >
                     </div>
                 </div>
-                <div className="mt-16 justify-content-center align-items-center d-flex"><Link to={"/"} className="btn btn-dodger-blue-2 header-btn rounded-5 text-dark px-8 py-4 font-size-2">
+                <div className="mt-16 justify-content-center align-items-center d-flex"><Link href={"https://app.strategically.co/pay/service/68"} className="btn btn-dodger-blue-2 header-btn rounded-5 text-dark px-8 py-4 font-size-2">
                         Find your writers
                     </Link></div>
             </div>

@@ -14,7 +14,7 @@ const Testimonials = () => {
         default: 3,
         700: 2,
         500: 1,
-   
+
     };
     return (
 
@@ -58,7 +58,7 @@ const Testimonials = () => {
                 </div>
 
 
-                <Masonry
+                {/* <Masonry
                     breakpointCols={breakpointColumnsObj}
                     className="my-masonry-grid"
                     columnClassName="my-masonry-grid_column"
@@ -90,7 +90,37 @@ const Testimonials = () => {
                             </div>
                         </Testimonial1>
                     </div>
-                </Masonry>
+                </Masonry> */}
+
+                <div className="row">
+                    <div className="col-lg-4">
+                        <Testimonial1 className="h-100 flex d-flex flex-column">
+                            <div className="d-flex">
+                                <div className="mb-4 mr-4"><img src={areview1} width="60" height="60" /></div>
+                                <p className="font-size-6 text-uppercase text-black">Steve Shaw - 2 Reviews</p>
+                            </div>
+                            <p className="text-black mb-8">“I had tried a couple of places for content prior to Strategically, but they were somewhat lacking—Becky got what I was looking for immediately, was very professional in her communications, delivered far more quickly than anticipated and the content was far superior. Thanks Becky & team!”</p>
+                        </Testimonial1>
+                    </div>
+                    <div className="col-lg-4">
+                        <Testimonial1 className="h-100 d-flex flex-column">
+                        <div className="d-flex">
+                                <div className="mr-4 mb-4"><img src={areview2} width="60" height="60" /></div>
+                                <p className="font-size-6 text-uppercase text-black">Carter Edsall - 1 Review</p>
+                            </div>
+                            <p className="text-black">“Becky and her team of writers go above and beyond to deliver high-quality content quickly and at reasonable prices. She is on top of every detail, responds immediately to any questions, and makes my job SO much easier! So glad I found Strategically and don't have to keep searching for the perfect content partner.”</p>
+                        </Testimonial1>
+                    </div>
+                    <div className="col-lg-4">
+                        <Testimonial1 className="h-100 d-flex flex-column">
+                        <div className="d-flex">
+                                <div className="mr-4 mb-4"><img src={areview3} width="60" height="60" /></div>
+                                <p className="font-size-6 text-uppercase text-black">Thorsten Gorny - 1 Review</p>
+                            </div>
+                            <p className="text-black mb-8">"I have been working with Becky and her team for a few months now and have to say I am just blown away by the professionalism and also by the determination to help their clients. We had been looking for a content writing service almost for two years with a lot of bad experiences since our product is very 'nichy' and not very easy to understand for anyone outside our industry. Becky and her team went above and ahead to learn and understand the 'lingo' and are producing really awesome content."</p>
+                        </Testimonial1>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -132,7 +162,7 @@ border-radius:10px;
     // box-shadow: 0 10px 24px 0 rgb(244 55 168 / 40%);
    // background-image: linear-gradient(135deg,#ff9f2e,#f723c4);
     // width:46%; margin: 0 2%;
-    padding: 65px 50px;
+    padding: 30px;
     text-align:left;
     color:#000;
     @media screen and (max-width: 600px){

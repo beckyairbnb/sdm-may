@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby";
 import PageWrapper from "../components/PageWrapper";
 import Helmet from "react-helmet";
 import BlogSidebar from "../components/blog/blogsidebar";
@@ -16,9 +17,9 @@ const BlogNew = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+                            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
                             Get a quote
-                            </a>
+                            </Link>
                         </>
                     ),
                     footerStyle: "style2",

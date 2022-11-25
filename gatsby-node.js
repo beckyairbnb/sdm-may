@@ -116,6 +116,10 @@ if (page.path.match(/sign|reset/)) {
     page.context.layout = "noheadernofooter";
     createPage(page);
   }
+  else if (page.path.match(/contact/)) {
+    page.context.layout = "noheadernofooter";
+    createPage(page);
+  }
   else if (page.path.match(/calculate-content-roi/)) {
     page.context.layout = "noheadernofooter";
     createPage(page);

@@ -13,8 +13,8 @@ const HeroSection = () => {
                     <div className="col-xl-8 col-lg-8 col-12 text-center">
                         <h2 className="text-white fw-normal">Hiring writers? We've got you.</h2>
                         <p className="mb-10 text-white">We find your perfect writer in days — or your money back.</p>
-                        <Link to={"/"} className="btn btn-dodger-blue-2 header-btn rounded-5 text-dark px-8 py-4 font-size-2 ">
-                            Find your writer
+                        <Link href={"https://app.strategically.co/pay/service/68"} className="btn btn-dodger-blue-2 header-btn rounded-5 text-dark px-8 py-4 font-size-2 ">
+                            Find your writers
                         </Link>
                     </div>
                 </div>

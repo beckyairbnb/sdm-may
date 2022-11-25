@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react'
-import { navigate } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import styled from "styled-components";
 import FormHead from '../../components/FormHead'
 import PageWrapper from "../../components/PageWrapper";
@@ -45,9 +45,9 @@ const Step1 = (props) => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-              <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+              <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
               Get a quote
-              </a>
+              </Link>
 
             </>
           ),

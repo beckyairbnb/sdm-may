@@ -76,7 +76,7 @@ const WritersContent = () => {
                     <div className="col-lg-6 col-12">
                         <h2 className="font-size-9">We get it, hiring writers is hard. But it doesn't have to be.</h2>
                         <Spacer2 />
-                        <p className="font-size-7">At <Link to="/">Strategically</Link>, we’ve worked with 250+ companies and written more than 8 million words. With only <Link to="https://g.page/strategically?share">5-star Google reviews</Link>, we know how to match you with a writer that will nail your content — every time.
+                        <p className="font-size-7">At <Link to="/">Strategically</Link>, we’ve worked with 300+ companies and written more than 8 million words. With only <Link to="https://g.page/strategically?share">5-star Google reviews</Link>, we know how to match you with a writer that will nail your content — every time.
                         </p>
                     </div>
                     <div className="col-lg-6 col-12">

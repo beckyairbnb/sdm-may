@@ -31,7 +31,7 @@ const GetAQuote = () => {
             </Helmet>
             <LeadgenLayout
                 title="Get your quote"
-                description="We’ve written more than 8 million words, for 250+ customers."
+                description="We’ve written more than 8 million words, for 300+ customers."
             >
                 <NetlifyFormProvider {...netlify}>
                     <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>

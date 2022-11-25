@@ -79,7 +79,7 @@ const Counter = ({ className, ...rest }) => {
 
                   >
                     <h2 className="font-size-9 pr-xl-22 mb-7 mb-lg-11 pr-lg-0">
-                      Trusted by 250+ happy website owners and businesses
+                      Trusted by 300+ happy website owners and businesses
                       since 2017.
                     </h2>
                   </div>

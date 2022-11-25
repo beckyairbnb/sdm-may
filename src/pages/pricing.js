@@ -89,9 +89,9 @@ const PricePage = ({ data }) => {
           headerClassName: "site-header--menu-right",
           headerButton: (
             <>
-            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
             Get a quote
-            </a>
+            </Link>
             </>
           ),
           footerStyle: "style2",

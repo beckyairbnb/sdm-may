@@ -24,9 +24,9 @@ const OriginalKettlebell = () => {
                     headerClassName: "site-header--menu-right",
                     headerButton: (
                         <>
-                            <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
+                            <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/get-a-quote/"}>
                             Get a quote
-                            </a>
+                            </Link>
                         </>
                     ),
                     footerStyle: "style2",
@@ -69,7 +69,7 @@ const OriginalKettlebell = () => {
                     <div className="container">
                         <div class="row justify-content-center">
                             <div class="col-xl-12 col-12">
-                                <div class="row mb-lg-14 mb-10">
+                                <div class="row mb-lg-14 mb-10 align-items-center">
                                     <div class="col-lg-5 col-12 cimage1 d-flex justify-content-center align-items-center">
                                         <img className="mb-10" src={ClientImg} alt="" />
                                     </div>

@@ -35,7 +35,7 @@ const WriterFinder = () => {
         <FeaturesSection />
         <WritersContent />
         <Testimonials />
-        <Testimonials2 />
+        {/* <Testimonials2 /> */}
         <PricingSection />
         <Faq />
       </PageWrapper>
