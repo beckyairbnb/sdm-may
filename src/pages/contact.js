@@ -33,7 +33,11 @@ const Contact = () => {
     role: { required: "Role is required" }
   };
 
-  const onSubmit = (data) => netlify.handleSubmit(null, data)
+  const onSubmit = (data) => {
+    const Rolevalue = data.role.label
+    data.role = Rolevalue
+    netlify.handleSubmit(null, data)
+  }
 
   return (
     <>
