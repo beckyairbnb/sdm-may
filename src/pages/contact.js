@@ -36,8 +36,8 @@ const Contact = () => {
   const onSubmit = (data) => {
     const Rolevalue = data.role.label
     data.role = Rolevalue
-    console.log('data data',data)
-    //netlify.handleSubmit(null, data)
+    //console.log('data data',data)
+    netlify.handleSubmit(null, data)
   }
 
   return (
