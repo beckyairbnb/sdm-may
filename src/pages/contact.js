@@ -13,9 +13,9 @@ import {
 import LeadgenLayout from "../components/Layout/LeadgenLayout";
 const Contact = () => {
   const { register, handleSubmit, handleChange, control, formState: { errors } } = useForm();
-
+//
   const netlify = useNetlifyForm({
-    name: 'Contact Us',
+    name: 'Contact Form',
     action: '/success',
     onSuccess: (response, context) => {
       console.log('Successfully sent form data to Netlify Server')
@@ -36,7 +36,8 @@ const Contact = () => {
   const onSubmit = (data) => {
     const Rolevalue = data.role.label
     data.role = Rolevalue
-    netlify.handleSubmit(null, data)
+    console.log('data data',data)
+    //netlify.handleSubmit(null, data)
   }
 
   return (
@@ -113,12 +114,11 @@ const Contact = () => {
 
             <div>
               <textarea
-                type='text'
-                name='message'
-                id='message'
+                name='details'
+                id='details'
                 placeholder="Message"
                 rows='4'
-                {...register("message")}
+                {...register("details")}
                 onChange={handleChange}
                 style={{height:"80px"}}
                 className=
