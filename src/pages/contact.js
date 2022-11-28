@@ -118,6 +118,7 @@ const Contact = () => {
                 id='message'
                 placeholder="Message"
                 rows='4'
+                {...register("message")}
                 onChange={handleChange}
                 style={{height:"80px"}}
                 className=
