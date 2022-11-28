@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import HappyClients from "../../components/happyClients";
+
 import TmIcon from "../../assets/images/writer-finder/tm-icon.svg";
 
 import areview1 from "../../assets/images/steve-shaw.png";
@@ -17,16 +19,18 @@ const Testimonials = () => {
 
     };
     return (
+        <>
+            <div className="container text-center">
+                <div className="py-lg-24 pt-5 pb-14">
+                    <div className="row justify-content-center align-items-center">
+                        <div className="col-xl-9 col-12">
+                            <h2 className="font-size-9">What people say about us</h2>
+                            <Spacer />
+                            <LargeTitle>Testimonials</LargeTitle>
 
-        <div className="container text-center">
-            <div className="py-lg-24 pt-5 pb-14">
-                <div className="row justify-content-center align-items-center">
-                    <div className="col-xl-9 col-12">
-                        <h2 className="font-size-9">What people say about us</h2>
-                        <Spacer />
-                        <LargeTitle>Testimonials</LargeTitle>
 
-                        {/* <div className="d-flex flex-wrap justify-content-center align-items-end gap-10">
+
+                            {/* <div className="d-flex flex-wrap justify-content-center align-items-end gap-10">
                             <Testimonial1>
                                 <div className="w-100 mb-4"><img src={areview1} width="60" height="60" /></div>
                                 <p className="font-size-6 text-uppercase text-white">Steve Shaw - 2 Reviews</p>
@@ -54,11 +58,11 @@ const Testimonials = () => {
                         </div> */}
 
 
+                        </div>
                     </div>
-                </div>
 
 
-                {/* <Masonry
+                    {/* <Masonry
                     breakpointCols={breakpointColumnsObj}
                     className="my-masonry-grid"
                     columnClassName="my-masonry-grid_column"
@@ -92,7 +96,7 @@ const Testimonials = () => {
                     </div>
                 </Masonry> */}
 
-                <div className="row">
+                    {/* <div className="row">
                     <div className="col-lg-4">
                         <Testimonial1 className="h-100 flex d-flex flex-column">
                             <div className="d-flex">
@@ -120,11 +124,19 @@ const Testimonials = () => {
                             <p className="text-black mb-8">"I have been working with Becky and her team for a few months now and have to say I am just blown away by the professionalism and also by the determination to help their clients. We had been looking for a content writing service almost for two years with a lot of bad experiences since our product is very 'nichy' and not very easy to understand for anyone outside our industry. Becky and her team went above and ahead to learn and understand the 'lingo' and are producing really awesome content."</p>
                         </Testimonial1>
                     </div>
+                </div> */}
+
                 </div>
-
             </div>
-        </div>
 
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-12">
+                        <HappyClients />
+                    </div>
+                </div>
+            </div>
+        </>
     );
 };
 
