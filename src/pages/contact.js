@@ -35,8 +35,10 @@ const Contact = () => {
 
   const onSubmit = (data) => {
     const Rolevalue = data.role.label
+    const Details = data.details
     data.role = Rolevalue
-    //console.log('data data',data)
+    data.details = Details
+    console.log('data data',data)
     netlify.handleSubmit(null, data)
   }
 
@@ -114,6 +116,19 @@ const Contact = () => {
 
             <div>
               <textarea
+                type="text"
+                name='details'
+                id='details'
+                placeholder="Message"
+                onChange={handleChange}
+                style={{height:"80px"}}
+                {...register("details")}
+                className=
+                {
+                  `mb-4 form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5`
+                }
+              />
+              {/* <textarea
                 name='details'
                 id='details'
                 placeholder="Message"
@@ -125,7 +140,7 @@ const Contact = () => {
                 {
                   `mb-4 form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5`
                 }
-              />
+              /> */}
             </div>
 
             <div className="button">
