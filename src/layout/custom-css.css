@@ -486,3 +486,6 @@ a.btn-purple{ background-color: #964aa5 !important; color:#ffffff !important; bo
     width: 100%;
   }
 }
+img.clogo{
+  max-width:200px;
+}

@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 
 import PageWrapper from "../../components/PageWrapper";
 import HeaderButton from "../../components/Header/HeaderButton";
+import ReadOurBlog from "../../components/blog/readourblog";
 
 import Icon1 from "../../assets/images/icon-traffic.png";
 import Icon2 from "../../assets/images/icon-value.png";
@@ -168,41 +169,7 @@ const Sanctions = () => {
                         <Link class="btn btn btn-dodger-blue-2 header-btn rounded-5 px-10" to="/get-a-quote/">Get pricing now </Link>
                     </div>
                 </div> */}
-                <div class="bg-default-3 py-lg-18 py-10 text-center">
-                    <div className="container">
-                        <h2 className="font-size-10 mb-md-12 mb-8">Read our blog</h2>
-                        <div class="row">
-                            <div class="col-md-4 mb-md-0 mb-4">
-                                <a href="https://strategically.co/blog/think-tank/increase-website-authority">
-                                    <img className="w-100 mb-6" src={FeaturedImg5} alt="" />
-                                    <h3 className="font-size-8">How to increase your website authority</h3>
-                                </a>
-                            </div>
-                            <div class="col-md-4 mb-md-0 mb-4">
-                                <a href="https://strategically.co/blog/writing-tips/how-to-write-a-blog-post-outline">
-                                    <img className="w-100 mb-6" src={FeaturedImg6} alt="" />
-                                    <h3 className="font-size-8">How to write a blog post outline</h3>
-                                </a>
-                            </div>
-                            <div class="col-md-4 mb-md-0 mb-4">
-                                <a href="https://strategically.co/blog/writing-tips/seo-content-strategy">
-                                    <img className="w-100 mb-6" src={FeaturedImg7} alt="" />
-                                    <h3 className="font-size-8">The 7 steps to a killer SEO strategy</h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* <div class="bg-dark py-md-22 py-10 text-center">
-                    <div className="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 col-12">
-                                <h2 className="font-size-11 font-weight-normal mb-10 text-gray-2">Grow your business with content </h2>
-                                <img src={RightArrow} alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+                <ReadOurBlog/>
             </PageWrapper>
         </>
     );
