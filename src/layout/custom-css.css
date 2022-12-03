@@ -489,3 +489,7 @@ a.btn-purple{ background-color: #964aa5 !important; color:#ffffff !important; bo
 img.clogo{
   max-width:200px;
 }
+.block-img img{
+  margin:6px 0px !important;
+  max-width:100% !important;
+}

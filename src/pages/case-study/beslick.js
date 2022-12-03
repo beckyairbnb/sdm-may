@@ -40,7 +40,7 @@ const Beslick = () => {
                         </div>
                     </div>
                 </div>
-                <div class="bg-dark-cloud w-full py-md-20 py-14  text-center">
+                {/* <div class="bg-dark-cloud w-full py-md-20 py-14  text-center">
                     <div class="container">
                         <div class="row d-flex justify-content-center align-items-center">
                             <div class="col-md-4 col-sm-6 mb-5">
@@ -60,7 +60,7 @@ const Beslick = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="py-12 pt-lg-20 text-size">
                     <div className="container">
                         <div class="row justify-content-center">

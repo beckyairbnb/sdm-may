@@ -151,7 +151,7 @@ const CaseStudy = () => {
                                         </div>
                                         <div className="col-lg-6 col-xs-12">
                                             <Link to={item.link}><img src={item.companyLogo} alt="" className="mb-10 clogo" /></Link>
-                                            <h3> <Link to="/case-study/original-kettlebell" className="text-black">{item.description}</Link></h3>
+                                            <h3> <Link to={item.link} className="text-black">{item.description}</Link></h3>
                                             <div className="d-flex flex-row mt-10">
                                                 <img src={item.clientImg} alt="" className="rounded-circle mr-4" width={60} height={60} />
                                                 <div className="d-flex flex-column">
@@ -173,7 +173,7 @@ const CaseStudy = () => {
                                     <div className="row align-items-center flex-lg-row flex-column-reverse">
                                         <div className="col-lg-6 col-xs-12">
                                             <Link to={item.link}><img src={item.companyLogo} alt="" className="mb-10 clogo" /></Link>
-                                            <h3> <Link to="/case-study/sanctions" className="text-black">{item.description}</Link></h3>
+                                            <h3> <Link to={item.link} className="text-black">{item.description}</Link></h3>
                                             <div className="d-flex flex-row mt-10">
                                                 <img src={item.clientImg} alt="" className="rounded-circle mr-4" width={60} height={60} />
                                                 <div className="d-flex flex-column">
