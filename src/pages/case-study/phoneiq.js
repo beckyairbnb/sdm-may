@@ -71,7 +71,8 @@ const Sanctions = () => {
                             <div class="col-xl-12 col-12">
                                 <div class="row mb-lg-14 mb-10 align-items-center">
                                     <div class="col-lg-5 col-12 cimage justify-content-center align-items-center">
-                                        <img className="mb-10" src={ClientImg} alt="" />
+                                        {/* <img className="mb-10" src={ClientImg} alt="" /> */}
+                                        <h2 className="font-size-13 mb-0">phoneIQ</h2>
                                     </div>
                                     <div class="col-lg-7 col-md-11 mt-10">
                                         <h2 className="font-size-10">The client</h2>
