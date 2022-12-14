@@ -9,7 +9,7 @@ import ReadOurBlog from "../../components/blog/readourblog";
 import Icon1 from "../../assets/images/icon-traffic.png";
 import Icon2 from "../../assets/images/icon-value.png";
 import Icon3 from "../../assets/images/icon-links.png";
-import ClientImg from "../../assets/images/phoneiq-img.jpg";
+import ClientImg from "../../assets/images/phoneiq-logo-new.png";
 
 import FeaturedImg5 from "../../assets/images/post_img1.jpg"
 import FeaturedImg6 from "../../assets/images/post_img2.jpg"
