@@ -9,7 +9,7 @@ import ReadOurBlog from "../../components/blog/readourblog";
 import Icon1 from "../../assets/images/icon-traffic.png";
 import Icon2 from "../../assets/images/icon-value.png";
 import Icon3 from "../../assets/images/icon-links.png";
-import ClientImg from "../../assets/images/phoneiq-client.png";
+import ClientImg from "../../assets/images/phoneiq-img.jpg";
 
 import FeaturedImg5 from "../../assets/images/post_img1.jpg"
 import FeaturedImg6 from "../../assets/images/post_img2.jpg"
@@ -71,8 +71,8 @@ const Sanctions = () => {
                             <div class="col-xl-12 col-12">
                                 <div class="row mb-lg-14 mb-10 align-items-center">
                                     <div class="col-lg-5 col-12 cimage justify-content-center align-items-center">
-                                        {/* <img className="mb-10" src={ClientImg} alt="" /> */}
-                                        <h2 className="font-size-13 mb-0">phoneIQ</h2>
+                                        <img className="mb-10" src={ClientImg} alt="" />
+                                        {/* <h2 className="font-size-13 mb-0">phoneIQ</h2> */}
                                     </div>
                                     <div class="col-lg-7 col-md-11 mt-10">
                                         <h2 className="font-size-10">The client</h2>
