@@ -84,8 +84,8 @@ const Sanctions = () => {
                                     </div>
                                 </div>
                                 <h2 className="font-size-10 text-left my-lg-10 my-5">The problem</h2>
-                                <p>PhoneIQ faced a significant challenge in delivering interesting and updated tech-related articles, especially considering the sector moves at lightning speed with constant innovation and development. </p>
-                                <p>In particular, PhoneIQ understood that writing in the technology sector required writers to be <a href="#">"very focused on checking for updated sources and trends.”</a> In addition, they knew that the writers would need excellent research skills to deliver the type of content they desired.</p>
+                                <p>PhoneIQ faced a significant challenge in delivering enough interesting and updated tech-related articles, especially considering the sector moves at lightning speed with constant innovation and development. </p>
+                                <p>In particular, PhoneIQ understood that writing in the technology sector required writers to have a background in tech and be <a href="#">"very focused on checking for updated sources and trends.”</a> In addition, they knew that the writers would need excellent research skills to deliver the type of content they desired.</p>
                                 <p>To start with, their marketing team managed all of the content in-house. PhoneIQ had team members write the articles required and then moved to hire an independent <a href="#">tech content writing service </a>to help as guest writers.</p>
                                 <p>The system was working well, but PhoneIQ wanted to increase its output of high-quality content for SEO purposes. They needed a content agency that could provide a wide range of writers with the necessary research skills to produce up-to-date and accurate technology content. Luckily for them, this is where Strategically excels. </p>
                                 {/* <p>PhoneIQ found Strategically after looking for additional technical writers online. They contacted us and agreed to let us write a sample piece for them. We scoured our network of in-house writers to find the perfect writer for the assignment. They were instantly impressed by what we produced. </p>
@@ -136,7 +136,6 @@ const Sanctions = () => {
 
                         <p>Overall, that's another satisfied client whose benchmark metrics continue to increase due to the high-quality content delivered by Strategically. </p>
                     </div>
-
                 </div>
                 <ReadOurBlog />
             </PageWrapper>
