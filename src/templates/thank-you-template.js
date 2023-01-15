@@ -6,11 +6,11 @@ import HeaderButton from "../components/Header/HeaderButton";
 import Helmet from "react-helmet";
 
 const ThankYouTemplate = () => {
-    useEffect(() => {
-        setTimeout(() => {        
-            navigate('https://calendly.com/becky-strategically/intro-meeting?month=2022-02');
-        }, 2500);
-     });
+    // useEffect(() => {
+    //     setTimeout(() => {        
+    //         navigate('https://calendly.com/becky-strategically/intro-meeting?month=2022-02');
+    //     }, 700);
+    //  });
     return (
         <>
             <PageWrapper
