@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import Reviews from "../../components/Testimonials"
 import Testimonial2 from "../../sections/b2b/Testimonial2";
 import Testimonial3 from "../../sections/b2b/Testimonial3";
+import Faq from "../../sections/home2/Faq";
 
 import Stars from "../../assets/images/stars.png";
 import Author from "../../assets/images/author2.png";
@@ -49,6 +50,14 @@ const ContentSection = () => {
                             </div>
                         </div>
                     </div>
+                    <h3>Are you looking to level up your content and take your business to the next level?</h3>
+                    <p>Every business needs good content to stand out. Quality content creates engagement, adds value to your website, increases traffic, and helps with SEO rankings. But the main challenge lies in creating high-quality content, which is where content writing service comes.</p>
+                    <p>At Strategically, we understand the importance of content writing and how it translates into the success of a business. We have helped over 300 companies to scale their content creation and skyrocket their growth.</p>
+                    <p>A perfect <a href="https://www.google.com/maps/place/Strategically+Content+Writing+Agency" target="_blank">5-star Google rating</a> reflects our customer satisfaction rate. Our clients often cite our exceptional attention to detail, fast turnaround times, affordable price, and helpful customer service as critical factors in their decision to trust us.</p>
+                    <p>As a content writing service provider, our services cover blog content, web pages, sales copy, technical writing, and newsletters. However, the bulk of what we do is SEO blog content. Thanks to our skilled writers, who specialize in crafting informative and compelling pieces, we've maintained our industry-leading position for years.</p>
+                    <p>We have years of experience delivering SEO-optimized content that resonates with its intended audience to maximize its reach. Our extensive network of experienced writers and editors with expertise in various niches allows us to provide clients with specialized content for their businesses.</p>
+                    <p>Our customers are our top priority, and we always give our best efforts to ensure they get the best results. We are confident that our content will add value to your project and help propel your business to the top.</p>
+
                     <h3>Providing a quality content writing service</h3>
                     <p>We understand that you need compelling content to help your business succeed. We pride ourselves on providing original, high-quality content that grabs your audience's attention.</p>
                     <h3>Offering industry-specific content writers</h3>
@@ -504,8 +513,9 @@ const ContentSection = () => {
                             </div>
                         </div>
                     </div> */}
-                </div>
+                </div>                
             </div>
+            <Faq/>
         </>
     );
 };

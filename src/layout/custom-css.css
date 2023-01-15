@@ -493,3 +493,21 @@ img.clogo{
   margin:6px 0px !important;
   max-width:100% !important;
 }
+.home-faq-sec .accordion__button{
+  background-color: #ffffff !important;
+  font-size:20px;
+  font-weight: 600;
+  line-height: 1.3;
+  padding-right:25px !important;
+}
+.home-faq-sec .accordion__item{
+  position: relative;
+}
+.home-faq-sec .accordion__button:before{
+  position: absolute;
+  top:26px !important;
+  right:10px !important;
+}
+.home-faq-sec .accordion__panel{
+  padding:6px 20px !important
+}
