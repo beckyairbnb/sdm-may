@@ -16,7 +16,7 @@ const GetAQuote = (props) => {
     let service = ''
     service = props?.location?.state?.slug
 
-    const redirectUrl = service ? `/thank-you-${service}` : '/success'
+    const redirectUrl = service ? `thank-you-${service}` : 'success'
 
     console.log('props.location.state.fromFeed',redirectUrl)
 
