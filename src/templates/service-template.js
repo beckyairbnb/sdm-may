@@ -91,6 +91,7 @@ const ServiceTemplate = (props) => {
                     ></div>
                   )}
                   <Link
+                  state={{ slug }}
                     to={
                       slug === "seo-content-writing"
                         ? "/get-a-quote/"

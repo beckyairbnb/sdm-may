@@ -10,15 +10,22 @@ import {
     Honeypot
 } from 'react-netlify-forms'
 import LeadgenLayout from "../components/Layout/LeadgenLayout";
-const GetAQuote = () => {
+const GetAQuote = (props) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
+
+    let service = ''
+    service = props?.location?.state?.slug
+
+    const redirectUrl = service ? `/thank-you-${service}` : '/success'
+
+    console.log('props.location.state.fromFeed',redirectUrl)
 
     const netlify = useNetlifyForm({
         name: 'GetAQuote',
         action: '/success',
         onSuccess: (response, context) => {
             console.log('Successfully sent form data to Netlify Server')
-            navigate('https://calendly.com/becky-strategically/intro-meeting?month=2022-02');
+            navigate(`/${redirectUrl}`);
         }
     })
 

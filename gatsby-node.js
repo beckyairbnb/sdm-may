@@ -307,6 +307,17 @@ data.MainServicePage.edges.forEach(({ node }) => {
     },
   })
 })
+data.ServicePages.edges.forEach(({ node }) => {
+      createPage({
+        path: `thank-you-${node.uid}/`,
+        component: path.resolve("./src/templates/thank-you-template.js"),
+        context: {
+          id:node.id,
+          slug:node.uid
+        },
+      })
+    }    
+)
 data.ServicePages.edges.forEach(({ node }) => {   
   if(node.uid==='saas-content-writerr')
   {
