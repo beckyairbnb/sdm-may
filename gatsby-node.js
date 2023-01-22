@@ -9,6 +9,12 @@ exports.onCreatePage = ({ page, actions }) => {
   const  rurls = [
     {oldurl:'/content-writing-agency/',newurl: '/'},
     {oldurl:'/blog/grammar/',newurl: '/blog/grammar-tips/'},
+    {oldurl:'/blog/think-tank/best-font-for-blog/',newurl: '/blog/content-marketing/best-font-for-blog/'},
+    {oldurl:'/blog/writing-tips/seo-content-strategy/',newurl: '/blog/think-tank/content-strategy-example/'},
+    {oldurl:'/blog/writing-tips/search-intent-in-seo/',newurl: '/blog/seo/search-intent-in-seo/'},
+    {oldurl:'/blog/writing-tips/how-to-write-a-blog-post-outline/',newurl: '/blog/content-marketing/how-to-write-a-blog-post-outline/'},
+    {oldurl:'/blog/writing-tips/seo-content-strategy/',newurl: '/blog/think-tank/content-strategy-example/'},
+    {oldurl:'/blog/writing-tips/how-to-write-a-blog-post-outline/',newurl: '/blog/content-marketing/how-to-write-a-blog-post-outline/'},
     {oldurl:'/writer-services/blog-article-writing/',newurl: '/writer-services/blog-writing-services/'},
     {oldurl:'/blog/grammar/lo-and-behold-or-low-and-behold/',newurl: '/blog/grammar-tips/lo-and-behold-or-low-and-behold/'},
     {oldurl:'/blog/grammar/3',newurl: '/blog/grammar-tips/3'},

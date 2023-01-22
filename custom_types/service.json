@@ -55,7 +55,7 @@
     "testimonials_block_heading": {
       "type": "StructuredText",
       "config": {
-        "single": "heading3, heading4, heading5, heading6",
+        "single": "heading3,heading4,heading5,heading6",
         "label": "Testimonials Block Heading"
       }
     },
@@ -302,6 +302,45 @@
                     "service"
                   ],
                   "label": "Service"
+                }
+              }
+            }
+          },
+          "customer_driven_services": {
+            "type": "Slice",
+            "fieldset": "Customer Driven Services",
+            "description": "Customer Driven Services",
+            "icon": "apps",
+            "display": "grid",
+            "non-repeat": {
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2, heading3",
+                  "label": "Heading"
+                }
+              }
+            },
+            "repeat": {
+              "icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Icon"
+                }
+              },
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading4, heading5",
+                  "label": "Heading"
+                }
+              },
+              "description1": {
+                "type": "Text",
+                "config": {
+                  "label": "Description"
                 }
               }
             }

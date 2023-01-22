@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import Img from "gatsby-image"
-import Progress from "../sections/home2/Progress";
+import Progress from "../sections/services/Progress";
 import PageWrapper from "../components/PageWrapper";
 import Image from "../components/ContentSlices/Image";
 import CTA from "../components/ContentSlices/CTA";
@@ -41,15 +41,12 @@ const ServiceTemplate = (props) => {
     { name: "Writer Services", link: "/writer-services/" },
     { name: PageData.data.short_title, link: null },
   ];
-  // const SeoContentImage = (slug) => {
-  //   if (slug === "seo-content-writing") {
-  //     return <img src={SeoContentImg} alt="" className="stars-img my-10" />;
-  //   } else if (slug === "casino-gaming-content-writing") {
-  //     return <img src={SeoCasinoImg} alt="" className="stars-img my-10" />;
-  //   } else {
-  //     return <img src={phoneSec} alt="" className="stars-img" />;
-  //   }
-  // };
+
+  const CustomerDrivenServicesData = PageData.data.body.filter((item) => {
+    return item.slice_type === "customer_driven_services";
+  });
+
+
   return (
     <>
       <Helmet>
@@ -208,7 +205,10 @@ const ServiceTemplate = (props) => {
             </div>
           </div>
         </div>
-        <Progress className="pb-lg-21 border-top border-default-color-1" />
+        {CustomerDrivenServicesData && CustomerDrivenServicesData.length>0 && (
+          <Progress className="pb-lg-21 border-top border-default-color-1" data={CustomerDrivenServicesData[0]} />
+        )}
+        
         <div className="py-14 bg-light">
           <div className="container">
             <div className="row justify-content-center">
@@ -412,6 +412,24 @@ export const query = graphql`
           }
         }
         body {
+          ... on PrismicServiceDataBodyCustomerDrivenServices {
+            id
+            slice_type
+            primary {
+              heading {
+                text
+              }
+            }
+            items {
+              heading {
+                text
+              }
+              description1
+              icon {
+                gatsbyImageData(layout: FIXED, width: 36)
+              }
+            }
+          }
           ... on PrismicServiceDataBodyOtherServices {
             id
             slice_type

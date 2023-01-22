@@ -45,14 +45,14 @@ const BlogTemplate = (props)=>{
                     fluid={PostData.data.featuredimage.localFile.childImageSharp.fluid}
                 />
             </div>
-            <div className="position-absolute pl-2 pr-2 text-container">
+            <div className="blog-hero-content pl-2 pr-2 text-container">
                 <div className="d-flex justify-content-center mt-4 mb-5">
                 <Img
                     fluid={PostData.data.featuredimage.localFile.childImageSharp.fluid}
                 />
                     </div>
-                    {PostData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.title.html }} className="text-white text-center w-100 mt-20" ></div>}
-                    {PostData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.sub_title.html }} className="text-center w-100 mb-10 mt-10 text-white" ></div>}
+                    {PostData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.title.html }} className="text-center w-100" ></div>}
+                    {PostData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.sub_title.html }} className="w-100 mb-10 mt-10 text-white" ></div>}
                     
                         <Link to="/get-a-quote/" className="btn btn btn-blue-3 header-btn-2 pt-10 pb-10 pl-12 pr-12 font-size-3 rounded-5 text-uppercase w-auto border-0">
                           Order content online

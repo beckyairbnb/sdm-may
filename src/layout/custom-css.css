@@ -41,7 +41,7 @@ a.btn-dodger-blue-2{ background-color: #FF0088 !important; color:#ffffff !import
   display: flex;
   flex-direction: column;
 }
-.text-container{ padding-top:100px !important}
+
 /* .ban-img{ height: 600px; object-fit: cover;} */
 .ban-img{ object-fit: cover;}
 .blog-banner h1, .blog-banner h5{ color: #fff;}
@@ -63,9 +63,9 @@ a.btn-dodger-blue-2{ background-color: #FF0088 !important; color:#ffffff !import
 .svg-icon path,  .svg-icon polygon,  .svg-icon rect {	fill: #fff; }
 .svg-icon circle {stroke: #4691f6;stroke-width: 2;}
 
-.blog-banner h1, .blog-banner h2, .blog-banner h3{
+/* .blog-banner h1, .blog-banner h2, .blog-banner h3{
   color:#ffffff !important
-}
+} */
 
   .btn-blue-3:focus, .btn-blue-3.focus, .btn-blue-3:hover {border-color: #0544de;}
 
@@ -510,4 +510,23 @@ img.clogo{
 }
 .home-faq-sec .accordion__panel{
   padding:6px 20px !important
+}
+
+@media screen and (min-width:600px){
+  .blog-hero-content{
+    position: absolute;
+  }
+  .blog-hero-content h1{
+    color:#ffffff;
+  }
+  .text-container{ padding-top:20% !important}
+}
+@media screen and (max-width:601px){
+  .blog-hero-content{
+    position: relative;
+  }
+  .blog-hero-content h1{
+    color:#000000;
+  }
+  .text-container{ padding:10px !important}
 }

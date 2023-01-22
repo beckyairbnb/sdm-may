@@ -21,31 +21,15 @@ const Footer = ({ className, ...rest }) => {
                 <div className="col-md-3 col-xs-6">
                   <div className="mb-10 mb-lg-0">
                     <h4 className="font-size-6 font-weight-medium mb-10">
-                      Industries
+                    Services
                     </h4>
                     <ul className="list-unstyled">
-                      <li className="mb-6">
-                        <Link
-                          to="/writer-services/b2b-content-writing-services/"
-                          className="font-size-5 text-default-color"
-                        >
-                          B2B Content Writing Services
-                        </Link>
-                      </li>
                       <li className="mb-6">
                         <Link
                           to="/writer-services/accounting-writer/"
                           className="font-size-5 text-default-color"
                         >
-                          Bookkeeping & Accounting Writer Services
-                        </Link>
-                      </li>
-                      <li className="mb-6">
-                        <Link
-                          to="/writer-services/casino-content-writing-services/"
-                          className="font-size-5 text-default-color"
-                        >
-                          iGaming content writing services
+                          Accounting Writers
                         </Link>
                       </li>
                       <li className="mb-6">
@@ -53,15 +37,31 @@ const Footer = ({ className, ...rest }) => {
                           to="/writer-services/seo-content-writing/"
                           className="font-size-5 text-default-color"
                         >
-                          SEO Content Writing Services
+                          SEO Content Writing
                         </Link>
                       </li>
                       <li className="mb-6">
                         <Link
-                          to="/writer-services/"
+                          to="/writer-services/saas-content-writer/"
                           className="font-size-5 text-default-color"
                         >
-                          All Industries
+                          SaaS Content Writing
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/writer-services/fintech-content-writer/"
+                          className="font-size-5 text-default-color"
+                        >
+                          Fintech Content Writing
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/writer-services/casino-content-writing-services/"
+                          className="font-size-5 text-default-color"
+                        >
+                          Casino Content Services 
                         </Link>
                       </li>
                     </ul>
@@ -72,47 +72,39 @@ const Footer = ({ className, ...rest }) => {
                 <div className="col-md-3 col-xs-6">
                   <div className="mb-10 mb-lg-0">
                     <h4 className="font-size-6 font-weight-medium mb-10">
-                      Services
+                      &nbsp;
                     </h4>
                     <ul className="list-unstyled">
+                      <li className="mb-6">
+                        <Link
+                          to="/writer-services/cyber-security-writer/"
+                          className="font-size-5 text-default-color"
+                        >
+                          Cyber Security Writing
+                        </Link>
+                      </li>
+                      <li className="mb-6">
+                        <Link
+                          to="/writer-services/b2b-content-writing-services/"
+                          className="font-size-5 text-default-color"
+                        >
+                          B2B Content Writing
+                        </Link>
+                      </li>
                       <li className="mb-6">
                         <Link
                           to="/writer-services/human-resources-writer/"
                           className="font-size-5 text-default-color"
                         >
-                          Human Resources writers
+                          Human Resources Writers
                         </Link>
-                      </li>
-                      <li className="mb-6">
-                        <Link
-                          to="/writer-services/marketing-content-writer/"
-                          className="font-size-5 text-default-color"
-                        >
-                          Marketing Content Writer
-                        </Link>
-                      </li>
-                      <li className="mb-6">
-                        <Link
-                          to="/writer-services/ecommerce-content-marketing-writer//"
-                          className="font-size-5 text-default-color"
-                        >
-                          eCommerce Content Writer
-                        </Link>
-                      </li>
-                      <li className="mb-6">
-                        <Link
-                          to="/writer-services/blog-article-writing/"
-                          className="font-size-5 text-default-color"
-                        >
-                          Blog Article Writing Service
-                        </Link>
-                      </li>
+                      </li>                     
                       <li className="mb-6">
                         <Link
                           to="/writer-services/"
                           className="font-size-5 text-default-color"
                         >
-                          All Writing Services
+                          Content writing services
                         </Link>
                       </li>
                     </ul>
