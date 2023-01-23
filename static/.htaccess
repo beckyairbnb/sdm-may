@@ -1,7 +1,1 @@
 RewriteRule ^/content-writing-agency/?$ /writing-jobs/ [R=301,L]
-RewriteRule ^/blog/writing-tips/how-to-write-a-blog-post-outline/?$ /blog/content-marketing/how-to-write-a-blog-post-outline/ [R=301,L]
-RewriteRule ^/blog/writing-tips/seo-content-strategy/?$ /blog/think-tank/content-strategy-example/ [R=301,L]
-RewriteRule ^/blog/writing-tips/how-to-write-a-blog-post-outline/?$ /blog/content-marketing/how-to-write-a-blog-post-outline/ [R=301,L]
-RewriteRule ^/blog/writing-tips/search-intent-in-seo/?$ /blog/seo/search-intent-in-seo/ [R=301,L]
-RewriteRule ^/blog/writing-tips/seo-content-strategy/?$ /blog/think-tank/content-strategy-example/ [R=301,L]
-RewriteRule ^/blog/think-tank/best-font-for-blog/?$ /blog/content-marketing/best-font-for-blog/ [R=301,L]

@@ -113,17 +113,7 @@ module.exports = {
       options: {
         pixelId: "955347335241110",
       },
-    },
-    {
-      resolve: `gatsby-plugin-fastify`,
-      options: {
-        features: {
-          redirects: true,
-          reverseProxy: true,
-          imageCdn: false,
-        },
-      },
-    },
+    },    
     {
       resolve: `gatsby-plugin-htaccess-redirects`,
       options: {
