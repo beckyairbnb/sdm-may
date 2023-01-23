@@ -47,7 +47,8 @@ module.exports = {
           service: require('./custom_types/service.json'),
           career: require('./custom_types/career.json'),
           page: require('./custom_types/page.json'),
-          writingjobs: require('./custom_types/writingjobs.json'),          
+          writingjobs: require('./custom_types/writingjobs.json'),   
+          child_service: require('./custom_types/child_service.json'),        
           an_unused_type: {},
           htmlSerializer: ({ node, key, value }) => (
             type,

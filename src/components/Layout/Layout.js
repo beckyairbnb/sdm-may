@@ -152,8 +152,6 @@ const Layout = (props) => {
       }
     }
   ]
-  console.log('pageContext', pageContext)
-  console.log('pageContext', pageContext.layout)
   if (pageContext.layout === "noheader") {
     return (
       <>

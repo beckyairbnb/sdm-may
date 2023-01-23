@@ -213,6 +213,20 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      ChildServicePages : allPrismicChildService {
+        edges {
+          node {
+            uid
+            id
+            data {
+              parent {
+                id
+                uid
+              }
+            }
+          }
+        }
+      }
       MainServicePage: allPrismicService(filter: {uid: {eq: "writer-services"}}) {
         edges {
           node {
@@ -323,6 +337,20 @@ data.ServicePages.edges.forEach(({ node }) => {
         },
       })
     }    
+)
+data.ChildServicePages.edges.forEach(({ node }) => {
+  if(node?.data?.parent?.uid){
+    createPage({
+      path: `${node.data.parent.uid}/${node.uid}/`,
+      component: path.resolve("./src/templates/child-service-template.js"),
+      context: {
+        id:node.id,
+        parent: node.data.parent.id,
+        slug:node.uid
+      },
+    })
+  }  
+}    
 )
 data.ServicePages.edges.forEach(({ node }) => {   
   if(node.uid==='saas-content-writerr')
