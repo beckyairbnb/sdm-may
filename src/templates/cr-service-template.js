@@ -1,35 +1,20 @@
 import React, { useState } from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import Img from "gatsby-image"
-import Progress from "../sections/services/Progress";
 import PageWrapper from "../components/PageWrapper";
 import Image from "../components/ContentSlices/Image";
 import CTA from "../components/ContentSlices/CTA";
 import Heading from "../components/ContentSlices/Heading";
 import Text from "../components/ContentSlices/Text";
-import HappyClients from "../components/happyClients";
 import ServicesList from "../components/servicesList";
 import HeaderButton from "../components/Header/HeaderButton";
 
 import ModalPopup from "../components/ModalPopup";
-import Breadcrumbs from "../components/Breadcrumbs";
 
 import imgFavicon from "../assets/favicon.png";
-import phoneSec from "../assets/images/phone-sec.png";
 
-
-import logo1 from "../assets/images/clients/logo-1.jpg";
-import logo2 from "../assets/images/clients/logo-2.jpg";
-import logo3 from "../assets/images/clients/logo-3.jpg";
-import logo4 from "../assets/images/clients/logo-4.jpg";
-import logo5 from "../assets/images/clients/logo-5.jpg";
-
-import logo7 from "../assets/images/clients/logo-7.jpg";
-import logo9 from "../assets/images/clients/logo-9.jpg";
-import logo10 from "../assets/images/clients/logo-10.jpg";
-const ServiceTemplate = (props) => {
+const CrServiceTemplate = (props) => {
   const [modalShow, setModalShow] = useState(false);
   const { data } = props;
   const { PageData } = data;
@@ -151,7 +136,7 @@ export const Blogbanner = styled.div`
 `;
 
 export const query = graphql`
-  query getChildServiceData($id: String!) {
+  query getCrServiceData($id: String!) {
     site {
       siteMetadata {
         title
@@ -176,7 +161,7 @@ export const query = graphql`
         }
       }
     }
-    PageData: prismicChildService(id: { eq: $id }) {
+    PageData: prismicCopyrightingService(id: { eq: $id }) {
       id
       slug: uid
       data {
@@ -202,7 +187,7 @@ export const query = graphql`
           text
         }
         BoxedContent: body {
-          ... on PrismicChildServiceDataBodyBoxedContent {
+          ... on PrismicCopyrightingServiceDataBodyBoxedContent {
             id
             primary {
               boxed_content_heading {
@@ -234,7 +219,7 @@ export const query = graphql`
           }
         }
         body {
-          ... on PrismicChildServiceDataBodyCustomerDrivenServices {
+          ... on PrismicCopyrightingServiceDataBodyCustomerDrivenServices {
             id
             slice_type
             primary {
@@ -252,13 +237,13 @@ export const query = graphql`
               }
             }
           }
-          ... on PrismicChildServiceDataBodyOtherServices {
+          ... on PrismicCopyrightingServiceDataBodyOtherServices {
             id
             slice_type
             items {
               service {
                 document {
-                  ... on PrismicChildService {
+                  ... on PrismicCopyrightingService {
                     uid
                     data {
                       title {
@@ -271,7 +256,7 @@ export const query = graphql`
               }
             }
           }
-          ... on PrismicChildServiceDataBodyTextBlock {
+          ... on PrismicCopyrightingServiceDataBodyTextBlock {
             id
             slice_type
             primary {
@@ -284,7 +269,7 @@ export const query = graphql`
               }
             }
           }
-          ... on PrismicChildServiceDataBodyCtaBlock {
+          ... on PrismicCopyrightingServiceDataBodyCtaBlock {
             id
             slice_type
             primary {
@@ -292,7 +277,7 @@ export const query = graphql`
               button_link
             }
           }
-          ... on PrismicChildServiceDataBodyHeadingBlock {
+          ... on PrismicCopyrightingServiceDataBodyHeadingBlock {
             id
             slice_type
             primary {
@@ -302,7 +287,7 @@ export const query = graphql`
               }
             }
           }
-          ... on PrismicChildServiceDataBodyImageDescription {
+          ... on PrismicCopyrightingServiceDataBodyImageDescription {
             id
             slice_type
             primary {
@@ -325,4 +310,4 @@ export const query = graphql`
     }
   }
 `;
-export default ServiceTemplate;
+export default CrServiceTemplate;
