@@ -1,7 +1,6 @@
 /content-writing-agency/  https://strategically.co/ 301
-/writer-services/blog-article-writing/ /writer-services/blog-writing-services 301
+/writer-services/blog-article-writing/?$ /writer-services/blog-writing-services 301
 
-/content-writing-agency/?$ /writing-jobs/ 301
 /blog/think-tank/best-font-for-blog/?$ /blog/content-marketing/best-font-for-blog/ 301
 /blog/writing-tips/seo-content-strategy/?$ /blog/think-tank/content-strategy-example/ 301
 /blog/writing-tips/search-intent-in-seo/?$ /blog/seo/search-intent-in-seo/ 301
