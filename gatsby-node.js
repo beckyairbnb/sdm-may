@@ -248,9 +248,6 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 `)
 
-
-console.log('data data',data)
-
 const DEFAULT_BLOG_BASE_PATH = '/blog';
 const DEFAULT_BLOG_POSTS_PER_PAGE = 6;
 

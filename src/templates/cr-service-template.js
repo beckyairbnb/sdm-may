@@ -10,13 +10,11 @@ import Image from "../components/ContentSlices/Image";
 import CTA from "../components/ContentSlices/CTA";
 import Heading from "../components/ContentSlices/Heading";
 import Text from "../components/ContentSlices/Text";
-import ServicesList from "../components/servicesList";
 import HeaderButton from "../components/Header/HeaderButton";
 import Progress from "../sections/LP/Progress";
 import HappyClientsReviews from "../sections/LP/happyClientsReviews";
 import Content2 from "../sections/LP/Content2";
 
-import FaqAccordion from "../sections/pricing/FaqAccordion";
 import logo1 from "../assets/images/clients/logo-1.jpg";
 import logo2 from "../assets/images/clients/logo-2.jpg";
 import logo3 from "../assets/images/clients/logo-3.jpg";
@@ -33,8 +31,6 @@ import Author from "../assets/images/author2.png";
 import LpImg from "../assets/images/lp-img.jpg"
 
 
-
-import ModalPopup from "../components/ModalPopup";
 
 import imgFavicon from "../assets/favicon.png";
 
