@@ -529,4 +529,7 @@ img.clogo{
     color:#000000;
   }
   .text-container{ padding:10px !important}
+  .text-container .btn-blue-3{
+    display:none !important;
+  }
 }

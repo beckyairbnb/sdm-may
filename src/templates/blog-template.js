@@ -54,7 +54,7 @@ const BlogTemplate = (props)=>{
                     {PostData.data.title.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.title.html }} className="text-center w-100" ></div>}
                     {PostData.data.sub_title.html && <div dangerouslySetInnerHTML={{ __html: PostData.data.sub_title.html }} className="w-100 mb-10 mt-10 text-white" ></div>}
                     
-                        <Link to="/get-a-quote/" className="d-sm-none d-md-block btn btn btn-blue-3 header-btn-2 pt-10 pb-10 pl-12 pr-12 font-size-3 rounded-5 text-uppercase w-auto border-0">
+                        <Link to="/get-a-quote/" className="btn btn btn-blue-3 header-btn-2 pt-10 pb-10 pl-12 pr-12 font-size-3 rounded-5 text-uppercase w-auto border-0">
                           Order content online
                         </Link>
             </div>
