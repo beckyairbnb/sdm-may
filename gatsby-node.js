@@ -258,7 +258,6 @@ const basePath = DEFAULT_BLOG_BASE_PATH;
 //const blogs = [...result, ...difference];
 const blogs = data.Blogs.edges;
 
-console.log('blogsblogs',blogs)
 
 const postsPerPage = DEFAULT_BLOG_POSTS_PER_PAGE; 
 

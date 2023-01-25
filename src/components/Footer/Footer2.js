@@ -98,6 +98,14 @@ const Footer = ({ className, ...rest }) => {
                         >
                           Human Resources Writers
                         </Link>
+                      </li>  
+                      <li className="mb-6">
+                        <Link
+                          to="/writer-services/fintech-content-writer/"
+                          className="font-size-5 text-default-color"
+                        >
+                          Finance Content Writing
+                        </Link>
                       </li>                     
                       <li className="mb-6">
                         <Link
