@@ -23,7 +23,7 @@ const CategoryTemplate = (props) => {
     const seoTitle = 'Strategically Blog'
     const seoDescription = 'Strategically Blog'
 
-    if (!blogsData) return null;
+    //if (!blogsData) return null;
     return (
         <>
             <Helmet>
