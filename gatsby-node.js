@@ -14,7 +14,7 @@ exports.onCreatePage = ({ page, actions }) => {
       newurl: "/blog/content-marketing/best-font-for-blog/",
     },
     {
-      oldurl: "/blog/writing-tips/seo-content-strategy",
+      oldurl: "/blog/writing-tips/seo-content-strategy/",
       newurl: "/blog/think-tank/content-strategy-example/",
     },
     {
@@ -22,7 +22,11 @@ exports.onCreatePage = ({ page, actions }) => {
       newurl: "/blog/seo/search-intent-in-seo/",
     },
     {
-      oldurl: "/blog/writing-tips/how-to-write-a-blog-post-outline",
+      oldurl: "/blog/writing-tips/search-intent-in-seo/",
+      newurl: "/blog/seo/search-intent-in-seo/",
+    },
+    {
+      oldurl: "/blog/writing-tips/how-to-write-a-blog-post-outline/",
       newurl: "/blog/content-marketing/how-to-write-a-blog-post-outline/",
     },
     {
