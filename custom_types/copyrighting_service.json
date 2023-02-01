@@ -208,26 +208,6 @@
               }
             }
           },
-          "other_services": {
-            "type": "Slice",
-            "fieldset": "Other Services",
-            "description": "Other Services",
-            "icon": "ac_unit",
-            "display": "list",
-            "non-repeat": {},
-            "repeat": {
-              "service": {
-                "type": "Link",
-                "config": {
-                  "select": "document",
-                  "customtypes": [
-                    "service"
-                  ],
-                  "label": "Service"
-                }
-              }
-            }
-          },
           "customer_driven_services": {
             "type": "Slice",
             "fieldset": "Customer Driven Services",
@@ -263,6 +243,53 @@
                 "type": "Text",
                 "config": {
                   "label": "Description"
+                }
+              }
+            }
+          },
+          "services_we_provide": {
+            "type": "Slice",
+            "fieldset": "Services We Provide",
+            "description": "Services We Provide",
+            "icon": "apps",
+            "display": "grid",
+            "non-repeat": {
+              "section_heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2, heading3",
+                  "label": "Section Heading"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em, hyperlink",
+                  "label": "Description"
+                }
+              }
+            },
+            "repeat": {
+              "service_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Service Image"
+                }
+              },
+              "service_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading4, heading5",
+                  "label": "Service Title"
+                }
+              },
+              "service_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em, hyperlink",
+                  "label": "Service Description"
                 }
               }
             }

@@ -31,7 +31,7 @@ const Index = (props) => {
               </Link>
             </>
           ),
-          footerStyle: "style6",
+          footerStyle: "style2",
         }}
       >
         <Hero className="pt-11 pt-lg-34 pb-8 pb-lg-33" />
