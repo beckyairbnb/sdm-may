@@ -66,7 +66,7 @@ const ServiceTemplate = (props) => {
               <div className="row justify-content-center">
                 <div className="col-xl-8 col-lg-9 col-md-12 col-sm-12">
                   <div className="text-center pt-5 pb-lg-4 mb-lg-2">
-                    <h1>Award-winning copywriting agency</h1>
+                    <h1>{PageData?.data?.h1_title?.text}</h1>
                     <div>Our expert copywriters work with ABTasty, Baremetrics, VWO and more</div>
                     <Link
                       to="/get-a-quote/"
@@ -266,6 +266,9 @@ export const query = graphql`
               }
             }
           }
+        }
+        h1_title {
+            text
         }
         title {
           html

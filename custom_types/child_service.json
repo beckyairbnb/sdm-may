@@ -33,6 +33,13 @@
         "label": "SEO Meta Description"
       }
     },
+    "h1_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "H1 Title"
+      }
+    },
     "featuredimage": {
       "type": "Image",
       "config": {
@@ -256,6 +263,39 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+  },
+  "SEO": {
+    "body1": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {},
+        "choices": {
+          "seo_meta_data": {
+            "type": "Slice",
+            "fieldset": "SEO Meta Data",
+            "description": "SEO Meta Data",
+            "icon": "apps",
+            "display": "list",
+            "non-repeat": {
+              "seo_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Seo Title"
+                }
+              },
+              "seo_description": {
+                "type": "Text",
+                "config": {
+                  "label": "Seo Description"
+                }
+              }
+            },
+            "repeat": {}
           }
         }
       }
