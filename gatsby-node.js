@@ -19,15 +19,15 @@ exports.onCreatePage = ({ page, actions }) => {
     },
     {
       oldurl: "/blog/writing-tips/search-intent-in-seo",
-      newurl: "/blog/seo/search-intent-in-seo/",
+      newurl: "/blog/seo/search-intent-in-seo",
     },
     {
       oldurl: "/blog/writing-tips/search-intent-in-seo/",
-      newurl: "/blog/seo/search-intent-in-seo/",
+      newurl: "/blog/seo/search-intent-in-seo",
     },
     {
       oldurl: "/blog/writing-tips/how-to-write-a-blog-post-outline/",
-      newurl: "/blog/content-marketing/how-to-write-a-blog-post-outline/",
+      newurl: "/blog/content-marketing/how-to-write-a-blog-post-outline",
     },
     {
       oldurl: "/blog/writing-tips/seo-content-strategy",
@@ -35,7 +35,7 @@ exports.onCreatePage = ({ page, actions }) => {
     },
     {
       oldurl: "/blog/writing-tips/how-to-write-a-blog-post-outline",
-      newurl: "/blog/content-marketing/how-to-write-a-blog-post-outline/",
+      newurl: "/blog/content-marketing/how-to-write-a-blog-post-outline",
     },
     {
       oldurl: "/writer-services/blog-article-writing/",
