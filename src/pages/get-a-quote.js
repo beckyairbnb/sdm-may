@@ -25,7 +25,7 @@ const GetAQuote = (props) => {
         action: '/success',
         onSuccess: (response, context) => {
             console.log('Successfully sent form data to Netlify Server')
-            navigate(`/${redirectUrl}`);
+            navigate(`/success`);
         }
     })
 

@@ -15,10 +15,10 @@ const LeadgenPageMaster = () => {
 
     const netlify = useNetlifyForm({
         name: 'Get10TopicIdeas',
-        action: '/thank-you-topic-ideation/ ',
+        action: '/success',
         onSuccess: (response, context) => {
             console.log('Successfully sent form data to Netlify Server')
-            navigate("/thank-you-topic-ideation/")
+            navigate("/success/")
         }
     })
 

@@ -15,10 +15,10 @@ const LeadgenPageMaster = () => {
 
     const netlify = useNetlifyForm({
         name: 'GetFreeContentSamples',
-        action: '/thank-you-samples/ ',
+        action: '/success/',
         onSuccess: (response, context) => {
             console.log('Successfully sent form data to Netlify Server')
-            navigate("/thank-you-samples/")
+            navigate("/success/")
         }
     })
 

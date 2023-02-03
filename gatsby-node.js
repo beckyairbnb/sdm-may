@@ -557,6 +557,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         id: node.id,
         slug: node.uid,
+        layout: "headercenterfooter"
       },
     });
   });
@@ -567,6 +568,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         id: node.id,
         slug: node.uid,
+        layout: "headercenterfooter"
       },
     });
   });

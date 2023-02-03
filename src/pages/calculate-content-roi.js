@@ -15,10 +15,10 @@ const LeadgenPageMaster = () => {
 
     const netlify = useNetlifyForm({
         name: 'ROICalculate',
-        action: '/calculator/content-marketing-roi/ ',
+        action: '/success/',
         onSuccess: (response, context) => {
             console.log('Successfully sent form data to Netlify Server')
-            navigate("/calculator/content-marketing-roi/")
+            navigate("/success/")
         }
     })
 

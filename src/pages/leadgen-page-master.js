@@ -18,7 +18,7 @@ const LeadgenPageMaster = () => {
         action: '/success',
         onSuccess: (response, context) => {
             console.log('Successfully sent form data to Netlify Server')
-            navigate("/thank-you-samples/")
+            navigate("/success")
         }
     })
 
