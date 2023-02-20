@@ -54,6 +54,7 @@ const GetAQuote = (props) => {
                                 name="firstName"
                                 placeholder="First Name"
                                 id="firstName"
+                                style={{height:"48px"}}
                                 {...register("firstName", { required: true })}
                                 className=
                                 {
@@ -67,6 +68,7 @@ const GetAQuote = (props) => {
                                 name="lastName"
                                 placeholder="Last Name"
                                 id="lastName"
+                                style={{height:"48px"}}
                                 {...register("lastName", { required: true })}
                                 className=
                                 {
@@ -81,10 +83,25 @@ const GetAQuote = (props) => {
                                 name="email"
                                 placeholder="Email Address"
                                 id="email"
+                                style={{height:"48px"}}
                                 {...register("email", { required: 'Email is required' })}
                                 className=
                                 {
                                     `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.email && 'error'}`
+                                }
+                            />
+                        </div>
+                        <div className="form-group mb-2 position-relative">
+                            <input
+                                type="company"
+                                name="companyname"
+                                placeholder="Company Name"
+                                id="company"
+                                style={{height:"48px"}}
+                                {...register("company", { required: 'company is required' })}
+                                className=
+                                {
+                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.company && 'error'}`
                                 }
                             />
                         </div>
@@ -95,6 +112,7 @@ const GetAQuote = (props) => {
                                 name="phone"
                                 placeholder="Phone Number"
                                 id="phone"
+                                style={{height:"48px"}}
                                 {...register("phone", { required: true })}
                                 className=
                                 {
