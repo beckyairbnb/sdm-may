@@ -69,6 +69,9 @@ const Navigation = () => {
             <Link to="/get-a-quote/" onClick={gContext.toggleOffCanvas} className="btn btn-dodger-blue-2 header-btn rounded-5 d-lg-none d-inline-flex mt-10 " href={"/get-a-quote/"}>
             Get a quote
               </Link>
+              <div className="w-100 mt-5 d-lg-none d-inline-flex">
+              <a class="btn btn header-btn2 rounded-5 d-lg-none d-inline-flex" target="_blank" rel="noopener noreferrer" href="https://calendly.com/becky-strategically/intro-meeting">Book a Demo</a>
+              </div>
             </Container>
         </div>
     );

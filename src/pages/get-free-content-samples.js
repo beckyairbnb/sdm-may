@@ -37,18 +37,31 @@ const LeadgenPageMaster = () => {
                         <div className="form-group position-relative mb-4">
                             <input
                                 type="text"
-                                name="fullName"
-                                placeholder="Full Name"
-                                id="fullName"
-                                {...register("fullName", { required: true })}
-                                style={{height:"60px"}}
+                                name="firstName"
+                                placeholder="First Name"
+                                id="firstName"
+                                style={{height:"48px"}}
+                                {...register("firstName", { required: true })}
                                 className=
                                 {
-                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.fullName && 'error'}`
+                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.firstName && 'error'}`
                                 }
                             />
                         </div>
-                        {/* Email */}
+                        <div className="form-group position-relative mb-4">
+                            <input
+                                type="text"
+                                name="lastName"
+                                placeholder="Last Name"
+                                id="lastName"
+                                style={{height:"48px"}}
+                                {...register("lastName", { required: true })}
+                                className=
+                                {
+                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.lastName && 'error'}`
+                                }
+                            />
+                        </div>
                         <div className="form-group mb-2 position-relative">
                             <input
                                 type="email"
@@ -56,7 +69,7 @@ const LeadgenPageMaster = () => {
                                 placeholder="Email Address"
                                 id="email"
                                 {...register("email", { required: 'Email is required' })}
-                                style={{height:"60px"}}
+                                style={{height:"48px"}}
                                 className=
                                 {
                                     `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.email && 'error'}`
@@ -71,7 +84,7 @@ const LeadgenPageMaster = () => {
                                 placeholder="Phone Number"
                                 id="phone"
                                 {...register("phone", { required: true })}
-                                style={{height:"60px"}}
+                                style={{height:"48px"}}
                                 className=
                                 {
                                     `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.phone && 'error'}`
@@ -82,7 +95,7 @@ const LeadgenPageMaster = () => {
                         <select name="contenttype" 
                             id="contenttype"
                             {...register("contenttype", { required: true })}
-                            style={{height:"60px"}}
+                            style={{height:"48px"}}
                             
                             className=
                                 {
@@ -105,7 +118,7 @@ const LeadgenPageMaster = () => {
                                 placeholder="Enter your industry"
                                 id="industry"
                                 {...register("industry", { required: true })}
-                                style={{height:"60px"}}
+                                style={{height:"48px"}}
                                 className=
                                 {
                                     `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.industry && 'error'}`
@@ -114,7 +127,8 @@ const LeadgenPageMaster = () => {
                         </div>
 
                         <div className="button">
-                            <input type="submit" value="Continue" className="btn btn-blue-3 w-100 rounded-4 btn-h" style={{height:"60px"}} />
+                        <p className="snote">Looking to join our team? Email <a href="mailto:support@strategically.co">support@strategically.co</a> instead</p>
+                            <input type="submit" value="Continue" className="btn btn-blue-3 w-100 rounded-4 btn-h" style={{height:"48px"}} />
                         </div>
                     </NetlifyFormComponent>
                 </NetlifyFormProvider>

@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, {useState, useEffect} from "react"
 import { navigate } from "gatsby"
 import { Helmet } from "react-helmet";
 import { useForm } from "react-hook-form";
@@ -45,13 +44,26 @@ const GetAQuote = (props) => {
                         <div className="form-group position-relative mb-4">
                             <input
                                 type="text"
-                                name="fullName"
-                                placeholder="Full Name"
-                                id="fullName"
-                                {...register("fullName", { required: true })}
+                                name="firstName"
+                                placeholder="First Name"
+                                id="firstName"
+                                {...register("firstName", { required: true })}
                                 className=
                                 {
-                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.fullName && 'error'}`
+                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.firstName && 'error'}`
+                                }
+                            />
+                        </div>
+                        <div className="form-group position-relative mb-4">
+                            <input
+                                type="text"
+                                name="lastName"
+                                placeholder="Last Name"
+                                id="lastName"
+                                {...register("lastName", { required: true })}
+                                className=
+                                {
+                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.lastName && 'error'}`
                                 }
                             />
                         </div>
@@ -84,6 +96,7 @@ const GetAQuote = (props) => {
                             />
                         </div>
                         <div className="button">
+                            <p className="snote">Looking to join our team? Email <a href="mailto:support@strategically.co">support@strategically.co</a> instead</p>
                             <input type="submit" value="Get a quote" className="btn btn-blue-3 w-100 rounded-4 btn-h" />
                         </div>
                     </NetlifyFormComponent>

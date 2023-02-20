@@ -62,6 +62,7 @@ const Header = () => {
             {gContext.theme.headerButton && (
               <div className="header-btn ml-auto ml-lg-0 d-none d-xs-block">
                 {gContext.theme.headerButton}
+                <a class="btn btn header-btn2 rounded-5" target="_blank" rel="noopener noreferrer" href="https://calendly.com/becky-strategically/intro-meeting">Book a Demo</a>
               </div>
             )}
 
