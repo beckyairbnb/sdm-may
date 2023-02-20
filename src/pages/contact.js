@@ -53,21 +53,35 @@ const Contact = () => {
       >
         <NetlifyFormProvider {...netlify}>
           <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
-            <div className="form-group position-relative mb-4">
+          <div className="form-group position-relative mb-4">
               <input
-                type="text"
-                name="fullName"
-                placeholder="Full Name"
-                id="fullName"
-                {...register("fullName", { required: true })}
-                style={{height:"50px"}}
-                className=
-                {
-                  `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.fullName && 'error'}`
-                }
+                  type="text"
+                  name="firstName"
+                  placeholder="First Name"
+                  id="firstName"
+                  style={{height:"42px"}}
+                  {...register("firstName", { required: true })}
+                  className=
+                  {
+                      `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.firstName && 'error'}`
+                  }
               />
-            </div>
-            {/* Email */}
+          </div>
+          <div className="form-group position-relative mb-4">
+              <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Last Name"
+                  id="lastName"
+                  style={{height:"42px"}}
+                  {...register("lastName", { required: true })}
+                  className=
+                  {
+                      `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.lastName && 'error'}`
+                  }
+              />
+          </div>
+           
             <div className="form-group mb-6 position-relative">
               <input
                 type="email"
@@ -75,7 +89,7 @@ const Contact = () => {
                 placeholder="Email Address"
                 id="email"
                 {...register("email", { required: 'Email is required' })}
-                style={{height:"50px"}}
+                style={{height:"42px"}}
                 className=
                 {
                   `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.email && 'error'}`
@@ -90,7 +104,7 @@ const Contact = () => {
                 placeholder="Phone Number"
                 id="phone"
                 {...register("phone", { required: true })}
-                style={{height:"50px"}}
+                style={{height:"42px"}}
                 className=
                 {
                   `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.phone && 'error'}`
@@ -103,7 +117,7 @@ const Contact = () => {
                 control={control}
                 defaultValue=""
                 rules={registerOptions.role}
-                style={{height:"50px"}}
+                style={{height:"42px"}}
                 render={({ field }) => (
                   <Select options={selectOptions} {...field} label="Text field" className=
                   {
