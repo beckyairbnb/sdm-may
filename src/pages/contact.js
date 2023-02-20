@@ -53,7 +53,7 @@ const Contact = () => {
       >
         <NetlifyFormProvider {...netlify}>
           <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
-          <div className="form-group position-relative mb-4">
+          <div className="form-group position-relative mb-3">
               <input
                   type="text"
                   name="firstName"
@@ -67,7 +67,7 @@ const Contact = () => {
                   }
               />
           </div>
-          <div className="form-group position-relative mb-4">
+          <div className="form-group position-relative mb-3">
               <input
                   type="text"
                   name="lastName"
@@ -82,7 +82,7 @@ const Contact = () => {
               />
           </div>
            
-            <div className="form-group mb-6 position-relative">
+            <div className="form-group mb-3 position-relative">
               <input
                 type="email"
                 name="email"
@@ -96,8 +96,21 @@ const Contact = () => {
                 }
               />
             </div>
-
-            <div className="form-group position-relative mb-4">
+            <div className="form-group mb-3 position-relative">
+                            <input
+                                type="company"
+                                name="companyname"
+                                placeholder="Company Name"
+                                id="company"
+                                style={{height:"40px"}}
+                                {...register("company", { required: 'company is required' })}
+                                className=
+                                {
+                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.company && 'error'}`
+                                }
+                            />
+                        </div>
+            <div className="form-group position-relative mb-3">
               <input
                 type="text"
                 name="phone"
@@ -111,7 +124,7 @@ const Contact = () => {
                 }
               />
             </div>
-            <div>
+            <div className="form-group position-relative mb-3">
               <Controller
                 name="role"
                 control={control}
@@ -128,7 +141,7 @@ const Contact = () => {
             </div>
             <Honeypot />
 
-            <div>
+            <div className="form-group position-relative mb-3">
               <textarea
                 type="text"
                 name='details'
