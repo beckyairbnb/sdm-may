@@ -48,7 +48,7 @@ const LeadgenPageMaster = () => {
                                 name="firstName"
                                 placeholder="First Name"
                                 id="firstName"
-                                style={{height:"50px"}}
+                                style={{height:"42px"}}
                                 {...register("firstName", { required: true })}
                                 className=
                                 {
@@ -62,7 +62,7 @@ const LeadgenPageMaster = () => {
                                 name="lastName"
                                 placeholder="Last Name"
                                 id="lastName"
-                                style={{height:"50px"}}
+                                style={{height:"42px"}}
                                 {...register("lastName", { required: true })}
                                 className=
                                 {
@@ -77,11 +77,25 @@ const LeadgenPageMaster = () => {
                                 name="email"
                                 placeholder="Email Address"
                                 id="email"
-                                style={{height:"50px"}}
+                                style={{height:"42px"}}
                                 {...register("email", { required: 'Email is required' })}
                                 className=
                                 {
                                     `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.email && 'error'}`
+                                }
+                            />
+                        </div>
+                        <div className="form-group mb-2 position-relative">
+                            <input
+                                type="company"
+                                name="companyname"
+                                placeholder="Company Name"
+                                id="company"
+                                style={{height:"42px"}}
+                                {...register("company", { required: 'company is required' })}
+                                className=
+                                {
+                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.company && 'error'}`
                                 }
                             />
                         </div>
@@ -92,7 +106,7 @@ const LeadgenPageMaster = () => {
                                 name="phone"
                                 placeholder="Phone Number"
                                 id="phone"
-                                style={{height:"50px"}}
+                                style={{height:"42px"}}
                                 {...register("phone", { required: true })}
                                 className=
                                 {
