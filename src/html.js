@@ -7,12 +7,12 @@ export default function HTML(props) {
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <script type="text/javascript" src="https://d1b3llzbo1rqxo.cloudfront.net/attributer.js"></script> 
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        {props.headComponents}
-        <script type="text/javascript" src="https://d1b3llzbo1rqxo.cloudfront.net/attributer.js"></script> 
+        />        
+        {props.headComponents}        
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
