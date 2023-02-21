@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
-import { Crisp } from "crisp-sdk-web";
+// import { Crisp } from "crisp-sdk-web";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import {CookieNotice} from "gatsby-cookie-notice";
+// import {CookieNotice} from "gatsby-cookie-notice";
 
 import CookieConsent, { Cookies } from "react-cookie-consent";
 import { Link } from "gatsby"
