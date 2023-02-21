@@ -20,7 +20,7 @@ const GetAQuote = (props) => {
     console.log('props.location.state.fromFeed',redirectUrl)
 
     const netlify = useNetlifyForm({
-        name: 'GetAQuote',
+        name: 'GetAQuoteNew',
         action: '/success',
         onSuccess: (response, context) => {
             console.log('Successfully sent form data to Netlify Server')
