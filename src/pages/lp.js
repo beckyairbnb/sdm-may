@@ -32,13 +32,9 @@ const LpIndex = (props) => {
   
     const Faqitems = PriceData.data.body.filter((item) => {
       return item.slice_type === "faq_block";
-    });
-  
-    console.log('Faqitems',Faqitems)
+    }); 
   
     const fitems = Faqitems[0].items
-
-    console.log('fitems',fitems)
     
     return (
         <div className="lp_page">

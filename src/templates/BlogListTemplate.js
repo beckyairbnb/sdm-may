@@ -41,25 +41,9 @@ const BlogListTemplate = (props) => {
     });
   });
 
-  // const result = blogsData.filter((item) => {
-  //   return HighlightBlogs.data.body[0].items.find((hitem) => {
-  //     return item.node.id === hitem.blog.node.id
-  //   })
-  // })
-
-  // const difference = blogsData.filter((object1) => {
-  //   return !result.some((object2) => {
-  //     return object1.node.id === object2.node.id;
-  //   });
-  // });
-
-  //console.log('result', result)
-  //console.log('difference', difference)
 
   const blogs = [...result, ...difference]
   blogs.sort((a, b) => (a.node.order > b.node.order) ? 1 : -1)
-
-  console.log('finalBlogPosts', blogs)
 
   const seoTitle = 'Strategically Blog'
   const seoDescription = 'Strategically Blog'

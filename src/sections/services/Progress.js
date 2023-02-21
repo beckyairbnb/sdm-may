@@ -5,7 +5,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Progress = ({ className, data }) => {
   const { items, primary } = data
-  console.log('primaryprimary',items)
   const { imgA1, imgA2, imgS, imgE, imgR } = useStaticQuery(
     graphql`
       query {

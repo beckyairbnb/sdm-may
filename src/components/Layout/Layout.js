@@ -80,9 +80,9 @@ const Layout = (props) => {
   useEffect(() => {
     AOS.init({ once: true });
     setVisibleLoader(false);
-    Crisp.configure('baad053f-4aa3-4ba7-81c2-540fe4ea2127', {
-      autoload: true
-    });
+    // Crisp.configure('baad053f-4aa3-4ba7-81c2-540fe4ea2127', {
+    //   autoload: true
+    // });
     let segment = "MAIN SITE"
     if(props.path==='/lp/')
     {
@@ -92,7 +92,7 @@ const Layout = (props) => {
     {
       segment = "LP NEW"
     }
-    Crisp.session.setSegments([segment])
+    //Crisp.session.setSegments([segment])
   }, []);
 
   // Navbar style based on scroll
