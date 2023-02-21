@@ -58,6 +58,7 @@ const JobTemplate = (props) => {
         <title>{seoTitle}</title>
         <meta name="description" content={seoDescription} />
         <link rel="icon" type="image/png" href={imgFavicon} />
+        <meta name="robots" content="noindex"></meta>
       </Helmet>
       <PageWrapper
         themeConfig={{

@@ -15,7 +15,7 @@ const Contact = () => {
   const { register, handleSubmit, handleChange, control, formState: { errors } } = useForm();
 //
   const netlify = useNetlifyForm({
-    name: 'Contact Us',
+    name: 'Contact Us New',
     action: '/success',
     onSuccess: (response, context) => {
       console.log('Successfully sent form data to Netlify Server')

@@ -14,7 +14,7 @@ const LeadgenPageMaster = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const netlify = useNetlifyForm({
-        name: 'GetFreeContentSamples',
+        name: 'GetFreeContentSamplesNew',
         action: '/success/',
         onSuccess: (response, context) => {
             console.log('Successfully sent form data to Netlify Server')
