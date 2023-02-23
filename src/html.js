@@ -6,11 +6,13 @@ export default function HTML(props) {
     <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />        
+        {/* <meta httpEquiv="x-ua-compatible" content="ie=edge" />   */}
+        <meta httpEquiv="Content-type" content="text/html; charset=UTF-8"/>         
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />                
+        />         
+        <script type="text/javascript" src="https://d1b3llzbo1rqxo.cloudfront.net/attributer.js"></script>
         {props.headComponents}        
       </head>
       <body {...props.bodyAttributes}>
@@ -32,7 +34,7 @@ export default function HTML(props) {
         `}
         </script>          
         <noscript><img height="1" width="1" style={{display:"none"}} alt="" src="https://px.ads.linkedin.com/collect/?pid=4460818&fmt=gif" /></noscript>                
-        <script type="text/javascript" src="https://d1b3llzbo1rqxo.cloudfront.net/attributer.js"></script>
+        
       </body>
       {/* <script type="text/javascript" src="https://d1b3llzbo1rqxo.cloudfront.net/attributer.js"></script>  */}
     </html>

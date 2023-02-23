@@ -39,22 +39,22 @@ const GetAQuote = (props) => {
                 title="Get your quote"
                 description="We’ve written more than 8 million words, for 300+ customers."
             >   
-             <input type="hidden" id="[attributer-channel]" name="[attributer-channel]" value="[channel]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown1]" name="[attributer-channeldrilldown1]" value="[channeldrilldown1]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown2]" name="[attributer-channeldrilldown2]" value="[channeldrilldown2]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown3]" name="[attributer-channeldrilldown3]" value="[channeldrilldown3]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown4]" name="[attributer-channeldrilldown4]" value="[channeldrilldown4]"/>
-                        <input type="hidden" id="[attributer-landingpage]" name="[attributer-landingpage]" value="[landingpage]"/>
-                        <input type="hidden" id="[attributer-landingpagegroup]" name="[attributer-landingpagegroup]" value="[landingpagegroup]"/>
                 <NetlifyFormProvider {...netlify}>
                     <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
-                        <input type="hidden" id="[attributer-channel]" name="[attributer-channel]" value="[channel]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown1]" name="[attributer-channeldrilldown1]" value="[channeldrilldown1]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown2]" name="[attributer-channeldrilldown2]" value="[channeldrilldown2]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown3]" name="[attributer-channeldrilldown3]" value="[channeldrilldown3]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown4]" name="[attributer-channeldrilldown4]" value="[channeldrilldown4]"/>
-                        <input type="hidden" id="[attributer-landingpage]" name="[attributer-landingpage]" value="[landingpage]"/>
-                        <input type="hidden" id="[attributer-landingpagegroup]" name="[attributer-landingpagegroup]" value="[landingpagegroup]"/>
+                    Channel:<input id="00N8d00000QN3Qa" maxlength="255" name="00N8d00000QN3Qa" size="20" type="text" value="[channel]" />
+                                        <input id="00N8d00000QN3Qf" maxlength="255" name="00N8d00000QN3Qf" size="20" type="text" value="[channeldrilldown1]" />
+                                        <input id="00N8d00000QN3Qk" maxlength="255" name="00N8d00000QN3Qk" size="20" type="text" value="[channeldrilldown2]" />
+                                        <input id="00N8d00000QN3Qp" maxlength="255" name="00N8d00000QN3Qp" size="20" type="text" value="[channeldrilldown3]"/>
+                                        <input id="00N8d00000QN3Qu" maxlength="255" name="00N8d00000QN3Qu" size="20" type="text" value="[channeldrilldown4]" />
+                                        <input id="00N8d00000QN3Qz" maxlength="255" name="00N8d00000QN3Qz" size="20" type="text" value="[landingpage]" />
+                                        <input id="00N8d00000QN4dw" maxlength="255" name="00N8d00000QN4dw" size="20" type="text" value="[landingpagegroup]" />
+                        {/* <input type="text" id="[attributer-channel]" name="[attributer-channel]" value="[channel]"/>
+                        <input type="text" id="[attributer-channeldrilldown1]" name="[attributer-channeldrilldown1]" value="[channeldrilldown1]"/>
+                        <input type="text" id="[attributer-channeldrilldown2]" name="[attributer-channeldrilldown2]" value="[channeldrilldown2]"/>
+                        <input type="text" id="[attributer-channeldrilldown3]" name="[attributer-channeldrilldown3]" value="[channeldrilldown3]"/>
+                        <input type="text" id="[attributer-channeldrilldown4]" name="[attributer-channeldrilldown4]" value="[channeldrilldown4]"/>
+                        <input type="text" id="[attributer-landingpage]" name="[attributer-landingpage]" value="[landingpage]"/>
+                        <input type="text" id="[attributer-landingpagegroup]" name="[attributer-landingpagegroup]" value="[landingpagegroup]"/> */}
                         <div className="form-group position-relative mb-4">
                             <input
                                 type="text"
