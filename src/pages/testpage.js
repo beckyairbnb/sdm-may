@@ -33,13 +33,13 @@ const TestPage = () => {
                                         <label for="last_name">Last Name</label><input id="last_name" maxlength="80" name="last_name" size="20" type="text" />
                                         <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" />
                                         <label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" size="20" type="text" />
-                                        <input type="hidden" name="00N8d00000QN3Qa" id="00N8d00000QN3Qa" value="[channel]">
-                                        <input type="hidden" name="00N8d00000QN3Qf" id="00N8d00000QN3Qf" value="[channeldrilldown1]">
-                                        <input type="hidden" name="00N8d00000QN3Qk" id="00N8d00000QN3Qk" value="[channeldrilldown2]">
-                                        <input type="hidden" name="00N8d00000QN3Qp" id="00N8d00000QN3Qp" value="[channeldrilldown3]">
-                                        <input type="hidden" name="00N8d00000QN4dw" id="00N8d00000QN4dw" value="[channeldrilldown4]">
-                                        <input type="hidden" name="00N8d00000QN3Qu" id="00N8d00000QN3Qu" value="[landingpage]">
-                                        <input type="hidden" name="00N8d00000QN3Qz" id="00N8d00000QN3Qz" value="[landingpagegroup]">
+                                        <input type="hidden" name="00N8d00000QN3Qa" id="00N8d00000QN3Qa" value="[channel]"/>
+                                        <input type="hidden" name="00N8d00000QN3Qf" id="00N8d00000QN3Qf" value="[channeldrilldown1]"/>
+                                        <input type="hidden" name="00N8d00000QN3Qk" id="00N8d00000QN3Qk" value="[channeldrilldown2]"/>
+                                        <input type="hidden" name="00N8d00000QN3Qp" id="00N8d00000QN3Qp" value="[channeldrilldown3]"/>
+                                        <input type="hidden" name="00N8d00000QN4dw" id="00N8d00000QN4dw" value="[channeldrilldown4]"/>
+                                        <input type="hidden" name="00N8d00000QN3Qu" id="00N8d00000QN3Qu" value="[landingpage]"/>
+                                        <input type="hidden" name="00N8d00000QN3Qz" id="00N8d00000QN3Qz" value="[landingpagegroup]"/>
                                         <input type="submit" value="Get a quote" className="btn btn-blue-3 w-100 rounded-4 btn-h" />
                                 </form>
 
