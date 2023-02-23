@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react"
-import { Script, ScriptStrategy } from "gatsby";
-import { navigate } from "gatsby"
+import { navigate } from "gatsby";
 import { Helmet } from "react-helmet";
 import { useForm } from "react-hook-form";
 import {
@@ -127,10 +126,6 @@ const GetAQuote = (props) => {
                         </div>
                     </NetlifyFormComponent>
                 </NetlifyFormProvider>
-                <Script
-                    src="https://d1b3llzbo1rqxo.cloudfront.net/attributer.js"
-                    forward={[`marked.parse`]}
-                />
             </LeadgenLayout>
         </>
     )
