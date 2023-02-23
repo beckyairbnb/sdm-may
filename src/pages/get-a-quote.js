@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
 import { navigate } from "gatsby";
 import { Helmet } from "react-helmet";
 import { useForm } from "react-hook-form";
@@ -17,7 +17,7 @@ const GetAQuote = (props) => {
 
     const redirectUrl = service ? `thank-you-${service}` : 'success'
 
-    console.log('props.location.state.fromFeed',redirectUrl)
+    console.log('props.location.state.fromFeed', redirectUrl)
 
     const netlify = useNetlifyForm({
         name: 'GetAQuoteNew',
@@ -38,16 +38,16 @@ const GetAQuote = (props) => {
             <LeadgenLayout
                 title="Get your quote"
                 description="We’ve written more than 8 million words, for 300+ customers."
-            >   
+            >
                 <NetlifyFormProvider {...netlify}>
                     <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
-                    Channel:<input id="00N8d00000QN3Qa" maxlength="255" name="00N8d00000QN3Qa" size="20" type="text" value="[channel]" />
-                                        <input id="00N8d00000QN3Qf" maxlength="255" name="00N8d00000QN3Qf" size="20" type="text" value="[channeldrilldown1]" />
-                                        <input id="00N8d00000QN3Qk" maxlength="255" name="00N8d00000QN3Qk" size="20" type="text" value="[channeldrilldown2]" />
-                                        <input id="00N8d00000QN3Qp" maxlength="255" name="00N8d00000QN3Qp" size="20" type="text" value="[channeldrilldown3]"/>
-                                        <input id="00N8d00000QN3Qu" maxlength="255" name="00N8d00000QN3Qu" size="20" type="text" value="[channeldrilldown4]" />
-                                        <input id="00N8d00000QN3Qz" maxlength="255" name="00N8d00000QN3Qz" size="20" type="text" value="[landingpage]" />
-                                        <input id="00N8d00000QN4dw" maxlength="255" name="00N8d00000QN4dw" size="20" type="text" value="[landingpagegroup]" />
+                        <input id="00N8d00000QN3Qa" maxlength="255" name="00N8d00000QN3Qa" size="20" type="text" value="[channel]" />
+                        <input id="00N8d00000QN3Qf" maxlength="255" name="00N8d00000QN3Qf" size="20" type="text" value="[channeldrilldown1]" />
+                        <input id="00N8d00000QN3Qk" maxlength="255" name="00N8d00000QN3Qk" size="20" type="text" value="[channeldrilldown2]" />
+                        <input id="00N8d00000QN3Qp" maxlength="255" name="00N8d00000QN3Qp" size="20" type="text" value="[channeldrilldown3]" />
+                        <input id="00N8d00000QN3Qu" maxlength="255" name="00N8d00000QN3Qu" size="20" type="text" value="[channeldrilldown4]" />
+                        <input id="00N8d00000QN3Qz" maxlength="255" name="00N8d00000QN3Qz" size="20" type="text" value="[landingpage]" />
+                        <input id="00N8d00000QN4dw" maxlength="255" name="00N8d00000QN4dw" size="20" type="text" value="[landingpagegroup]" />
                         {/* <input type="text" id="[attributer-channel]" name="[attributer-channel]" value="[channel]"/>
                         <input type="text" id="[attributer-channeldrilldown1]" name="[attributer-channeldrilldown1]" value="[channeldrilldown1]"/>
                         <input type="text" id="[attributer-channeldrilldown2]" name="[attributer-channeldrilldown2]" value="[channeldrilldown2]"/>
@@ -61,7 +61,7 @@ const GetAQuote = (props) => {
                                 name="firstName"
                                 placeholder="First Name"
                                 id="firstName"
-                                style={{height:"48px"}}
+                                style={{ height: "48px" }}
                                 {...register("firstName", { required: true })}
                                 className=
                                 {
@@ -75,7 +75,7 @@ const GetAQuote = (props) => {
                                 name="lastName"
                                 placeholder="Last Name"
                                 id="lastName"
-                                style={{height:"48px"}}
+                                style={{ height: "48px" }}
                                 {...register("lastName", { required: true })}
                                 className=
                                 {
@@ -90,7 +90,7 @@ const GetAQuote = (props) => {
                                 name="email"
                                 placeholder="Email Address"
                                 id="email"
-                                style={{height:"48px"}}
+                                style={{ height: "48px" }}
                                 {...register("email", { required: 'Email is required' })}
                                 className=
                                 {
@@ -104,7 +104,7 @@ const GetAQuote = (props) => {
                                 name="companyname"
                                 placeholder="Company Name"
                                 id="company"
-                                style={{height:"48px"}}
+                                style={{ height: "48px" }}
                                 {...register("company", { required: 'company is required' })}
                                 className=
                                 {
@@ -119,7 +119,7 @@ const GetAQuote = (props) => {
                                 name="phone"
                                 placeholder="Phone Number"
                                 id="phone"
-                                style={{height:"48px"}}
+                                style={{ height: "48px" }}
                                 {...register("phone", { required: true })}
                                 className=
                                 {
