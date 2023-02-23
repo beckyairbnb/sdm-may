@@ -40,6 +40,7 @@ const TestPage = () => {
                                         Landing Page:<input id="00N8d00000QN3Qu" maxlength="255" name="00N8d00000QN3Qu" size="20" type="text" value="[channeldrilldown4]" />
                                         Landing Page Group:<input id="00N8d00000QN3Qz" maxlength="255" name="00N8d00000QN3Qz" size="20" type="text" value="[landingpage]" />
                                         Channel Drilldown 4:<input id="00N8d00000QN4dw" maxlength="255" name="00N8d00000QN4dw" size="20" type="text" value="[landingpagegroup]" />
+                                        <input type="submit" value="Get a quote" className="btn btn-blue-3 w-100 rounded-4 btn-h" />
                                         {/* <input type="hidden" id="[attributer-channel]" name="[attributer-channel]" value="[channel]"/>
                         <input type="hidden" id="[attributer-channeldrilldown1]" name="[attributer-channeldrilldown1]" value="[channeldrilldown1]"/>
                         <input type="hidden" id="[attributer-channeldrilldown2]" name="[attributer-channeldrilldown2]" value="[channeldrilldown2]"/>
