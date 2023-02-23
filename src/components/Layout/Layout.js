@@ -828,9 +828,10 @@ const Layout = (props) => {
             woopra.track();
             `}
           </script>
-          <script type="text/javascript" src="https://d1b3llzbo1rqxo.cloudfront.net/attributer.js"></script>
+          
         </Helmet>  
         {children}
+        <script type="text/javascript" src="https://d1b3llzbo1rqxo.cloudfront.net/attributer.js"></script>
       </>
     );
   }
