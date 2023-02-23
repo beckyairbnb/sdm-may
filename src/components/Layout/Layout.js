@@ -831,9 +831,6 @@ const Layout = (props) => {
           
         </Helmet>  
         {children}
-        <script>
-        document.FlareTrk.repop()
-        </script>
       </>
     );
   }
