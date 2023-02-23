@@ -831,7 +831,9 @@ const Layout = (props) => {
           
         </Helmet>  
         {children}
-        <script type="text/javascript" src="https://d1b3llzbo1rqxo.cloudfront.net/attributer.js"></script>
+        <script>
+        document.FlareTrk.repop()
+        </script>
       </>
     );
   }
