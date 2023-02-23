@@ -33,21 +33,14 @@ const TestPage = () => {
                                         <label for="last_name">Last Name</label><input id="last_name" maxlength="80" name="last_name" size="20" type="text" />
                                         <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" />
                                         <label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" size="20" type="text" />
-                                        Channel:<input id="00N8d00000QN3Qa" maxlength="255" name="00N8d00000QN3Qa" size="20" type="text" value="[channel]" />
-                                        Channel Drilldown 1:<input id="00N8d00000QN3Qf" maxlength="255" name="00N8d00000QN3Qf" size="20" type="text" value="[channel]" />
-                                        Channel Drilldown 2:<input id="00N8d00000QN3Qk" maxlength="255" name="00N8d00000QN3Qk" size="20" type="text" value="[channeldrilldown2]" />
-                                        Channel Drilldown 3:<input id="00N8d00000QN3Qp" maxlength="255" name="00N8d00000QN3Qp" size="20" type="text" value="[channeldrilldown3]"/>
-                                        Landing Page:<input id="00N8d00000QN3Qu" maxlength="255" name="00N8d00000QN3Qu" size="20" type="text" value="[channeldrilldown4]" />
-                                        Landing Page Group:<input id="00N8d00000QN3Qz" maxlength="255" name="00N8d00000QN3Qz" size="20" type="text" value="[landingpage]" />
-                                        Channel Drilldown 4:<input id="00N8d00000QN4dw" maxlength="255" name="00N8d00000QN4dw" size="20" type="text" value="[landingpagegroup]" />
+                                        <input type="hidden" name="00N8d00000QN3Qa" id="00N8d00000QN3Qa" value="[channel]">
+                                        <input type="hidden" name="00N8d00000QN3Qf" id="00N8d00000QN3Qf" value="[channeldrilldown1]">
+                                        <input type="hidden" name="00N8d00000QN3Qk" id="00N8d00000QN3Qk" value="[channeldrilldown2]">
+                                        <input type="hidden" name="00N8d00000QN3Qp" id="00N8d00000QN3Qp" value="[channeldrilldown3]">
+                                        <input type="hidden" name="00N8d00000QN4dw" id="00N8d00000QN4dw" value="[channeldrilldown4]">
+                                        <input type="hidden" name="00N8d00000QN3Qu" id="00N8d00000QN3Qu" value="[landingpage]">
+                                        <input type="hidden" name="00N8d00000QN3Qz" id="00N8d00000QN3Qz" value="[landingpagegroup]">
                                         <input type="submit" value="Get a quote" className="btn btn-blue-3 w-100 rounded-4 btn-h" />
-                                        {/* <input type="hidden" id="[attributer-channel]" name="[attributer-channel]" value="[channel]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown1]" name="[attributer-channeldrilldown1]" value="[channeldrilldown1]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown2]" name="[attributer-channeldrilldown2]" value="[channeldrilldown2]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown3]" name="[attributer-channeldrilldown3]" value="[channeldrilldown3]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown4]" name="[attributer-channeldrilldown4]" value="[channeldrilldown4]"/>
-                        <input type="hidden" id="[attributer-landingpage]" name="[attributer-landingpage]" value="[landingpage]"/>
-                        <input type="hidden" id="[attributer-landingpagegroup]" name="[attributer-landingpagegroup]" value="[landingpagegroup]"/> */}
                                 </form>
 
                             </div>
@@ -60,3 +53,13 @@ const TestPage = () => {
 );
 };
 export default TestPage;
+
+
+
+// Channel:<input id="00N8d00000QN3Qa" maxlength="255" name="00N8d00000QN3Qa" size="20" type="text" value="[channel]" />
+// Channel Drilldown 1:<input id="00N8d00000QN3Qf" maxlength="255" name="00N8d00000QN3Qf" size="20" type="text" value="[channel]" />
+// Channel Drilldown 2:<input id="00N8d00000QN3Qk" maxlength="255" name="00N8d00000QN3Qk" size="20" type="text" value="[channeldrilldown2]" />
+// Channel Drilldown 3:<input id="00N8d00000QN3Qp" maxlength="255" name="00N8d00000QN3Qp" size="20" type="text" value="[channeldrilldown3]"/>
+// Landing Page:<input id="00N8d00000QN3Qu" maxlength="255" name="00N8d00000QN3Qu" size="20" type="text" value="[channeldrilldown4]" />
+// Landing Page Group:<input id="00N8d00000QN3Qz" maxlength="255" name="00N8d00000QN3Qz" size="20" type="text" value="[landingpage]" />
+// Channel Drilldown 4:<input id="00N8d00000QN4dw" maxlength="255" name="00N8d00000QN4dw" size="20" type="text" value="[landingpagegroup]" />
