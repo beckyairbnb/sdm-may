@@ -1,10 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
 import PageWrapper from "../components/PageWrapper";
 
-import imgE from "../assets/image/inner-page/png/404-error-img.png";
-
 const TestPage = () => {
+    
     return (
         <>
             <PageWrapper
@@ -25,13 +23,23 @@ const TestPage = () => {
                         <div className="row justify-content-center">
                             <div className="col-xl-6 col-lg-6 col-md-8 col-sm-11">
                                 <div className="text-center">
+                                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                                    <input type="hidden" name="oid" value="00D8d000009pkmx"/>
+                                    <input type="hidden" name="retURL" value="https://strategically.co/success"/>
+                                    <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+                                    <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                                    <input  id="email" maxlength="80" name="email" size="20" type="text" />
+                                    <input  id="company" maxlength="40" name="company" size="20" type="text" />
+                                    <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+                                    <input type="submit" name="submit"/>
+                                </form>
                                     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-
                                         <input type="hidden" name="oid" value="00D8d000009pkmx" />
                                         <input type="hidden" name="retURL" value="https://strategically.co/success" />
-                                        <label for="first_name">First Name</label><input id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+                                        <label for="first_name">First Name</label>
+                                        <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true"/>
                                         <label for="last_name">Last Name</label><input id="last_name" maxlength="80" name="last_name" size="20" type="text" />
-                                        <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" />
+                                        <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="email" required="true" />
                                         <label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" size="20" type="text" />
                                         <input type="hidden" name="00N8d00000QN3Qa" id="00N8d00000QN3Qa" value="[channel]"/>
                                         <input type="hidden" name="00N8d00000QN3Qf" id="00N8d00000QN3Qf" value="[channeldrilldown1]"/>

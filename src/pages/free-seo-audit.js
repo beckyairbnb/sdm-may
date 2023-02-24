@@ -1,29 +1,8 @@
 
 import React from 'react';
-import { navigate } from "gatsby"
 import { Helmet } from "react-helmet";
-import { useForm } from "react-hook-form";
-import {
-    useNetlifyForm,
-    NetlifyFormProvider,
-    NetlifyFormComponent,
-    Honeypot
-} from 'react-netlify-forms'
 import LeadgenLayout from "../components/Layout/LeadgenLayout";
 const LeadgenPageMaster = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
-
-    const netlify = useNetlifyForm({
-        name: 'FreeSeoAuditNew',
-        action: '/success/',
-        onSuccess: (response, context) => {
-            console.log('Successfully sent form data to Netlify Server')
-            navigate("/success/")
-        }
-    })
-
-    const onSubmit = (data) => netlify.handleSubmit(null, data)
-
     return (
         <>
             <Helmet>
@@ -33,123 +12,75 @@ const LeadgenPageMaster = () => {
                 title="Free content audit tool"
                 description="Got content that’s not (yet) crushing it in the SERPs? Enter the page URL and keywords you’re targeting, we’ll send you quick tips to improve its performance — for free. "
             >
-                <NetlifyFormProvider {...netlify}>
-                    <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
-                    <input type="hidden" id="[attributer-channel]" name="[attributer-channel]" value="[channel]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown1]" name="[attributer-channeldrilldown1]" value="[channeldrilldown1]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown2]" name="[attributer-channeldrilldown2]" value="[channeldrilldown2]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown3]" name="[attributer-channeldrilldown3]" value="[channeldrilldown3]"/>
-                        <input type="hidden" id="[attributer-channeldrilldown4]" name="[attributer-channeldrilldown4]" value="[channeldrilldown4]"/>
-                        <input type="hidden" id="[attributer-landingpage]" name="[attributer-landingpage]" value="[landingpage]"/>
-                        <input type="hidden" id="[attributer-landingpagegroup]" name="[attributer-landingpagegroup]" value="[landingpagegroup]"/>
+                <div class="container mx-auto p-0">
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                        <input type="hidden" name="oid" value="00D8d000009pkmx"/>
+                        <input type="hidden" name="retURL" value="https://strategically.co/thank-you-audit/"/>
+
                         <div className="form-group position-relative mb-4">
                             <input
-                                type="text"
-                                name="firstName"
+                                id="first_name"
+                                name="first_name"
                                 placeholder="First Name"
-                                id="firstName"
-                                style={{height:"38px"}}
-                                {...register("firstName", { required: true })}
-                                className=
-                                {
-                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.firstName && 'error'}`
-                                }
+                                type="text" required="true"
+                                style={{ height: "52px" }}
+                                className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5"
                             />
                         </div>
                         <div className="form-group position-relative mb-4">
                             <input
-                                type="text"
-                                name="lastName"
+                                id="last_name"
+                                name="last_name"
                                 placeholder="Last Name"
-                                id="lastName"
-                                style={{height:"38px"}}
-                                {...register("lastName", { required: true })}
-                                className=
-                                {
-                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.lastName && 'error'}`
-                                }
+                                type="text" required="true"
+                                style={{ height: "52px" }}
+                                className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5"
                             />
                         </div>
-                        <div className="form-group mb-2 position-relative">
+                        <div className="form-group position-relative mb-4">
                             <input
-                                type="email"
+                                id="email"
                                 name="email"
                                 placeholder="Email Address"
-                                id="email"
-                                {...register("email", { required: 'Email is required' })}
-                                style={{height:"38px"}}
-                                className=
-                                {
-                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.email && 'error'}`
-                                }
+                                type="email" required="true"
+                                style={{ height: "52px" }}
+                                className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5"
                             />
                         </div>
-                        <div className="form-group mb-2 position-relative">
+                        <div className="form-group position-relative mb-4">
                             <input
-                                type="company"
-                                name="companyname"
-                                placeholder="Company Name"
                                 id="company"
-                                style={{height:"38px"}}
-                                {...register("company", { required: 'company is required' })}
-                                className=
-                                {
-                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.company && 'error'}`
-                                }
+                                name="company"
+                                style={{ height: "52px" }}
+                                placeholder="Company Name"
+                                type="text"
+                                required="true"
+                                className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5"
                             />
                         </div>
-                        <div className="form-group position-relative mb-2">
+                        <div className="form-group position-relative mb-4">
                             <input
-                                type="text"
-                                name="phone"
-                                placeholder="Phone Number"
                                 id="phone"
-                                {...register("phone", { required: true })}
-                                style={{height:"38px"}}
-                                className=
-                                {
-                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.phone && 'error'}`
-                                }
+                                name="phone"
+                                style={{ height: "52px" }}
+                                placeholder="Phone Number"
+                                type="text" required="true"
+                                className="form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5"
                             />
                         </div>
-                        <div className="form-group position-relative mb-2">
-                            <input
-                                type="text"
-                                name="pageurl"
-                                placeholder="Enter page URL"
-                                id="pageurl"
-                                {...register("pageurl", { required: true })}
-                                style={{height:"38px"}}
-                                className=
-                                {
-                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.pageurl && 'error'}`
-                                }
-                            />
-                        </div>
-                        <div className="form-group position-relative mb-2">
-                            <input
-                                type="text"
-                                name="keywords"
-                                placeholder="Enter your target keywords"
-                                id="keywords"
-                                {...register("keywords", { required: true })}
-                                style={{height:"38px"}}
-                                className=
-                                {
-                                    `form-control form-control-lg bg-white rounded-4 text-dark-cloud text-placeholder-bali-gray pl-7 font-size-5 ${errors.keywords && 'error'}`
-                                }
-                            />
-                        </div>
-
-
                         <div className="button">
-                        <p className="snote">Looking to join our team? Email <a href="mailto:support@strategically.co">support@strategically.co</a> instead</p>
-                            <input type="submit" value="Continue" className="btn btn-blue-3 w-100 rounded-4 btn-h" style={{height:"38px"}} />
-
+                            <input type="hidden" name="00N8d00000QN3Qa" id="00N8d00000QN3Qa" value="[channel]" />
+                            <input type="hidden" name="00N8d00000QN3Qf" id="00N8d00000QN3Qf" value="[channeldrilldown1]" />
+                            <input type="hidden" name="00N8d00000QN3Qk" id="00N8d00000QN3Qk" value="[channeldrilldown2]" />
+                            <input type="hidden" name="00N8d00000QN3Qp" id="00N8d00000QN3Qp" value="[channeldrilldown3]" />
+                            <input type="hidden" name="00N8d00000QN4dw" id="00N8d00000QN4dw" value="[channeldrilldown4]" />
+                            <input type="hidden" name="00N8d00000QN3Qu" id="00N8d00000QN3Qu" value="[landingpage]" />
+                            <input type="hidden" name="00N8d00000QN3Qz" id="00N8d00000QN3Qz" value="[landingpagegroup]" />
+                            <p className="snote">Looking to join our team? Email <a href="mailto:support@strategically.co">support@strategically.co</a> instead</p>
+                            <input type="submit" value="Get a quote" className="btn btn-blue-3 w-100 rounded-4 btn-h" />
                         </div>
-   
-                    </NetlifyFormComponent>
-                </NetlifyFormProvider>
+                    </form>
+                </div>
             </LeadgenLayout>
         </>
     )
