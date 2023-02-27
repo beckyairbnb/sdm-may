@@ -1161,6 +1161,7 @@ const Layout = (props) => {
             woopra.track();
             `}
           </script>
+          <script type="text/javascript" src="https://d1b3llzbo1rqxo.cloudfront.net/attributer.js"></script>
           </Helmet>
           <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
           <div className="site-wrapper overflow-hidden" ref={eleRef}>
