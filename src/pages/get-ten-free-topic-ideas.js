@@ -15,7 +15,7 @@ const LeadgenPageMaster = () => {
                 <div class="container mx-auto p-0">
                 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                         <input type="hidden" name="oid"  value="00D8d000009pkmx" />
-                        <input type="hidden" name="retURL" value="https://strategically.co/get-ten-free-topic-ideas/" />
+                        <input type="hidden" name="retURL" value="https://strategically.co/thank-you-topic-ideation/" />
                         <input type="hidden" name="00N8d00000QN3Qa" id="00N8d00000QN3Qa" value="[channel]" />
                         <input type="hidden" name="00N8d00000QN3Qf" id="00N8d00000QN3Qf" value="[channeldrilldown1]" />
                         <input type="hidden" name="00N8d00000QN3Qk" id="00N8d00000QN3Qk" value="[channeldrilldown2]" />
