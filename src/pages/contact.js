@@ -125,7 +125,7 @@ const Contact = () => {
             </div>            
             <div className="button"> 
               <p className="snote">Looking to join our team? Email <a href="mailto:support@strategically.co">support@strategically.co</a> instead</p>
-              <input type="submit" value="Get a quote" className="btn btn-blue-3 w-100 rounded-4 btn-h" />
+              <input type="submit" value="Continue" className="btn btn-blue-3 w-100 rounded-4 btn-h" />
             </div>
           </form>
         </div>
