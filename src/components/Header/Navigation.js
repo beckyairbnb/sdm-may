@@ -40,7 +40,7 @@ const Navigation = () => {
                     <Dropdown.Item>      
                     <Link to="/get-ten-free-topic-ideas/" className="linktext" onClick={gContext.toggleOffCanvas} >             
                         <div className="icon">
-                            <StaticImage src="../../assets/images/trend.png" alt="" />
+                            <StaticImage src="../../assets/images/topics.svg" alt="" />
                         </div>
 
                         <div>
