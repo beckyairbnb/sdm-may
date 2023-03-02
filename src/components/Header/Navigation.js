@@ -23,7 +23,7 @@ const Navigation = () => {
                     <Dropdown.Item>
                     <Link to="/get-free-content-samples/" className="linktext" onClick={gContext.toggleOffCanvas}>
                         <div className="icon">
-                            <StaticImage src="../../assets/images/digital-marketing.png" alt="" />
+                            <StaticImage src="../../assets/images/samples.svg" alt="" />
                         </div>
 
                         <div>
@@ -59,7 +59,7 @@ const Navigation = () => {
                     <Dropdown.Item>
                     <Link to="/free-seo-audit/" className="linktext" onClick={gContext.toggleOffCanvas}>
                         <div className="icon">
-                            <StaticImage src="../../assets/images/digital-marketing.png" alt="" />
+                            <StaticImage src="../../assets/images/audit.svg" alt="" />
                         </div>
 
                         <div>
@@ -76,7 +76,7 @@ const Navigation = () => {
                     <Dropdown.Item>
                     <Link to="/calculate-content-roi/" className="linktext" onClick={gContext.toggleOffCanvas}>
                         <div className="icon">
-                            <StaticImage src="../../assets/images/digital-marketing.png" alt="" />
+                            <StaticImage src="../../assets/images/roi.svg" alt="" />
                         </div>
 
                         <div>

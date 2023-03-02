@@ -590,6 +590,7 @@ img.clogo{
 .second-row { flex-grow: 1; border: none; margin: 0; padding: 0; }
 
 .linktext{display:flex;gap:1rem;}
+.linktext .icon img{fill:#000000;}
 
 @media screen and (max-width:767px){
   .linktext{flex-direction: column;}
