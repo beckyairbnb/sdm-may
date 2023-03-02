@@ -242,14 +242,14 @@ const FooterLinks = () => {
                           Samples
                         </Link>
                       </li>
-                      <li className="mb-6">
+                      {/* <li className="mb-6">
                         <Link
                           to="/writing-jobs/"
                           className="font-size-5 text-default-color"
                         >
                           Become a Writer
                         </Link>
-                      </li>
+                      </li> */}
                       <li className="mb-6">
                         <Link
                           to={`/blog/`}

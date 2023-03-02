@@ -83,7 +83,7 @@ const Navigation = () => {
                 <Link to="/case-study" className="nav-link" role="button" onClick={gContext.toggleOffCanvas}>
                     Case Studies
                 </Link>
-                <Link to="/blog" className="nav-link" role="button" onClick={gContext.toggleOffCanvas}>
+                <Link to="/blog/" className="nav-link" role="button" onClick={gContext.toggleOffCanvas}>
                     Blog
                 </Link>
                 <Link to="/get-a-quote/" onClick={gContext.toggleOffCanvas} className="btn btn-dodger-blue-2 header-btn rounded-5 d-lg-none d-inline-flex mt-10 " href={"/get-a-quote/"}>

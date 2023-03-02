@@ -11,12 +11,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
-      options: {
-        siteUrl: "https://strategically.co",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+    //   options: {
+    //     noTrailingSlash: true,
+    //     siteUrl: "https://strategically.co",
+    //   },
+    // },
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,

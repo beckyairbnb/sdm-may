@@ -11,14 +11,14 @@ const BlogItem = ({ data }) => {
         <div className="col-lg-4 col-md-6 col-xs-12 mb-5 pb-5">
         <Item>
             <ItemImage>
-            <Link to={`/blog/${category.document.uid}/${data.node.uid}`}>
+            <Link to={`/blog/${category.document.uid}/${data.node.uid}/`}>
                 <img src={featuredimage.fluid.src}/>
                 {/* <GatsbyImage image={BlogImage} alt={title.text} className="w-100" /> */}
             </Link>
             </ItemImage>
-            <h4 className="mt-6 mb-1"><Link to={`/blog/${category.document.uid}/${data.node.uid}`}>{title.text}</Link></h4>            
+            <h4 className="mt-6 mb-1"><Link to={`/blog/${category.document.uid}/${data.node.uid}/`}>{title.text}</Link></h4>            
             <p>{description.text.substring(1, 100)}</p>
-            <Category><Link to={`/blog/${category.document.uid}`}>{category.document.data.name.text}</Link></Category>
+            <Category><Link to={`/blog/${category.document.uid}/`}>{category.document.data.name.text}</Link></Category>
         </Item>
         </div>
     )
