@@ -1,8 +1,13 @@
 
-import React from 'react';
+import React, { useEffect} from 'react';
 import { Helmet } from "react-helmet";
 import LeadgenLayout from "../components/Layout/LeadgenLayout";
 const LeadgenPageMaster = () => {
+    useEffect(() => {
+        setInterval(() => {
+            document.FlareTrk.repop();
+        }, 1000);
+      }, []);
     return (
         <>
             <Helmet>

@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { navigate } from "gatsby"
 import { Helmet } from "react-helmet";
 import { useForm, Controller } from "react-hook-form";
@@ -41,6 +41,12 @@ const Contact = () => {
     console.log('data data', data)
     netlify.handleSubmit(null, data)
   }
+
+  useEffect(() => {
+    setInterval(() => {
+        document.FlareTrk.repop();
+    }, 1000);
+  }, []);
 
   return (
     <>

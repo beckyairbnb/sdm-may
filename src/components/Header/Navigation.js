@@ -21,63 +21,73 @@ const Navigation = () => {
                     </Dropdown.Header>
 
                     <Dropdown.Item>
+                    <Link to="/get-free-content-samples/" className="linktext" onClick={gContext.toggleOffCanvas}>
                         <div className="icon">
                             <StaticImage src="../../assets/images/digital-marketing.png" alt="" />
                         </div>
 
                         <div>
-                            <h6><Link to="/get-free-content-samples/" className="text-black" onClick={gContext.toggleOffCanvas}>SEO content and sales copy</Link></h6>
+                            <h6><Link to="/get-free-content-samples/" className="text-black" onClick={gContext.toggleOffCanvas}>Get free content samples</Link></h6>
                             <p><Link to="/get-free-content-samples/" className="text-black" onClick={gContext.toggleOffCanvas}>Want to check out samples specific to your niche? Get free sample articles for any industry, written by our 5 star writers. </Link></p>
                         </div>
 
                         <div className="arrow">
                             <svg width="20" height="20" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" /></svg>
                         </div>
+                        </Link>
                     </Dropdown.Item>
-
-                    <Dropdown.Item>
+                    
+                    <Dropdown.Item>      
+                    <Link to="/get-ten-free-topic-ideas/" className="linktext" onClick={gContext.toggleOffCanvas} >             
                         <div className="icon">
                             <StaticImage src="../../assets/images/trend.png" alt="" />
                         </div>
 
                         <div>
-                            <h6><Link to="/get-ten-free-topic-ideas/" className="text-black" onClick={gContext.toggleOffCanvas}>Content strategy</Link></h6>
-                            <p><Link to="/get-ten-free-topic-ideas/" className="text-black" onClick={gContext.toggleOffCanvas}>Want to write content, but stuck for topic ideas? Get ten free topics specifical to your business emailed straight to your inbox. </Link></p>
+                            <h6><Link to="/get-ten-free-topic-ideas/" className="text-black" onClick={gContext.toggleOffCanvas}>Get 10 free topic ideas</Link></h6>
+                            <p><Link to="/get-ten-free-topic-ideas/" className="text-black" onClick={gContext.toggleOffCanvas}>Not sure what to write? We offer ten topic ideas unique to your business completely free</Link></p>
                         </div>
 
                         <div className="arrow">
                             <svg width="20" height="20" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" /></svg>
-                        </div>
-                    </Dropdown.Item>
+                        </div> 
 
+                          </Link>
+                      
+                    </Dropdown.Item>
+                  
                     <Dropdown.Item>
+                    <Link to="/free-seo-audit/" className="linktext" onClick={gContext.toggleOffCanvas}>
                         <div className="icon">
                             <StaticImage src="../../assets/images/digital-marketing.png" alt="" />
                         </div>
 
                         <div>
-                            <h6><Link to="/free-seo-audit/" className="text-black" onClick={gContext.toggleOffCanvas}>Content audit</Link></h6>
+                            <h6><Link to="/free-seo-audit/" className="text-black" onClick={gContext.toggleOffCanvas}>Get your free SEO audit</Link></h6>
                             <p><Link to="/free-seo-audit/" className="text-black" onClick={gContext.toggleOffCanvas}>Written epic content, but it’s not getting the eyeballs you need? Enter the URL and target keywords, and will send you actionable tips to improve your SERP positions. </Link></p>
                         </div>
 
                         <div className="arrow">
                             <svg width="20" height="20" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" /></svg>
                         </div>
+                        </Link>
                     </Dropdown.Item>
 
                     <Dropdown.Item>
+                    <Link to="/calculate-content-roi/" className="linktext" onClick={gContext.toggleOffCanvas}>
                         <div className="icon">
                             <StaticImage src="../../assets/images/digital-marketing.png" alt="" />
                         </div>
 
                         <div>
-                            <h6><Link to="/calculate-content-roi/" className="text-black" onClick={gContext.toggleOffCanvas}>Content ROI calculator</Link></h6>
+                            <h6><Link to="/calculate-content-roi/" className="text-black" onClick={gContext.toggleOffCanvas}>Calcuate your content ROI</Link></h6>
                             <p><Link to="/calculate-content-roi/" className="text-black" onClick={gContext.toggleOffCanvas}>Love the idea of content marketing, but not sure it’s viable? Use our free content marketing ROI calculator to find out now.</Link> </p>
                         </div>
 
                         <div className="arrow">
                             <svg width="20" height="20" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" /></svg>
                         </div>
+                        </Link>
                     </Dropdown.Item>
                 </NavDropdown>
                 <Link to="/case-study" className="nav-link" role="button" onClick={gContext.toggleOffCanvas}>
