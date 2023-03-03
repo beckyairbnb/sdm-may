@@ -351,6 +351,9 @@ exports.onCreatePage = ({ page, actions }) => {
   } else if (page.path.match(/contact/)) {
     page.context.layout = "noheadernofooter";
     createPage(page);
+  } else if (page.path.match(/demo/)) {
+    page.context.layout = "noheadernofooter";
+    createPage(page);
   } else if (page.path.match(/calculate-content-roi/)) {
     page.context.layout = "noheadernofooter";
     createPage(page);
