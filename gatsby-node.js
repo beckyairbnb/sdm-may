@@ -342,6 +342,9 @@ exports.onCreatePage = ({ page, actions }) => {
   } else if (page.path.match(/pricing/)) {
     page.context.layout = "noheaderfooter";
     createPage(page);
+  } else if (page.path.match(/book-a-demo/)) {
+    page.context.layout = "noheaderfooter";
+    createPage(page);
   } else if (page.path.match(/leadgen-page-master/)) {
     page.context.layout = "noheadernofooter";
     createPage(page);

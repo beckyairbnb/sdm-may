@@ -29,12 +29,12 @@ const ThankYouAudit = () => {
                                 <h2 className="mb-10">Thank you for requesting your content audit. </h2>
                                 <p className="mb-10">Our expert team of writers and SEOs  are working on your request and will be in touch within 12 hours. </p>
                                 <div className="btn_outer d-flex gap-5 justify-content-center">
-                                    <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"/"}>
+                                    <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" to={"/"}>
                                         Visit our website
-                                    </a>
-                                    <a className="btn btn btn-dodger-blue-2 header-btn rounded-5" href={"https://calendly.com/becky-strategically/intro-meeting"}>
+                                    </Link>
+                                    <Link className="btn btn btn-dodger-blue-2 header-btn rounded-5" to={"/book-a-demo/"}>
                                         Book a call
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
