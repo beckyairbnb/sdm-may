@@ -186,12 +186,6 @@ const Layout = (props) => {
               `}
             </script>
             <script>
-              {`
-                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-              `}
-            </script>
-            <script>
             {`
               (function(e,a){
                 var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
@@ -269,12 +263,6 @@ const Layout = (props) => {
                 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                 })(window,document,'script','dataLayer','GTM-T35RVN5');
-              `}
-            </script>
-            <script>
-              {`
-                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               `}
             </script>
             <script>
@@ -364,12 +352,6 @@ const Layout = (props) => {
         </script>
         <script>
           {`
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-          `}
-        </script>
-        <script>
-          {`
             !function(){var t,o,c,e=window,n=document,r=arguments,a="script",i=["call","cancelAction","config","identify","push","track","trackClick","trackForm","update","visit"],s=function(){var t,o=this,c=function(t){o[t]=function(){return o._e.push([t].concat(Array.prototype.slice.call(arguments,0))),o}};for(o._e=[],t=0;t<i.length;t++)c(i[t])};for(e.__woo=e.__woo||{},t=0;t<r.length;t++)e.__woo[r[t]]=e[r[t]]=e[r[t]]||new s;(o=n.createElement(a)).async=1,o.src="https://static.woopra.com/js/w.js",(c=n.getElementsByTagName(a)[0]).parentNode.insertBefore(o,c)}("woopra");
             woopra.config({
             domain: "strategically.co",
@@ -434,12 +416,6 @@ const Layout = (props) => {
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-T35RVN5');
-          `}
-        </script>
-        <script>
-          {`
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           `}
         </script>
         <script>
@@ -520,12 +496,6 @@ const Layout = (props) => {
         </script>
         <script>
           {`
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-          `}
-        </script>
-        <script>
-          {`
             (function(e,a){
               var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
               t=e.createElement("script");t.type="text/javascript";
@@ -597,12 +567,6 @@ const Layout = (props) => {
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-T35RVN5');
-          `}
-        </script>
-        <script>
-          {`
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           `}
         </script>
         <script>
@@ -697,12 +661,6 @@ const Layout = (props) => {
         </script>
         <script>
           {`
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-          `}
-        </script>
-        <script>
-          {`
             (function(e,a){
               var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
               t=e.createElement("script");t.type="text/javascript";
@@ -793,12 +751,6 @@ const Layout = (props) => {
         </script>
         <script>
           {`
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-          `}
-        </script>
-        <script>
-          {`
             (function(e,a){
               var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
               t=e.createElement("script");t.type="text/javascript";
@@ -874,12 +826,6 @@ const Layout = (props) => {
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-T35RVN5');
-          `}
-        </script>
-        <script>
-          {`
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           `}
         </script>
         <script>
@@ -1031,12 +977,6 @@ const Layout = (props) => {
               `}
             </script>
             <script>
-              {`
-                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-              `}
-            </script>
-            <script>
             {`
               (function(e,a){
                 var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
@@ -1091,7 +1031,7 @@ const Layout = (props) => {
             <link rel="icon" type="image/png" href={imgFavicon} />
             <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
             <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
-            <script>window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2";</script>
+            <script>{` window.STONLY_WID = "d4b28c86-9895-11ec-9fb8-0ae9fa2a18a2"; `}</script>
             <script>
              {`
               window.__kl__tr__Id='629ae3fb9d9831001ffb4530',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/kl-website-tracking/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();
@@ -1123,12 +1063,6 @@ const Layout = (props) => {
                 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                 })(window,document,'script','dataLayer','GTM-T35RVN5');
-              `}
-            </script>
-            <script>
-              {`
-                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35RVN5"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               `}
             </script>
             <script>
@@ -1194,7 +1128,6 @@ const Layout = (props) => {
             </div>
             
           </CookieConsent>
-
         </>
       </>
     );
