@@ -12,7 +12,7 @@
     "bootstrap": "^4.3.1",
     "crisp-sdk-web": "^1.0.3",
     "fastify": "^3.29.0",
-    "gatsby": "^2.32.3",
+    "gatsby": "^3.0.0",
     "gatsby-awesome-pagination": "^0.3.8",
     "gatsby-cookie-notice": "^1.0.6",
     "gatsby-image": "^2.2.39",
