@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
 import LeadgenLayout from "../components/Layout/LeadgenLayout";
+import AttributorFields from "../components/AttributorFields";
 const LeadgenPageMaster = () => {
     useEffect(() => {
         setInterval(() => {
@@ -18,15 +19,7 @@ const LeadgenPageMaster = () => {
                 description=" Want to check out samples specific to your niche? Get free samples for any industry or content type, written by our 5-star writers. ">
                 <div class="container mx-auto p-0">
                 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-                <input type="hidden" name="oid" value="00D8d000009pkmx"/>
-                <input type="hidden" name="retURL" value="https://strategically.co/thank-you-samples/"/>
-                <input type="hidden" name="00N8d00000QN3Qa" id="00N8d00000QN3Qa" value="[channel]" />
-                <input type="hidden" name="00N8d00000QN3Qf" id="00N8d00000QN3Qf" value="[channeldrilldown1]" />
-                <input type="hidden" name="00N8d00000QN3Qk" id="00N8d00000QN3Qk" value="[channeldrilldown2]" />
-                <input type="hidden" name="00N8d00000QN3Qp" id="00N8d00000QN3Qp" value="[channeldrilldown3]" />
-                <input type="hidden" name="00N8d00000QN4dw" id="00N8d00000QN4dw" value="[channeldrilldown4]" />
-                <input type="hidden" name="00N8d00000QN3Qu" id="00N8d00000QN3Qu" value="[landingpage]" />
-                <input type="hidden" name="00N8d00000QN3Qz" id="00N8d00000QN3Qz" value="[landingpagegroup]" />
+                <AttributorFields returnUrl="https://strategically.co/thank-you-samples/" />
 
                     <div className="form-group position-relative mb-4">
                         <input
