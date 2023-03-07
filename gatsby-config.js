@@ -10,6 +10,7 @@ module.exports = {
     siteUrl: "https://strategically.co",
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-force-trailing-slashes`,
     `gatsby-plugin-react-helmet`,
     {
