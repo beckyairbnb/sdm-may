@@ -27,8 +27,8 @@ const Navigation = () => {
                             </div>
 
                             <div>
-                                <h6><Link to="/get-free-content-samples/" onClick={gContext.toggleOffCanvas}>Get free content samples</Link></h6>
-                                <p><Link to="/get-free-content-samples/" onClick={gContext.toggleOffCanvas}>Want to check out samples specific to your niche? Get free sample articles for any industry, written by our 5 star writers. </Link></p>
+                                <h6><Link to="/get-free-content-samples/" className="text-black" onClick={gContext.toggleOffCanvas}>Get free content samples</Link></h6>
+                                <p><Link to="/get-free-content-samples/" className="text-black" onClick={gContext.toggleOffCanvas}>Want to check out samples specific to your niche? Get free sample articles for any industry, written by our 5 star writers. </Link></p>
                             </div>
 
                             <div className="arrow">
@@ -44,8 +44,8 @@ const Navigation = () => {
                             </div>
 
                             <div>
-                                <h6><Link to="/get-ten-free-topic-ideas/" onClick={gContext.toggleOffCanvas}>Get 10 free topic ideas</Link></h6>
-                                <p><Link to="/get-ten-free-topic-ideas/" onClick={gContext.toggleOffCanvas}>Not sure what to write? We offer ten topic ideas unique to your business completely free</Link></p>
+                                <h6><Link to="/get-ten-free-topic-ideas/" className="text-black" onClick={gContext.toggleOffCanvas}>Get 10 free topic ideas</Link></h6>
+                                <p><Link to="/get-ten-free-topic-ideas/" className="text-black" onClick={gContext.toggleOffCanvas}>Not sure what to write? We offer ten topic ideas unique to your business completely free</Link></p>
                             </div>
 
                             <div className="arrow">
