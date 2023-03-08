@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image";
 import { Container, Dropdown, NavDropdown } from "react-bootstrap";
 
@@ -7,6 +7,9 @@ import GlobalContext from "../../context/GlobalContext";
 
 const Navigation = () => {
     const gContext = useContext(GlobalContext);
+    const serviceLinkHandler = (hreflink)=> {
+        navigate(hreflink)
+    }
     return (
         <div className="d-flex align-items-center nav">
             <Container className="eventsNav">
@@ -21,7 +24,7 @@ const Navigation = () => {
                     </Dropdown.Header>
 
                     <Dropdown.Item>
-                        <div className="linktext" onClick={gContext.toggleOffCanvas}>
+                        <div className="linktext" onClick={()=>serviceLinkHandler("/get-free-content-samples/")}>
                             <div className="icon">
                                 <StaticImage src="../../assets/images/samples.svg" alt="" />
                             </div>
@@ -38,7 +41,7 @@ const Navigation = () => {
                     </Dropdown.Item>
 
                     <Dropdown.Item>
-                        <div className="linktext" onClick={gContext.toggleOffCanvas} >
+                        <div className="linktext"  onClick={()=>serviceLinkHandler("/get-ten-free-topic-ideas/")}>
                             <div className="icon">
                                 <StaticImage src="../../assets/images/topics.svg" alt="" />
                             </div>
@@ -57,7 +60,7 @@ const Navigation = () => {
                     </Dropdown.Item>
 
                     <Dropdown.Item>
-                        <div className="linktext" onClick={gContext.toggleOffCanvas}>
+                        <div className="linktext" onClick={()=>serviceLinkHandler("/free-seo-audit/")}>
                             <div className="icon">
                                 <StaticImage src="../../assets/images/audit.svg" alt="" />
                             </div>
@@ -74,7 +77,7 @@ const Navigation = () => {
                     </Dropdown.Item>
 
                     <Dropdown.Item>
-                        <div className="linktext" onClick={gContext.toggleOffCanvas}>
+                        <div className="linktext" onClick={()=>serviceLinkHandler("/calculate-content-roi/")}>
                             <div className="icon">
                                 <StaticImage src="../../assets/images/roi.svg" alt="" />
                             </div>

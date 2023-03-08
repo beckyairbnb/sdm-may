@@ -4,9 +4,11 @@ import FeaturedImg5 from "../../assets/images/post_img1.jpg"
 import FeaturedImg6 from "../../assets/images/post_img2.jpg"
 import FeaturedImg7 from "../../assets/images/post_img3.jpg"
 
-const ReadOurBlog = ()=>{
+const ReadOurBlog = ({bgColor='bg-default-3'})=>{
     return(
-    <div class="bg-default-3 py-lg-18 py-10 text-center">
+    <div
+    className={`py-lg-18 py-10 text-center ${bgColor}`}
+    class="bg-default-1 py-lg-18 py-10 text-center">
         <div className="container">
             <h2 className="font-size-10 mb-md-12 mb-8">Read our blog</h2>
             <div class="row">

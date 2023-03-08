@@ -1,16 +1,13 @@
 import React, { useEffect } from "react";
-import {Link, navigate } from 'gatsby'
+import { navigate } from 'gatsby'
 import PageWrapper from "../components/PageWrapper";
-import Hero from "../sections/pricing/Hero";
-import Pricing from "../sections/pricing/Pricing";
-import Faq from "../sections/pricing/Faq";
 import HeaderButton from "../components/Header/HeaderButton";
 import Helmet from "react-helmet";
 
 const Success = () => {
   useEffect(() => {
     setTimeout(() => {        
-        navigate('https://strategically.co/book-a-demo/');
+        navigate('/book-a-demo/');
     }, 1);
  });
   return (

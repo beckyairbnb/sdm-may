@@ -1,10 +1,15 @@
-import React from "react";
-import { Link } from "gatsby";
+import React, { useEffect } from "react";
+import { Link, navigate } from "gatsby";
 import PageWrapper from "../components/PageWrapper";
 import HeaderButton from "../components/Header/HeaderButton";
 import Helmet from "react-helmet";
 
 const ThankYouSamples = () => {
+    useEffect(() => {
+        setTimeout(() => {        
+            navigate('/book-a-demo/');
+        }, 1);
+     });
     return (
         <>
         <Helmet>

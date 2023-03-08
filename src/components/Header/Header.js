@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import styled from "styled-components";
+import { Link } from "gatsby"
 import { Container } from "react-bootstrap";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
@@ -62,7 +63,7 @@ const Header = () => {
             {gContext.theme.headerButton && (
               <div className="header-btn ml-auto ml-lg-0 d-none d-xs-block">
                 {gContext.theme.headerButton}
-                <a class="btn btn header-btn2 rounded-5" target="_blank" rel="noopener noreferrer" href="https://calendly.com/becky-strategically/intro-meeting">Book a Demo</a>
+                <Link class="btn btn header-btn2 rounded-5" to="/demo/">Book a Demo</Link>
               </div>
             )}
 

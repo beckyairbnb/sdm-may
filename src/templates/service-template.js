@@ -12,6 +12,7 @@ import Text from "../components/ContentSlices/Text";
 import HappyClients from "../components/happyClients";
 import ServicesList from "../components/servicesList";
 import HeaderButton from "../components/Header/HeaderButton";
+import ReadOurBlog from "../components/blog/readourblog";
 
 import ModalPopup from "../components/ModalPopup";
 import Breadcrumbs from "../components/Breadcrumbs";
@@ -262,6 +263,7 @@ const ServiceTemplate = (props) => {
             }
           })}
         </div>
+        <ReadOurBlog bgColor="bg-default-3" />
         <ModalPopup show={modalShow} onHide={() => setModalShow(false)} />
       </PageWrapper>
     </>
