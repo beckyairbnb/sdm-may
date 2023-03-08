@@ -103,7 +103,7 @@ const Navigation = () => {
                     Get a quote
                 </Link>
                 <div className="w-100 mt-5 d-lg-none d-inline-flex">
-                    <a class="btn btn header-btn2 rounded-5 d-lg-none d-inline-flex" target="_blank" rel="noopener noreferrer" href="https://calendly.com/becky-strategically/intro-meeting">Book a Demo</a>
+                    <a class="btn btn header-btn2 rounded-5 d-lg-none d-inline-flex" target="_blank" rel="noopener noreferrer" href="https://calendly.com/becky-strategically/intro-meeting">Book a demo</a>
                 </div>
             </Container>
         </div>
