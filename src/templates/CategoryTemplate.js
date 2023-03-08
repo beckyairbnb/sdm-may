@@ -23,16 +23,12 @@ const CategoryTemplate = (props) => {
     const seoTitle = 'Strategically Blog'
     const seoDescription = 'Strategically Blog'
 
-    console.log('cat props', props.location.href)
-
-    //if (!blogsData) return null;
     return (
         <>
             <Helmet>
                 <title>{seoTitle}</title>
                 <meta name="description" content={seoDescription} />
                 <link rel="icon" type="image/png" href={imgFavicon} />
-                <link rel="canonical" href={props.location.href} />
             </Helmet>
             <PageWrapper
                 themeConfig={{
