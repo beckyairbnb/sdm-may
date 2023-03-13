@@ -140,20 +140,3 @@ module.exports = {
   ],
 };
 
-// {
-//   resolve: `gatsby-source-google-reviews-en`,
-//   options: {
-//     placeId: `ChIJJVOOp00bdkgRMY03j_wc5ng`,
-//     apiKey: `AIzaSyBRiOs7ivBqYM1-nuIzzYe5Ku3wihThcNY`,
-//   },
-// },
-
-// {
-//   resolve: 'gatsby-plugin-crisp-chat',
-//   options: {
-//     websiteId: 'baad053f-4aa3-4ba7-81c2-540fe4ea2127',
-//     enableDuringDevelop: false, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
-//     defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
-//     enableImprovedAccessibility: false // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
-//   },
-// },
